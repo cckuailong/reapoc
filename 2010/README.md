@@ -103,7 +103,7 @@
 | CVE-2010-2680 |  | 路径遍历 |  | N | [Y](CVE-2010-2680/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-2680/poc/others/) |
 | CVE-2010-2682 | Joomla | 路径遍历 |  | N | [Y](CVE-2010-2682/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-2682/poc/others/) |
 | CVE-2010-2857 |  | 路径遍历 |  | N | [Y](CVE-2010-2857/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-2857/poc/others/) |
-| CVE-2010-2861 | Adobe-ColdFusion | 目录遍历 |  | [Y](CVE-2010-2861/vultarget/) | [Y](CVE-2010-2861/poc/nuclei/) | [Y](CVE-2010-2861/poc/xray/) | N | N | N | N | [Y](CVE-2010-2861/poc/others/) |
+| CVE-2010-2861 | Adobe-ColdFusion | 目录遍历 |  | [Y](CVE-2010-2861/vultarget/) | [Y](CVE-2010-2861/poc/nuclei/) | [Y](CVE-2010-2861/poc/xray/) | N | N | [Y](CVE-2010-2861/poc/goby/) | N | [Y](CVE-2010-2861/poc/others/) |
 | CVE-2010-2918 |  | 代码注入 |  | N | [Y](CVE-2010-2918/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-2918/poc/others/) |
 | CVE-2010-2920 |  | 路径遍历 |  | N | [Y](CVE-2010-2920/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-2920/poc/others/) |
 | CVE-2010-3203 | Joomla | 路径遍历 |  | N | [Y](CVE-2010-3203/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-3203/poc/others/) |

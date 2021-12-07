@@ -22,7 +22,7 @@
 | CVE-2017-12611 | Struts2 | 命令执行 | 9.8 | N | [Y](CVE-2017-12611/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-12611/poc/others/) |
 | CVE-2017-12615 | Apache-Tomcat | 代码执行 | 8.1 | [Y](CVE-2017-12615/vultarget/) | [Y](CVE-2017-12615/poc/nuclei/) | [Y](CVE-2017-12615/poc/xray/) | N | N | N | N | [Y](CVE-2017-12615/poc/others/) |
 | CVE-2017-12629 | Solr | 命令执行 | 9.8 | [Y](CVE-2017-12629/vultarget/) | [Y](CVE-2017-12629/poc/nuclei/) | [Y](CVE-2017-12629/poc/xray/) | N | N | N | N | [Y](CVE-2017-12629/poc/others/) |
-| CVE-2017-12635 | CouchDB | 代码执行 | 9.8 | [Y](CVE-2017-12635/vultarget/) | [Y](CVE-2017-12635/poc/nuclei/) | [Y](CVE-2017-12635/poc/xray/) | N | N | N | N | [Y](CVE-2017-12635/poc/others/) |
+| CVE-2017-12635 | CouchDB | 代码执行 | 9.8 | [Y](CVE-2017-12635/vultarget/) | [Y](CVE-2017-12635/poc/nuclei/) | [Y](CVE-2017-12635/poc/xray/) | N | N | [Y](CVE-2017-12635/poc/goby/) | N | [Y](CVE-2017-12635/poc/others/) |
 | CVE-2017-12637 |  | 路径遍历 | 7.5 | N | [Y](CVE-2017-12637/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-12794 | Django | 跨站脚本 | 6.1 | [Y](CVE-2017-12794/vultarget/) | [Y](CVE-2017-12794/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-14535 |  | 操作系统命令注入 | 8.8 | N | [Y](CVE-2017-14535/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-14535/poc/others/) |
@@ -35,6 +35,7 @@
 | CVE-2017-15944 | Palo Alto Networks | 未授权访问 | 9.8 | N | [Y](CVE-2017-15944/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-15944/poc/others/) |
 | CVE-2017-16806 |  | 路径遍历 | 7.5 | N | [Y](CVE-2017-16806/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-16806/poc/others/) |
 | CVE-2017-16877 |  | 路径遍历 | 7.5 | N | [Y](CVE-2017-16877/poc/nuclei/) | [Y](CVE-2017-16877/poc/xray/) | N | N | N | N | N |
+| CVE-2017-16894 |  | 信息泄露 | 7.5 | N | N | N | N | N | [Y](CVE-2017-16894/poc/goby/) | N | N |
 | CVE-2017-17043 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2017-17043/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-17059 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2017-17059/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-17451 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2017-17451/poc/nuclei/) | N | N | N | N | N | N |

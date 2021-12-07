@@ -48,21 +48,21 @@
 | CVE-2019-16097 | harbor | 权限许可和访问控制问题 | 6.5 | N | [Y](CVE-2019-16097/poc/nuclei/) | [Y](CVE-2019-16097/poc/xray/) | N | N | N | N | [Y](CVE-2019-16097/poc/others/) |
 | CVE-2019-16123 | web | 路径遍历 | 7.5 | N | [Y](CVE-2019-16123/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-16278 | nostromo | 命令执行 | 9.8 | N | [Y](CVE-2019-16278/poc/nuclei/) | [Y](CVE-2019-16278/poc/xray/) | N | N | N | N | [Y](CVE-2019-16278/poc/others/) |
-| CVE-2019-16313 | 蜂网互联企业级路由器 | 信息泄露 | 7.5 | N | [Y](CVE-2019-16313/poc/nuclei/) | [Y](CVE-2019-16313/poc/xray/) | N | N | N | N | N |
+| CVE-2019-16313 | 蜂网互联企业级路由器 | 信息泄露 | 7.5 | N | [Y](CVE-2019-16313/poc/nuclei/) | [Y](CVE-2019-16313/poc/xray/) | N | N | [Y](CVE-2019-16313/poc/goby/) | N | N |
 | CVE-2019-16332 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2019-16332/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-16525 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2019-16525/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-1653 | Cisco | 访问控制错误 | 7.5 | N | [Y](CVE-2019-1653/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-1653/poc/others/) |
 | CVE-2019-16662 | rConfig | 命令执行 | 9.8 | N | [Y](CVE-2019-16662/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-16662/poc/others/) |
 | CVE-2019-16663 |  | 操作系统命令注入 | 8.8 | N | N | [Y](CVE-2019-16663/poc/xray/) | N | N | N | N | [Y](CVE-2019-16663/poc/others/) |
 | CVE-2019-16759 | vBulletin | 代码执行  | 9.8 | N | [Y](CVE-2019-16759/poc/nuclei/) | [Y](CVE-2019-16759/poc/xray/) | N | N | N | N | [Y](CVE-2019-16759/poc/others/) |
-| CVE-2019-16920 |  | 操作系统命令注入 | 9.8 | N | [Y](CVE-2019-16920/poc/nuclei/) | [Y](CVE-2019-16920/poc/xray/) | N | N | N | N | [Y](CVE-2019-16920/poc/others/) |
+| CVE-2019-16920 |  | 操作系统命令注入 | 9.8 | N | [Y](CVE-2019-16920/poc/nuclei/) | [Y](CVE-2019-16920/poc/xray/) | N | N | [Y](CVE-2019-16920/poc/goby/) | N | [Y](CVE-2019-16920/poc/others/) |
 | CVE-2019-16996 |  | SQL注入 | 7.2 | N | N | [Y](CVE-2019-16996/poc/xray/) | N | N | N | N | N |
 | CVE-2019-16997 | MetInfo | SQL注入 | 7.2 | N | N | [Y](CVE-2019-16997/poc/xray/) | N | N | N | N | N |
 | CVE-2019-17270 | Yachtcontrol | 命令执行 | 9.8 | N | [Y](CVE-2019-17270/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-17382 |  | 授权问题 | 9.1 | N | [Y](CVE-2019-17382/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-17418 |  | SQL注入 | 7.2 | N | N | [Y](CVE-2019-17418/poc/xray/) | N | N | N | N | N |
 | CVE-2019-17503 |  | 信息泄露 | 5.3 | N | [Y](CVE-2019-17503/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-17503/poc/others/) |
-| CVE-2019-17506 | D-Link-Router | 授权问题 | 9.8 | N | [Y](CVE-2019-17506/poc/nuclei/) | [Y](CVE-2019-17506/poc/xray/) | N | N | N | N | N |
+| CVE-2019-17506 | D-Link-Router | 授权问题 | 9.8 | N | [Y](CVE-2019-17506/poc/nuclei/) | [Y](CVE-2019-17506/poc/xray/) | N | N | [Y](CVE-2019-17506/poc/goby/) | N | N |
 | CVE-2019-17538 |  | 路径遍历 | 7.5 | N | [Y](CVE-2019-17538/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-17558 | Solr | 命令执行 | 7.5 | [Y](CVE-2019-17558/vultarget/) | [Y](CVE-2019-17558/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-17558/poc/others/) |
 | CVE-2019-1821 | Cisco-公司产品 | 输入验证错误 | 9.8 | N | [Y](CVE-2019-1821/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-1821/poc/others/) |

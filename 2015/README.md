@@ -8,7 +8,7 @@
 | CVE | Component | Category | CVSS | Vultarget | Nuclei | Xray | pocsuite2 | pocsuite3 | goby | oneliner | others |
 |-----|-----------|----------|------|-----------|--------|------|-----------|-----------|------|----------|-------|
 | CVE-2015-1000012 | WordPress | 信息泄露 | 7.5 | N | [Y](CVE-2015-1000012/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2015-1427 | Elasticsearch | 命令执行 |  | [Y](CVE-2015-1427/vultarget/) | [Y](CVE-2015-1427/poc/nuclei/) | [Y](CVE-2015-1427/poc/xray/) | N | N | N | N | [Y](CVE-2015-1427/poc/others/) |
+| CVE-2015-1427 | Elasticsearch | 命令执行 |  | [Y](CVE-2015-1427/vultarget/) | [Y](CVE-2015-1427/poc/nuclei/) | [Y](CVE-2015-1427/poc/xray/) | N | N | [Y](CVE-2015-1427/poc/goby/) | N | [Y](CVE-2015-1427/poc/others/) |
 | CVE-2015-1503 |  | 路径遍历 | 7.5 | N | [Y](CVE-2015-1503/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2015-1503/poc/others/) |
 | CVE-2015-1880 | Fortinet-FortiWeb | 跨站脚本 |  | N | [Y](CVE-2015-1880/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2015-2067 |  | 路径遍历 |  | N | [Y](CVE-2015-2067/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2015-2067/poc/others/) |

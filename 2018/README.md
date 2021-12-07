@@ -76,6 +76,7 @@
 | CVE-2018-18777 | MicroStrategy-MicroStrategy-Software | 路径遍历 | 4.3 | N | [Y](CVE-2018-18777/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18777/poc/others/) |
 | CVE-2018-18778 | mini_httpd | 信息泄露 | 6.5 | [Y](CVE-2018-18778/vultarget/) | [Y](CVE-2018-18778/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-19127 | phpcms | 代码注入 | 9.8 | N | N | [Y](CVE-2018-19127/poc/xray/) | N | N | N | N | [Y](CVE-2018-19127/poc/others/) |
+| CVE-2018-19367 |  | 信任管理问题 | 9.8 | N | N | N | N | N | [Y](CVE-2018-19367/poc/goby/) | N | N |
 | CVE-2018-19386 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-19386/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-19439 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-19439/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-19458 | PHP | 授权问题 | 7.5 | N | [Y](CVE-2018-19458/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-19458/poc/others/) |
@@ -99,13 +100,13 @@
 | CVE-2018-5316 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2018-5316/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-6008 |  | 信息泄露 | 7.5 | N | [Y](CVE-2018-6008/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-6008/poc/others/) |
 | CVE-2018-6605 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2018-6605/poc/xray/) | N | N | N | N | [Y](CVE-2018-6605/poc/others/) |
-| CVE-2018-6910 |  | 信息泄露 | 5.3 | N | [Y](CVE-2018-6910/poc/nuclei/) | [Y](CVE-2018-6910/poc/xray/) | N | N | N | N | N |
+| CVE-2018-6910 |  | 信息泄露 | 5.3 | N | [Y](CVE-2018-6910/poc/nuclei/) | [Y](CVE-2018-6910/poc/xray/) | N | N | [Y](CVE-2018-6910/poc/goby/) | N | N |
 | CVE-2018-7251 | Anchor CMS | 信息泄露 | 9.8 | N | [Y](CVE-2018-7251/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7251/poc/others/) |
 | CVE-2018-7314 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2018-7314/poc/xray/) | N | N | N | N | [Y](CVE-2018-7314/poc/others/) |
 | CVE-2018-7422 | WordPress | 信息泄露 | 7.5 | N | [Y](CVE-2018-7422/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7422/poc/others/) |
 | CVE-2018-7490 | PHP | 信息泄露 | 7.5 | [Y](CVE-2018-7490/vultarget/) | [Y](CVE-2018-7490/poc/nuclei/) | [Y](CVE-2018-7490/poc/xray/) | N | N | N | N | [Y](CVE-2018-7490/poc/others/) |
 | CVE-2018-7600 | Drupal | 代码执行 | 9.8 | [Y](CVE-2018-7600/vultarget/) | [Y](CVE-2018-7600/poc/nuclei/) | [Y](CVE-2018-7600/poc/xray/) | N | N | N | N | [Y](CVE-2018-7600/poc/others/) |
-| CVE-2018-7662 |  | 信息泄露 | 5.3 | N | N | [Y](CVE-2018-7662/poc/xray/) | N | N | N | N | N |
+| CVE-2018-7662 |  | 信息泄露 | 5.3 | N | N | [Y](CVE-2018-7662/poc/xray/) | N | N | [Y](CVE-2018-7662/poc/goby/) | N | N |
 | CVE-2018-7700 | DedeCMS | 跨站请求伪造 | 8.8 | N | [Y](CVE-2018-7700/poc/nuclei/) | [Y](CVE-2018-7700/poc/xray/) | N | N | N | N | N |
 | CVE-2018-7719 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-7719/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7719/poc/others/) |
 | CVE-2018-8006 | Apache-ActiveMQ | 跨站脚本 | 6.1 | N | [Y](CVE-2018-8006/poc/nuclei/) | N | N | N | N | N | N |
