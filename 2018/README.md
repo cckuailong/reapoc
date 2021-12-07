@@ -112,6 +112,7 @@
 | CVE-2018-8033 | Apache_OFBiz | 信息泄露 | 7.5 | N | [Y](CVE-2018-8033/poc/nuclei/) | [Y](CVE-2018-8033/poc/xray/) | N | N | N | N | N |
 | CVE-2018-8715 | Embedthis-Appweb | 配置风险 | 8.1 | [Y](CVE-2018-8715/vultarget/) | [Y](CVE-2018-8715/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-8719 |  | 资料不足 | 5.3 | N | [Y](CVE-2018-8719/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-8719/poc/others/) |
+| CVE-2018-8727 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-8727/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-8770 |  | 信息泄露 | 5.3 | N | [Y](CVE-2018-8770/poc/nuclei/) | [Y](CVE-2018-8770/poc/xray/) | N | N | N | N | [Y](CVE-2018-8770/poc/others/) |
 | CVE-2018-9118 | WordPress | 路径遍历 | 7.5 | N | [Y](CVE-2018-9118/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9118/poc/others/) |
 | CVE-2018-9205 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-9205/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9205/poc/others/) |

@@ -1,20 +1,6 @@
 # reapoc
 
-<h1 align="center">
-  <br>
-  <img src="static/reapoc-logo.png" width="200px" alt="Reapoc"></a>
-</h1>
-
-<h4 align="center">OpenSource Poc && Vulnerable-Target Storage Box.</h4>
-
-<p align="center">
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/cckuailong/reapoc">
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/cckuailong/reapoc?style=social">
-</p>
-
-We are aming to collect different normalized poc and the vulerable target to verify it.
-
-Now reapoc support these poc:
+Reapoc is an OpenSource Poc && Vulnerable-Target Storage Box. We are aming to collect different normalized poc and the vulerable target to verify it. Now reapoc support these poc:
 
 [nuclei](https://github.com/projectdiscovery/nuclei),
 [xray](https://github.com/chaitin/xray),
@@ -44,14 +30,14 @@ oneliner
 |   2011   |   15   |   [2011/](2011/)   |
 |   2012   |   19   |   [2012/](2012/)   |
 |   2013   |   11   |   [2013/](2013/)   |
-|   2014   |   28   |   [2014/](2014/)   |
+|   2014   |   37   |   [2014/](2014/)   |
 |   2015   |   32   |   [2015/](2015/)   |
 |   2016   |   44   |   [2016/](2016/)   |
 |   2017   |   56   |   [2017/](2017/)   |
-|   2018   |   110   |   [2018/](2018/)   |
+|   2018   |   111   |   [2018/](2018/)   |
 |   2019   |   115   |   [2019/](2019/)   |
-|   2020   |   176   |   [2020/](2020/)   |
-|   2021   |   191   |   [2021/](2021/)   |
+|   2020   |   177   |   [2020/](2020/)   |
+|   2021   |   192   |   [2021/](2021/)   |
 
 </td>
 </tr>

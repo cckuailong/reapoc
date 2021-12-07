@@ -164,6 +164,7 @@
 | CVE-2020-8193 | Citrix-Gateway | 权限提升  | 6.5 | N | [Y](CVE-2020-8193/poc/nuclei/) | [Y](CVE-2020-8193/poc/xray/) | N | N | N | N | [Y](CVE-2020-8193/poc/others/) |
 | CVE-2020-8194 | Citrix-NetScaler-Gateway | 代码注入 | 6.5 | N | [Y](CVE-2020-8194/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-8209 | XenMobile | 任意文件读取 | 7.5 | N | [Y](CVE-2020-8209/poc/nuclei/) | [Y](CVE-2020-8209/poc/xray/) | N | N | N | N | [Y](CVE-2020-8209/poc/others/) |
+| CVE-2020-8497 |  | 信息泄露 | 5.3 | N | [Y](CVE-2020-8497/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-8512 | IceWarp | 跨站脚本 | 6.1 | N | [Y](CVE-2020-8512/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-8512/poc/others/) |
 | CVE-2020-8515 | DrayTek-Vigor2960 | 代码执行 | 9.8 | N | [Y](CVE-2020-8515/poc/nuclei/) | [Y](CVE-2020-8515/poc/xray/) | N | N | N | N | [Y](CVE-2020-8515/poc/others/) |
 | CVE-2020-8641 |  | 路径遍历 | 8.8 | N | [Y](CVE-2020-8641/poc/nuclei/) | N | N | N | N | N | N |

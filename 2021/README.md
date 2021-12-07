@@ -197,4 +197,5 @@
 | CVE-2021-43287 | Unknown | Unknown | Unknown | N | [Y](CVE-2021-43287/poc/nuclei/) | [Y](CVE-2021-43287/poc/xray/) | N | N | N | N | N |
 | CVE-2021-43495 |  | 其他 | 7.5 | N | [Y](CVE-2021-43495/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-43778 |  | 路径遍历 | 7.5 | N | [Y](CVE-2021-43778/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-43778/poc/others/) |
+| CVE-2021-43798 | Grafana | 任意文件读取 |  | [Y](CVE-2021-43798/vultarget/) | [Y](CVE-2021-43798/poc/nuclei/) | [Y](CVE-2021-43798/poc/xray/) | [Y](CVE-2021-43798/poc/pocsuite2/) | N | N | [Y](CVE-2021-43798/poc/oneliner/) | N |
 | CVE-2021-44427 |  | 其他 | 9.8 | N | [Y](CVE-2021-44427/poc/nuclei/) | N | N | N | N | N | N |
