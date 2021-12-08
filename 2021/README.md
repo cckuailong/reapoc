@@ -141,6 +141,7 @@
 | CVE-2021-3378 | FortiLogger | 文件上传  | 9.8 | N | [Y](CVE-2021-3378/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-3378/poc/others/) |
 | CVE-2021-33807 |  | 路径遍历 | 7.5 | N | [Y](CVE-2021-33807/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-33904 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-33904/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-33904/poc/others/) |
+| CVE-2021-34045 | Unknown | Unknown | Unknown | [Y](CVE-2021-34045/vultarget/) | [Y](CVE-2021-34045/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-34045/poc/others/) |
 | CVE-2021-34370 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-34370/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-34370/poc/others/) |
 | CVE-2021-34429 |  | 信息泄露 | 5.3 | N | [Y](CVE-2021-34429/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-34429/poc/others/) |
 | CVE-2021-34473 | Microsoft-Exchange | 代码执行 | 9.8 | N | [Y](CVE-2021-34473/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-34473/poc/others/) |
@@ -200,5 +201,5 @@
 | CVE-2021-43287 | Unknown | Unknown | Unknown | N | [Y](CVE-2021-43287/poc/nuclei/) | [Y](CVE-2021-43287/poc/xray/) | N | N | N | N | N |
 | CVE-2021-43495 |  | 其他 | 7.5 | N | [Y](CVE-2021-43495/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-43778 |  | 路径遍历 | 7.5 | N | [Y](CVE-2021-43778/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-43778/poc/others/) |
-| CVE-2021-43798 | Grafana | 任意文件读取 |  | [Y](CVE-2021-43798/vultarget/) | [Y](CVE-2021-43798/poc/nuclei/) | [Y](CVE-2021-43798/poc/xray/) | [Y](CVE-2021-43798/poc/pocsuite2/) | N | N | [Y](CVE-2021-43798/poc/oneliner/) | N |
+| CVE-2021-43798 | Grafana | 任意文件读取 | 7.5 | [Y](CVE-2021-43798/vultarget/) | [Y](CVE-2021-43798/poc/nuclei/) | [Y](CVE-2021-43798/poc/xray/) | [Y](CVE-2021-43798/poc/pocsuite2/) | N | N | [Y](CVE-2021-43798/poc/oneliner/) | N |
 | CVE-2021-44427 |  | 其他 | 9.8 | N | [Y](CVE-2021-44427/poc/nuclei/) | N | N | N | N | N | N |
