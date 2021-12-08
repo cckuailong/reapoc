@@ -37,7 +37,7 @@
 | CVE-2020-13700 | WordPress | 其他 | 7.5 | N | [Y](CVE-2020-13700/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-13927 | Apache-Airflow | 默认配置问题 | 9.8 | N | [Y](CVE-2020-13927/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-13927/poc/others/) |
 | CVE-2020-13937 | Apache-kylin | 未授权访问 | 5.3 | N | [Y](CVE-2020-13937/poc/nuclei/) | [Y](CVE-2020-13937/poc/xray/) | N | N | [Y](CVE-2020-13937/poc/goby/) | N | [Y](CVE-2020-13937/poc/others/) |
-| CVE-2020-13942 | Apache Unomi | 命令执行 | 9.8 | [Y](CVE-2020-13942/vultarget/) | [Y](CVE-2020-13942/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-13942/poc/others/) |
+| CVE-2020-13942 | Apache Unomi | 命令执行 | 9.8 | [Y](CVE-2020-13942/vultarget/) | [Y](CVE-2020-13942/poc/nuclei/) | [Y](CVE-2020-13942/poc/xray/) | N | N | N | N | [Y](CVE-2020-13942/poc/others/) |
 | CVE-2020-14092 | WordPress | SQL注入 | 9.8 | N | [Y](CVE-2020-14092/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-14179 | JIRA | 其他 | 5.3 | N | [Y](CVE-2020-14179/poc/nuclei/) | [Y](CVE-2020-14179/poc/xray/) | N | N | N | N | [Y](CVE-2020-14179/poc/others/) |
 | CVE-2020-14181 | Atlassian Jira | 其他 | 5.3 | N | [Y](CVE-2020-14181/poc/nuclei/) | [Y](CVE-2020-14181/poc/xray/) | N | N | [Y](CVE-2020-14181/poc/goby/) | N | [Y](CVE-2020-14181/poc/others/) |
@@ -52,7 +52,7 @@
 | CVE-2020-15500 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-15500/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-15500/poc/others/) |
 | CVE-2020-15505 | MobileIron | 其他 | 9.8 | N | [Y](CVE-2020-15505/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-15505/poc/others/) |
 | CVE-2020-15568 | TerraMaster-系统管理 | 输入验证错误 | 9.8 | N | [Y](CVE-2020-15568/poc/nuclei/) | [Y](CVE-2020-15568/poc/xray/) | N | N | N | N | N |
-| CVE-2020-15920 | Mida eFramework | 操作系统命令注入 | 9.8 | N | [Y](CVE-2020-15920/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-15920/poc/others/) |
+| CVE-2020-15920 | Mida eFramework | 操作系统命令注入 | 9.8 | N | [Y](CVE-2020-15920/poc/nuclei/) | [Y](CVE-2020-15920/poc/xray/) | N | N | N | N | [Y](CVE-2020-15920/poc/others/) |
 | CVE-2020-16139 |  | 输入验证错误 | 7.5 | N | [Y](CVE-2020-16139/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-16139/poc/others/) |
 | CVE-2020-16846 | saltstack-web | 授权问题 | 9.8 | [Y](CVE-2020-16846/vultarget/) | [Y](CVE-2020-16846/poc/nuclei/) | [Y](CVE-2020-16846/poc/xray/) | N | N | N | N | [Y](CVE-2020-16846/poc/others/) |
 | CVE-2020-16952 | Microsoft-SharePoint | 其他 | 7.8 | N | [Y](CVE-2020-16952/poc/nuclei/) | N | N | N | N | N | N |
@@ -90,7 +90,7 @@
 | CVE-2020-24912 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-24912/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-24949 |  | 其他 | 8.8 | N | [Y](CVE-2020-24949/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-24949/poc/others/) |
 | CVE-2020-25078 | D-Link-DCS-prod | 其他 | 7.5 | N | [Y](CVE-2020-25078/poc/nuclei/) | [Y](CVE-2020-25078/poc/xray/) | N | N | N | N | [Y](CVE-2020-25078/poc/others/) |
-| CVE-2020-25213 | WordPress | 命令执行 | 9.8 | N | [Y](CVE-2020-25213/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-25213/poc/others/) |
+| CVE-2020-25213 | WordPress | 命令执行 | 9.8 | N | [Y](CVE-2020-25213/poc/nuclei/) | [Y](CVE-2020-25213/poc/xray/) | N | N | N | N | [Y](CVE-2020-25213/poc/others/) |
 | CVE-2020-25223 | Sophos SG UTM | 代码注入 | 9.8 | N | [Y](CVE-2020-25223/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-25223/poc/others/) |
 | CVE-2020-25495 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-25495/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-25495/poc/others/) |
 | CVE-2020-25506 | D-LINK | 命令注入 | 9.8 | N | [Y](CVE-2020-25506/poc/nuclei/) | N | N | N | N | N | N |

@@ -19,7 +19,7 @@
 | CVE-2019-11013 |  | 路径遍历 | 6.5 | N | [Y](CVE-2019-11013/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-11013/poc/others/) |
 | CVE-2019-11248 | kubernetes | 信息泄露 | 8.2 | N | [Y](CVE-2019-11248/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-11248/poc/others/) |
 | CVE-2019-11510 | pulsesecure VPN | 目录穿越 | 10 | N | [Y](CVE-2019-11510/poc/nuclei/) | [Y](CVE-2019-11510/poc/xray/) | N | N | N | N | [Y](CVE-2019-11510/poc/others/) |
-| CVE-2019-11580 |  | 输入验证错误 | 9.8 | N | [Y](CVE-2019-11580/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-11580/poc/others/) |
+| CVE-2019-11580 |  | 输入验证错误 | 9.8 | N | [Y](CVE-2019-11580/poc/nuclei/) | [Y](CVE-2019-11580/poc/xray/) | N | N | N | N | [Y](CVE-2019-11580/poc/others/) |
 | CVE-2019-11581 | JIRA | 命令执行 | 9.8 | [Y](CVE-2019-11581/vultarget/) | [Y](CVE-2019-11581/poc/nuclei/) | [Y](CVE-2019-11581/poc/xray/) | N | N | N | N | [Y](CVE-2019-11581/poc/others/) |
 | CVE-2019-11869 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2019-11869/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-12276 |  | 路径遍历 | 7.5 | N | [Y](CVE-2019-12276/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-12276/poc/others/) |
