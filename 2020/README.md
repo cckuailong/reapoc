@@ -120,7 +120,7 @@
 | CVE-2020-3187 | Cisco-ASA | 路径遍历 | 9.1 | N | [Y](CVE-2020-3187/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-3187/poc/others/) |
 | CVE-2020-3452 | CVE-2020-3452影响组件 | 输入验证错误 | 7.5 | N | [Y](CVE-2020-3452/poc/nuclei/) | [Y](CVE-2020-3452/poc/xray/) | N | N | N | N | [Y](CVE-2020-3452/poc/others/) |
 | CVE-2020-35338 |  | 默认配置问题 | 9.8 | N | [Y](CVE-2020-35338/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2020-35476 | OpenTSDB | 命令注入 | 9.8 | N | [Y](CVE-2020-35476/poc/nuclei/) | [Y](CVE-2020-35476/poc/xray/) | N | N | N | N | N |
+| CVE-2020-35476 | OpenTSDB | 命令注入 | 9.8 | [Y](CVE-2020-35476/vultarget/) | [Y](CVE-2020-35476/poc/nuclei/) | [Y](CVE-2020-35476/poc/xray/) | N | N | N | N | N |
 | CVE-2020-35489 | WordPress | 其他 | 10 | N | [Y](CVE-2020-35489/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35489/poc/others/) |
 | CVE-2020-35580 |  | 其他 | 7.5 | N | [Y](CVE-2020-35580/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-35598 | web | 路径遍历 | 7.5 | N | [Y](CVE-2020-35598/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35598/poc/others/) |

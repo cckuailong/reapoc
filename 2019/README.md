@@ -65,6 +65,7 @@
 | CVE-2019-17506 | D-Link-Router | 授权问题 | 9.8 | N | [Y](CVE-2019-17506/poc/nuclei/) | [Y](CVE-2019-17506/poc/xray/) | N | N | [Y](CVE-2019-17506/poc/goby/) | N | N |
 | CVE-2019-17538 |  | 路径遍历 | 7.5 | N | [Y](CVE-2019-17538/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-17558 | Solr | 命令执行 | 7.5 | [Y](CVE-2019-17558/vultarget/) | [Y](CVE-2019-17558/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-17558/poc/others/) |
+| CVE-2019-17564 | Apache默认页面 | 代码执行 | 9.8 | [Y](CVE-2019-17564/vultarget/) | N | N | N | N | N | N | [Y](CVE-2019-17564/poc/others/) |
 | CVE-2019-1821 | Cisco-公司产品 | 输入验证错误 | 9.8 | N | [Y](CVE-2019-1821/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-1821/poc/others/) |
 | CVE-2019-18393 | openfire | 路径遍历 | 5.3 | N | [Y](CVE-2019-18393/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-18394 | openfire | 代码问题 | 9.8 | N | [Y](CVE-2019-18394/poc/nuclei/) | [Y](CVE-2019-18394/poc/xray/) | N | N | N | N | N |
