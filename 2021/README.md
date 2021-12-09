@@ -16,7 +16,7 @@
 | CVE-2021-20092 | buffalo | 信息泄露 | 7.5 | N | [Y](CVE-2021-20092/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-20114 |  | 访问控制错误 | 7.5 | N | [Y](CVE-2021-20114/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-20837 | Movable-Type | 操作系统命令注入 | 9.8 | N | [Y](CVE-2021-20837/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-20837/poc/others/) |
-| CVE-2021-2109 | WebLogic | 访问控制错误 | 7.2 | N | N | N | N | N | [Y](CVE-2021-2109/poc/goby/) | N | N |
+| CVE-2021-2109 | WebLogic | 访问控制错误 | 7.2 | N | N | N | N | N | [Y](CVE-2021-2109/poc/goby/) | N | [Y](CVE-2021-2109/poc/others/) |
 | CVE-2021-21234 | spring-boot-actuator-logview | 路径遍历 | 7.7 | N | [Y](CVE-2021-21234/poc/nuclei/) | [Y](CVE-2021-21234/poc/xray/) | N | N | N | N | [Y](CVE-2021-21234/poc/others/) |
 | CVE-2021-21287 | MinIO | 跨站请求伪造 | 7.7 | N | [Y](CVE-2021-21287/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-21307 | Lucee | 其他 | 9.8 | N | [Y](CVE-2021-21307/poc/nuclei/) | N | N | N | N | N | N |
@@ -29,7 +29,7 @@
 | CVE-2021-21802 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-21802/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-21803 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-21803/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-21816 | D-Link-Router | 信息泄露 | 4.3 | N | [Y](CVE-2021-21816/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-21972 | VMware vCenter Converter | 其他 | 9.8 | N | [Y](CVE-2021-21972/poc/nuclei/) | [Y](CVE-2021-21972/poc/xray/) | N | N | N | N | [Y](CVE-2021-21972/poc/others/) |
+| CVE-2021-21972 | VMware vCenter Converter | 其他 | 9.8 | N | [Y](CVE-2021-21972/poc/nuclei/) | [Y](CVE-2021-21972/poc/xray/) | N | [Y](CVE-2021-21972/poc/pocsuite3/) | N | N | [Y](CVE-2021-21972/poc/others/) |
 | CVE-2021-21975 | VMware-认证服务 | 服务器端请求伪造 | 7.5 | N | [Y](CVE-2021-21975/poc/nuclei/) | [Y](CVE-2021-21975/poc/xray/) | N | N | [Y](CVE-2021-21975/poc/goby/) | N | [Y](CVE-2021-21975/poc/others/) |
 | CVE-2021-21978 | VMware View | 其他 | 9.8 | N | [Y](CVE-2021-21978/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-21978/poc/others/) |
 | CVE-2021-21985 | VMware vCenter Server | 其他 | 9.8 | N | [Y](CVE-2021-21985/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-21985/poc/others/) |
@@ -83,7 +83,7 @@
 | CVE-2021-26722 |  | 其他 | 6.1 | N | [Y](CVE-2021-26722/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-26723 | Jenzabar | 跨站脚本 | 6.1 | N | [Y](CVE-2021-26723/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-26812 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-26812/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-26855 | Microsoft Exchange | 其他 | 9.8 | N | [Y](CVE-2021-26855/poc/nuclei/) | [Y](CVE-2021-26855/poc/xray/) | N | N | N | N | [Y](CVE-2021-26855/poc/others/) |
+| CVE-2021-26855 | Microsoft Exchange | 其他 | 9.8 | N | [Y](CVE-2021-26855/poc/nuclei/) | [Y](CVE-2021-26855/poc/xray/) | N | [Y](CVE-2021-26855/poc/pocsuite3/) | N | N | [Y](CVE-2021-26855/poc/others/) |
 | CVE-2021-26885 |  | 其他 | 7.8 | N | N | N | N | N | [Y](CVE-2021-26885/poc/goby/) | N | N |
 | CVE-2021-27132 |  | 注入 | 9.8 | N | [Y](CVE-2021-27132/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-27310 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-27310/poc/nuclei/) | N | N | N | N | N | N |
@@ -205,5 +205,5 @@
 | CVE-2021-43287 | Unknown | Unknown | Unknown | N | [Y](CVE-2021-43287/poc/nuclei/) | [Y](CVE-2021-43287/poc/xray/) | N | N | N | N | N |
 | CVE-2021-43495 |  | 其他 | 7.5 | N | [Y](CVE-2021-43495/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-43778 |  | 路径遍历 | 7.5 | N | [Y](CVE-2021-43778/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-43778/poc/others/) |
-| CVE-2021-43798 | Grafana | 任意文件读取 | 7.5 | [Y](CVE-2021-43798/vultarget/) | [Y](CVE-2021-43798/poc/nuclei/) | [Y](CVE-2021-43798/poc/xray/) | [Y](CVE-2021-43798/poc/pocsuite2/) | N | N | [Y](CVE-2021-43798/poc/oneliner/) | N |
+| CVE-2021-43798 | Grafana | 任意文件读取 | 7.5 | [Y](CVE-2021-43798/vultarget/) | [Y](CVE-2021-43798/poc/nuclei/) | [Y](CVE-2021-43798/poc/xray/) | [Y](CVE-2021-43798/poc/pocsuite2/) | N | N | [Y](CVE-2021-43798/poc/oneliner/) | [Y](CVE-2021-43798/poc/others/) |
 | CVE-2021-44427 |  | 其他 | 9.8 | N | [Y](CVE-2021-44427/poc/nuclei/) | N | N | N | N | N | N |

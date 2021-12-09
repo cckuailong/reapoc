@@ -11,7 +11,7 @@
 | CVE-2014-2321 | 中兴-公司产品 | 权限许可和访问控制 |  | N | [Y](CVE-2014-2321/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2014-2323 |  | SQL注入 | 9.8 | N | [Y](CVE-2014-2323/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-2323/poc/others/) |
 | CVE-2014-2383 | Dompdf | 信息泄露 |  | N | [Y](CVE-2014-2383/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-2383/poc/others/) |
-| CVE-2014-2908 |  | 跨站脚本 |  | N | [Y](CVE-2014-2908/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2014-2908 |  | 跨站脚本 |  | N | [Y](CVE-2014-2908/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-2908/poc/others/) |
 | CVE-2014-2962 | Belkin-Router | 路径遍历 |  | N | [Y](CVE-2014-2962/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-2962/poc/others/) |
 | CVE-2014-3120 | Elasticsearch | 命令执行 |  | [Y](CVE-2014-3120/vultarget/) | [Y](CVE-2014-3120/poc/nuclei/) | [Y](CVE-2014-3120/poc/xray/) | N | N | [Y](CVE-2014-3120/poc/goby/) | N | [Y](CVE-2014-3120/poc/others/) |
 | CVE-2014-3704 | Drupal | SQL注入 |  | [Y](CVE-2014-3704/vultarget/) | [Y](CVE-2014-3704/poc/nuclei/) | [Y](CVE-2014-3704/poc/xray/) | N | N | N | N | [Y](CVE-2014-3704/poc/others/) |
@@ -30,7 +30,7 @@
 | CVE-2014-5111 |  | 路径遍历 |  | N | [Y](CVE-2014-5111/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-5111/poc/others/) |
 | CVE-2014-5258 |  | 路径遍历 |  | N | [Y](CVE-2014-5258/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-5258/poc/others/) |
 | CVE-2014-5368 | WordPress | 路径遍历 |  | N | [Y](CVE-2014-5368/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-5368/poc/others/) |
-| CVE-2014-6271 | web | 代码执行 | 9.8 | N | [Y](CVE-2014-6271/poc/nuclei/) | [Y](CVE-2014-6271/poc/xray/) | N | N | N | N | [Y](CVE-2014-6271/poc/others/) |
+| CVE-2014-6271 | web | 代码执行 | 9.8 | N | [Y](CVE-2014-6271/poc/nuclei/) | [Y](CVE-2014-6271/poc/xray/) | [Y](CVE-2014-6271/poc/pocsuite2/) | N | N | N | [Y](CVE-2014-6271/poc/others/) |
 | CVE-2014-6308 | OSClass | 路径遍历 |  | N | [Y](CVE-2014-6308/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-6308/poc/others/) |
 | CVE-2014-8682 | GoGitService | SQL注入 |  | N | [Y](CVE-2014-8682/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-8682/poc/others/) |
 | CVE-2014-8799 | WordPress | 路径遍历 |  | N | [Y](CVE-2014-8799/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-8799/poc/others/) |
@@ -43,4 +43,4 @@
 | CVE-2014-9614 |  | 信任管理问题 | 9.8 | N | [Y](CVE-2014-9614/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2014-9615 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2014-9615/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2014-9617 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2014-9617/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2014-9618 | Netsweeper | 未授权访问 | 9.8 | N | [Y](CVE-2014-9618/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2014-9618 | Netsweeper | 未授权访问 | 9.8 | N | [Y](CVE-2014-9618/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-9618/poc/others/) |

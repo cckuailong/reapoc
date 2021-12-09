@@ -25,6 +25,7 @@
 | CVE-2018-10818 | Unknown | Unknown | Unknown | N | [Y](CVE-2018-10818/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-10822 | D-Link-Router | 路径遍历 | 7.5 | N | [Y](CVE-2018-10822/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-10822/poc/others/) |
 | CVE-2018-10823 | D-Link-Router | 操作系统命令注入 | 8.8 | N | [Y](CVE-2018-10823/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-10823/poc/others/) |
+| CVE-2018-10993 | Unknown | Unknown | Unknown | N | N | N | [Y](CVE-2018-10993/poc/pocsuite2/) | N | N | N | N |
 | CVE-2018-11409 | Splunk | 信息泄露 | 5.3 | N | [Y](CVE-2018-11409/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-11409/poc/others/) |
 | CVE-2018-11686 |  | 输入验证错误 | 9.8 | N | N | [Y](CVE-2018-11686/poc/xray/) | N | N | N | N | [Y](CVE-2018-11686/poc/others/) |
 | CVE-2018-11709 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2018-11709/poc/nuclei/) | N | N | N | N | N | N |
@@ -37,8 +38,9 @@
 | CVE-2018-12095 |  | 跨站脚本 | 5.4 | N | [Y](CVE-2018-12095/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12095/poc/others/) |
 | CVE-2018-12613 | phpMyAdmin | 本地文件包含 | 8.8 | [Y](CVE-2018-12613/vultarget/) | [Y](CVE-2018-12613/poc/nuclei/) | [Y](CVE-2018-12613/poc/xray/) | N | N | N | N | [Y](CVE-2018-12613/poc/others/) |
 | CVE-2018-12634 | CirCarLife Scada | 信息泄露 | 9.8 | N | [Y](CVE-2018-12634/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12634/poc/others/) |
-| CVE-2018-1271 | Spring | 路径遍历 | 5.9 | N | [Y](CVE-2018-1271/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2018-1273 | Spring | 输入验证错误 | 9.8 | [Y](CVE-2018-1273/vultarget/) | [Y](CVE-2018-1273/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-1273/poc/others/) |
+| CVE-2018-1270 | Spring | 代码注入 | 9.8 | N | N | N | [Y](CVE-2018-1270/poc/pocsuite2/) | [Y](CVE-2018-1270/poc/pocsuite3/) | N | N | [Y](CVE-2018-1270/poc/others/) |
+| CVE-2018-1271 | Spring | 路径遍历 | 5.9 | N | [Y](CVE-2018-1271/poc/nuclei/) | N | [Y](CVE-2018-1271/poc/pocsuite2/) | [Y](CVE-2018-1271/poc/pocsuite3/) | N | N | N |
+| CVE-2018-1273 | Spring | 输入验证错误 | 9.8 | [Y](CVE-2018-1273/vultarget/) | [Y](CVE-2018-1273/poc/nuclei/) | N | [Y](CVE-2018-1273/poc/pocsuite2/) | [Y](CVE-2018-1273/poc/pocsuite3/) | N | N | [Y](CVE-2018-1273/poc/others/) |
 | CVE-2018-12998 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-12998/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-1335 | kentika | 命令执行 | 8.1 | N | [Y](CVE-2018-1335/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-1335/poc/others/) |
 | CVE-2018-13379 | fortinet公司产品 | 目录遍历 | 9.8 | N | [Y](CVE-2018-13379/poc/nuclei/) | [Y](CVE-2018-13379/poc/xray/) | N | N | N | N | [Y](CVE-2018-13379/poc/others/) |
@@ -49,7 +51,7 @@
 | CVE-2018-14574 | Django | URL 重定向 | 6.1 | [Y](CVE-2018-14574/vultarget/) | [Y](CVE-2018-14574/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-14728 |  | 资料不足 | 9.8 | N | [Y](CVE-2018-14728/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-14728/poc/others/) |
 | CVE-2018-14916 | Loytec LGATE-902 | 代码问题 | 9.1 | N | [Y](CVE-2018-14916/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2018-15473 | OpenSSH | 信息泄露 | 5.3 | [Y](CVE-2018-15473/vultarget/) | [Y](CVE-2018-15473/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15473/poc/others/) |
+| CVE-2018-15473 | OpenSSH | 信息泄露 | 5.3 | [Y](CVE-2018-15473/vultarget/) | [Y](CVE-2018-15473/poc/nuclei/) | N | [Y](CVE-2018-15473/poc/pocsuite2/) | N | N | N | [Y](CVE-2018-15473/poc/others/) |
 | CVE-2018-15517 |  | 资料不足 | 8.6 | N | [Y](CVE-2018-15517/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-15535 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-15535/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15535/poc/others/) |
 | CVE-2018-15745 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-15745/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15745/poc/others/) |
@@ -76,6 +78,7 @@
 | CVE-2018-18777 | MicroStrategy-MicroStrategy-Software | 路径遍历 | 4.3 | N | [Y](CVE-2018-18777/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18777/poc/others/) |
 | CVE-2018-18778 | mini_httpd | 信息泄露 | 6.5 | [Y](CVE-2018-18778/vultarget/) | [Y](CVE-2018-18778/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-19127 | phpcms | 代码注入 | 9.8 | N | N | [Y](CVE-2018-19127/poc/xray/) | N | N | N | N | [Y](CVE-2018-19127/poc/others/) |
+| CVE-2018-19276 | OpenMRS | 代码问题 | 9.8 | N | N | N | [Y](CVE-2018-19276/poc/pocsuite2/) | [Y](CVE-2018-19276/poc/pocsuite3/) | N | N | [Y](CVE-2018-19276/poc/others/) |
 | CVE-2018-19367 |  | 信任管理问题 | 9.8 | N | N | N | N | N | [Y](CVE-2018-19367/poc/goby/) | N | N |
 | CVE-2018-19386 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-19386/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-19439 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-19439/poc/nuclei/) | N | N | N | N | N | N |

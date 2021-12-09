@@ -9,6 +9,7 @@
 |-----|-----------|----------|------|-----------|--------|------|-----------|-----------|------|----------|-------|
 | CVE-2011-0049 |  | 路径遍历 |  | N | [Y](CVE-2011-0049/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2011-0049/poc/others/) |
 | CVE-2011-1669 | WordPress | 路径遍历 |  | N | [Y](CVE-2011-1669/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2011-1669/poc/others/) |
+| CVE-2011-2730 | Spring | 配置错误 |  | N | N | N | [Y](CVE-2011-2730/poc/pocsuite2/) | [Y](CVE-2011-2730/poc/pocsuite3/) | N | N | N |
 | CVE-2011-2744 |  | 路径遍历 |  | N | [Y](CVE-2011-2744/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2011-2744/poc/others/) |
 | CVE-2011-2780 |  | 路径遍历 |  | N | [Y](CVE-2011-2780/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2011-2780/poc/others/) |
 | CVE-2011-3315 | Cisco-UCC | 路径遍历 |  | N | [Y](CVE-2011-3315/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2011-3315/poc/others/) |

@@ -10,6 +10,7 @@
 | CVE-2019-0193 | Solr | 命令执行 | 7.2 | [Y](CVE-2019-0193/vultarget/) | [Y](CVE-2019-0193/poc/nuclei/) | [Y](CVE-2019-0193/poc/xray/) | N | N | N | N | [Y](CVE-2019-0193/poc/others/) |
 | CVE-2019-0221 | Apache-Tomcat | 跨站脚本 | 6.1 | N | [Y](CVE-2019-0221/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-0221/poc/others/) |
 | CVE-2019-0230 | Apache Struts | 代码执行  | 9.8 | N | [Y](CVE-2019-0230/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-0230/poc/others/) |
+| CVE-2019-0708 | RDP | 命令执行 | 9.8 | N | N | N | [Y](CVE-2019-0708/poc/pocsuite2/) | [Y](CVE-2019-0708/poc/pocsuite3/) | N | N | [Y](CVE-2019-0708/poc/others/) |
 | CVE-2019-10068 |  | 代码问题 | 9.8 | N | [Y](CVE-2019-10068/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10068/poc/others/) |
 | CVE-2019-10092 | web | 跨站脚本 | 6.1 | N | [Y](CVE-2019-10092/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10092/poc/others/) |
 | CVE-2019-1010287 | Timesheet-NG | 跨站脚本 | 6.1 | N | [Y](CVE-2019-1010287/poc/nuclei/) | N | N | N | N | N | N |
@@ -92,7 +93,7 @@
 | CVE-2019-3401 |  | 信息泄露 | 5.3 | N | [Y](CVE-2019-3401/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-3402 | JIRA | 跨站脚本 | 6.1 | N | [Y](CVE-2019-3402/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-3403 | JIRA | 授权问题 | 5.3 | N | [Y](CVE-2019-3403/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-3403/poc/others/) |
-| CVE-2019-3799 | Spring | 路径遍历 | 6.5 | N | [Y](CVE-2019-3799/poc/nuclei/) | [Y](CVE-2019-3799/poc/xray/) | N | N | N | N | [Y](CVE-2019-3799/poc/others/) |
+| CVE-2019-3799 | Spring | 路径遍历 | 6.5 | N | [Y](CVE-2019-3799/poc/nuclei/) | [Y](CVE-2019-3799/poc/xray/) | [Y](CVE-2019-3799/poc/pocsuite2/) | [Y](CVE-2019-3799/poc/pocsuite3/) | N | N | [Y](CVE-2019-3799/poc/others/) |
 | CVE-2019-3929 | Crestron-AM-100 | 操作系统命令注入 | 9.8 | N | [Y](CVE-2019-3929/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-3929/poc/others/) |
 | CVE-2019-5127 | YouPHPTube | 操作系统命令注入 | 9.8 | N | [Y](CVE-2019-5127/poc/nuclei/) | [Y](CVE-2019-5127/poc/xray/) | N | N | N | N | N |
 | CVE-2019-5128 |  | 操作系统命令注入 | 9.8 | N | N | [Y](CVE-2019-5128/poc/xray/) | N | N | N | N | N |
