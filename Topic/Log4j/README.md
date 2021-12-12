@@ -12,3 +12,7 @@
 ## Bypass
 
 - [Bypass WAF](Bypass)
+
+## Honeypot
+
+- [Honeypot](Honeypot)
