@@ -23,6 +23,10 @@ Now reapoc support these poc:
 [goby](https://github.com/goby-lang/goby),
 oneliner
 
+## Topic
+
+- [Log4j](Topic/Log4j/)
+
 ## Menu
 
 <table>
@@ -51,7 +55,7 @@ oneliner
 |   2018   |   115   |   [2018/](2018/)   |
 |   2019   |   117   |   [2019/](2019/)   |
 |   2020   |   181   |   [2020/](2020/)   |
-|   2021   |   201   |   [2021/](2021/)   |
+|   2021   |   202   |   [2021/](2021/)   |
 
 </td>
 </tr>

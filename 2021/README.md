@@ -177,6 +177,7 @@
 | CVE-2021-40438 | Apache | 代码问题 | 9 | [Y](CVE-2021-40438/vultarget/) | [Y](CVE-2021-40438/poc/nuclei/) | [Y](CVE-2021-40438/poc/xray/) | N | N | [Y](CVE-2021-40438/poc/goby/) | N | [Y](CVE-2021-40438/poc/others/) |
 | CVE-2021-40539 | ManageEngine ADSelfService Plus | 授权问题 | 9.8 | N | [Y](CVE-2021-40539/poc/nuclei/) | N | N | N | [Y](CVE-2021-40539/poc/goby/) | N | [Y](CVE-2021-40539/poc/others/) |
 | CVE-2021-40542 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-40542/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-40856 |  | 其他 |  | N | [Y](CVE-2021-40856/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-40868 |  | 其他 | 6.1 | N | [Y](CVE-2021-40868/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40868/poc/others/) |
 | CVE-2021-40870 | Aviatrix Controller | 其他 | 9.8 | N | [Y](CVE-2021-40870/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40870/poc/others/) |
 | CVE-2021-40875 |  | 信息泄露 | 7.5 | N | [Y](CVE-2021-40875/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40875/poc/others/) |
@@ -206,5 +207,5 @@
 | CVE-2021-43495 |  | 其他 | 7.5 | N | [Y](CVE-2021-43495/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-43778 |  | 路径遍历 | 7.5 | N | [Y](CVE-2021-43778/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-43778/poc/others/) |
 | CVE-2021-43798 | Grafana | 任意文件读取 | 7.5 | [Y](CVE-2021-43798/vultarget/) | [Y](CVE-2021-43798/poc/nuclei/) | [Y](CVE-2021-43798/poc/xray/) | [Y](CVE-2021-43798/poc/pocsuite2/) | N | N | [Y](CVE-2021-43798/poc/oneliner/) | [Y](CVE-2021-43798/poc/others/) |
-| CVE-2021-44228 | JAVA | 代码执行  | 10 | [Y](CVE-2021-44228/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2021-44228 | JAVA | 代码执行  | 10 | [Y](CVE-2021-44228/vultarget/) | [Y](CVE-2021-44228/poc/nuclei/) | N | N | N | N | [Y](CVE-2021-44228/poc/oneliner/) | N |
 | CVE-2021-44427 |  | 其他 | 9.8 | N | [Y](CVE-2021-44427/poc/nuclei/) | N | N | N | N | N | N |
