@@ -1,8 +1,10 @@
 ## Apps
 
-- [Struts官方用例showcase触发log4j RCE](App/struts-showcase)
+- [Struts官方用例showcase触发log4j RCE](App/Apache-Struts2-showcase)
+- [Apache Struts2 log4j RCE](App/Apache-Struts2)
 - [VMWare-vcenter log4j RCE](App/VMWare-vcenter)
 - [Apache Solr log4j RCE](App/Apache-Solr)
+- [Apache James log4j RCE](App/Apache-James)
 
 ## Info
 
