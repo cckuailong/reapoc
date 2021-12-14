@@ -5,6 +5,7 @@
 - [VMWare-vcenter log4j RCE](App/VMWare-vcenter)
 - [Apache Solr log4j RCE](App/Apache-Solr)
 - [Apache James log4j RCE](App/Apache-James)
+- [Apache Flink log4j RCE](App/Apache-Apereo)
 
 ## Info
 
