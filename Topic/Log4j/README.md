@@ -1,3 +1,8 @@
+## Log4j Recent Vulns
+
+- [Log4j 1.x JNDI RCE](https://github.com/cckuailong/log4shell_1.x)
+- [Log4j 2.15 Privilege Escalation -- CVE-2021-45046](https://github.com/cckuailong/Log4j_CVE-2021-45046)
+
 ## Apps
 
 - [Struts官方用例showcase触发log4j RCE](App/Apache-Struts2-showcase)
@@ -5,7 +10,10 @@
 - [VMWare-vcenter log4j RCE](App/VMWare-vcenter)
 - [Apache Solr log4j RCE](App/Apache-Solr)
 - [Apache James log4j RCE](App/Apache-James)
-- [Apache Flink log4j RCE](App/Apache-Apereo)
+- [Apache Flink log4j RCE](App/Apache-Flink)
+- [Apache Druid log4j RCE](App/Apache-Druid)
+- [Apache JspWiki log4j RCE](App/Apache-JspWiki)
+- [Apache OFBiz log4j RCE](App/Apache-OFBiz)
 
 ## Info
 

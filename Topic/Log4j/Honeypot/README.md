@@ -1,1 +1,3 @@
 - [minecraft-log4j-honeypot](https://github.com/Adikso/minecraft-log4j-honeypot)
+- [log4j-honeypot-flask](https://github.com/BinaryDefense/log4j-honeypot-flask)
+- [log4j-honeypot-header](https://github.com/sysgoblin/log4shell-honeypot)
