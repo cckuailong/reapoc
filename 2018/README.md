@@ -107,6 +107,7 @@
 | CVE-2018-7251 | Anchor CMS | 信息泄露 | 9.8 | N | [Y](CVE-2018-7251/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7251/poc/others/) |
 | CVE-2018-7314 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2018-7314/poc/xray/) | N | N | N | N | [Y](CVE-2018-7314/poc/others/) |
 | CVE-2018-7422 | WordPress | 信息泄露 | 7.5 | N | [Y](CVE-2018-7422/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7422/poc/others/) |
+| CVE-2018-7467 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-7467/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-7490 | PHP | 信息泄露 | 7.5 | [Y](CVE-2018-7490/vultarget/) | [Y](CVE-2018-7490/poc/nuclei/) | [Y](CVE-2018-7490/poc/xray/) | N | N | N | N | [Y](CVE-2018-7490/poc/others/) |
 | CVE-2018-7600 | Drupal | 代码执行 | 9.8 | [Y](CVE-2018-7600/vultarget/) | [Y](CVE-2018-7600/poc/nuclei/) | [Y](CVE-2018-7600/poc/xray/) | N | N | N | N | [Y](CVE-2018-7600/poc/others/) |
 | CVE-2018-7662 |  | 信息泄露 | 5.3 | N | N | [Y](CVE-2018-7662/poc/xray/) | N | N | [Y](CVE-2018-7662/poc/goby/) | N | N |
