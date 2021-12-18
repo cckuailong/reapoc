@@ -75,3 +75,7 @@ Reapoc is only for learning purposes. Any direct or indirect consequences and lo
 ## License
 
 Reapoc is distributed under [Apache License](LICENSE)
+
+## Repobeats
+
+![Alt](https://repobeats.axiom.co/api/embed/601e2c5582df22243e66e9d015b4a079f8d7ce8b.svg "Repobeats analytics image")
