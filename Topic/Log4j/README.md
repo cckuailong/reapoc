@@ -1,8 +1,8 @@
 ## Log4j Recent Vulns
 
-- [Log4j 1.x JNDI RCE](https://github.com/cckuailong/log4shell_1.x)
+- [Log4j 1.x JNDI RCE -- CVE-2021-4104](https://github.com/cckuailong/log4shell_1.x)
 - [Log4j 2.15 Privilege Escalation -- CVE-2021-45046](https://github.com/cckuailong/Log4j_CVE-2021-45046)
-- [Log4j 2.16 Dos](https://github.com/cckuailong/Log4j_dos_CVE-2021-45105)
+- [Log4j 2.16 Dos -- CVE-2021-45105](https://github.com/cckuailong/Log4j_dos_CVE-2021-45105)
 
 ## Apps
 
