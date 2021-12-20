@@ -19,6 +19,12 @@
 - [VMWare-Horizon log4j RCE](App/VMWare-Horizon)
 - [VMWare-Workspace-One log4j RCE](App/VMWare-Workspace-One)
 
+## Mindmap
+
+- [Am I Vulnerable to Log4Shell?](Mindmap/AmIVulnerable-Log4shell-v6.1.png)
+- [Shield Log4Shell -- v1.x](Mindmap/Shield-Log4shell-v1.png)
+- [Detect Log4Shell -- v2.x](Mindmap/v2-detectLog4shell.png)
+
 ## Info
 
 - [Poc && Vultarget](../../2021/CVE-2021-44228)
