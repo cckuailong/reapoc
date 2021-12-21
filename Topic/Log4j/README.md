@@ -21,6 +21,7 @@
 
 ## Mindmap
 
+- [Overview for Log4Shell](Mindmap/Overview_Log4Shell.jpeg)
 - [Am I Vulnerable to Log4Shell?](Mindmap/AmIVulnerable-Log4shell-v6.1.png)
 - [Shield Log4Shell -- v1.x](Mindmap/Shield-Log4shell-v1.png)
 - [Detect Log4Shell -- v2.x](Mindmap/v2-detectLog4shell.png)
