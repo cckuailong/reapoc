@@ -15,6 +15,7 @@
 - [Apache-JspWiki log4j RCE](App/Apache-JspWiki)
 - [Apache-OFBiz log4j RCE](App/Apache-OFBiz)
 - [MobileIron-User-Portal log4j RCE](App/MobileIron-User-Portal)
+- [Unifi-Network log4j RCE](App/Unifi-Network)
 - [VMWare-vCenter log4j RCE](App/VMWare-vCenter)
 - [VMWare-Horizon log4j RCE](App/VMWare-Horizon)
 - [VMWare-Workspace-One log4j RCE](App/VMWare-Workspace-One)

