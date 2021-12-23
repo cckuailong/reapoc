@@ -1,6 +1,6 @@
 # Apache Struts2 log4j RCE
 
-## 一键拉起showcase环境
+## vulnerable app
 
 ```
 docker pull vultarget/log4j2-struts2-showcase:2.14.1

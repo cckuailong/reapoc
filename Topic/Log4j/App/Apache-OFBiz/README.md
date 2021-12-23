@@ -1,5 +1,11 @@
 # Apache OFBiz log4j RCE
 
+## Version
+
+```
+OFBiz < v18.12.03
+```
+
 ## vulnerable app
 
 ```
