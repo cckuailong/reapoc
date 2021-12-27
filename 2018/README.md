@@ -36,6 +36,7 @@
 | CVE-2018-12054 | PHP-Mall | 路径遍历 | 7.5 | N | [Y](CVE-2018-12054/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12054/poc/others/) |
 | CVE-2018-1207 | Dell-iDRAC | 代码执行  | 9.8 | N | [Y](CVE-2018-1207/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-12095 |  | 跨站脚本 | 5.4 | N | [Y](CVE-2018-12095/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12095/poc/others/) |
+| CVE-2018-1247 |  | 资料不足 | 7.1 | N | [Y](CVE-2018-1247/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-12613 | phpMyAdmin | 本地文件包含 | 8.8 | [Y](CVE-2018-12613/vultarget/) | [Y](CVE-2018-12613/poc/nuclei/) | [Y](CVE-2018-12613/poc/xray/) | N | N | N | N | [Y](CVE-2018-12613/poc/others/) |
 | CVE-2018-12634 | CirCarLife Scada | 信息泄露 | 9.8 | N | [Y](CVE-2018-12634/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12634/poc/others/) |
 | CVE-2018-1270 | Spring | 代码注入 | 9.8 | N | N | N | [Y](CVE-2018-1270/poc/pocsuite2/) | [Y](CVE-2018-1270/poc/pocsuite3/) | N | N | [Y](CVE-2018-1270/poc/others/) |

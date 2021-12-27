@@ -12,7 +12,7 @@
 | CVE-2020-10124 |  | 访问控制错误 | 7.1 | N | [Y](CVE-2020-10124/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-10148 | SolarWinds-Orion | 代码执行  | 9.8 | N | [Y](CVE-2020-10148/poc/nuclei/) | [Y](CVE-2020-10148/poc/xray/) | N | N | N | N | [Y](CVE-2020-10148/poc/others/) |
 | CVE-2020-10199 | Nexus-Repository-Manager | 命令执行 | 8.8 | [Y](CVE-2020-10199/vultarget/) | [Y](CVE-2020-10199/poc/nuclei/) | [Y](CVE-2020-10199/poc/xray/) | N | N | N | N | [Y](CVE-2020-10199/poc/others/) |
-| CVE-2020-10204 | Nexus-Repository-Manager | 命令执行 | 7.2 | [Y](CVE-2020-10204/vultarget/) | N | [Y](CVE-2020-10204/poc/xray/) | N | N | N | N | [Y](CVE-2020-10204/poc/others/) |
+| CVE-2020-10204 | Nexus-Repository-Manager | 命令执行 | 7.2 | [Y](CVE-2020-10204/vultarget/) | [Y](CVE-2020-10204/poc/nuclei/) | [Y](CVE-2020-10204/poc/xray/) | N | N | N | N | [Y](CVE-2020-10204/poc/others/) |
 | CVE-2020-10220 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-10220/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-10546 | rConfig | SQL注入 | 9.8 | N | [Y](CVE-2020-10546/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-10547 | rConfig | SQL注入 | 9.8 | N | [Y](CVE-2020-10547/poc/nuclei/) | N | N | N | N | N | N |
@@ -22,6 +22,7 @@
 | CVE-2020-11034 | GLPI | 输入验证错误 | 6.1 | N | [Y](CVE-2020-11034/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11110 | Grafana | 跨站脚本 | 6.1 | N | [Y](CVE-2020-11110/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11455 |  | 路径遍历 | 5.3 | N | [Y](CVE-2020-11455/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-11455/poc/others/) |
+| CVE-2020-1147 | Microsoft SharePoint | 其他 | 7.8 | N | [Y](CVE-2020-1147/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11530 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-11530/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11547 |  | 信息泄露 | 5.3 | N | [Y](CVE-2020-11547/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-11547/poc/others/) |
 | CVE-2020-11581 |  | 操作系统命令注入 | 8.1 | N | [Y](CVE-2020-11581/poc/nuclei/) | N | N | N | N | N | N |
@@ -181,6 +182,7 @@
 | CVE-2020-7796 |  | 代码问题 | 9.8 | N | [Y](CVE-2020-7796/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-7961 | Liferay Portal | 代码问题 | 9.8 | [Y](CVE-2020-7961/vultarget/) | [Y](CVE-2020-7961/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-7961/poc/others/) |
 | CVE-2020-7980 | Intellian Aptus Web | 操作系统命令注入 | 9.8 | N | N | [Y](CVE-2020-7980/poc/xray/) | N | N | N | N | [Y](CVE-2020-7980/poc/others/) |
+| CVE-2020-8091 | TYPO3 | 跨站脚本 | 6.1 | N | [Y](CVE-2020-8091/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-8115 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-8115/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-8163 | Ruby on Rails | 代码执行  | 8.8 | [Y](CVE-2020-8163/vultarget/) | [Y](CVE-2020-8163/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-8163/poc/others/) |
 | CVE-2020-8191 | Citrix-Gateway | 跨站脚本 | 6.1 | N | [Y](CVE-2020-8191/poc/nuclei/) | [Y](CVE-2020-8191/poc/xray/) | N | N | N | N | N |

@@ -77,6 +77,8 @@
 | CVE-2019-18922 | AlliedTelesis-AT交换机 | 路径遍历 | 7.5 | N | [Y](CVE-2019-18922/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-19134 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2019-19134/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-19368 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2019-19368/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-19368/poc/others/) |
+| CVE-2019-19719 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2019-19719/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2019-19743 |  | 输入验证错误 | 6.5 | N | [Y](CVE-2019-19743/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-19781 | Citrix-NetScaler-Gateway | 信息泄露 | 9.8 | N | [Y](CVE-2019-19781/poc/nuclei/) | [Y](CVE-2019-19781/poc/xray/) | N | N | N | N | [Y](CVE-2019-19781/poc/others/) |
 | CVE-2019-19824 | TOTOLINK-公司产品 | 操作系统命令注入 | 8.8 | N | [Y](CVE-2019-19824/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-19908 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2019-19908/poc/nuclei/) | N | N | N | N | N | N |
@@ -85,6 +87,7 @@
 | CVE-2019-20141 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2019-20141/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-20183 |  | 其他 | 7.2 | N | [Y](CVE-2019-20183/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-20224 |  | 操作系统命令注入 | 8.8 | N | N | [Y](CVE-2019-20224/poc/xray/) | N | N | N | N | [Y](CVE-2019-20224/poc/others/) |
+| CVE-2019-20354 |  | 其他 | 4.3 | N | [Y](CVE-2019-20354/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-2578 | Oracle-Fusion-Middleware | 访问控制错误 | 8.6 | N | [Y](CVE-2019-2578/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-2579 | Oracle-Fusion-Middleware | 信息泄露 | 4.3 | N | [Y](CVE-2019-2579/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-2588 | Oracle-Fusion-Middleware | 信息泄露 | 4.9 | N | [Y](CVE-2019-2588/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-2588/poc/others/) |
