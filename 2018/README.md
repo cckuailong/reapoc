@@ -50,10 +50,13 @@
 | CVE-2018-14064 |  | 路径遍历 | 9.8 | N | [Y](CVE-2018-14064/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-14064/poc/others/) |
 | CVE-2018-14574 | Django | URL 重定向 | 6.1 | [Y](CVE-2018-14574/vultarget/) | [Y](CVE-2018-14574/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-14728 |  | 资料不足 | 9.8 | N | [Y](CVE-2018-14728/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-14728/poc/others/) |
+| CVE-2018-14912 |  | 路径遍历 | 7.5 | N | N | N | N | N | N | N | N |
 | CVE-2018-14916 | Loytec LGATE-902 | 代码问题 | 9.1 | N | [Y](CVE-2018-14916/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-15138 |  | 路径遍历 | 7.5 | N | N | N | N | N | N | N | N |
 | CVE-2018-15473 | OpenSSH | 信息泄露 | 5.3 | [Y](CVE-2018-15473/vultarget/) | [Y](CVE-2018-15473/poc/nuclei/) | N | [Y](CVE-2018-15473/poc/pocsuite2/) | N | N | N | [Y](CVE-2018-15473/poc/others/) |
 | CVE-2018-15517 |  | 资料不足 | 8.6 | N | [Y](CVE-2018-15517/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-15535 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-15535/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15535/poc/others/) |
+| CVE-2018-15640 |  | 访问控制错误 | 8.8 | N | [Y](CVE-2018-15640/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-15745 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-15745/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15745/poc/others/) |
 | CVE-2018-15961 | Adobe ColdFusion | 代码问题 | 9.8 | N | [Y](CVE-2018-15961/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15961/poc/others/) |
 | CVE-2018-16059 | WirelessHART-Gateways | 路径遍历 | 5.3 | N | [Y](CVE-2018-16059/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-16059/poc/others/) |
@@ -72,7 +75,9 @@
 | CVE-2018-17254 | Joomla | SQL注入 | 9.8 | N | [Y](CVE-2018-17254/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-17254/poc/others/) |
 | CVE-2018-17431 | Comodo-Web-Application-Firewall | 授权问题 | 9.8 | N | [Y](CVE-2018-17431/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-17431/poc/others/) |
 | CVE-2018-18069 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2018-18069/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-18264 |  | 访问控制错误 | 7.5 | N | [Y](CVE-2018-18264/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-18323 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-18323/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18323/poc/others/) |
+| CVE-2018-18326 |  | 安全特征问题 | 7.5 | N | [Y](CVE-2018-18326/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-18570 | Planon | 跨站脚本 | 6.1 | N | [Y](CVE-2018-18570/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-18775 | MicroStrategy-MicroStrategy-Software | 跨站脚本 | 6.1 | N | [Y](CVE-2018-18775/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18775/poc/others/) |
 | CVE-2018-18777 | MicroStrategy-MicroStrategy-Software | 路径遍历 | 4.3 | N | [Y](CVE-2018-18777/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18777/poc/others/) |
@@ -84,6 +89,7 @@
 | CVE-2018-19439 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-19439/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-19458 | PHP | 授权问题 | 7.5 | N | [Y](CVE-2018-19458/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-19458/poc/others/) |
 | CVE-2018-19753 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-19753/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-20062 | cmsms | 输入验证 | 9.8 | N | [Y](CVE-2018-20062/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-20462 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2018-20462/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-20470 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-20470/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-20470/poc/others/) |
 | CVE-2018-20824 | JIRA | 跨站脚本 | 6.1 | N | [Y](CVE-2018-20824/poc/nuclei/) | N | N | N | N | N | N |
@@ -102,6 +108,7 @@
 | CVE-2018-5233 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-5233/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-5316 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2018-5316/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-6008 |  | 信息泄露 | 7.5 | N | [Y](CVE-2018-6008/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-6008/poc/others/) |
+| CVE-2018-6389 | WordPress | 资源管理错误 | 7.5 | N | [Y](CVE-2018-6389/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-6605 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2018-6605/poc/xray/) | N | N | N | N | [Y](CVE-2018-6605/poc/others/) |
 | CVE-2018-6910 |  | 信息泄露 | 5.3 | N | [Y](CVE-2018-6910/poc/nuclei/) | [Y](CVE-2018-6910/poc/xray/) | N | N | [Y](CVE-2018-6910/poc/goby/) | N | N |
 | CVE-2018-7251 | Anchor CMS | 信息泄露 | 9.8 | N | [Y](CVE-2018-7251/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7251/poc/others/) |
@@ -120,6 +127,7 @@
 | CVE-2018-8727 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-8727/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-8770 |  | 信息泄露 | 5.3 | N | [Y](CVE-2018-8770/poc/nuclei/) | [Y](CVE-2018-8770/poc/xray/) | N | N | N | N | [Y](CVE-2018-8770/poc/others/) |
 | CVE-2018-9118 | WordPress | 路径遍历 | 7.5 | N | [Y](CVE-2018-9118/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9118/poc/others/) |
+| CVE-2018-9126 |  | 信息泄露 | 9.8 | N | [Y](CVE-2018-9126/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-9205 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-9205/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9205/poc/others/) |
 | CVE-2018-9845 | Etherpad-Lite | 权限许可和访问控制问题 | 9.8 | N | [Y](CVE-2018-9845/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-9995 | DVR | 信任管理问题 | 9.8 | N | [Y](CVE-2018-9995/poc/nuclei/) | [Y](CVE-2018-9995/poc/xray/) | N | N | N | N | [Y](CVE-2018-9995/poc/others/) |

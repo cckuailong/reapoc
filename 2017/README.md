@@ -55,8 +55,10 @@
 | CVE-2017-5645 | ALLSCAN | 命令执行 | 9.8 | [Y](CVE-2017-5645/vultarget/) | N | N | N | N | N | N | [Y](CVE-2017-5645/poc/others/) |
 | CVE-2017-5982 | KodiTV | 路径遍历 | 7.5 | N | [Y](CVE-2017-5982/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-5982/poc/others/) |
 | CVE-2017-6090 |  | 资料不足 | 8.8 | N | [Y](CVE-2017-6090/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-6090/poc/others/) |
+| CVE-2017-6361 | QNAP Turbo Station | 操作系统命令注入 | 9.8 | N | N | N | N | N | N | N | N |
 | CVE-2017-7269 | IIS | 缓冲区溢出 | 9.8 | N | [Y](CVE-2017-7269/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-7269/poc/others/) |
 | CVE-2017-7391 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2017-7391/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2017-7529 | Nginx | 整数溢出 | 7.5 | N | [Y](CVE-2017-7529/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-7615 |  | 资料不足 | 8.8 | N | [Y](CVE-2017-7615/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-7615/poc/others/) |
 | CVE-2017-7921 | 海康威视-公司产品 | 授权问题 | 10 | N | [Y](CVE-2017-7921/poc/nuclei/) | [Y](CVE-2017-7921/poc/xray/) | N | N | N | N | [Y](CVE-2017-7921/poc/others/) |
 | CVE-2017-8046 | Spring | 输入验证错误 | 9.8 | N | N | N | [Y](CVE-2017-8046/poc/pocsuite2/) | [Y](CVE-2017-8046/poc/pocsuite3/) | N | N | [Y](CVE-2017-8046/poc/others/) |

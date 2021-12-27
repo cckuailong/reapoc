@@ -26,7 +26,6 @@ oneliner
 ## Topic
 
 - [Log4j](Topic/Log4j/)
-- [Logback](Topic/Logback/)
 
 ## Menu
 
@@ -50,13 +49,13 @@ oneliner
 |   2012   |   19   |   [2012/](2012/)   |
 |   2013   |   11   |   [2013/](2013/)   |
 |   2014   |   37   |   [2014/](2014/)   |
-|   2015   |   32   |   [2015/](2015/)   |
+|   2015   |   35   |   [2015/](2015/)   |
 |   2016   |   44   |   [2016/](2016/)   |
-|   2017   |   61   |   [2017/](2017/)   |
-|   2018   |   116   |   [2018/](2018/)   |
-|   2019   |   117   |   [2019/](2019/)   |
-|   2020   |   181   |   [2020/](2020/)   |
-|   2021   |   206   |   [2021/](2021/)   |
+|   2017   |   63   |   [2017/](2017/)   |
+|   2018   |   124   |   [2018/](2018/)   |
+|   2019   |   121   |   [2019/](2019/)   |
+|   2020   |   205   |   [2020/](2020/)   |
+|   2021   |   212   |   [2021/](2021/)   |
 
 </td>
 </tr>
@@ -76,7 +75,3 @@ Reapoc is only for learning purposes. Any direct or indirect consequences and lo
 ## License
 
 Reapoc is distributed under [Apache License](LICENSE)
-
-## Repobeats
-
-![Alt](https://repobeats.axiom.co/api/embed/601e2c5582df22243e66e9d015b4a079f8d7ce8b.svg "Repobeats analytics image")

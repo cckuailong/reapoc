@@ -76,8 +76,9 @@
 | CVE-2021-25282 |  | 路径遍历 | 9.1 | N | N | [Y](CVE-2021-25282/poc/xray/) | N | N | N | N | N |
 | CVE-2021-25646 | Apache-Druid | 命令执行 | 8.8 | N | [Y](CVE-2021-25646/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-25646/poc/others/) |
 | CVE-2021-26084 | Confluence | 命令执行 | 9.8 | [Y](CVE-2021-26084/vultarget/) | [Y](CVE-2021-26084/poc/nuclei/) | [Y](CVE-2021-26084/poc/xray/) | N | N | [Y](CVE-2021-26084/poc/goby/) | N | [Y](CVE-2021-26084/poc/others/) |
-| CVE-2021-26085 | Confluence | 任意文件读取 | 5.3 | N | N | [Y](CVE-2021-26085/poc/xray/) | N | N | N | N | [Y](CVE-2021-26085/poc/others/) |
+| CVE-2021-26085 | Confluence | 任意文件读取 | 5.3 | N | [Y](CVE-2021-26085/poc/nuclei/) | [Y](CVE-2021-26085/poc/xray/) | N | N | N | N | [Y](CVE-2021-26085/poc/others/) |
 | CVE-2021-26086 | JIRA | 任意文件读取 | 5.3 | N | [Y](CVE-2021-26086/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-26086/poc/others/) |
+| CVE-2021-26119 |  | 其他 | 7.5 | N | [Y](CVE-2021-26119/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-26295 | Apache OFBiz | 其他 | 9.8 | N | [Y](CVE-2021-26295/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-26295/poc/others/) |
 | CVE-2021-26475 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-26475/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-26710 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-26710/poc/nuclei/) | N | N | N | N | N | N |
@@ -89,6 +90,7 @@
 | CVE-2021-27132 |  | 注入 | 9.8 | N | [Y](CVE-2021-27132/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-27310 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-27310/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-27330 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-27330/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-27358 |  | 其他 | 7.5 | N | N | N | N | N | N | N | N |
 | CVE-2021-27561 |  | 其他 | 9.8 | N | [Y](CVE-2021-27561/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-27651 | Pega Infinity | 授权问题 | 9.8 | N | [Y](CVE-2021-27651/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-27651/poc/others/) |
 | CVE-2021-27850 |  | 其他 | 9.8 | N | [Y](CVE-2021-27850/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-27850/poc/others/) |
@@ -179,6 +181,7 @@
 | CVE-2021-40539 | ManageEngine ADSelfService Plus | 授权问题 | 9.8 | N | [Y](CVE-2021-40539/poc/nuclei/) | N | N | N | [Y](CVE-2021-40539/poc/goby/) | N | [Y](CVE-2021-40539/poc/others/) |
 | CVE-2021-40542 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-40542/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-40856 |  | 其他 | 7.5 | N | [Y](CVE-2021-40856/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-40859 | COMpact 5500R | 其他 | 9.8 | N | N | N | N | N | N | N | N |
 | CVE-2021-40868 |  | 其他 | 6.1 | N | [Y](CVE-2021-40868/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40868/poc/others/) |
 | CVE-2021-40870 | Aviatrix Controller | 其他 | 9.8 | N | [Y](CVE-2021-40870/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40870/poc/others/) |
 | CVE-2021-40875 |  | 信息泄露 | 7.5 | N | [Y](CVE-2021-40875/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40875/poc/others/) |
@@ -194,7 +197,7 @@
 | CVE-2021-41467 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-41467/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-41648 | PuneethReddyHc Online Shopping | SQL注入 | 7.5 | N | [Y](CVE-2021-41648/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-41648/poc/others/) |
 | CVE-2021-41649 | PuneethReddyHc Online Shopping | SQL注入 | 9.8 | N | [Y](CVE-2021-41649/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-41649/poc/others/) |
-| CVE-2021-41653 | TP-LINK-Wireless-WR840N | 其他 | 9.8 | N | [Y](CVE-2021-41653/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-41653/poc/others/) |
+| CVE-2021-41653 | TP-LINK-Wireless-WR840N | 命令执行 | 9.8 | N | [Y](CVE-2021-41653/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-41653/poc/others/) |
 | CVE-2021-41773 | Apache-Web-Server | 任意文件读取 | 7.5 | [Y](CVE-2021-41773/vultarget/) | [Y](CVE-2021-41773/poc/nuclei/) | [Y](CVE-2021-41773/poc/xray/) | [Y](CVE-2021-41773/poc/pocsuite2/) | [Y](CVE-2021-41773/poc/pocsuite3/) | [Y](CVE-2021-41773/poc/goby/) | N | [Y](CVE-2021-41773/poc/others/) |
 | CVE-2021-41826 |  | 权限许可和访问控制问题 | 6.1 | N | [Y](CVE-2021-41826/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-41826/poc/others/) |
 | CVE-2021-41878 |  | 其他 | 6.1 | N | [Y](CVE-2021-41878/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-41878/poc/others/) |
@@ -212,4 +215,7 @@
 | CVE-2021-44228 | JAVA | 输入验证错误 | 10 | [Y](CVE-2021-44228/vultarget/) | [Y](CVE-2021-44228/poc/nuclei/) | N | N | N | N | [Y](CVE-2021-44228/poc/oneliner/) | N |
 | CVE-2021-44427 |  | 其他 | 9.8 | N | [Y](CVE-2021-44427/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-44528 | Unknown | Unknown | Unknown | N | [Y](CVE-2021-44528/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-45043 |  | 其他 |  | N | [Y](CVE-2021-45043/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-44848 |  | 其他 | 5.3 | N | N | N | N | N | N | N | N |
+| CVE-2021-45043 |  | 其他 | 7.5 | N | [Y](CVE-2021-45043/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-45046 |  | 其他 | 9 | N | N | N | N | N | N | N | N |
+| CVE-2021-45092 |  | 其他 | 9.8 | N | N | N | N | N | N | N | N |

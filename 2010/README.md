@@ -72,7 +72,7 @@
 | CVE-2010-1723 | Joomla | 路径遍历 |  | N | [Y](CVE-2010-1723/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-1723/poc/others/) |
 | CVE-2010-1858 |  | 路径遍历 |  | N | [Y](CVE-2010-1858/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-1858/poc/others/) |
 | CVE-2010-1870 | Struts2 | 安全模式绕过 |  | N | [Y](CVE-2010-1870/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-1870/poc/others/) |
-| CVE-2010-1871 | JBoss | 输入验证 |  | N | N | [Y](CVE-2010-1871/poc/xray/) | N | N | N | N | [Y](CVE-2010-1871/poc/others/) |
+| CVE-2010-1871 | JBoss | 输入验证 |  | N | [Y](CVE-2010-1871/poc/nuclei/) | [Y](CVE-2010-1871/poc/xray/) | N | N | N | N | [Y](CVE-2010-1871/poc/others/) |
 | CVE-2010-1873 |  | SQL注入 |  | N | [Y](CVE-2010-1873/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-1873/poc/others/) |
 | CVE-2010-1875 |  | 路径遍历 |  | N | [Y](CVE-2010-1875/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-1875/poc/others/) |
 | CVE-2010-1878 |  | 路径遍历 |  | N | [Y](CVE-2010-1878/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2010-1878/poc/others/) |
