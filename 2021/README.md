@@ -215,7 +215,7 @@
 | CVE-2021-44228 | JAVA | 输入验证错误 | 10 | [Y](CVE-2021-44228/vultarget/) | [Y](CVE-2021-44228/poc/nuclei/) | N | N | N | N | [Y](CVE-2021-44228/poc/oneliner/) | N |
 | CVE-2021-44427 |  | 其他 | 9.8 | N | [Y](CVE-2021-44427/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-44528 | Unknown | Unknown | Unknown | N | [Y](CVE-2021-44528/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-44848 |  | 其他 | 5.3 | N | N | N | N | N | N | N | N |
+| CVE-2021-44848 |  | 其他 | 5.3 | N | N | N | N | N | N | N | [Y](CVE-2021-44848/poc/others/) |
 | CVE-2021-45043 |  | 其他 | 7.5 | N | [Y](CVE-2021-45043/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-45046 |  | 其他 | 9 | N | N | N | N | N | N | N | N |
-| CVE-2021-45092 |  | 其他 | 9.8 | N | N | N | N | N | N | N | N |
+| CVE-2021-45046 |  | 其他 | 9 | N | N | N | N | N | N | N | [Y](CVE-2021-45046/poc/others/) |
+| CVE-2021-45232 | Apache APISIX Dashboard | 未授权访问 |  | [Y](CVE-2021-45232/vultarget/) | N | N | N | N | N | N | N |
