@@ -3,6 +3,7 @@
 - [Log4j 1.x JNDI RCE -- CVE-2021-4104](https://github.com/cckuailong/log4shell_1.x)
 - [Log4j 2.15 Privilege Escalation -- CVE-2021-45046](https://github.com/cckuailong/Log4j_CVE-2021-45046)
 - [Log4j 2.16 Dos -- CVE-2021-45105](https://github.com/cckuailong/Log4j_dos_CVE-2021-45105)
+- [Log4j 2.17 RCE -- CVE-2021-44832(public later)](https://github.com/cckuailong/log4j_RCE_CVE-2021-44832)
 
 ## Apps
 

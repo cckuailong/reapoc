@@ -24,6 +24,7 @@
 | CVE-2020-11455 |  | 路径遍历 | 5.3 | N | [Y](CVE-2020-11455/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-11455/poc/others/) |
 | CVE-2020-1147 | Microsoft SharePoint | 其他 | 7.8 | N | [Y](CVE-2020-1147/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11530 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-11530/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-11546 |  | 注入 | 9.8 | N | [Y](CVE-2020-11546/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11547 |  | 信息泄露 | 5.3 | N | [Y](CVE-2020-11547/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-11547/poc/others/) |
 | CVE-2020-11581 |  | 操作系统命令注入 | 8.1 | N | [Y](CVE-2020-11581/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11710 | Kong API Gateway | 其他 | 9.8 | N | [Y](CVE-2020-11710/poc/nuclei/) | [Y](CVE-2020-11710/poc/xray/) | N | N | N | N | N |
