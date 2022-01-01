@@ -74,7 +74,7 @@
 | CVE-2021-24997 |  | 其他 |  | N | [Y](CVE-2021-24997/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-25281 | saltstack-web | 其他 | 9.8 | N | [Y](CVE-2021-25281/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-25281/poc/others/) |
 | CVE-2021-25282 |  | 路径遍历 | 9.1 | N | N | [Y](CVE-2021-25282/poc/xray/) | N | N | N | N | N |
-| CVE-2021-25646 | Apache-Druid | 命令执行 | 8.8 | N | [Y](CVE-2021-25646/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-25646/poc/others/) |
+| CVE-2021-25646 | Apache-Druid | 命令执行 | 8.8 | [Y](CVE-2021-25646/vultarget/) | [Y](CVE-2021-25646/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-25646/poc/others/) |
 | CVE-2021-26084 | Confluence | 命令执行 | 9.8 | [Y](CVE-2021-26084/vultarget/) | [Y](CVE-2021-26084/poc/nuclei/) | [Y](CVE-2021-26084/poc/xray/) | N | N | [Y](CVE-2021-26084/poc/goby/) | N | [Y](CVE-2021-26084/poc/others/) |
 | CVE-2021-26085 | Confluence | 任意文件读取 | 5.3 | N | [Y](CVE-2021-26085/poc/nuclei/) | [Y](CVE-2021-26085/poc/xray/) | N | N | N | N | [Y](CVE-2021-26085/poc/others/) |
 | CVE-2021-26086 | JIRA | 任意文件读取 | 5.3 | N | [Y](CVE-2021-26086/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-26086/poc/others/) |
@@ -160,7 +160,7 @@
 | CVE-2021-36260 | Hikvision | 命令注入 | 9.8 | N | [Y](CVE-2021-36260/poc/nuclei/) | [Y](CVE-2021-36260/poc/xray/) | N | N | [Y](CVE-2021-36260/poc/goby/) | N | [Y](CVE-2021-36260/poc/others/) |
 | CVE-2021-36380 | web | 操作系统命令注入 | 9.8 | N | [Y](CVE-2021-36380/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-3654 | OpenStack | url重定向 |  | N | [Y](CVE-2021-3654/poc/nuclei/) | [Y](CVE-2021-3654/poc/xray/) | N | N | N | N | N |
-| CVE-2021-36749 | Apache-Druid | 任意文件读取 | 6.5 | N | [Y](CVE-2021-36749/poc/nuclei/) | [Y](CVE-2021-36749/poc/xray/) | N | N | [Y](CVE-2021-36749/poc/goby/) | N | [Y](CVE-2021-36749/poc/others/) |
+| CVE-2021-36749 | Apache-Druid | 任意文件读取 | 6.5 | [Y](CVE-2021-36749/vultarget/) | [Y](CVE-2021-36749/poc/nuclei/) | [Y](CVE-2021-36749/poc/xray/) | N | N | [Y](CVE-2021-36749/poc/goby/) | N | [Y](CVE-2021-36749/poc/others/) |
 | CVE-2021-37216 |  | 其他 | 6.1 | N | [Y](CVE-2021-37216/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-37538 |  | SQL注入 | 9.8 | N | [Y](CVE-2021-37538/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-37573 |  | 其他 | 6.1 | N | [Y](CVE-2021-37573/poc/nuclei/) | N | N | N | N | N | N |
