@@ -34,7 +34,7 @@
 | CVE-2016-1000154 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2016-1000154/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-1000155 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2016-1000155/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-10033 | WordPress | 代码执行 | 9.8 | [Y](CVE-2016-10033/vultarget/) | [Y](CVE-2016-10033/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2016-10033/poc/others/) |
-| CVE-2016-10134 | Zabbix | SQL注入 | 9.8 | [Y](CVE-2016-10134/vultarget/) | N | [Y](CVE-2016-10134/poc/xray/) | N | N | N | N | [Y](CVE-2016-10134/poc/others/) |
+| CVE-2016-10134 | Zabbix | SQL注入 | 9.8 | [Y](CVE-2016-10134/vultarget/) | [Y](CVE-2016-10134/poc/nuclei/) | [Y](CVE-2016-10134/poc/xray/) | N | N | N | N | [Y](CVE-2016-10134/poc/others/) |
 | CVE-2016-10924 |  | 路径遍历 | 7.5 | N | [Y](CVE-2016-10924/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-10956 | WordPress | 输入验证错误 | 7.5 | N | [Y](CVE-2016-10956/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-10960 | WordPress | 代码执行  | 8.8 | N | [Y](CVE-2016-10960/poc/nuclei/) | N | N | N | N | N | N |
@@ -44,7 +44,7 @@
 | CVE-2016-3081 | Struts2 | 代码执行 | 8.1 | N | [Y](CVE-2016-3081/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2016-3081/poc/others/) |
 | CVE-2016-3088 | Apache-ActiveMQ | 命令执行 | 9.8 | [Y](CVE-2016-3088/vultarget/) | [Y](CVE-2016-3088/poc/nuclei/) | [Y](CVE-2016-3088/poc/xray/) | N | N | N | N | [Y](CVE-2016-3088/poc/others/) |
 | CVE-2016-4975 | web | 注入 | 6.1 | N | [Y](CVE-2016-4975/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2016-4977 | Spring | 配置风险 | 8.8 | [Y](CVE-2016-4977/vultarget/) | N | [Y](CVE-2016-4977/poc/xray/) | [Y](CVE-2016-4977/poc/pocsuite2/) | [Y](CVE-2016-4977/poc/pocsuite3/) | N | N | [Y](CVE-2016-4977/poc/others/) |
+| CVE-2016-4977 | Spring | 配置风险 | 8.8 | [Y](CVE-2016-4977/vultarget/) | [Y](CVE-2016-4977/poc/nuclei/) | [Y](CVE-2016-4977/poc/xray/) | [Y](CVE-2016-4977/poc/pocsuite2/) | [Y](CVE-2016-4977/poc/pocsuite3/) | N | N | [Y](CVE-2016-4977/poc/others/) |
 | CVE-2016-5649 |  | 信息泄露 | 9.8 | N | [Y](CVE-2016-5649/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-6210 | OpenSSH | 信息泄露 | 5.9 | N | [Y](CVE-2016-6210/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2016-6210/poc/others/) |
 | CVE-2016-6277 | Netgear router | 跨站请求伪造 | 8.8 | N | [Y](CVE-2016-6277/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2016-6277/poc/others/) |

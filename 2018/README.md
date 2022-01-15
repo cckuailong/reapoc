@@ -43,7 +43,7 @@
 | CVE-2018-1271 | Spring | 路径遍历 | 5.9 | N | [Y](CVE-2018-1271/poc/nuclei/) | N | [Y](CVE-2018-1271/poc/pocsuite2/) | [Y](CVE-2018-1271/poc/pocsuite3/) | N | N | N |
 | CVE-2018-1273 | Spring | 输入验证错误 | 9.8 | [Y](CVE-2018-1273/vultarget/) | [Y](CVE-2018-1273/poc/nuclei/) | N | [Y](CVE-2018-1273/poc/pocsuite2/) | [Y](CVE-2018-1273/poc/pocsuite3/) | N | N | [Y](CVE-2018-1273/poc/others/) |
 | CVE-2018-12998 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-12998/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2018-1335 | kentika | 命令执行 | 8.1 | N | [Y](CVE-2018-1335/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-1335/poc/others/) |
+| CVE-2018-1335 | APACHE-tika | 命令执行 | 8.1 | N | [Y](CVE-2018-1335/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-1335/poc/others/) |
 | CVE-2018-13379 | fortinet公司产品 | 目录遍历 | 9.8 | N | [Y](CVE-2018-13379/poc/nuclei/) | [Y](CVE-2018-13379/poc/xray/) | N | N | N | N | [Y](CVE-2018-13379/poc/others/) |
 | CVE-2018-13380 | Fortinet-FortiWeb | 跨站脚本 | 6.1 | N | [Y](CVE-2018-13380/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-13980 | ZetaProducerDesktopCMS | 路径遍历 | 5.5 | N | [Y](CVE-2018-13980/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-13980/poc/others/) |
@@ -53,7 +53,7 @@
 | CVE-2018-14728 |  | 资料不足 | 9.8 | N | [Y](CVE-2018-14728/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-14728/poc/others/) |
 | CVE-2018-14912 |  | 路径遍历 | 7.5 | N | N | N | N | N | N | N | N |
 | CVE-2018-14916 | Loytec LGATE-902 | 代码问题 | 9.1 | N | [Y](CVE-2018-14916/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2018-15138 |  | 路径遍历 | 7.5 | N | N | N | N | N | N | N | N |
+| CVE-2018-15138 | Ericsson-LG公司产品 | 路径遍历 | 7.5 | N | N | N | N | N | N | N | N |
 | CVE-2018-15473 | OpenSSH | 信息泄露 | 5.3 | [Y](CVE-2018-15473/vultarget/) | [Y](CVE-2018-15473/poc/nuclei/) | N | [Y](CVE-2018-15473/poc/pocsuite2/) | N | N | N | [Y](CVE-2018-15473/poc/others/) |
 | CVE-2018-15517 |  | 资料不足 | 8.6 | N | [Y](CVE-2018-15517/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-15535 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-15535/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15535/poc/others/) |

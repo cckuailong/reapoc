@@ -14,6 +14,7 @@
 | CVE-2014-2908 |  | 跨站脚本 |  | N | [Y](CVE-2014-2908/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-2908/poc/others/) |
 | CVE-2014-2962 | Belkin-Router | 路径遍历 |  | N | [Y](CVE-2014-2962/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-2962/poc/others/) |
 | CVE-2014-3120 | Elasticsearch | 命令执行 |  | [Y](CVE-2014-3120/vultarget/) | [Y](CVE-2014-3120/poc/nuclei/) | [Y](CVE-2014-3120/poc/xray/) | N | N | [Y](CVE-2014-3120/poc/goby/) | N | [Y](CVE-2014-3120/poc/others/) |
+| CVE-2014-3206 |  | 输入验证 | 9.8 | N | [Y](CVE-2014-3206/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2014-3704 | Drupal | SQL注入 |  | [Y](CVE-2014-3704/vultarget/) | [Y](CVE-2014-3704/poc/nuclei/) | [Y](CVE-2014-3704/poc/xray/) | N | N | N | N | [Y](CVE-2014-3704/poc/others/) |
 | CVE-2014-3744 |  | 路径遍历 | 7.5 | N | [Y](CVE-2014-3744/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2014-4210 | Weblogic_interface_7001 | 组件漏洞 |  | N | [Y](CVE-2014-4210/poc/nuclei/) | N | N | N | [Y](CVE-2014-4210/poc/goby/) | N | [Y](CVE-2014-4210/poc/others/) |
