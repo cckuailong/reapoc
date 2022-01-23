@@ -28,8 +28,11 @@
 | CVE-2020-11546 | SuperWebMailer | 代码执行  | 9.8 | N | [Y](CVE-2020-11546/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11547 |  | 信息泄露 | 5.3 | N | [Y](CVE-2020-11547/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-11547/poc/others/) |
 | CVE-2020-11581 |  | 操作系统命令注入 | 8.1 | N | [Y](CVE-2020-11581/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-11651 | ALLSCAN | 命令执行 | 9.8 | [Y](CVE-2020-11651/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2020-11652 | ALLSCAN | 输入验证错误 | 6.5 | [Y](CVE-2020-11652/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-11710 | Kong API Gateway | 其他 | 9.8 | N | [Y](CVE-2020-11710/poc/nuclei/) | [Y](CVE-2020-11710/poc/xray/) | N | N | N | N | N |
 | CVE-2020-11738 | WordPress | 路径遍历 | 7.5 | N | [Y](CVE-2020-11738/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-11738/poc/others/) |
+| CVE-2020-11800 |  | 其他 | 9.8 | [Y](CVE-2020-11800/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-11853 |  | 代码注入 | 8.8 | N | [Y](CVE-2020-11853/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11854 |  | 其他 | 9.8 | N | [Y](CVE-2020-11854/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11930 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-11930/poc/nuclei/) | N | N | N | N | N | N |
@@ -40,7 +43,7 @@
 | CVE-2020-12271 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-12271/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-12720 | vBulletin | 其他 | 9.8 | N | [Y](CVE-2020-12720/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-12720/poc/others/) |
 | CVE-2020-12800 |  | 代码问题 | 9.8 | N | [Y](CVE-2020-12800/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-12800/poc/others/) |
-| CVE-2020-13117 |  | 命令注入 | 9.8 | N | [Y](CVE-2020-13117/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-13117 | wavlink-WN579X3 | 命令注入 | 9.8 | N | [Y](CVE-2020-13117/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-13167 | Netsweeper | 代码执行  | 9.8 | N | [Y](CVE-2020-13167/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-13379 | Grafana | 代码问题 | 8.2 | N | [Y](CVE-2020-13379/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-13483 | Bitrix-Site-Manager | 跨站脚本 | 6.1 | N | [Y](CVE-2020-13483/poc/nuclei/) | N | N | N | N | N | N |
@@ -48,6 +51,7 @@
 | CVE-2020-13927 | Apache-Airflow | 默认配置问题 | 9.8 | N | [Y](CVE-2020-13927/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-13927/poc/others/) |
 | CVE-2020-13937 | Apache-kylin | 未授权访问 | 5.3 | N | [Y](CVE-2020-13937/poc/nuclei/) | [Y](CVE-2020-13937/poc/xray/) | N | N | [Y](CVE-2020-13937/poc/goby/) | N | [Y](CVE-2020-13937/poc/others/) |
 | CVE-2020-13942 | Apache Unomi | 命令执行 | 9.8 | [Y](CVE-2020-13942/vultarget/) | [Y](CVE-2020-13942/poc/nuclei/) | [Y](CVE-2020-13942/poc/xray/) | N | N | N | N | [Y](CVE-2020-13942/poc/others/) |
+| CVE-2020-13945 | web | 未授权访问 | 6.5 | [Y](CVE-2020-13945/vultarget/) | [Y](CVE-2020-13945/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-14092 | WordPress | SQL注入 | 9.8 | N | [Y](CVE-2020-14092/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-14179 | JIRA | 其他 | 5.3 | N | [Y](CVE-2020-14179/poc/nuclei/) | [Y](CVE-2020-14179/poc/xray/) | N | N | N | N | [Y](CVE-2020-14179/poc/others/) |
 | CVE-2020-14181 | JIRA | 其他 | 5.3 | N | [Y](CVE-2020-14181/poc/nuclei/) | [Y](CVE-2020-14181/poc/xray/) | N | N | [Y](CVE-2020-14181/poc/goby/) | N | [Y](CVE-2020-14181/poc/others/) |
@@ -64,6 +68,7 @@
 | CVE-2020-15500 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-15500/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-15500/poc/others/) |
 | CVE-2020-15505 | MobileIron | 其他 | 9.8 | N | [Y](CVE-2020-15505/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-15505/poc/others/) |
 | CVE-2020-15568 | TerraMaster-系统管理 | 输入验证错误 | 9.8 | N | [Y](CVE-2020-15568/poc/nuclei/) | [Y](CVE-2020-15568/poc/xray/) | N | N | N | N | N |
+| CVE-2020-15906 |  | 其他 | 9.8 | [Y](CVE-2020-15906/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-15920 | Mida eFramework | 操作系统命令注入 | 9.8 | N | [Y](CVE-2020-15920/poc/nuclei/) | [Y](CVE-2020-15920/poc/xray/) | N | N | N | N | [Y](CVE-2020-15920/poc/others/) |
 | CVE-2020-16139 |  | 输入验证错误 | 7.5 | N | [Y](CVE-2020-16139/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-16139/poc/others/) |
 | CVE-2020-16270 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-16270/poc/nuclei/) | N | N | N | N | N | N |
@@ -76,6 +81,7 @@
 | CVE-2020-17506 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-17506/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-17506/poc/others/) |
 | CVE-2020-17518 | flink-web | 文件上传  | 7.5 | [Y](CVE-2020-17518/vultarget/) | [Y](CVE-2020-17518/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-17518/poc/others/) |
 | CVE-2020-17519 | flink-web | 任意文件读取 | 7.5 | [Y](CVE-2020-17519/vultarget/) | [Y](CVE-2020-17519/poc/nuclei/) | [Y](CVE-2020-17519/poc/xray/) | N | N | N | N | [Y](CVE-2020-17519/poc/others/) |
+| CVE-2020-17523 | Shiro | 访问控制错误 | 9.8 | [Y](CVE-2020-17523/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-17530 | Struts2 | 代码执行  | 9.8 | N | [Y](CVE-2020-17530/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-17530/poc/others/) |
 | CVE-2020-17558 | Unknown | Unknown | Unknown | N | [Y](CVE-2020-17558/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19282 |  | 其他 | 6.1 | N | [Y](CVE-2020-19282/poc/nuclei/) | N | N | N | N | N | N |
@@ -84,6 +90,7 @@
 | CVE-2020-19360 | FHEM | 信息泄露 | 7.5 | N | [Y](CVE-2020-19360/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-1938 | Tomcat-ajp | 本地文件包含 | 9.8 | [Y](CVE-2020-1938/vultarget/) | [Y](CVE-2020-1938/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-1938/poc/others/) |
 | CVE-2020-1943 | Apache_OFBiz | 跨站脚本 | 6.1 | N | [Y](CVE-2020-1943/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-1957 | Apache-Shiro | 授权问题 | 9.8 | [Y](CVE-2020-1957/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-19625 | web | 其他 | 9.8 | N | [Y](CVE-2020-19625/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19719 |  | 其他 | 6.5 | N | [Y](CVE-2020-19719/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-2036 | PaloAlto PAN-OS | 跨站请求伪造 | 8.8 | N | [Y](CVE-2020-2036/poc/nuclei/) | N | N | N | N | N | N |
@@ -95,11 +102,13 @@
 | CVE-2020-22840 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2020-22840/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-23015 | Deciso OPNsense | 输入验证错误 | 6.1 | N | [Y](CVE-2020-23015/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-23517 |  | 其他 | 6.1 | N | [Y](CVE-2020-23517/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-23575 |  | 路径遍历 | 7.5 | N | [Y](CVE-2020-23575/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-23972 |  | 代码问题 | 7.5 | N | [Y](CVE-2020-23972/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-23972/poc/others/) |
 | CVE-2020-24148 | WordPress | 其他 | 9.1 | N | [Y](CVE-2020-24148/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-24148/poc/others/) |
 | CVE-2020-24186 | WordPress | 代码执行  | 10 | N | [Y](CVE-2020-24186/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-24186/poc/others/) |
 | CVE-2020-24223 | web | XSS | 6.1 | N | [Y](CVE-2020-24223/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-24223/poc/others/) |
 | CVE-2020-24312 | WordPress | 信息泄露 | 7.5 | N | [Y](CVE-2020-24312/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-24391 |  | 其他 | 9.8 | N | [Y](CVE-2020-24391/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-24550 | Elasticsearch | 输入验证错误 | 6.1 | N | [Y](CVE-2020-24550/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-24571 | NexusDB | 路径遍历 | 7.5 | N | [Y](CVE-2020-24571/poc/nuclei/) | [Y](CVE-2020-24571/poc/xray/) | N | N | N | N | N |
 | CVE-2020-24579 | D-Link-Router | 访问控制错误 | 8.8 | N | [Y](CVE-2020-24579/poc/nuclei/) | N | N | N | N | N | N |
@@ -108,7 +117,7 @@
 | CVE-2020-24765 |  | 信息泄露 | 7.5 | N | [Y](CVE-2020-24765/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-24912 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-24912/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-24949 |  | 其他 | 8.8 | N | [Y](CVE-2020-24949/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-24949/poc/others/) |
-| CVE-2020-25078 | D-Link-DCS-prod | 其他 | 7.5 | N | [Y](CVE-2020-25078/poc/nuclei/) | [Y](CVE-2020-25078/poc/xray/) | N | N | N | N | [Y](CVE-2020-25078/poc/others/) |
+| CVE-2020-25078 | D-Link-DCS-prod | 信息泄漏 | 7.5 | N | [Y](CVE-2020-25078/poc/nuclei/) | [Y](CVE-2020-25078/poc/xray/) | N | N | N | N | [Y](CVE-2020-25078/poc/others/) |
 | CVE-2020-25213 | WordPress | 命令执行 | 9.8 | N | [Y](CVE-2020-25213/poc/nuclei/) | [Y](CVE-2020-25213/poc/xray/) | N | N | N | N | [Y](CVE-2020-25213/poc/others/) |
 | CVE-2020-25223 | Sophos SG UTM | 代码注入 | 9.8 | N | [Y](CVE-2020-25223/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-25223/poc/others/) |
 | CVE-2020-25495 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-25495/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-25495/poc/others/) |
@@ -121,8 +130,11 @@
 | CVE-2020-26073 |  | 信息泄露 |  | N | [Y](CVE-2020-26073/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-26153 | WordPress | 其他 | 6.1 | N | [Y](CVE-2020-26153/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-26214 | Alerta | 登录绕过 | 9.8 | N | [Y](CVE-2020-26214/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-26217 | Xstream | 命令执行 | 8.8 | [Y](CVE-2020-26217/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2020-26258 | Xstream | 代码问题 | 7.7 | [Y](CVE-2020-26258/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2020-26259 | Xstream | 任意文件删除 | 6.8 | [Y](CVE-2020-26259/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-26413 | gitlab | 信息泄露 | 5.3 | N | [Y](CVE-2020-26413/poc/nuclei/) | [Y](CVE-2020-26413/poc/xray/) | N | N | [Y](CVE-2020-26413/poc/goby/) | N | N |
-| CVE-2020-26919 | NETGEAR | 其他 | 9.8 | N | [Y](CVE-2020-26919/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-26919 | NETGEAR | 未授权访问 | 9.8 | N | [Y](CVE-2020-26919/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-26948 |  | 其他 | 9.8 | N | [Y](CVE-2020-26948/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-27361 | akkadian | 其他 | 7.5 | N | [Y](CVE-2020-27361/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-27735 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-27735/poc/nuclei/) | N | N | N | N | N | N |
@@ -131,13 +143,14 @@
 | CVE-2020-27986 | SonarQube | 信息泄漏 | 7.5 | N | [Y](CVE-2020-27986/poc/nuclei/) | [Y](CVE-2020-27986/poc/xray/) | N | N | [Y](CVE-2020-27986/poc/goby/) | N | N |
 | CVE-2020-28188 | TerraMaster TOS | 注入 | 9.8 | N | [Y](CVE-2020-28188/poc/nuclei/) | [Y](CVE-2020-28188/poc/xray/) | N | N | N | N | N |
 | CVE-2020-28208 | web | 其他 | 5.3 | N | [Y](CVE-2020-28208/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2020-28351 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-28351/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-28351/poc/others/) |
+| CVE-2020-28351 | Mitel-网络产品 | 跨站脚本 | 6.1 | N | [Y](CVE-2020-28351/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-28351/poc/others/) |
 | CVE-2020-28871 |  | 代码问题 | 9.8 | N | [Y](CVE-2020-28871/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-28976 |  | 跨站请求伪造 | 5.3 | N | [Y](CVE-2020-28976/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-28976/poc/others/) |
 | CVE-2020-29164 | web | 跨站脚本 | 6.1 | N | [Y](CVE-2020-29164/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-29227 |  | 输入验证错误 | 9.8 | N | [Y](CVE-2020-29227/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-29395 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2020-29395/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-29395/poc/others/) |
 | CVE-2020-29453 | JIRA | 未授权访问 | 5.3 | [Y](CVE-2020-29453/vultarget/) | [Y](CVE-2020-29453/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-29599 |  | 其他 | 7.8 | [Y](CVE-2020-29599/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-3187 | Cisco-ASA | 路径遍历 | 9.1 | N | [Y](CVE-2020-3187/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-3187/poc/others/) |
 | CVE-2020-3452 | CVE-2020-3452影响组件 | 输入验证错误 | 7.5 | N | [Y](CVE-2020-3452/poc/nuclei/) | [Y](CVE-2020-3452/poc/xray/) | N | [Y](CVE-2020-3452/poc/pocsuite3/) | N | N | [Y](CVE-2020-3452/poc/others/) |
 | CVE-2020-35338 |  | 默认配置问题 | 9.8 | N | [Y](CVE-2020-35338/poc/nuclei/) | N | N | N | N | N | N |
@@ -145,7 +158,7 @@
 | CVE-2020-35489 | WordPress | 其他 | 10 | N | [Y](CVE-2020-35489/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35489/poc/others/) |
 | CVE-2020-35580 |  | 其他 | 7.5 | N | [Y](CVE-2020-35580/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-35598 | web | 路径遍历 | 7.5 | N | [Y](CVE-2020-35598/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35598/poc/others/) |
-| CVE-2020-35713 |  | 其他 | 9.8 | N | [Y](CVE-2020-35713/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35713/poc/others/) |
+| CVE-2020-35713 | Belkin-Router | 命令执行 | 9.8 | N | [Y](CVE-2020-35713/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35713/poc/others/) |
 | CVE-2020-35729 |  | 注入 | 9.8 | N | [Y](CVE-2020-35729/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35729/poc/others/) |
 | CVE-2020-35736 | GateOne | 目录遍历 | 7.5 | N | [Y](CVE-2020-35736/poc/nuclei/) | [Y](CVE-2020-35736/poc/xray/) | N | N | N | N | N |
 | CVE-2020-35774 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-35774/poc/nuclei/) | N | N | N | N | N | N |

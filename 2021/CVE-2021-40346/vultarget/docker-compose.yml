@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    image: haproxy:2.2.16
+    volumes:
+      - ./config:/usr/local/etc/haproxy
+    ports:
+      - "10001:8000"
+    expose:
+      - 10001
+  flask:
+    build: .
