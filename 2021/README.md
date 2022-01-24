@@ -20,7 +20,7 @@
 | CVE-2021-20837 | Movable-Type | 操作系统命令注入 | 9.8 | N | [Y](CVE-2021-20837/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-20837/poc/others/) |
 | CVE-2021-21087 | Adobe-ColdFusion | 命令执行 | 5.4 | [Y](CVE-2021-21087/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2021-2109 | WebLogic | 访问控制错误 | 7.2 | N | N | N | N | N | [Y](CVE-2021-2109/poc/goby/) | N | [Y](CVE-2021-2109/poc/others/) |
-| CVE-2021-21234 | spring-boot-actuator-logview | 路径遍历 | 7.7 | N | [Y](CVE-2021-21234/poc/nuclei/) | [Y](CVE-2021-21234/poc/xray/) | N | N | N | N | [Y](CVE-2021-21234/poc/others/) |
+| CVE-2021-21234 | spring-boot-actuator-logview | 目录遍历 | 7.7 | N | [Y](CVE-2021-21234/poc/nuclei/) | [Y](CVE-2021-21234/poc/xray/) | N | N | N | N | [Y](CVE-2021-21234/poc/others/) |
 | CVE-2021-21287 | MinIO | 跨站请求伪造 | 7.7 | N | [Y](CVE-2021-21287/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-21307 | Lucee | 其他 | 9.8 | N | [Y](CVE-2021-21307/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-21311 |  | 代码问题 | 7.2 | [Y](CVE-2021-21311/vultarget/) | N | N | N | N | N | N | N |
@@ -42,7 +42,7 @@
 | CVE-2021-21978 | VMware View | 其他 | 9.8 | N | [Y](CVE-2021-21978/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-21978/poc/others/) |
 | CVE-2021-21985 | VMware vCenter Server | 其他 | 9.8 | N | [Y](CVE-2021-21985/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-21985/poc/others/) |
 | CVE-2021-22005 | VMware vCenter Server | 代码问题 | 9.8 | N | [Y](CVE-2021-22005/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-22005/poc/others/) |
-| CVE-2021-22053 |  | 其他 | 8.8 | N | [Y](CVE-2021-22053/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-22053/poc/others/) |
+| CVE-2021-22053 |  | 代码注入 | 8.8 | N | [Y](CVE-2021-22053/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-22053/poc/others/) |
 | CVE-2021-22122 | Fortinet-FortiWeb | 跨站脚本 | 6.1 | N | [Y](CVE-2021-22122/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-22145 |  | 其他 | 6.5 | N | [Y](CVE-2021-22145/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-22145/poc/others/) |
 | CVE-2021-22205 | gitlab | 操作系统命令注入 | 10 | [Y](CVE-2021-22205/vultarget/) | [Y](CVE-2021-22205/poc/nuclei/) | N | N | N | [Y](CVE-2021-22205/poc/goby/) | N | [Y](CVE-2021-22205/poc/others/) |
@@ -54,7 +54,7 @@
 | CVE-2021-23410 |  | 代码问题 | 9.8 | [Y](CVE-2021-23410/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2021-24146 | WordPress | 访问控制错误 | 7.5 | N | [Y](CVE-2021-24146/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24146/poc/others/) |
 | CVE-2021-24176 | WordPress | 跨站脚本 | 5.4 | N | [Y](CVE-2021-24176/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24176/poc/others/) |
-| CVE-2021-24210 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2021-24210/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-24210 |  | url重定向 | 6.1 | N | [Y](CVE-2021-24210/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24226 |  | 信息泄露 | 7.5 | N | [Y](CVE-2021-24226/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24235 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24235/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24237 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24237/poc/nuclei/) | N | N | N | N | N | N |
@@ -80,7 +80,7 @@
 | CVE-2021-24495 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24495/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24498 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24498/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24499 | WordPress | 访问控制错误 | 9.8 | N | [Y](CVE-2021-24499/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24499/poc/others/) |
-| CVE-2021-24750 |  | SQL注入 | 8.8 | [Y](CVE-2021-24750/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2021-24750 |  | SQL注入 | 8.8 | [Y](CVE-2021-24750/vultarget/) | [Y](CVE-2021-24750/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24997 |  | 其他 | 6.5 | N | [Y](CVE-2021-24997/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-25281 | saltstack-web | 其他 | 9.8 | N | [Y](CVE-2021-25281/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-25281/poc/others/) |
 | CVE-2021-25282 |  | 路径遍历 | 9.1 | N | N | [Y](CVE-2021-25282/poc/xray/) | N | N | N | N | N |
@@ -96,11 +96,11 @@
 | CVE-2021-26723 | Jenzabar | 跨站脚本 | 6.1 | N | [Y](CVE-2021-26723/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-26812 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-26812/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-26855 | Microsoft Exchange | 其他 | 9.8 | N | [Y](CVE-2021-26855/poc/nuclei/) | [Y](CVE-2021-26855/poc/xray/) | N | [Y](CVE-2021-26855/poc/pocsuite3/) | N | N | [Y](CVE-2021-26855/poc/others/) |
-| CVE-2021-26885 |  | 其他 | 7.8 | N | N | N | N | N | [Y](CVE-2021-26885/poc/goby/) | N | N |
+| CVE-2021-26885 |  | 权限管理不当 | 7.8 | N | N | N | N | N | [Y](CVE-2021-26885/poc/goby/) | N | N |
 | CVE-2021-27132 | SERCOMM-CPE | CRLF注入 | 9.8 | N | [Y](CVE-2021-27132/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-27310 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-27310/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-27330 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-27330/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-27358 |  | 其他 | 7.5 | N | N | N | N | N | N | N | N |
+| CVE-2021-27358 |  | 其他 | 7.5 | N | [Y](CVE-2021-27358/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-27561 |  | 其他 | 9.8 | N | [Y](CVE-2021-27561/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-27651 | Pega Infinity | 授权问题 | 9.8 | N | [Y](CVE-2021-27651/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-27651/poc/others/) |
 | CVE-2021-27850 |  | 其他 | 9.8 | N | [Y](CVE-2021-27850/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-27850/poc/others/) |
@@ -143,7 +143,7 @@
 | CVE-2021-31682 | Automated-Logic-公司产品 | 跨站脚本 | 6.1 | N | [Y](CVE-2021-31682/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-31682/poc/others/) |
 | CVE-2021-31755 | Tenda-Router | 代码执行  | 9.8 | N | [Y](CVE-2021-31755/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-31856 |  | SQL注入 | 9.8 | N | [Y](CVE-2021-31856/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-31856/poc/others/) |
-| CVE-2021-31862 |  | 其他 | 6.1 | N | [Y](CVE-2021-31862/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-31862 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-31862/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-32030 |  | 授权问题 | 9.8 | N | [Y](CVE-2021-32030/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-32172 | web | 其他 | 9.8 | N | [Y](CVE-2021-32172/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-3223 | Node-RED | 路径遍历 | 7.5 | [Y](CVE-2021-3223/vultarget/) | [Y](CVE-2021-3223/poc/nuclei/) | [Y](CVE-2021-3223/poc/xray/) | N | N | N | N | N |
@@ -202,7 +202,7 @@
 | CVE-2021-40539 | ManageEngine ADSelfService Plus | 授权问题 | 9.8 | N | [Y](CVE-2021-40539/poc/nuclei/) | N | N | N | [Y](CVE-2021-40539/poc/goby/) | N | [Y](CVE-2021-40539/poc/others/) |
 | CVE-2021-40542 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-40542/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-40856 |  | 其他 | 7.5 | N | [Y](CVE-2021-40856/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-40859 | COMpact 5500R | 其他 | 9.8 | N | [Y](CVE-2021-40859/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40859/poc/others/) |
+| CVE-2021-40859 | COMpact 5500R | 后门 | 9.8 | N | [Y](CVE-2021-40859/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40859/poc/others/) |
 | CVE-2021-40868 |  | 其他 | 6.1 | N | [Y](CVE-2021-40868/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40868/poc/others/) |
 | CVE-2021-40870 | Aviatrix Controller | 其他 | 9.8 | N | [Y](CVE-2021-40870/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40870/poc/others/) |
 | CVE-2021-40875 |  | 信息泄露 | 7.5 | N | [Y](CVE-2021-40875/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40875/poc/others/) |
@@ -225,12 +225,12 @@
 | CVE-2021-41951 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-41951/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-42013 | Apache-Web-Server | 任意文件读取 | 9.8 | [Y](CVE-2021-42013/vultarget/) | [Y](CVE-2021-42013/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-42013/poc/others/) |
 | CVE-2021-42237 | Sitecore | 其他 | 9.8 | N | [Y](CVE-2021-42237/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-42258 |  | 其他 | 9.8 | N | [Y](CVE-2021-42258/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-42258 |  | SQL注入 | 9.8 | N | [Y](CVE-2021-42258/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-42342 | GoAhead | 代码问题 | 9.8 | [Y](CVE-2021-42342/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2021-42551 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-42551/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-42565 | Myfactory | 跨站脚本 | 6.1 | N | [Y](CVE-2021-42565/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-42565/poc/others/) |
 | CVE-2021-42566 | Myfactory | 跨站脚本 | 6.1 | N | [Y](CVE-2021-42566/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-42566/poc/others/) |
-| CVE-2021-42567 |  | 其他 | 6.1 | N | [Y](CVE-2021-42567/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-42567 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-42567/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-43287 | GoCD | 本地文件包含 |  | N | [Y](CVE-2021-43287/poc/nuclei/) | [Y](CVE-2021-43287/poc/xray/) | N | N | N | N | N |
 | CVE-2021-43495 |  | 其他 | 7.5 | N | [Y](CVE-2021-43495/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-43496 |  | 路径遍历 | 7.5 | N | [Y](CVE-2021-43496/poc/nuclei/) | N | N | N | N | N | N |
@@ -239,8 +239,8 @@
 | CVE-2021-44228 | JAVA | 输入验证错误 | 10 | [Y](CVE-2021-44228/vultarget/) | [Y](CVE-2021-44228/poc/nuclei/) | N | N | N | N | [Y](CVE-2021-44228/poc/oneliner/) | N |
 | CVE-2021-44427 |  | 其他 | 9.8 | N | [Y](CVE-2021-44427/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-44515 |  | 授权问题 | 9.8 | N | N | N | N | N | N | [Y](CVE-2021-44515/poc/oneliner/) | N |
-| CVE-2021-44528 |  | url重定向 | 6.1 | N | [Y](CVE-2021-44528/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-44848 |  | 其他 | 5.3 | N | [Y](CVE-2021-44848/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-44848/poc/others/) |
+| CVE-2021-44528 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2021-44528/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-44848 |  | 授权问题 | 5.3 | N | [Y](CVE-2021-44848/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-44848/poc/others/) |
 | CVE-2021-45043 | HD-Network-Camera | 目录遍历 | 7.5 | N | [Y](CVE-2021-45043/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-45046 | JAVA | 其他 | 9 | N | [Y](CVE-2021-45046/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-45046/poc/others/) |
 | CVE-2021-45092 | Thinfinity VirtualUI | 其他 | 9.8 | N | [Y](CVE-2021-45092/poc/nuclei/) | N | N | N | N | N | N |

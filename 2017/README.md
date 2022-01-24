@@ -54,7 +54,7 @@
 | CVE-2017-3066 | Adobe-ColdFusion | 命令执行 | 9.8 | [Y](CVE-2017-3066/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2017-3506 | Weblogic_interface_7001 | 命令执行 | 7.4 | N | [Y](CVE-2017-3506/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-3506/poc/others/) |
 | CVE-2017-3528 | Oracle-EBusiness | 输入验证错误 | 5.4 | N | [Y](CVE-2017-3528/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-3528/poc/others/) |
-| CVE-2017-3881 | Cisco | 输入验证错误 | 9.8 | N | [Y](CVE-2017-3881/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-3881/poc/others/) |
+| CVE-2017-3881 | Cisco | 输入验证 | 9.8 | N | [Y](CVE-2017-3881/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-3881/poc/others/) |
 | CVE-2017-4011 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2017-4011/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-4971 | Spring | 资料不足 | 5.9 | [Y](CVE-2017-4971/vultarget/) | N | N | [Y](CVE-2017-4971/poc/pocsuite2/) | [Y](CVE-2017-4971/poc/pocsuite3/) | N | N | [Y](CVE-2017-4971/poc/others/) |
 | CVE-2017-5223 | PHP | 本地文件包含 | 5.5 | [Y](CVE-2017-5223/vultarget/) | N | N | N | N | N | N | N |
@@ -84,6 +84,6 @@
 | CVE-2017-9506 | JIRA | 代码问题 | 6.1 | N | [Y](CVE-2017-9506/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-9506/poc/others/) |
 | CVE-2017-9791 | Struts2 | 代码执行 | 9.8 | N | [Y](CVE-2017-9791/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-9791/poc/others/) |
 | CVE-2017-9805 | Struts2 | 代码执行 | 8.1 | N | [Y](CVE-2017-9805/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-9805/poc/others/) |
-| CVE-2017-9822 | DotNetNuke | 输入验证错误 | 8.8 | N | [Y](CVE-2017-9822/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-9822/poc/others/) |
+| CVE-2017-9822 | DotNetNuke | 输入验证 | 8.8 | N | [Y](CVE-2017-9822/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-9822/poc/others/) |
 | CVE-2017-9841 | PHP | 代码执行 | 9.8 | [Y](CVE-2017-9841/vultarget/) | [Y](CVE-2017-9841/poc/nuclei/) | [Y](CVE-2017-9841/poc/xray/) | N | N | N | N | [Y](CVE-2017-9841/poc/others/) |
 | CVE-2017-9993 |  | 信息泄露 | 7.5 | [Y](CVE-2017-9993/vultarget/) | N | N | N | N | N | N | N |
