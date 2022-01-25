@@ -13,7 +13,8 @@
 | CVE-2020-10148 | SolarWinds-Orion | 代码执行  | 9.8 | N | [Y](CVE-2020-10148/poc/nuclei/) | [Y](CVE-2020-10148/poc/xray/) | N | N | N | N | [Y](CVE-2020-10148/poc/others/) |
 | CVE-2020-10199 | Nexus-Repository-Manager | 命令执行 | 8.8 | [Y](CVE-2020-10199/vultarget/) | [Y](CVE-2020-10199/poc/nuclei/) | [Y](CVE-2020-10199/poc/xray/) | N | N | N | N | [Y](CVE-2020-10199/poc/others/) |
 | CVE-2020-10204 | Nexus-Repository-Manager | 命令执行 | 7.2 | [Y](CVE-2020-10204/vultarget/) | [Y](CVE-2020-10204/poc/nuclei/) | [Y](CVE-2020-10204/poc/xray/) | N | N | N | N | [Y](CVE-2020-10204/poc/others/) |
-| CVE-2020-10220 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-10220/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-10220 |  | SQL注入 | 9.8 | [Y](CVE-2020-10220/vultarget/) | [Y](CVE-2020-10220/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-10238 |  | 其他 | 7.5 | [Y](CVE-2020-10238/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-10546 | rConfig | SQL注入 | 9.8 | N | [Y](CVE-2020-10546/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-10547 | rConfig | SQL注入 | 9.8 | N | [Y](CVE-2020-10547/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-10548 | rConfig | SQL注入 | 9.8 | N | [Y](CVE-2020-10548/poc/nuclei/) | N | N | N | N | N | N |
@@ -21,6 +22,7 @@
 | CVE-2020-10770 | Redhat系统 | 代码问题 | 5.3 | N | [Y](CVE-2020-10770/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-10770/poc/others/) |
 | CVE-2020-11034 | GLPI | 输入验证错误 | 6.1 | N | [Y](CVE-2020-11034/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11110 | Grafana | 跨站脚本 | 6.1 | N | [Y](CVE-2020-11110/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-11444 |  | 其他 | 8.8 | [Y](CVE-2020-11444/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-11455 |  | 路径遍历 | 5.3 | N | [Y](CVE-2020-11455/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-11455/poc/others/) |
 | CVE-2020-1147 | Microsoft SharePoint | 代码执行 | 7.8 | N | [Y](CVE-2020-1147/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11529 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2020-11529/poc/nuclei/) | N | N | N | N | N | N |
@@ -37,7 +39,9 @@
 | CVE-2020-11854 |  | 其他 | 9.8 | N | [Y](CVE-2020-11854/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11930 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-11930/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-11978 | Apache-Airflow | 命令注入 | 8.8 | N | [Y](CVE-2020-11978/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-11978/poc/others/) |
+| CVE-2020-11989 | Apache-Shiro | 其他 | 9.8 | [Y](CVE-2020-11989/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-11991 | Apache-Cocoon | 其他 | 7.5 | N | [Y](CVE-2020-11991/poc/nuclei/) | N | N | N | [Y](CVE-2020-11991/poc/goby/) | N | N |
+| CVE-2020-11996 | Apache-Tomcat | 其他 | 7.5 | [Y](CVE-2020-11996/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-12054 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2020-12054/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-12116 | ZOHO ManageEngine | 其他 | 7.5 | N | [Y](CVE-2020-12116/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-12116/poc/others/) |
 | CVE-2020-12271 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-12271/poc/nuclei/) | N | N | N | N | N | N |
@@ -48,18 +52,21 @@
 | CVE-2020-13379 | Grafana | 服务器端请求伪造 | 8.2 | N | [Y](CVE-2020-13379/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-13483 | Bitrix-Site-Manager | 跨站脚本 | 6.1 | N | [Y](CVE-2020-13483/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-13700 | WordPress | 其他 | 7.5 | N | [Y](CVE-2020-13700/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-13925 | web | 其他 | 9.8 | [Y](CVE-2020-13925/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-13927 | Apache-Airflow | 默认配置问题 | 9.8 | N | [Y](CVE-2020-13927/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-13927/poc/others/) |
+| CVE-2020-13933 | Shiro | 其他 | 7.5 | [Y](CVE-2020-13933/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-13937 | Apache-kylin | 未授权访问 | 5.3 | N | [Y](CVE-2020-13937/poc/nuclei/) | [Y](CVE-2020-13937/poc/xray/) | N | N | [Y](CVE-2020-13937/poc/goby/) | N | [Y](CVE-2020-13937/poc/others/) |
 | CVE-2020-13942 | Apache Unomi | 命令执行 | 9.8 | [Y](CVE-2020-13942/vultarget/) | [Y](CVE-2020-13942/poc/nuclei/) | [Y](CVE-2020-13942/poc/xray/) | N | N | N | N | [Y](CVE-2020-13942/poc/others/) |
 | CVE-2020-13945 | web | 未授权访问 | 6.5 | [Y](CVE-2020-13945/vultarget/) | [Y](CVE-2020-13945/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-14092 | WordPress | SQL注入 | 9.8 | N | [Y](CVE-2020-14092/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-14179 | JIRA | 其他 | 5.3 | N | [Y](CVE-2020-14179/poc/nuclei/) | [Y](CVE-2020-14179/poc/xray/) | N | N | N | N | [Y](CVE-2020-14179/poc/others/) |
-| CVE-2020-14181 | JIRA | 其他 | 5.3 | N | [Y](CVE-2020-14181/poc/nuclei/) | [Y](CVE-2020-14181/poc/xray/) | N | N | [Y](CVE-2020-14181/poc/goby/) | N | [Y](CVE-2020-14181/poc/others/) |
+| CVE-2020-14181 | JIRA | 其他 | 5.3 | [Y](CVE-2020-14181/vultarget/) | [Y](CVE-2020-14181/poc/nuclei/) | [Y](CVE-2020-14181/poc/xray/) | N | N | [Y](CVE-2020-14181/poc/goby/) | N | [Y](CVE-2020-14181/poc/others/) |
 | CVE-2020-14413 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-14413/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2020-14750 | BEA-WebLogic-Server | 命令执行 | 9.8 | N | [Y](CVE-2020-14750/poc/nuclei/) | [Y](CVE-2020-14750/poc/xray/) | N | N | N | N | [Y](CVE-2020-14750/poc/others/) |
+| CVE-2020-14750 | BEA-WebLogic-Server | 命令执行 | 9.8 | [Y](CVE-2020-14750/vultarget/) | [Y](CVE-2020-14750/poc/nuclei/) | [Y](CVE-2020-14750/poc/xray/) | N | N | N | N | [Y](CVE-2020-14750/poc/others/) |
+| CVE-2020-14825 |  | 其他 | 9.8 | [Y](CVE-2020-14825/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-14864 |  | 访问控制问题 | 7.5 | N | [Y](CVE-2020-14864/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-14864/poc/others/) |
 | CVE-2020-14882 | BEA-WebLogic-Server | 命令执行 | 9.8 | [Y](CVE-2020-14882/vultarget/) | [Y](CVE-2020-14882/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-14882/poc/others/) |
-| CVE-2020-14883 | Weblogic_interface_7001 | 其他 | 7.2 | N | [Y](CVE-2020-14883/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-14883/poc/others/) |
+| CVE-2020-14883 | Weblogic_interface_7001 | 其他 | 7.2 | [Y](CVE-2020-14883/vultarget/) | [Y](CVE-2020-14883/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-14883/poc/others/) |
 | CVE-2020-15004 |  | 跨站脚本 | 4.8 | N | [Y](CVE-2020-15004/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-15129 |  | 输入验证错误 | 4.7 | N | [Y](CVE-2020-15129/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-15148 | Yii-Framework | 代码问题 | 10 | N | [Y](CVE-2020-15148/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-15148/poc/others/) |
@@ -68,6 +75,7 @@
 | CVE-2020-15500 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-15500/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-15500/poc/others/) |
 | CVE-2020-15505 | MobileIron | 其他 | 9.8 | N | [Y](CVE-2020-15505/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-15505/poc/others/) |
 | CVE-2020-15568 | TerraMaster-系统管理 | 输入验证错误 | 9.8 | N | [Y](CVE-2020-15568/poc/nuclei/) | [Y](CVE-2020-15568/poc/xray/) | N | N | N | N | N |
+| CVE-2020-15778 | OpenSSH | 命令注入 | 7.8 | [Y](CVE-2020-15778/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-15906 |  | 代码问题 | 9.8 | [Y](CVE-2020-15906/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-15920 | Mida eFramework | 操作系统命令注入 | 9.8 | N | [Y](CVE-2020-15920/poc/nuclei/) | [Y](CVE-2020-15920/poc/xray/) | N | N | N | N | [Y](CVE-2020-15920/poc/others/) |
 | CVE-2020-16139 |  | 输入验证错误 | 7.5 | N | [Y](CVE-2020-16139/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-16139/poc/others/) |
@@ -82,14 +90,18 @@
 | CVE-2020-17518 | flink-web | 文件上传  | 7.5 | [Y](CVE-2020-17518/vultarget/) | [Y](CVE-2020-17518/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-17518/poc/others/) |
 | CVE-2020-17519 | flink-web | 任意文件读取 | 7.5 | [Y](CVE-2020-17519/vultarget/) | [Y](CVE-2020-17519/poc/nuclei/) | [Y](CVE-2020-17519/poc/xray/) | N | N | N | N | [Y](CVE-2020-17519/poc/others/) |
 | CVE-2020-17523 | Shiro | 登录绕过 | 9.8 | [Y](CVE-2020-17523/vultarget/) | N | N | N | N | N | N | N |
-| CVE-2020-17530 | Struts2 | 代码执行  | 9.8 | N | [Y](CVE-2020-17530/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-17530/poc/others/) |
+| CVE-2020-17530 | Struts2 | 代码执行  | 9.8 | [Y](CVE-2020-17530/vultarget/) | [Y](CVE-2020-17530/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-17530/poc/others/) |
 | CVE-2020-17558 | Unknown | Unknown | Unknown | N | [Y](CVE-2020-17558/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19282 |  | 其他 | 6.1 | N | [Y](CVE-2020-19282/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19283 | JEECMS | 其他 | 6.1 | N | [Y](CVE-2020-19283/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19295 |  | 其他 | 6.1 | N | [Y](CVE-2020-19295/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19360 | FHEM | 信息泄露 | 7.5 | N | [Y](CVE-2020-19360/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-19363 |  | 信息泄露 | 6.5 | [Y](CVE-2020-19363/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-1938 | Tomcat-ajp | 本地文件包含 | 9.8 | [Y](CVE-2020-1938/vultarget/) | [Y](CVE-2020-1938/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-1938/poc/others/) |
 | CVE-2020-1943 | Apache_OFBiz | 跨站脚本 | 6.1 | N | [Y](CVE-2020-1943/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-1947 | Apache-ShardingSphere | 代码执行 | 9.8 | [Y](CVE-2020-1947/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2020-1948 | web | 代码执行 | 9.8 | [Y](CVE-2020-1948/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2020-1956 | Apache Kylin | 其他 | 8.8 | [Y](CVE-2020-1956/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-1957 | Apache-Shiro | 授权问题 | 9.8 | [Y](CVE-2020-1957/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-19625 | web | 其他 | 9.8 | N | [Y](CVE-2020-19625/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19719 |  | 其他 | 6.5 | N | [Y](CVE-2020-19719/poc/nuclei/) | N | N | N | N | N | N |
@@ -104,6 +116,7 @@
 | CVE-2020-23517 |  | 其他 | 6.1 | N | [Y](CVE-2020-23517/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-23575 |  | 路径遍历 | 7.5 | N | [Y](CVE-2020-23575/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-23972 |  | 文件上传 | 7.5 | N | [Y](CVE-2020-23972/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-23972/poc/others/) |
+| CVE-2020-24115 |  | 信任管理 | 9.8 | [Y](CVE-2020-24115/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-24148 | WordPress | 其他 | 9.1 | N | [Y](CVE-2020-24148/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-24148/poc/others/) |
 | CVE-2020-24186 | WordPress | 代码执行  | 10 | N | [Y](CVE-2020-24186/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-24186/poc/others/) |
 | CVE-2020-24223 | web | XSS | 6.1 | N | [Y](CVE-2020-24223/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-24223/poc/others/) |
@@ -120,12 +133,15 @@
 | CVE-2020-25078 | D-Link-DCS-prod | 信息泄漏 | 7.5 | N | [Y](CVE-2020-25078/poc/nuclei/) | [Y](CVE-2020-25078/poc/xray/) | N | N | N | N | [Y](CVE-2020-25078/poc/others/) |
 | CVE-2020-25213 | WordPress | 命令执行 | 9.8 | N | [Y](CVE-2020-25213/poc/nuclei/) | [Y](CVE-2020-25213/poc/xray/) | N | N | N | N | [Y](CVE-2020-25213/poc/others/) |
 | CVE-2020-25223 | Sophos SG UTM | 代码执行 | 9.8 | N | [Y](CVE-2020-25223/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-25223/poc/others/) |
+| CVE-2020-25483 |  | 文件上传 | 9.8 | [Y](CVE-2020-25483/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-25495 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-25495/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-25495/poc/others/) |
 | CVE-2020-25506 | D-LINK | 命令注入 | 9.8 | N | [Y](CVE-2020-25506/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2020-2551 | Weblogic_interface_7001 | 代码执行 | 9.8 | N | [Y](CVE-2020-2551/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-2551/poc/others/) |
-| CVE-2020-25540 | ThinkAdmin | 任意文件读取 | 7.5 | N | [Y](CVE-2020-25540/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-25540/poc/others/) |
-| CVE-2020-2555 | Weblogic_interface_7001 | 代码执行 | 9.8 | N | [Y](CVE-2020-2555/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-2551 | Weblogic_interface_7001 | 代码执行 | 9.8 | [Y](CVE-2020-2551/vultarget/) | [Y](CVE-2020-2551/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-2551/poc/others/) |
+| CVE-2020-25540 | ThinkAdmin | 任意文件读取 | 7.5 | [Y](CVE-2020-25540/vultarget/) | [Y](CVE-2020-25540/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-25540/poc/others/) |
+| CVE-2020-2555 | Weblogic_interface_7001 | 代码执行 | 9.8 | [Y](CVE-2020-2555/vultarget/) | [Y](CVE-2020-2555/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-25780 |  | 路径遍历 | 7.5 | N | [Y](CVE-2020-25780/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-25790 | Typesetter CMS | 文件上传 | 7.2 | [Y](CVE-2020-25790/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2020-26048 |  | 文件上传 | 8.8 | [Y](CVE-2020-26048/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-26067 |  | 跨站脚本 |  | N | N | N | N | N | N | N | N |
 | CVE-2020-26073 |  | 信息泄露 |  | N | [Y](CVE-2020-26073/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-26153 | WordPress | 其他 | 6.1 | N | [Y](CVE-2020-26153/poc/nuclei/) | N | N | N | N | N | N |
@@ -140,10 +156,12 @@
 | CVE-2020-27735 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-27735/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-27866 | NETGEAR | 未授权访问 | 8.8 | N | [Y](CVE-2020-27866/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-27982 | IceWarp | 跨站脚本 | 6.1 | N | [Y](CVE-2020-27982/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2020-27986 | SonarQube | 信息泄漏 | 7.5 | N | [Y](CVE-2020-27986/poc/nuclei/) | [Y](CVE-2020-27986/poc/xray/) | N | N | [Y](CVE-2020-27986/poc/goby/) | N | N |
+| CVE-2020-27986 | SonarQube | 信息泄漏 | 7.5 | [Y](CVE-2020-27986/vultarget/) | [Y](CVE-2020-27986/poc/nuclei/) | [Y](CVE-2020-27986/poc/xray/) | N | N | [Y](CVE-2020-27986/poc/goby/) | N | N |
+| CVE-2020-28020 |  | 输入验证错误 | 9.8 | [Y](CVE-2020-28020/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-28188 | TerraMaster TOS | 注入 | 9.8 | N | [Y](CVE-2020-28188/poc/nuclei/) | [Y](CVE-2020-28188/poc/xray/) | N | N | N | N | N |
 | CVE-2020-28208 | web | 其他 | 5.3 | N | [Y](CVE-2020-28208/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-28351 | Mitel-网络产品 | 跨站脚本 | 6.1 | N | [Y](CVE-2020-28351/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-28351/poc/others/) |
+| CVE-2020-2883 | Weblogic_interface_7001 | 其他 | 9.8 | [Y](CVE-2020-2883/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-28871 |  | 代码问题 | 9.8 | N | [Y](CVE-2020-28871/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-28976 |  | 跨站请求伪造 | 5.3 | N | [Y](CVE-2020-28976/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-28976/poc/others/) |
 | CVE-2020-29164 | web | 跨站脚本 | 6.1 | N | [Y](CVE-2020-29164/poc/nuclei/) | N | N | N | N | N | N |
@@ -152,13 +170,16 @@
 | CVE-2020-29453 | JIRA | 未授权访问 | 5.3 | [Y](CVE-2020-29453/vultarget/) | [Y](CVE-2020-29453/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-29599 |  | 其他 | 7.8 | [Y](CVE-2020-29599/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-3187 | Cisco-ASA | 路径遍历 | 9.1 | N | [Y](CVE-2020-3187/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-3187/poc/others/) |
+| CVE-2020-3331 |  | 缓冲区错误 | 9.8 | [Y](CVE-2020-3331/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-3452 | CVE-2020-3452影响组件 | 输入验证错误 | 7.5 | N | [Y](CVE-2020-3452/poc/nuclei/) | [Y](CVE-2020-3452/poc/xray/) | N | [Y](CVE-2020-3452/poc/pocsuite3/) | N | N | [Y](CVE-2020-3452/poc/others/) |
 | CVE-2020-35338 |  | 默认配置问题 | 9.8 | N | [Y](CVE-2020-35338/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-35476 | OpenTSDB | 命令注入 | 9.8 | [Y](CVE-2020-35476/vultarget/) | [Y](CVE-2020-35476/poc/nuclei/) | [Y](CVE-2020-35476/poc/xray/) | N | N | N | N | N |
 | CVE-2020-35489 | WordPress | 其他 | 10 | N | [Y](CVE-2020-35489/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35489/poc/others/) |
 | CVE-2020-35580 |  | 其他 | 7.5 | N | [Y](CVE-2020-35580/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-35598 | web | 路径遍历 | 7.5 | N | [Y](CVE-2020-35598/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35598/poc/others/) |
+| CVE-2020-35606 |  | 操作系统命令注入 | 8.8 | [Y](CVE-2020-35606/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-35713 | Belkin-Router | 命令执行 | 9.8 | N | [Y](CVE-2020-35713/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35713/poc/others/) |
+| CVE-2020-35728 |  | 反序列化 | 8.1 | [Y](CVE-2020-35728/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-35729 |  | 注入 | 9.8 | N | [Y](CVE-2020-35729/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35729/poc/others/) |
 | CVE-2020-35736 | GateOne | 目录遍历 | 7.5 | N | [Y](CVE-2020-35736/poc/nuclei/) | [Y](CVE-2020-35736/poc/xray/) | N | N | N | N | N |
 | CVE-2020-35774 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-35774/poc/nuclei/) | N | N | N | N | N | N |
@@ -168,16 +189,17 @@
 | CVE-2020-35848 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-35848/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35848/poc/others/) |
 | CVE-2020-35951 |  | 权限许可和访问控制 | 9.9 | N | [Y](CVE-2020-35951/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-36112 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-36112/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2020-36289 | Atlassian Jira | 信息泄露 | 5.3 | N | [Y](CVE-2020-36289/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-36289 | Atlassian Jira | 信息泄露 | 5.3 | [Y](CVE-2020-36289/vultarget/) | [Y](CVE-2020-36289/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-3952 |  | 信息泄露 | 9.8 | N | [Y](CVE-2020-3952/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-4038 |  | 跨站脚本 | 7.4 | N | [Y](CVE-2020-4038/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-4463 | IBM Maximo Asset Management | 信息泄露 | 8.2 | N | [Y](CVE-2020-4463/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-4463/poc/others/) |
-| CVE-2020-5284 |  | 路径遍历 | 4.3 | N | [Y](CVE-2020-5284/poc/nuclei/) | [Y](CVE-2020-5284/poc/xray/) | N | N | N | N | N |
+| CVE-2020-5284 |  | 路径遍历 | 4.3 | [Y](CVE-2020-5284/vultarget/) | [Y](CVE-2020-5284/poc/nuclei/) | [Y](CVE-2020-5284/poc/xray/) | N | N | N | N | N |
 | CVE-2020-5307 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-5307/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2020-5398 | Spring | 跨站脚本 | 7.5 | N | [Y](CVE-2020-5398/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-5398 | Spring | 跨站脚本 | 7.5 | [Y](CVE-2020-5398/vultarget/) | [Y](CVE-2020-5398/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-5405 | Spring | 路径遍历 | 6.5 | N | [Y](CVE-2020-5405/poc/nuclei/) | [Y](CVE-2020-5405/poc/xray/) | N | N | N | N | N |
-| CVE-2020-5410 | Spring Cloud Config | 目录穿越 | 7.5 | N | [Y](CVE-2020-5410/poc/nuclei/) | [Y](CVE-2020-5410/poc/xray/) | N | N | N | N | [Y](CVE-2020-5410/poc/others/) |
-| CVE-2020-5412 | Spring Cloud Config | 其他 | 6.5 | N | [Y](CVE-2020-5412/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-5410 | Spring Cloud Config | 目录穿越 | 7.5 | [Y](CVE-2020-5410/vultarget/) | [Y](CVE-2020-5410/poc/nuclei/) | [Y](CVE-2020-5410/poc/xray/) | N | N | N | N | [Y](CVE-2020-5410/poc/others/) |
+| CVE-2020-5412 | Spring Cloud Config | 其他 | 6.5 | [Y](CVE-2020-5412/vultarget/) | [Y](CVE-2020-5412/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-5504 |  | SQL注入 | 8.8 | [Y](CVE-2020-5504/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-5515 |  | SQL注入 | 7.2 | N | N | [Y](CVE-2020-5515/poc/xray/) | N | N | N | N | [Y](CVE-2020-5515/poc/others/) |
 | CVE-2020-5775 |  | 代码问题 | 5.8 | N | [Y](CVE-2020-5775/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-5776 |  | CSRF | 8.8 | N | [Y](CVE-2020-5776/poc/nuclei/) | N | N | N | N | N | N |
@@ -216,6 +238,7 @@
 | CVE-2020-8772 |  | 其他 | 9.8 | N | [Y](CVE-2020-8772/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-8772-my | Unknown | Unknown | Unknown | N | N | N | N | N | N | N | N |
 | CVE-2020-8813 | Cacti | 命令执行 | 8.8 | N | [Y](CVE-2020-8813/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-8813/poc/others/) |
+| CVE-2020-8840 | Jackson | 代码问题 | 9.8 | [Y](CVE-2020-8840/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-8982 |  | 路径遍历 | 7.5 | N | [Y](CVE-2020-8982/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-9036 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-9036/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-9047 | exacqVision | 数据伪造问题 | 7.2 | N | [Y](CVE-2020-9047/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-9047/poc/others/) |
@@ -225,8 +248,9 @@
 | CVE-2020-9376 | D-Link-Dir-610 | 安全模式绕过 | 7.5 | N | [Y](CVE-2020-9376/poc/nuclei/) | [Y](CVE-2020-9376/poc/xray/) | N | N | N | N | [Y](CVE-2020-9376/poc/others/) |
 | CVE-2020-9402 |  | SQL注入 | 8.8 | [Y](CVE-2020-9402/vultarget/) | [Y](CVE-2020-9402/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-9425 | rConfig | 信息泄漏 | 7.5 | N | [Y](CVE-2020-9425/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2020-9483 | Apache-SkyWalking | SQL注入 | 7.5 | N | [Y](CVE-2020-9483/poc/nuclei/) | [Y](CVE-2020-9483/poc/xray/) | N | N | N | N | [Y](CVE-2020-9483/poc/others/) |
-| CVE-2020-9484 | Apache-Tomcat | 代码执行  | 7 | N | [Y](CVE-2020-9484/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-9484/poc/others/) |
+| CVE-2020-9480 | Spark | 其他 | 9.8 | [Y](CVE-2020-9480/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2020-9483 | Apache-SkyWalking | SQL注入 | 7.5 | [Y](CVE-2020-9483/vultarget/) | [Y](CVE-2020-9483/poc/nuclei/) | [Y](CVE-2020-9483/poc/xray/) | N | N | N | N | [Y](CVE-2020-9483/poc/others/) |
+| CVE-2020-9484 | Apache-Tomcat | 代码执行  | 7 | [Y](CVE-2020-9484/vultarget/) | [Y](CVE-2020-9484/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-9484/poc/others/) |
 | CVE-2020-9490 |  | 其他 | 7.5 | N | [Y](CVE-2020-9490/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-9496 | Apache_OFBiz | 代码执行  | 6.1 | [Y](CVE-2020-9496/vultarget/) | [Y](CVE-2020-9496/poc/nuclei/) | [Y](CVE-2020-9496/poc/xray/) | N | N | N | N | [Y](CVE-2020-9496/poc/others/) |
 | CVE-2020-9597 |  | 越界写入 | 8.8 | N | N | N | N | N | [Y](CVE-2020-9597/poc/goby/) | N | N |

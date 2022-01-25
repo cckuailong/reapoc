@@ -30,12 +30,14 @@
 | CVE-2014-4592 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2014-4592/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2014-4940 | WordPress | 路径遍历 |  | N | [Y](CVE-2014-4940/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-4940/poc/others/) |
 | CVE-2014-5111 |  | 路径遍历 |  | N | [Y](CVE-2014-5111/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-5111/poc/others/) |
+| CVE-2014-5201 |  | SQL注入 |  | [Y](CVE-2014-5201/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2014-5258 |  | 路径遍历 |  | N | [Y](CVE-2014-5258/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-5258/poc/others/) |
 | CVE-2014-5368 | WordPress | 路径遍历 |  | N | [Y](CVE-2014-5368/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-5368/poc/others/) |
-| CVE-2014-6271 | web | 代码执行 | 9.8 | N | [Y](CVE-2014-6271/poc/nuclei/) | [Y](CVE-2014-6271/poc/xray/) | [Y](CVE-2014-6271/poc/pocsuite2/) | N | N | N | [Y](CVE-2014-6271/poc/others/) |
+| CVE-2014-6271 | web | 代码执行 | 9.8 | [Y](CVE-2014-6271/vultarget/) | [Y](CVE-2014-6271/poc/nuclei/) | [Y](CVE-2014-6271/poc/xray/) | [Y](CVE-2014-6271/poc/pocsuite2/) | N | N | N | [Y](CVE-2014-6271/poc/others/) |
 | CVE-2014-6308 | OSClass | 路径遍历 |  | N | [Y](CVE-2014-6308/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-6308/poc/others/) |
 | CVE-2014-8682 | GoGitService | SQL注入 |  | N | [Y](CVE-2014-8682/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-8682/poc/others/) |
 | CVE-2014-8799 | WordPress | 路径遍历 |  | N | [Y](CVE-2014-8799/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-8799/poc/others/) |
+| CVE-2014-8959 | phpMyAdmin | 路径遍历 |  | [Y](CVE-2014-8959/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2014-9094 | WordPress Plugin DZS-VideoGallery | 跨站脚本 |  | N | [Y](CVE-2014-9094/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2014-9094/poc/others/) |
 | CVE-2014-9444 |  | 跨站脚本 |  | N | [Y](CVE-2014-9444/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2014-9606 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2014-9606/poc/nuclei/) | N | N | N | N | N | N |
