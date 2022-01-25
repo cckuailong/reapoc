@@ -187,7 +187,7 @@
 | CVE-2021-38314 |  | 信息泄露 | 5.3 | N | [Y](CVE-2021-38314/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-38314/poc/others/) |
 | CVE-2021-38467 |  | 资源管理错误 | 8.1 | [Y](CVE-2021-38467/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2021-38540 | Apache-Airflow | 授权问题 | 9.8 | N | [Y](CVE-2021-38540/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-38647 | Azure | 命令执行 | 9.8 | N | [Y](CVE-2021-38647/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-38647/poc/others/) |
+| CVE-2021-38647 | Azure | 命令执行 | 9.8 | [Y](CVE-2021-38647/vultarget/) | [Y](CVE-2021-38647/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-38647/poc/others/) |
 | CVE-2021-38702 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-38702/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-38704 | ClinicCases | 跨站脚本 | 6.1 | N | [Y](CVE-2021-38704/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-38704/poc/others/) |
 | CVE-2021-38751 |  | 其他 | 4.3 | N | [Y](CVE-2021-38751/poc/nuclei/) | N | N | N | N | N | N |
@@ -196,13 +196,14 @@
 | CVE-2021-39316 | WordPress | 其他 | 7.5 | N | [Y](CVE-2021-39316/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-39316/poc/others/) |
 | CVE-2021-39320 |  | 其他 | 6.1 | N | [Y](CVE-2021-39320/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-39327 |  | 信息泄露 | 5.3 | N | [Y](CVE-2021-39327/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-39327/poc/others/) |
+| CVE-2021-39433 |  | 其他 | 7.5 | N | [Y](CVE-2021-39433/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-39501 | Eyoucms | 输入验证错误 | 6.1 | N | [Y](CVE-2021-39501/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-40346 |  | 输入验证错误 | 7.5 | [Y](CVE-2021-40346/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2021-40438 | Apache | 代码问题 | 9 | [Y](CVE-2021-40438/vultarget/) | [Y](CVE-2021-40438/poc/nuclei/) | [Y](CVE-2021-40438/poc/xray/) | N | N | [Y](CVE-2021-40438/poc/goby/) | N | [Y](CVE-2021-40438/poc/others/) |
 | CVE-2021-40539 | ManageEngine ADSelfService Plus | 授权问题 | 9.8 | N | [Y](CVE-2021-40539/poc/nuclei/) | N | N | N | [Y](CVE-2021-40539/poc/goby/) | N | [Y](CVE-2021-40539/poc/others/) |
 | CVE-2021-40542 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-40542/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-40856 |  | 其他 | 7.5 | N | [Y](CVE-2021-40856/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-40859 | COMpact 5500R | 后门 | 9.8 | N | [Y](CVE-2021-40859/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40859/poc/others/) |
+| CVE-2021-40859 | COMpact 5500R | 其他 | 9.8 | N | [Y](CVE-2021-40859/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40859/poc/others/) |
 | CVE-2021-40868 |  | 其他 | 6.1 | N | [Y](CVE-2021-40868/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40868/poc/others/) |
 | CVE-2021-40870 | Aviatrix Controller | 其他 | 9.8 | N | [Y](CVE-2021-40870/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40870/poc/others/) |
 | CVE-2021-40875 |  | 信息泄露 | 7.5 | N | [Y](CVE-2021-40875/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-40875/poc/others/) |

@@ -60,7 +60,7 @@
 | CVE-2017-5223 | PHP | 本地文件包含 | 5.5 | [Y](CVE-2017-5223/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2017-5487 | WordPress | 信息泄露 | 5.3 | N | [Y](CVE-2017-5487/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-5487/poc/others/) |
 | CVE-2017-5521 | Netgear router | 信息泄露 | 8.1 | N | [Y](CVE-2017-5521/poc/nuclei/) | [Y](CVE-2017-5521/poc/xray/) | N | N | N | N | [Y](CVE-2017-5521/poc/others/) |
-| CVE-2017-5638 | Struts2 | 代码执行 | 10 | N | [Y](CVE-2017-5638/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-5638/poc/others/) |
+| CVE-2017-5638 | Unknown | Unknown | Unknown | N | [Y](CVE-2017-5638/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-5638/poc/others/) |
 | CVE-2017-5645 | ALLSCAN | 命令执行 | 9.8 | [Y](CVE-2017-5645/vultarget/) | N | N | N | N | N | N | [Y](CVE-2017-5645/poc/others/) |
 | CVE-2017-5941 | Node.js | 访问控制错误 | 9.8 | [Y](CVE-2017-5941/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2017-5982 | KodiTV | 路径遍历 | 7.5 | N | [Y](CVE-2017-5982/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-5982/poc/others/) |
