@@ -47,7 +47,7 @@
 | CVE-2018-12604 | GreenCMS | 其他 | 7.5 | [Y](CVE-2018-12604/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-12613 | phpMyAdmin | 本地文件包含 | 8.8 | [Y](CVE-2018-12613/vultarget/) | [Y](CVE-2018-12613/poc/nuclei/) | [Y](CVE-2018-12613/poc/xray/) | N | N | N | N | [Y](CVE-2018-12613/poc/others/) |
 | CVE-2018-12634 | CirCarLife Scada | 信息泄露 | 9.8 | N | [Y](CVE-2018-12634/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12634/poc/others/) |
-| CVE-2018-1270 | Spring | 安全特征问题 | 9.8 | [Y](CVE-2018-1270/vultarget/) | N | N | [Y](CVE-2018-1270/poc/pocsuite2/) | [Y](CVE-2018-1270/poc/pocsuite3/) | N | N | [Y](CVE-2018-1270/poc/others/) |
+| CVE-2018-1270 | Spring | 代码执行  | 9.8 | [Y](CVE-2018-1270/vultarget/) | N | N | [Y](CVE-2018-1270/poc/pocsuite2/) | [Y](CVE-2018-1270/poc/pocsuite3/) | N | N | [Y](CVE-2018-1270/poc/others/) |
 | CVE-2018-1271 | Spring | 路径遍历 | 5.9 | N | [Y](CVE-2018-1271/poc/nuclei/) | N | [Y](CVE-2018-1271/poc/pocsuite2/) | [Y](CVE-2018-1271/poc/pocsuite3/) | N | N | N |
 | CVE-2018-1273 | Spring | 输入验证错误 | 9.8 | [Y](CVE-2018-1273/vultarget/) | [Y](CVE-2018-1273/poc/nuclei/) | N | [Y](CVE-2018-1273/poc/pocsuite2/) | [Y](CVE-2018-1273/poc/pocsuite3/) | N | N | [Y](CVE-2018-1273/poc/others/) |
 | CVE-2018-12909 |  | 路径遍历 | 7.5 | [Y](CVE-2018-12909/vultarget/) | N | N | N | N | N | N | N |

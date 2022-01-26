@@ -65,4 +65,4 @@
 | CVE-2016-8870 | Joomla | 输入验证 | 8.1 | [Y](CVE-2016-8870/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2016-9086 | gitlab | 信息泄露 | 6.5 | [Y](CVE-2016-9086/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2016-9565 | Nagios | 资料不足 | 9.8 | [Y](CVE-2016-9565/vultarget/) | N | N | N | N | N | N | N |
-| CVE-2016-9838 | Joomla | 权限许可和访问控制 | 7.5 | [Y](CVE-2016-9838/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2016-9838 | Joomla | 权限提升  | 7.5 | [Y](CVE-2016-9838/vultarget/) | N | N | N | N | N | N | N |

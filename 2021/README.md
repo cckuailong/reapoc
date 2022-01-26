@@ -203,7 +203,7 @@
 | CVE-2021-39327 |  | 信息泄露 | 5.3 | N | [Y](CVE-2021-39327/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-39327/poc/others/) |
 | CVE-2021-39433 |  | 其他 | 7.5 | N | [Y](CVE-2021-39433/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-39501 | Eyoucms | 输入验证错误 | 6.1 | N | [Y](CVE-2021-39501/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-4034 | Unknown | Unknown | Unknown | [Y](CVE-2021-4034/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2021-4034 | Unknown | Unknown | Unknown | [Y](CVE-2021-4034/vultarget/) | N | N | N | N | N | N | [Y](CVE-2021-4034/poc/others/) |
 | CVE-2021-40346 |  | 输入验证错误 | 7.5 | [Y](CVE-2021-40346/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2021-40438 | Apache | 代码问题 | 9 | [Y](CVE-2021-40438/vultarget/) | [Y](CVE-2021-40438/poc/nuclei/) | [Y](CVE-2021-40438/poc/xray/) | N | N | [Y](CVE-2021-40438/poc/goby/) | N | [Y](CVE-2021-40438/poc/others/) |
 | CVE-2021-40539 | ManageEngine ADSelfService Plus | 授权问题 | 9.8 | N | [Y](CVE-2021-40539/poc/nuclei/) | N | N | N | [Y](CVE-2021-40539/poc/goby/) | N | [Y](CVE-2021-40539/poc/others/) |
