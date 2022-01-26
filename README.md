@@ -29,9 +29,9 @@ oneliner
 
 ## Statistics
 
-| All CVEs | Vultarget | Nuclei | Xray | pocsuite2 | pocsuite3 | goby | oneliner |
-|----------|-----------|--------|------|-----------|-----------|------|----------|
-|   1241   |   345   |   1021   |   156   |   18   |   19   |   34   |   3   |
+| All CVEs | Vultarget | Nuclei | Xray | pocsuite2 | pocsuite3 | goby | oneliner | others |
+|----------|-----------|--------|------|-----------|-----------|------|----------|--------|
+|   1241   |   345   |   1021   |   156   |   18   |   19   |   34   |   3   |   747   |
 
 ## Menu
 
