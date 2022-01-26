@@ -11,7 +11,7 @@
 | CVE-2017-1000028 | GlassFish-Server-Open-Source-Edition | 路径遍历 | 7.5 | N | [Y](CVE-2017-1000028/poc/nuclei/) | [Y](CVE-2017-1000028/poc/xray/) | N | N | N | N | [Y](CVE-2017-1000028/poc/others/) |
 | CVE-2017-1000117 |  | 输入验证错误 | 8.8 | [Y](CVE-2017-1000117/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2017-1000170 | jQuery | 路径遍历 | 7.5 | N | [Y](CVE-2017-1000170/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-1000170/poc/others/) |
-| CVE-2017-1000353 | Jenkins | 命令执行 | 9.8 | [Y](CVE-2017-1000353/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2017-1000353 | Jenkins | 代码执行  | 9.8 | [Y](CVE-2017-1000353/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2017-1000486 |  | 加密问题 | 9.8 | [Y](CVE-2017-1000486/vultarget/) | [Y](CVE-2017-1000486/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2017-1000486/poc/others/) |
 | CVE-2017-10075 | Oracle-Fusion-Middleware | 跨站脚本 | 8.2 | N | [Y](CVE-2017-10075/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-10271 | Weblogic_interface_7001 | 命令执行 | 7.5 | [Y](CVE-2017-10271/vultarget/) | [Y](CVE-2017-10271/poc/nuclei/) | [Y](CVE-2017-10271/poc/xray/) | N | [Y](CVE-2017-10271/poc/pocsuite3/) | N | N | [Y](CVE-2017-10271/poc/others/) |
