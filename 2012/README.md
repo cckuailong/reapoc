@@ -16,7 +16,7 @@
 | CVE-2012-1226 |  | 路径遍历 |  | N | [Y](CVE-2012-1226/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-1226/poc/others/) |
 | CVE-2012-1823 | PHP | 代码执行 |  | [Y](CVE-2012-1823/vultarget/) | [Y](CVE-2012-1823/poc/nuclei/) | [Y](CVE-2012-1823/poc/xray/) | N | N | N | N | [Y](CVE-2012-1823/poc/others/) |
 | CVE-2012-1835 | WordPress | 跨站脚本 |  | N | [Y](CVE-2012-1835/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-1835/poc/others/) |
-| CVE-2012-2122 | MySQL | 安全模式绕过 |  | [Y](CVE-2012-2122/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2012-2122 | MySQL | 安全模式绕过 |  | [Y](CVE-2012-2122/vultarget/) | N | N | N | N | N | N | [Y](CVE-2012-2122/poc/others/) |
 | CVE-2012-2371 | WordPress | 跨站脚本 |  | N | [Y](CVE-2012-2371/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-2371/poc/others/) |
 | CVE-2012-3153 |  | 未知 |  | N | [Y](CVE-2012-3153/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-3153/poc/others/) |
 | CVE-2012-4242 | WordPress | 跨站脚本 |  | N | [Y](CVE-2012-4242/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-4242/poc/others/) |

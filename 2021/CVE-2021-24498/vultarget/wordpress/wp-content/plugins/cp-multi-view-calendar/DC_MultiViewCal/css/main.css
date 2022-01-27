@@ -1,0 +1,152 @@
+#multicalendar table,#multicalendar span,#multicalendar a{font-size:12px;font-weight:normal;}
+#multicalendar .ui-corner-left,#multicalendar .ui-corner-right{border-radius:0px}
+#multicalendar .nmonths div,#multicalendar .nmonths td span,#multicalendar .nmonths a{font-weight:inherit;background:none;border:inherit;color:#000}
+#multicalendar .nmonths .ui-datepicker-title,#multicalendar .nmonths a{border:0px}
+#multicalendar tr,#multicalendar td,#multicalendar th{border:0;text-align:left;padding:0px;}
+#multicalendar table [class*=span],.row-fluid #multicalendar table [class*=span] {display: table-row;}
+#multicalendar .mv-dayname,#multicalendar .wk-dayname{text-align:center;}
+#multicalendar .rb-i {overflow:hidden;color:white;white-space:nowrap;width:100%}
+#multicalendar .t-title {}
+#multicalendar .t-loc {display:none}
+#multicalendar .t-desc {display:none}
+#multicalendar td.specialday {display: none;}
+#multicalendar .st-more {color:#000;}
+#multicalendar .uEdition {text-decoration:underline;}
+/* start alert style */
+#popup_container {font-size:12px;min-width: 300px; /* Dialog will be no smaller than this */_width:320px;max-width: 600px; /* Dialog will wrap after this width */background: #fff;border: solid 1px #d8d8d8;color: #000;}
+#ctl, #cbl, #ctr, #cbr {display:none;}
+#popup_title {font-size:12px;font-weight: bold;text-align:left;line-height: 1.9em;color: #333;border-bottom: solid 1px #d8d8d8;cursor: default;padding:0 0 0 8px;margin: 0em;}
+#popup_content {background: 16px 16px no-repeat;padding: 12px;margin: 0em;}
+#popup_message {padding-left: 48px;}
+#popup_panel {text-align: center;margin: 1em 0em 0em 1em;}
+/* end alert style */
+#multicalendar .calmain,#multicalendar .ctoolbar,#multicalendar .infocontainer {margin: 0;font-size: 12px;font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;padding: 0;width:100%;}
+#multicalendar .calmain div,#multicalendar .calmain span,#multicalendar .calmain td {font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;}
+#multicalendar.calendaredition .ui-datepicker{font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;font-size: 12px;}
+#multicalendar .infocontainer input {border: solid 1px #3C7FB1;}
+#multicalendar .infocontainer input[type='checkbox'] {border: none;}
+#multicalendar .infocontainer textarea {border: solid 1px #3C7FB1;overflow:auto;}
+/* JQuery Validation */
+#multicalendar input.cusErrorPanel,#multicalendar cusErrorPanel.cusErrorPanel,#multicalendar textarea.cusErrorPanel {border:solid 1px red;}
+#multicalendar div.cusErrorPanel {z-index: auto;position:absolute;width: 276px;height: 35px;overflow: hidden;text-indent: 5px;line-height: 40px;font-size: 12px;font-family: Arial;color:#000000;background: url(images/tooltop.gif) no-repeat left top;opacity:0.9;filter: alpha(opacity=90);}
+#multicalendar .infocontainer {margin:2px;padding:4px;}
+#multicalendar .infocontainer .inputtext { width:100%;}
+#multicalendar .infocontainer .date {width:70px;}
+#multicalendar .infocontainer .fform {margin:0px;}
+#multicalendar .infocontainer .fform label {display:block;margin-top:2px;padding:2px;vertical-align:top;}
+#multicalendar .infocontainer .fform label.checkp {display:inline;}
+#multicalendar .infocontainer .fform label span {font-weight:bold;display:block;}
+#multicalendar .infocontainer .fform label span.inl{display:inline;}
+#multicalendar div.calmain {position: relative;}
+#multicalendar div.ptogtitle {position: absolute;z-index:100;top: 0px;right: 3px;height: 18px;padding: 1px 2px 1px 2px;font-weight: normal;}
+#multicalendar div.loadicon { background:#c44;color:#fff;}
+#multicalendar div.loaderror {padding: 1px 4px 1px 4px;background:#fad163;}
+#multicalendar div.ctoolbar {OVERFLOW: hidden;POSITION: relative;margin-bottom:5px;}
+#multicalendar div.ctoolbar div.fbutton {padding:0px;FLOAT: left;CURSOR:default;HEIGHT: 22px;margin-left:1px;margin-bottom:1px;}
+#multicalendar div.ctoolbar div.fbutton  div {float: left;padding: 1px 3px;}
+#multicalendar div.ctoolbar div.fbutton span {float: left;display: block;}
+#multicalendar div.ctoolbar div.btnseparator {float: left;margin: 3px;}
+#multicalendar div.ctoolbar div.fshowdatep {padding:1px;DISPLAY: block;FLOAT: left;CURSOR:default;HEIGHT: 22px;margin-left:1px;margin-bottom:3px;}
+#multicalendar div.ctoolbar div.fshowdatep  div {float: left;padding: 2px 3px;}
+#multicalendar div.ctoolbar div.fshowdatep span {float: left;display: block;}
+.mv_dlg .bubbletime{font-weight:bold}
+.ui-dialog{ position: absolute;overflow:visible;color:#000}
+
+
+.ui-icon-closethick {
+    background-image: url(images/close.png) !important;
+    background-position: left top !important;
+    margin: 0 !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close, .ui-icon-closethick {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    background: none !important;
+    border: none !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-titlebar-close:hover {
+    padding: 0 !important;
+}
+.mv_dlg.ui-dialog .ui-dialog-titlebar-close span.ui-button-text{display:none}
+#editEventContainer,#bbit-cal-buddle,#bbit-cs-buddle,.mv_dlg_nmonth{display:none}
+#multicalendar table{border-bottom:0px;line-height:15px;margin:0px}
+#multicalendar th{line-height:15px;}
+#multicalendar div.ctoolbar div.fbutton.non-navigate {CURSOR: default;}
+.mv_dlg.ui-dialog{z-index:1000000}
+#multicalendar tr td{border-style:solid;border-color:#d8d8d8;border-bottom:0px;}
+#multicalendar tr td{padding:0px;}
+#multicalendar tr th,#multicalendar thead th{border:0px;padding:0px;background:none}
+#multicalendar tr td.st-c,#multicalendar table{border:0px}
+
+#multicalendar .calmain,#multicalendar .infocontainer {height: auto}
+.mv_dlg.ui-dialog{overflow:visible}
+#multicalendar .ui-datepicker table{table-layout: auto;}
+#multicalendar .ui-datepicker td a{padding:0 4px}
+#multicalendar .ui-datepicker .ui-state-default{font-weight:normal}
+#multicalendar .list_event_content{margin:10px;padding-left:10px}
+
+#multicalendar .listnav{margin:10px 0px}
+#multicalendar a.listprevbtn,#multicalendar a.listnextbtn{text-decoration:none;padding:2px 10px;margin:0px 8px}
+#multicalendar a.listbtndisabled{CURSOR: default;opacity:0.4;}
+#multicalendar .readmore{white-space: nowrap;}
+#multicalendar .description_large{display:none}
+
+#multicalendar.mvlist, #multicalendar.mvlist .gridcontainercover,#multicalendar.mvlist .calmain,#multicalendar.mvNMonth, #multicalendar.mvNMonth .gridcontainercover,#multicalendar.mvNMonth .calmain{border:0px;background:none;padding:0px;margin:0px;}
+#multicalendar.mvlist, #multicalendar.mvlist .gridcontainercover,#multicalendar.mvlist .calmain,#multicalendar.mvlist .calmain div,#multicalendar.mvlist .calmain span,#multicalendar.mvlist .calmain td{font-family:inherit;font-size:inherit;}
+
+#multicalendar.mvlist{color:inherit}
+#multicalendar .nav_list{display:none}
+
+
+#multicalendar .readmore:after  {content:"]"; padding:0px 3px; display:inline-block; text-decoration: none; color:#000;}
+#multicalendar .readmore:before {content:"["; padding:0px 3px; display:inline-block; text-decoration: none; color:#000;}
+#multicalendar .readmore{text-decoration:none}
+#multicalendar .readmore:hover{text-decoration:underline}
+#multicalendar .cc{z-index:500}
+#multicalendar a{box-shadow:none !important}
+#multicalendar .ui-datepicker-calendar th{color:#000}
+#multicalendar .tg-time{color:#000}
+#multicalendar .mv-dayname{color:#000}
+#multicalendar div{line-height:normal !important}
+#multicalendar table td.tg-col{vertical-align:baseline}
+@media (max-width : 770px){#multicalendar span.wk-daylink{font-size:80%;white-space:normal;overflow-wrap:normal}#multicalendar div.wk-dayname{line-height:8px !important;padding:2px 0px;margin:0px}}
+@media (max-width : 330px){#multicalendar span.wk-daylink{font-size:60%;}}
+@media (max-width : 770px){#multicalendar .tg-col-eventwrapper{margin-right:0px}#multicalendar .chip dt{font-size:70%}#multicalendar .t-title{width:60%}}
+#multicalendar .ui-datepicker .ui-datepicker-prev,#multicalendar .ui-datepicker .ui-datepicker-next{top:0px !important}
+#multicalendar .viewrowMonth .tg-col-eventwrapper{margin-right:0px}
+#multicalendar .wk-dayname{margin:0px;padding:0px;text-align:center}
+@media screen and (max-width: 760px) {.viewrowMonth .gcweekname:nth-child(odd) span {display:none !important}}
+#multicalendar {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#multicalendar *,
+#multicalendar *:before,
+#multicalendar *:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+#multicalendar .itemlist_edit,#multicalendar .itemlist_delete{display:inline-block;margin-right:20px;text-decoration:underline}
+#multicalendar .searchcontainer{text-align:right}
+#multicalendar .searchcontainer input{width:100%}
+
+#multicalendar .mvSelectNavigation{float:right;font-size:16px}
+#multicalendar .fshowdatep span{font-weight:bold}
+#multicalendar,.mv_dlg.ui-dialog {line-height:100%}
+.mv_dlg.ui-dialog .ui-dialog-content{padding:20px 10px 20px 15px}
+#multicalendar #Subject {width:calc(100% - 60px)}
+#multicalendar .cleditorMain iframe{min-height:100px;max-height:200px}
+#multicalendar .tg-timedevents{border-bottom:1px solid #D8D8D8;border-right:1px solid #D8D8D8;}
+#multicalendar .scolltimeevent {overflow-y:hidden}
+.editbtns{margin-top:10px}
+.mv_dlg.ui-dialog .ui-dialog-titlebar-close {visibility: hidden;}
+.mv_dlg.ui-dialog .ui-dialog-titlebar-close span {visibility: visible;}

@@ -1,0 +1,89 @@
+# Module Directive Testing
+
+# 1 mod_access_compat: Order Directive Allow from all
+<FilesMatch "^(mod_access_compat-od-allowed\.png)$">
+	<IfModule mod_access_compat.c>
+		Order Allow,Deny
+		Allow from all
+	</IfModule>
+</FilesMatch>
+
+# 2 mod_access_compat: Order Directive Deny from all
+<FilesMatch "^(mod_access_compat-od-denied\.png)$">
+	<IfModule mod_access_compat.c>
+		Order Allow,Deny
+		Deny from all
+	</IfModule>
+</FilesMatch>
+
+# 3 mod_authz_core Require all denied       
+<FilesMatch "^(mod_authz_core-denied\.png)$">
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+</FilesMatch>
+
+# 4 mod_authz_core|mod_access_compat BC
+<FilesMatch "^(mod_authz_core-od-cond-denied\.png)$">
+	<IfModule mod_authz_core.c>
+		<IfModule mod_access_compat.c>
+			Order Allow,Deny
+			Deny from all
+		</IfModule>
+	</IfModule>
+</FilesMatch>
+
+# 5 mod_authz_host Require ip 127.9.9.1       
+<FilesMatch "^(mod_authz_host-require-ip\.png)$">
+	<IfModule mod_authz_host.c>
+		Require ip 127.9.9.1
+	</IfModule>
+</FilesMatch>
+
+# 6 mod_authz_host|mod_access_compat BC	       
+<FilesMatch "^(mod_authz_host-od-cond-denied\.png)$">
+	<IfModule mod_authz_host.c>
+		<IfModule mod_access_compat.c>
+			Order Allow,Deny
+			Deny from all
+		</IfModule>
+	</IfModule>
+</FilesMatch>
+
+# 9 mod_rewrite
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} ^.*/mod-test/mod_rewrite-cond\.png$ [NC]
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/wp-content/plugins/bulletproof-security/admin/mod-test/mod_rewrite-nc.png [R=302]
+RewriteCond %{HTTPS} =on
+RewriteCond %{REQUEST_URI} ^.*/mod-test/mod_rewrite-cond\.png$ [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/wp-content/plugins/bulletproof-security/admin/mod-test/mod_rewrite-nc.png [R=302]
+</IfModule>
+
+# 12 mod_security
+<FilesMatch "^(mod_security\.png)$">
+	<IfModule mod_security.c>
+		<IfModule mod_access_compat.c>
+			Order Allow,Deny
+			Deny from all
+		</IfModule>
+	
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+	</IfModule>
+</FilesMatch>
+
+# 13 mod_security2
+<FilesMatch "^(mod_security-2\.png)$">
+	<IfModule mod_security2.c>
+		<IfModule mod_access_compat.c>
+			Order Allow,Deny
+			Deny from all
+		</IfModule>
+	
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+	</IfModule>
+</FilesMatch>

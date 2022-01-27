@@ -1,0 +1,16 @@
+#   BULLETPROOF DEFAULT .HTACCESS      
+
+# WARNING!!! THE default.htaccess FILE DOES NOT PROTECT YOUR WEBSITE AGAINST HACKERS
+# This is a standard generic htaccess file that does NOT provide any website security
+# The DEFAULT .HTACCESS file should be used for testing and troubleshooting purposes only
+
+# BEGIN BPS WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END BPS WordPress

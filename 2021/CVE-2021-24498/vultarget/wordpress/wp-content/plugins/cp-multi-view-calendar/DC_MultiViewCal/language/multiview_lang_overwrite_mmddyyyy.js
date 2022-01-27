@@ -1,0 +1,2 @@
+var df = {"fulldaykey": "MMddyyyy","fulldayshow": "L d yyyy","fulldayvalue": "M/d/yyyy","Md": "W M/d","nDaysView": "M/d","Md3": "L d","separator": "/","year_index": 2,"month_index": 0,"day_index": 1};
+$.extend(i18n.dcmvcal.dateformat,df);

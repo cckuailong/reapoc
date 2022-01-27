@@ -8,7 +8,7 @@
 | CVE | Component | Category | CVSS | Vultarget | Nuclei | Xray | pocsuite2 | pocsuite3 | goby | oneliner | others |
 |-----|-----------|----------|------|-----------|--------|------|-----------|-----------|------|----------|-------|
 | CVE-2011-0049 |  | 路径遍历 |  | N | [Y](CVE-2011-0049/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2011-0049/poc/others/) |
-| CVE-2011-0751 |  | 路径遍历 |  | [Y](CVE-2011-0751/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2011-0751 |  | 路径遍历 |  | [Y](CVE-2011-0751/vultarget/) | N | N | N | N | N | N | [Y](CVE-2011-0751/poc/others/) |
 | CVE-2011-1669 | WordPress | 路径遍历 |  | N | [Y](CVE-2011-1669/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2011-1669/poc/others/) |
 | CVE-2011-2730 | Spring | 配置错误 |  | N | N | N | [Y](CVE-2011-2730/poc/pocsuite2/) | [Y](CVE-2011-2730/poc/pocsuite3/) | N | N | N |
 | CVE-2011-2744 |  | 路径遍历 |  | N | [Y](CVE-2011-2744/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2011-2744/poc/others/) |

@@ -9,7 +9,7 @@
 |-----|-----------|----------|------|-----------|--------|------|-----------|-----------|------|----------|-------|
 | CVE-2018-0127 | Cisco-Router | 信息泄露 | 9.8 | N | [Y](CVE-2018-0127/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-0296 | Cisco--C828 | 安全模式绕过 | 7.5 | N | [Y](CVE-2018-0296/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-0296/poc/others/) |
-| CVE-2018-1000006 |  | 操作系统命令注入 | 8.8 | [Y](CVE-2018-1000006/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-1000006 |  | 操作系统命令注入 | 8.8 | [Y](CVE-2018-1000006/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-1000006/poc/others/) |
 | CVE-2018-1000129 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-1000129/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-1000130 |  | 注入 | 8.1 | N | [Y](CVE-2018-1000130/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-1000533 | gitlist | 输入验证 | 9.8 | [Y](CVE-2018-1000533/vultarget/) | [Y](CVE-2018-1000533/poc/nuclei/) | [Y](CVE-2018-1000533/poc/xray/) | N | N | N | N | [Y](CVE-2018-1000533/poc/others/) |
@@ -20,7 +20,7 @@
 | CVE-2018-10095 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-10095/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-10141 | PaloAlto PAN-OS | 跨站脚本 | 6.1 | N | [Y](CVE-2018-10141/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-10201 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-10201/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-10201/poc/others/) |
-| CVE-2018-1058 |  | 权限许可和访问控制问题 | 8.8 | [Y](CVE-2018-1058/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-1058 |  | 权限许可和访问控制问题 | 8.8 | [Y](CVE-2018-1058/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-1058/poc/others/) |
 | CVE-2018-10735 | Nagios | SQL注入 | 7.2 | [Y](CVE-2018-10735/vultarget/) | N | [Y](CVE-2018-10735/poc/xray/) | N | N | N | N | N |
 | CVE-2018-10736 | Nagios | SQL注入 | 7.2 | [Y](CVE-2018-10736/vultarget/) | N | [Y](CVE-2018-10736/poc/xray/) | N | N | N | N | N |
 | CVE-2018-10737 | Nagios | SQL注入 | 7.2 | [Y](CVE-2018-10737/vultarget/) | N | [Y](CVE-2018-10737/poc/xray/) | N | N | N | N | N |
@@ -28,9 +28,9 @@
 | CVE-2018-10818 | Unknown | Unknown | Unknown | N | [Y](CVE-2018-10818/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-10822 | D-Link-Router | 路径遍历 | 7.5 | N | [Y](CVE-2018-10822/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-10822/poc/others/) |
 | CVE-2018-10823 | D-Link-Router | 操作系统命令注入 | 8.8 | N | [Y](CVE-2018-10823/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-10823/poc/others/) |
-| CVE-2018-10933 | libssh | 命令执行 | 9.1 | [Y](CVE-2018-10933/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-10933 | libssh | 命令执行 | 9.1 | [Y](CVE-2018-10933/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-10933/poc/others/) |
 | CVE-2018-10993 | Unknown | Unknown | Unknown | N | N | N | [Y](CVE-2018-10993/poc/pocsuite2/) | N | N | N | N |
-| CVE-2018-11235 |  | 路径遍历 | 7.8 | [Y](CVE-2018-11235/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-11235 |  | 路径遍历 | 7.8 | [Y](CVE-2018-11235/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-11235/poc/others/) |
 | CVE-2018-11409 | Splunk | 信息泄露 | 5.3 | [Y](CVE-2018-11409/vultarget/) | [Y](CVE-2018-11409/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-11409/poc/others/) |
 | CVE-2018-11528 | wuzhicms | SQL注入 | 9.8 | [Y](CVE-2018-11528/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-11686 |  | 输入验证错误 | 9.8 | N | N | [Y](CVE-2018-11686/poc/xray/) | N | N | N | N | [Y](CVE-2018-11686/poc/others/) |
@@ -42,9 +42,9 @@
 | CVE-2018-12054 | PHP-Mall | 路径遍历 | 7.5 | N | [Y](CVE-2018-12054/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12054/poc/others/) |
 | CVE-2018-1207 | Dell-iDRAC | 代码执行  | 9.8 | N | [Y](CVE-2018-1207/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-12095 |  | 跨站脚本 | 5.4 | N | [Y](CVE-2018-12095/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12095/poc/others/) |
-| CVE-2018-1247 |  | 资料不足 | 7.1 | N | [Y](CVE-2018-1247/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-1247 |  | 资料不足 | 7.1 | N | [Y](CVE-2018-1247/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-1247/poc/others/) |
 | CVE-2018-12491 |  | 资料不足 | 9.8 | [Y](CVE-2018-12491/vultarget/) | N | N | N | N | N | N | N |
-| CVE-2018-12604 | GreenCMS | 其他 | 7.5 | [Y](CVE-2018-12604/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-12604 | GreenCMS | 其他 | 7.5 | [Y](CVE-2018-12604/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-12604/poc/others/) |
 | CVE-2018-12613 | phpMyAdmin | 本地文件包含 | 8.8 | [Y](CVE-2018-12613/vultarget/) | [Y](CVE-2018-12613/poc/nuclei/) | [Y](CVE-2018-12613/poc/xray/) | N | N | N | N | [Y](CVE-2018-12613/poc/others/) |
 | CVE-2018-12634 | CirCarLife Scada | 信息泄露 | 9.8 | N | [Y](CVE-2018-12634/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12634/poc/others/) |
 | CVE-2018-1270 | Spring | 代码执行  | 9.8 | [Y](CVE-2018-1270/vultarget/) | N | N | [Y](CVE-2018-1270/poc/pocsuite2/) | [Y](CVE-2018-1270/poc/pocsuite3/) | N | N | [Y](CVE-2018-1270/poc/others/) |
@@ -60,20 +60,20 @@
 | CVE-2018-13980 | ZetaProducerDesktopCMS | 路径遍历 | 5.5 | N | [Y](CVE-2018-13980/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-13980/poc/others/) |
 | CVE-2018-14013 | Zimbra | 跨站脚本 | 6.1 | N | [Y](CVE-2018-14013/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-14064 | SillySmart | 路径遍历 | 9.8 | N | [Y](CVE-2018-14064/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-14064/poc/others/) |
-| CVE-2018-14418 |  | SQL注入 | 9.8 | [Y](CVE-2018-14418/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-14418 |  | SQL注入 | 9.8 | [Y](CVE-2018-14418/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-14418/poc/others/) |
 | CVE-2018-14574 | Django | URL 重定向 | 6.1 | [Y](CVE-2018-14574/vultarget/) | [Y](CVE-2018-14574/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-14685 |  | 信息泄露 | 9.8 | [Y](CVE-2018-14685/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-14728 |  | 资料不足 | 9.8 | N | [Y](CVE-2018-14728/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-14728/poc/others/) |
-| CVE-2018-14912 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-14912/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-14912 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-14912/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-14912/poc/others/) |
 | CVE-2018-14916 | Loytec LGATE-902 | 代码问题 | 9.1 | N | [Y](CVE-2018-14916/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-15138 | Ericsson-LG公司产品 | 路径遍历 | 7.5 | N | [Y](CVE-2018-15138/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-15473 | OpenSSH | 信息泄露 | 5.3 | [Y](CVE-2018-15473/vultarget/) | [Y](CVE-2018-15473/poc/nuclei/) | N | [Y](CVE-2018-15473/poc/pocsuite2/) | N | N | N | [Y](CVE-2018-15473/poc/others/) |
 | CVE-2018-15517 |  | 资料不足 | 8.6 | N | [Y](CVE-2018-15517/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-15535 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-15535/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15535/poc/others/) |
 | CVE-2018-15640 |  | 访问控制错误 | 8.8 | N | [Y](CVE-2018-15640/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2018-15685 | Electron | 资料不足 | 8.1 | [Y](CVE-2018-15685/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-15685 | Electron | 资料不足 | 8.1 | [Y](CVE-2018-15685/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-15685/poc/others/) |
 | CVE-2018-15745 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-15745/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15745/poc/others/) |
-| CVE-2018-15877 |  | 操作系统命令注入 | 8.8 | [Y](CVE-2018-15877/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-15877 |  | 操作系统命令注入 | 8.8 | [Y](CVE-2018-15877/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-15877/poc/others/) |
 | CVE-2018-15961 | Adobe ColdFusion | 代码问题 | 9.8 | [Y](CVE-2018-15961/vultarget/) | [Y](CVE-2018-15961/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15961/poc/others/) |
 | CVE-2018-16059 | WirelessHART-Gateways | 路径遍历 | 5.3 | N | [Y](CVE-2018-16059/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-16059/poc/others/) |
 | CVE-2018-16133 |  | 路径遍历 | 5.3 | N | [Y](CVE-2018-16133/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-16133/poc/others/) |
@@ -83,7 +83,7 @@
 | CVE-2018-16299 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-16299/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-16299/poc/others/) |
 | CVE-2018-16341 | Nuxeo | 代码执行 |  | [Y](CVE-2018-16341/vultarget/) | [Y](CVE-2018-16341/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-16341/poc/others/) |
 | CVE-2018-16356 |  | SQL注入 | 9.8 | [Y](CVE-2018-16356/vultarget/) | N | N | N | N | N | N | N |
-| CVE-2018-16509 |  | 权限许可和访问控制问题 | 7.8 | [Y](CVE-2018-16509/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-16509 |  | 权限许可和访问控制问题 | 7.8 | [Y](CVE-2018-16509/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-16509/poc/others/) |
 | CVE-2018-16668 | CirCarLife Scada | 信息泄露 | 5.3 | N | [Y](CVE-2018-16668/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-16670 | CirCarLife Scada | 授权问题 | 5.3 | N | [Y](CVE-2018-16670/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-16671 | CirCarLife Scada | 信息泄露 | 5.3 | N | [Y](CVE-2018-16671/poc/nuclei/) | N | N | N | N | N | N |
@@ -96,7 +96,7 @@
 | CVE-2018-18086 |  | 资料不足 | 8.8 | [Y](CVE-2018-18086/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-18264 |  | 访问控制错误 | 7.5 | N | [Y](CVE-2018-18264/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-18323 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-18323/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18323/poc/others/) |
-| CVE-2018-18326 |  | 加密问题 | 7.5 | N | [Y](CVE-2018-18326/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-18326 |  | 加密问题 | 7.5 | N | [Y](CVE-2018-18326/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18326/poc/others/) |
 | CVE-2018-18570 | Planon | 跨站脚本 | 6.1 | N | [Y](CVE-2018-18570/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-18775 | MicroStrategy-MicroStrategy-Software | 跨站脚本 | 6.1 | N | [Y](CVE-2018-18775/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18775/poc/others/) |
 | CVE-2018-18777 | MicroStrategy-MicroStrategy-Software | 路径遍历 | 4.3 | N | [Y](CVE-2018-18777/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18777/poc/others/) |
@@ -112,9 +112,9 @@
 | CVE-2018-19458 | PHP | 授权问题 | 7.5 | N | [Y](CVE-2018-19458/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-19458/poc/others/) |
 | CVE-2018-19462 |  | 代码注入 | 7.2 | [Y](CVE-2018-19462/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-19475 |  | 安全特征问题 | 7.8 | [Y](CVE-2018-19475/vultarget/) | N | N | N | N | N | N | N |
-| CVE-2018-19518 |  | 操作系统命令注入 | 7.5 | [Y](CVE-2018-19518/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-19518 |  | 操作系统命令注入 | 7.5 | [Y](CVE-2018-19518/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-19518/poc/others/) |
 | CVE-2018-19753 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-19753/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2018-20062 | cmsms | 输入验证 | 9.8 | N | [Y](CVE-2018-20062/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-20062 | cmsms | 输入验证 | 9.8 | N | [Y](CVE-2018-20062/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-20062/poc/others/) |
 | CVE-2018-20462 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2018-20462/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-20470 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-20470/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-20470/poc/others/) |
 | CVE-2018-20824 | JIRA | 跨站脚本 | 6.1 | N | [Y](CVE-2018-20824/poc/nuclei/) | N | N | N | N | N | N |
@@ -126,7 +126,7 @@
 | CVE-2018-2894 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2018-2894/vultarget/) | [Y](CVE-2018-2894/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-2894/poc/others/) |
 | CVE-2018-3167 | Oracle | 信息泄漏 | 5.3 | N | [Y](CVE-2018-3167/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-3238 | Oracle-Fusion-Middleware | 未授权访问 | 6.9 | N | [Y](CVE-2018-3238/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2018-3245 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2018-3245/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-3245 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2018-3245/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-3245/poc/others/) |
 | CVE-2018-3246 | Oracle WebLogic Server | 访问控制错误 | 7.5 | [Y](CVE-2018-3246/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-3714 |  | 路径遍历 | 6.5 | N | [Y](CVE-2018-3714/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-3760 | Rails | 信息泄露 | 7.5 | [Y](CVE-2018-3760/vultarget/) | [Y](CVE-2018-3760/poc/nuclei/) | [Y](CVE-2018-3760/poc/xray/) | N | N | N | N | [Y](CVE-2018-3760/poc/others/) |
@@ -135,33 +135,33 @@
 | CVE-2018-5233 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-5233/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-5316 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2018-5316/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-6008 |  | 信息泄露 | 7.5 | N | [Y](CVE-2018-6008/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-6008/poc/others/) |
-| CVE-2018-6389 | WordPress | 资源管理错误 | 7.5 | N | [Y](CVE-2018-6389/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-6389 | WordPress | 资源管理错误 | 7.5 | N | [Y](CVE-2018-6389/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-6389/poc/others/) |
 | CVE-2018-6605 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2018-6605/poc/xray/) | N | N | N | N | [Y](CVE-2018-6605/poc/others/) |
 | CVE-2018-6893 |  | SQL注入 | 9.8 | [Y](CVE-2018-6893/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-6910 |  | 信息泄露 | 5.3 | N | [Y](CVE-2018-6910/poc/nuclei/) | [Y](CVE-2018-6910/poc/xray/) | N | N | [Y](CVE-2018-6910/poc/goby/) | N | N |
-| CVE-2018-7171 |  | 路径遍历 | 7.5 | [Y](CVE-2018-7171/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-7171 |  | 路径遍历 | 7.5 | [Y](CVE-2018-7171/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-7171/poc/others/) |
 | CVE-2018-7251 | Anchor CMS | 信息泄露 | 9.8 | N | [Y](CVE-2018-7251/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7251/poc/others/) |
 | CVE-2018-7314 |  | SQL注入 | 9.8 | [Y](CVE-2018-7314/vultarget/) | N | [Y](CVE-2018-7314/poc/xray/) | N | N | N | N | [Y](CVE-2018-7314/poc/others/) |
 | CVE-2018-7422 | WordPress | 信息泄露 | 7.5 | [Y](CVE-2018-7422/vultarget/) | [Y](CVE-2018-7422/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7422/poc/others/) |
 | CVE-2018-7467 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-7467/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-7490 | PHP | 信息泄露 | 7.5 | [Y](CVE-2018-7490/vultarget/) | [Y](CVE-2018-7490/poc/nuclei/) | [Y](CVE-2018-7490/poc/xray/) | N | N | N | N | [Y](CVE-2018-7490/poc/others/) |
 | CVE-2018-7600 | Drupal | 代码执行 | 9.8 | [Y](CVE-2018-7600/vultarget/) | [Y](CVE-2018-7600/poc/nuclei/) | [Y](CVE-2018-7600/poc/xray/) | N | N | N | N | [Y](CVE-2018-7600/poc/others/) |
-| CVE-2018-7602 | Drupal | 资料不足 | 9.8 | [Y](CVE-2018-7602/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-7602 | Drupal | 资料不足 | 9.8 | [Y](CVE-2018-7602/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-7602/poc/others/) |
 | CVE-2018-7662 |  | 信息泄露 | 5.3 | N | N | [Y](CVE-2018-7662/poc/xray/) | N | N | [Y](CVE-2018-7662/poc/goby/) | N | N |
 | CVE-2018-7700 | DedeCMS | 跨站请求伪造 | 8.8 | N | [Y](CVE-2018-7700/poc/nuclei/) | [Y](CVE-2018-7700/poc/xray/) | N | N | N | N | N |
 | CVE-2018-7719 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-7719/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7719/poc/others/) |
 | CVE-2018-8006 | Apache-ActiveMQ | 跨站脚本 | 6.1 | N | [Y](CVE-2018-8006/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-8033 | Apache_OFBiz | 信息泄露 | 7.5 | [Y](CVE-2018-8033/vultarget/) | [Y](CVE-2018-8033/poc/nuclei/) | [Y](CVE-2018-8033/poc/xray/) | N | N | N | N | N |
-| CVE-2018-8057 |  | SQL注入 | 9.8 | [Y](CVE-2018-8057/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-8057 |  | SQL注入 | 9.8 | [Y](CVE-2018-8057/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-8057/poc/others/) |
 | CVE-2018-8715 | Embedthis-Appweb | 配置风险 | 8.1 | [Y](CVE-2018-8715/vultarget/) | [Y](CVE-2018-8715/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-8719 |  | 资料不足 | 5.3 | N | [Y](CVE-2018-8719/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-8719/poc/others/) |
 | CVE-2018-8727 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-8727/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2018-8733 |  | SQL注入 | 9.8 | [Y](CVE-2018-8733/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-8733 |  | SQL注入 | 9.8 | [Y](CVE-2018-8733/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-8733/poc/others/) |
 | CVE-2018-8770 |  | 信息泄露 | 5.3 | N | [Y](CVE-2018-8770/poc/nuclei/) | [Y](CVE-2018-8770/poc/xray/) | N | N | N | N | [Y](CVE-2018-8770/poc/others/) |
 | CVE-2018-9118 | WordPress | 路径遍历 | 7.5 | N | [Y](CVE-2018-9118/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9118/poc/others/) |
-| CVE-2018-9126 |  | 信息泄露 | 9.8 | N | [Y](CVE-2018-9126/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-9126 |  | 信息泄露 | 9.8 | N | [Y](CVE-2018-9126/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9126/poc/others/) |
 | CVE-2018-9205 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-9205/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9205/poc/others/) |
-| CVE-2018-9207 |  | 资料不足 | 9.8 | [Y](CVE-2018-9207/vultarget/) | N | N | N | N | N | N | N |
-| CVE-2018-9208 |  | 输入验证 | 9.8 | [Y](CVE-2018-9208/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-9207 |  | 资料不足 | 9.8 | [Y](CVE-2018-9207/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-9207/poc/others/) |
+| CVE-2018-9208 |  | 输入验证 | 9.8 | [Y](CVE-2018-9208/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-9208/poc/others/) |
 | CVE-2018-9845 | Etherpad-Lite | 权限许可和访问控制问题 | 9.8 | N | [Y](CVE-2018-9845/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-9995 | DVR | 信任管理问题 | 9.8 | N | [Y](CVE-2018-9995/poc/nuclei/) | [Y](CVE-2018-9995/poc/xray/) | N | N | N | N | [Y](CVE-2018-9995/poc/others/) |
