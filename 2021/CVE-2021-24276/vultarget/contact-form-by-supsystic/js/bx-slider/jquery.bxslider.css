@@ -1,0 +1,434 @@
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	/*-moz-box-shadow: 0 0 5px #ccc;*/
+	/*-webkit-box-shadow: 0 0 5px #ccc;*/
+	/*box-shadow: 0 0 5px #ccc;*/
+	/*border:  5px solid #fff;*/
+	/*left: -5px;*/
+	/*background: #fff;*/
+
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.bx-wrapper .bx-viewport ul {
+	padding: 0!important;
+}
+
+.bx-wrapper .bx-viewport li {
+	left: 0;
+	top: 0;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.bx-wrapper .bx-viewport img {
+    border-radius: 0 !important;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	padding: 0;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-weight: bold;
+	color: #666;
+	padding-top: 10px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+    margin-top: 5px;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(images/controls.png) no-repeat 0 -32px !important;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(images/controls.png) no-repeat -43px -32px !important;
+}
+
+.bx-wrapper .bx-prev#little_arrows {
+	width: 23px;
+	height: 51px;
+	background: url(images/black.png);
+}
+
+.bx-wrapper .bx-next#little_arrows {
+	width: 23px;
+	height: 51px;
+	background: url(images/black.png) -47px 0px;
+}
+
+.bx-wrapper .bx-prev#standart_big {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/thick10.png);
+}
+
+.bx-wrapper .bx-next#standart_big {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/arrow454.png);
+}
+
+.bx-wrapper .bx-prev#standart_small {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/arrow506.png);
+}
+
+.bx-wrapper .bx-next#standart_small {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/arrow484.png);
+}
+
+.bx-wrapper .bx-prev#circle_little {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/back28.png);
+}
+
+.bx-wrapper .bx-next#circle_little {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/right127.png);
+}
+
+.bx-wrapper .bx-prev#square_big {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/back61.png);
+}
+
+.bx-wrapper .bx-next#square_big {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/right224.png);
+}
+
+.bx-wrapper .bx-prev#fast {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/rewind44.png);
+}
+
+.bx-wrapper .bx-next#fast {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/fast44.png);
+}
+
+.bx-wrapper .bx-prev#little {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/left.png);
+}
+
+.bx-wrapper .bx-next#little {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/forward18.png);
+}
+
+.bx-wrapper .bx-prev#go_small {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/go10.png);
+}
+
+.bx-wrapper .bx-next#go_small {
+	width: 32px;
+	height: 32px;
+	background: url(images/arrows/right244.png);
+}
+
+.bx-wrapper .bx-controls-direction{
+	opacity: 0.0;
+	-webkit-transition: opacity 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out;
+}
+
+.bx-wrapper:hover .bx-controls-direction{
+	opacity: 1.0;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+}
+
+.bx-next:hover{
+	transform: translateX(4px);
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.bx-prev:hover {
+	transform: translateX(-4px);
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.bx-next, .bx-prev{
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px !important;
+	height: 32px !important;
+	text-indent: -9999px;
+	z-index: 9999;
+	border:none;
+}
+
+.bx-wrapper .thumbnails .bx-controls-direction:not(.vertical) a {
+	top: 40% !important;
+}
+
+.bx-wrapper .thumbnails .bx-controls-vertical:not(.vertical) a {
+	top: 50% !important;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption  {
+	/*color: #fff;*/
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+ul.bx-pager {
+	margin: 0 !important;
+}
+
+.thumbnails .bx-custom-pager {
+	display: block;
+	margin: 0 !important;
+	bottom: -90px !important;
+	position: inherit !important;
+}
+
+.thumbnails.bx-has-pager {
+	width: 100%;
+	overflow: hidden;
+}
+
+.thumbnails .bx-custom-pager li {
+	float: left;
+	padding: 0 !important;
+	margin-right: 1px !important;
+	margin-left: 0 !important;
+}
+
+.thumbs li {
+    cursor: pointer;
+}
+
+.bx-caption-preview {
+    display: block;
+    font-family: Arial;
+    padding: 10px 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin-bottom: 4px;
+}
+
+.bx-caption-preview span {
+    margin-left: 10px;
+}
+
+.selectedPreset, .unselectedPreset {
+    cursor: pointer;
+}
+
+.selectedPreset {
+    border-bottom: 1px solid aqua !important;
+}
+
+.unselectedPreset {
+    border-bottom: 1px solid gray;
+}
+
+.bx-wrapper:hover .bx-controls-preview {
+    opacity: 1.0;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.bx-wrapper .bx-controls-preview a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px !important;
+    height: 32px !important;
+    text-indent: -9999px;
+    z-index: 9999;
+}

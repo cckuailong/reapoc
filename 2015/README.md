@@ -39,7 +39,7 @@
 | CVE-2015-7297 | Joomla | SQL注入 |  | N | [Y](CVE-2015-7297/poc/nuclei/) | [Y](CVE-2015-7297/poc/xray/) | N | N | N | N | [Y](CVE-2015-7297/poc/others/) |
 | CVE-2015-7377 |  | 跨站脚本 |  | N | [Y](CVE-2015-7377/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2015-7450 |  | 代码注入 | 9.8 | N | [Y](CVE-2015-7450/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2015-7450/poc/others/) |
-| CVE-2015-7501 |  | 资料不足 | 9.8 | [Y](CVE-2015-7501/vultarget/) | N | N | N | N | N | N | [Y](CVE-2015-7501/poc/others/) |
+| CVE-2015-7501 |  | 代码执行  | 9.8 | [Y](CVE-2015-7501/vultarget/) | N | N | N | N | N | N | [Y](CVE-2015-7501/poc/others/) |
 | CVE-2015-7780 |  | 路径遍历 | 6.5 | N | [Y](CVE-2015-7780/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2015-7823 |  | 输入验证 |  | N | [Y](CVE-2015-7823/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2015-7857 |  | SQL注入 |  | [Y](CVE-2015-7857/vultarget/) | N | N | N | N | N | N | [Y](CVE-2015-7857/poc/others/) |

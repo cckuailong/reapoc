@@ -1,0 +1,31 @@
+// https://github.com/10bestdesign/jqvmap
+#wp-statistics-visitors-map {
+  direction: ltr;
+  height: 300px;
+  width: 100%;
+}
+
+.map-html-marker {
+  max-height: 170px;
+  width: 200px;
+}
+
+.map-html-marker p {
+  border-bottom: 1px dashed #EFEFEF;
+  font-size: 10px;
+  margin: 2px 0;
+  padding: 3px 0;
+  text-align: left;
+}
+
+.map-html-marker p:last-child {
+  border-bottom: 0 none;
+}
+
+.jqvmap-label {
+  z-index: 10000;
+}
+
+.jqvmap-zoomin, .jqvmap-zoomout {
+  background: #717171 !important;
+}

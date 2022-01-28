@@ -1,0 +1,142 @@
+/* Color Style */
+.wps-text-danger {
+  color: #DC3545 !important;
+}
+
+.wps-text-success {
+  color: #459605 !important;
+}
+
+.wps-text-warning {
+  color: #dc6b26 !important;
+}
+
+.wps-text-muted {
+  color: #797979 !important;
+}
+
+/* Text Center */
+.wps-center {
+  text-align: center !important;
+}
+
+/* Block */
+.wps-d-none {
+  display: none;
+}
+
+.wps-d-inline-block {
+  display: inline-block;
+}
+
+.wps-middle-vertical {
+  vertical-align: middle;
+}
+
+/* disable Break Link */
+a[href*='?page=wps_break_menu'] {
+  pointer-events: none;
+}
+
+/* Cursor Default */
+.wps-cursor-default {
+  cursor: default;
+}
+
+/* Button Danger in WordPress Admin */
+.wp-core-ui .btn-danger {
+  background: rgba(186, 0, 0, 0.74);
+  border-color: rgba(170, 0, 0, 0.77) rgba(153, 0, 0, 0.74) rgba(153, 0, 0, 0.74);
+  box-shadow: 0 1px 0 rgba(153, 0, 0, 0.74);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px rgba(153, 0, 0, 0.74), 1px 0 1px rgba(153, 0, 0, 0.74), 0 1px 1px rgba(153, 0, 0, 0.74), -1px 0 1px rgba(153, 0, 0, 0.74);
+
+  &:hover {
+    background: #c20000;
+    border-color: #990000;
+    color: #fff;
+  }
+
+  &:active {
+    background: rgba(170, 0, 0, 0.75);
+    border-color: rgba(153, 0, 0, 0.74);
+    box-shadow: inset 0 2px 0 rgba(153, 0, 0, 0.75);
+  }
+
+  &:focus {
+    box-shadow: 0 1px 0 rgba(170, 0, 0, 0.75), 0 0 2px 1px rgba(219, 51, 51, 0.75);
+    background: rgba(194, 0, 0, 0.75);
+    border-color: rgba(153, 0, 0, 0.75);
+    color: #fff;
+    outline: 0 !important;
+  }
+}
+
+.wps-btn-inline {
+  vertical-align: -2px;
+  margin: 0 5px;
+}
+
+/* Margin */
+.wps-m-top-20 {
+  margin-top: 20px;
+}
+
+/* Text Wrap */
+.wps-text-wrap {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100% !important;
+}
+
+/* Width 100% */
+.wps-width-100 {
+  width: 100% !important;
+}
+
+.wps-200-px {
+  width: 200px !important;;
+}
+
+/* inline */
+.wps-inline {
+  display: inline;
+}
+
+/* Admin Page Title */
+.wps_page_title {
+  display: inline-block;
+  vertical-align: -15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.wps_title {
+  display: inline;
+  font-size: 1.6em;
+}
+
+.wp-statistics-container {
+  margin: 0 auto;
+}
+
+/* Float */
+.wps-pull-right {
+  float: right;
+}
+
+.wps-pull-left {
+  float: left;
+}
+
+/* WP Admin List Table */
+.column-wp-statistics-post-hits, .column-visits {
+  width: 10%;
+}
+
+.column-wp-statistics-tax-hits {
+  width: 15%;
+}

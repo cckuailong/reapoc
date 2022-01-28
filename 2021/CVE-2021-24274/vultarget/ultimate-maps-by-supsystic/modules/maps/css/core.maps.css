@@ -1,0 +1,231 @@
+/*.umsInfoWindowtitle {
+	font-size: 19px;
+	font-weight: bold !important;
+	color: brown;
+	margin: 0 0 5px 6px;
+	padding: 5px 0;
+	position: relative;
+	left: -6px;
+}
+.umsMapDetailsContainer {
+	position: relative;
+}
+.umsMapDetailsContainer > i.fa {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	font-size: 30px;
+	z-index: 999;
+}
+.ums_MapPreview img {
+	max-width: none !important;
+}
+.map_container img{
+	max-width: inherit !important;
+}
+.map-preview-img-container {
+	cursor: pointer;
+}
+.ums_map_opts.display_as_popup {
+	display:none;
+}
+*/
+.ums_map_opts {
+	display: block;
+	z-index: 1;
+	position: relative;
+}
+.ums_map_opts .gm-style-iw>div:first-child {
+	overflow: auto !important;
+}
+.ums_map_opts img, .ums_map_opts img {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.ums_map_opts .filterRight{
+	overflow-y: auto;
+}
+.ums_map_opts .umsLeft{
+	width: 70%;
+	float: left;
+}
+.ums_map_opts .filterRight{
+	width: 30%;
+	float: left;
+}
+.ums_map_opts .filterRight .list-group-item{
+	border-bottom: dashed 1px #fef8ec;
+	padding: 10px 0px;
+	font-weight: 600;
+}
+.ums_map_opts .filterRight .list-group{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.ums_map_opts .filterRight .treeview span.icon.check-icon{
+	font-size: 22px;
+	margin-right: 12px;
+}
+.ums_map_opts .filterRight .treeview span.icon.node-icon{
+	width: 0;
+}
+.ums_map_opts .filterRight .treeview .fa-chevron-right{
+	padding-left: 5px;
+}
+.ums_map_opts .filterRight .treeview .fa-chevron-down{
+	padding-left: 2px;
+}
+
+/*.gm-control-active img, .gm-svpc img {*/
+	/*box-sizing: content-box;*/
+/*}*/
+/*.gm-control-active {*/
+	/*white-space: inherit;*/
+/*}*/
+
+
+.umsMapboxMarker {
+	background-size: cover;
+	background-color: transparent;
+	/*border-radius: 50%;*/
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+}
+/*Some Maps re-define def themes styles*/
+#MicrosoftNav .NavBar_Button,
+.leaflet-popup-close-button, .leaflet-control-zoom-in, .leaflet-control-zoom-out {
+	box-shadow: none !important;
+	transition: none;
+}
+/*WP Admin toolbar give 32px displace - and this is really influence into bing maps.
+Yes, you hear it correct: css padding-top for html base elemnt - will padd click area for pushpins (bing markers) - and broke them!
+So, let's regulate it here in this manner ;)*/
+/*.admin-bar #labelCanvasId {
+	padding-bottom: 64px;
+}*/
+/*mapbox prevent rewrite styles*/
+.mapboxgl-popup .mapboxgl-popup-content .mapboxgl-popup-close-button {
+	border: none !important;
+	color: black !important;
+	font-size: 12px;
+	float: none;
+	display: block;
+	margin: 0;
+	padding: 0 8px;
+}
+.umsMarkerTitle {
+	margin: 1em 0;
+	font-size: 1.3em;
+	padding: 0;
+	font-weight: 600;
+	display: block;
+}
+.umsMarkerDesc {
+	display: block;
+}
+.leaflet-control-scale {
+	display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 16px;
+}
+.leaflet-control-attribution {
+	max-width:100%;
+	height:16px;
+	overflow:hidden;
+}
+.leaflet-popup-content {
+	overflow-y:auto !important;
+}
+.leaflet-control a {
+	text-decoration:none !important;
+}
+.Infobox {
+	overflow:hidden;
+}
+.infobox-title, .umsMarkerTitle {
+    font-size: 14px !important;
+    text-align: center !important;
+	min-width:150px;
+}
+.infobox-info img,
+.umsMarkerDesc img {
+	max-width:100%;
+	height:auto;
+}
+.infobox-info{
+	font-size: 12px !important;
+}
+.infobox-info div {
+    font-size: 12px !important;
+    text-align: left !important;
+}
+.infobox-info p {
+	white-space: normal !important;
+	text-align:left !important;
+}
+.leaflet-popup-content {
+	margin:5px;
+}
+.umsMarkerDesc p {
+	white-space: normal;
+}
+
+@media (max-width:720px) {
+	.umsMapDetailsContainer,
+	.umsMapMarkerFilters {
+		display:block  !important;
+		position:relative  !important;
+		float:none !important;
+		width:100%  !important;
+		min-width:100%  !important;
+		max-width:100%  !important;
+		overflow:hidden !important;
+		left:auto !important;
+		top:auto !important;
+		bottom:auto !important;
+		right:auto !important;
+		height:auto !important;
+	}
+	.umsMapProControlsCon {
+		float:none !important;
+	}
+	.umsMapProControlsCon {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		float: none !important;
+		width: auto !important;
+		overflow:hidden !important;
+	}
+
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_img_2cols [data-u="arrowleft"],
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_img_2cols [data-u="arrowright"],
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_title_img [data-u="arrowleft"],
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_title_img [data-u="arrowright"],
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_title_desc [data-u="arrowleft"],
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_title_desc [data-u="arrowright"] {
+		left: -60px !important;
+		top: 55px !important;
+	}
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_img_2cols [data-u="arrowright"],
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_title_img [data-u="arrowright"],
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_title_desc [data-u="arrowright"] {
+		top: 120px !important;
+	}
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_img_2cols [data-u="navigator"],
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_title_img [data-u="navigator"],
+	.umsMapProControlsCon .umsListType_slider_simple_vertical_title_desc [data-u="navigator"] {
+		left: -42px !important;
+		right: 0px !important;
+	}
+	.umsMapMarkerFilters {
+		margin-top: 30px !important;
+	}
+	.CopyrightControl {
+		max-width: inherit !important;
+		font-size: 12px;
+	}
+}

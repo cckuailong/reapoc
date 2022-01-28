@@ -1,0 +1,157 @@
+/*.cfsFormShell {
+	position: fixed;
+	display: none;
+	z-index: 999999999;
+}*/
+.cfsSubFlexLoader {
+	position: fixed;
+	display: none;
+	z-index: 1000002;
+	width: 40px;
+	height: 8px;
+}
+.cfsFormShell .cfsInputError {
+	border: 1px solid #fa4e7f !important;
+	color: #fa4e7f !important;
+}
+.cfsFormShell .cfsErrorMsg {
+	color: #fa4e7f !important;
+	padding: 5px;
+	margin: 5px 0;
+}
+.cfsFormShell .cfsSuccessMsg {
+	padding: 5px;
+	margin: 5px 0;
+	text-align: center;
+	color: #4ae8ea !important;
+}
+.cfsFormPreloadImg {
+	width: 1px !important;
+	height: 1px !important;
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+	opacity: 0 !important;
+}
+.cfsFormShell .alignleft {
+    float: left;
+    margin: 7px 10px 10px 0;
+}
+.cfsFormShell .alignright {
+    float: right;
+    margin: 7px 0 10px 10px;
+}
+/*Little bootsrap part*/
+.cfsFormShell .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+	.cfsFormShell .container {
+		width: 540px;
+	}
+}
+@media (min-width: 992px) {
+	.cfsFormShell .container {
+		width: 750px;
+	}
+}
+@media (min-width: 1200px) {
+	.cfsFormShell .container {
+		width: 960px;
+	}
+}
+/*new plugin*/
+.cfsFieldCol {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	padding: 5px;
+}
+.cfsFieldsRow {
+	margin: 0;
+}
+.cfsFormShell .cfsListSelectLabel {
+	vertical-align: top;
+}
+.cfsFormShell, .cfsFormShell * {
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing:    border-box !important;
+	box-sizing:         border-box !important;
+}
+.cfsFormShell label {
+	cursor: pointer;
+	margin-right: 4px !important;
+}
+.cfsFormShell .cfsListSelect label {
+	display: inline;
+	margin-right: 4px !important;
+}
+.cfsFormShell .cfsListSelect label input {
+	margin-right: 5px;
+}
+
+.cfsListSelect .cfsCheckTbl,
+.cfsListSelect .cfsCheckTbl tr,
+.cfsListSelect .cfsCheckTbl td {
+	border: 0px solid transparent;
+}
+.cfsListSelect .cfsCheckTbl tr > td:nth-child(2) {
+	width: 100%;
+}
+.ui-datepicker {
+	background: #fff;
+	border: 1px solid #aaa;
+}
+.cfsSnow {
+	background: none;
+	background-image: url("../../../assets/forms/img/images/2016_ht_1_snow1.png"), url("../../../assets/forms/img/images/2016_ht_1_snow2.png"), url("../../../assets/forms/img/images/2016_ht_1_snow3.png");
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+	100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+	100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+	100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+	100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.cfsFieldsRow input[type="color"] {
+	padding: 5px 0 !important;
+	border: 0px solid transparent !important;
+	height: 35px !important;
+	background: none !important;
+}
+.cfsFieldInputEx {
+	height: inherit;
+}
+.cfsFieldInputEx label{
+	display:block;
+	position:relative;
+}
+.supRow::after{
+	content: "";
+  clear: both;
+  display: table;
+}
+.supRow {
+	overflow:hidden;
+}

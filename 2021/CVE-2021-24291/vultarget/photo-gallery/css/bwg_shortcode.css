@@ -1,0 +1,230 @@
+.spider_label {
+  font-weight: bold;
+  font-family: Verdana;
+  width: 135px;
+}
+
+.bwg_insert_short {
+  left: auto;
+  right: 50px;
+  margin-top:-15px;
+}
+
+.spider_free_version_label {
+  color: #808080 !important;
+}
+
+.spider_int_input,
+.color {
+  width: 60px;
+}
+
+.ui-tooltip {
+  background-color: rgba(255,255,255,1);
+  border-radius: 3px;
+  box-shadow: 0 0 7px black;
+  line-height: 10px;
+}
+
+.bws_position_table td,
+.bws_position_table input{
+  border: 1px solid #CCCCCC;
+  margin: 2px;
+}
+
+#bwg_function,
+#bwg_shortcode {
+  margin: 10px 0 0;
+}
+.wd-btn{
+  padding: 0 10px 0px 10px;
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	line-height: 13px;
+}
+a.wd-btn{
+	line-height: 26px;
+}
+.wd-btn:focus, .wd-search-btn:focus, .wd-reset-btn:focus{
+	outline:none !important;
+}
+.wd-btn-secondary{
+    background-color: #FFFFFF;
+	color: #665;
+    border: 1px solid #ddd;
+}
+
+.wd-btn-primary{
+  background-color: #ddd;
+	color: #000;
+	border: 1px solid #ddd;
+}
+.wd-btn-primary-blue{
+  background-color: #00A0D2;
+	color: #fff ;
+	border: 1px solid #00A0D2;
+}
+
+.wd-btn-primary-red{
+  background-color: #7E2A2A;
+	color: #fff;
+	border: 1px solid #7E2A2A;
+}
+.wd-btn-icon{
+	padding: 0px 10px 1px 36px !important;
+	background-repeat: no-repeat;
+	background-position: 10% 50%;
+}
+
+a.wd-btn-icon{
+	line-height:29px;
+}
+
+.wd-btn-import {
+	background-image:url("../images/icons/import.png");
+}
+.wd-not-image {
+  padding: 0px 10px 1px 10px !important;
+	background-repeat: no-repeat;
+	background-position: 10% 50%;
+}
+.select_icon {
+	background-image:url("../images/icons/arrow.png");
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-position:93% 49%;
+	padding: 0 2px 2px 2px !important;
+  width: 22%;
+  height:28px !important;
+  display: block;
+}
+
+th.sortable a span,
+th.sorted a span {
+  float: left;
+}
+.bwg_tab_label {
+  display: block;
+  width: inherit;
+  text-align:center;
+  font-size:inherit;
+}
+.tabs_views {
+  width:100%;
+  display:block;
+  margin-top:23px;
+}
+.bwg_shortcodetab_active {
+  top: 12px !important;
+  height: 33px !important;
+  color: #00A0D2 !important;
+  border-bottom:none !important;
+  background: none repeat scroll 0 0 #FFFFFF !important;
+}
+.bwg_short_div_active {
+  background: none repeat scroll 0 0 #FFFFFF !important;
+}
+.lightbox_option_left,
+.lightbox_option_right,
+.gallery_album_option_left,
+.gallery_album_option_right  {
+   display: table-row;
+   width: 100%;
+}
+
+.gallery_type_radio,
+.gallery_type_label,
+.album_type_radio,
+.album_type_label {
+  vertical-align: middle !important;
+  display: inline-block !important;
+  margin: 0 auto !important;
+}
+
+.gallery_type_label,
+.album_type_label  {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0;
+  width: 100%;
+  word-wrap: break-word;
+}
+.bwg_change_gallery_type {
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 440px){
+  .tabs_views {
+    margin-top:-7px;
+  }
+  .generate_button {
+    margin-top:15px;
+  }
+  .order_by_desc {
+    display: block;
+  }
+  .spider_int_input,
+  .color{
+    width: 50px;
+  }
+  .spider_label {
+    width: 95px !important;
+  }
+}
+hr {
+  margin-top: 13px;
+}
+.panel_wrapper {
+  border-top:1px solid #919B9C !important;
+}
+.select_icon_pos {
+    background-position: 98% 49% !important;
+}
+.bwg_enable_page {
+  display:block;
+}
+
+input[type=radio][name=gallery_type] {
+  display: none;
+}
+.wrap.wd-wrap-ajax {
+  margin: 0 10px;
+  background-color: #FFFFFF;
+}
+.wrap.wd-wrap-ajax .media-frame-toolbar {
+  left: 0;
+}
+#shortcode {
+  margin: 0 6px;
+}
+
+.wrap.wd-wrap-ajax .media-frame-toolbar .media-toolbar {
+  bottom: -20px;
+}
+
+.media-frame-toolbar #insert {
+  margin: 5px 10px 0 0;
+}
+
+@media screen and (max-width: 1890px) {
+  .gallery_type .pro_btn, .album_type_div .pro_btn {
+    top: 95px;
+  }
+}
+@media screen and (max-width: 1275px) {
+  #bwg_shortcode_form #bwg_tab_galleries_content, #bwg_shortcode_form #bwg_tab_albums_content {
+    margin-left: 0;
+  }
+}

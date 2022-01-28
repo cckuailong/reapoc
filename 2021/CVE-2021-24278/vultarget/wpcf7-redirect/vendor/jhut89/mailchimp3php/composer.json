@@ -1,0 +1,28 @@
+{
+    "name": "jhut89/mailchimp3php",
+    "description": "A php library for version 3.0 of MailChimp's API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Hutcheson",
+            "email": "hutch@theresearchgrp.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+          "MailchimpAPI\\" : "src/",
+          "MailchimpTests\\" : "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "homepage": "https://github.com/Jhut89/Mailchimp-API-3.0-PHP",
+    "require-dev": {
+        "php": ">=7.2.0",
+        "phpunit/phpunit": "^5",
+        "squizlabs/php_codesniffer": "3.*"
+    }
+}

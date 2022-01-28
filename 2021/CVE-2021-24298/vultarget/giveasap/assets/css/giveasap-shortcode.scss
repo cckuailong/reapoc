@@ -1,0 +1,612 @@
+@import 'public/_variables.scss';
+@import 'public/_actions.scss';
+@import 'public/_common.scss';
+@import 'public/_prizes.scss';
+@import 'public/_slick-slider.scss';
+@import 'public/_slick-slider-theme.scss';
+@import 'fontawesome/fontawesome.scss';
+@import "fontawesome/light.scss";
+@import "fontawesome/brands.scss";
+
+.sg-shortcode {
+  &.giveasap-box {
+    border: 1px solid rgba( 0, 0, 0, 0.15 );
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+    background: white;
+    padding: 1em 1em 0 1em;
+    max-width: 510px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+
+    * {
+      box-sizing: border-box;
+    }
+
+    p {
+      margin: 0 0 1em 0;
+    }
+    
+    .sg-title {
+      text-align: center;
+      margin: 0 0 0.5em 0;
+      font-size: 32px;
+
+      &:after,
+      &:before {
+        display: none;
+      }
+      
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+    }
+
+    .g-recaptcha {
+      display: block;
+      margin: 1em auto;
+      max-width: 305px;
+    }
+
+    .giveasap_input {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      height: 50px;
+      line-height: 30px;
+      padding: 15px 15px 5px 15px;
+      color: #333;
+      border-radius: 3px;
+      border: 2px solid rgba( 0, 0, 0, 0.1 );
+
+      &:focus {
+        outline: none;
+        border-color: $purple;
+      }
+
+      &:disabled {
+        color: rgba( 0, 0, 0, 0.35 );
+      }
+    }
+
+    .sg-form-field {
+      position: relative;
+      padding-top: 10px;
+
+      &:not(:last-child) {
+        margin-bottom: 1em;
+      }
+
+      label {
+        font-weight: 600;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        background: white;
+        padding: 0 5px;
+        line-height: 21px;
+        font-size: 16px;
+      }
+
+      &.sg-form-field-radio {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 30px;
+      }
+
+      &.sg-form-field-checkbox,
+      .sg-form-field-radio-option {
+        label,
+        .giveasap_input {
+          display: inline-block;
+          width: auto;
+          margin: 0;
+          vertical-align: middle;
+        }
+
+        label {
+          font-weight: 400;
+          position: static;
+          margin-left: 5px;
+          vertical-align: middle;
+        }
+      }
+
+      .sg-form-field-radio-option {
+        .giveasap_input {
+          height: auto;
+        }
+      }
+    }
+
+    .sg-meta {
+      margin-left: -1em;
+      margin-right: -1em;
+      margin-top: -1em;
+      margin-bottom: 1em;
+    }
+  }
+
+  .giveasap_gallery {
+    padding: 0;
+    margin: 0 -1em;
+    list-style-type: none;
+  }
+
+  .sg-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    background-color: $white_darker;
+
+    li {
+      width: 100%;
+      padding: 1em;
+      text-align: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(0,0,0,.075);
+      max-width: 33.333%;
+      display: flex;
+      flex-direction: column;
+
+      &:not(:first-child):not(:nth-child(4)) {
+        border-left: 1px solid rgba( 0, 0, 0, 0.075 );
+      }
+
+      span { display: block; color: rgba( 0, 0, 0, 0.5 ); }
+      small { display: none; }
+      strong { display: block; line-height: 1; font-size: 21px; }
+      .value {
+        width: 100%;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+    &.sg-meta-items-2 {
+      li {
+        max-width: 50%;
+      }
+    }
+  }
+
+  p.giveasap-entries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    strong {
+      font-size: 28px;
+      color: $purple;
+      border: 1px solid rgba( 0, 0, 0, 0.1 );
+      padding: .5em 1em;
+    }
+  }
+
+  .giveasap_alert,
+  .giveasap_error,
+  .giveasap_success {
+    text-align: center;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding: 1em;
+  }
+
+  .giveasap_error {
+    background-color: $red;
+    color: $white;
+  }
+
+  .giveasap_alert {
+    &.giveasap_ended {
+      background: $purple;
+      color: $white;
+    }
+
+    &.giveasap_winners {
+      font-size: 1em;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          font-style: italic;
+          text-transform: none;
+        }
+      }
+    }
+  }
+
+  .giveasap_extra_actions {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .giveasap_sharing {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    &:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+    li {
+      float: left;
+      width: 100%;
+      min-height: 40px;
+      line-height: 40px;
+      margin-bottom: 1em;
+      display: block;
+      
+      &:nth-child(3),
+      &:nth-child(5) {
+        clear: both;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        font-size: 0.75em;
+        padding: 0 0.5em;
+        text-align: left;
+        padding-left: 50px;
+        position: relative;
+        color: white;
+        border-radius: 3px;
+        overflow: hidden;
+
+        &:hover {
+          color: rgba(225, 225, 225, 0.75) !important;
+        }
+
+        &:before {
+          transition: width .4s ease;
+          content: '';
+          display: block;
+          width: 0px;
+          height: 40px;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .fab,
+      .fal,
+      a:before {
+        position: absolute;
+        left: 0;
+        line-height: 40px;
+        width: 40px;
+        color: white;
+        text-align: center;
+      }
+
+      input {
+        background-color: #efefef;
+        width: 100%;
+        display: block;
+        height: 40px;
+      }
+
+      .giveasap_description {
+        line-height: 1em;
+        font-size: 0.75em;
+        font-style: italic;
+        margin-bottom: 0;
+      }
+
+      .sg-btn-copy {
+        padding: 0;
+        background: $purple;
+        border: none;
+        .fal {
+          position: static !important;
+        }
+        .sg-btn-copy-text { display: none; }
+      }
+
+
+      .method-entry {
+        position: absolute;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+      }
+
+      &.giveasap_link {
+        position: relative;
+
+        .sg-btn-copy {
+          position: absolute;
+          top: 0;
+          right: 0px;
+          height: 40px;
+          cursor: pointer;
+          box-shadow: -2px 0px 1px rgba( 0, 0, 0, 0.05);
+        }
+      }
+
+      &.sharing_method {
+        .fab {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        &:hover a:before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .sg-giveaway-prizes {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+
+  .giveasap-p {
+    text-align: center;
+  }
+
+  .giveasap_facebook a {
+    background-color: #3b5998;
+  }
+  .giveasap_twitter a {
+    background-color: #1da1f2;
+  }
+  .giveasap_gplus a {
+    background-color: #db4437;
+  }
+  .giveasap_linkedin a {
+    background-color: #287bbc;
+  }
+  .giveasap_pinterest a {
+    background-color: #bd081c;
+  }
+
+  .giveasap-entries-title,
+  .sg-participation-message {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .sg-mycred-form {
+    text-align: center;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding: 1em;
+    background: $grey_lighter;
+
+    .giveasap-entries-title {
+      margin-top: 0;
+    }
+  }
+
+  .giveasap_countdown {
+    margin-bottom: 1em;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding: 1em;
+    background: $white_darker;
+
+    .countdown-row {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .countdown-section {
+      display: block;
+      text-align: center;
+      padding: 5px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .countdown-amount {
+      display: block;
+      font-weight: 600;
+      font-size: 1.25em;
+    }
+  }
+
+  footer.giveasap_section {
+    background: rgba( 0,0,0,0.05);
+    margin: 0 -1em;
+    padding: 1em;
+    text-align: center;
+
+    .giveasap_rules {
+      display: inline-block;
+      &.sg-rules-text {
+        display: block;
+      }
+      .giveasap_heading {
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0 15px 0 0;
+        cursor: pointer;
+
+      }
+
+      .giveasap_rules_extended {
+        display: none;
+        text-align: left;
+        font-size: 14px;
+        margin-top: 20px;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+
+    .sg-powered-by {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+}
+
+.widget_giveasap_widget {
+
+  > * {
+    box-sizing: border-box;
+  }
+
+  .giveasap_input {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 50px;
+    line-height: 30px;
+    padding: 15px 15px 5px 15px;
+    color: #333;
+    border-radius: 3px;
+    border: 2px solid rgba( 0, 0, 0, 0.1 );
+    font-size: 16px;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+      border-color: $purple;
+    }
+  }
+
+  .sg-form-field {
+    position: relative;
+    padding-top: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+
+    label {
+      font-weight: 600;
+      position: absolute;
+      top: 0px;
+      left: 10px;
+      background: white;
+      padding: 0 5px;
+      line-height: 21px;
+      font-size: 16px;
+    }
+  }
+
+  .giveasap_input,
+  .g-recaptcha {
+    margin-bottom: 1em;
+  }
+
+  .giveasap_countdown {
+    .countdown-row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .countdown-section {
+      display: block;
+      text-align: center;
+      padding: 5px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .countdown-amount {
+      display: block;
+      font-weight: 600;
+      font-size: 1.25em;
+    }
+  }
+
+  .giveasap_sharing li {
+    margin-bottom: .5em;
+    border-top: 0;
+    padding-top: 0;
+
+    a:hover {
+      box-shadow: none;
+    }
+
+    &.giveasap_link {
+      p {
+        margin-top: 0.25em;
+      }
+    }
+  }
+}
+
+
+.sg-giveaway-popup {
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  .sg-giveaway-popup-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+  }
+
+  .sg-giveaway-popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-height: 90%;
+    z-index: 101;
+    overflow: scroll;
+    border-radius: 5px;
+
+    .giveasap-box {
+      position: relative;
+
+      .sg-giveaway-popup-close {
+        position: absolute;
+        height: 24px;
+        line-height: 14px;
+        font-size: 12px;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,0.05);
+        color: black;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 5px;
+        border: 1px solid rgba(0,0,0,0.15);
+        border-right: 0;
+        border-top: 0;
+        font-weight: 600;
+      }
+    }
+  }
+}

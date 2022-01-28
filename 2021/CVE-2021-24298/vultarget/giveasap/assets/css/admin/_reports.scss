@@ -1,0 +1,143 @@
+.sg-report-options {
+  background: rgba( 0, 0, 0, 0.035 );
+  padding: 1em;
+
+  .sg-report-filter {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1em;
+
+    input:not([type=checkbox]):not([type=radio]),
+    select {
+      width: 100%;
+      display: block;
+      padding: 20px 10px 10px 10px;
+      height: 50px;
+    }
+
+    label {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      opacity: 0.75;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      
+      &.static {
+        position: static;
+      }
+    }
+  }
+
+  .sg-button {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background: $purple;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding: 0;
+
+    &:hover {
+      background: lighten( $purple, 5 );
+    }
+  }
+}
+
+.sg-report-view {
+
+  .sg-report-container {
+    position: relative;
+    width: 100%;
+  }
+
+  &.with-options {
+    display: flex;
+
+    .sg-report-options {
+      width: 240px;
+    }
+
+    .sg-report-container {
+      width: calc( 100% - 240px );
+    }
+  }
+}
+
+.subsubsub {
+  width: 100%;
+  margin-bottom: 10px;
+  float: none;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  li {
+    padding: 0 10px;
+    &:not(:last-child) {
+      border-right: 1px solid rgba( 0, 0, 0, 0.05 );
+    }
+  }
+}
+
+.sg-report-options-switch {
+  width: 100px;
+  height: 50px;
+  background: $purple;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+
+  .data-on,
+  .data-off {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+
+    span {
+      width: 50%;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &.selected {
+        color: $purple;
+        background: white;
+      }
+    }
+  }
+
+  &.on {
+    .data-on {
+      left: 0;
+    }
+
+    .data-off {
+      left: 100%;
+    }
+  }
+
+  &:not(.on) {
+    .data-on {
+      left: -100%;
+    }
+    .data-off {
+      left: 0;
+    }
+  }
+}

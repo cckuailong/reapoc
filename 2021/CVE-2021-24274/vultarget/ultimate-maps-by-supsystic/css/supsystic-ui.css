@@ -1,0 +1,817 @@
+.supsystic-plugin {
+    width: 100%;
+	font-size: 15px;
+}
+.supsystic-plugin * {
+	box-sizing: border-box
+}
+.supsystic-plugin a {
+	color: #4ae8ea;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.supsystic-plugin legend a {
+	color: #000;
+}
+.supsystic-plugin .supsystic-content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: transparent;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    width: 99%;
+    min-height: 635px;
+}
+
+.supsystic-plugin .supsystic-content .supsystic-container {
+    margin-left: 75px;
+    /*margin-top: 10px;*/
+}
+
+.supsystic-plugin .supsystic-content .supsystic-navigation {
+    background-color: transparent;
+    float: left;
+    /*height: 100%;*/
+    margin-right: 10px;
+    position: absolute;
+    width: 75px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.supsystic-navigation ul {
+    padding: 0;
+    margin: 0;
+}
+
+.supsystic-navigation ul li {
+    text-align: center;
+    /*border-bottom: 1px solid #707070;*/
+    background-color: transparent;
+    margin: 0;
+    padding: 10px 0;
+
+    -webkit-transition: background 500ms;
+    -moz-transition: background 500ms;
+    -ms-transition: background 500ms;
+    -o-transition: background 500ms;
+    transition: background 500ms;
+}
+
+.supsystic-navigation ul li:hover,
+.supsystic-navigation ul li.active {
+    background-color: #fff;
+}
+
+.supsystic-navigation ul li:hover a i,
+.supsystic-navigation ul li.active a i {
+   color: #4ae8ea;
+}
+
+.supsystic-navigation ul li a {
+    color: #28282a;
+    text-decoration: none;
+    font-weight: 400;
+	-moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.supsystic-navigation ul li a i {
+    display: block;
+    color: #6d6d71;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.supsystic-navigation ul li.supsystic-pro {
+    background-color: #e74c3c;
+}
+
+.supsystic-bar {
+    min-height: 67px;
+   /* margin-left: -10px;*/
+    padding: 10px;
+    background-color: #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#table-toolbar.supsystic-bar {
+    height: 67px;
+    margin-left: -10px;
+    padding: 10px;
+    background-color: inherit !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul.supsystic-bar-controls {
+    /*margin-top: 8px;*/
+	display: inline;
+}
+
+ul.supsystic-bar-controls > li {
+    float: left;
+    margin-left: 5px;
+}
+
+ul.supsystic-bar-controls > li.separator {
+    color: #ddd;
+    margin-top: 5px;
+}
+
+/* Loading */
+.supsystic-inline-loader {
+    min-width: 128px;
+    min-height: 15px;
+    background: url('../img/ajax-loader.gif') no-repeat center center;
+    /*display: inline-block;*/
+}
+
+/* Modal Loading */
+.supsystic-modal-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: .6;
+    -ms-filter: Alpha(opacity=60);
+    filter: Alpha(opacity=60);
+    z-index: 100000;
+    display: none;
+    overflow: hidden;
+}
+
+.supsystic-modal-loading-object {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    z-index: 100001;
+    display: none;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.supsystic-modal-loading-object img {
+    position: relative;
+    top: 4px;
+    overflow: hidden;
+}
+
+.supsystic-modal-loading-object p {
+    overflow: hidden;
+}
+
+/* Helpers */
+.supsystic-centered {
+    text-align: center;
+}
+
+.jGrowl.top-right {
+    top: 50px !important;
+}
+
+/* jQuery UI Dialog */
+
+.ui-widget-overlay {
+    background: #aaaaaa !important;
+    opacity: .3;
+    -ms-filter: Alpha(opacity=30);
+    filter: Alpha(opacity=30);
+}
+
+.ui-widget-overlay.ui-front {
+    z-index: 10;
+}
+
+.ui-widget-content {
+    background-color: #fff;
+}
+
+.ui-widget-header {
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    background: none !important;
+    color: #777 !important;
+    border-radius: 0 !important;
+}
+
+.ui-dialog-titlebar-close {
+    background: none !important;
+}
+
+.supsystic-title-row {
+    padding: 5px 0 !important;
+    border-bottom: 1px solid #eee;
+}
+
+.supsystic-title-row h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    font-size: 1.4em;
+}
+
+#gg-overlay-transparency {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 2px !important;
+    background-color: #ddd;
+}
+
+#gg-overlay-transparency::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #3498db;
+}
+
+#gg-overlay-transparency:focus {
+    outline: none;
+}
+
+input[type="color"] {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+}
+
+.column-title.title .photo-editor {
+    margin-top: 10px;
+}
+
+.column-title.title .photo-editor input {
+    margin-left: 4px;
+}
+
+.column-title.title .photo-editor input[type="text"] {
+    width: 100%;
+}
+/*Admin footer links*/
+.umsAdminFooterCell {
+	float: left;
+	margin-right: 5px;
+	padding-top: 8px;
+}
+.umsAdminFooterShell {
+    color: #777777;
+    font-size: 12px;
+	margin: 0 20px 0 165px;
+    padding-bottom: 45px;
+	border-top: 1px solid #DFDFDF;
+    color: #777777;
+    font-size: 12px;
+    height: 65px;
+	clear: both;
+}
+/*Breadcrumbs*/
+.supsystic-breadcrumbs {
+    /*border-top: 1px solid rgba(12,12,12,0.03);*/
+    background-color: transparent;
+    margin-left: 75px;
+    padding: 5px 0px;
+    /*-moz-box-shadow: 0 3px 0 rgba(12,12,12,0.03);
+    -webkit-box-shadow: 0 3px 0 rgba(12,12,12,0.03);
+    box-shadow: 0 3px 0 rgba(12,12,12,0.03);*/
+}
+
+.supsystic-breadcrumbs > a {
+    text-decoration: none;
+    padding: 0 5px;
+	color: #000;
+}
+
+.supsystic-breadcrumbs > a.supsystic-breadcrumb-el:last-child {
+    color: #7f8c8d;
+}
+.supsystic-breadcrumbs .breadcrumbs-separator {
+	background-image: url("images/arrows-sprite.png");
+	background-repeat: no-repeat;
+	padding: 0 3px;
+	background-position: -17px 7px;
+}
+
+.supsystic-item {
+    /*border: 1px solid #fcfcfc;*/
+    background: #fff;
+   /* -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;*/
+    padding: 10px 10px 10px 40px;
+    margin-bottom: 20px;
+    position: relative;
+    /*-moz-box-shadow: 0 3px 0 rgba(12,12,12,0.03);
+    -webkit-box-shadow: 0 3px 0 rgba(12,12,12,0.03);
+    box-shadow: 0 3px 0 rgba(12,12,12,0.03);*/
+}
+
+.supsystic-checked {
+    border-color: #ccc !important;
+}
+
+.supsystic-item > .supsystic-check {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: none;
+}
+
+.supsystic-item p {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+.supsystic-welcome-page-content .supsystic-item p {
+	white-space: normal;
+}
+
+.supsystic-item small {
+    display: block;
+    color: #ccc;
+}
+.supsystic-panel {
+    /*margin-right: 10px;*/
+}
+.supsystic-item.supsystic-panel {
+  min-height:632px;
+}
+/*Options additional classes*/
+.umsOptDetailsShell {
+	display: none;
+	font-size: 12px;
+}
+.umsOptDetailsShell input {
+	font-size: 12px;
+}
+.umsSmallTbl tr {
+	height: auto !important;
+}
+.umsHtaccessPre {
+	background-color: #eef;
+	padding: 10px;
+}
+/*tabs*/
+.supsystic-plugin .nav-tab {
+	margin-left: -3px;
+	margin-right: -3px;
+	color: #000;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transition-property: none;
+	-moz-transition-property: none;
+	-o-transition-property: none;
+	transition-property: none;
+}
+.supsystic-plugin .nav-tab-active,
+.supsystic-plugin .nav-tab-active:hover {
+    background-color: #fff;
+	border-bottom-color: #fff !important;
+}
+.supsystic-plugin .tbsLangTabs .nav-tab {
+	margin-left: 0;
+	margin-right: -1px;
+}
+.umsTabContent {
+	padding: 10px;
+	/*border: 1px solid #ccc;
+	border-top: none;*/
+	border: none;
+	display: none;
+}
+/*buttons*/
+.supsystic-plugin .button,
+.supsystic-plugin .button-primary,
+.ui-dialog .button,
+.ui-dialog .button-primary,
+.ui-button,
+.ui-button.ui-state-default {
+	font-size: 15px;
+	height: auto;
+	border: none;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	color: #28282a;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid #000 !important;
+	line-height: 30px;
+	padding: 0 10px;
+}
+/* Fix for WP 4.4 */
+.supsystic-plugin .button-primary,
+.ui-dialog .button-primary {
+	text-shadow: none;
+}
+.supsystic-plugin .button.button-primary.button-hero,
+.ui-dialog .button.button-primary.button-hero{
+	box-shadow: none;
+}
+/*****/
+.supsystic-plugin .wp-media-buttons .button,
+.supsystic-plugin .wp-media-buttons .button-primary,
+.supsystic-plugin .button.button-sup-small,
+.supsystic-plugin .button-primary.button-sup-small {
+	height: 30px;
+	line-height: 28px;
+}
+.supsystic-plugin .button.hover,
+.supsystic-plugin .button:hover,
+.supsystic-plugin .button.focus,
+.supsystic-plugin .button:focus,
+.supsystic-plugin .button-primary.hover,
+.supsystic-plugin .button-primary:hover,
+.supsystic-plugin .button-primary.focus,
+.supsystic-plugin .button-primary:focus,
+.ui-dialog .button:hover,
+.ui-dialog .button-primary:focus,
+.ui-dialog .button.active,
+.ui-dialog .button-primary.active,
+.ui-button.ui-state-hover,
+.ui-button:hover,
+.ui-button:focus {
+	background: #4ae8ea !important;
+	border-color: #4ae8ea !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.supsystic-plugin .button[disabled],
+.supsystic-plugin .button:disabled,
+.supsystic-plugin .button.disabled,
+.supsystic-plugin .button-secondary[disabled],
+.supsystic-plugin .button-secondary:disabled,
+.supsystic-plugin .button-secondary.disabled,
+.supsystic-plugin .button-disabled {
+	color: #a4aaac !important;
+	border-color: #a4aaac !important;
+	background-color: transparent !important;
+}
+.button.button-small.wp-picker-default {
+	margin: 10px 0 0 10px;
+}
+/*tooltip*/
+.supsystic-plugin .fa-question.supsystic-tooltip,
+.supsystic-plugin .fa-question.supsystic-tooltip-bottom,
+.supsystic-plugin .fa-question.supsystic-tooltip-left,
+.supsystic-plugin .fa-question.supsystic-tooltip-right {
+	border: 1px solid #28282a;
+	border-radius: 50%;
+	margin-top: 1px;
+	padding: 1px 4px;
+}
+.supsystic-plugin .fa-question.supsystic-tooltip.fa-2x {
+	padding: 0 6px;
+}
+/*sticky items*/
+.supsystic-sticky-active {
+    position: fixed !important;
+    /*top: 32px;*/
+    z-index: 99;
+}
+.supsystic-sticky-active.supsystic-sticky-active-bordered {
+	border-bottom: 2px solid #ddd !important;
+}
+.sticky-full-width {
+	width: calc(99% - 75px - 200px);
+}
+/*textboxes*/
+.supsystic-plugin input[type=text]{
+	background-color: #f6f7f7;
+	color: #252728;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: 1px solid #dfe4e4;
+	padding: 7px 5px;
+}
+.supsystic-plugin input[type="text"]:focus,
+.supsystic-plugin textarea:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-color: #4ae8ea;
+}
+.supsystic-plugin input[type="text"].umsInputError,
+.supsystic-plugin textarea.umsInputError {
+	border-color: #fa4e7f;
+	border-bottom: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-width: 1px !important;
+}
+/*form tables*/
+.supsystic-plugin .form-table th {
+	font-size: 16px;
+}
+#umsLicenseForm input[type=checkbox]{
+	width:15px !important;
+}
+.supsystic-plugin .description,
+.supsystic-plugin i:not(.fa) {
+	font-style: normal;
+	color: #a4aaac;
+	font-weight: 500;
+}
+.supsystic-plugin .form-table tr:not(:last-child) {
+	border-bottom: 1px solid #e9edee;
+}
+.supsystic-plugin .form-table.no-border tr {
+	border-bottom: none;
+}
+.supsystic-plugin .ui-pg-table {
+	color: #a6aaab;
+}
+.supsystic-plugin .ui-pg-table .ui-pg-input {
+	margin: 0px 7px;
+}
+.supsystic-plugin .ui-pg-table .ui-icon {
+	background-image: url("images/arrows-sprite.png") !important;
+	background-repeat: no-repeat !important;
+	width: 8px;
+	height: 10px;
+	opacity: 1 !important;
+	margin: 0px 7px;
+}
+.supsystic-plugin .ui-pg-table .ui-icon.ui-icon-seek-prev,
+.supsystic-plugin .ui-pg-table .ui-icon.ui-icon-seek-next {
+	width: 5px;
+}
+.supsystic-plugin .ui-pg-table .ui-icon.ui-icon-seek-first {
+	background-position: 0px 0px !important;
+}
+.supsystic-plugin .ui-pg-table .ui-icon.ui-icon-seek-prev {
+	background-position: -10px 0px !important;
+}
+.supsystic-plugin .ui-pg-table .ui-icon.ui-icon-seek-next {
+	background-position: -17px 0px !important;
+}
+.supsystic-plugin .ui-pg-table .ui-icon.ui-icon-seek-end {
+	background-position: -24px 0px !important;
+}
+.supsystic-plugin .s-ico .ui-grid-ico-sort {
+	background-image: url("images/arrows-sprite.png") !important;
+	background-repeat: no-repeat !important;
+	width: 8px;
+	height: 4px;
+	/*opacity: 1 !important;*/
+}
+.supsystic-plugin .s-ico .ui-grid-ico-sort.ui-icon-triangle-1-n {
+	background-position: -68px -6px !important;
+}
+.supsystic-plugin .s-ico .ui-grid-ico-sort.ui-icon-triangle-1-s {
+	background-position: -68px 0px !important;
+}
+.supsystic-plugin .ui-th-column .icheckbox_minimal {
+	margin-bottom: 7px;
+}
+/*Table cols width manipulations*/
+.form-table .col-perc {
+	vertical-align: middle;
+}
+.form-table .col-w-1perc {
+	min-width: 1%;
+}
+.form-table .col-w-10perc {
+	min-width: 10%;
+}
+.form-table .col-w-20perc {
+	min-width: 20%;
+}
+.form-table .col-w-30perc {
+	min-width: 30%;
+}
+.form-table .col-w-40perc {
+	min-width: 40%;
+}
+.form-table .col-w-50perc {
+	min-width: 50%;
+}
+.form-table .col-w-60perc {
+	min-width: 60%;
+}
+/*custom selects*/
+/*.chosen-container, .chosen-container div {
+	overflow: auto !important;
+	height: auto !important;
+}*/
+/*fieldsets*/
+.supsystic-plugin fieldset {
+	border: 1px solid #000;
+	padding: 5px;
+}
+/*chosen selects*/
+.supsystic-plugin .chosen-container-multi .chosen-choices li.search-choice {
+	background-image: none;
+	background-color: transparent;
+	border: 1px solid #000;
+	border-radius: 0;
+}
+.supsystic-plugin .chosen-container-active .chosen-choices {
+	border-color: #4ae8ea;
+}
+.supsystic-plugin .chosen-container.chosen-container-multi {
+	min-width: 300px;	/*As if select is hidden on chosen init action - it will be with width: 0 - and this is really bad*/
+}
+/*back to top*/
+#umsPopupGoToTop {
+	position: fixed;
+	z-index: 1000;
+	text-align: center;
+	bottom: 20px;
+	right: 80px;
+	display: none;
+}
+#umsPopupGoToTopBtn,
+#umsPopupGoToTopBtn:hover,
+#umsPopupGoToTopBtn:active {
+	color: #000;
+	text-decoration: none;
+}
+/*shortcode text*/
+.sup-shortcode {
+	background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    color: #333333;
+    font-size: 13px;
+    line-height: 3.42857;
+    margin: 0 0 10px;
+    padding: 9.5px;
+    word-break: break-all;
+    word-wrap: break-word;
+	font-family: monospace;
+	cursor: pointer;
+	white-space: nowrap;
+}
+.supsystic-plugin .umsCopyTextCode {
+	background-color: #F5F5F5  !important;
+    border: 1px solid #CCCCCC !important;
+    border-radius: 4px !important;
+    color: #333333 !important;
+    font-size: 13px !important;
+    margin: 0 0 5px 0 !important;
+    padding: 10px !important;
+	font-family: monospace !important;
+	cursor: pointer;
+	width: 100%;
+}
+.supsystic-plugin .umsMapBtns button, .supsystic-plugin .umsMapBtns .button {
+	margin-bottom: 5px;
+}
+/*additional styles*/
+.umsOptLabel {
+	font-weight: bold;
+	display: block;
+	clear: both;
+}
+.supsistic-half-side-box {
+	float: left;
+	width: 50%;
+	padding-right: 1%;
+}
+.supsistic-half-side-box:last-of-type {
+	padding-right: 0;
+}
+@media (max-width: 991px) {
+	.supsistic-half-side-box {
+		float: none;
+		width: 100%;
+		padding: inherit;
+	}
+	.supsystic-plugin .umsMapBtns {
+		width: 100%;
+	}
+	.supsystic-plugin .umsMapBtns button, .supsystic-plugin .umsMapBtns .button {
+		width: 100%;
+		text-align: center;
+	}
+}
+/*datepicker*/
+.ui-datepicker {
+	border: 1px solid #000;
+}
+.ui-datepicker .ui-datepicker-header .ui-icon {
+	width: 18px;
+	height: 21px;
+	margin-top: -5px;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+.ui-datepicker .ui-datepicker-header .ui-state-hover .ui-icon {
+	color: #4ae8ea !important;
+}
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+	left: 2px;
+	top: 2px;
+}
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+	right: 2px;
+	top: 2px;
+}
+.ui-icon-circle-triangle-w:before {
+	content: "\f060";
+}
+.ui-icon-circle-triangle-e:before {
+	content: "\f061";
+}
+.ui-datepicker td span, .ui-datepicker td a {
+	text-align: center !important;
+}
+.sup-col {
+	float: left;
+	padding-right: 15px;
+}
+.sup-col.sup-w-25 {
+	width: 25%;
+}
+.sup-col.sup-w-50 {
+	width: 50%;
+	padding-right: 7px;
+	padding-left: 0;
+}
+.sup-col.sup-w-50:last-of-type {
+	padding-right: 0;
+	padding-left: 7px;
+}
+.sup-col.sup-w-75 {
+	width: 75%;
+}
+.sup-col.sup-w-100 {
+	width: 100%;
+}
+.sup-col.no-p {
+	padding: 0 !important;
+}
+#containerWrapper {
+	min-height: 508px;
+}
+.supsystic-plugin .row-pad {
+	padding: 10px 0;
+}
+.sup-medium-label {
+	font-size: 15px;
+}
+.supsystic-plugin a.sup-standard-link {
+	color: #0074a2;
+}
+.supsystic-plugin a.sup-standard-link:hover {
+	color: #2ea2cc;
+}
+/*fa + wp dashicons integration*/
+.supsystic-plugin .fa.dashicons-before {
+	font-family: dashicons;
+	font-size: inherit;
+}
+/* WP Colorpicker*/
+.supsystic-plugin .wp-color-result {
+	height: auto;
+}
+.button.button-small.wp-picker-default {
+	margin: 4px 0 0 10px;
+}
+/*pro links styles*/
+.umsProOptMiniLabel {
+	display: block;
+	margin-bottom: -15px;
+	/*margin-top: -30px;*/
+}
+.umsProOptMiniLabel a {
+	font-size: 10px;
+	text-decoration: none;
+	color: #0074a2;
+}
+.umsProOptMiniLabel a:hover {
+	color: #2ea2cc;
+}
+/*tables - jqgrid - responsivness*/
+@media (max-width: 1280px) {
+	.supsystic-tbl-pagination-shell .ui-pg-table .ui-paging-info {
+		display: none !important;
+	}
+}
+/*wp add transition for all links in admin area, this is not required for our chosen "x" buttons*/
+a.search-choice-close {
+	transition-duration: 0s;
+}
+/* Fix styles for Right to Left languages */
+html[dir="rtl"] .supsystic-plugin .supsystic-content .supsystic-navigation {
+	margin-right: 0;
+}
+
+html[dir="rtl"] .supsystic-plugin .supsystic-content .supsystic-container {
+	margin-right: 75px;
+	margin-left: 0;
+}

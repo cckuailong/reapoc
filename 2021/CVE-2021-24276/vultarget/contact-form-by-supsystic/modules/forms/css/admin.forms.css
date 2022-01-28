@@ -1,0 +1,525 @@
+.forms-list {
+	margin-top: 40px;
+}
+.forms-list .forms-list-item {
+	max-width: 400px;
+	border: 1px solid transparent;
+	padding: 5px;
+	margin: 6px;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	overflow: hidden;
+}
+.forms-list .forms-list-item.active ,
+.forms-list .forms-list-item:active  {
+	outline: 5px solid rgba(0, 0, 0, 0.52);
+}
+.forms-list .forms-list-item img {
+	max-width: 400px;
+	height: auto;
+}
+/*.cfsNewFormDesc {
+	background-color: #fff;
+    bottom: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+	display: none;
+}*/
+.cfsSelectTpl {
+	position: absolute;
+	top: -50px;
+	/*left: 160px;*/
+}
+#cfsFormPreview {
+	overflow:hidden;
+}
+#cfsFormEditTabs {
+	/*float: right;
+	width: 560px;*/
+}
+#cfsFormEditTabs .cfsOptTxtCheck {
+	width: calc(100% - 25px);
+}
+#cfsFormEditForm textarea {
+	width: 100%;
+}
+.wp-editor-area   {
+  height: 200px;
+  }
+.cfsTabContent section {
+	padding-bottom: 20px;
+}
+.cfsFormOptRow {
+	padding-left: 7px;
+}
+.supsystic-plugin fieldset, .cfsFormOptRow {
+	margin-bottom: 10px;
+}
+/*additional*/
+.cfsBgTypeShell {
+	display: none;
+}
+.cfsFormMainOptSect {
+	float: left;
+	padding-right: 30px;
+	max-width: 30%;
+}
+.cfsListItems li {
+	float: left;
+	margin-right: 5px;
+	/*min-height: 50px;*/
+	line-height: 35px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	padding: 3px;
+}
+.cfsListItems li:hover {
+	border-color: #4ae8ea;
+}
+.cfsListItems li.active {
+	border-color: #000;
+}
+#cfsFormPreviewUpdatingMsg {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	z-index: 999999;
+	display: none;
+	padding: 5px;
+	color: #4ae8ea;
+	background-color: #000;
+}
+.ppoFormSubFields label,
+.ppoFormRegFields label {
+	padding-right: 10px;
+}
+#cfsFormTpl .form-table {
+	vertical-align: top;
+}
+#cfsFormMainOpts .cfsFormMainOptLbl {
+	display: block;
+	margin-bottom: 5px;
+}
+/*Too long for this particular input - make it smaller*/
+/*.supsystic-plugin #cfsHideForDevicesLabel .chosen-container.chosen-container-multi {
+	min-width: 210px;
+}
+.supsystic-plugin #cfsHideForPostTypesLabel .chosen-container.chosen-container-multi {
+	min-width: 210px;
+}*/
+a.cfsSwitchShowHideOptLink {
+	color: inherit !important;
+	text-decoration: none !important;
+}
+a.cfsSwitchShowHideOptLink.active,
+a.cfsSwitchShowHideOptLink:hover {
+	font-weight: bold;
+}
+/*animations setup*/
+.cfsFormAnimEff {
+	float: left;
+	min-height: 150px;
+	min-width: 150px;
+	position: relative;
+	border: 3px solid transparent;
+	cursor: pointer;
+}
+.cfsFormAnimEff:hover,
+.cfsFormAnimEff.active {
+	border: 3px solid #4ae8ea;
+}
+.cfsFormAnimEffLabel {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	line-height: 130px;
+	text-align: center;
+	/*font-size: 20px;*/
+	background-color: #000;
+	color: #fff;
+	/*cursor: pointer;*/
+}
+/*#supsystic-breadcrumbs .button,
+#supsystic-breadcrumbs *:not(.fa) {
+	height: 30px;
+	line-height: 26px;
+}*/
+.supsystic-always-top {
+	position: fixed;
+	z-index: 99;
+}
+#supsystic-breadcrumbs.supsystic-sticky {
+	background-color: #f1f1f1;
+	width: 100%;
+}
+.forms-tick-label {
+
+}
+[data-block-to-switch] {
+	width: 100%;
+}
+.cfsFormSelectTpl {
+	float: left;
+}
+.cfsSubShellOptsTbl,
+.cfsRegShellOptsTbl {
+	width: 100%;
+}
+.cfsSubShellOptsTbl th,
+.cfsRegShellOptsTbl th {
+	min-width: 280px;
+	font-weight: normal;
+}
+.cfsSubShellOptsTbl input[type=text],
+.cfsSubShellOptsTbl textarea,
+.cfsRegShellOptsTbl input[type=text],
+.cfsRegShellOptsTbl textarea {
+	width: 100%;
+}
+.cfsSubShellOptsTbl .fa.supsystic-tooltip,
+.cfsRegShellOptsTbl .fa.supsystic-tooltip {
+	float: right;
+}
+#cfsFormEditForm .form-table td {
+	/*vertical-align: top;*/
+}
+.cfsFormMainOptDesc {
+	display: none;
+}
+.cfsFormSubDestOpts {
+	display: none;
+}
+.cfsSubShellMainTbl th,
+.cfsRegLoginShellMainTbl th{
+	min-width: 350px;
+}
+.cfsSubShellMainTbl .fa.supsystic-tooltip,
+.cfsRegLoginShellMainTbl .fa.supsystic-tooltip {
+	float: right;
+}
+#cfsFormSm .cfsFormOptRow {
+	margin-bottom: 10px;
+}
+#cfsFormTexts .cfsFormOptRow,
+#cfsFormTexts fieldset {
+	padding-bottom: 10px;
+}
+.ui-state-highlight-sub-fields,
+.ui-state-highlight-reg-fields {
+	border: 1px solid #000;
+	width: 50px;
+	height: 30px;
+	background-color: #ddd;
+}
+.cfsSubFieldShell, .ui-state-highlight-sub-fields,
+.cfsRegFieldShell, .ui-state-highlight-reg-fields {
+	float: left;
+	margin-right: 10px;
+	cursor: move;
+	padding: 5px;
+}
+.cfsSubFieldShell,
+.cfsRegFieldShell {
+	position: relative;
+}
+.cfsSfFieldToolbar,
+.cfsRfFieldToolbar {
+	display: none;
+	position: absolute;
+	top: -25px;
+	right: 0;
+	padding: 5px;
+	background-color: #dfdfdf;
+}
+.cfsSfFieldToolbar a,
+.cfsRfFieldToolbar a{
+	color: #000;
+	text-decoration: none;
+}
+.cfsSfFieldToolbar a:not(:last-of-type),
+.cfsRfFieldToolbar a:not(:last-of-type) {
+	margin-right: 5px;
+}
+.cfsSubFieldShell:hover,
+.cfsRegFieldShell:hover {
+	background-color: #dfdfdf;
+}
+.cfsSubFieldShell:hover .cfsSfFieldToolbar,
+.cfsRegFieldShell:hover .cfsRfFieldToolbar {
+	display: block;
+}
+#cfsSfFieldSelectOptShellExl,
+#cfsRfFieldSelectOptShellExl {
+	display: none;
+}
+.cfsSfFieldSelectOptShell,
+.cfsRfFieldSelectOptShell,
+.ui-state-highlight-sub-field-select-opt,
+.ui-state-highlight-reg-field-select-opt {
+	border: 1px solid #000;
+	padding: 5px;
+	margin-top: 5px;
+	cursor: move;
+}
+.cfsSfFieldSelectOptShell:hover,
+.cfsRfFieldSelectOptShell:hover {
+	background-color: #dfdfdf;
+}
+.ui-state-highlight-sub-field-select-opt,
+.ui-state-highlight-reg-field-select-opt {
+	height: 30px;
+}
+#cfsSubAddFieldShell,
+#cfsRegAddFieldShell {
+	display: block;
+    float: left;
+}
+.cfsPromoImgUrl {
+	text-decoration: none !important;
+	box-shadow: none !important;
+}
+#cfsFormTpl .cfsBgRowShell td {
+	vertical-align: top;
+}
+.wp-picker-container {
+	min-width: 120px;
+	white-space: nowrap;
+}
+.cfsOptDescParamsShell {
+	padding-left: 15px;
+	/*overflow: hidden;*/
+}
+#cfsFormEditableLabelShell {
+	cursor: pointer;
+	color: #000;
+}
+#cfsFormEditableLabelTxt {
+	display: none;
+}
+/*Bg opacity slider*/
+#toeSliderDisplay_paramstplbg_overlay_opacity {
+	font-weight: bold;
+	text-align: center;
+}
+.cfsTplLabel {
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.button.cfsPromoTplBtn {
+	background-color: #fff;
+}
+.cfsTimeDisplayOptsShell,
+.cfsDateDisplayOptsShell {
+	display: none;
+}
+.cfsTimeDisplayOptsShell select {
+	margin: 0;
+}
+.cfsDateDisplayOptsShell input[type="text"] {
+	width: 90px;
+}
+#cfsFormAttachShell {
+	display: none;
+}
+.cfsFormAttachShell {
+	margin-top: 5px;
+}
+.cfsFormAttachFile {
+	padding: 7px 1px 0;
+	display: inline-block;
+}
+.cfsBgRowShell th .description {
+	font-size: 12px;
+}
+.cfsPageGlobalDelayShell {
+	display: none;
+}
+/*new plugin forms css start*/
+#cfsFieldShellEx {
+	display: none;
+}
+#cfsFieldsEditShell .cfsFieldRow {
+	margin: 0;
+	position: relative;
+}
+#cfsFieldsEditShell .cfsFieldRow.ui-sortable-helper {
+	background-color: #fff;
+}
+#cfsFieldsEditShell .cfsFieldRow .cfsMoveVFieldHandle {
+	position: absolute;
+	top: 50%;
+	left: -14px;
+	transform: translate(0, 50%);
+	color: #000;
+}
+#cfsFieldsEditShell .cfsFieldRow .cfsMoveVFieldHandle:hover {
+	text-shadow: 1px 1px 1px #333;
+}
+#cfsMoveVFieldHandleExl {
+	display: none;
+}
+#cfsFieldsEditShell .cfsFieldShell {
+	padding-left: 0px;
+	padding-right: 10px;
+}
+#cfsFieldsEditShell .cfsFieldShell .cfsFieldShellBody {
+	margin: 5px 0;
+	display: block;
+	position: relative;
+}
+#cfsFieldsEditShell .cfsFieldShell .csfFieldIcon,
+#cfsFieldsEditShell .cfsFieldShell .csfFieldLabel,
+#cfsFieldsEditShell .cfsFieldShell .csfFieldType {
+	display: inline;
+}
+#cfsFieldsEditShell .cfsFieldRow {
+	overflow:inherit;
+	display:block;
+}
+#cfsFieldsEditShell .cfsFieldShell .csfFieldType {
+	font-family: monospace;
+	font-size: 12px;
+}
+#cfsFieldsEditShell .cfsFieldShell .csfFieldType:before {
+	content: "[";
+}
+#cfsFieldsEditShell .cfsFieldShell .csfFieldType:after {
+	content: "]";
+}
+.cfsFieldPanel {
+	position: absolute;
+	display: none;
+	top: -40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: #000;
+	padding: 5px 10px;
+	background-color: #4ae8ea;
+	z-index: 99;
+}
+.cfsFieldShell:hover .cfsFieldPanel {
+	display: block;
+}
+.cfsFieldPanel a {
+	color: #000;
+	text-decoration: none !important;
+	position: relative;
+	margin: 0 3px;
+}
+.cfsFieldPanel a:hover {
+	text-shadow: 1px 1px 1px #333;
+}
+#cfsFieldListOptShellExl {
+	display: none;
+}
+.lcsMoveHandle {
+	cursor: pointer;
+}
+.CodeMirror.cfsCodeMirrorOneLine {
+	height: 40px;
+}
+#cfsFieldsAddWnd .cfsFieldsAddWndElementsShell .cfsFieldWndElement {
+	margin: 5px 2px;
+}
+.cfsFormSubmitOptsTbl input[type="text"],
+.cfsFormSubmitToTbl input[type="text"],
+.cfsFormFieldsSettingsOptsTbl input[type="text"] {
+	width: 100%;
+}
+.cfsFormSubmitOptsTbl .supsystic-tooltip,
+.cfsFormSubmitToTbl .supsystic-tooltip,
+.cfsFormFieldsSettingsOptsTbl .supsystic-tooltip {
+	float: right;
+}
+.cfsFormSubmitOptsTbl th {
+	min-width: 220px;
+}
+#cfsFormSubmitToShellEx {
+	display: none;
+}
+.cfsFormSubmitToShell {
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #000;
+}
+.cfsFormSubmitToCcShell {
+	display: none;
+}
+.cfsFieldEditErrorRow {
+	display: none;
+}
+/*statistics styles*/
+.cfsNoStatsMsg {
+	display: none;
+	font-size: 16px;
+	font-weight: 600;
+    line-height: 1.3;
+}
+.cfsOptLabel {
+	clear: both;
+	display: block;
+	font-weight: bold;
+	min-height: 30px;
+}
+.cfsContactExportCfsBtnShell {
+	display: none;
+}
+.cfsSaveFormErrorEx {
+	display: none;
+}
+#cfsFieldsEditWnd, #cfsFieldsEditWnd *:not(.iris-picker) {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+#cfsFieldsEditWnd .form-table .supsystic-tooltip {
+	float: right;
+}
+/*I know - it's from PRO, but don't want to create separate stylesheet for only one rule*/
+#jqgh_cfsAbFormTbl_id .s-ico {
+	float: right;
+}
+/*In next table we need to make first column - wider then usual*/
+.cfsFormFieldsSettingsOptsTbl.form-table th {
+	min-width: 250px;
+}
+.cfsSubmitOptsHelpTbl,
+.cfsSubmitOptsHelpTbl tbody,
+.cfsSubmitOptsHelpTbl tr,
+.cfsSubmitOptsHelpTbl td {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.cfsFormWhereShowBlock {
+	display: none;
+}
+#cfsFormContactFieldRowEx {
+	display: none;
+}
+.cfsFieldIconBtn {
+	color: #000;
+}
+.cfsFieldIconBtn:hover,
+.cfsFieldIconBtn.active {
+	color: #4ae8ea;
+}
+.cfsFieldIconBtn {
+	cursor:pointer;
+}
+#cfsSubmitOpts {
+	padding-top: 0;
+}
+#cfsSubmitOpts .nav-tab-wrapper {
+	padding-top: 0;
+}
+.cfsFieldFixedSelectRow .chosen-container {
+	min-width: 163px !important;
+}

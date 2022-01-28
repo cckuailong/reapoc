@@ -1,0 +1,125 @@
+// out: template-2.css, compress: true, sourceMap: false, autoprefixer: last 5 versions, groupmedia: true
+.popup-template {
+    .modal {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        opacity:0;
+        z-index: -1;
+        visibility:hidden;
+        background: rgba(#000, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+        z-index: 999;
+        transition:all 0.8ms; 
+
+        &-container {
+            display: flex;
+            max-width: 720px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            transition-duration: 0.3s;
+            background: #fff;
+            transform: translateY(100px) scale(0.4);
+        }
+
+        &-title {
+            font-size: 26px;
+            margin: 0;
+            font-weight: 400;
+            color: #55311c;
+        }
+
+        &-desc {
+            margin: 6px 0 30px 0;
+        }
+        &-right,
+        &-left {
+            padding: 40px 30px;
+            background: #fff;
+            flex: 1.5;
+            transition-duration: 0.5s;
+            transform: translateY(80px);
+            opacity: 0;
+        }
+
+        &-button {
+            color: darken(#8c7569, 5%);
+            font-family: "Nunito", sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+            border: 0;
+            outline: 0;
+            padding: 10px 40px;
+            border-radius: 30px;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.16);
+            transition: 0.3s;
+
+            &:hover {
+                border-color: rgba(255, 255, 255, 0.2);
+                background: rgba(#fff, 0.8);
+            }
+        }
+
+        &.is-open {
+            background: rgba(#333, 0.85);
+            opacity:1;
+            z-index: 9999;
+            visibility:visible;
+            .modal-button {
+                opacity: 0;
+            }
+
+            .modal-container {
+                opacity: 1;
+                transition-duration: 0.6s;
+                pointer-events: auto;
+                transform: translateY(0) scale(1);
+            }
+            .modal-right,
+            .modal-left {
+                transform: translateY(0);
+                opacity: 1;
+                transition-delay: 0.1s;
+            }
+        }
+
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                color: rgba(#333, 0.6);
+                font-size: 14px;
+            }
+        }
+        .icon-button {
+            outline: 0;
+            position: absolute;
+            right: 10px;
+            top: 12px;
+            width: 32px;
+            height: 32px;
+            border: 0;
+            background: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .modal-container {
+            width: 90%;
+        }
+    }
+}

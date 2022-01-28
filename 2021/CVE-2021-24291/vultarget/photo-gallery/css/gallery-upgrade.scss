@@ -1,0 +1,1268 @@
+.break_768, #screen-meta-links {
+  display: none;
+}
+
+.gallery_upgrade-content-features {
+  .gallery_feature:last-child {
+    .gallery_feature-image {
+      display: none !important;
+    }
+
+    .gallery_feature-heading {
+      display: none !important;
+    }
+
+    .gallery_feature-text {
+      display: none !important;
+    }
+  }
+}
+
+.gallery_upgrade_main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.gallery_upgrade_wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+
+
+  .gallery_info {
+    position: relative;
+
+    .gallery_info-text {
+      display: inline-block;
+      color: #323A45;
+      text-align: left;
+      font-weight: 700;
+      font-family: 'Open Sans';
+      padding: 0;
+      margin: 0;
+    }
+
+    .gallery_info-question_mark {
+      display: inline-block;
+
+      img {
+        position: absolute;
+      }
+    }
+  }
+
+  .gallery_upgrade-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .gallery_upgrade-head-content {
+      display: flex;
+      flex-direction: column;
+
+      .gallery_upgrade-head-content-heading {
+        margin-bottom: 14px;
+
+        h2 {
+          color: #323A45;
+          font-weight: 900;
+          font-family: 'Open Sans';
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .gallery_upgrade-head-content-text {
+        margin-bottom: 40px;
+
+        p {
+          color: #323A45;
+          font-weight: 400;
+          font-family: 'Open Sans';
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .gallery_upgrade-head-content-buttons {
+        div {
+          input {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: 'Open Sans';
+            border-radius: 30px;
+            padding: 0;
+            cursor: pointer;
+          }
+        }
+
+        .button-upgrade {
+
+          input {
+            background-color: #23B536;
+            color: #FFFFFF;
+            border: none;
+            outline: none;
+
+            &:hover {
+              background-color: #1E9C2E;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+
+  .gallery_upgrade-content {
+    margin-bottom: 30px;
+
+    .gallery_upgrade-content-features {
+      display: flex;
+
+      .gallery_feature {
+        width: 272px;
+
+        .gallery_feature-image {
+          display: flex;
+          justify-content: start;
+          align-items: flex-end;
+
+          img {
+            margin-top: 0;
+            margin-bottom: 2px;
+          }
+        }
+
+        .gallery_feature-heading {
+          h3 {
+            color: #323A45;
+            font-weight: 900;
+            font-family: 'Open Sans';
+            padding: 0;
+            margin: 0;
+          }
+        }
+
+        .gallery_feature-text {
+          p {
+            color: #323A45;
+            font-weight: 400;
+            font-family: 'Open Sans';
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .break_768 {
+    display: inline-block;
+  }
+
+  .gallery_upgrade_main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .gallery_upgrade_wrapper {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 0 14px;
+
+    .gallery_info {
+      padding-top: 20px;
+      padding-bottom: 30px;
+
+      .gallery_info-text {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .gallery_info-question_mark {
+        a {
+          position: absolute;
+          display: inline-block;
+          top: -4px;
+          right: 25px;
+          width: 66px;
+          height: 66px;
+        }
+      }
+    }
+
+    .gallery_upgrade-head {
+      align-items: center;
+      margin-bottom: 20px;
+
+      .gallery_upgrade-head-content {
+        justify-content: center;
+        align-items: center;
+
+        .gallery_upgrade-head-content-heading {
+          margin-bottom: 14px;
+
+          h2 {
+            text-align: center;
+            font-size: 26px;
+            line-height: 36px;
+          }
+        }
+
+        .gallery_upgrade-head-content-text {
+          margin-bottom: 40px;
+
+          p {
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        .gallery_upgrade-head-content-buttons {
+          div {
+            input {
+              width: 204px;
+              height: 47px;
+              font-size: 14px;
+              line-height: 19px;
+              letter-spacing: 0.12px;
+            }
+          }
+
+          .button-upgrade {
+            margin-bottom: 40px;
+
+            input {
+            }
+          }
+        }
+      }
+
+      .gallery_upgrade-head-media {
+        position: relative;
+
+        .gallery_upgrade-head-media-picture {
+          width: 300px;
+          height: 186px;
+          background-image: url("../images/film-strip.png");
+          background-size: inherit;
+        }
+      }
+    }
+
+    .gallery_upgrade-content {
+      margin-bottom: 30px;
+
+      .gallery_upgrade-content-features {
+        justify-content: center;
+        flex-direction: column;
+
+        .gallery_feature {
+          width: 272px;
+
+          .gallery_feature-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              margin-bottom: 4px;
+            }
+
+            .thumb {
+              width: 50px;
+              height: 50px;
+              border: none;
+            }
+
+            .pagination {
+              width: 82px;
+              height: 50px;
+            }
+
+            .font {
+              width: 58px;
+              height: 58px;
+            }
+
+            .control {
+              width: 73px;
+              height: 48px;
+            }
+
+            .color {
+              width: 45px;
+              height: 48px;
+            }
+
+            .filmstrip {
+              width: 63px;
+              height: 48px;
+            }
+
+            .lightbox {
+              width: 58px;
+              height: 58px;
+            }
+
+            .alignment {
+              width: 48px;
+              height: 48px;
+            }
+          }
+
+          .gallery_feature-heading {
+            h3 {
+              text-align: center;
+              font-size: 18px;
+              line-height: 24px;
+              margin-bottom: 10px;
+            }
+          }
+
+          .gallery_feature-text {
+            p {
+              text-align: center;
+              font-size: 14px;
+              line-height: 19px;
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .break_768 {
+    display: inline;
+  }
+  .gallery_upgrade_wrapper {
+    position: relative;
+    padding: 0 22px;
+
+    .gallery_info {
+      padding-top: 40px;
+      padding-bottom: 10px;
+
+      .gallery_info-text {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      .gallery_info-question_mark {
+        img {
+          top: 20px;
+          left: 228px;
+          width: 72px;
+          height: 72px;
+        }
+      }
+    }
+
+    .gallery_upgrade-head {
+      margin-bottom: 9px;
+
+      .gallery_upgrade-head-content {
+
+        .gallery_upgrade-head-content-heading {
+          margin-bottom: 20px;
+
+          h2 {
+            width: 350px;
+            text-align: left;
+            font-size: 30px;
+            line-height: 41px;
+          }
+        }
+
+        .gallery_upgrade-head-content-text {
+          margin-bottom: 30px;
+
+          p {
+            width: 350px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        .gallery_upgrade-head-content-buttons {
+          div {
+            input {
+              width: 204px;
+              height: 47px;
+              font-size: 14px;
+              line-height: 19px;
+              letter-spacing: 0.12px;
+            }
+          }
+
+          .button-upgrade {
+            margin-bottom: 137px;
+
+            input {
+            }
+          }
+        }
+      }
+
+      .gallery_upgrade-head-media {
+        position: absolute;
+        right: -1px;
+        top: 215px;
+
+        .gallery_upgrade-head-media-picture {
+          width: 433px;
+          height: 270px;
+          background-image: url("../images/film-strip@2x.png");
+          background-size: cover;
+        }
+      }
+    }
+
+    .gallery_upgrade-content {
+      .gallery_upgrade-content-features {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .gallery_feature {
+          width: 217px;
+          height: 201px;
+          box-sizing: border-box;
+
+          .gallery_feature-image {
+            height: 60px;
+
+            .thumb {
+              width: 50px;
+              height: 50px;
+              border: none;
+            }
+
+            .pagination {
+              width: 82px;
+              height: 50px;
+            }
+
+            .font {
+              width: 58px;
+              height: 58px;
+            }
+
+            .control {
+              width: 73px;
+              height: 48px;
+            }
+
+            .color {
+              width: 45px;
+              height: 48px;
+            }
+
+            .filmstrip {
+              width: 63px;
+              height: 48px;
+            }
+
+            .lightbox {
+              width: 58px;
+              height: 58px;
+            }
+
+            .alignment {
+              width: 48px;
+              height: 48px;
+            }
+          }
+
+          .gallery_feature-heading {
+            h3 {
+              text-align: left;
+              font-size: 20px;
+              margin-bottom: 12px;
+              padding-left: 9px;
+            }
+          }
+
+          .gallery_feature-text {
+            p {
+              height: 80px;
+              text-align: left;
+              font-size: 15px;
+              margin-bottom: 30px;
+              padding-left: 9px;
+            }
+          }
+        }
+
+        .gallery_feature:nth-child(n+6) {
+          .gallery_feature-text {
+            p {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .break_768 {
+    display: inline;
+  }
+  .gallery_upgrade_wrapper {
+    position: relative;
+    padding: 0 22px;
+
+    .gallery_info {
+      padding-top: 40px;
+      padding-bottom: 10px;
+
+      .gallery_info-text {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      .gallery_info-question_mark {
+        img {
+          top: 20px;
+          left: 228px;
+          width: 72px;
+          height: 72px;
+        }
+      }
+    }
+
+    .gallery_upgrade-head {
+
+      .gallery_upgrade-head-content {
+
+        .gallery_upgrade-head-content-heading {
+          margin-bottom: 20px;
+
+          h2 {
+            width: 350px;
+            text-align: left;
+            font-size: 30px;
+            line-height: 40px;
+          }
+        }
+
+        .gallery_upgrade-head-content-text {
+          margin-bottom: 30px;
+
+          p {
+            width: 350px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        .gallery_upgrade-head-content-buttons {
+          display: flex;
+          width: 424px;
+          justify-content: space-between;
+          margin-bottom: 50px;
+
+          div {
+            input {
+              width: 204px;
+              height: 47px;
+              font-size: 14px;
+              line-height: 19px;
+              letter-spacing: 0.12px;
+            }
+          }
+
+          .button-upgrade {
+            input {
+            }
+          }
+        }
+      }
+
+      .gallery_upgrade-head-media {
+        position: absolute;
+        right: 0;
+        top: 10px;
+
+        .gallery_upgrade-head-media-picture {
+          width: 433px;
+          height: 270px;
+          background-image: url("../images/film-strip@3x.png");
+          background-size: cover;
+        }
+      }
+    }
+
+    .gallery_upgrade-content {
+      margin-bottom: 50px;
+
+      .gallery_upgrade-content-features {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .gallery_feature {
+          width: 251px;
+
+          .gallery_feature-image {
+            height: 60px;
+
+            .thumb {
+              width: 50px;
+              height: 50px;
+              border: none;
+            }
+
+            .pagination {
+              width: 82px;
+              height: 50px;
+            }
+
+            .font {
+              width: 58px;
+              height: 58px;
+            }
+
+            .control {
+              width: 73px;
+              height: 48px;
+            }
+
+            .color {
+              width: 45px;
+              height: 48px;
+            }
+
+            .filmstrip {
+              width: 63px;
+              height: 48px;
+            }
+
+            .lightbox {
+              width: 58px;
+              height: 58px;
+            }
+
+            .alignment {
+              width: 48px;
+              height: 48px;
+            }
+          }
+
+          .gallery_feature-heading {
+            h3 {
+              text-align: left;
+              font-size: 20px;
+              line-height: 30px;
+              margin-bottom: 12px;
+              padding-left: 9px;
+            }
+          }
+
+          .gallery_feature-text {
+            p {
+              text-align: left;
+              font-size: 15px;
+              margin-bottom: 13px;
+              padding-left: 9px;
+            }
+          }
+        }
+
+        .gallery_feature:nth-child(n+6) {
+          .gallery_feature-text {
+            p {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+  .break_768 {
+    display: inline-block;
+  }
+
+  .gallery_upgrade_wrapper {
+    position: relative;
+    padding: 0 22px 0 24px;
+
+    .gallery_info {
+      padding-top: 60px;
+      padding-bottom: 10px;
+      margin-left: -1px;
+
+      .gallery_info-text {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      .gallery_info-question_mark {
+        img {
+          top: 40px;
+          left: 225px;
+          width: 72px;
+          height: 72px;
+        }
+      }
+    }
+
+    .gallery_upgrade-head {
+      margin-left: -1px;
+
+      .gallery_upgrade-head-content {
+
+        .gallery_upgrade-head-content-heading {
+          margin-bottom: 20px;
+
+          h2 {
+            width: 374px;
+            text-align: left;
+            font-size: 32px;
+            line-height: 43px;
+          }
+        }
+
+        .gallery_upgrade-head-content-text {
+          margin-bottom: 30px;
+
+          p {
+            width: 524px;
+            text-align: left;
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+
+        .gallery_upgrade-head-content-buttons {
+          display: flex;
+          width: 480px;
+          justify-content: space-between;
+          margin-bottom: 60px;
+
+          div {
+            input {
+              width: 230px;
+              height: 52px;
+              font-size: 16px;
+              line-height: 22px;
+              letter-spacing: 0.13px;
+            }
+          }
+
+          .button-upgrade {
+            input {
+            }
+          }
+        }
+      }
+
+      .gallery_upgrade-head-media {
+        position: absolute;
+        right: 1px;
+        top: 34px;
+
+        .gallery_upgrade-head-media-picture {
+          width: 516px;
+          height: 322px;
+          background-image: url("../images/film-strip@3x.png");
+          background-size: cover;
+        }
+      }
+    }
+
+    .gallery_upgrade-content {
+      margin-bottom: 10px;
+
+      .gallery_upgrade-content-features {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .gallery_feature {
+          height: 229px;
+          width: 239px;
+
+          .gallery_feature-image {
+            height: 60px;
+
+
+            .thumb {
+              width: 50px;
+              height: 50px;
+              border: none;
+            }
+
+            .pagination {
+              width: 82px;
+              height: 50px;
+            }
+
+            .font {
+              width: 58px;
+              height: 58px;
+            }
+
+            .control {
+              width: 73px;
+              height: 48px;
+            }
+
+            .color {
+              width: 45px;
+              height: 48px;
+            }
+
+            .filmstrip {
+              width: 63px;
+              height: 48px;
+            }
+
+            .lightbox {
+              width: 58px;
+              height: 58px;
+            }
+
+            .alignment {
+              width: 48px;
+              height: 48px;
+            }
+          }
+
+          .gallery_feature-heading {
+            h3 {
+              text-align: left;
+              font-size: 20px;
+              line-height: 30px;
+              margin-bottom: 12px;
+              padding-left: 5px;
+            }
+          }
+
+          .gallery_feature-text {
+            p {
+              height: 80px;
+              width: 239px;
+              text-align: left;
+              font-size: 15px;
+              line-height: 20px;
+              margin-bottom: 60px;
+              padding-left: 5px;
+            }
+          }
+        }
+
+        .gallery_feature:nth-child(n+4) {
+          .gallery_feature-text {
+            p {
+              margin-bottom: 0px;
+            }
+          }
+        }
+
+        .gallery_feature:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
+  .break_768 {
+    display: inline-block;
+  }
+
+  .gallery_upgrade_wrapper {
+    position: relative;
+    padding: 0 22px 0 23px;
+
+    .gallery_info {
+      padding-top: 60px;
+      padding-bottom: 10px;
+
+      .gallery_info-text {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      .gallery_info-question_mark {
+        img {
+          top: 40px;
+          left: 230px;
+          width: 72px;
+          height: 72px;
+        }
+      }
+    }
+
+    .gallery_upgrade-head {
+
+      .gallery_upgrade-head-content {
+
+        .gallery_upgrade-head-content-heading {
+          margin-bottom: 20px;
+
+          h2 {
+            width: 374px;
+            text-align: left;
+            font-size: 32px;
+            line-height: 43px;
+          }
+        }
+
+        .gallery_upgrade-head-content-text {
+          margin-bottom: 30px;
+
+          p {
+            width: 524px;
+            text-align: left;
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+
+        .gallery_upgrade-head-content-buttons {
+          display: flex;
+          width: 480px;
+          justify-content: space-between;
+          margin-bottom: 80px;
+
+          div {
+            input {
+              width: 230px;
+              height: 52px;
+              font-size: 16px;
+              line-height: 22px;
+              letter-spacing: 0.13px;
+            }
+          }
+
+          .button-upgrade {
+            input {
+            }
+          }
+        }
+      }
+
+      .gallery_upgrade-head-media {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+        .gallery_upgrade-head-media-picture {
+          width: 603px;
+          height: 376px;
+          background-image: url("../images/film-strip@3x.png");
+          background-size: cover;
+        }
+      }
+    }
+
+    .gallery_upgrade-content {
+      margin-bottom: 10px;
+
+      .gallery_upgrade-content-features {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .gallery_feature {
+          width: 260px;
+          height: 237px;
+
+          .gallery_feature-image {
+            height: 60px;
+
+            .thumb {
+              width: 50px;
+              height: 50px;
+              border: none;
+            }
+
+            .pagination {
+              width: 82px;
+              height: 50px;
+            }
+
+            .font {
+              width: 58px;
+              height: 58px;
+            }
+
+            .control {
+              width: 73px;
+              height: 48px;
+            }
+
+            .color {
+              width: 45px;
+              height: 48px;
+            }
+
+            .filmstrip {
+              width: 63px;
+              height: 48px;
+            }
+
+            .lightbox {
+              width: 58px;
+              height: 58px;
+            }
+
+            .alignment {
+              width: 48px;
+              height: 48px;
+            }
+          }
+
+          .gallery_feature-heading {
+            h3 {
+              text-align: left;
+              font-size: 20px;
+              line-height: 30px;
+              margin-bottom: 14px;
+              padding-left: 9px;
+            }
+          }
+
+          .gallery_feature-text {
+            p {
+              height: 80px;
+              text-align: left;
+              font-size: 16px;
+              line-height: 22px;
+              margin-bottom: 64px;
+              padding-left: 9px;
+            }
+          }
+        }
+
+        .gallery_feature:nth-child(n+4) {
+          .gallery_feature-text {
+            p {
+              margin-bottom: 0px;
+            }
+          }
+        }
+
+        .gallery_feature:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .break_768 {
+    display: inline-block;
+  }
+  .gallery_upgrade_main {
+  }
+  .gallery_upgrade_wrapper {
+    position: relative;
+    padding: 0 50px;
+
+    .gallery_info {
+      padding-top: 60px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+
+      .gallery_info-text {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      .gallery_info-question_mark {
+        img {
+          top: 40px;
+          left: 236px;
+          width: 72px;
+          height: 72px;
+        }
+      }
+    }
+
+    .gallery_upgrade-head {
+      padding-left: 10px;
+
+      .gallery_upgrade-head-content {
+
+        .gallery_upgrade-head-content-heading {
+          margin-bottom: 30px;
+
+          h2 {
+            width: 630px;
+            text-align: left;
+            font-size: 54px;
+            line-height: 74px;
+          }
+        }
+
+        .gallery_upgrade-head-content-text {
+          margin-bottom: 40px;
+
+          p {
+            width: 640px;
+            text-align: left;
+            font-size: 22px;
+          }
+        }
+
+        .gallery_upgrade-head-content-buttons {
+          display: flex;
+          width: 496px;
+          justify-content: space-between;
+          margin-bottom: 163px;
+
+          div {
+            input {
+              width: 230px;
+              height: 52px;
+              font-size: 16px;
+              line-height: 22px;
+              letter-spacing: 0.13px;
+            }
+          }
+
+          .button-upgrade {
+            input {
+            }
+          }
+
+        }
+      }
+
+      .gallery_upgrade-head-media {
+        position: absolute;
+        right: 25px;
+        top: 19px;
+
+        .gallery_upgrade-head-media-picture {
+          width: 850px;
+          height: 529px;
+          background-image: url("../images/film-strip@3x.png");
+          background-size: cover;
+        }
+      }
+    }
+
+    .gallery_upgrade-content {
+      margin-bottom: 6px;
+
+      .gallery_upgrade-content-features {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .gallery_feature {
+          width: 333px;
+          height: 232px;
+
+          .gallery_feature-image {
+            height: 72px;
+
+            .thumb {
+              width: 56px;
+              height: 56px;
+              border: none;
+            }
+
+            .pagination {
+              width: 88px;
+              height: 54px;
+            }
+
+            .font {
+              width: 68px;
+              height: 68px;
+            }
+
+            .control {
+              width: 82px;
+              height: 54px;
+            }
+
+            .color {
+              width: 51px;
+              height: 54px;
+            }
+
+            .filmstrip {
+              width: 71px;
+              height: 54px;
+            }
+
+            .lightbox {
+              width: 68px;
+              height: 68px;
+            }
+
+            .alignment {
+              width: 55px;
+              height: 54px;
+            }
+          }
+
+          .gallery_feature-heading {
+            h3 {
+              text-align: left;
+              font-size: 22px;
+              line-height: 30px;
+              margin-bottom: 12px;
+              padding-left: 10px;
+            }
+          }
+
+          .gallery_feature-text {
+            p {
+              height: 80px;
+              text-align: left;
+              font-size: 16px;
+              line-height: 22px;
+              margin-bottom: 30px;
+              padding-left: 10px;
+            }
+          }
+        }
+
+        .gallery_feature:nth-child(n+4) {
+          .gallery_feature-text {
+            p {
+              margin-bottom: 0px;
+            }
+          }
+        }
+
+        .gallery_feature:nth-child(4n) {
+          margin-right: 208px;
+        }
+
+        .gallery_feature:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+

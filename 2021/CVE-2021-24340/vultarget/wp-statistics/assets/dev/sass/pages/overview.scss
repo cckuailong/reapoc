@@ -1,0 +1,40 @@
+/* Remove About Meta Box and Column */
+body.toplevel_page_wps_overview_page {
+  fieldset.columns-prefs, label[for=wp-statistics-about-widget-hide] {
+    display: none !important;
+  }
+}
+
+/* Overview ads */
+#wps_overview_ads_postbox .inside {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+#wps_overview_ads_postbox .inside a img {
+  width: 100%;
+  height: auto;
+}
+
+#wps_overview_ads_postbox .inside a:focus {
+  box-shadow: none;
+}
+
+#wps_overview_ads_postbox .inside .close-overview-ads {
+  position: absolute;
+  right: 0;
+  margin: 15px 20px;
+  opacity: 0;
+  transition: 1s all;
+}
+
+#wps_overview_ads_postbox .inside .close-overview-ads span.dashicons {
+  font-size: 21px;
+  color: #72777c;
+  cursor: pointer;
+}
+
+#wps_overview_ads_postbox .inside:hover .close-overview-ads {
+  opacity: 1;
+}

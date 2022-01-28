@@ -1,0 +1,49 @@
+[
+    {
+        "name": "jhut89/mailchimp3php",
+        "version": "3.2.3",
+        "version_normalized": "3.2.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Jhut89/Mailchimp-API-3.0-PHP.git",
+            "reference": "dc05359b68e1f12864f5119f6fbc0b1421dcc2d1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Jhut89/Mailchimp-API-3.0-PHP/zipball/dc05359b68e1f12864f5119f6fbc0b1421dcc2d1",
+            "reference": "dc05359b68e1f12864f5119f6fbc0b1421dcc2d1",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "ext-json": "*",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "php": ">=7.2.0",
+            "phpunit/phpunit": "^5",
+            "squizlabs/php_codesniffer": "3.*"
+        },
+        "time": "2020-08-24T15:17:54+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MailchimpAPI\\": "src/",
+                "MailchimpTests\\": "tests/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "John Hutcheson",
+                "email": "hutch@theresearchgrp.com"
+            }
+        ],
+        "description": "A php library for version 3.0 of MailChimp's API",
+        "homepage": "https://github.com/Jhut89/Mailchimp-API-3.0-PHP"
+    }
+]

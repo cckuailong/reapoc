@@ -1,0 +1,126 @@
+#explorer {
+  position: absolute;
+  top: 70px;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+}
+
+#explorer_header_container {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  display: table;
+  outline: solid 1px #e8e9ea;
+  background-color: #ffffff;
+  width: 100%;
+  color: #585858;
+  padding: 0 0 0 5px;
+}
+
+#explorer_header {
+  display: table-row;
+}
+
+#explorer_header span {
+  display: table-cell;
+  height: 30px;
+  vertical-align: middle;
+}
+
+#explorer_body_container,
+#importer_body_container {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  overflow-y: scroll;
+
+  /*deny selecting text*/
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#explorer_body,
+#importer_body {
+  display: table;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+.explorer_item,
+.importer_item {
+  display: table-row;
+  height: 40px;
+}
+
+.explorer_item_hover,
+.importer_item_hover {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #70c0e7;
+  background-color: #e5f3fb;
+}
+
+.explorer_item_select,
+.importer_item_select {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #66a7e8;
+  background-color: #d1e8ff;
+}
+
+.item_thumb {
+  display: none;
+}
+
+.item_numbering {
+  display: table-cell;
+  padding: 0 2px;
+  vertical-align: middle;
+  width: 20px;
+  text-align: right;
+}
+
+.item_icon {
+  display: table-cell;
+  width: 60px;
+  padding: 0 2px;
+  vertical-align: middle;
+}
+
+.item_icon img {
+  max-width: 60px;
+  max-height: 32px;
+}
+
+.item_name {
+  display: table-cell;
+  word-wrap: break-word;
+  word-break: break-all;
+  vertical-align: middle;
+}
+
+.item_size {
+  display: table-cell;
+  width: 60px;
+  color: #808080;
+  vertical-align: middle;
+}
+
+.item_date_modified {
+  display: table-cell;
+  width: 140px;
+  color: #808080;
+  vertical-align: middle;
+}

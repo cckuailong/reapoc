@@ -1,0 +1,25 @@
+{
+    "name": "s1lentium/iptools",
+    "type": "library",
+    "description": "PHP Library for manipulating network addresses (IPv4 and IPv6)",
+    "keywords": ["IP-Tools", "network", "subnet", "cidr", "IP", "IPv4", "IPv6"],
+    "license": "MIT",
+    "authors": [{
+        "name": "Safarov Alisher",
+        "email": "alisher.safarov@outlook.com",
+        "homepage": "https://github.com/S1lentium"
+    }],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-bcmath": "*"
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "~1.0",
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IPTools\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,289 @@
+.template-4 .is-open {
+  overflow: hidden;
+}
+
+.template-4 .is-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.template-4 .btn.btn-primary {
+  color: #FFFFFF;
+  background-color: #3699FF;
+  border-color: #3699FF;
+}
+
+.template-4 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+
+.template-4 .modal.is-open {
+  display: block;
+}
+
+.template-4 .icon-button {
+  outline: 0;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.template-4 .modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+
+.template-4 .modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -50px);
+  transform: translate(0, -50px);
+}
+
+.template-4 .modal.is-open .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+}
+
+.template-4 .modal.modal-static .modal-dialog {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.template-4 .modal-dialog-scrollable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: calc(100% - 1rem);
+}
+
+.template-4 .modal-dialog-scrollable .modal-content {
+  max-height: calc(100vh - 1rem);
+  overflow: hidden;
+}
+
+.template-4 .modal-dialog-scrollable .modal-header {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.template-4 .modal-dialog-scrollable .modal-footer {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.template-4 .modal-dialog-scrollable .modal-body {
+  overflow-y: auto;
+}
+
+.template-4 .modal-dialog-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+
+.template-4 .modal-dialog-centered::before {
+  display: block;
+  height: calc(100vh - 1rem);
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  content: "";
+}
+
+.template-4 .modal-dialog-centered.modal-dialog-scrollable {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.template-4 .modal-dialog-centered.modal-dialog-scrollable .modal-content {
+  max-height: none;
+}
+
+.template-4 .modal-dialog-centered.modal-dialog-scrollable::before {
+  content: none;
+}
+
+.template-4 .modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 0 solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.42rem;
+  -webkit-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  outline: 0;
+}
+
+.template-4 .modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.template-4 .modal-backdrop.fade {
+  opacity: 0;
+}
+
+.template-4 .modal-backdrop.is-open {
+  opacity: 0.2;
+}
+
+.template-4 .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.5rem 1.75rem;
+  border-bottom: 1px solid #EBEDF3;
+  border-top-left-radius: 0.42rem;
+  border-top-right-radius: 0.42rem;
+}
+
+.template-4 .modal-header .close {
+  padding: 1.5rem 1.75rem;
+  margin: -1.5rem -1.75rem -1.5rem auto;
+}
+
+.template-4 .modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.template-4 .modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.75rem;
+}
+
+.template-4 .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  border-top: 1px solid #EBEDF3;
+  border-bottom-right-radius: 0.42rem;
+  border-bottom-left-radius: 0.42rem;
+}
+
+.template-4 .modal-footer > * {
+  margin: 0.25rem;
+}
+
+.template-4 .modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .template-4 .modal.fade .modal-dialog {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .template-4 .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+  .template-4 .modal-dialog-scrollable {
+    max-height: calc(100% - 3.5rem);
+  }
+  .template-4 .modal-dialog-scrollable .modal-content {
+    max-height: calc(100vh - 3.5rem);
+  }
+  .template-4 .modal-dialog-centered {
+    min-height: calc(100% - 3.5rem);
+  }
+  .template-4 .modal-dialog-centered::before {
+    height: calc(100vh - 3.5rem);
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .template-4 .modal-content {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  .template-4 .modal-sm {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .template-4 .modal-lg {
+    max-width: 800px;
+  }
+  .template-4 .modal-xl {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .template-4 .modal-xl {
+    max-width: 1140px;
+  }
+}

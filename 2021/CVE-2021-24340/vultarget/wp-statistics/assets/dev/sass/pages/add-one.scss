@@ -1,0 +1,83 @@
+/*
+ * WP-Statistics Add-Ons Admin page
+ */
+.wp-statistics-plugins {
+
+  .widefat > * {
+    float: left;
+  }
+
+  .widefat .plugin-card {
+    position: relative;
+  }
+
+  .widefat .plugin-card .desc, .widefat .plugin-card .name {
+    margin-right: 0;
+  }
+
+  .widefat .plugin-card-bottom {
+    float: initial;
+  }
+
+  .widefat .column-downloaded p {
+    margin: 2px 0 0 0;
+  }
+
+  .column-price {
+    display: inline;
+    margin: 0 8px;
+    font-size: 15px;
+    color: #589616;
+  }
+
+  .plugin-card .cover-ribbon {
+    height: 115px;
+    width: 115px;
+    position: absolute;
+    left: -8px;
+    top: -7px;
+    overflow: hidden;
+  }
+
+  .plugin-card .cover-ribbon .cover-ribbon-inside {
+    background: #EA4335;
+    color: #FFF;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -35px;
+    top: 16px;
+    padding: 10px;
+    min-width: 127px;
+    text-align: center;
+    z-index: 9;
+  }
+
+  .plugin-card .cover-ribbon .cover-ribbon-inside:before {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #992C23;
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+    content: "";
+    top: 34px;
+    transform: rotate(-45deg);
+  }
+
+  .plugin-card .cover-ribbon .cover-ribbon-inside:after {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 7px solid #992C23;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    top: 33px;
+    bottom: 0;
+    right: 4px;
+    content: "";
+    transform: rotate(-45deg);
+  }
+
+}

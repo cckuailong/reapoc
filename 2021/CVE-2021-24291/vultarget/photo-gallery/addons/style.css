@@ -1,0 +1,173 @@
+#settings-content .addons_updates::after,
+#settings-content .main-plugin::after,
+#settings-content::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#settings {
+  background: #ffffff;
+  padding: 15px;
+}
+
+#settings-content #add_on_title {
+  margin-bottom: 20px;
+}
+
+#settings-content .ecwd_coming_soon {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  height: 232px;
+}
+
+#settings-content .ecwd_coming_soon img {
+  padding-top: 11px;
+}
+
+#settings-content .add-on a {
+  text-decoration: none;
+}
+
+#settings-content .add-on h2 {
+  color: #229dbf;
+  font-size: 16px;
+  height: 20px;
+  line-height: 1.2;
+  margin: 9px 0;
+  padding: 0;
+}
+
+#settings-content .addon-descr {
+  font-size: 13px;
+  line-height: 18px;
+  height: 100%;
+  width: 53%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 10px 10px;
+  background: #23282D;
+  color: #D1DDE0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#settings-content .addon,
+#settings-content .addon-price {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  border: 1px solid #DCDCDC;
+  font-weight: bold;
+}
+
+#settings-content .addon {
+  background: #FFFFFF url('images/Add_Ons.jpg') no-repeat 6px center;
+  color: #66686B;
+  padding: 9px 12px 9px 45px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#settings-content .addon-price {
+  background: #FFFFFF;
+  color: #229CBF;
+  padding: 9px 12px;
+}
+
+#settings-content .add-on:hover .addon-price,
+#settings-content .addon-price:hover {
+  background: #229CBF;
+  color: #DDECF1;
+}
+
+#settings-content .add-on:hover .addon,
+#settings-content .addon:hover {
+  background: #23282D url('images/Add_Ons_hover.jpg') no-repeat 6px center;
+  color: #DDDEDE;
+}
+
+#settings-content .addon span {
+  border-left: 1px solid #A7A9AB;
+  padding: 4px 10px 4px 10px;
+}
+
+#settings-content .addon-descr span {
+  padding: 5px 0 5px 10px;
+  border-left: 1px solid #93CEE0;
+}
+
+#settings-content a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#settings-content .add-on {
+  width: 310px;
+  height: 320px;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  -webkit-perspective: 1700px;
+  -moz-perspective: 1700px;
+  perspective: 1700px;
+  -webkit-perspective-origin: 0 50%;
+  -moz-perspective-origin: 0 50%;
+  perspective-origin: 0 50%;
+  position: relative;
+}
+
+#settings-content .figure {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 232px;
+  margin: 0;
+}
+
+#settings-content .figure-img {
+  overflow: hidden;
+}
+
+#settings-content .figure-img img {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+#settings-content .figure:hover img {
+  -webkit-transform: translateX(25%);
+  -moz-transform: translateX(25%);
+  -ms-transform: translateX(25%);
+  transform: translateX(25%);
+}
+
+#settings-content .figure:hover figcaption {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}

@@ -61,18 +61,18 @@
 | CVE-2021-24226 |  | 信息泄露 | 7.5 | N | [Y](CVE-2021-24226/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24235 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24235/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24237 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24237/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-24274 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24274/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24274/poc/others/) |
-| CVE-2021-24275 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24275/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24275/poc/others/) |
-| CVE-2021-24276 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24276/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24276/poc/others/) |
-| CVE-2021-24278 |  | 其他 | 7.5 | N | [Y](CVE-2021-24278/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-24285 | WordPress | SQL注入 | 9.8 | N | [Y](CVE-2021-24285/poc/nuclei/) | [Y](CVE-2021-24285/poc/xray/) | N | N | N | N | N |
+| CVE-2021-24274 |  | 跨站脚本 | 6.1 | [Y](CVE-2021-24274/vultarget/) | [Y](CVE-2021-24274/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24274/poc/others/) |
+| CVE-2021-24275 |  | 跨站脚本 | 6.1 | [Y](CVE-2021-24275/vultarget/) | [Y](CVE-2021-24275/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24275/poc/others/) |
+| CVE-2021-24276 |  | 跨站脚本 | 6.1 | [Y](CVE-2021-24276/vultarget/) | [Y](CVE-2021-24276/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24276/poc/others/) |
+| CVE-2021-24278 |  | 其他 | 7.5 | [Y](CVE-2021-24278/vultarget/) | [Y](CVE-2021-24278/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-24285 | WordPress | SQL注入 | 9.8 | [Y](CVE-2021-24285/vultarget/) | [Y](CVE-2021-24285/poc/nuclei/) | [Y](CVE-2021-24285/poc/xray/) | N | N | N | N | N |
 | CVE-2021-24288 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2021-24288/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-24291 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24291/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-24298 | WordPress | 其他 | 6.1 | N | [Y](CVE-2021-24298/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-24291 |  | 跨站脚本 | 6.1 | [Y](CVE-2021-24291/vultarget/) | [Y](CVE-2021-24291/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-24298 | WordPress | 其他 | 6.1 | [Y](CVE-2021-24298/vultarget/) | [Y](CVE-2021-24298/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24316 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24316/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24316/poc/others/) |
 | CVE-2021-24320 | WordPress | 其他 | 6.1 | N | [Y](CVE-2021-24320/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24335 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24335/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2021-24340 | WordPress | SQL注入 | 7.5 | N | [Y](CVE-2021-24340/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2021-24340 | WordPress | SQL注入 | 7.5 | [Y](CVE-2021-24340/vultarget/) | [Y](CVE-2021-24340/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24342 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24342/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24364 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24364/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24387 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24387/poc/nuclei/) | N | N | N | N | N | N |
@@ -176,7 +176,7 @@
 | CVE-2021-34371 |  | 代码问题 | 9.8 | [Y](CVE-2021-34371/vultarget/) | N | N | N | N | N | N | [Y](CVE-2021-34371/poc/others/) |
 | CVE-2021-34429 |  | 信息泄露 | 5.3 | [Y](CVE-2021-34429/vultarget/) | [Y](CVE-2021-34429/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-34429/poc/others/) |
 | CVE-2021-34473 | Microsoft-Exchange | 代码执行 | 9.8 | N | [Y](CVE-2021-34473/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-34473/poc/others/) |
-| CVE-2021-34621 |  | 其他 | 9.8 | N | [Y](CVE-2021-34621/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-34621/poc/others/) |
+| CVE-2021-34621 |  | 其他 | 9.8 | [Y](CVE-2021-34621/vultarget/) | [Y](CVE-2021-34621/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-34621/poc/others/) |
 | CVE-2021-35042 |  | SQL注入 | 9.8 | [Y](CVE-2021-35042/vultarget/) | N | N | N | N | N | N | [Y](CVE-2021-35042/poc/others/) |
 | CVE-2021-35265 |  | 其他 | 6.1 | N | [Y](CVE-2021-35265/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-35336 | Tieline-Tieline-G5 | 访问控制错误 | 9.8 | N | [Y](CVE-2021-35336/poc/nuclei/) | N | N | N | N | N | N |

@@ -1,0 +1,58 @@
+body[class*="wps_visitors_page"] {
+
+  // Disable focus TickBox
+  #TB_closeWindowButton:focus .tb-close-icon {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  // Add Button
+  #visitors-filter {
+    cursor: pointer;
+    color: #666;
+    transition: 0.5s all;
+    margin-top: 5px;
+
+    .dashicons {
+      vertical-align: -5px;
+    }
+
+    &:hover {
+      color: #d82424;
+    }
+  }
+
+  // Select2
+  .select2-dropdown {
+    z-index: 9999999999 !important;
+  }
+
+  .select2-container {
+    width: 100% !important;
+  }
+
+  //page column
+  .tbl-page-column {
+    width: 220px;
+
+    span.txt-overflow {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 210px !important;
+      display: block;
+    }
+  }
+}
+
+#wps-visitors-filter-form {
+  padding: 10px 5px;
+
+  table.widefat {
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+html[dir=rtl] body[class*="wps_visitors_page"] #TB_ajaxContent {
+  text-align: right !important;
+}

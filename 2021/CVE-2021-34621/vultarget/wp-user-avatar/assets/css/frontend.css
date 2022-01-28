@@ -1,0 +1,2499 @@
+@import url("hint.min.css");
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./material-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(./material-icons/MaterialIcons-Regular.woff2) format('woff2'),
+    url(./material-icons/MaterialIcons-Regular.woff) format('woff'),
+    url(./material-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.ppress-material-icons,
+.pp-form-field-wrap .pp-form-material-icons,
+#profilepress-myaccount-wrapper .ppmyac-icons {
+    font-family: 'Material Icons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* Tabbed / User panel widget ------------------------------------ */
+.pp-tab-widget-avatar img {
+    display: block;
+    border-radius: 50%;
+    height: 190px;
+    margin: 0 auto 10px !important;
+    padding: 2px;
+    text-align: center;
+    width: 190px;
+    float: none !important;
+}
+
+.pp-user-panel {
+    border-radius: 6px;
+    text-align: center;
+}
+
+.pp-user-panel-title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.pp-user-panel p {
+    font-size: 15px;
+    margin-bottom: 23px;
+}
+
+.pp-tabbed-btn {
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    border-radius: 4px;
+    padding: 10px 15px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+.pp-tabbed-btn-inverse {
+    color: #fff !important;
+    background-color: #34495e;
+}
+
+/* End Tabbed / User panel widget ------------------------------------ */
+
+.pp-password-reset-handler-wrap .pp-reset-password-form {
+    padding: 40px;
+    max-width: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.pp-password-reset-handler-wrap .pp-reset-password-form h3 {
+    color: #444;
+    font-weight: 300;
+    margin: 0 auto 40px;
+}
+
+.pp-password-reset-handler-wrap .pp-reset-password-form label {
+    color: #444;
+    font-size: 15px;
+}
+
+.pp-password-reset-handler-wrap .pp-reset-password-form label .req {
+    margin: 2px;
+    color: #ff0000;
+}
+
+.pp-password-reset-handler-wrap .pp-reset-password-form label.active .req {
+    opacity: 0;
+}
+
+.pp-password-reset-handler-wrap .pp-reset-password-form input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    padding: 5px 10px;
+    background: none;
+    margin-bottom: 40px;
+    border: 1px solid #a0b3b0;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.pp-password-reset-handler-wrap .pp-reset-password-form input:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+.pp-password-reset-handler-wrap .pp-reset-password-form .pp-reset-button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.pp-password-reset-handler-wrap .pp-reset-password-form .pp-reset-button:hover,
+.pp-password-reset-handler-wrap .pp-reset-password-form .pp-reset-button:focus {
+    background: #179b77;
+}
+
+.pp-password-reset-handler-wrap .pp-reset-password-form .pp-reset-button-block {
+    display: block;
+    width: 100%;
+}
+
+.pp-password-reset-handler-wrap .profilepress-reset-status {
+    margin-left: 40px;
+    max-width: 420px;
+}
+
+#pp-pass-strength-result {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: #23282d;
+    padding: 3px 5px;
+    text-align: center;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#pp-pass-strength-result.short {
+    background-color: #f1adad;
+    border-color: #e35b5b;
+    opacity: 1;
+}
+
+#pp-pass-strength-result.bad {
+    background-color: #fbc5a9;
+    border-color: #f78b53;
+    opacity: 1;
+}
+
+#pp-pass-strength-result.good {
+    background-color: #ffe399;
+    border-color: #ffc733;
+    opacity: 1;
+}
+
+#pp-pass-strength-result.strong {
+    background-color: #c1e1b9;
+    border-color: #83c373;
+    opacity: 1;
+}
+
+/* Global form styling ------------------------------------ */
+.pp-form-wrapper .pp-form-label-wrap .pp-form-required-label {
+    color: #ff0000;
+    font-weight: 400;
+}
+
+.pp-form-wrapper input[type="checkbox"],
+.pp-form-wrapper input[type="radio"] {
+    cursor: pointer
+}
+
+.pp-form-wrapper p {
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
+}
+
+.pp-form-wrapper textarea,
+.pp-form-wrapper select,
+.pp-form-wrapper input[type="text"],
+.pp-form-wrapper input[type="password"],
+.pp-form-wrapper input[type="email"],
+.pp-form-wrapper input[type="url"],
+.pp-form-wrapper input[type="search"],
+.pp-form-wrapper input[type="tel"],
+.pp-form-wrapper input[type="number"],
+.pp-form-wrapper input[type="datetime"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dedee5;
+    padding: 13px 15px;
+    outline: none;
+    line-height: 1;
+}
+
+.pp-form-wrapper select {
+    background-image: url(../images/frontend/arrow-down.png) !important;
+    background-position: right 20px center !important;
+    background-repeat: no-repeat !important;
+    background-size: 10px auto !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    width: 100%;
+    border: 1px solid #dedee5;
+    padding: 13px 15px;
+    outline: none;
+    line-height: 1;
+}
+
+.pp-form-wrapper .pp-form-label-wrap {
+    margin: 0 0 4px 0;
+    padding: 0;
+}
+
+.pp-form-wrapper .pp-form-label {
+    font-size: 14px;
+    text-transform: none;
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    float: none;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: inline;
+    cursor: pointer;
+}
+
+.pp-form-wrapper .pp-checkbox-wrap,
+.pp-form-wrapper .pp-radio-wrap {
+    display: block;
+    text-align: left;
+    line-height: normal;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.pp-form-wrapper .pp-checkbox-wrap label,
+.pp-form-wrapper .pp-radio-wrap label {
+    margin-left: 5px;
+}
+
+.pp-form-wrapper input[type=checkbox], .pp-form-wrapper input[type=radio] {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 14px !important;
+    height: 14px !important;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.pp-form-wrapper .ppress-pf-profile-connect {
+    padding: 5px 0 10px 0;
+}
+
+.pp-form-wrapper a.ppress-pf-social-icon {
+    width: 100%;
+    height: 100%;
+    display: inline;
+}
+
+.pp-form-wrapper .ppress-pf-social-icon svg {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+
+.pp-form-wrapper .ppress-pf-social-icon.dpf-instagram svg,
+.pp-form-wrapper .ppress-pf-social-icon.dpf-github svg {
+    padding: 3px;
+}
+
+
+/* Social login buttons ------------------------------------ */
+a.pp-button-social-login:focus {
+    outline-color: transparent;
+}
+
+a.pp-button-social-login:focus .ppsc, a.pp-button-social-login:hover .ppsc {
+    background-color: hsla(0, 0%, 100%, .75);
+}
+
+a.pp-button-social-login:visited {
+    color: #fff;
+}
+
+a.pp-button-social-login {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 2.5em;
+    height: 2.5em;
+    font-size: 100%;
+    font-family: inherit;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid #333;
+    color: #fff !important;
+    background: #333;
+    padding: 0;
+    margin: 6px 0;
+    border-radius: 2px;
+    box-sizing: content-box;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    text-decoration: none !important;
+}
+
+a.pp-button-social-login .ppsc {
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 100%;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 1.8em 1.8em;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    position: absolute;
+    left: 0;
+    margin: 0;
+}
+
+a.pp-button-social-login span.ppsc-text {
+    margin-left: 40px;
+    padding: .5em;
+    color: #fff !important;
+}
+
+a.pp-button-social-login {
+    min-width: 220px;
+}
+
+a.pp-button-social-login .ppsc-google {
+    background-image: url(../images/social-login/google.svg);
+}
+
+a.pp-button-social-login.pp-button-social-login-google {
+    background: #4285f4;
+    border-color: #4285f4;
+}
+
+a.pp-button-social-login.pp-button-social-login-facebook {
+    background: #3b5998;
+    border-color: #3b5998;
+}
+
+a.pp-button-social-login.pp-button-social-login-twitter {
+    background: #55acee;
+    border-color: #55acee;
+}
+
+a.pp-button-social-login.pp-button-social-login-linkedin {
+    background: #0077b5;
+    border-color: #0077b5;
+}
+
+a.pp-button-social-login.pp-button-social-login-vk {
+    background: #4a76a8;
+    border-color: #4a76a8;
+}
+
+a.pp-button-social-login.pp-button-social-login-github {
+    background: #24292e;
+    border-color: #24292e;
+}
+
+/** Amazon:#ff9900; disqus:#2e9fff; instagram: #e4405f; paypal:#00457c; yahoo:#400090 */
+a.pp-button-social-login .ppsc-vk {
+    background-image: url(../images/social-login/vk-fa.svg)
+}
+
+a.pp-button-social-login .ppsc-facebook {
+    background-image: url(../images/social-login/facebook.svg);
+}
+
+a.pp-button-social-login .ppsc-twitter {
+    background-image: url(../images/social-login/twitter.svg)
+}
+
+a.pp-button-social-login .ppsc-linkedin {
+    background-image: url(../images/social-login/linkedin.svg)
+}
+
+a.pp-button-social-login .ppsc-github {
+    background-image: url(../images/social-login/github-fa.svg)
+}
+
+.pp-form-container *,
+.pp-form-container .pp-form-wrapper,
+.pp-form-container .pp-form-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html .pp-form-container .select2 input.select2-search__field {
+    border: 0 !important;
+}
+
+.pp-form-container form input[type=submit] {
+    -webkit-appearance: none !important;
+}
+
+.pp-form-container form {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.woocommerce .woocommerce-MyAccount-content .pp-form-container {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.pp-form-container form input,
+.pp-form-container form select,
+.pp-form-container form textarea {
+    outline: none;
+    background-image: none;
+    height: auto;
+    float: none;
+    position: static;
+    box-shadow: none;
+    text-shadow: none;
+    text-transform: none;
+    text-decoration: none;
+    resize: vertical;
+}
+
+.pp-form-container form p {
+    margin: 0 0 0.5em;
+}
+
+.pp-form-container form input[type="submit"] {
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.pp-form-container form input[type="submit"]:focus {
+    outline: 0;
+}
+
+.pp-form-container .pp-user-avatar {
+    border-radius: 50% !important;
+    display: block !important;
+    margin: 0 auto 10px !important;
+    text-align: center !important;
+}
+
+.pp-form-container img.pp-user-cover-image {
+    width: 100% !important;
+    height: auto !important;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content input[type=checkbox],
+#profilepress-myaccount-wrapper .profilepress-myaccount-content input[type=radio],
+.pp-form-container .pp-form-wrapper .pp-form-field-wrap input[type=checkbox],
+.pp-form-container .pp-form-wrapper .pp-form-field-wrap input[type=radio] {
+    border: 1px solid #7e8993 !important;
+    border-radius: 4px !important;
+    background: #fff !important;
+    color: #555 !important;
+    clear: none !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    outline: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    -webkit-appearance: none !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1) !important;
+    transition: .05s border-color ease-in-out !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content input[type=radio],
+.pp-form-container .pp-form-wrapper .pp-form-field-wrap input[type=radio] {
+    border-radius: 50% !important;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content input[type=checkbox]:checked::before,
+.pp-form-container .pp-form-wrapper .pp-form-field-wrap input[type=checkbox]:checked::before {
+    content: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%23000000%27%2F%3E%3C%2Fsvg%3E) !important;
+    margin: -3px 0 0 -4px !important;
+    width: 20px !important;
+    height: 20px !important;
+    position: static;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content input[type=radio]:checked::before,
+.pp-form-container .pp-form-wrapper .pp-form-field-wrap input[type=radio]:checked::before {
+    content: "";
+    border-radius: 50% !important;
+    margin: 3px !important;
+    background-color: #000000 !important;
+    line-height: 1.14285714 !important;
+    width: 8px !important;
+    height: 8px !important;
+}
+
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content input[type=checkbox]:checked::before,
+#profilepress-myaccount-wrapper .profilepress-myaccount-content input[type=radio]:checked::before,
+.pp-form-container .pp-form-wrapper .pp-form-field-wrap input[type=checkbox]:checked::before,
+.pp-form-container .pp-form-wrapper .pp-form-field-wrap input[type=radio]:checked::before {
+    float: left !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* buildscratch form css BEGIN ------------------------------------ */
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch,
+.pp-form-container .pp-form-wrapper.ppBuildScratch * {
+    font-family: 'Merriweather', sans-serif;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .ppbs-headline,
+.pp-form-container .pp-form-wrapper.ppBuildScratch h1,
+.pp-form-container .pp-form-wrapper.ppBuildScratch h2,
+.pp-form-container .pp-form-wrapper.ppBuildScratch h3,
+.pp-form-container .pp-form-wrapper.ppBuildScratch h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .ppbs-headline {
+    margin-top: 0;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .ppbs-headline {
+    text-align: center;
+    margin-right: 6.387%;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch input:disabled {
+    opacity: 0.5;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch {
+    max-width: 100%;
+    width: 100%;
+    padding: 6%;
+    padding-right: 0;
+    background: #ffffff;
+    color: #222222;
+    font-size: 14px;
+    position: relative;
+    box-shadow: 0 0 0 0.5px rgba(0, 20, 40, .1), 0 2px 8px 0 rgba(50, 55, 90, .2);
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppf-remove-frame {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap,
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-submit-button-wrap {
+    padding: 4% 6.387%;
+    padding-top: 0;
+    padding-left: 0;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-submit-button-wrap {
+    padding-bottom: 0;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap .pp-form-label-wrap {
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fda-reveal .pp-form-field-description {
+    display: none;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fda-reveal .pp-form-field-input-textarea-wrap .pp-form-field:focus ~ .pp-form-field-description {
+    display: block;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fda-standard .ppress-hint-tooltip,
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fda-reveal .ppress-hint-tooltip {
+    display: none;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fda-tooltip .pp-form-field-description {
+    display: none;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fda-tooltip .ppress-hint-tooltip {
+    display: inline;
+    font-weight: normal;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fda-tooltip .ppress-hint-tooltip .pp-form-material-icons {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 110%;
+    display: inline;
+    vertical-align: top;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fld-inside {
+    position: relative;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fld-inside .pp-form-label-wrap {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    z-index: 2;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material .pp-form-field-wrap.fld-inside .pp-form-label-wrap {
+    left: 0 !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fld-inside .pp-form-field-input-textarea-wrap .pp-form-field {
+    padding-top: 18px;
+    padding-bottom: 2px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-medium .pp-form-field-wrap.fld-inside .pp-form-field-input-textarea-wrap .pp-form-field {
+    padding-top: 23px;
+    padding-bottom: 7px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-large .pp-form-field-wrap.fld-inside .pp-form-field-input-textarea-wrap .pp-form-field {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fw-half {
+    width: 50%;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap.fw-third {
+    width: 33.3333333333%;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap input:not([type=radio]):not([type=checkbox]),
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap select,
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap textarea {
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    padding: 10px 15px;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    background: #ffffff;
+    color: #69717a;
+    width: 100%;
+    border-radius: 0;
+    line-height: 1.3;
+    min-height: 40px;
+    display: inline-block;
+    margin: 0;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap textarea {
+    height: 100px;
+    overflow: auto;
+}
+
+.pp-form-field-wrap .pp-form-material-icons {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: text;
+    margin: 8px 12px 0 0;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfia-right .pp-form-field-wrap.field-has-icon input,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfia-right .pp-form-field-wrap.field-has-icon textarea {
+    padding-right: 40px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfia-left .pp-form-field-wrap.field-has-icon input,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfia-left .pp-form-field-wrap.field-has-icon textarea {
+    padding-left: 40px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material.ppfia-left .pp-form-field-wrap.field-has-icon input,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material.ppfia-left .pp-form-field-wrap.field-has-icon textarea {
+    padding-left: 30px !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material.ppfia-right .pp-form-field-wrap.field-has-icon input,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material.ppfia-right .pp-form-field-wrap.field-has-icon textarea {
+    padding-right: 30px !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfia-left .pp-form-field-wrap .pp-form-material-icons {
+    left: 0;
+    margin-left: 12px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material.ppfia-left .pp-form-field-wrap .pp-form-material-icons {
+    left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material.ppfia-right .pp-form-field-wrap .pp-form-material-icons {
+    margin-right: 0 !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-medium .pp-form-field-wrap .pp-form-material-icons {
+    margin-top: 10px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-large .pp-form-field-wrap .pp-form-material-icons {
+    margin-top: 18px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-large .pp-form-field-wrap .pp-form-material-icons {
+    margin-top: 18px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .has-password-visibility-icon .pp-form-material-icons {
+    cursor: pointer;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-pill .pp-form-field-wrap input:not([type=radio]):not([type=checkbox]),
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-pill .pp-form-field-wrap select,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-pill .pp-form-field-wrap textarea {
+    border-radius: 25px !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-round .pp-form-field-wrap input:not([type=radio]):not([type=checkbox]),
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-round .pp-form-field-wrap select,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-round .pp-form-field-wrap textarea {
+    border-radius: 6px !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material .pp-form-field-wrap input:not([type=radio]):not([type=checkbox]),
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material .pp-form-field-wrap select,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material .pp-form-field-wrap .select2.select2-container,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material .pp-form-field-wrap textarea {
+    border: 0 !important;
+    border-bottom: 1px solid #dbdbdb !important;
+    padding-left: 0 !important;
+}
+
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material .pp-form-field-wrap span.select2-selection.select2-selection--multiple {
+    border: 0 !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material .pp-form-field-wrap input[type=text]:focus,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material .pp-form-field-wrap select:focus,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-material .pp-form-field-wrap textarea:focus {
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    box-shadow: none !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-flat .pp-form-field-wrap input:not([type=radio]):not([type=checkbox]),
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-flat .pp-form-field-wrap select,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-flat .pp-form-field-wrap .select2-selection,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfl-flat .pp-form-field-wrap textarea {
+    border: 0 !important;
+    background: #f7f7f7 !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-medium .pp-form-field-wrap input,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-medium .pp-form-field-wrap select {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-medium .pp-form-field-wrap textarea {
+    height: 150px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-large .pp-form-field-wrap input,
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-large .pp-form-field-wrap select {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-large .pp-form-field-wrap textarea {
+    height: 200px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap input[type=text]:focus,
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap select:focus,
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap textarea:focus {
+    border: 1px solid #999;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap .pp-form-label-wrap .pp-form-label,
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap .ppform-remember-label {
+    font-style: normal;
+    background-color: transparent;
+    display: block;
+    font-weight: 700; /* 700 == bold */
+    font-size: 14px;
+    float: none;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    color: #444444;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-wrap .ppform-remember-label {
+    display: inline-block;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppf-hide-asterisk .pp-form-required-label {
+    display: none;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-submit-button-wrap input[type="submit"] {
+    background: #000000;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    padding: 15px 10px;
+    transition: .15s ease-in-out;
+    width: auto;
+    min-width: 110px;
+    text-align: center;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-medium .pp-form-submit-button-wrap input[type="submit"],
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppfs-large .pp-form-submit-button-wrap input[type="submit"] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppsbl-pill .pp-form-submit-button-wrap input[type="submit"] {
+    border-radius: 25px !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppsbl-round .pp-form-submit-button-wrap input[type="submit"] {
+    border-radius: 6px !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-submit-button-wrap input[type="submit"]:hover,
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-submit-button-wrap input[type="submit"]:focus {
+    background-color: #ededed;
+    color: #000000;
+    text-decoration: none;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-checkbox-wrap,
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-radio-wrap {
+    margin: 0 0 5px;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-checkboxes-container {
+    margin: 0;
+    padding: 0;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-checkbox-wrap:last-of-type,
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-radio-wrap:last-of-type {
+    margin-bottom: 0;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch .pp-form-field-description {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666666;
+    line-height: 1.3;
+    text-align: left;
+    margin: 4px 0 0 0;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppsbw-wide .pp-form-submit-button-wrap input[type="submit"] {
+    width: 100%;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppsbw-full-width .pp-form-submit-button-wrap {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppsbw-full-width .pp-form-submit-button-wrap input[type="submit"] {
+    width: 100% !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppsbw-full-width .pp-form-submit-button-wrap input[type="submit"] {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppsbw-full-width.ppsbl-pill {
+    border-bottom-right-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch.ppsbw-full-width.ppsbl-round {
+    border-bottom-right-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+}
+
+.pp-form-container .pp-form-wrapper.ppBuildScratch a.pp-button-social-login:last-of-type {
+    margin-bottom: 1.5em !important;
+}
+
+/* buildscratch form css END ------------------------------------ */
+
+/* My account START ------------------------------------ */
+
+#profilepress-myaccount-wrapper, #profilepress-myaccount-wrapper *,
+#profilepress-myaccount-wrapper ::after,
+#profilepress-myaccount-wrapper ::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#profilepress-myaccount-wrapper {
+    font-size: 16px;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#profilepress-myaccount-wrapper .ppmyac-dashboard-item {
+    text-decoration: none !important;
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    width: 100%;
+    text-align: inherit;
+    box-shadow: none;
+}
+
+#profilepress-myaccount-wrapper .ppmyac-dashboard-item.isactive {
+    z-index: 2;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#profilepress-myaccount-wrapper .ppmyac-dashboard-item:first-child {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+#profilepress-myaccount-wrapper .ppmyac-dashboard-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+#profilepress-myaccount-wrapper .ppmyac-icons {
+    margin-right: .5rem;
+    vertical-align: text-bottom;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-col-sm-3 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    #profilepress-myaccount-wrapper .profilepress-myaccount-col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content {
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    #profilepress-myaccount-wrapper .profilepress-myaccount-content {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-avatar-wrap {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-avatar-wrap .profilepress-myaccount-avatar img.pp-user-avatar {
+    margin: 0 !important;
+    position: static !important;
+    float: none !important;
+    display: inline-block;
+    -moz-border-radius: 999px;
+    -webkit-border-radius: 999px;
+    border-radius: 999px;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-nav a:focus {
+    outline: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content h2,
+#profilepress-myaccount-wrapper .profilepress-myaccount-content h3 {
+    margin-top: 0 !important;
+    margin-bottom: 1.8rem !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    font-size: 2rem !important;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-submenus-wrap {
+    margin-bottom: 2rem;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-submenu-wrap {
+    display: inline;
+    padding-right: 1rem;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-submenu-item {
+    color: inherit;
+    padding: 0 0 10px;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-submenu-item.ppsubmenu-active {
+    border-bottom: 3px solid #6c757d;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content h3 {
+    font-weight: 500 !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.profilepress-myaccount-alert,
+.profilepress-myaccount-edit-profile .profilepress-edit-profile-status {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.profilepress-myaccount-alert.pp-alert-danger,
+.profilepress-myaccount-edit-profile .profilepress-edit-profile-status {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.profilepress-myaccount-alert.pp-alert-success,
+.profilepress-myaccount-edit-profile .profilepress-edit-profile-status.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-field {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-cover-image-empty {
+    min-height: 250px;
+    background-color: #eee;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-delete-cover-image-wrap {
+    padding: .75rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin-bottom: 0;
+    border-radius: .25rem;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-delete-cover-image-wrap img {
+    width: 100%;
+    height: auto;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-email-notifications-wrap .profilepress-myaccount-form-field {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-email-notifications-wrap {
+    margin-bottom: 2rem;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-field label {
+    margin-bottom: .2rem;
+    font-weight: 500;
+    display: block;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-field input[type=radio] + label,
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-field input[type=checkbox] + label {
+    display: inline;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap .profilepress-myaccount-form-control:not([type="radio"]):not([type="checkbox"]),
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap textarea,
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap select {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    overflow: visible;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap textarea {
+    height: auto !important;
+    min-height: 100px !important;
+    resize: vertical !important;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content input.profilepress-myaccount-form-control:focus,
+#profilepress-myaccount-wrapper .profilepress-myaccount-content textarea.profilepress-myaccount-form-control:focus,
+#profilepress-myaccount-wrapper .profilepress-myaccount-content select.profilepress-myaccount-form-control:focus {
+    background-color: #fff;
+    border-color: #bbb;
+    outline: 0;
+    box-shadow: none;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap .profilepress-myaccount-form-field input[type=submit] {
+    display: inline-block;
+    cursor: pointer;
+    width: auto;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap .profilepress-myaccount-form-field input[type=submit]:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    text-decoration: none;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap .ppmyac-custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    margin-bottom: 0;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap .ppmyac-custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    margin: 0;
+    opacity: 0;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap .ppmyac-custom-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap .ppmyac-custom-file-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: calc(1.5em + .75rem);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    content: "Browse";
+    background-color: #e9ecef;
+    border-left: inherit;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-wrap .ppmyac-custom-file-input ~ .ppmyac-custom-file-label[data-browse]::after {
+    content: attr(data-browse);
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-field .pp-checkbox-wrap label.pp-form-label,
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-form-field .pp-radio-wrap label.pp-form-label {
+    display: inline-block;
+    margin: 0 0 0 0.3819820591em;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-delete-avatar-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 0 0;
+    padding-left: 0;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-delete-avatar {
+    position: relative;
+    padding: .75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin-bottom: 0;
+    border-radius: .25rem;
+    justify-content: space-between !important;
+    display: flex !important;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .pp-user-avatar {
+    width: 70px;
+    height: 70px;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .ppmyac-remove-avatar {
+    margin-bottom: .5rem !important;
+    margin-top: .5rem !important;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    color: #fff;
+    height: 35px;
+    background-color: #6c757d;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: none;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #6c757d;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .profilepress-myaccount-delete-cover-image-wrap .ppmyac-remove-avatar {
+    margin-top: .75rem !important;
+    margin-bottom: 0 !important;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content input.profilepress-myaccount-form-control::-webkit-file-upload-button {
+    background: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+#profilepress-myaccount-wrapper .profilepress-myaccount-content .select2-selection {
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+}
+
+/* My account END ------------------------------------ */
+
+
+/* Avatar and cover image hover to delete picture START ------------------------------------ */
+.pp-form-container .pp-field-user-avatar-picture-wrap {
+    width: 250px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.pp-form-container .pp-field-user-cover-image-wrap {
+    margin: auto;
+    position: relative;
+}
+
+.pp-field-user-avatar-picture-wrap:hover .pp-profile-avatar-overlay-wrap,
+.pp-field-user-cover-image-wrap:hover .pp-cover-image-overlay-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    color: #fff;
+    text-shadow: 0 1px #666;
+    line-height: 21px;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.pp-field-user-cover-image-wrap:hover .pp-cover-image-overlay-wrap {
+    border-radius: 0;
+}
+
+.pp-field-user-avatar-picture-wrap:hover .pp-profile-avatar-overlay,
+.pp-field-user-cover-image-wrap:hover .pp-cover-image-overlay {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.pp-field-user-avatar-picture-wrap .pp-profile-avatar-overlay ins,
+.pp-field-user-cover-image-wrap .pp-cover-image-overlay ins {
+    display: none;
+}
+
+.pp-field-user-avatar-picture-wrap:hover .pp-profile-avatar-overlay ins,
+.pp-field-user-cover-image-wrap:hover .pp-cover-image-overlay ins {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    text-decoration: none !important;
+    background: none !important;
+    color: #fff !important;
+    border-bottom: none !important;
+}
+
+.pp-field-user-avatar-picture-wrap:hover .pp-profile-avatar-overlay-wrap .pp-profile-avatar-overlay .pp-form-material-icons,
+.pp-field-user-cover-image-wrap:hover .pp-cover-image-overlay-wrap .pp-cover-image-overlay .pp-form-material-icons {
+    font-size: 35px !important;
+    display: block !important;
+    position: static !important;
+    right: auto !important;
+    top: auto !important;
+    color: #fff !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    cursor: pointer;
+}
+
+/* Avatar and cover image hover to delete picture END ------------------------------------ */
+
+
+/******************** select2 shim *********************/
+html .select2.select2-container .select2-selection.select2-selection--multiple input.select2-search__field {
+    border: 0 !important;
+    height: auto !important;
+}
+
+.select2.select2-container .select2-selection.select2-selection--multiple input.select2-search__field {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.select2.select2-container .select2-selection.select2-selection--multiple li.select2-selection__choice {
+    height: auto;
+    line-height: normal;
+}
+
+/******************** END select2 shim *********************/
+
+/********************************************* MEMBER DIRECTORY GLOBAL CSS ------------------------------------ */
+.pp-form-wrapper.pp-member-directory {
+    opacity: 0;
+}
+
+/********************************************* DEFAULT profile template css BEGIN ------------------------------------ */
+.pp-form-wrapper.ppress-default-profile {
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 30px;
+    opacity: 0;
+}
+
+.pp-form-wrapper.ppress-default-profile * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pp-form-wrapper.ppress-default-profile a, .pp-form-wrapper.ppress-default-profile a:hover {
+    text-decoration: none !important;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-default-profile-cover {
+    background-color: #eee;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-default-profile-cover-e {
+    text-align: center;
+    overflow: hidden;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-default-profile-cover-e img {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border-radius: 0;
+    margin: 0;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-header {
+    position: relative;
+    padding: 0 0 25px 0;
+    border-bottom: solid 2px #eee;
+    min-height: 85px;
+    box-sizing: content-box;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-headericon {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    vertical-align: middle;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 66;
+    margin-right: 10px;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-headericon .ppress-dpf-edit-a .ppress-material-icons {
+    font-size: 30px;
+}
+
+.pp-form-wrapper.ppress-default-profile a.ppress-dpf-edit-a {
+    color: #aaaaaa;
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-headericon a:hover,
+.pp-form-wrapper.ppress-default-profile a.ppress-dpf-edit-a.active {
+    color: #007bff;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-photo {
+    float: left;
+    position: absolute;
+    margin: 0 0 0 30px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-photo img {
+    width: 100%;
+    height: auto;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: none;
+    background: #fff;
+    border: 5px solid #fff;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-meta {
+    padding-right: 30px;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-main-meta {
+    padding: 10px 0 0 0;
+    color: #999999;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 30px;
+    color: #555555;
+    line-height: 1.7em;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-clear {
+    clear: both;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-meta span {
+    margin: 0 5px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: .1;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-meta span:first-child {
+    margin: 0 5px 0 0;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-meta-text {
+    margin: 5px 0 0 0;
+    line-height: 1.4em;
+    font-size: 13px;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-nav {
+    padding: 10px;
+    background: #444;
+    text-align: center;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-nav-item a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 10px 6px 28px;
+    display: block;
+    float: left;
+    border-radius: 4px;
+    margin-left: 5px;
+    position: relative;
+    border-bottom: 0;
+    text-decoration: none !important;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-nav-item a:hover {
+    background: #555;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-nav-item .ppress-material-icons {
+    font-size: 18px;
+    height: 18px;
+    line-height: 1.5;
+    position: absolute;
+    display: block;
+    left: 10px;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-nav-item span.ppress-dpf-nav-title {
+    padding-left: 5px;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-nav-item.ppress-dpf-active a {
+    background: #007bff;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-body {
+    max-width: 600px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-note,
+.pp-form-wrapper.ppress-default-profile .pp-user-comment-no-item {
+    text-align: center;
+    padding-top: 20px;
+    color: #666;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-note .ppress-material-icons {
+    display: inline-block;
+    font-size: 70px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-note span,
+.pp-form-wrapper.ppress-default-profile .pp-user-comment-no-item span {
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+    color: #888;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-note a {
+    border: none !important;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-body-items {
+    margin: 0 0 30px 0;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-profile-body-item {
+    position: relative;
+    padding: 15px 0 0 0;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-item-label {
+    display: block;
+    margin: 0 0 8px 0;
+    border-bottom: solid 2px #eee;
+    padding-bottom: 4px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-field-label-icon {
+    float: left;
+    margin: 0 8px 0 0;
+    height: 22px;
+    line-height: 18px;
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-field-label-icon i {
+    font-size: 22px;
+    position: relative;
+    top: 1px;
+}
+
+/* Cover image disabled START*/
+.pp-form-wrapper.ppress-default-profile .ppdf-nocover .ppress-dpf-profile-photo {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppdf-nocover .ppress-dpf-profile-meta {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center !important;
+}
+
+/* Cover image disabled END*/
+/********************************************/
+/** 340px and below */
+.ppress-default-profile.ppressui340 .ppress-dpf-profile-nav {
+    padding: 0;
+}
+
+.ppress-default-profile.ppressui340 .ppress-dpf-profile-nav-item a {
+    padding: 10px 16px;
+    margin-left: 0;
+    border-radius: 0;
+}
+
+.ppress-dpf-profile-nav-item.ppressui340 .ppress-dpf-profile-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ppress-default-profile.ppressui340.ppdf-nocover .ppress-dpf-header .ppress-dpf-profile-photo {
+    position: static;
+    top: auto;
+    left: auto;
+}
+
+.ppress-default-profile.ppressui340 .ppress-dpf-header .ppress-dpf-profile-meta {
+    text-align: center;
+    padding: 0;
+    margin-top: -30px;
+}
+
+.ppress-default-profile.ppressui340.ppdf-nocover .ppress-dpf-header .ppress-dpf-profile-meta {
+    padding-top: 0;
+}
+
+.ppress-default-profile.ppressui340 .ppress-dpf-header .ppress-dpf-name {
+    float: none;
+    margin-right: 0;
+    font-size: 18px;
+}
+
+.ppress-default-profile.ppressui340 .ppress-dpf-header .ppress-dpf-meta-text {
+    padding: 0 20px;
+}
+
+.ppress-default-profile.ppressui340 .ppress-dpf-profile-photo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: none;
+    left: auto;
+    text-align: center;
+    top: -40px;
+}
+
+.ppress-default-profile.ppressui340.ppdf-nocover .ppress-dpf-header .ppress-dpf-profile-photo {
+    width: 120px;
+    height: 120px;
+}
+
+.ppress-default-profile.ppressui340 .ppress-dpf-nav-title {
+    font-size: 12px;
+}
+
+.ppress-default-profile.ppressui340 .ppress-dpf-profile-nav-item .ppress-material-icons {
+    display: block;
+    position: static;
+    top: auto;
+    left: auto;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.ppress-default-profile.ppressui340.ppdf-nocover .ppress-dpf-header .ppress-dpf-profile-meta {
+    margin-top: 0;
+}
+
+/** 500px and below **/
+.ppress-default-profile.ppressui500 .ppress-dpf-profile-nav {
+    padding: 0;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-profile-nav-item a {
+    padding: 10px 16px;
+    margin-left: 0;
+    border-radius: 0;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-profile-nav-item i {
+    display: block;
+    position: static;
+    top: auto;
+    left: auto;
+    font-size: 22px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-profile-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ppress-default-profile.ppressui500.ppdf-nocover .ppress-dpf-header .ppress-dpf-profile-photo {
+    position: static;
+    top: auto;
+    left: auto;
+}
+
+.ppress-default-profile.ppressui500.ppdf-nocover .ppress-dpf-header .ppress-dpf-profile-photo {
+    width: 120px;
+    height: 120px;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-profile-photo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: none;
+    display: block;
+    top: -40px;
+    left: 0;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-header .ppress-dpf-profile-meta {
+    text-align: center;
+    padding: 0;
+    margin-top: -30px;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-header .ppress-dpf-name {
+    float: none;
+    margin-right: 0;
+    font-size: 21px;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-header .ppress-dpf-meta-text {
+    padding-top: 10px;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-header .ppress-dpf-meta {
+    padding: 0 20px;
+    display: block;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-nav-title {
+    font-size: 12px;
+}
+
+.ppress-default-profile.ppressui500 .ppress-dpf-profile-nav-item .ppress-material-icons {
+    display: block;
+    position: static;
+    top: auto;
+    left: auto;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.ppress-default-profile.ppressui500.ppdf-nocover .ppress-dpf-header .ppress-dpf-profile-meta {
+    margin-top: 0;
+}
+
+/** 800px and below **/
+.ppress-default-profile.ppressui800 .ppress-dpf-profile-nav {
+    padding: 0;
+}
+
+.ppress-default-profile.ppressui800 .ppress-dpf-profile-nav-item a {
+    padding: 10px 20px;
+    margin-left: 0;
+    border-radius: 0;
+}
+
+.ppress-default-profile.ppressui800 .ppress-dpf-profile-photo {
+    width: 150px;
+}
+
+.ppress-default-profile.ppressui800 .ppress-dpf-profile-photo {
+    width: 140px;
+    height: 140px;
+    top: -70px;
+}
+
+.ppress-default-profile.ppressui800.ppdf-nocover .ppress-dpf-header .ppress-dpf-profile-photo {
+    top: auto;
+}
+
+.ppress-default-profile.ppressui800 .ppress-dpf-header .ppress-dpf-profile-meta {
+    padding-left: 200px;
+}
+
+.ppress-default-profile.ppressui800 .ppress-dpf-header .ppress-dpf-meta-text {
+    padding-top: 10px;
+}
+
+.ppress-default-profile.ppressui800 .ppress-dpf-nav-title {
+    font-size: 12px;
+}
+
+.ppress-default-profile.ppressui800 .ppress-dpf-profile-nav-item .ppress-material-icons {
+    display: block;
+    position: static;
+    top: auto;
+    left: auto;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+/** 960px and below **/
+.ppress-default-profile.ppressui960 .ppress-dpf-profile-photo {
+    width: 200px;
+}
+
+.ppress-default-profile.ppressui960 .ppress-dpf-profile-photo {
+    width: 140px;
+    height: 140px;
+    top: -70px;
+}
+
+.ppress-default-profile.ppressui960.ppdf-nocover .ppress-dpf-profile-meta {
+    margin-top: -50px;
+}
+
+/*****************************************/
+
+.ppress-default-profile.ppressui340 .ppress-dpf-profile-nav-item a,
+.ppress-default-profile.ppressui500 .ppress-dpf-profile-nav-item a {
+    padding: 5px 11px;
+    font-size: 12px;
+}
+
+.ppress-default-profile.ppressui340 .ppress-dpf-profile-nav-item .ppress-material-icons,
+.ppress-default-profile.ppressui500 .ppress-dpf-profile-nav-item .ppress-material-icons {
+    font-size: 14px;
+}
+
+.ppress-default-profile.ppressui340 span.ppress-dpf-nav-title,
+.ppress-default-profile.ppressui500 span.ppress-dpf-nav-title {
+    font-size: 10px;
+}
+
+/***************** Post list CSS **************/
+.pp-form-wrapper.ppress-default-profile ul.pp-user-post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pp-form-wrapper.ppress-default-profile li.pp-user-post-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pp-form-wrapper.ppress-default-profile .pp-user-post-item a,
+.pp-form-wrapper.ppress-default-profile .pp-user-post-item h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    text-decoration: none;
+}
+
+.pp-form-wrapper.ppress-default-profile .pp-user-post-item h3.pp-post-item-head {
+    line-height: 20px;
+}
+
+.pp-form-wrapper.ppress-default-profile .ppress-dpf-more-post-wrap {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.pp-form-wrapper.ppress-default-profile a.ppress-dpf-more-post-btn {
+    font-size: 15px;
+    border: none;
+    display: block;
+    width: 100%;
+    line-height: 1em;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    font-weight: normal;
+    transition: 0.25s;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    max-width: 250px;
+    margin: 0 auto;
+    color: #ffffff;
+    background: #007bff;
+}
+
+/************* Comment list CSS **************/
+.pp-form-wrapper.ppress-default-profile .pp-user-comment-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pp-form-wrapper.ppress-default-profile .pp-user-comment-item-link a {
+    color: inherit;
+}
+
+.pp-form-wrapper.ppress-default-profile .pp-user-comment-no-item + .ppress-dpf-more-post-wrap {
+    display: none;
+}
+
+/********************************************* END default profile template css ------------------------------------ */
+
+/*********************************** BEGIN member directory search and filter CSS ------------------------------------ */
+
+
+.pp-member-directory .ppressmd-member-directory-header.ppressmd-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row:not(.ppressmd-member-directory-filters-bar) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    margin: 0 0 10px 0;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row.ppressmd-member-directory-search-row {
+    justify-content: flex-end;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-search-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 60%;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-search-line label {
+    flex: 1;
+    margin: 0 10px 0 0;
+    min-width: 90px;
+    max-width: 85%;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-search-line label .ppressmd-search-line {
+    -webkit-appearance: textfield;
+    width: 100%;
+    padding: 0 12px !important;
+    display: block !important;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    outline: none !important;
+    cursor: text !important;
+    font-size: 15px !important;
+    height: 40px !important;
+    box-sizing: border-box !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    position: static;
+    background-color: #ffffff;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-search-line .ppressmd-do-search {
+    min-width: 15%;
+    width: auto;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppressmd-member-directory-sorting {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    flex: 5;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppressmd-member-directory-sorting .ppressmd-member-directory-sorting-a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    position: relative;
+    cursor: pointer;
+}
+
+.pp-member-directory .ppressmd-member-directory-header a {
+    text-decoration: none;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppress-material-icons {
+    display: inline;
+    vertical-align: middle;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppressmd-member-directory-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    flex: 2;
+    text-align: right;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppressmd-member-directory-filters .ppressmd-member-directory-filters-a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppressmd-member-directory-filters .ppressmd-member-directory-filters-a a {
+    margin: 0 5px 0 0;
+}
+
+.ppressmd-member-directory-header:not(.ppmd-filters-expand) .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppressmd-member-directory-filters .ppressmd-member-directory-filters-a .ppress-up {
+    display: none;
+}
+
+.ppressmd-member-directory-header.ppmd-filters-expand .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppressmd-member-directory-filters .ppressmd-member-directory-filters-a .ppress-down {
+    display: none;
+}
+
+.ppressmd-new-dropdown {
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+    height: auto;
+    background: #fff;
+    z-index: 10;
+    display: none;
+    border: 1px solid #ddd;
+    box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.ppressmd-new-dropdown ul {
+    margin: 0;
+    padding: 0;
+}
+
+.ppressmd-new-dropdown ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppressmd-member-directory-sorting .ppressmd-member-directory-sorting-a .ppressmd-new-dropdown {
+    top: 24px;
+    width: 200px;
+    left: -12px;
+}
+
+.ppressmd-new-dropdown ul li a {
+    display: block;
+    padding: 8px 12px;
+    line-height: 1;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row.ppressmd-member-directory-filters-bar {
+    padding: 0 0 10px 0;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row.ppressmd-header-row-invisible {
+    margin: 0;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-search.ppressmd-search-invisible {
+    display: none;
+}
+
+.ppressmd-member-directory-header.ppmd-filters-expand .ppressmd-member-directory-header-row .ppressmd-search.ppressmd-search-invisible {
+    display: grid;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-search {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(max-content, auto);
+    -ms-grid-template-rows: auto 1fr;
+    -ms-grid-template-columns: repeat(3, 1fr);
+    -ms-grid-gap: 10px;
+    -ms-grid-auto-rows: minmax(max-content, auto);
+    align-items: center;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-search .ppressmd-search-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-search .ppressmd-search-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-search .ppressmd-search-filter.ppressmd-text-filter-type input {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-search-line label .ppressmd-search-line,
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-search .ppressmd-search-filter.ppressmd-text-filter-type input:not(.select2-search__field),
+.pp-member-directory .ppressmd-member-directory-header .select2.select2-container .select2-selection {
+    background-color: transparent;
+    border: 1px solid #dddddd !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-search .ppressmd-search-filter.ppressmd-text-filter-type input,
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-search-line label .ppressmd-search-line,
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row .ppressmd-member-directory-nav-line .ppress-material-icons,
+.pp-member-directory .ppressmd-member-directory-header .select2.select2-container .select2-selection__rendered {
+    color: #666666;
+    background-color: transparent;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-member-directory-header-row input[type=search]:focus {
+    border: 1px solid #bbb !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .ppressmd-button {
+    border: none !important;
+    display: block;
+    width: 100%;
+    line-height: 1em !important;
+    padding: 16px 20px !important;
+    text-decoration: none !important;
+    text-align: center;
+    text-transform: none !important;
+    font-weight: normal !important;
+    overflow: hidden;
+    position: relative;
+    transition: 0.25s;
+    box-sizing: border-box;
+    -moz-border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    border-radius: 4px !important;
+    box-shadow: none;
+
+    vertical-align: middle !important;
+    height: auto !important;
+    cursor: pointer !important;
+    text-shadow: none;
+    font-family: inherit;
+    outline: none !important;
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.pp-member-directory .ppressmd-members-total-wrap {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.pp-member-directory .ppressmd-members-total {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Customize Select2 CSS */
+
+.pp-member-directory .ppressmd-member-directory-header .select2.select2-container {
+    width: 100% !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-search.select2-search--inline .select2-search__field {
+    width: auto !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2.select2-container .select2-selection {
+    display: block !important;
+    height: 40px;
+    padding: 0 0 0 12px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    white-space: nowrap !important;
+    line-height: 35px !important;
+    font-size: 15px !important;
+    text-align: left !important;
+    text-decoration: none !important;
+    -moz-border-radius: 2px !important;
+    -webkit-border-radius: 2px !important;
+    border-radius: 2px !important;
+    background-clip: padding-box !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: none !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2.select2-container .select2-selection .select2-selection__arrow {
+    display: inline-block !important;
+    width: 34px !important;
+    height: 100% !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    -moz-border-radius: 0 2px 2px 0 !important;
+    -webkit-border-radius: 0 2px 2px 0 !important;
+    border-radius: 0 2px 2px 0 !important;
+    background-clip: padding-box !important;
+    text-align: center !important;
+    background: transparent !important;
+    border-left: 0 !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container.select2-container--open .select2-dropdown {
+    border: 1px solid #ddd;
+    border-top: 0;
+    border-radius: 0;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container.select2-container--open .select2-dropdown .select2-results li {
+    list-style: none;
+    display: list-item;
+    background-image: none;
+    font-size: 15px;
+    margin: 5px !important;
+    color: #666 !important;
+    padding: 3px 7px 4px !important;
+    cursor: pointer;
+    min-height: 1em !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2.select2-container .select2-selection.select2-selection--multiple {
+    height: auto !important;
+    line-height: 0.8 !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-left: 0 !important;
+    line-height: 37px;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    line-height: 37px;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding-left: 0 !important;
+    padding-right: 30px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-results li.select2-results__option.select2-results__option--highlighted {
+    background: none !important;
+    background: #f4f4f4 !important;
+    color: #666 !important;
+}
+
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--single .select2-selection__clear,
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--multiple .select2-selection__clear {
+    right: 10px;
+    font-size: 30px;
+    margin: 0 !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--single .select2-selection__clear,
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--multiple .select2-selection__clear,
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    color: #888 !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--multiple .select2-selection__clear {
+    position: absolute;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding: 3px 3px 3px 5px;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container .select2-search.select2-search--inline > input {
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.pp-member-directory .ppressmd-member-directory-header .select2-container--default .select2-selection--single .select2-selection__clear {
+    font-size: 20px !important;
+}
+
+.pp-member-directory .ppmd-pagination-wrap {
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.pp-member-directory .ppmd-pagination-wrap .page-numbers {
+    display: inline-block;
+    width: auto;
+    height: 34px;
+    line-height: 34px;
+    transition: all .2s linear;
+    padding: 0 14px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.pp-member-directory .ppmd-pagination-wrap .page-numbers.current {
+    background: #007bff;
+    color: #ffffff;
+}
+
+.pp-member-directory .ppmd-pagination-wrap .page-numbers .ppress-material-icons {
+    vertical-align: middle;
+}
+
+/*********************************** END member directory search and filter CSS ------------------------------------ */

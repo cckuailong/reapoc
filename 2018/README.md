@@ -11,7 +11,7 @@
 | CVE-2018-0296 | Cisco--C828 | 安全模式绕过 | 7.5 | N | [Y](CVE-2018-0296/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-0296/poc/others/) |
 | CVE-2018-1000006 |  | 操作系统命令注入 | 8.8 | [Y](CVE-2018-1000006/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-1000006/poc/others/) |
 | CVE-2018-1000129 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-1000129/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2018-1000130 |  | 注入 | 8.1 | N | [Y](CVE-2018-1000130/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-1000130 |  | ldap注入 | 8.1 | N | [Y](CVE-2018-1000130/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-1000533 | gitlist | 输入验证 | 9.8 | [Y](CVE-2018-1000533/vultarget/) | [Y](CVE-2018-1000533/poc/nuclei/) | [Y](CVE-2018-1000533/poc/xray/) | N | N | N | N | [Y](CVE-2018-1000533/poc/others/) |
 | CVE-2018-1000600 |  | 信息泄露 | 8.8 | N | [Y](CVE-2018-1000600/poc/nuclei/) | [Y](CVE-2018-1000600/poc/xray/) | N | N | N | N | N |
 | CVE-2018-1000861 | Jenkins | 命令执行 | 9.8 | [Y](CVE-2018-1000861/vultarget/) | [Y](CVE-2018-1000861/poc/nuclei/) | [Y](CVE-2018-1000861/poc/xray/) | N | N | N | N | [Y](CVE-2018-1000861/poc/others/) |
@@ -20,7 +20,7 @@
 | CVE-2018-10095 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-10095/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-10141 | PaloAlto PAN-OS | 跨站脚本 | 6.1 | N | [Y](CVE-2018-10141/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-10201 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-10201/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-10201/poc/others/) |
-| CVE-2018-1058 |  | 权限许可和访问控制问题 | 8.8 | [Y](CVE-2018-1058/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-1058/poc/others/) |
+| CVE-2018-1058 |  | 代码执行  | 8.8 | [Y](CVE-2018-1058/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-1058/poc/others/) |
 | CVE-2018-10735 | Nagios | SQL注入 | 7.2 | [Y](CVE-2018-10735/vultarget/) | N | [Y](CVE-2018-10735/poc/xray/) | N | N | N | N | N |
 | CVE-2018-10736 | Nagios | SQL注入 | 7.2 | [Y](CVE-2018-10736/vultarget/) | N | [Y](CVE-2018-10736/poc/xray/) | N | N | N | N | N |
 | CVE-2018-10737 | Nagios | SQL注入 | 7.2 | [Y](CVE-2018-10737/vultarget/) | N | [Y](CVE-2018-10737/poc/xray/) | N | N | N | N | N |
@@ -48,7 +48,7 @@
 | CVE-2018-12613 | phpMyAdmin | 本地文件包含 | 8.8 | [Y](CVE-2018-12613/vultarget/) | [Y](CVE-2018-12613/poc/nuclei/) | [Y](CVE-2018-12613/poc/xray/) | N | N | N | N | [Y](CVE-2018-12613/poc/others/) |
 | CVE-2018-12634 | CirCarLife Scada | 信息泄露 | 9.8 | N | [Y](CVE-2018-12634/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-12634/poc/others/) |
 | CVE-2018-1270 | Spring | 代码执行  | 9.8 | [Y](CVE-2018-1270/vultarget/) | N | N | [Y](CVE-2018-1270/poc/pocsuite2/) | [Y](CVE-2018-1270/poc/pocsuite3/) | N | N | [Y](CVE-2018-1270/poc/others/) |
-| CVE-2018-1271 | Spring | 路径遍历 | 5.9 | N | [Y](CVE-2018-1271/poc/nuclei/) | N | [Y](CVE-2018-1271/poc/pocsuite2/) | [Y](CVE-2018-1271/poc/pocsuite3/) | N | N | N |
+| CVE-2018-1271 | Spring | 目录遍历 | 5.9 | N | [Y](CVE-2018-1271/poc/nuclei/) | N | [Y](CVE-2018-1271/poc/pocsuite2/) | [Y](CVE-2018-1271/poc/pocsuite3/) | N | N | N |
 | CVE-2018-1273 | Spring | 输入验证错误 | 9.8 | [Y](CVE-2018-1273/vultarget/) | [Y](CVE-2018-1273/poc/nuclei/) | N | [Y](CVE-2018-1273/poc/pocsuite2/) | [Y](CVE-2018-1273/poc/pocsuite3/) | N | N | [Y](CVE-2018-1273/poc/others/) |
 | CVE-2018-12909 |  | 路径遍历 | 7.5 | [Y](CVE-2018-12909/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-1297 | Apache JMeter | 访问控制错误 | 9.8 | [Y](CVE-2018-1297/vultarget/) | N | N | N | N | N | N | N |

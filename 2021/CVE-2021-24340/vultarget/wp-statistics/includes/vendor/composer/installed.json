@@ -1,0 +1,468 @@
+[
+    {
+        "name": "composer/ca-bundle",
+        "version": "1.2.8",
+        "version_normalized": "1.2.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/ca-bundle.git",
+            "reference": "8a7ecad675253e4654ea05505233285377405215"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/ca-bundle/zipball/8a7ecad675253e4654ea05505233285377405215",
+            "reference": "8a7ecad675253e4654ea05505233285377405215",
+            "shasum": ""
+        },
+        "require": {
+            "ext-openssl": "*",
+            "ext-pcre": "*",
+            "php": "^5.3.2 || ^7.0 || ^8.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
+            "psr/log": "^1.0",
+            "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+        },
+        "time": "2020-08-23T12:54:47+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\CaBundle\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            }
+        ],
+        "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
+        "keywords": [
+            "cabundle",
+            "cacert",
+            "certificate",
+            "ssl",
+            "tls"
+        ],
+        "support": {
+            "irc": "irc://irc.freenode.org/composer",
+            "issues": "https://github.com/composer/ca-bundle/issues",
+            "source": "https://github.com/composer/ca-bundle/tree/1.2.8"
+        },
+        "funding": [
+            {
+                "url": "https://packagist.com",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/composer",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
+        "name": "geoip2/geoip2",
+        "version": "v2.10.0",
+        "version_normalized": "2.10.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/maxmind/GeoIP2-php.git",
+            "reference": "419557cd21d9fe039721a83490701a58c8ce784a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/419557cd21d9fe039721a83490701a58c8ce784a",
+            "reference": "419557cd21d9fe039721a83490701a58c8ce784a",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "maxmind-db/reader": "~1.5",
+            "maxmind/web-service-common": "~0.6",
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "2.*",
+            "phpunit/phpunit": "5.*",
+            "squizlabs/php_codesniffer": "3.*"
+        },
+        "time": "2019-12-12T18:48:39+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GeoIp2\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Gregory J. Oschwald",
+                "email": "goschwald@maxmind.com",
+                "homepage": "https://www.maxmind.com/"
+            }
+        ],
+        "description": "MaxMind GeoIP2 PHP API",
+        "homepage": "https://github.com/maxmind/GeoIP2-php",
+        "keywords": [
+            "IP",
+            "geoip",
+            "geoip2",
+            "geolocation",
+            "maxmind"
+        ],
+        "support": {
+            "issues": "https://github.com/maxmind/GeoIP2-php/issues",
+            "source": "https://github.com/maxmind/GeoIP2-php/tree/master"
+        }
+    },
+    {
+        "name": "jaybizzle/crawler-detect",
+        "version": "v1.2.102",
+        "version_normalized": "1.2.102.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/JayBizzle/Crawler-Detect.git",
+            "reference": "346cfd72d11bb41f15e82654e532dc55360612ac"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/346cfd72d11bb41f15e82654e532dc55360612ac",
+            "reference": "346cfd72d11bb41f15e82654e532dc55360612ac",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8|^5.5|^6.5"
+        },
+        "time": "2020-11-04T19:23:01+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Jaybizzle\\CrawlerDetect\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mark Beech",
+                "email": "m@rkbee.ch",
+                "role": "Developer"
+            }
+        ],
+        "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+        "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+        "keywords": [
+            "crawler",
+            "crawler detect",
+            "crawler detector",
+            "crawlerdetect",
+            "php crawler detect"
+        ],
+        "support": {
+            "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
+            "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.2.102"
+        }
+    },
+    {
+        "name": "maxmind-db/reader",
+        "version": "v1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
+            "reference": "febd4920bf17c1da84cef58e56a8227dfb37fbe4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/febd4920bf17c1da84cef58e56a8227dfb37fbe4",
+            "reference": "febd4920bf17c1da84cef58e56a8227dfb37fbe4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6"
+        },
+        "conflict": {
+            "ext-maxminddb": "<1.6.0,>=2.0.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "2.*",
+            "php-coveralls/php-coveralls": "^2.1",
+            "phpunit/phpcov": "^3.0",
+            "phpunit/phpunit": "5.*",
+            "squizlabs/php_codesniffer": "3.*"
+        },
+        "suggest": {
+            "ext-bcmath": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
+            "ext-gmp": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
+            "ext-maxminddb": "A C-based database decoder that provides significantly faster lookups"
+        },
+        "time": "2019-12-19T22:59:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MaxMind\\Db\\": "src/MaxMind/Db"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Gregory J. Oschwald",
+                "email": "goschwald@maxmind.com",
+                "homepage": "https://www.maxmind.com/"
+            }
+        ],
+        "description": "MaxMind DB Reader API",
+        "homepage": "https://github.com/maxmind/MaxMind-DB-Reader-php",
+        "keywords": [
+            "database",
+            "geoip",
+            "geoip2",
+            "geolocation",
+            "maxmind"
+        ]
+    },
+    {
+        "name": "maxmind/web-service-common",
+        "version": "v0.7.0",
+        "version_normalized": "0.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/maxmind/web-service-common-php.git",
+            "reference": "74c996c218ada5c639c8c2f076756e059f5552fc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/74c996c218ada5c639c8c2f076756e059f5552fc",
+            "reference": "74c996c218ada5c639c8c2f076756e059f5552fc",
+            "shasum": ""
+        },
+        "require": {
+            "composer/ca-bundle": "^1.0.3",
+            "ext-curl": "*",
+            "ext-json": "*",
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "2.*",
+            "phpunit/phpunit": "^4.8.36 || ^5.7 || ^6.5 || ^7.0",
+            "squizlabs/php_codesniffer": "3.*"
+        },
+        "time": "2020-05-06T14:07:26+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MaxMind\\Exception\\": "src/Exception",
+                "MaxMind\\WebService\\": "src/WebService"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Gregory Oschwald",
+                "email": "goschwald@maxmind.com"
+            }
+        ],
+        "description": "Internal MaxMind Web Service API",
+        "homepage": "https://github.com/maxmind/web-service-common-php"
+    },
+    {
+        "name": "psr/cache",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/cache.git",
+            "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+            "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-08-06T20:24:11+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Cache\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for caching libraries",
+        "keywords": [
+            "cache",
+            "psr",
+            "psr-6"
+        ]
+    },
+    {
+        "name": "s1lentium/iptools",
+        "version": "v1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/S1lentium/IPTools.git",
+            "reference": "f6f8ab6132ca7443bd7cced1681f5066d725fd5f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/S1lentium/IPTools/zipball/f6f8ab6132ca7443bd7cced1681f5066d725fd5f",
+            "reference": "f6f8ab6132ca7443bd7cced1681f5066d725fd5f",
+            "shasum": ""
+        },
+        "require": {
+            "ext-bcmath": "*",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0",
+            "satooshi/php-coveralls": "~1.0"
+        },
+        "time": "2018-09-19T06:15:53+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "IPTools\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Safarov Alisher",
+                "email": "alisher.safarov@outlook.com",
+                "homepage": "https://github.com/S1lentium"
+            }
+        ],
+        "description": "PHP Library for manipulating network addresses (IPv4 and IPv6)",
+        "keywords": [
+            "IP",
+            "IP-Tools",
+            "cidr",
+            "ipv4",
+            "ipv6",
+            "network",
+            "subnet"
+        ]
+    },
+    {
+        "name": "whichbrowser/parser",
+        "version": "v2.0.37",
+        "version_normalized": "2.0.37.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/WhichBrowser/Parser-PHP.git",
+            "reference": "9c6ad8eadc23294b1c66d92876c11f13c5d4cf48"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/WhichBrowser/Parser-PHP/zipball/9c6ad8eadc23294b1c66d92876c11f13c5d4cf48",
+            "reference": "9c6ad8eadc23294b1c66d92876c11f13c5d4cf48",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "psr/cache": "^1.0"
+        },
+        "require-dev": {
+            "icomefromthenet/reverse-regex": "0.0.6.3",
+            "phpunit/php-code-coverage": "^2.2|^3.0",
+            "phpunit/phpunit": "^4.0|^5.0",
+            "satooshi/php-coveralls": "^1.0",
+            "squizlabs/php_codesniffer": "2.5.*",
+            "symfony/yaml": ">=2.8"
+        },
+        "suggest": {
+            "cache/array-adapter": "Allows testing of the caching functionality"
+        },
+        "time": "2018-10-02T09:26:41+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "WhichBrowser\\": [
+                    "src/",
+                    "tests/src/"
+                ]
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Niels Leenheer",
+                "email": "niels@leenheer.nl",
+                "role": "Developer"
+            }
+        ],
+        "description": "Useragent sniffing library for PHP",
+        "homepage": "http://whichbrowser.net",
+        "keywords": [
+            "browser",
+            "sniffing",
+            "ua",
+            "useragent"
+        ],
+        "support": {
+            "issues": "https://github.com/WhichBrowser/Parser-PHP/issues",
+            "source": "https://github.com/WhichBrowser/Parser-PHP/tree/master"
+        }
+    }
+]

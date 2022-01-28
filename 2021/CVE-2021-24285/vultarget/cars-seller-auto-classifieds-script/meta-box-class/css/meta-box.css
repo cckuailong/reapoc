@@ -1,0 +1,65 @@
+/**
+ * All Types Meta Box Class CSS
+ *
+ * CSS used for the custom metaboxes and other form items.
+ *
+ * Copyright 2011 Ohad Raz (arunkushwaha87@gmail.com)
+ */
+
+/* =Common Rules for all fields.
+----------------------------------------------- */
+.form-table td.at-field{ border: 1px solid #DDD; padding: 10px 10px 20px; margin: 0px; font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, sans-serif; }
+.at-label { margin: 0 0 5px 0; padding: 5px 0 0 0; 
+						font: 20px/31px "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, sans-serif; 
+						text-shadow: rgba(255, 255, 255, 1) 0 1px 0; width: auto; }
+.at-radio-label{ padding-right: 10px; }				
+.at-file-upload-label{ clear: both; margin: 5px 0px 5px 1px; }	
+
+
+/* =Form Fields
+----------------------------------------------- */
+.postbox .at-field input,
+.postbox .at-field textarea { padding: 5px; line-height: 18px; } 
+.postbox .at-field input.at-radio{}
+.postbox .at-field input.at-color{ border: 0px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-right: 10px; min-width: 100px; }
+.at-field input:focus, 
+.at-field textarea:focus { background: #fffff8; }
+#wpcontent select.at-select { height: 30px !important; padding: 5px; display: block; min-width: 200px; }
+.at-field .desc-field { color: #AAA; font-style: italic; margin: 5px 0 0 3px !important; font-size: 13px; }
+.at-field .wp_themeSkin table.mceLayout{ border: 1px solid #DFDFDF; }
+#post-body .at-field .wp_themeSkin .mceStatusbar a.mceResize{ top: -25px; } 
+
+/* =Uploaded Images
+----------------------------------------------- */
+.at-images li { margin: 5px 10px 0px 0; float: left; width: 150px; height: 150px; text-align: center; border: 3px solid #ccc; cursor: move; position: relative; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.at-images img { width: 150px; height: 150px; }
+.at-images a { position: absolute; top: -12px; right: -12px; color: #fff;  font-weight: bold; padding: 5px; }
+.at-images .at-delete-file img{ width: 16px; height: 16px; }
+
+/* =Upload Button
+----------------------------------------------- */
+.at-upload-button { float: left; clear: both; margin-top: 10px; }
+.at-add-file { float: left; clear: both; margin-top: 10px; }
+ 
+/* =Time Picker
+----------------------------------------------- */
+.ui-timepicker-div { font-size: 0.9em; }
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; }
+.ui-timepicker-div dl dd { margin: -25px 0 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+
+/* =Repater Block
+----------------------------------------------- */
+/* inline */
+.at-inline label{font-size: 12px !important;}
+.at-inline textarea{height: 130px;width: 200px;}
+
+/* code Editor */
+.CodeMirror{
+	background-color: #fff;
+}
+.at-repater-block .simplePanelImagePreview img{
+max-width: 270px !important;
+}

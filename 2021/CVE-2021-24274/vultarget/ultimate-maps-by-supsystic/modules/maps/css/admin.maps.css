@@ -1,0 +1,277 @@
+.supsystic-maps .form-table label {
+	font-weight: normal;
+}
+.supsystic-maps .form-table label.label-big {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.supsystic-maps .form-table tr {
+	border-bottom: medium none !important;
+}
+.supsystic-maps .tbsLangTabs {
+	margin-top: 0 !important;
+}
+.supsystic-maps .ui-state-default.ui-jqgrid-hdiv {
+	background-color: #ffffff;
+}
+#umsMapRightStickyBar .ui-widget.ui-widget-content {
+	border: none;
+}
+.umsControlBtns {
+	background-color: #ffffff;
+}
+.umsControlBtns button {
+	margin-top: 4px !important;
+	margin-bottom: 4px !important;
+}
+/*Maps List Table*/
+#umsMapsTbl_markers #jqgh_umsMapsTbl_markers .s-ico,
+#umsMapsTbl_actions #jqgh_umsMapsTbl_actions .s-ico {
+	display: none !important;
+}
+/* Map shortcode */
+.supsistic-half-side-box #umsCopyTextCodeExamples, .supsistic-half-side-box .umsMapShortCodeShell {
+	margin-bottom: 5px;
+}
+/*Marker icons*/
+.iconsList {
+	list-style: none;
+}
+.previewIcon {
+	float: left;
+	cursor: pointer;
+	min-height: 65px;
+	padding: 0 8px;
+	position: relative;
+}
+.previewIcon i {
+   position: absolute;
+   top: -0px;
+   right: -5px;
+   z-index: 99;
+   background: red;
+   color: white;
+   padding: 3px;
+}
+#umsMarkerIconPrevImg, .previewIcon img {
+	max-width: 100px;
+	height: auto;
+}
+/* Markers list on edit page */
+#umsMarkerList, #umsShapeList {
+	background-color: #fff;
+}
+.egm-marker {
+    padding: 10px 5px;
+}
+.egm-marker:hover {
+    background-color: #f6f7f7;
+}
+.egm-marker .egm-marker-icon img, #umsMarkersListGrid .egm-marker-icon img {
+    height: 22px;
+    margin-top: -2px;
+}
+.egm-marker .egm-marker-latlng {
+    color: #bdc3c7;
+}
+.egm-marker .egm-marker-actions {
+    text-align: right;
+}
+.umsMapMarkerRow .egm-marker-title, #umsMarkersListGrid .egm-marker-title {
+	word-break: break-all; /*for long marker titles*/
+}
+#umsMarkersListGrid .egm-marker-icon img {
+	height: 22px;
+	vertical-align: middle;
+}
+#umsMarkersListGrid .egm-marker-latlng {
+	white-space: pre-line;
+	color: #bdc3c7;
+}
+#umsMarkersListGrid_icon_img #jqgh_umsMarkersListGrid_icon_img,
+#umsMarkersListGrid_coords #jqgh_umsMarkersListGrid_coords ,
+#umsMarkersListGrid_actions #jqgh_umsMarkersListGrid_actions {
+	cursor: default;
+}
+#umsMarkersListGrid_icon_img #jqgh_umsMarkersListGrid_icon_img .s-ico,
+#umsMarkersListGrid_coords #jqgh_umsMarkersListGrid_coords .s-ico ,
+#umsMarkersListGrid_actions #jqgh_umsMarkersListGrid_actions .s-ico {
+	display: none !important;
+}
+.umsMapShortCodeShell {
+	background: none;
+	font-family: Consolas, Monaco, monospace;
+	/*float: right;*/
+	color: #a4aaac;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+}
+#umsMapsTbl_cb {
+	min-width: 21px;
+}
+#umsExtendOptsBtn {
+	width: 100%;
+	text-align: center;
+}
+.umsMapPosChangeSelect {
+	width: calc(100% - 20px);
+}
+.umsProOptMiniLabel {
+	/*padding-left: 20px;*/
+	display: block;
+	margin-bottom: -20px;
+	clear: both;
+}
+.umsProOptMiniLabel a {
+	font-size: 10px;
+	text-decoration: none;
+	color: #0074a2;
+}
+.umsProOptMiniLabel a:hover {
+	color: #2ea2cc;
+}
+#umsMapForm .form-table th,
+#umsMarkerForm .form-table th,
+#umsShapeForm .form-table th,
+#umsHeatmapForm .form-table th {
+	width: 170px;
+}
+#umsMapForm .form-table th label,
+#umsMarkerForm .form-table th label,
+#umsShapeForm .form-table th label,
+#umsHeatmapForm .form-table th label {
+	font-size: 15px;
+	float: left;
+	max-width: 140px;
+}
+/*Map Shortcode Shell*/
+#umsShortCodeRowShell .umsCopyTextCode {
+	font-size: 12px !important;
+}
+/*Main map/marker tabs*/
+#umsMapPropertiesTabs a.nav-tab .button:focus {
+	background: transparent !important;
+	border-color: #000000 !important;
+}
+#umsMapPropertiesTabs a.nav-tab .button-primary:focus {
+	color: #000000 !important;
+}
+#umsMapPropertiesTabs a.nav-tab {
+	padding-bottom: 5px;
+	border-color: transparent;
+	background-color: #fff;
+	margin-left: 0;
+	margin-right: 0;
+}
+#umsMapPropertiesTabs a.nav-tab-active {
+	border-top-color: #000;
+	border-left-color: #ccc;
+	border-right-color: #ccc;
+}
+#umsMapPropertiesTabs a.nav-tab p {
+	font-size: 16px;
+	font-weight: normal;
+	min-height: 35px;
+	vertical-align: middle;
+}
+#umsMapPropertiesTabs a.nav-tab:first-of-type p {
+	/* padding-top: 4px; */
+}
+#umsMapPropertiesTabs a.nav-tab-active p {
+	font-weight: bold;
+}
+#umsMapPropertiesTabs a.nav-tab:not(.nav-tab-active):hover {
+	border-top-color: #ccc;
+}
+#umsMapPropertiesTabs a.nav-tab p button.button {
+	vertical-align: middle;
+	line-height: 25px;
+	font-size: 15px;
+	font-weight: normal;
+}
+#umsMapPropertiesTabs a.nav-tab p button.button:first-of-type {
+	margin-left: 10px;
+}
+#umsMapPropertiesTabs .nav-tab-wrapper {
+	border-bottom-color: #000;
+}
+#umsMapPropertiesTabs #umsMarkerClastererSubOpts {
+	margin-top: 10px;
+}
+#umsMapPropertiesTabs #umsMarkerClastererSubOpts .umsClastererSubOpts {
+	margin-bottom: 5px;
+}
+/*Map markers list*/
+.umsMmlElement {
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	float: left;
+	position: relative;
+	max-height: 265px;
+}
+.umsMmlElement img {
+	max-width: 100%;
+}
+.umsMmlElement:hover img,
+.umsMmlElement:hover .umsMmlElementBtnShell .button {
+	box-shadow: 5px 5px 5px #000;
+}
+.umsMmlElementBtnShell {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 10px;
+	left: 0;
+}
+.umsMmlElementBtnShell .button {
+	margin: 0 auto;
+	font-size: 18px;
+}
+#umsMarkersListWnd {
+	padding: 0;
+}
+/*Markers list table sortable*/
+#umsMarkerList .ui-sortable-placeholder {
+	height: 44px;
+	border: 1px solid #a5b6b2;
+    box-shadow: -3px -3px 6px #a5b6b2 inset;
+    display: block;
+}
+#umsMarkersSortMsg {
+	display: inline;
+}
+#umsMarkersSortMsg img {
+	height: auto;
+}
+.mbs-turn-on-wrapper {
+	display: inline-block;
+	margin: 7px 0 0 10px;
+	vertical-align: top;
+}
+.mbs-turn-on-wrapper .icheckbox_minimal {
+	margin-right: 5px;
+}
+
+/* Correct styles for dialog windows */
+.ui-dialog .ui-widget-content a:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#umsKmlAddFileRowBtn {
+	clear: both;
+}
+.umsKmlImportToMarkerLbl > div {
+	margin-right: 10px;
+}
+.umsBigSelect {
+	width: 35%;
+	height: 32px;
+	margin: 0;
+	font-size: 16px;
+}
+#markerDescription_ifr {
+	min-height:200px !important;
+}

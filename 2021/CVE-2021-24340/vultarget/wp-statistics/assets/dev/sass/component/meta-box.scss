@@ -1,0 +1,141 @@
+/**
+ * WordPress Admin Meta Box
+ */
+
+/* Meta Box Loading */
+.wps_loading_box {
+  width: 100%;
+  text-align: center;
+  min-height: 65px;
+  padding-top: 15px;
+}
+
+/* Refresh button Meta Box */
+.wps-more span, .wps-refresh span {
+  transition: transform .6s ease-in-out;
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+}
+
+.wps-more:hover span, .wps-refresh:hover span {
+  color: #00a0d2;
+}
+
+.wps-refresh:hover span {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  color: #00a0d2;
+}
+
+.button-link.wps-more,
+.button-link.wps-refresh {
+  text-decoration: none !important;
+}
+
+/* WordPress PostBox Full */
+.wps-postbox-full {
+  width: 100%;
+  float: left;
+  margin-right: 20px;
+}
+
+#wps-big-postbox {
+  width: 100%;
+  direction: ltr;
+  margin-top: 5px;
+}
+
+.log-url {
+  direction: ltr;
+  float: left;
+  font-size: 10px;
+  margin: 0 0 0 2px;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#wp_statistics_editor_meta_box,
+#wp-statistics-browsers-widget,
+#wp-statistics-countries-widget,
+#wp-statistics-hitsmap-widget,
+#wp-statistics-hits-widget,
+#wp-statistics-pages-widget,
+#wp-statistics-recent-widget,
+#wp-statistics-referring-widget,
+#wp-statistics-search-widget,
+#wp-statistics-summary-widget,
+#wp-statistics-words-widget,
+#wp-statistics-top-visitors-widget,
+#wps_hits_postbox,
+#wps_top_visitors_postbox,
+#wps_search_postbox,
+#wps_words_postbox,
+#wps_recent_postbox,
+#wps_map_postbox,
+#wps_pages_postbox,
+#wps_summary_postbox,
+#wps_browsers_postbox,
+#wps_referring_postbox,
+#wps_countries_postbox,
+#wps_words_postbox {
+  overflow: hidden;
+}
+
+#time_zone a {
+  font-size: 11px;
+  text-decoration: none;
+}
+
+
+#about-links {
+  margin: 0 0 10px;
+}
+
+#about-links p {
+  display: inline;
+  font-size: 12px;
+  margin: 0 2px;
+  font-style: italic;
+}
+
+#about-links a {
+}
+
+.left-div {
+  float: left;
+}
+
+.right-div {
+  float: right;
+}
+
+#donate-text {
+  float: left;
+}
+
+#donate-button {
+  float: right;
+  margin: -2px 0 0 0;
+}
+
+#donate-button a {
+  height: 23px;
+  line-height: 22px;
+}
+
+.wp-statistics-sub-fullwidth {
+  width: 100%;
+}
+
+.wp-statistics-responsive-table {
+  overflow-x: auto;
+}
+
+.wps-postbox-veronalabs {
+  margin: 18px 0 0 0;
+}
+
+.wps-postbox-veronalabs img {
+  width: 116px;
+}

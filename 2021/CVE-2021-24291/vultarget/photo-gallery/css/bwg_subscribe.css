@@ -1,0 +1,910 @@
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#tenweb_new_subscribe {
+  box-shadow: 2px 5px 19px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  text-align: left;
+  color: #333B46;
+  background-image: url(../images/subscribe/transparent_title.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 40px 0 0 40px;
+  background-size: contain;
+  position: relative;
+  width: calc(100% - 40px);
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content:before,
+#tenweb_new_subscribe:before {
+  content: "";
+  background-image: url(../images/subscribe/square.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content:before {
+  content: "";
+  z-index: -1;
+}
+
+#tenweb_new_subscribe .tenweb_subscribe_container {
+  background-image: url(../images/subscribe/ebook.png);
+  background-repeat: no-repeat;
+  background-position: right 134px;
+  background-size: 654px;
+  padding: 0 0 67px 0;
+  z-index: 1;
+  position: relative;
+}
+
+#tenweb_new_subscribe a#tenweb_logo {
+  width: 147px;
+  height: 40px;
+  background-image: url(../images/subscribe/10web-logo.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+#tenweb_new_subscribe #tenweb_title {
+  font-weight: 700;
+  color: #333B46;
+  font-size: 40px;
+  line-height: 54px;
+  margin: 40px 0 30px;
+}
+
+#tenweb_new_subscribe #tenweb_description {
+  font-weight: 200;
+  margin: 0 0 30px;
+  font-size: 30px;
+  line-height: 46px;
+}
+
+#tenweb_new_subscribe #tenweb_form {
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  width: 520px;
+}
+
+#tenweb_new_subscribe #tenweb_form input[type="text"] {
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  background: #FAFAFA;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 32px;
+  padding: 11px 20px;
+  color: #72777C;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+#tenweb_new_subscribe #tenweb_form input[type="button"] {
+  font-size: 20px;
+  line-height: 27px;
+  width: 100%;
+  background: #F8C332;
+  border-radius: 32px;
+  padding: 17px;
+  color: #FFFFFF;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#tenweb_new_subscribe #tenweb_form input[type="text"]:focus,
+#tenweb_new_subscribe #tenweb_form input[type="button"] {
+  outline: none;
+}
+
+#tenweb_new_subscribe #form_buttons {
+  width: 296px;
+  max-width: 100%;
+  text-align: center;
+}
+
+#tenweb_new_subscribe #form_buttons .skip {
+  line-height: 20px;
+  font-weight: 600;
+  color: rgba(51, 59, 70, 0.7);
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#tenweb_new_subscribe #tenweb_form input[type="text"]::placeholder {
+  color: rgba(51, 59, 70, 0.5) !important;
+}
+
+#tenweb_new_subscribe #tenweb_form input[type="text"]::-webkit-input-placeholder {
+  color: rgba(51, 59, 70, 0.5);
+}
+
+#tenweb_new_subscribe #tenweb_form input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: rgba(51, 59, 70, 0.5);
+}
+
+#tenweb_new_subscribe #tenweb_form input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(51, 59, 70, 0.5);
+}
+
+#tenweb_new_subscribe #tenweb_form input[type="text"]:-ms-input-placeholder {
+  color: rgba(51, 59, 70, 0.5);
+}
+
+#tenweb_new_subscribe #tenweb_form p {
+  margin: 0 0 19px 0;
+}
+
+#tenweb_new_subscribe label {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  margin: 0 0 14px 20px;
+  display: inline-block;
+}
+
+#tenweb_new_subscribe label span {
+  color: #FD3C31;
+}
+
+#tenweb_new_subscribe .form_desc {
+  margin: 0 0 30px 20px;
+}
+
+#tenweb_new_subscribe .tenweb_subscribe_content {
+  width: 584px;
+  max-width: 100%;
+}
+
+#tenweb_new_subscribe #tablet_book {
+  display: none;
+}
+
+#tenweb_new_subscribe span.error_msg {
+  color: #E95E5B;
+  font-size: 13px;
+  margin-left: 20px;
+  display: none;
+}
+
+#tenweb_new_subscribe .error span.error_msg {
+  display: inline-block;
+}
+
+#tenweb_new_subscribe #tenweb_form .error input[type="text"] {
+  border-color: #E95E5B;
+}
+
+#tenweb_subscribe_popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 58, 69, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+}
+
+#tenweb_subscribe_popup.subscribed {
+  display: block !important;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content {
+  padding: 70px 40px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 98%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #FFFFFF;
+  width: 595px;
+  border-radius: 20px;
+  color: #333B46;
+  text-align: center;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content h3 {
+  color: #333B46;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content p {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0 0 7px 0;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content p.bold {
+  margin: 0 0 10px 0;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content img {
+  margin: 21px 0 13px;
+  max-width: 100%;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content p.bold,
+#tenweb_subscribe_popup .subscribe_popup_content p b,
+#tenweb_subscribe_popup .subscribe_popup_content h3 {
+  font-weight: 800;
+  text-align: left;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content p {
+  text-align: left;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content h3 {
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0 0 35px;
+  text-align: center;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content .subscribe_email {
+  font-size: 15px;
+  line-height: 20px;
+  padding: 12px 0 10px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 32px;
+  background: #FFFFFF;
+  margin: 0 auto 15px;
+  font-weight: 800;
+  position: relative;
+  max-width: 100%;
+  width: 320px;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content .subscribe_email:before {
+  content: "";
+  background: url(../images/subscribe/mail.svg);
+  background-size: contain;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  margin-left: -24px;
+  top: -40px;
+}
+
+#tenweb_subscribe_popup .subscribe_popup_content a.got_it {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #F8C332;
+  display: inline-block;
+  width: 160px;
+  padding: 9px 0;
+  border-radius: 23px;
+  text-decoration: none;
+  margin-top: 23px;
+}
+
+#tenweb_new_subscribe .left {
+  width: 130px;
+  margin-right: 30px;
+  float: left;
+  padding-top: 115px;
+  text-align: center;
+}
+
+#tenweb_new_subscribe .left img {
+  max-width: 100%;
+}
+
+#tenweb_new_subscribe .left .founder_info h4 {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 600;
+}
+
+#tenweb_new_subscribe .right {
+  float: left;
+  margin-left: 20px;
+  width: calc(100% - 180px);
+}
+
+#tenweb_new_subscribe .right #tenweb_title {
+  margin: 0;
+  background-color: #4786FF;
+  background-image: url(../images/subscribe/message_box_light.png);
+  border-radius: 90px 90px 90px 14px;
+  padding: 30px 45px 28px;
+  background-size: cover !important;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+#tenweb_new_subscribe .tenweb_subscribe_container .left {
+  margin: 165px 0 0 23.73px;
+  padding: 0;
+}
+
+#tenweb_new_subscribe .tenweb_subscribe_container .left h4 {
+  font-size: 20px;
+  line-height: 18px;
+  margin: 10px 0 0 0;
+}
+
+#tenweb_new_subscribe .tenweb_subscribe_container .left p {
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0;
+}
+
+#tenweb_title h2, #tenweb_title p {
+  color: #FFF;
+  text-align: left;
+}
+
+#tenweb_title h2 img {
+  width: 26px;
+  position: relative;
+  top: 4px;
+}
+
+#subscribe_form {
+  padding-left: 145px;
+}
+
+@media screen and (min-width: 1620px) {
+  #tenweb_new_subscribe .tenweb_subscribe_container {
+    background-position: 100% 73%;
+    background-size: 840px;
+    background-image: url(../images/subscribe/ebook.png);
+    padding-bottom: 124px;
+  }
+
+  #tenweb_new_subscribe #form_buttons .skip {
+    margin-bottom: 34px;
+  }
+
+  #tenweb_new_subscribe.tenweb_subscribe {
+    margin: 37px 30px 23px 10px;
+    padding: 30px 0 0 40px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .right {
+    margin: 40px 0 0 23.73px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .left {
+    margin: 165px 0 0 23.73px;
+    padding: 0;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .left h4 {
+    font-size: 20px;
+    line-height: 18px;
+    margin: 10px 0 0 0;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .left p {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  #tenweb_title h2 {
+    color: #FFF;
+    text-align: left;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+  }
+
+  #tenweb_title p {
+    color: #FFF;
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 200;
+    margin: 0 0 1px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .right #tenweb_title {
+    margin-bottom: 40px;
+    width: 610px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_content {
+    width: 909.5px;
+  }
+
+  #tenweb_new_subscribe #form_buttons {
+    width: 296px;
+  }
+
+  #tenweb_new_subscribe #form_buttons .skip {
+    font-size: 18px;
+  }
+
+  #tenweb_new_subscribe #tenweb_form input[type="button"] {
+    margin-bottom: 14px;
+  }
+
+  #tenweb_new_subscribe .form_desc {
+    margin: 0 0 40px 20px;
+  }
+
+  #subscribe_form {
+    padding-left: 175px;
+  }
+}
+
+@media screen and (max-width: 1766px) {
+  #tenweb_new_subscribe .tenweb_subscribe_container {
+    background-size: 580px;
+    background-position: 100% 86%;
+  }
+}
+
+@media screen and (max-width: 1619px) {
+  #tenweb_new_subscribe.tenweb_subscribe {
+    margin: 20px 20px 20px 10px;
+    padding: 25px 20px 50px 25px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .right {
+    margin: 15px 0 0 20px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .left {
+    margin: 140px 0 0 15px;
+    padding: 0;
+    width: 100px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .left h4 {
+    font-size: 20px;
+    line-height: 18px;
+    margin: 10px 0 0 0;
+    font-weight: 600;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .left p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  #tenweb_title h2 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+  }
+
+  #tenweb_title p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 200;
+    margin: 0 0 1px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .right #tenweb_title {
+    margin-bottom: 40px;
+    width: 480px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container {
+    background-image: url(../images/subscribe/ebook.png);
+    background-position: right bottom;
+    background-size: 570px;
+    padding: 0 0 130px 0;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_content {
+    width: 909.5px;
+  }
+
+  #tenweb_new_subscribe #form_buttons {
+    width: 270px;
+  }
+
+  #tenweb_new_subscribe #form_buttons .skip {
+    font-size: 18px;
+  }
+
+  #tenweb_new_subscribe #tenweb_form input[type="button"] {
+    margin-bottom: 14px;
+  }
+
+  #tenweb_new_subscribe .form_desc {
+    margin: 0 0 40px 20px;
+  }
+
+  #subscribe_form #tenweb_form {
+    width: 440px;
+  }
+
+  #tenweb_new_subscribe #tenweb_form {
+    font-size: 16px;
+  }
+
+  #subscribe_form {
+    padding-left: 145px;
+  }
+}
+
+@media screen and (max-width: 1490px) and (min-width: 1281px) {
+  #tenweb_new_subscribe.tenweb_subscribe {
+    padding: 25px 20px 0 25px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .tenweb_subscribe_content .right #tenweb_form {
+    width: 440px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container {
+    background-image: url(../images/subscribe/ebook.png);
+    background-position: 100% 89%;
+    background-size: 510px;
+    padding: 0 0 137px 0;
+  }
+
+  #tenweb_new_subscribe .form_desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 1336px) and (min-width: 1249px) {
+  #tenweb_new_subscribe .tenweb_subscribe_container .tenweb_subscribe_content .right #tenweb_form {
+    width: 420px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container {
+    background-image: url(../images/subscribe/ebook.png);
+    background-position: 100% 88%;
+    background-size: 460px;
+    padding: 0 0 35px 0;
+  }
+
+  #tenweb_new_subscribe .form_desc {
+    margin: 16px 0 30px 23px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #tenweb_new_subscribe #tenweb_form input[type="button"] {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #tenweb_new_subscribe .tenweb_subscribe_container {
+    background-image: none;
+    padding: 0 0 25px 0;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content {
+    padding: 50px 20px 30px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content h3 {
+    font-size: 17px;
+    margin: 0 0 25px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content .subscribe_email:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    margin-left: -24px;
+    top: -33px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content p {
+    font-size: 14px;
+  }
+
+  #tenweb_new_subscribe .form_desc {
+    margin: 16px 0 30px 23px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #tenweb_new_subscribe.tenweb_subscribe {
+    margin: 20px 20px 20px 15px;
+    padding: 30px 25px 50px 31px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_content {
+    width: 713px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .right #tenweb_title {
+    margin-bottom: 40px;
+    width: 550px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #tenweb_logo_div {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  #tenweb_logo {
+    width: 132px;
+    height: 36px;
+  }
+
+  #tenweb_new_subscribe .right {
+    float: left;
+    margin-left: 20px;
+    width: 550px;
+  }
+
+  #tenweb_new_subscribe #tablet_book {
+    display: none;
+  }
+
+  #tenweb_new_subscribe {
+    padding: 20px 10px 0;
+  }
+
+  #tenweb_new_subscribe a#tenweb_logo {
+    width: 132px;
+    height: 36px;
+  }
+
+  #tenweb_new_subscribe #tenweb_title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  #tenweb_new_subscribe #tenweb_title {
+    margin: 27px 0 10px;
+  }
+
+  #tenweb_new_subscribe #tenweb_description {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0 0 40px;
+  }
+
+  #tenweb_new_subscribe #tenweb_form input[type="text"] {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 8px 14px 9px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .form_desc {
+    margin: 0 0 30px 20px;
+    text-align: left;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container {
+    padding-bottom: 158px;
+  }
+
+  #tenweb_new_subscribe:before {
+    content: "";
+    background-size: 70px;
+  }
+
+  #tenweb_new_subscribe label {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 0 10px 14px;
+  }
+
+  #tenweb_new_subscribe #tenweb_form {
+    font-size: 12px;
+    width: 420px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content {
+    padding: 50px 20px 30px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content h3 {
+    font-size: 17px;
+    margin: 0 0 25px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content .subscribe_email:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    margin-left: -24px;
+    top: -33px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content p {
+    font-size: 14px;
+  }
+
+  #tenweb_new_subscribe .form_desc {
+    margin: 16px 0 30px 0;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .tenweb_subscribe_content .right {
+    float: left;
+    margin-left: 20px;
+    width: calc(100% - 135px);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #tenweb_new_subscribe .tenweb_subscribe_container {
+    padding-bottom: 26px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .form_desc {
+    margin: 16px 0 30px 0;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  #wpcontent {
+    padding-right: 10px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .tenweb_subscribe_content .right #tenweb_form {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  #tenweb_new_subscribe .founder img {
+    width: 94px;
+  }
+
+  #tenweb_logo_div {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  #tenweb_logo {
+    width: 110px;
+    height: 30px;
+    margin-top: 20px;
+    margin: 0;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .tenweb_subscribe_content .left {
+    width: 100%;
+    height: 83px;
+    margin: 0;
+    display: block;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .left img {
+    width: 42px;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .tenweb_subscribe_content .right {
+    margin: 15px 10px 0 0;
+    width: 100%;
+  }
+
+  #tenweb_new_subscribe .tenweb_subscribe_container .right #tenweb_title {
+    padding: 17px 17px 20px 17px;
+    border-radius: 40px 40px 40px 40px;
+    width: 270px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #tenweb_new_subscribe.tenweb_subscribe {
+    margin: 10px 10px 10px 5px;
+    padding: 0;
+    width: calc(100% - 10px);
+  }
+
+  #subscribe_form {
+    padding: 0;
+    width: 280px;
+    margin: 10px;
+  }
+
+  #subscribe_form .form_desc {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #form_buttons {
+    padding-bottom: 50px;
+  }
+
+  #tenweb_title h2 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+  }
+
+  #tenweb_title p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 200;
+    margin: 0 0 1px;
+  }
+
+  #tenweb_title h2 img {
+    width: 24.3px;
+    position: relative;
+    top: 7px;
+  }
+
+  #tenweb_new_subscribe .left .founder_info h4 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  #tenweb_new_subscribe .left .founder_info p {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 200;
+  }
+
+  #tenweb_new_subscribe #tenweb_form input[type="button"] {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  #tenweb_new_subscribe .right #tenweb_title {
+    background-image: url(../images/subscribe/founder_message_box.png);
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content {
+    padding: 50px 20px 30px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content h3 {
+    font-size: 17px;
+    margin: 0 0 25px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content .subscribe_email:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    margin-left: -24px;
+    top: -33px;
+  }
+
+  #tenweb_subscribe_popup .subscribe_popup_content p {
+    font-size: 14px;
+  }
+}

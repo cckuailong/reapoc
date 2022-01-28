@@ -1,0 +1,115 @@
+.progress-button{
+	display: inline-block;
+	font-size:14px;
+	color:#fff !important;
+	text-decoration: none !important;
+	overflow: hidden;
+	position:relative;
+
+	box-shadow: 0 1px 1px #ccc;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	-moz-box-shadow: 0 1px 1px #ccc;
+	
+	border-radius: 2px;
+
+	background-color: #ccc;
+}
+
+/*	Hide the original text of the button. Then the loading or finished
+	text will be shown in the :after element above it. */
+
+.progress-button.in-progress,
+.progress-button.finished{
+	color:transparent !important;
+}
+
+.progress-button.in-progress:after,
+.progress-button.finished:after{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	padding-top: inherit;
+	color: #fff !important;
+	left: 0;
+}
+
+/*	If the .in-progress class is set on the button, show the
+	contents of the data-loading attribute on the butotn */
+
+.progress-button.in-progress:after{
+	content:attr(data-loading);
+}
+
+/* The same goes for the .finished class */
+
+.progress-button.finished:after{
+	content:attr(data-finished);
+}
+
+/* The colorful bar that grows depending on the progress */
+
+.progress-button .tz-bar{
+	background-color:#51b7e6;
+	background-image:-webkit-linear-gradient(top, #51b7e6, #4dafdd);
+	background-image:-moz-linear-gradient(top, #51b7e6, #4dafdd);
+	background-image:linear-gradient(top, #51b7e6, #4dafdd);
+	
+	height:3px;
+	bottom:0;
+	left:0;
+	width:0;
+	position:absolute;
+	z-index:1;
+
+	border-radius:0 0 2px 2px;
+
+	-webkit-transition: width 0.5s, height 0.5s;
+	-moz-transition: width 0.5s, height 0.5s;
+	transition: width 0.5s, height 0.5s;
+}
+
+/* The bar can be either horizontal, or vertical */
+
+.progress-button .tz-bar.background-horizontal{
+	height:100%;
+	border-radius:2px;
+}
+
+.progress-button .tz-bar.background-vertical{
+	height:0;
+	top:0;
+	width:100%;
+	border-radius:2px;
+}
+
+
+/*----------------------------
+	Color themes
+-----------------------------*/
+
+
+.progress-button.red{
+	background-color: #e6537d;
+	background-image:-webkit-linear-gradient(top, #e6537d, #df5179);
+	background-image:-moz-linear-gradient(top, #e6537d, #df5179);
+	background-image:linear-gradient(top, #e6537d, #df5179);
+}
+
+.progress-button.red .tz-bar{
+	background-color:#6876b4;
+}
+
+
+.progress-button.green{
+	background-color: #64c896;
+	background-image:-webkit-linear-gradient(top, #64c896, #5fbd8e);
+	background-image:-moz-linear-gradient(top, #64c896, #5fbd8e);
+	background-image:linear-gradient(top, #64c896, #5fbd8e);
+}
+
+.progress-button.green .tz-bar{
+	background-color:#9e81d6;
+}
