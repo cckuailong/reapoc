@@ -11,4 +11,4 @@
 | CVE-2022-0332 | Unknown | Unknown | Unknown | [Y](CVE-2022-0332/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2022-23046 |  | SQL注入 | 7.2 | [Y](CVE-2022-23046/vultarget/) | N | N | N | N | N | N | [Y](CVE-2022-23046/poc/others/) |
 | CVE-2022-23178 |  | 授权问题 | 9.8 | N | [Y](CVE-2022-23178/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2022-23178/poc/others/) |
-| CVE-2022-23944 | Unknown | Unknown | Unknown | [Y](CVE-2022-23944/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2022-23944 | Unknown | Unknown | Unknown | [Y](CVE-2022-23944/vultarget/) | [Y](CVE-2022-23944/poc/nuclei/) | N | N | N | N | N | N |
