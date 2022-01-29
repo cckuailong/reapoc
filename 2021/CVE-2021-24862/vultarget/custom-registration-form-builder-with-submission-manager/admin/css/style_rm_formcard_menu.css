@@ -1,0 +1,306 @@
+.rmcard .rm_formcard_menu_icon {
+    float: right;
+    margin: 14px 4px 0px 0px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.rmagic .rmagic-cards .rmcard:hover .rm_formcard_menu_icon i {
+    color: #00a0d2;
+}
+
+.rmagic-cards .rmcard .rm-form-links {
+    display: none;
+}
+
+.rmagic-cards .rmcard:hover .rm-form-links {
+    display: block;
+}
+
+.rm-formcard-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 370px;
+    left: 90px;
+    top: 38px;
+    padding: 0px;
+    z-index: 999;
+    border: 1px solid #e1e1e1;
+    -webkit-box-shadow: 0 3px 30px rgba(25,30,35,.1);
+    box-shadow: 0 3px 30px rgba(25,30,35,.1);
+}
+
+.rm-formcard-menu-nub {
+    position: absolute;
+    width: 10px;
+    height: 11px;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    z-index: 2;
+    box-shadow: 1px 1px 0 0 #ccc;
+    background: #fff;
+    top: -5px;
+    left: 90px;
+}
+
+.rm-formcard-menu-header .rm_formname_edit_link_span {   
+    background-image: url(../../images/rm-formcard-menu-edit-bg.png);
+    height: 30px;
+    padding: 6px 40px;
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    z-index: 2;
+    float: left;
+    width: 88px;
+    color: #0087be;
+    cursor: pointer;
+}
+
+.rm-formcard-tabmenu-wrap {}
+
+.rm-formcard-menu-header {
+    height: 40px;
+    border-bottom: 1px solid #e1e1e1;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.rm-formcard-menu-header input {
+    width: 88%;
+    float: left;
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    padding: 0px;
+    text-align: left;
+    color: #000000;
+    font-weight: 800;
+    outline: 0px;
+}
+
+.rm-formcard-menu-form-name-save-icon,
+.rm-formcard-menu-form-name-save-loader {
+    width: auto;
+    float: left;
+}
+
+.rm-formcard-menu-form-name-save-icon i,
+.rm-formcard-menu-form-name-save-loader i {
+    color: #0dc30d;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.rm-formcard-menu-form-name-save-loader i {
+    color: #0087be;
+    animation-name: rm_rotate;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rm_rotate {
+    from {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+    to {
+        transform-origin: center;
+        transform: none;
+    }
+}
+
+.rm-formcard-menu-close {
+    float: right;
+}
+
+.rm-formcard-menu-close i {
+    font-size: 18px;
+}
+
+.rm-formcard-menu-form-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 280px;
+    text-align: left;
+    font-weight: 600;
+    overflow: hidden;
+    float: left;
+    font-size: 13px;
+}
+
+.rm-formcard-menu-form-name:hover {
+    cursor: pointer;
+}
+
+.rm-formcard-menu-header:hover .rm-formcard-menu-form-name {
+    color: #0073aa;
+}
+
+
+/* -- form card-tab Menu -- */
+
+.rm-formcard-tabhead-container {
+    width: 30%;
+    background-color: #fff;
+    border-right: 1px solid #e5e5e5;
+}
+
+.rm-formcard-tabhead-container ul {
+    margin: 0px;
+}
+
+.rm_formcard_tabhead-title {
+    margin: 12px 0px 6px 8px;
+    color: #6c7781;
+}
+
+.rm-formcard-tabhead-container ul li.rm_formcard_tabhead {
+    padding-left: 24px;
+    line-height: 30px;
+    font-size: 13px;
+    margin: 0px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 2px solid transparent;
+    margin-bottom: -1px;
+}
+
+.rm-formcard-tabhead-container ul li.rm_formcard_tabhead:hover {}
+
+.rm-formcard-tabhead-container ul li.rm_formcard_tabhead.rm_active_tabhead {
+    background-color: #f7fcfd;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    border-left: 2px solid #00aadc;
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, .02), 0 1px 0 rgba(0, 0, 0, .02);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .02), 0 1px 0 rgba(0, 0, 0, .02)
+}
+
+.rm-formcard-tabhead-container ul li.rm_formcard_tabhead a {
+    text-transform: capitalize;
+    color: #555d66;
+}
+
+.rm_formcard_tabhead.rm_active_tabhead a {
+    color: #32373c;
+}
+
+.rm-formcard-tabhead-container ul li.rm_formcard_tabhead a i {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.rm-formcard-tabhead-container ul li.rm_formcard_tabhead.rm_active_tabhead::after {}
+
+
+/* -- form card-tab Menu Content-- */
+
+.rm-formcard-tabpanel-container {
+    width: 70%;
+    background: #f6fbfd;
+    height: 300px;
+}
+
+.rm-formcard-tabpanel-container .rm-formcard-tabpanel {
+    padding: 10px;
+}
+
+.rm-formcard-tabpanel-wrap {
+    text-align: center;
+}
+
+.rm-formcard-tabpanel-wrap .rm-formcard-tab-item {
+    display: inline-block;
+    margin: 6px;
+    width: 40%;
+}
+
+.rm-formcard-tab-item .rm-formcard-icon {
+    width: 22px;
+}
+
+.rm-formcard-tab-item .rm-formcard-label {
+    font-size: 11px;
+    text-transform: capitalize;
+    color: rgb(125, 125, 125);
+}
+
+.rm-formcard-tabpanel-info {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    position: absolute;
+    bottom: 10px;
+    margin-right: 5px;
+    color: #4f748e;
+    font-style: italic;
+}
+
+.rm-formcard-tab-item.rm-db-link {
+    width: 100%;
+    float: left;
+    text-align: center
+}
+
+.rm-formcard-tab-item a.rm_fdlink_more {
+    font-size: 11px;
+}
+
+
+/* --- Form Card */
+
+.rmagic-cards .rmcard:hover .rm-form-links {
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes rm-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.rmagic .rm-form-links {
+    animation-name: rm-fadeIn;
+}
+
+.rmagic .rm-form-links .rm-form-settings {
+    cursor: pointer;
+}
+
+.rmagic .rm-form-links .rm-form-settings i {
+    font-size: 18px;
+    margin-right: 4px;
+    line-height: 23px;
+}
+
+.rmagic .rm-form-links .rm-form-settings span {
+    line-height: 25px;
+    vertical-align: top;
+}
+
+#rm_fcm_panel_build .rm-formcard-tabpanel-wrap,
+#rm_fcm_panel_manage .rm-formcard-tabpanel-wrap,
+#rm_fcm_panel_analyze .rm-formcard-tabpanel-wrap,
+#rm_fcm_panel_automate .rm-formcard-tabpanel-wrap {
+    padding-top: 40px;
+}
+
+
+/* copied msg */
+
+div[id^="rm_msg_copied_to_clipboard_"] {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    width: 70%;
+    text-align: center;
+}

@@ -1,0 +1,189 @@
+.rm-task-setting-wrap {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+/* Slider */
+
+.rm-task-slide {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+
+    background-color: #fff;
+    display: none;
+}
+.rm-task-slide:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+
+
+/* Next and previous Button */
+
+.rm-task-setting-footer .rm-previous, .rm-task-setting-footer .rm-next { 
+    float: left;
+}
+
+.rm-task-setting-footer .rm-control label {
+    z-index: 0;
+    display: none;
+    color: #0a0a0a;
+    cursor: pointer;
+    font-family: Roboto,Arial,serif;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+.rm-task-setting-footer .rm-previous label{ 
+    margin-right: 20px;
+    transition: .3s;
+    color: #0087be;
+    font-size: 13px;
+}
+
+.rm-task-setting-footer .rm-next label{ 
+    transition: .1s;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #FFF;
+    border-color: #0087be;
+    background: #00aadc;
+    vertical-align: top;
+    padding: 0 10px 1px;
+    font-size: 13px;
+    line-height: 28px;
+    height: 28px;
+    margin: 0 10px 0 0;
+    border-width: 1px;
+    border-style: solid;
+}
+/* Next and previous Button Hover  */
+
+.rm-task-setting-footer .rm-previous label:hover{    
+    color: #00a0d2;
+}
+
+.rm-task-setting-footer .rm-next label:hover{ 
+    background: #007eb1;
+    border-color: #00435d;
+    
+}
+
+.rm-task-setting-footer .rm-next label:active {   
+    background-color: #0087be;
+    border-color: #0087be;
+}
+
+/* Slider Pagger arrow event Button */
+
+.rm-slide-radio1:checked ~ .rm-task-setting-footer .rm-next .rm-numb2,
+.rm-slide-radio2:checked ~ .rm-task-setting-footer .rm-next .rm-numb3,
+.rm-slide-radio3:checked ~ .rm-task-setting-footer .rm-next .rm-numb4,
+.rm-slide-radio1:checked ~ .rm-task-setting-footer .rm-previous .rm-numb0,
+.rm-slide-radio2:checked ~ .rm-task-setting-footer .rm-previous .rm-numb1,
+.rm-slide-radio3:checked ~ .rm-task-setting-footer .rm-previous .rm-numb2 {
+    display: block;
+    z-index: 1
+}
+
+
+
+.rm-slide-radio1:checked ~ .rm-task-slide.rm-task-slide1 {
+    display: block !important;
+}
+
+.rm-slide-radio2:checked ~ .rm-task-slide.rm-task-slide2 {
+    display: block !important;
+}
+
+.rm-slide-radio3:checked ~ .rm-task-slide.rm-task-slide3 {
+    display: block !important;
+}
+
+.rm-slide-radio4:checked ~ .rm-task-slide.rm-task-slide4 {
+    display: block !important;
+}
+
+/* Slider slide effect */
+
+@keyframes rm-slider {
+    0% { opacity:0}
+    100% {opacity:1}
+}
+
+.rm-task-slide {
+    -webkit-animation-name: rm-slider;
+    -webkit-animation-duration: 1s;
+    animation-name: rm-slider;
+    animation-duration: 1s;
+}
+
+
+.rmagic .childfieldsrow .rm-field-value-rule {   
+    width: 74%
+}
+
+.rmagic .childfieldsrow .rm-field-value-rule ul.rm-field-value-rule-wrap li.appendable_options {
+    width: 100%; 
+    float: left
+}
+
+.rmagic .rm-field-value-rule-wrap li select {   
+    width: 30%;                                           
+    float: left;
+}
+.rmagic .rm-field-value-rule-wrap li input {       
+    width: 50%;
+    float: left;
+    margin-left: 5px;
+} 
+
+.rmagic .rm-task-setting-wrap .rm-task-slide-radio { 
+    display: none;
+}
+
+
+/*----Form adjustment-----*/
+
+
+.rm-account-action ul.rmradio li {    
+    width: 100%;
+    margin: 8px 0px;
+}
+
+.rm-task-slide .rmrow .rm-rule-error {
+    width: 100%;
+    display: table;
+    margin: 10px auto;
+    color: #ff6c6c;
+}
+
+.rmagic .rm-task-setting-wrap .rm-field-value-rule-wrap li select { 
+    margin-left: 0px;
+}
+
+.rmagic .rm-task-setting-wrap .rmrow .rm_action {
+    margin-left: 0px;
+}
+
+.rmagic .rm-task-setting-wrap .rmrow .rm-field-value-rule-wrap .rm_actions {    
+    margin-left: 5px;
+    float: left;
+}

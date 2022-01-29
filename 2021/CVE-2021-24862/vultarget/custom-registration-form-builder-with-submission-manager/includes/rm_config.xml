@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<registration_magic>
+    <requests>
+        <request slug="rm_form_" allowed_actions="add,remove,duplicate,manage,update,quick_add,export,import,add_new_form"  controller="form_controller">
+
+            <!--Action to handle create or edit forms-->
+            <actions>
+                <action name="add" success-action="rm_form_manage">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+
+                <action name="quick_add" type="post">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                <!--List all the forms-->
+                <action name="manage">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+
+                <!--Remove form -->
+                <action name="remove" >
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+
+                <action name="duplicate">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                <action name="export">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                <action name="update" success-action="rm_form_manage">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                <action name="import">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                <action name="add_new_form" type="post">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+            </actions>
+
+        </request>
+
+
+        <request slug="rm_field_" allowed_actions="add,add_widget,remove,duplicate,manage,update,set_order,add_page,delete_page,rename_page"  controller="field_controller">
+
+            <!--Action to handle create or edit forms-->
+            <actions>
+                <action name="add" success-action="rm_field_manage">
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>
+                
+                <action name="add_widget" success-action="rm_field_manage">
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>
+
+                <!--List all the forms-->
+                <action name="manage" >
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>
+
+                <!--Remove form -->
+                <action name="remove" >
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>
+
+                <action name="duplicate">
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>
+
+                <action name="update" success-action="rm_form_manage">
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>
+                
+                <action name="set_order">
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>                
+                
+                <action name="add_page">
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>
+                
+                <action name="delete_page">
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>
+                
+                <action name="rename_page">
+                    <model ref="fields" />
+                    <service ref="services" />
+                </action>
+            </actions>
+
+        </request>
+        
+        <!--Login Related-->
+        <request slug="rm_login_field_" allowed_actions="manage,set_order,add,view_sett"  controller="login_manage_controller">
+
+            <actions>
+                <!--List all the login fields-->
+                <action name="manage" >
+                    <model ref="login_fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <!-- Ordering fields -->
+                <action name="set_order">
+                    <model ref="fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="add">
+                    <model ref="login_fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                 <action name="view_sett">
+                    <model ref="login_fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+               
+            </actions>
+
+        </request>
+        
+        <request slug="rm_login_" allowed_actions="sett_manage,sett_redirections,val_sec,recovery,email_temp,integrations,view,analytics,retention,advanced"  controller="login_manage_controller">
+
+            <actions>
+                <action name="sett_manage" >
+                    <model ref="login_fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="sett_redirections" >
+                    <model ref="login_fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="val_sec" >
+                    <model ref="login_fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="recovery" >
+                    <model ref="login_fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="email_temp" >
+                    <model ref="login_fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="email_temp" >
+                    <model ref="login_fields" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="integrations">
+                    <model ref="options" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="view">
+                    <model ref="options" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="analytics">
+                    <model ref="options" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="retention">
+                    <model ref="options" />
+                    <service ref="login_field_service" />
+                </action>
+                
+                <action name="advanced">
+                    <model ref="options" />
+                    <service ref="login_field_service" />
+                </action>
+                
+            </actions>
+
+        </request>
+        
+        <!--Pricing Fields related-->
+        <request slug="rm_paypal_field_" allowed_actions="add,manage,remove"  controller="paypal_field_controller">
+
+            <!--Action to handle create or edit forms-->
+            <actions>
+                <action name="add" success-action="rm_paypal_field_manage">
+                    <model ref="paypal_fields" />
+                    <service ref="services" />
+                </action>
+
+                <!--List all the forms-->
+                <action name="manage" >
+                    <model ref="paypal_fields" />
+                    <service ref="services" />
+                </action>
+                
+                <action name="remove" >
+                    <model ref="paypal_fields" />
+                    <service ref="services" />
+                </action>
+            </actions>
+
+        </request>
+
+        <!--Setting related request mappings-->
+        <request slug="rm_options_" allowed_actions="manage,general,fab,security,user,autoresponder,thirdparty,payment,default_pages,user_privacy,save,advance,eventprime"  controller="options">
+
+            <actions>
+
+                <!--Showing all the setting options-->
+                <action name="manage" type="get">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+
+                <!--General settings page-->
+                <action name="general" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+                
+                <!--Floating Action Button settings page-->
+                <action name="fab" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+
+                <!--Security settings page-->
+                <action name="security" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+
+                <!--User settings page-->
+                <action name="user" success-action="rm_options_manage">
+                    <model ref="options"/>
+                    <service ref="setting_service" />
+                </action>
+
+                <!--Third Party settings page-->
+                <action name="thirdparty" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+
+                <!--Autoresponder settings page-->
+                <action name="autoresponder" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+
+                <!--Autoresponder settings page-->
+                <action name="payment" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+                
+                <action name="default_pages" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+                
+                <action name="user_privacy" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+                
+                <!--Advance settings page-->
+                <action name="advance" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+                
+                <action name="eventprime" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+                <!--Save settings
+                <action name="save" success-action="rm_options_manage">
+                    <model ref="options" />
+                    <service ref="setting_service" />
+                </action>
+                -->
+
+
+            </actions>
+
+        </request>
+
+        <request slug="rm_user_" allowed_actions="role_manage,role_add,role_delete"  controller="user_controller">
+
+            <actions>
+
+                <!--List all the existing roles-->
+                <action name="role_manage">
+                    <service ref="user_services" />
+                </action>
+
+                <!--Create a new role inherited from default roles-->
+                <action name="role_add">
+                    <service ref="user_services" />
+                </action>
+
+                <!--Delete user role-->
+                <action name="role_delete">
+                    <service ref="user_services" />
+                </action>
+
+            </actions>
+
+        </request>
+        
+        <request slug="rm_user_" allowed_actions="exists,manage,add,deactivate,delete,activate,view,edit,widget"  controller="user_controller">
+
+            <actions>
+
+                <!--List all the users-->
+                <action name="manage">
+                    <service ref="user_services" />
+                </action>
+
+                <!--Create new user-->
+                <action name="add">
+                    <service ref="user_services" />
+                </action>
+
+                <!--Deactivate existing  user-->
+                <action name="deactivate">
+                    <service ref="user_services" />
+                </action>
+
+                <!--Activate existing  user-->
+                <action name="activate">
+                    <service ref="user_services" />
+                </action>
+
+                <!--Delete existing user-->
+                <action name="delete">
+                    <service ref="user_services" />
+                </action>
+
+                <!--View user profiler-->
+                <action name="view">
+                    <service ref="user_services" />
+                </action>
+                
+                <action name="edit">
+                    <service ref="user_services" />
+                </action>
+                <action name="widget">
+                    <service ref="user_services" />
+                </action>
+                
+                <action name="exists">
+                    <service ref="front_form_service" />
+                </action>
+                
+            </actions>
+
+        </request>
+
+        <request slug="rm_support_" allowed_actions="forum,frontend,premium_page"  controller="support_controller">
+
+            <actions>
+                <action name="forum">
+                </action>
+            </actions>
+            
+            <actions>
+                <action name="frontend">
+                </action>
+            </actions>
+            
+            <actions>
+                <action name="premium_page">
+                </action>
+            </actions>
+
+        </request>
+
+        <request slug="rm_login_" allowed_actions="form,lost_password"  controller="login_controller">
+
+            <actions>
+                <action name="form">
+                    <service ref="user_services" />
+                </action>
+                <action name="lost_password">
+                    <service ref="login_field_service" />
+                </action>
+            </actions>
+
+        </request>
+
+        <request slug="rm_user_form_" allowed_actions="process,edit_sub"  controller="front_form_controller">
+
+            <!--Action to handle create or edit forms-->
+            <actions>
+                <action name="process">
+                    <model ref="fields" />
+                    <service ref="front_form_service" />
+                </action>
+                
+                <action name="edit_sub">
+                    <model ref="fields" />
+                    <service ref="front_form_service" />
+                </action>
+
+            </actions>
+
+        </request>
+
+        <request slug="rm_dashboard_widget_" allowed_actions="display"  controller="dashboard_widget_controller">
+
+            <!--Action to handle create or edit forms-->
+            <actions>
+                <action name="display">
+                    <service ref="dashboard_widget_service" />
+                </action>
+
+            </actions>
+
+        </request>
+        
+        
+        <request slug="rm_submission_" allowed_actions="manage,print_pdf,view,remove,export,search,related"  controller="submission_controller">
+
+            <!--Action to manage submissions from backend-->
+            
+            <actions>
+                <action name="manage">
+                    <service ref="services" />
+                </action>
+                <action name="view">
+                    <model ref="submissions" />
+                    <service ref="services" />
+                </action>
+                <action name="print_pdf">
+                    <model ref="submissions" />
+                    <service ref="services" />
+                </action>
+                <action name="remove">
+                    <model ref="submissions" />
+                    <service ref="services" />
+                </action>
+                <action name="export">
+                    <model ref="submissions" />
+                    <service ref="services" />
+                </action>
+                <action name="search">
+                    <model ref="submissions" />
+                    <service ref="services" />
+                </action>    
+                 <action name="related">
+                    <model ref="submissions" />
+                    <service ref="services" />
+                </action>          
+            </actions>
+
+        </request>
+        
+        <request slug="rm_front_" allowed_actions="set_otp,submissions,log_off,reset_pass_page,save_fab_settings,fab"  controller="front_controller">
+
+            <!--Action to manage submissions from backend-->
+            
+            <actions>
+                <action name="set_otp">
+                    <service ref="front_service" />
+                </action> 
+                 
+                <action name="submissions">
+                    <service ref="front_service" />
+                </action>
+                
+                <action name="log_off">
+                    <service ref="front_service" />
+                </action>
+                
+                <action name="save_fab_settings">
+                    <service ref="front_service" />
+                </action> 
+                
+                <action name="fab">
+                    <service ref="front_service" />
+                </action> 
+                
+                <action name="reset_pass_page">
+                    <service ref="front_service" />
+                </action>
+                                        
+            </actions>
+
+        </request>
+
+        <request slug="rm_analytics_" allowed_actions="show_form,show_field,reset"  controller="analytics_controller">
+
+            <!--Action to display analytics-->
+            
+            <actions>
+                <action name="show_form">
+                    <service ref="analytics_service" />
+                </action>   
+
+                <action name="show_field">
+                    <service ref="analytics_service" />
+                </action>
+                
+                <action name="reset">
+                    <service ref="analytics_service" />
+                </action>         
+            </actions>
+
+        </request>
+
+        <request slug="rm_invitations_" allowed_actions="manage"  controller="invitations_controller">
+
+            <!--Action to display analytics-->
+            
+            <actions>
+                <action name="manage">
+                    <service ref="invitations_service" />
+                </action>   
+
+            </actions>
+
+        </request>
+        
+        <request slug="rm_sent_emails_" allowed_actions="manage,view,remove"  controller="sent_emails_controller">
+
+            <!--Action to display analytics-->
+            
+            <actions>
+                <action name="manage">
+                    <service ref="sent_emails_service" />
+                </action>   
+                
+                <action name="view">
+                    <service ref="sent_emails_service" />
+                </action>
+                
+                <action name="remove">
+                    <service ref="sent_emails_service" />
+                </action>  
+
+            </actions>
+
+        </request>
+
+        <request slug="rm_editor_actions_" allowed_actions="add_form,add_email,add_fields_dropdown_invites"  controller="editor_actions">
+
+            <!--Action add FORM button near media in edit post page-->
+            <actions>
+                <action name="add_form">
+                    <service ref="editor_actions_service" />
+                </action>
+
+                <action name="add_email">
+                    <service ref="editor_actions_service" />
+                </action>
+
+                <action name="add_fields_dropdown_invites">
+                    <service ref="editor_actions_service" />
+                </action>
+
+            </actions>
+
+        </request>
+        
+        <request slug="rm_attachment_" allowed_actions="manage,download_all,download,download_selected"  controller="attachment_controller">
+
+            <actions>
+
+                <!--List all the existing roles-->
+                <action name="manage" type="get">
+                    <service ref="attachment_service" />
+                </action>
+                
+                <action name="download_all" type="post">
+                    <service ref="attachment_service" />
+                </action>
+                
+                <action name="download_selected" type="post">
+                    <service ref="attachment_service" />
+                </action>
+                
+                <action name="download" type="get">
+                    <service ref="attachment_service" />
+                </action>
+                
+            </actions>
+
+        </request>
+        
+        <request slug="rm_note_" allowed_actions="add,delete"  controller="notes_controller">
+
+            <!--Action to manage submissions from backend-->
+            <actions>
+                <action name="add">
+                    <model ref="notes" />
+                    <service ref="notes_service" />
+                </action>
+                <action name="delete">
+                    <model ref="notes" />
+                    <service ref="notes_service" />
+                </action>           
+            </actions>
+
+        </request>
+        
+        <request slug="rm_form_sett_" allowed_actions="profilegrid,general,limits,post_sub,autoresponder,email_templates,accounts,view,mailchimp,ccontact,aweber,manage,access_control,qck_toggle,override"  controller="form_sett_controller">
+
+            <actions>
+
+                <!--                List all the existing roles-->
+                <action name="profilegrid">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                
+                <action name="general">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                
+                <action name="manage">
+                    <model ref="forms"/>
+                    <service ref="services" />
+                </action>
+
+                <!--                Create a new role inherited from default roles-->
+                <action name="limits">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+
+                <!--                Delete user role-->
+                <action name="post_sub">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                
+                <!--                List all the existing roles-->
+                <action name="autoresponder">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                
+                 <!--                Email Templates-->
+                <action name="email_templates">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                
+                <!--                List all the existing roles-->
+                <action name="accounts">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                
+                <!--                List all the existing roles-->
+                <action name="view">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                
+                <!--                List all the existing roles-->
+                <action name="mailchimp">
+                    <model ref="forms" />
+                    <service ref="mailchimp_service" />
+                </action>
+                <action name="ccontact">
+                    <model ref="forms" />
+                    
+                </action>
+                 <action name="aweber">
+                    <model ref="forms" />
+                   
+                </action>
+                <action name="access_control">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+                
+                <action name="qck_toggle">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+
+                <action name="override">
+                    <model ref="forms" />
+                    <service ref="services" />
+                </action>
+
+            </actions>
+
+        </request>
+
+        
+    </requests>
+
+    <controllers>
+        <controller name="form_controller" class="RM_Form_Controller" />
+        <controller name="user_controller" class="RM_User_Controller" />
+        <controller name="field_controller" class="RM_Field_Controller" />
+        <controller name="notes_controller" class="RM_Note_Controller" />
+        <controller name="paypal_field_controller" class="RM_PayPal_Field_Controller" />
+        <controller name="support_controller" class="RM_Support_Controller" />
+        <!--<controller name="settings" class="RM_Settings" />
+        <controller name="submission" class="RM_Submission" />-->
+        <controller name="options" class="RM_Options_Controller" />
+        <controller name="front_form_controller" class="RM_Front_Form_Controller" />
+        <controller name="submission_controller" class="RM_Submission_Controller" />
+        <controller name="front_controller" class="RM_Front_Controller" />
+        <controller name="editor_actions" class="RM_Editor_Actions_Controller" />
+        <controller name="attachment_controller" class="RM_Attachment_Controller" />
+        <controller name="analytics_controller" class="RM_Analytics_Controller" />
+        <controller name="invitations_controller" class="RM_Invitations_Controller" />
+        <controller name="dashboard_widget_controller" class="RM_Dashboard_Widget_Controller" />
+        <controller name="form_sett_controller" class="RM_Form_Settings_Controller" />
+        <controller name="sent_emails_controller" class="RM_Sent_Emails_Controller" />
+        <controller name="login_manage_controller" class="RM_Login_Manage_Controller" />
+        <!--Front end related-->
+        <controller name="login_controller" class="RM_Login_Controller" />
+    </controllers>
+
+    <models>
+        <model name="forms" class="RM_Forms" />
+        <model name="fields" class="RM_Fields" />
+        <model name="paypal_fields" class="RM_PayPal_Fields" />
+        <model name="options" class="RM_Options" />
+        <model name="submissions" class="RM_Submissions" />
+        <model name="front_users" class="RM_Front_Users"/>
+        <model name="notes" class="RM_Notes" />
+        <model name="login_fields" class="RM_Login_Fields" />
+    </models>
+
+    <services>
+        <service name="services" class="RM_Services" />
+        <service name="user_services" class="RM_User_Services" />
+        <service name="setting_service" class="RM_Setting_Service" />
+        <service name="front_form_service" class="RM_Front_Form_Service" />
+        <service name="front_service" class="RM_Front_Service" />
+        <service name="editor_actions_service" class="RM_Editor_Actions_Service" />
+        <service name="attachment_service" class="RM_Attachment_Service" />
+        <service name="analytics_service" class="RM_Analytics_Service" />
+        <service name="invitations_service" class="RM_Invitations_Service" />
+        <service name="notes_service" class="RM_Note_Service" />
+        <service name="mailchimp_service" class="RM_MailChimp_Service" />
+        <service name="dashboard_widget_service" class="RM_Dashboard_Widget_Service" />
+        <service name="sent_emails_service" class="RM_Sent_Emails_Service" />
+        <service name="login_field_service" class="RM_Login_Service" />
+    </services>
+
+</registration_magic>

@@ -1,0 +1,183 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 13, 2016, 6:48:01 PM
+    Author     : RegistrationMagic
+*/
+
+.rmagic input {height: auto;}
+
+/*.rmagic.rm_theme_matchmytheme.rm_layout_label_top {
+    max-width: 550px;
+    display: block;
+    margin: auto;
+}*/
+
+.rmagic .rmrow {    
+    display: block;
+    float: left;
+    position: inherit;
+    padding: 11px 0px 13px 0px;
+    min-height: 60px;
+    width: 100%;
+}
+
+.rm_spacing {
+    margin-top:100px;
+    clear: both;
+    width: 100%;
+    float: left;
+}
+
+.rm_divider {
+    width:100%;
+    size:8px;
+    clear: both;
+    float: left;
+}
+
+.rmagic .rmfield {margin-bottom: 5px;}
+
+.rmagic .rmrow li { list-style:none; margin: 0 0 5px 0;}
+
+.rmagic .rmrow li input[type=radio],
+.rmagic .rmrow li input[type=checkbox] {
+    margin-right: 10px;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar td {    padding: 0px;    border-width: 0 0px 0px 0;}
+#ui-datepicker-div .ui-datepicker-calendar th {    padding: 0px;    border-width: 0 0px 0px 0;}
+input[type="file"] {padding: 10px;}
+
+/*----Terms and Conditions---*/
+div.rm_terms_checkbox {float: left;}
+div#rm_terms_textarea_without_scroll {display: inline-block; float: left; margin-left: 5px;}
+
+
+div#rm_add_repeatable_field.rm_actions {cursor: pointer;}
+sup.required {color: red;}
+
+/*----Error Notifications----*/
+
+.rmagic input.rm-form-field-invalid-msg {border-color: red; outline-color: red;}
+.rmagic input.rm-form-field-invalid-msg:focus {outline-color: red;}
+
+label.rm-form-field-invalid-msg {
+    padding: 3px 8px;
+    display: inline-block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    animation: rm-warning 1s ease-out 1;
+    -webkit-animation: rm-warning 1s ease-out 1;
+    -moz-animation: rm-warning 1s ease-out 1;
+    -o-animation: rm-warning 1s ease-out 1;
+    float:left;
+}
+
+label.rm-form-field-invalid-msg::before{content: "\2191\00a0"; font-size: 14px;}
+
+@keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}  
+}
+
+@-webkit-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-moz-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-o-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+.rmagic .alert-error {  
+    background-color: #d2f3bf;
+    color: #6faf49;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid #6faf49;
+}
+
+.rmagic .alert-error ul {margin: 0px; list-style: none;}
+.rmagic .alert-error > a {display: inline-block;
+    float: right;
+    box-shadow: none;
+    color: #6faf49;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 0px !important;}
+
+/*----Terms and Conditions---*/
+div.rm_terms_checkbox {float: left;}
+div#rm_terms_textarea_without_scroll {display: inline-block; float: left; margin-left: 5px;}
+
+/*----Help Text on fields----*/
+
+.rmagic .rmnote {
+   width: 100%;
+
+}
+.rm-floating-page-content .rmrow .rminput input[type="file"] 
+
+{width: 100%;}
+
+.rm-floating-page-content .rmrow .rminput select {width: 100%;}
+
+.rm-floating-page-content .rmrow .rminput input[type="number"] 
+
+{width: 100%;} 
+
+.rmagic .rm_total_price {
+    text-align:center;
+    font-size:larger;
+}
+/*Price Fields Quantity*/
+
+
+.rmagic .rm_pricefield_checkbox .rmrow,
+.rmagic .rm_pricefield_row .rmrow {padding-left: 0px;}
+
+.rmagic .rm_pricefield_checkbox .rmrow sup,
+.rmagic .rm_pricefield_row .rmrow sup { display: none;}
+
+.rmagic .rm_pricefield_checkbox .rmrow .rmfield,
+.rmagic .rm_pricefield_row .rmrow .rmfield { width: 25px; padding-left: 0; text-align: center;}
+
+.rmagic .rm_pricefield_checkbox .rmrow .rminput,
+.rmagic .rm_pricefield_row .rmrow .rminput { max-width: 75px; padding-left: 0px; padding-top: 0px;}
+
+.rm_pricefield_row .rminput > select, .rm_pricefield_row .rminput > input[type="text"]{ width: 30%; float: left;}
+
+.rm_pricefield_row .rminput .rmrow { width: 30%; float: left; padding: 0; }
+.rm_pricefield_row .rminput .rmrow .rmfield { float: left; padding-top: 5px;}
+.rm_pricefield_row .rminput .rmrow .rminput { float: left;}
+
+.rm_pricefield_checkbox .rminput .rmrow { width: 30%; float: left; padding: 0; }
+.rmagic .rm_pricefield_checkbox .rminput .rmradio input[type="checkbox"]{float: left; margin: 14px 10px 0 0; }
+.rmagic .rm_pricefield_checkbox .rminput .rmradio span {    float: left; line-height: 30px;}
+.rmagic .rm_pricefield_checkbox .rmradio .rmrow .rmfield{float: left; padding-top: 5px;}
+.rmagic .rm_pricefield_checkbox .rmradio .rmrow .rminput{float: left;}
+.rmagic .rm_pricefield_checkbox .rmradio li { display: block; float: left; width:100%; }
+.rmagic .rm_pricefield_row .rminput input, 
+.rmagic .rm_pricefield_row .rminput select { 
+    margin-bottom: 10px;
+}
+.rmagic .rm_pricefield_checkbox .rminput ul.rmradio label { display: block;}
+
+

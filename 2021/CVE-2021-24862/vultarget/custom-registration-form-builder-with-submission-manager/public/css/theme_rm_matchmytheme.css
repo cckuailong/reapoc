@@ -1,0 +1,331 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/* 
+    Created on : Apr 8, 2016, 10:47:33 AM
+    Author     : CMSHelplive
+*/
+
+
+/*---------Common Elements---------------*/
+.rmagic * { box-sizing: border-box;}
+
+
+/*------------- rmagic Elements --------------*/
+
+
+
+.rmagic {
+    
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+/*----- Astra theme fixes -----*/
+
+.ast-hfb-header .rmagic {
+    float: none;
+}
+
+.rm_spacing
+{
+    margin-top:100px;
+    clear: both;
+    width: 100%;
+    float: left;
+}
+.rm_divider{
+    width:100%;
+    size:8px;
+   clear: both;
+    float: left;
+}
+
+
+.rmagic sup {color: #ff6c6c;}
+
+/*.rmagic input[type=text], .rmagic textarea, .rmagic select, .rmagic input[type=password] {
+    height: 35px;
+    font-size: 18px;
+    color: rgb(150,150,150);
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid rgb(225,225,225);
+}*/
+
+.rmagic input[type=text].warning, input[type=password].warning, textarea.warning, select.warning, .rmagic input[type=password].warning {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e89d9d;
+    color: #ff6c6c;
+    
+}
+
+.rmrow {position: relative !important;}
+.rmagic .rmrow li { list-style:none;}
+
+#ui-datepicker-div .ui-datepicker-calendar td {    padding: 0px;    border-width: 0 0px 0px 0;}
+#ui-datepicker-div .ui-datepicker-calendar th {    padding: 0px;    border-width: 0 0px 0px 0;}
+
+
+.rmagic .rmradio {
+    display: block;
+    float: left;
+    list-style: none;
+    width: 90%;
+}
+
+.rmagic .rmradio .rm-radio-option {
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+}
+
+.rmagic .rmradio .rm-radio-option::after {
+    content: " ";
+}
+
+
+.rmagic input[type=submit] {
+    display: inline-block;
+    float: left;
+}
+
+
+.rmagic textarea {
+    resize: both;
+    z-index: 999999;
+    height: 220px;
+}
+
+
+
+
+.rmagic form.rmagic-form {
+    width: 100%; 
+    float: left; 
+}
+
+
+.rmheader {
+    display: block;
+    font-size: 18px;
+    padding: 20px;
+   
+}
+
+.rmsubheader { 
+    display: block;
+    float: left;
+    padding: 5px 5px 5px 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 11px;
+}
+
+.rmrow {
+    display: block; 
+    float: left;
+    position: inherit;
+    padding: 5px 0px 5px 0px; 
+    min-height: 60px; 
+    width: 100%;
+}
+
+.rmfield {width:40%; max-width: 250px;}
+.rminput {width:60%; padding: 0px; margin: 0px;}
+
+.rmfield, .rminput {
+    display: inline-block; 
+    float: left;
+    vertical-align: middle;
+    min-height: inherit;
+    padding: 5px;
+}
+
+.rminput .errortext {
+    width: 100%;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    color: #ff6c6c;
+    font-size: 12px;
+}
+
+.rmfield {
+    padding-top: 10px;
+    
+}
+
+.rmagic .rmcontent .rminput input[type="text"], 
+.rmagic .rmcontent .rminput input[type="password"], 
+.rmagic .rmcontent .rminput input[type="email"],
+.rmagic .rmcontent .rminput input[type="url"],
+.rmagic .rmcontent .rminput input[type=number],
+.rmagic .rmcontent .rminput textarea, 
+.rmagic .rmcontent .rminput select{ 
+    width:100%;
+}
+
+.rmagic .rmrow .rminput select{color: inherit;}
+
+.rmagic ul.rmradio {margin: 0px;
+    padding: 0px;}
+
+.rmagic .rm_actions a {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.rmagic .rm_actions a:hover {
+    cursor: pointer;
+}
+
+
+/*----rmagic Hover Effects----*/
+
+
+.rmagic input[type=text]:focus, .rmagic textarea:focus, .rmagic select:focus, .rmagic input[type=password]  {
+    outline: inherit;
+    
+}
+
+/*------------Adjustments for smaller screens-----------------*/
+
+@media screen and (max-width: 700px) {
+    .rmfield, .rminput {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    }
+    
+    .rmrow {
+        min-height: 30px;
+    }
+    
+    
+    
+    .rmagic .rmradio .rm-radio-option {
+        width: 50%;
+        padding: 0 0 5px 10px;
+    }
+    
+
+    .rmagic {
+        margin: auto;
+    }
+    
+}
+    
+/*----Terms and Conditions---*/
+div.rm_terms_checkbox {float: left;}
+div#rm_terms_textarea_without_scroll {display: inline-block; float: left; margin-left: 5px;}
+
+
+div#rm_add_repeatable_field.rm_actions {cursor: pointer;}
+sup.required {color: red;}
+
+.rmagic input.rm-form-field-invalid-msg {border-color: red; outline-color: red;}
+.rmagic input.rm-form-field-invalid-msg:focus {outline-color: red;}
+
+
+/*----Error Notifications----*/
+
+.rmagic input.rm-form-field-invalid-msg {border-color: red; outline-color: red;}
+.rmagic input.rm-form-field-invalid-msg:focus {outline-color: red;}
+
+label.rm-form-field-invalid-msg {
+    padding: 3px 8px;
+    display: inline-block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: 0.8em;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    animation: rm-warning 1s ease-out 1;
+    -webkit-animation: rm-warning 1s ease-out 1;
+    -moz-animation: rm-warning 1s ease-out 1;
+    -o-animation: rm-warning 1s ease-out 1;
+    float:left;
+}
+
+label.rm-form-field-invalid-msg::before{content: "\2191\00a0"; font-size: 14px;}
+
+@keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-webkit-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-moz-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-o-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+.rmagic .alert-error {  
+    background-color: #d2f3bf;
+    color: #6faf49;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid #6faf49;
+}
+
+.rmagic .alert-error ul {margin: 0px; list-style: none;}
+.rmagic .alert-error > a {display: inline-block; float: right; box-shadow: 0px !important; color: #6faf49; text-align: center; font-size: 20px;}
+
+
+/*----Terms and Conditions---*/
+div.rm_terms_checkbox {float: left;}
+div#rm_terms_textarea_without_scroll {display: inline-block; float: left; margin-left: 5px;}
+
+.regmagic_embed body { background-color: transparent !important;}
+
+.rmagic .buttonarea input[disabled] { float:left;}
+
+/* ----------------20-07-2016----------------- */
+
+.rmagic .rminput .rm_field_type_repeatable_container .appendable_options .rm_actions a {    margin-bottom: 6px;}
+
+/*----Help Text on fields. Invocations on ../js/script_rm_front.js line no 200----*/
+
+.rmagic .rmnote {
+   margin-left: 250px;
+}
+
+.rm-floating-page .rm-floating-page-content .rmagic { float: none; width: 97%; margin: 0px auto;}
+
+
+/*Price Field Quantity*/
+
+.rmagic .rm_pricefield_checkbox .rmrow,
+.rmagic .rm_pricefield_row .rmrow {padding-left: 0px;}
+
+.rmagic .rm_pricefield_checkbox .rmrow sup,
+.rmagic .rm_pricefield_row .rmrow sup { display: none;}
+
+.rmagic .rm_pricefield_checkbox .rmrow .rmfield,
+.rmagic .rm_pricefield_row .rmrow .rmfield { width: 25px; padding-left: 0}
+
+.rmagic .rm_pricefield_checkbox .rmrow .rminput,
+.rmagic .rm_pricefield_row .rmrow .rminput { max-width: 80px; padding-left: 0px;}

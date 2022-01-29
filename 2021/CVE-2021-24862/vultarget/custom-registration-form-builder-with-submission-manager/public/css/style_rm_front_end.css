@@ -1,0 +1,2878 @@
+/*
+ * This File contains the css for fornt end pages of the plugin like submissions
+ *
+ * NOTE: This File is not a theme/css file for Front End User Created Forms.
+ */
+
+
+/*---------Common Elements---------------*/
+
+.rmagic * {
+    box-sizing: border-box;
+}
+
+.rmagic .rmrow li {
+    list-style: none;
+    margin: 0 0 5px 0;
+}
+
+.rmagic .rmrow li input[type=radio],
+.rmagic .rmrow li input[type=checkbox] {
+    margin-right: 10px;
+    width:auto;
+}
+
+.rmagic .rmrow li input[type=radio] {   
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+    appearance: radio;
+}
+
+.rmagic .rmrow li input[type=checkbox] {   
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+}
+
+/*----header----*/
+
+.rmagic .operationsbar {
+    display: block;
+    width: 30%;
+    float: left;
+    padding: 10px;
+}
+
+.rm_spacing {
+    margin-top: 100px;
+    clear: both;
+    width: 100%;
+    float: left;
+}
+
+.rm_divider {
+    width: 100%;
+    size: 8px;
+    clear: both;
+    float: left;
+}
+
+.rmagic .rmtitle {
+    display: block;
+    float: left;
+    padding: 0px 0px 25px 5px;
+    width: 100%;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.rmagic .rmsubtitle {
+    display: block;
+    float: left;
+    padding: 0px 0px 25px 5px;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.operationsbar .nav {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.operationsbar .nav ul {
+    font-size: 14px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+
+.operationsbar .nav ul li,
+.operationsbar .nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.2s;
+    display: block;
+    background-color: #fbfbfb;
+}
+
+.operationsbar .nav ul li.rm-form-toggle {
+    background: #fdf99f;
+    color: #e6a719;
+}
+
+.operationsbar .nav ul li.rm-form-toggle:hover {
+    background: #fdf99f;
+    color: #c38a09;
+}
+
+.operationsbar .nav ul li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.operationsbar .nav ul li:nth-last-child(1) {
+    border-bottom: none
+}
+
+.operationsbar .nav ul li:hover,
+.operationsbar .nav ul li:hover a,
+.operationsbar .nav ul li a:hover,
+.operationsbar .nav ul li.ui-state-active,
+.operationsbar .nav ul li.ui-state-active a {
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.rmagic ul li.rm-form-toggle {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 0px;
+    display: block;
+}
+
+.rmagic li.rm-form-toggle select {
+    background-color: rgb(253, 253, 253);
+    border: 1px solid rgb(240, 240, 240);
+    color: rgb(150, 150, 150);
+    margin-left: 10px;
+}
+
+
+/* Map Field CSS */
+
+.rmagic .map {
+    height: 300px;
+    width: 100%;
+}
+
+.rmagic .rm-map-controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.rmagic .rm_map_autocomplete {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.rmagic .rm_map_autocomplete:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+}
+
+#type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+/* Map Field css ends here */
+
+
+/*------------Adjustments for smaller screens-----------------*/
+
+@media screen and (max-width: 700px) {
+    table {
+        display: block;
+        overflow: auto;
+    }
+}
+
+
+/*table style*/
+
+.rmagic-table {
+    display: block;
+    width: 70%;
+    float: left;
+    padding: 10px;
+}
+
+.rmagic tr:nth-child(odd) {
+    background-color: rgb(250, 250, 250);
+}
+
+.rmagic table.rm-table,
+.rmagic table.rm-table td,
+.rmagic table.rm-table th {
+    text-align: center;
+}
+
+.rmagic table.rm-table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+}
+
+.rmagic table.rm-table th {
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 8px;
+    background-color: rgb(240, 240, 240);
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px dotted silver;
+}
+
+tr {
+    transition: 0.3s;
+}
+
+.rmagic th.table-header {
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: rgb(253, 253, 253);
+}
+
+.rm-user-details-card .rm-user-image {
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+/*-- User Area responsive---*/
+
+.rmagic .rm-user-details-card.rm-narrow-card .rm-user-card {
+    height: auto;
+    overflow: visible;
+    text-align: center
+}
+
+.rmagic .rm-user-details-card.rm-narrow-card .rm-user-card img {
+    float: none;
+}
+
+.rmagic .rm-user-details-card.rm-narrow-card .rm-user-card .rm-user-name-submission {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Tooltip container */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    font-family: Arial, sans-serif;
+    width: 220px;
+    font-size: 14px;
+    background-color: azure;
+    opacity: 1;
+    color: #5e7071;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    border-left: 1px solid #7adfe3;
+    border-top: 1px solid #7adfe3;
+    border-bottom: 3px solid #7adfe3;
+    border-right: 3px solid #7adfe3;
+    z-index: 1;
+}
+
+.tooltip a {
+    display: block;
+    text-align: center;
+}
+
+.tooltiptext a::before {
+    content: "»";
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* The animation code */
+
+@keyframes textfade {
+    from {
+        color: transparent
+    }
+    to {
+        color: #6db5b6
+    }
+}
+
+.rmagic-table {
+    display: block;
+}
+
+.rmagic table.rm-table img {
+    width: 25px;
+    height: 25px;
+}
+
+
+/*------Paginations-------*/
+
+.rmagic ul.rmpagination {
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px;
+    ;
+    margin: 0;
+    float: right;
+}
+
+.rmagic ul.rmpagination li {
+    display: inline;
+}
+
+.rmagic ul.rmpagination li a {
+    color: black;
+    float: left;
+    padding: 6px 14px;
+    text-decoration: none;
+    background-color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.rmagic ul.rmpagination li a.active {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+
+/*----User Page----*/
+
+.rm-user-details-card {
+    display: block;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+    font-weight: 200;
+    padding-top: 0px;
+    width: 100%;
+}
+
+.rm-user-image-container {
+    width: 100%;
+    text-align: center;
+}
+
+.rm-user-image-container .rm-user-image img {
+    max-width: 150px;
+    padding: 5px;
+}
+
+.rm-user-fields-container {
+    width: 100%;
+    padding: 50px 10px 20px 20px;
+}
+
+.rm-user-field-row {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.rm-user-field-label {
+    display: inline-block;
+    width: 40%;
+    float: left;
+    font-weight: bold;
+    text-align: left;
+}
+
+.rm-user-field-value {
+    display: inline-block;
+    width: 60%;
+    float: left;
+    text-align: left;
+}
+
+.rm-user-field-label {
+    text-transform: capitalize;
+}
+
+.rm-user-name,
+.rm-user-image {
+    font-size: 120%;
+    width: 100%;
+    display: block;
+    float: left;
+    padding: 5px;
+    color: #333333;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+}
+
+img.rm-user {
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid rgb(225, 225, 225);
+}
+
+
+/*----Submission Page----*/
+
+.rmagic .rm-submission {
+    margin-top: 25px;
+}
+
+.rm-submission-field-row {
+    border-bottom: 1px dotted rgb(240, 240, 240);
+}
+
+.rmagic .rm-submission,
+.rm-submission-field-row {
+    display: block;
+    background-color: #fffffe;
+    float: left;
+    width: 70%;
+    padding: 15px;
+    text-align: left;
+}
+
+.rmagic .rm-submission.rm-tab-content {
+    background-color: transparent;
+}
+
+.rmagic .rm-submission-label,
+.rm-submission-value {
+    display: inline-block;
+    float: left;
+}
+
+.rmagic .rm-submission-label {
+    font-weight: bold;
+    width: 40%;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.rmagic .rm-submission-value {
+    width: 60%;
+}
+
+.rmagic .rm-submission-field-row .rm-submission-attachment {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+    border: 2px dashed rgb(240, 240, 240);
+    width: 120px;
+    margin: 0 10px 10px 0;
+}
+
+.rmagic .rm-submission-field-row .rm-submission-attachment img {
+    float: left;
+    display: block;
+    width: 100px;
+    max-height: 100px;
+    height: auto;
+}
+
+.rmagic .rm-submission-attachment-field {
+    display: block;
+    float: left;
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+    padding: 5px 0 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.rmagic .rm-submission-note {
+    border-left: 4px solid red;
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    float: left;
+    background: #fffffe;
+}
+
+.rmagic .rm-submission-note-text {
+    background-image: url(rm-submission-note.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    display: block;
+    width: 100%;
+    float: left;
+    font-style: italic;
+}
+
+.rmagic .rm-submission-note-attribute {
+    font-size: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: right;
+    color: rgb(175, 175, 175);
+}
+
+.rm-submission#rm_my_details_tab {}
+
+.rmagic .rm-submission-note-attribute a {
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.rm_user_exists_alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.rmagic .rmcontent form fieldset {
+    border: 0px solid #000;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+}
+
+.rmagic .rmcontent .rm_input_fields_container {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+}
+
+.rm_exp_link_msg { 
+    float: left;
+    width: 100%;
+}
+
+/*------------Adjustments for smaller screens-----------------*/
+
+@media screen and (max-width: 700px) {
+    .rmagic .rm-submission-label,
+    .rmagic .rm-submission-value {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 120%;
+    }
+    .operationsbar .nav ul li,
+    .operationsbar .nav ul li a {
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+    }
+}
+
+.rmagic .childfieldsrow {
+    width: 94%;
+    display: block;
+    float: left;
+    padding: 20px 0 0 0;
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    border-color: #94cdc9;
+    margin: 0 4% 2% 4%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.rmagic.rm_tabbing_container .rm-submission {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.rmagic.rm_tabbing_container ul.ui-tabs-nav li a {
+    box-shadow: 0 0px 0 0 currentColor;
+}
+
+.rm_forgot_pass {
+    margin-top: 3px;
+    float: left;
+}
+
+.rmagic .rm_expiry_stat_container {
+    padding: 10px;
+    width: 100%;
+    font-size: 150%;
+    text-align: center;
+}
+
+.rmagic .rm_expiry_stat_container .rm-formcard-expired .rm_pb_container {
+    display: block;
+    border: 2px solid #FFAE00;
+    float: left;
+    height: 20px;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5px;
+}
+
+.rmagic .rm_expiry_stat_container .rm-formcard-expired {
+    width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.rmagic .rm_expiry_stat_container .rm-formcard-expired .rm_pb_container .rm_progress_bar {
+    display: block;
+    float: left;
+    background-color: #FFDD00;
+    height: 16px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFDD00), color-stop(1, #FFAE00));
+    background-image: -o-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%);
+    background-image: -moz-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%);
+    background-image: -webkit-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%);
+    background-image: -ms-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%) \9;
+    background-image: linear-gradient(to bottom, #FFDD00 10%, #FFAE00 60%);
+}
+
+.rmagic.rm_tabbing_container .rmagic-table table.rm-table {
+    border: 0px;
+}
+
+.rmagic.rm_tabbing_container .rmagic-table table.rm-table th,
+.rmagic.rm_tabbing_container .rmagic-table table.rm-table td {
+    border: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+.rmagic.rm_tabbing_container .rmagic-table table.rm-table td {
+    border-bottom: 1px dotted silver;
+}
+
+
+.operationsbar .nav ul li.ui-state-active {
+    background-color: #FFF;
+}
+
+.rmagic.rm_tabbing_container ul.ui-tabs-nav li a {
+    border-bottom: 0px solid #333;
+    outline: 0px;
+    color: #000;
+}
+
+.rmagic .rm_expiry_stat_container .rm-formcard-expired .rm_sandclock {}
+
+
+/* Google Address Fields*/
+
+.rmagic #address input {}
+
+#address .rm_ad_container .slimField {
+    float: left;
+    width: 16%;
+    margin-right: 5px;
+    margin-top: 0px
+}
+
+#address .rm_ad_container .wideField.rm-alone {
+    width: 78%;
+    float: right;
+}
+
+#address .rm_ad_container .slimField input {
+    width: 87%;
+    float: right;
+}
+
+#address .rm_ad_container .wideField input {
+    width: 100%;
+}
+
+#address .rm_ad_container .wideField.rm-semi-field {
+    width: 62%;
+    float: right;
+}
+
+#address .rm_ad_container .wideField.rm-semi-field-with-label {
+    width: 48%;
+    float: right;
+}
+
+.rm_ad_container .label {
+    float: left;
+    width: 20%;
+    text-align: right;
+    color: gray;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    font-size: 0.8em;
+}
+
+.rm_ad_container .label.label-short {
+    width: 14%;
+}
+
+.rm_ad_container {
+    width: 100%;
+    float: left;
+}
+
+#address {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.rmagic input.rmgoogleautocompleteapi {
+    width: 100%;
+}
+
+.rmagic .rminput #locationField {
+    margin-bottom: 12px;
+}
+
+
+/*---- Adddress Field Responsive ------*/
+
+@media only screen and (max-width:479px) {
+    .rmagic #address .rm_ad_container .label {
+        width: 100%;
+        text-align: left;
+    }
+    .rmagic #address .rm_ad_container .slimField {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .rmagic #address .rm_ad_container .slimField input {
+        width: 100%;
+    }
+    .rmagic #address .rm_ad_container .wideField.rm-semi-field {
+        width: 100%;
+    }
+    .rmagic #address .rm_ad_container .wideField.rm-alone {
+        width: 100%;
+    }
+    .rmagic #address .rm_ad_container .wideField.rm-semi-field-with-label {
+        width: 100%;
+    }
+}
+
+
+/* ---------- Floating Button */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+.rm_hidden {
+    display: none;
+}
+
+.floating_page .rm_floating_action {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-indent: -99999px;
+    box-shadow: none;
+    float: left;
+    background-color: #008d7d;
+}
+
+.floating_page .rm_floating_action span {
+    background: url('../../images/floating-form-icon.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    overflow: hidden;
+    height: 100px;
+    float: left;
+    background-position: 20% 15%;
+}
+
+.floating_page .rm_floating_box.rm_hidden {
+    position: absolute;
+    bottom: 116px;
+    max-width: 300px;
+    right: 26px;
+    width: 154px;
+}
+
+.floating_page .rm_floating_box.rm_hidden ul li {
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    list-style: none;
+    padding-left: 10px;
+    border-left: 2px solid #fff;
+    color: #000;
+    cursor: pointer
+}
+
+.floating_page .rm_floating_box.rm_hidden ul li:hover {
+    background-color: #fafafa;
+    color: #008d7c;
+    border-left: 2px solid #008d7c;
+}
+
+.floating_page {
+    position: fixed;
+    right: 10px;
+    z-index: 9999;
+    bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.floating_page .rm_floating_box.rm_hidden ul {
+    margin: 0px;
+    padding: 12px 0px 12px 0px;
+}
+
+.floating_page .rm_floating_box.rm_hidden {
+    background: #fff;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+}
+
+.floating_page .rm_floating_box.rm_hidden:after {
+    top: 97%;
+    left: 96%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.floating_page .rm_floating_box.rm_hidden:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 40px;
+    margin-left: -34px;
+    border-right: 0px;
+}
+
+.floating_page .rm_floating_screens .rm_floating_screen {
+    z-index: 9999;
+    position: fixed;
+    height: 100%;
+    width: 368px;
+    bottom: 0;
+    right: 0;
+}
+
+.floating_page .rm_floating_screens .rm_floating_screen {}
+
+.floating_page .rm_floating_screens .rm_floating_screen {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .20);
+}
+
+.floating_page .rm_floating_screens .rm_floating_screen .rm_close_screen {
+    width: 100%;
+    height: 50px;
+    background-color: #f0f0f0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .12);
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.floating_page input[type="text"],
+.floating_page input[type="email"],
+.floating_page input[type="url"],
+.floating_page input[type="password"],
+.floating_page input[type="search"],
+.floating_page textarea {
+    background-color: #f0f0f0;
+}
+
+.floating_page .close-floating-icon {
+    background-image: url(../../images/float-close-icon.png);
+    background-repeat: no-repeat;
+    float: right;
+    text-indent: -99999px;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    margin-top: 16px;
+    opacity: .4;
+    cursor: pointer;
+}
+
+.floating_page .close-floating-icon:hover {
+    opacity: 1;
+    transition: opacity .2s linear;
+}
+
+.floating_page .floating-bottom-buttons {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    height: 85px;
+    border-top: 1px solid #c8c8c8;
+    padding-top: 25px;
+}
+
+.floating_page .floating-bottom-buttons .floating-login {
+    display: inline-block;
+    color: #fff;
+    border: none;
+    background: #ff6c6c;
+    transition: .1s;
+    border-radius: 4px;
+    outline: 0;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 5px 14px 5px 15px;
+}
+
+.floating_page .floating-bottom-buttons .cancel-button {
+    font-family: Roboto, Arial, serif;
+    display: inline-block;
+    color: #c8c8c8;
+    margin-right: 20px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.floating_page .floating-bottom-buttons .cancel-button a {
+    color: #ff6c6c;
+}
+
+.floating_page .rm_floating_content {
+    padding: 10px;
+    width: 100%;
+    float: left;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.rm_embedeed_form {
+    background-color: #fefefe;
+    float: left;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rm_embedeed_form .rmagic .rmcontent .rminput input[type="text"],
+.rm_embedeed_form .rmagic .rmcontent .rminput input[type="password"],
+.rm_embedeed_form .rmagic .rmcontent .rminput input[type="email"],
+.rm_embedeed_form .rmagic .rmcontent .rminput input[type=number],
+.rm_embedeed_form textarea,
+.rm_embedeed_form .rmagic .rmcontent .rminput select {
+    background-color: #f0f0f0;
+}
+
+.rm_embedeed_form {
+    font-family: 'Roboto', sans-serif;
+}
+
+.floating_page .rm_floating_content .rm_user_gravatar {
+    text-align: Center;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.floating_page .rm_floating_content .rm_user_gravatar img {
+    width: 150px;
+    height: 150px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+}
+
+.floating_page .rm_floating_content .rm_custom_fields .rm_custom_field {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    width: 100%;
+    float: left;
+    color: #7b7b7b;
+    font-weight: 300;
+}
+
+.floating_page .rm_floating_content .rm_custom_fields .rm_custom_field .rm_custom_field_label {
+    width: 50%;
+    float: left;
+}
+
+.floating_page .rm_floating_content .rm_custom_fields .rm_custom_field .rm_custom_field_value {
+    width: 50%;
+    float: left;
+}
+
+.floating_page .rm_floating_content #rm_otp_login input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+}
+
+.floating_page .floating-bottom-buttons a {
+    text-decoration: none;
+}
+
+.floating_page .close-floating-page-title {
+    width: 88%;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    color: #646464;
+    padding-top: 8px;
+}
+
+.nspLinks .nspLinkScroll1 div ul {
+    padding: 0 !important;
+    list-style-type: none !important;
+    padding-top: 11px !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+
+.rm-table.rm-floating-submissions .rm-floating-submission {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    max-width: 292px;
+    width: 100%;
+    margin: 0px 5%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    float: left;
+}
+
+.floating_page .rm-floating-submission-form-name {
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #646464;
+    line-height: 36px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.rm-floating-submission-form-date {
+    float: left;
+    width: 88%;
+    font-size: 12px;
+    color: #969696;
+    margin-bottom: 20px;
+}
+
+.rm-floating-submission-form-download {
+    float: left;
+    width: 20px;
+}
+
+.rm-floating-submission-form-status {
+    float: left;
+    font-size: 12px;
+    width: 28%;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 24px;
+}
+
+.rm-floating-submission-form-status.pending {
+    background-color: #ffa500;
+}
+
+.rm-floating-submission-form-status.succeeded {
+    background-color: #24b046;
+}
+
+.rm-floating-submission-form-amount {
+    width: 24px;
+    height: 24px;
+    float: left;
+    color: #c8c8c8;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.rm-floating-submission-form-content.rm-payment-from-main {
+    width: 95%
+}
+
+.rm-floating-submission-form-date.rm-payment-from {
+    width: 70%;
+}
+
+.rm-floating-submission-form-status.completed {
+    background-color: #24b046;
+}
+
+.rm-floating-submission-form-icon {
+    background-image: url(../../images/rm-floating-date-icon.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+
+.rm-floating-submission-form-date .date span {
+    float: left;
+    width: 100%;
+    font-weight: 700;
+    color: #646464;
+}
+
+.rm-floating-submission-form-date .date {
+    float: left;
+    width: 80%;
+    padding-left: 12px;
+}
+
+.rm-floating-submission-form-content {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 12px;
+}
+
+.floating_page .rm_floating_content .rm_custom_fields {
+    margin-top: 12px
+}
+
+.floating_page .rm_f_notifications .rm_f_success {}
+
+.rm-floating-submission-form-download img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.floating_page .rm_floating_content .rm_custom_fields .rm_custom_field:nth-child(even) {
+    background-color: #fbfbfb;
+    padding-left: 8px;
+}
+
+.floating_page .rm_floating_content .rm_custom_fields .rm_custom_field:nth-child(odd) {
+    background-color: #fff;
+    padding-left: 8px;
+}
+
+.rm-no-default-from-notification {
+    text-align: center;
+}
+
+@-webkit-keyframes floating_screens {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes floating_screens {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes floating_screens {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes floating_screens {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.rm_floating_screenshhh {
+    -webkit-animation: floating_screens 5s infinite;
+    /* Safari 4+ */
+    -moz-animation: floating_screens 5s infinite;
+    /* Fx 5+ */
+    -o-animation: floating_screens 5s infinite;
+    /* Opera 12+ */
+    animation: floating_screens 5s infinite;
+    /* IE 10+, Fx 29+ */
+}
+
+
+/*----Form Access----*/
+
+select#id_rm_fac_day,
+select#id_rm_fac_month,
+input#id_rm_fac_year {
+    width: 20%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #e1e1e1;
+    background-color: #fafafa;
+    padding: 8px;
+    margin-right: 1%;
+    color: #646464;
+    font-family: inherit;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+}
+
+.rm-fac-dob {
+    margin: 20px 10%;
+}
+
+form#rm-fac {
+    text-align: center;
+    margin: auto;
+}
+
+
+/*-----Field Icons----*/
+
+i.rm_front_field_icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+/*----Help Text on fields. Invocations on ../js/script_rm_front.js line no 200----*/
+
+.rmagic .rmnote {
+    z-index: 9999999;
+    display: none;
+    position: absolute !important;
+    padding: 10px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 1em;
+    color: initial;
+    font-weight: normal;
+    color: #fff;
+    top: 12px;
+    line-height: 22px;
+    box-shadow: 2px 2px 2px 0px rgba(150, 150, 150, 0.4);
+}
+
+.rmnote .rmprenote {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgb(255, 202, 119);
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.rmagic .rmrow {
+    position: relative !important;
+}
+
+.rmcontent form.rmagic-form fieldset.rmfieldset legend {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.rm-floating-page .rm-floating-page-content .rmagic {
+    float: none;
+    width: 97%;
+    margin: 0px auto;
+}
+
+.rmagic.rm_theme_matchmytheme.rm_layout_label_left .rmrow .rm-link-field { 
+    text-align: center;
+}
+
+.rmagic #rm_reset_pass_form .buttonarea {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+#rm_my_pay_tab .rm-table th {
+    padding: 10px 0px;
+}
+
+#rm_edit_sub_link {
+    clear: both;
+}
+
+pre.rm-pre-wrapper-for-script-tags {
+    display: none !important;
+}
+
+
+/* Make optin texts for Mailchimp etc to take up full row width*/
+
+.rmagic .rm_optin_text .rmrow,
+.rmagic .rm_optin_text .rminput,
+.rmagic .rm_optin_text .rmradio {
+    width: 100%;
+}
+
+
+/* full width recaptcha row */
+
+.rmagic .rmrow.rm_captcha_fieldrow,
+.rmagic .rmrow.rm_captcha_fieldrow * {
+    width: 100%;
+}
+
+.rmagic .rmrow.rm_captcha_fieldrow .g-recaptcha > div { 
+    margin: 0px auto
+}
+
+
+/*---Login third party button---*/
+
+.rmagic .rm-thirdp-login-button-wrap {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.rmagic .rm-thirdp-login-button-wrap .rm-facebook-login .rm-third-party-login-btn {
+    background-color: #3b5998;
+}
+
+.rmagic .rm-thirdp-login-button-wrap .rm-third-party-login-btn {
+    margin: 5px;
+}
+
+
+/*--Form Fixes-- */
+
+.rmagic .rmagic-form .rm_terms_checkbox input[type="checkbox"] {
+    margin-right: 6px;
+    width: auto;
+}
+
+#ui-datepicker-div.ui-datepicker select.ui-datepicker-month,
+#ui-datepicker-div.ui-datepicker select.ui-datepicker-year {
+    float: left;
+    margin-right: 3px;
+    background-image: none;
+    border: 0px;
+    height: auto;
+    padding: 0px;
+}
+
+.rmagic .rmradio {
+    padding: 0px;
+}
+
+.rmagic .rmmap_container input.rm-map-controls {
+    width: auto !important;
+}
+
+.rmagic.rm_theme_classic form.rmagic-form {
+    background-color: transparent !important;
+}
+
+.rmagic .rmrow .rminput ul li::before {
+    display: none;
+}
+
+.rmagic .rminput .rmradio {
+    margin: 0px;
+    display: inline-block;
+}
+
+.rmagic .rminput .rmradio li {     
+    list-style: none;
+}
+
+.rmagic .rmrow .rminput .rateit {
+    width: 100%;
+}
+
+.rmagic .rmrow .rminput > div {
+    width: 100%;
+    float: left;
+}
+
+.rmagic .rmrow .rminput select {
+    background-color: transparent;
+    border: 1px solid #e1e1e1;
+    border: 1px solid rgba(150, 150, 150, 0.4);
+    min-width: 50%;
+    width:100%;
+    font-size: 1em;
+    min-height: 36px;
+    line-height: 16px;
+}
+
+.rmagic .rmrow .rminput select[multiple=multiple] {
+    padding: 10px;
+    min-height: 100px;
+    overflow: auto;
+}
+
+.rmagic .rmrow .rminput textarea {
+    resize: vertical !important;
+}
+
+.rmagic .rmrow .rminput > div.form-group { margin: 0px;}
+
+.rmagic .rmrow .rminput input[type="text"],
+.rmagic .rmrow .rminput input[type="password"],
+.rmagic .rmrow .rminput input[type="email"],
+.rmagic .rmrow .rminput input[type="url"],
+.rmagic .rmrow .rminput input[type="number"],
+.rmagic .rmrow .rminput textarea {
+    width: 100%;
+    min-height: 36px;
+    font-size: 1em;
+   /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);*/
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .rmagic .rmrow .rminput input[type="text"],
+    .rmagic .rmrow .rminput input[type="password"],
+    .rmagic .rmrow .rminput input[type="email"],
+    .rmagic .rmrow .rminput input[type="url"],
+    .rmagic .rmrow .rminput input[type="number"],
+    .rmagic .rmrow .rminput textarea,
+    .rmagic .rmrow .rminput select {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .rmagic .rmnote {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:479px) {}
+
+.rmagic .rmrow .rminput input[type="number"] {
+    font-size: 1em;
+    padding-left: 1em;
+}
+
+.rmagic .rmrow .rminput textarea.rm_terms_area {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8em;
+    min-height: 100px;
+}
+
+.rmagic .rmrow .rminput .appendable_options >input {
+    display: block;
+}
+
+.rmagic .rmrow .rminput .appendable_options .rm_actions {
+    display: inline-block;
+    text-align: left;
+    margin: 5px 20px 10px 0;
+    cursor: pointer;
+}
+
+.rmagic .rmrow .rminput .appendable_options .rm_actions a {
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
+
+/*Styling the date picker calendar*/
+
+.ui-datepicker.ui-widget.ui-widget-content {
+    border: none;
+    box-shadow: 0 0 0 1px rgba(14, 41, 57, .12), 0 2px 5px rgba(14, 41, 57, .44), inset 0 -1px 2px rgba(14, 41, 57, .15);
+    padding: 10px;
+    font-family: Roboto, Helvetica, serif;
+    border-radius: 0;
+    max-width: 400px;
+}
+
+.ui-datepicker.ui-widget.ui-widget-content.rm_jqui_element {  
+    z-index: 99999 !important
+}
+
+.ui-datepicker-header.ui-widget-header {
+    background-image: none;
+    background-color: #e1e1e1;
+    border: none;
+    padding: 10px 0 !important;
+    border-radius: 0;
+}
+
+.ui-widget-content .ui-state-default {
+    border-color: #fff !important;
+    background-image: none !important;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.rm_jqui_element .ui-state-active,
+.rm_jqui_element .ui-widget-content .ui-state-active {
+    background-color: cornflowerblue!important;
+    color: #fff !important;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar th {
+    font-weight: lighter;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar th,
+#ui-datepicker-div .ui-datepicker-calendar td {
+    width: 14.28%;
+}
+
+.rm_jqui_element .ui-state-highlight,
+.rm_jqui_element .ui-widget-content .ui-state-highlight {
+    background-color: aliceblue !important;
+}
+
+#rm-data-clear-picker {
+    cursor: pointer;
+}
+
+.rmagic .rm-field-hint {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+
+/*Total Price Field and buttons at the bottom*/
+
+.rmagic .rm_total_price {
+    text-align: center;
+    font-size: larger;
+    line-height: 60px;
+    background-color: rgba(150, 150, 150, 0.1);
+    margin: 10px 0;
+}
+
+.rmagic .buttonarea {
+    width: 100%;
+    display: block;
+    float: left;
+    margin: 50px 0 10px 0;;
+}
+
+.rmagic .rmcontent.rm-login-wrapper .buttonarea {
+    margin: 8px 0px;
+    text-align: center;
+}
+
+.rmagic .rm-thirdp-login-button-wrap .rm-third-party-login {
+    display: inline-table;
+    position: relative;
+}
+
+.rmagic .rm-thirdp-login-button-wrap .rm-third-party-login .rm-third-party-login-btn {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 4px;
+    line-height: 26px;
+    font-family: arial;
+    width: 286px;
+    text-align: left;
+    color: #fff;
+    padding: 12px 2px 12px 50px;
+    border: 0px;
+    box-shadow: none;
+    background-image: none;
+    height: auto;
+    margin: 0px 5px 10px 5px;
+}
+
+.rmagic .rm-thirdp-login-button-wrap .rm-third-party-login span {
+    position: absolute;
+    left: 26px;
+    top: 0px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 8px;
+    line-height: 34px;
+}
+
+.rmagic .rm-thirdp-login-button-wrap .rm-third-party-login svg {  
+    width: 22px;
+    margin: 3px 0px 0px -3px;
+    height: 26px;
+}
+
+.rmagic .rmcontent.rm-login-wrapper .rm_forgot_pass {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.rmagic .rmagic-form.rmagic-form-btn-left .buttonarea {
+    text-align: left
+}
+
+.rmagic .rmagic-form.rmagic-form-btn-center .buttonarea {
+    text-align: center
+}
+
+.rmagic .rmagic-form.rmagic-form-btn-right .buttonarea {
+    text-align: right
+}
+
+.rmagic .buttonarea input[type='button'],
+.rmagic .buttonarea input[type='submit'] {
+    width: auto;
+    min-width: 150px;
+    min-height: 50px !important;
+    float: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+/* Text on top of the form*/
+
+.rmagic .rmheader {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+/*Success Message*/
+
+.rm-post-sub-msg {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+
+/* Theme fixes */
+
+.rmagic .rmrow .rminput ul li label {
+    display: inline-block;
+}
+
+.rmagic .rmrow .rminput ul li label img { 
+    margin-bottom: 0px;
+}
+
+.rmagic .rmrow .rmfield label {
+    font-weight: 600;
+    width: auto;
+}
+
+.rmagic .rm-login-wrapper input[type="checkbox"]:checked + label span {
+    background-image: none;
+    width: auto;
+}
+
+.utouch .rmagic.rm_theme_matchmytheme .rmrow .rminput input[type="text"], 
+.utouch .rmagic.rm_theme_matchmytheme .rmrow .rminput input[type="password"], 
+.utouch .rmagic.rm_theme_matchmytheme .rmrow .rminput input[type="email"], 
+.utouch .rmagic.rm_theme_matchmytheme .rmrow .rminput input[type="url"], 
+.utouch .rmagic.rm_theme_matchmytheme .rmrow .rminput input[type="number"], 
+.utouch .rmagic.rm_theme_matchmytheme .rmrow .rminput textarea {    
+    box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
+}
+
+
+.rmagic .rminput .rmradio li .best-radio {   
+    margin-right: -60px;
+}
+
+.rmagic .rm_pricefield_checkbox .rmradio .rm-pricefield-wrap .best-check {   
+    margin: -2px -64px 7px 11px;
+}
+
+/* --- Rich text widget full width --- */
+
+.rmagic .rminput.rm-richtext-fw { 
+    width: 100%;
+}
+
+/*--- Login Page Third Party Button  ----*/
+
+.rmagic .rmcontent.rm-login-wrapper {
+    width: 95%;
+    margin: 0px auto;
+}
+
+
+/*--- Widget form css----*/
+
+/*--- Widget form css----*/
+
+.widget_rm_form_widget {
+    width: 100%;
+    display: inline-block;
+}
+
+.widget_rm_form_widget .rm_layout_two_columns .rm-two-columns-wrap .rmrow {
+    width: 100%;
+}
+
+.widget_rm_form_widget .rmrow .rminput ul.rmradio li {  
+    background: none;
+    border: 0px;
+    padding: 0px;
+    margin: 0px
+}
+
+.widget_rm_form_widget .rmagic.rm_theme_classic fieldset {}
+
+.widget_rm_form_widget .rmagic .rmrow.rm_captcha_fieldrow .g-recaptcha {
+    transform:scale(0.70); 
+    -webkit-transform:scale(0.70); 
+    transform-origin:0 0; 
+    -webkit-transform-origin:0 0; 
+}
+
+.widget_rm_form_widget .rmagic .rmrow.rm_captcha_fieldrow .g-recaptcha > div { 
+    width: 100% !important; 
+}
+
+.widget_rm_form_widget .rmagic .rmrow .rminput select { 
+    width: 100%;
+}
+
+.widget_rm_form_widget .rmagic .rmrow .rminput input[type="file"] { 
+    width: 100%;
+}
+
+/*--- Widget Address field----*/
+
+.widget_rm_form_widget #address .rm_ad_container .label {
+    width: 100%;
+    text-align: left;
+}
+
+.widget_rm_form_widget #address .rm_ad_container .slimField {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.widget_rm_form_widget #address .rm_ad_container .slimField input {
+    width: 100%;
+}
+
+.widget_rm_form_widget #address .rm_ad_container .wideField.rm-semi-field {
+    width: 100%;
+}
+
+.widget_rm_form_widget #address .rm_ad_container .wideField.rm-alone {
+    width: 100%;
+}
+
+.widget_rm_form_widget #address .rm_ad_container .wideField.rm-semi-field-with-label {
+    width: 100%;
+}
+
+
+/*--- Widget Timer field---*/
+
+.widget_rm_form_widget .rminput .rm_clock.rm-flip-clock-wrapper {
+    margin: 0px !important;
+}
+
+.widget_rm_form_widget .rminput .rm-flip-clock-wrapper ul {
+    width: 36px !important;
+    margin: 5px 2px !important;
+    height: 80px!important;
+}
+
+.widget_rm_form_widget .rminput .rm-flip-clock-wrapper ul li a div div.rm-clock-inner {
+    font-size: 50px;
+}
+
+.widget_rm_form_widget .rminput .rm-flip-clock-wrapper ul li a {
+    height: 82px;
+}
+
+.widget_rm_form_widget .rminput .rm-flip-clock-wrapper ul li { 
+    padding: 0px;
+    margin: 0px; 
+    border: 0px;
+    padding-left: 0px !important;
+    position: absolute !important;
+    overflow: hidden;
+}
+
+.widget_rm_form_widget .rminput  .rm-flip-clock-divider {
+    width: 0px;
+}
+
+
+/*--- Theme issues */
+
+.rmagic.rm_theme_classic .rm_form_field_type_heading {
+    color: inherit;
+}
+
+.rmagic.rm_theme_classic .rm_field_type_repeatable_container a {
+    color: #737373;
+}
+
+.rmagic.rm_theme_classic {
+    color: #8a8a8a;
+    color: rgb(138, 138, 138);
+}
+
+
+/*----- Price Field -----*/
+
+.rmagic .rmrow.rm_pricefield_row .rminput select#id_rm_multisel_paypal_field,
+.rmagic .rmrow.rm_pricefield_row .rminput input[type="text"] {
+    width: 60%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.rmagic .rmrow.rm_pricefield_row .rminput select[id*="id_rm_multisel_paypal_field"] {   
+    width: 60%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.rmagic .rm_pricefield_checkbox .rmradio .rmrow .rminput input[type="number"]{
+    padding: 2px 8px;
+}
+
+.rmagic .rm_pricefield_row .rmrow .rminput input[type="number"]{min-width: 70px;}
+
+.rmagic .rmrow.rm_pricefield_row .rminput .rmrow {
+    width: auto;
+    margin-left: 10px;
+    padding-top: 0px;
+}
+
+.rmagic .rmrow.rm_pricefield_row .rminput .rmrow .rmfield {
+    padding-top: 0px;
+}
+
+.rmagic .rmrow.rm_pricefield_row .rminput .rmrow .rminput {
+    padding-top: 0px;
+}
+
+
+/* ---- Label left full width in widget--- */
+
+.widget_rm_form_widget .rmagic.rm_layout_label_left .rmrow.rm_pricefield_row .rmfield {
+    width: auto;
+}
+
+.widget_rm_form_widget .rmagic.rm_layout_label_left .rmrow.rm_pricefield_checkbox .rmfield {
+    width: auto;
+}
+
+.widget_rm_form_widget .rmagic.rm_layout_label_left .rmrow.rm_pricefield_checkbox .rmrow .rminput {
+    width: 50px;
+}
+
+.widget_rm_form_widget .rmagic.rm_layout_label_left .rmrow .rmfield {
+    width: 100%;
+}
+
+.widget_rm_form_widget .rmagic.rm_layout_label_left .rmrow .rminput {
+    width: 100%;
+}
+
+.rm_noscript_btn {
+    display: none !important
+}
+
+
+/* ---- Help text in widget--- */
+
+.widget_rm_form_widget .rmagic .rmagic-form .rmrow .rmnote {
+    margin-left: 0px;
+}
+
+
+/* --- Custom Address field ---- */
+
+#address.rm_address_type_ca .rm_ad_container .rm-address-fw {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 12px;
+}
+
+#address.rm_address_type_ca .rm_ad_container .rm-address-fw input {
+    width: 100%;
+    margin: 0px;
+}
+
+#address.rm_address_type_ca .rm_ad_container .rm-address-hw {
+    width: 48%;
+    float: left;
+    margin: 0px 2% 12px 0px;
+}
+
+#address.rm_address_type_ca .rm_ad_container .rm-address-hw:last-child{   
+    float: right;
+    margin-right: 0px;
+}
+
+#address.rm_address_type_ca .rm_ad_container .rm-address-hw input,
+#address.rm_address_type_ca .rm_ad_container .rm-address-hw select {
+    width: 100%;
+    white-space: nowrap;
+}
+
+
+/* -- Custom address field with label -- */
+
+.rmagic #address.rm_address_type_ca .rm_ad_container .label {
+    width: 100%;
+    text-align: left;
+}
+
+
+/* --- Google Address field ---- */
+
+#address.rm_address_type_ga .rm_ad_container .rm-address-fw {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 12px;
+    
+}
+
+#address.rm_address_type_ga .rm_ad_container .rm-address-fw input {
+    width: 100%;
+    margin: 0px;
+}
+
+#address.rm_address_type_ga .rm_ad_container .rm-address-hw {
+    width: 48%;
+    float: left;
+    margin: 0px 2% 12px 0px;
+}
+
+#address.rm_address_type_ga .rm_ad_container .rm-address-hw:last-child { 
+    float: right;
+    margin-right: 0px;
+}
+
+#address.rm_address_type_ga .rm_ad_container .rm-address-hw input {
+    width: 100%;
+}
+
+#address.rm_address_type_ga .rm_ad_container .label {
+    width: 100%;
+    text-align: left;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.rm-google-addess-field {
+    font-size: 12px;
+}
+
+.rminput #locationField span,
+.rmwc-input #locationField span {
+    font-size: 12px;
+}
+
+
+/* --- Responsive address field ---*/
+
+@media only screen and (max-width:1200px) {
+    .rmagic #address.rm_address_type_ca .rm_ad_container .rm-address-hw,
+    .rmagic #address.rm_address_type_ga .rm_ad_container .rm-address-hw {
+        width: 47%;
+        margin: 0px 4px 12px 4px;
+    }
+}
+
+@media screen and (max-width: 900px) {}
+
+@media only screen and (max-width:479px) {
+    .rmagic #address.rm_address_type_ga .rm_ad_container .rm-address-hw,
+    .rmagic #address.rm_address_type_ca .rm_ad_container .rm-address-hw {
+        width: 100%;
+    }
+}
+
+
+/* --- Widget address field ---*/
+
+.widget_rm_form_widget .rmagic #address.rm_address_type_ga .rm_ad_container .rm-address-hw,
+.widget_rm_form_widget .rmagic #address.rm_address_type_ca .rm_ad_container .rm-address-hw {
+    width: 100%;
+}
+
+
+/* --- WooCommerce address field ---*/
+
+.rmwc-input #address.rm_address_type_ga .rm_ad_container .rm-address-hw,
+.rmwc-input #address.rm_address_type_ca .rm_ad_container .rm-address-hw {
+    width: 100%;
+}
+
+/*---  Registration Widgets---*/
+
+.rmagic .rmrow .rm-rgfeed,
+.rmwc-field.rmrow .rmwc-input .rm-rgfeed {
+    border: 1px solid #f2f2f2;
+    margin-bottom: -1px;
+    font-size: 13px;
+    padding: 5px 12px;
+    float: left;
+    width: 100%;
+}
+
+.rmagic .rmrow .rm-rgfeed .rm-avatar img,
+.rmwc-field.rmrow .rmwc-input .rm-rgfeed .rm-avatar img {
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    width: 36px;
+    height: 36px;
+}
+
+.rmagic .rmrow .rm-rgfeed .rm-rgfeed-user,
+.rmwc-field.rmrow .rmwc-input .rm-rgfeed .rm-rgfeed-user {
+    font-weight: 700;
+}
+
+.rmagic .rmrow .rm-rgfeed .rm-rgfeed-user-info,
+.rmwc-field.rmrow .rmwc-input .rm-rgfeed .rm-rgfeed-user-info {
+    float: left;
+    padding: 6px 6px 0px 10px;
+    width: 88%;
+    width: calc(100% - 36px);
+}
+
+.rmagic .rmrow .rm-rgfeed .rm-rgfeed-user-info img.rm_country_flag { 
+    width: 16px;
+    height:16px;
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.rmagic .rmrow .rm-rgfeed .rm-avatar,
+.rmwc-field.rmrow .rmwc-input .rm-rgfeed .rm-avatar {
+    float: left;
+    width: 36px;
+    height: 36px;
+}
+
+
+/*--- Widget Map field---*/
+
+.rmagic .rmrow .rm_mapv_container .rm-map-widget {
+    height: 100% !important;
+    padding-bottom: 50%;
+    width: 100%;
+}
+
+.rmagic .rm_mapv_container { 
+    margin: 0px auto;
+    max-width: 100%;
+}
+
+.rmagic .rmrow.rm_mapv_container {
+    max-width: 100%;
+}
+
+.rm_mapv_container.rm_mapvsm {
+    display:block
+}
+
+.rm_mapv_container.rm_mapvlg{
+    display: table-cell
+} 
+
+.widget_rm_form_widget .rm_mapv_container.rm_mapvsm { 
+    width:100% !important;
+}
+
+
+/* --- widget meta data Form ---- */
+
+.rmagic .rmrow .fdata-row {
+    float: left;
+    width: 98%;
+    border: 1px solid #f1f1f1;
+    padding: 10px 2%;
+    font-size: 12px;
+}
+
+.rmagic .rmrow .fdata-row .rm-form-name {
+    margin-top: 10px;
+}
+
+.rmagic .rmrow .fdata-row span {
+    font-weight: 600
+}
+
+
+/* --- widget meta data Form End ---- */
+
+
+/* --- widget Image Form ---- */
+
+.rmagic .rm-image-widget {
+    position: relative;
+    text-align: center;
+    width: auto;
+    margin: 0px auto;
+    display: table;
+}
+
+.rmagic .rm-image-widget a img {
+    margin: 0px auto !important;
+}
+
+.rmagic figure.rm-image-widget.wp-caption { 
+    border: 0px;
+    margin: 0px auto;
+}
+
+.rmagic .rm-image-widget .rm-caption {
+    font-size: 12px;
+    width: auto;
+    float: left;
+    text-align: left;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+    background-color: #000;
+    background-color: rgba(70, 70, 70, 0.85);
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.rmagic .rm-image-widget.imgv_shape_circle img {
+    border-radius: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.rm-image-widget .wp-caption-text {
+    text-align: center
+}
+
+.rmagic .rm-image-widget.imgv_shape_circle .rm-caption {
+    bottom: 25%;
+    left: 30%;
+}
+
+.rm-image-widget .wp-caption-text:empty{display: none;}
+
+.csscalc #TB_window {
+    padding-bottom: 20px;
+}
+
+.csscalc #TB_closeWindowButton {
+    bottom: 4px;
+    top: inherit;
+}
+
+.rmagic .rmrow.rm-box-graph .rm-box-title {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+/*--- Form Data Chart----*/
+
+.rmagic .rmrow.rm-box-graph .rm-box-title {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.rmagic .rmrow.rm-box-graph #rm_sot_div svg * {}
+
+
+/*----- Sidebar widget ------*/
+
+.widget_rm_form_widget .rmrow.rm_mapv_container {
+    width: 100% !important;
+}
+
+.rm-floating-page .rmrow.rm_mapv_container {
+    max-width: 100%;
+}
+
+.rm-floating-page .rmrow.rm-box-graph {
+    max-width: 100%;
+}
+.rm-floating-page .rm-box-graph #rm_sot_div > div > div,
+.rm-floating-page .rm-box-graph #rm_conversion_chart_div > div > div,
+.rm-floating-page .rm-box-graph #rm_browser_usage_chart_div > div > div,
+.rm-floating-page .rm-box-graph #rm_browser_conversion_div > div > div
+{
+    margin: 0px auto;
+}
+
+.rm-floating-page .rm-image-widget {
+    width: 100%;
+    text-align: center
+}
+
+.rmagic .rminput.pass-strength-visible .pass-colorbar{
+     height: 3px;
+     background-image: url(../../images/rmpasswordstrength.jpg);
+     position: absolute;
+     top: 0;
+     left: 0;
+   }
+   
+.rmagic .rminput.pass-strength-visible .pass-graybar{   
+ height: 3px;
+ background-color: #ccc;
+ width: 100%;
+ position: relative;
+ top: -2px;
+}
+
+.rmagic .rminput.pass-strength-visible .pass-text{ 
+     font-size: 12px;
+} 
+
+/*--- Logged in view ----- */
+
+.rm-logged-in-view-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+.rmagic .rm-logged-in-view-wrap {  
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+    display: table;
+    line-height: 1.75;
+}
+
+.rm-logged-in-view-wrap .rm-logged-in-lf{
+    width: 120px;
+    float:left;
+}
+
+.rm-logged-in-view-wrap .rm-logged-in-lf#rm-hide-user_avatar {
+    display: none;
+}
+
+.rm-logged-in-view-wrap .rm-logged-in-lf#rm-hide-user_avatar + .rm-logged-in-rf{
+    width: 100%;
+}
+
+.rm-logged-in-view-wrap .rm-logged-in-lf + .rm-logged-in-rf {
+    width: calc(100% - 153px);
+    margin-left: 30px;
+}
+
+.rm-logged-in-view-wrap .rm-logged-in-rf {   
+    float:left;
+    width: 100%;
+}
+
+.rm_display_custom_msg {    
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.rm-logged-in-view-wrap .rm-logged-in-lf img {
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    width: 120px;
+    height: 120px;
+}
+
+.rm-logged-in-view-wrap .rm-logged-in-rf span.rm-greetings-text {
+    font-size: 20px;
+} 
+
+.rm-logged-in-view-wrap .rm-logged-in-rf span + span { 
+    font-size: 28px;
+    width: 100%;
+    float: left;
+    font-weight: 700;
+}
+
+.rm-logged-in-lf img.avatar {
+    float: left
+}
+
+.rm-logged-in-rf .rm-logged-welcome { 
+    float: left;
+    width: 100%;
+}
+
+.rm-logged-in-account-links {    
+    border-top: 5px solid #efefef;
+    margin-top: 12px;
+    float: left;
+    width: 100%;
+}
+
+
+.rm-logged-in-account-links .rm_display_account {
+    float: left;
+}
+
+
+.rm-logged-in-account-links .rm_display_logout {
+      float: right;
+}
+
+
+.rmagic .rmcontent.rm-login-wrapper .rm-response-message.alert-error,
+.rmagic .rmcontent form#rm_reset_pass_form fieldset .rm-response-message.alert-error{
+    background-color: #F9E4E8;
+    box-shadow: inset 2px 0 0 0 #E04562;
+    -moz-box-shadow: inset 2px 0 0 0 #E04562;
+    -webkit-box-shadow: inset 2px 0 0 0 #E04562;
+    border: 0px;
+    color: #333333;
+    font-family: inherit;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    margin: 0 0 20px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-align: left;
+} 
+
+.rmagic .rmcontent.rm-login-wrapper .rm-response-message.alert-error a.close,
+.rmagic .rmcontent form#rm_reset_pass_form fieldset .rm-response-message.alert-error a.close{
+    color: #E04562;
+    line-height: 20px;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.rmagic .rmcontent.rm-login-wrapper .rm-response-message .rm_inline_forgot_pass {
+    display: inline;
+}
+
+
+/*---- Login Button Widget ----*/
+
+.widget.widget_rm_login_btn_widget {
+    max-width: 400px;
+}
+
+.widget_rm_login_btn_widget {
+    display: inline-block;
+    width: 100%;
+    padding: 25px 0px !important;
+    overflow: visible !important;
+    margin: 0px 0px;
+    float: left;
+    margin-bottom: 0px;
+}
+
+.rm_widget_container {
+    text-align: center;
+    position: relative;
+}
+
+.rm_widget_container #rm_login_widget_front,
+.rm_widget_container #rm-login-widget{
+    position: absolute;
+    height: 140px;
+    z-index: 999;
+    top: 0px;
+    left: -25px;
+    padding-top: 50px; 
+    min-width: 300px;
+    width:100%;
+}
+
+.rm_widget_container #rm_login_widget_front .rmagic,
+.rm_widget_container #rm-login-widget .rmagic {  
+    margin: 0px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.rm_widget_container #rm_login_widget_front .rmagic .rmcontent.rm-login-wrapper,
+.rm_widget_container #rm-login-widget .rmagic .rmcontent.rm-login-wrapper {  
+    border: 0px;
+}
+
+.rm_widget_container #rm-login-widget .rmrow,
+.rm_widget_container #rm-login-widget  .rmagic .buttonarea {
+    background-color: #fff;
+}
+
+.rm_widget_container #rm-login-widget #rm_login_form .rmrow .rmfield label{
+    color: #2b2b2b;
+    font-size: 13px;
+}
+
+.rm_widget_container #rm-login-widget #rm_login_form .rmrow .rminput input {  
+    color: #696565;
+}
+
+.rm_widget_container .rm_login_widget-wrap .rm-login-wrapper .rmrow .rmfield { 
+    width: 100%; 
+    text-align: left;
+     min-height: auto;
+}
+
+.rm_widget_container .rm_login_widget-wrap .rm-login-wrapper .rmrow .rminput { 
+    width:100%;
+    min-height: auto;
+}
+
+.rm_widget_container .rm_login_widget-wrap .rm-login-wrapper .rmrow {
+    width: 100%;  
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+
+ .rm_widget_container .rm_login_widget-wrap .rm-login-wrapper .rmrow .rmfield span {
+    float: left; 
+    margin-bottom: 10px;
+}
+
+.rm_widget_container div a.rm-button {    
+    border: 2px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 5px;
+    padding: 8px 30px;
+    font-size: 15px;
+    font-size: 16px;
+    position: relative;
+    z-index: 99999;
+}
+
+.rm_widget_container .rm-login-widget-wrap a.rm-button{  
+    pointer-events: visible;
+}
+
+.rm_widget_container .rm_login_widget-wrap,
+.rm_widget_container .rm-logged-in-view{
+    float: left;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    color: #2b2b2b;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    padding-top: 12px;
+    min-width: 360px;
+    max-width: 400px;
+    min-height: 46px;
+    border-radius: 3px;
+}
+
+.rm_widget_container .rm_login_widget-wrap > .rm-failed-ip-error {   
+    font-size: 12px;
+    width: 88%;
+    margin: 20px auto;
+    display: inline-block;
+}
+.rm_widget_container .rm-logout-widget:hover #rm_login_widget_front {
+    display: block !important;
+}
+
+.widget_rm_login_btn_widget .rm-logout-widget:hover #rm_login_widget_front { 
+    display: block !important;
+}
+
+.rm_widget_container .rm-logged-in-view-wrap .rm-logged-in-lf img {
+    width: 70px;
+    height: 70px;
+}
+
+
+.rm_widget_container .rm-logged-in-view-wrap {
+    width: 92%;
+    margin: 0px auto;
+    color: #2b2b2b;
+}
+
+.rm_widget_container .rm-logged-in-account-links {
+    border-top: 2px solid #efefef;
+    margin: 0px 0px 4px 0px;
+    padding-top: 10px;
+}
+
+.rm_widget_container .rm-logged-in-rf span + span {
+    font-size: 25px;
+
+}
+
+.rm_widget_container .rm-logged-in-rf .rm-user-last-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.rm_widget_container .rm-logged-in-rf span.rm-greetings-text {
+    font-size: 16px;  
+    width: 100%;
+    float: left;
+}
+
+.rm_widget_container .rm-logged-in-lf {   
+    width: 70px;
+    margin-top: 18px;
+}
+
+.rm_widget_container .rm-logged-in-rf {  
+    float: left;
+    margin: 22px 0px 0px 0px;
+    width: calc(100% - 70px);
+}
+
+#rm_login_widget_front .rm_login_widget_nub,
+#rm-login-widget .rm_login_widget_nub{   
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    z-index: 2;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    top: 48px;
+    left: 50%;
+}
+
+#rm-login-widget .rm_login_widget-close {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    z-index: -1;
+} 
+
+.rmagic .rmcontent.rm-login-wrapper ul.rmradio li.rm-login-remember { 
+    background-image: none;
+    border:0px;
+}
+
+.rmagic .rm-login-attempted-notice {   
+    padding: 15px;
+    font-size: 12px;
+}
+
+.rmagic .rmcontent.rm-login-wrapper .rmrow .rmfield label span i {   
+    margin-bottom: 5px;
+}
+
+/*---- Smaller Widget area ----*/
+
+.widget_rm_login_btn_widget.rm-narrow-widget .rm_login_widget-wrap,
+.widget_rm_login_btn_widget.rm-narrow-widget .rm-logged-in-view{
+    width: 99%;
+    min-width: 99%;
+}
+
+.widget_rm_login_btn_widget.rm-narrow-widget .rm_login_widget-wrap .rmagic, 
+.widget_rm_login_btn_widget.rm-narrow-widget .rm-logged-in-view .rmagic {
+    border:0px
+}
+
+
+/*--- WC shipping and Billing address field----*/
+
+.rmagic .rmrow .rm-wc-wrap {   
+    width: 100%;
+    float: left;
+}
+
+.rmagic .rmrow .rm-wc-hw {    
+    width: 48%;
+    float: left;
+    margin: 0px 2% 12px 0px;
+}
+
+.rmagic .rmrow .rm-wc-label {
+    width: 100%;
+    text-align: left; 
+    float: left;
+    color: gray;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    font-size: 0.8em;
+}
+
+.rmagic .rmrow .rm-wc-fw {    
+    width: 100%;
+    float: left;
+    margin-bottom: 12px;
+}
+
+.rmagic .rmrow .rm-wc-wrap .rm-wc-field select{    
+    width:100%;
+    font-size: 1em;
+    height: 36px;
+}
+
+/* Theme Fixes */
+
+.theme-astra .rmagic .rmrow .rm-wc-wrap .rm-wc-field select {
+    height: 42px;
+    font-size: 0.9em;
+}
+
+body.is-light-theme .rmagic.rm_theme_matchmytheme,
+body.is-light-theme .rmagic.rm_theme_classic {
+    float:none
+}
+
+/*-- Theme Fixes --*/
+
+.rmagic .rmrow .rm-wcbilling,
+.rmagic .rmrow .rm-wcshipping{
+    position: relative;
+}
+
+.rmagic .rmrow .rm-wc-hover-text {   
+    bottom: -20px;
+    top: inherit;
+    margin-left: 0px;
+}
+
+.woocommerce-FormRow  .rm-wcshipping .rmnote.rm-wc-hover-text { 
+    display: none !important;
+}
+
+
+/*------ Privacy----*/
+
+.rmagic .rm-privacy-row {   
+    text-align: center;
+    background-color: rgba(150, 150, 150, 0.1);
+    margin: 10px 0;
+    padding: 24px 10px;
+}
+
+.rmagic .buttonarea input[type='submit'][disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+.rmagic .rm-privacy-row .rm-privacy-icon input.rm_privacy_cb {   
+    margin-right: 5px;
+}
+
+/* Hide hidden field forms */
+#rm_front_submissions_nav_form, #rm_front_submissions_respas_form{
+    display: none;
+}
+
+
+
+/*--- Password Recovery------*/
+
+
+.rm_error_msg{
+    background-color: #F8E1E7;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid #D2375E;
+    color: #D2375E;
+    font-size: 12px;
+    margin: 0px auto;
+    display: table;
+}
+
+.rm_success_msg {  
+    background-color: #DAF5E7;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid #42CC83;
+    color: #42CC83;
+    font-size: 12px;
+    margin: 0px auto;
+    display: table;
+}
+
+.rm-password-request{}
+
+
+.rm-security-token {   
+    padding: 22px 5px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px dotted #e6e6e6;
+    background-color: #FBFBFB;
+    color: #949494;
+}
+
+
+.rm_error_msg-wrap {
+    float: left;
+    width:100%;   
+    text-align: center;
+}
+
+.rm_error_msg-wrap .rm_pr_error_msg {    
+    background-color: #F8E1E7;
+    margin: 0px auto;
+    text-align: left;
+    box-shadow: inset 2px 0 0 0 #E04562;
+    -moz-box-shadow: inset 2px 0 0 0 #E04562;
+    -webkit-box-shadow: inset 3px 0 0 0 #E04562;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #333333;
+    font-family: inherit;
+    font-weight: 400;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 690px;
+}
+
+.rm_error_msg-wrap .rm_pr_error_msg p,
+.rm_error_msg-wrap .rm_pr_success_msg p,
+.rm_error_msg-wrap .rm_pr_warning_msg p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.rm_error_msg-wrap .rm_pr_error_msg .rm_red_cross{    
+    color: #E04562;
+    line-height: 20px;
+    box-shadow: none;
+    text-decoration: none;
+    background-color: transparent;
+    margin-right: 0px;
+    float: right;
+}
+
+.rm_error_msg-wrap .rm_pr_success_msg {   
+    background-color: #DAF5E7;
+    padding: 8px 20px;
+    color: #42CC83;
+    font-size: 12px;
+    margin: 0px auto;
+    display: inline-flex;
+    text-align: left;
+    box-shadow: inset 2px 0 0 0 #42CC83;
+    -moz-box-shadow: inset 2px 0 0 0 #E04562;
+    -webkit-box-shadow: inset 3px 0 0 0 #42CC83;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #333333;
+    font-family: inherit;
+    font-weight: 400;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 690px;
+}
+
+.rm_error_msg-wrap .rm_pr_success_msg .rm_green_tik{    
+    background-color: #42CC83;
+    color: #DAF5E7;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+    float: left;
+    line-height: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.rm_error_msg-wrap .rm_pr_warning_msg {    
+    background-color: #fff0e4;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid #ff9947;
+    color: #ff9947;
+    font-size: 12px;
+    margin: 0px auto;
+    display: inline-flex;    
+    text-align: left;
+}
+
+.rm_error_msg-wrap .rm_pr_warning_msg .rm_waring_symbol{    
+    background-color: #ff9947;
+    color: #fff0e4;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    float: left;
+    line-height: 4px;
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: left;
+    padding: 8px;
+}
+
+.rmagic .rmrow .rminput.rminput-note ~ .rmnote {   
+    top: -89px !important;
+}
+
+.rmagic .rmrow .rminput.rminput-note ~ .rmnote .rmprenote {   
+    bottom: -11px;
+    top: auto;
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

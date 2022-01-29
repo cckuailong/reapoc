@@ -1,0 +1,455 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 8, 2016, 10:48:20 AM
+    Author     : RegistrationMagic
+*/
+
+
+/*---------Common Elements---------------*/
+.rmagic * { box-sizing: border-box;}
+
+
+
+
+/*------------- rmagic Elements --------------*/
+
+
+
+.rmagic {
+    
+    display: block;
+    float: left;
+    line-height: 1.5;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.rmagic .rmrow .rminput input[type="text"],
+.rmagic .rmrow .rminput input[type="password"],
+.rmagic .rmrow .rminput input[type="email"],
+.rmagic .rmrow .rminput input[type="url"],
+.rmagic .rmrow .rminput input[type="number"],
+.rmagic .rmrow .rminput textarea {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    border: 1px solid rgba(173, 173, 173, 0.8);
+}
+
+.rm_spacing
+{
+    margin-top:100px;
+    clear: both;
+    width: 100%;
+    float: left;
+}
+.rm_divider{
+    width:100%;
+    size:8px;
+    clear: both;
+    float: left;
+}
+
+
+.rmagic .rmcontent {border-top: 8px solid black;
+    float: left;     width: 100%;}
+
+.rmagic sup {color: #ff6c6c;}
+
+.rmagic input[type=text], .rmagic select, .rmagic input[type=password], .rmagic input[type="email"], .rmagic input[type="url"], .rmagic input[type="number"]  {
+    width:90%;
+    padding:0px 6px !important;
+    background:#fff;
+    color: #555;
+    display: block;
+    font-size:14px !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    line-height: 1.42857;
+    min-height:34px !important;
+    border:1px solid #ebebeb;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.rmagic textarea{
+  width:90%;
+  height: 220px;
+    padding:0px 6px !important;
+    background:#fff;
+    color: #555;
+    display: block;
+    font-size:14px !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    line-height: 1.42857;
+    min-height:34px !important;
+    border:1px solid #ebebeb;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.rmagic input[type=text].warning, input[type=password].warning, textarea.warning, select.warning, .rmagic input[type=password].warning {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e89d9d;
+    color: #ff6c6c;
+    
+}
+
+.rmagic .rmradio {
+    display: block;
+    float: left;
+    list-style: none;
+    width: 90%;margin-left: 0px;    padding-left: 0px;
+}
+
+.rmagic .rmradio .rm-radio-option {
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+}
+
+.rmagic .rmradio .rm-radio-option::after {
+    content: " ";
+}
+
+
+.rmagic input[type=submit] {
+    display: inline-block;
+    float: left;
+}
+
+
+.rmagic textarea {
+    resize: both;
+    padding: 5px;
+}
+
+
+
+
+.rmagic form.rmagic-form {
+    width: 100%; 
+    float: left; 
+}
+
+
+.rmheader {
+    display: block;
+    font-size: 18px;
+    padding: 20px;
+  
+}
+
+.rmsubheader { 
+    display: block;
+    float: left;
+    padding: 5px 5px 5px 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 11px;
+}
+
+.rmrow {
+    display: block; 
+    float: left;
+    position: inherit;
+    padding: 5px 0px 5px 15px; 
+    min-height: 60px; 
+    width: 100%;
+    background-color: #f9f9f9;
+    position: relative !important;
+}
+
+.rmfield {width:40%;}
+.rminput {width:60%; padding: 0px; margin: 0px;}
+
+.rmfield, .rminput {
+    display: inline-block; 
+    float: left;
+    vertical-align: middle;
+    min-height: inherit;
+    padding: 5px;
+}
+
+.rminput .errortext {
+    width: 100%;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    color: #ff6c6c;
+    font-size: 12px;
+}
+
+.rmfield {
+    padding-top: 10px;
+    
+}
+
+
+.rmagic .buttonarea {
+    width: 100%;
+    display: block;
+    float: left;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.rmagic input[type=submit] {
+    
+    background-color:#FFAE00;
+    background-image: 
+    -webkit-gradient(linear,left top,left bottom,color-stop(0, #FFDD00),color-stop(1, #FFAE00));
+    background-image: -o-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%);
+    background-image: -moz-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%);
+    background-image: -webkit-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%);
+    background-image: -ms-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%) \9;
+    background-image: linear-gradient(to bottom, #FFDD00 10%, #FFAE00 60%);
+    border-image: none;
+    -webkit-border-radius: 4px ;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    font-size:15px;
+    text-transform:uppercase;
+    font-weight:normal;
+    display: inline-block;
+    padding: 6px 30px 6px !important;
+    text-decoration: none;
+    border:1px solid #ffc600;
+    cursor:pointer;
+    width:auto;
+    margin: 0px;
+    float: none;
+
+
+}
+
+.rmagic input[type=submit]:hover {
+    
+    border: 1px solid #e3a415;
+	background: #f1b900;
+}
+
+
+
+
+.rmagic .buttonarea input[type="button"] {
+    
+    background-color:#FFAE00;
+    background-image: 
+    -webkit-gradient(linear,left top,left bottom,color-stop(0, #FFDD00),color-stop(1, #FFAE00));
+    background-image: -o-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%);
+    background-image: -moz-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%);
+    background-image: -webkit-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%);
+    background-image: -ms-linear-gradient(bottom, #FFDD00 10%, #FFAE00 60%) \9;
+    background-image: linear-gradient(to bottom, #FFDD00 10%, #FFAE00 60%);
+    border-image: none;
+    -webkit-border-radius: 4px ;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    font-size:15px;
+    text-transform:uppercase;
+    font-weight:normal;
+    display: inline-block;
+    padding: 6px 30px 6px !important;
+    text-decoration: none;
+    border:1px solid #ffc600;
+    cursor:pointer;
+    width:auto;
+    margin: 0px;
+    float: none;
+    transition: 0.2s;
+
+
+}
+
+.rmagic .buttonarea input[type="button"]:hover {
+    
+    border: 1px solid #e3a415;
+	background: #f1b900;
+    background-image: linear-gradient(#f1b900, #f1b900);
+}
+
+
+
+.rmagic .rm_actions a {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+
+
+.rmagic .rm_actions a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.rmagic input[type=file] {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.rmagic .rmcontent .rm_input_fields_container {
+    background-color: #f9f9f9;
+    width: 100%;
+    float: left;
+    padding-top: 20px;}
+
+
+/*----rmagic Hover Effects----*/
+
+
+.rmagic input[type=text]:focus, .rmagic textarea:focus, .rmagic select:focus, .rmagic input[type=password]  {
+    outline: inherit;
+    
+}
+
+
+
+
+
+.rmagic input[type="text"]:focus, .rmagic input[type="email"]:focus, .rmagic input[type="submit"]:focus, .rmagic input[type="search"]:focus, .rmagic input[type="password"]:focus, .rmagic textarea:focus { outline:0px; }
+
+
+
+
+/*------------Adjustments for smaller screens-----------------*/
+
+@media screen and (max-width: 700px) {
+    .rmfield, .rminput {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    }
+    
+    .rmrow {
+        min-height: 30px;
+    }
+    
+    
+    
+    .rmagic .rmradio .rm-radio-option {
+        width: 50%;
+        padding: 0 0 5px 10px;
+    }
+    
+
+    .rmagic {
+        margin: auto;
+    }
+    
+}
+
+
+.rmagic .rmcontent .rm_notice {width: 100%;
+    background-color: #f9f9f9;
+    padding: 5px 0px 5px 15px;}
+
+
+/*----Error Notifications----*/
+
+.rmagic input.rm-form-field-invalid-msg {border-color: red; outline-color: red;}
+.rmagic input.rm-form-field-invalid-msg:focus {outline-color: red;}
+
+label.rm-form-field-invalid-msg {
+    padding: 3px 8px;
+    display: inline-block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    animation: rm-warning 1s ease-out 1;
+    -webkit-animation: rm-warning 1s ease-out 1;
+    -moz-animation: rm-warning 1s ease-out 1;
+    -o-animation: rm-warning 1s ease-out 1;
+    float:left;
+}
+
+label.rm-form-field-invalid-msg::before{content: "\2191\00a0"; font-size: 14px;}
+
+@keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-webkit-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-moz-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-o-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+.rmagic .alert-error {  
+    background-color: #d2f3bf;
+    color: #6faf49;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid #6faf49;
+}
+
+.rmagic .alert-error ul {margin: 0px; list-style: none;}
+.rmagic .alert-error > a {display: inline-block; float: right; box-shadow: 0px !important; color: #6faf49; text-align: center; font-size: 20px;}
+
+/*----Terms and Conditions---*/
+div.rm_terms_checkbox {float: left;}
+div#rm_terms_textarea_without_scroll {display: inline-block; float: left; margin-left: 5px;}
+
+/*----Help Text on fields. Invocations on ../js/script_rm_front.js line no 200----*/
+
+.rmagic .rmnote {
+    width: 60%;
+    margin-left: 40%;
+}
+
+.rmagic .rm_total_price {
+    text-align:center;
+    font-size:larger;
+}
+/*Price Field Quantity*/
+
+.rmagic .rm_pricefield_checkbox .rmrow,
+.rmagic .rm_pricefield_row .rmrow {padding-left: 0px;}
+
+.rmagic .rm_pricefield_checkbox .rmrow sup,
+.rmagic .rm_pricefield_row .rmrow sup { display: none;}
+
+.rmagic .rm_pricefield_checkbox .rmrow .rmfield,
+.rmagic .rm_pricefield_row .rmrow .rmfield { width: 25px; padding-left: 0}
+
+.rmagic .rm_pricefield_checkbox .rmrow .rminput,
+.rmagic .rm_pricefield_row .rmrow .rminput { max-width: 80px; padding-left: 0px;}
+
+
+.rmagic .rmcontent.rm-login-wrapper { border-top: 0px;}

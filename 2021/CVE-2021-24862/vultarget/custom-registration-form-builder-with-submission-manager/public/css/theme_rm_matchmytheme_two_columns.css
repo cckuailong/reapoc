@@ -1,0 +1,137 @@
+.rmagic .rmrow {
+   display: block;
+   float: left;
+   position: inherit;
+   padding: 5px 0px 5px 15px;
+   min-height: 60px;
+   width: 48%;
+   margin-right: 2%;
+}
+
+.rmagic .rmrow .rmfield, 
+.rmagic .rmrow .rminput {
+   text-align: left;
+}
+
+.rmagic .rm-two-columns-wrap {width: 100%; float: left;}
+.rmagic .rm-two-columns-wrap .rmrow .rmfield {margin-bottom: 5px;}
+
+
+.rmagic input[type=text], .rmagic select, 
+.rmagic input[type=password], 
+.rmagic input[type="email"], 
+.rmagic input[type="url"], 
+.rmagic input[type="number"] {
+   width: 90%;
+}
+.rmagic .rmrow .rminput select {
+    width: 100%;
+}
+sup.required {
+    color: red;
+}
+
+.rm_ad_container .label {font-size: 0.6em !important;}
+
+.rm_theme_matchmytheme.rm_layout_two_columns .rm-two-columns-wrap .rmrow {
+      padding: 5px 0px 5px 0px;
+}
+
+.rm_theme_matchmytheme.rm_layout_two_columns .rmrow.rm_captcha_fieldrow {
+     padding: 5px 0px 5px 0px;
+     margin-top: 12px;
+}
+
+/*Price Field Quantity*/
+.rm_pricefield_checkbox .rmradio { margin-bottom: 0px;}
+.rm_pricefield_checkbox .rminput .rmradio li{ display: block; float: left;}
+.rm_pricefield_checkbox .rminput .rmrow { width: auto; padding: 0 0 0 20px;}
+.rm_pricefield_checkbox .rminput .rminput {padding-left: 0px; }
+.rm_pricefield_checkbox .rminput .rmfield {padding-left: 0;width: auto;float: left;margin-right: 10px;}
+.rm_pricefield_checkbox sup{ display: none;}
+
+.rm_pricefield_row  .rmrow { 
+    width: 50%;
+    float: right;
+    padding-left: 0;
+    min-height: 30px;
+    padding-right: 10%;
+    margin: 0;}
+.rm_pricefield_row  .rmrow input { width: 100%;}
+.rm_pricefield_row .rmrow .rmfield{ padding-top: 5px; width: auto; display: inline-block; margin-right: 10px;}
+.rm_pricefield_row .rmrow .rminput{ padding: 0; display: inline-block; width:50px; }
+.rmagic .rm-two-columns-wrap { width: 100%; float: left; margin-bottom: 20px;}
+.rm_theme_matchmytheme.rm_layout_two_columns .rm-two-columns-wrap .rmrow.rm_pricefield_checkbox .rmrow {
+    padding-left: 20px;
+}
+
+.rm_theme_matchmytheme.rm_layout_two_columns .rm-two-columns-wrap ul li { 
+    list-style: none;
+    margin-right: 10px;
+}
+
+/*----Error Notifications----*/
+
+.rmagic input.rm-form-field-invalid-msg {border-color: red; outline-color: red;}
+.rmagic input.rm-form-field-invalid-msg:focus {outline-color: red;}
+
+label.rm-form-field-invalid-msg {
+    padding: 3px 8px;
+    display: inline-block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    animation: rm-warning 1s ease-out 1;
+    -webkit-animation: rm-warning 1s ease-out 1;
+    -moz-animation: rm-warning 1s ease-out 1;
+    -o-animation: rm-warning 1s ease-out 1;
+    float:left;
+}
+
+label.rm-form-field-invalid-msg::before{content: "\2191\00a0"; font-size: 14px;}
+
+@keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-webkit-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-moz-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+@-o-keyframes rm-warning {
+    0% {transform: translateY(2000px);}
+    100% {transform: translateY(0px);}    
+}
+
+.rmagic .alert-error {  
+    background-color: #d2f3bf;
+    color: #6faf49;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid #6faf49;
+}
+
+.rmagic .alert-error ul {margin: 0px; list-style: none;}
+.rmagic .alert-error > a {display: inline-block;
+    float: right;
+    box-shadow: none;
+    color: #6faf49;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 0px !important;}
+.rm-two-columns-wrap .rmrow.rm_total_price {width: 100%;}
+
+.rm-two-columns-wrap .rmrow.rm-full-width {width: 100%}

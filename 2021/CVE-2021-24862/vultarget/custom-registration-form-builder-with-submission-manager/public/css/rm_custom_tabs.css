@@ -1,0 +1,275 @@
+
+/*.wrapper {
+    display: block;
+    float: left;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    resize: both;
+    overflow: auto;
+    border-radius: 4px;
+    font-family:roboto;
+}*/
+
+/*------------------------------------*/
+.rmagic * {box-sizing: border-box;}
+.rmagic {display: block; float: left; width: 100%;}
+/*.rmagic div {
+    border-color: #e1e1e1;
+    border-color: rgba(0,0,0,0.1);
+    border-style: solid;
+    border-width: 0px;
+}*/
+
+.rmagic .dbfl {display: block; float: left; width: 100%;}
+.rmagic .difl {display: inline-block; float: left;}
+
+.rmagic i.material-icons {
+    vertical-align: middle;
+    display: inline;
+    height: 1em;
+}
+
+.rmagic .rm_wrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.rmagic .rm-info-area {display: none;}
+.rmagic #rm-area-1 {display: block;}
+
+.rm-color {color: cornflowerblue;}
+
+.rmagic .rm-bg {background-color: cornflowerblue;}
+.rmagic .rm-bg-lt {
+    background-color: #fafafa;
+    background-color:  rgba(0,0,0,0.1);
+}
+
+/*Animations*/
+
+@keyframes rm-circle {
+    0% {filter: grayscale(100%);}
+    100% {filter: grayscale(0);}
+}
+
+/*---------Wide Themes----------*/
+
+/*Tabs*/
+
+.rmWide .rmActiveTab {
+    background-color: #fafafa;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.rm-user-account.rmWide .rm-user-nav {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    border-right-width: 1px;
+}
+
+.rmWide .rm-user-tabs {overflow: hidden;}
+.rmWide .rm-menu-tab {
+    padding: 1em 0.5em;
+    border-left-width: 5px;
+    border-left-color: transparent;
+    display: block;
+    float: left;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rmWide .rm-menu-tab:hover {
+    background-color: #fafafa;
+    background-color: rgba(0,0,0,0.05);
+    cursor: pointer;
+    border-left-width: 5px;
+    border-left-color: cornflowerblue;
+    padding-left: 2em;
+}
+
+/*Content Area*/
+
+.rmWide .rm-tab-content {
+    width: 75%; 
+    display: inline-block;
+    float: left;
+    padding: 20px;
+}
+
+/*---------Narrow Themes----------*/
+
+/*Tabs*/
+
+.rmNarrow .rmActiveTab {
+    background-color: #fafafa;
+    background-color: rgba(0,0,0,0.1);
+    width: 50% !important;
+    border-bottom-width: 1px;
+}
+
+.rmNarrow .rm-user-nav {
+    width: 100%;
+    display: block;
+    float: left;
+    margin-bottom: 50px;
+    border-bottom-width: 1px;
+}
+
+.rmNarrow .rm-user-tabs {overflow: hidden;}
+.rmNarrow .rm-menu-tab {
+    padding: 1em 0.5em;
+    border-left-width: 0px;
+    border-bottom-color: transparent;
+    display: inline-block;
+    float: left;
+    width: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    border-bottom-width: 1px;
+}
+
+.rmNarrow .rm-menu-tab:hover {
+    background-color: #fafafa;
+    background-color: rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+/*Content Area*/
+
+.rmNarrow .rm-tab-content {
+    width: 100%; 
+    display: block;
+    float: left;
+    padding: 20px;
+}
+
+/*----------Common CSS--------------*/
+
+.rmagic .rm-tab-content {text-align: center;}
+.rmagic .rm-user-row {padding: 1em 0;}
+.rmagic .rm-icon i {
+    font-size: 3em;
+    border-radius: 100%;
+    padding: 0.5em;
+    color: #fff;
+    line-height: 2em;
+}
+
+.rmagic .rm-menu-tab {
+    transition: 0.3s;
+    text-align: left;
+}
+
+/*Personal Details*/
+
+.rmagic .rm-user-information {position: relative;}
+.rmagic .rm-info-area {position: absolute; top: 0; left: 0;}
+
+.rmagic .rm-user-card {
+    height: 10em;
+    overflow: hidden;
+}
+
+.rmagic .rm-user-name {
+    font-size: 2.5em;
+    line-height: 1em;
+    padding: 1em 0.5em 0em 1em;
+    text-align: center;
+}
+
+.rmagic .rm-user-notice {
+    font-size: 0.5em;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.rmagic .rm-field-row label,
+.rmagic .rm-field-row span {
+    display: inline-block;
+    float: left;
+    width: 45%;
+    text-align: left;
+}
+
+.rmagic .rm-field-row label {margin-right: 5%;}
+.rmagic .rmagic .rm-field-row span {margin-left: 5%;}
+
+.rmagic .rm-user-fields {width: 100%;}
+.rmagic .rm-field-row {padding: 0.5em 0;}
+
+.rmagic .rm-field-row img.rm-user-upload {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+/* Registrations*/
+.rmagic table.rm-user-data {
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: left;
+}
+
+.rmagic table.rm-user-data th {padding: 0.5em;}
+.rmagic table.rm-user-data td {
+    line-height: 2em;
+    height: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rmagic table.rm-user-data td i {
+    padding-left: 1.5em;
+    cursor: pointer;
+}
+
+.rmagic table.rm-user-data tr {transition: 0.2s;}
+.rmagic table.rm-user-data tr:hover {
+    background-color: #fafafa;
+    background-color: rgba(0,0,0,0.05);
+}
+.rmagic.rmNarrow .operationsbar { width: 100%; }
+.rmagic.rmWide .operationsbar { width: 25%; padding: 0px; margin-top: 25px; }
+.rmagic.rmWide .operationsbar .nav {
+        border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.rmagic .rm-user-name-submission {
+    display: inline-block;
+    float: left;
+    width: calc(100% - 10em);
+}
+/*Submission Page Custom CSS*/
+.rmagic .rm-user-card img { height: 10em; width: auto; float: left; border-radius: 0px; border: none; padding: 0px; animation: rm-circle 1s linear 1; margin: 0px;}
+.rmagic .rm-user-card .rm-user-name {
+    width: auto;
+    float: left;
+    display: inline-block;
+    padding: 30px 0px 0px 30px;
+    text-align: left;
+}
+.rm-user-name-subtitle{
+    padding: 20px 0px 0px 30px;
+    text-align: left;
+}
+.rmagic .rm-user-details-card hr { clear: both; margin: 0px;}
+.rm-tab-content td, .rm-tab-content th ,.rm-tab-content tr, .rm-tab-content table {
+    border: none;
+}
+.entry-content:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.rmagic .rmtabs_head.rm-menu-tab i.material-icons{
+    width: 24px;
+    display: inline-block;
+}
