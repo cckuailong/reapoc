@@ -1,0 +1,222 @@
+.layout {
+    max-width: 800px;
+}
+.admin_table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.admin_table td {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    vertical-align: top;
+}
+.admin_table h4 {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+.admin_table .fld {
+    width: 450px;
+}
+.layout textarea {
+    resize: vertical;
+    padding: 7px;
+    margin: 0px;
+    width: 100%;
+}
+
+.status {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    top: 50%;
+    z-index: 1000;
+}
+.status_txt {
+    width: 200px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    top: -40px;
+    background: #cdc335;
+    border: 1px solid #968c2e;
+    color: #ffffff;
+    line-height: 80px;
+    font-size: 22px;
+    text-align: center;
+}
+.status_txt img {
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.status.done .status_txt {
+    background: #14b39a;
+    border: 1px solid #137760;
+}
+.status.done img {
+    display: none;
+}
+
+#zm-slider-images {
+    position: relative;
+    overflow: hidden;
+}
+#zm-slider-images li {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    float: left;
+    position: relative;
+    cursor: move;
+}
+.zm-slider-images-delete {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    background: #ca4a1f url('../images/ic_clear_white_24px.svg') 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    cursor: pointer;
+}
+.zm-slider-images-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    background: #767676 url('../images/ic_link_white_24px.svg') 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    cursor: pointer;
+}
+.zm-slider-images-link.link-selected {
+    background-color: #0073aa;
+}
+.zm-gallery-list {
+    position: relative;
+    background: #dddddd;
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.zm-gallery-list li {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    border: 3px solid #dddddd;
+}
+.zm-gallery-list li:hover {
+    opacity: 1;
+}
+.zm-gallery-list li.curr {
+    border: 3px solid #1e8cbe;
+    opacity: 1;
+}
+.zm-gallery-list img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.zm-gallery-list span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+
+.zm-slider-images-links {
+    padding: 20px 0;
+}
+.zm-slider-images-links-elem {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.zm-slider-images-links-elem:nth-child(odd) {
+    background: #f9f9f9;
+}
+.zm-slider-images-links-elem.curr {
+    background: #a8dbec;
+}
+.zm-slider-images-links-elem:hover {
+    background: #e9e9e9;
+}
+.zm-slider-images-links-elem h4 {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #0073c5;
+}
+.zm-slider-images-paginator {
+    padding: 20px;
+    overflow: hidden;
+}
+.zm-slider-images-paginator-prev,
+.zm-slider-images-paginator-next,
+.zm-slider-images-paginator-link {
+    display: inline-block;
+    background: #e0e0e0;
+    margin-right: 7px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 7px;
+    min-width: 11px;
+    height: 25px;
+    line-height: 25px;
+    color: #0073aa;
+}
+.zm-slider-images-paginator-link.curr,
+.zm-slider-images-paginator-next.disabled,
+.zm-slider-images-paginator-prev.disabled {
+    cursor: auto;
+    color: #555555;
+}
+
+#TB_ajaxContent {
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+
+@media screen and (max-width: 767px) {
+    .layout .admin_table,
+    .layout .admin_table tbody,
+    .layout .admin_table tr,
+    .layout .admin_table td,
+    .layout .admin_table .fld {
+        display: block;
+        width: auto;
+        border: none;
+    }
+    .layout .admin_table {
+        border-top: 1px solid #dddddd;
+    }
+    .layout .admin_table tr {
+        border-bottom: 1px solid #dddddd;
+    }
+}
+
+

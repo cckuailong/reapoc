@@ -38,6 +38,7 @@
 | CVE-2016-10134 | Zabbix | SQL注入 | 9.8 | [Y](CVE-2016-10134/vultarget/) | [Y](CVE-2016-10134/poc/nuclei/) | [Y](CVE-2016-10134/poc/xray/) | N | N | N | N | [Y](CVE-2016-10134/poc/others/) |
 | CVE-2016-10140 |  | 信息泄露 | 7.5 | [Y](CVE-2016-10140/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2016-10924 |  | 路径遍历 | 7.5 | N | [Y](CVE-2016-10924/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2016-10940 |  | SQL注入 | 7.2 | [Y](CVE-2016-10940/vultarget/) | [Y](CVE-2016-10940/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-10956 | WordPress | 输入验证错误 | 7.5 | N | [Y](CVE-2016-10956/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-10960 | WordPress | 代码执行  | 8.8 | N | [Y](CVE-2016-10960/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-10993 | WordPress | 跨站脚本 | 5.4 | N | [Y](CVE-2016-10993/poc/nuclei/) | N | N | N | N | N | N |
