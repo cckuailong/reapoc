@@ -92,6 +92,7 @@
 | CVE-2020-17523 | Shiro | 登录绕过 | 9.8 | [Y](CVE-2020-17523/vultarget/) | N | N | N | N | N | N | [Y](CVE-2020-17523/poc/others/) |
 | CVE-2020-17530 | Struts2 | 代码执行  | 9.8 | [Y](CVE-2020-17530/vultarget/) | [Y](CVE-2020-17530/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-17530/poc/others/) |
 | CVE-2020-17558 | Unknown | Unknown | Unknown | N | [Y](CVE-2020-17558/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-18268 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2020-18268/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19282 |  | 其他 | 6.1 | N | [Y](CVE-2020-19282/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19283 | JEECMS | 其他 | 6.1 | N | [Y](CVE-2020-19283/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-19295 |  | 其他 | 6.1 | N | [Y](CVE-2020-19295/poc/nuclei/) | N | N | N | N | N | N |

@@ -49,6 +49,7 @@
 | CVE-2016-3087 | Struts2 | 代码执行 | 9.8 | [Y](CVE-2016-3087/vultarget/) | N | N | N | N | N | N | [Y](CVE-2016-3087/poc/others/) |
 | CVE-2016-3088 | Apache-ActiveMQ | 命令执行 | 9.8 | [Y](CVE-2016-3088/vultarget/) | [Y](CVE-2016-3088/poc/nuclei/) | [Y](CVE-2016-3088/poc/xray/) | N | N | N | N | [Y](CVE-2016-3088/poc/others/) |
 | CVE-2016-3510 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2016-3510/vultarget/) | N | N | N | N | N | N | [Y](CVE-2016-3510/poc/others/) |
+| CVE-2016-3978 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2016-3978/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-4437 | Apache-Shiro | 命令执行 | 8.1 | [Y](CVE-2016-4437/vultarget/) | N | N | N | N | N | N | [Y](CVE-2016-4437/poc/others/) |
 | CVE-2016-4438 | Struts2 | 代码执行 | 9.8 | [Y](CVE-2016-4438/vultarget/) | N | N | N | N | N | N | [Y](CVE-2016-4438/poc/others/) |
 | CVE-2016-4975 | web | 注入 | 6.1 | N | [Y](CVE-2016-4975/poc/nuclei/) | N | N | N | N | N | N |

@@ -91,6 +91,7 @@
 | CVE-2021-25281 | saltstack-web | 其他 | 9.8 | [Y](CVE-2021-25281/vultarget/) | [Y](CVE-2021-25281/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-25281/poc/others/) |
 | CVE-2021-25282 |  | 路径遍历 | 9.1 | N | N | [Y](CVE-2021-25282/poc/xray/) | N | N | N | N | N |
 | CVE-2021-25646 | Apache-Druid | 命令执行 | 8.8 | [Y](CVE-2021-25646/vultarget/) | [Y](CVE-2021-25646/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-25646/poc/others/) |
+| CVE-2021-25864 |  | 路径遍历 | 7.5 | N | [Y](CVE-2021-25864/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-26084 | Confluence | 命令执行 | 9.8 | [Y](CVE-2021-26084/vultarget/) | [Y](CVE-2021-26084/poc/nuclei/) | [Y](CVE-2021-26084/poc/xray/) | N | N | [Y](CVE-2021-26084/poc/goby/) | N | [Y](CVE-2021-26084/poc/others/) |
 | CVE-2021-26085 | Confluence | 任意文件读取 | 5.3 | N | [Y](CVE-2021-26085/poc/nuclei/) | [Y](CVE-2021-26085/poc/xray/) | N | N | N | N | [Y](CVE-2021-26085/poc/others/) |
 | CVE-2021-26086 | JIRA | 任意文件读取 | 5.3 | [Y](CVE-2021-26086/vultarget/) | [Y](CVE-2021-26086/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-26086/poc/others/) |
@@ -262,6 +263,7 @@
 | CVE-2021-45046 | JAVA | 其他 | 9 | N | [Y](CVE-2021-45046/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-45046/poc/others/) |
 | CVE-2021-45092 | Thinfinity VirtualUI | 其他 | 9.8 | N | [Y](CVE-2021-45092/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-45232 | Apache APISIX Dashboard | 代码执行  | 9.8 | [Y](CVE-2021-45232/vultarget/) | [Y](CVE-2021-45232/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-45232/poc/others/) |
+| CVE-2021-45380 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2021-45380/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-45456 |  | 命令注入 | 9.8 | [Y](CVE-2021-45456/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2021-45897 | Unknown | Unknown | Unknown | N | N | N | N | N | N | N | [Y](CVE-2021-45897/poc/others/) |
 | CVE-2021-46005 |  | 跨站脚本 | 5.4 | [Y](CVE-2021-46005/vultarget/) | [Y](CVE-2021-46005/poc/nuclei/) | N | N | N | N | N | N |
