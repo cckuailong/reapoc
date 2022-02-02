@@ -1,0 +1,204 @@
+/* ================================================
+ * DUPLICATOR STYLE
+ * Common elements shared across the duplicator plugin 
+ * ================================================ */
+
+/*Global Elements*/
+input[type=button]{cursor:pointer;padding:5px;cursor:pointer;}
+input[type=submit]{cursor:pointer;padding:5px;cursor:pointer;}
+fieldset {border:1px solid gray; padding:0px 5px 5px 5px; }
+label {font-size:13px}
+.no-select {user-select:none; -o-user-select:none;  -moz-user-select:none; -khtml-user-select:none; -webkit-user-select:none;}
+hr {border:0; border-top:1px solid #ddd; border-bottom:1px solid #fafafa; margin:10px 0px 2px 0px;}
+i[data-tooltip].fa-question-circle {cursor:pointer; color:#C3C3C3}
+i[data-tooltip].fa-lightbulb-o {cursor:pointer; color:gray}
+span.btn-separator {content: ''; display: inline-block; background: silver; margin: 2px 3px; height: 25px; width: 1px; vertical-align: top;}
+a.grey-icon i.fa {color:#777}
+i.grey-icon {color:#777}
+
+
+/*TABS*/
+ul.category-tabs li {cursor: pointer}
+
+/*BOXES: Expandable sections */
+div.dup-box {padding:0px; display: block; background-color: #fff; border: 1px solid #e5e5e5; box-shadow: 0 1px 1px rgba(0,0,0,.04);}
+div.dup-box-title {font-size: 16px; padding: 10px 0 0 10px; font-weight: bold; cursor: pointer; height:27px; margin:0px; color:#000 }
+div.dup-box-title:hover {background-color: #FCFCFC;}
+div.dup-box-arrow {text-decoration:none!important; float:right; width:27px; height:30px; font-size:16px; cursor:pointer; padding:1px 0 0 0; white-space: nowrap}
+div.dup-box-panel {padding:10px 15px 10px 15px;  border-top:1px solid #EEEEEE; margin:-1px 0 0 0;}
+div.dup-redirect {font-size:16px; font-weight: bold; padding: 10px}
+
+/*PANELS: Boxes that do not exapand */
+div.dup-panel {padding:0px; display: block; background-color: #fff; border: 1px solid #e5e5e5; box-shadow: 0 1px 1px rgba(0,0,0,.04);}
+div.dup-panel-title {font-size: 14px; padding: 10px 0 0 15px; font-weight: 600; height:28px; margin:0px; color:#000; }
+div.dup-panel-panel {padding:10px 15px 10px 15px;  border-top:1px solid #EEEEEE; margin:-1px 0 0 0;}
+
+/*INFO-BOX:Simple box with no title */
+div.dup-info-box {padding:8px; border:1px solid #ccc; border-radius:4px; background-color:#F7FCFE;  margin:0px 0px 5px 20px; line-height:16px}
+div.dup-info-box small {margin-top:10px; display:block}
+
+/*PACKAGE:Progress Boxes */
+div#dup-progress-bar-area {width:500px; margin:40px auto 0px auto; padding:25px 50px 35px 50px; border:1px solid #ccc; box-shadow:0 8px 6px -6px #999; text-align:center; border-radius:4px; color:#000;}
+div#dup-progress-bar-area h2 {margin-bottom:15px}
+
+/*HEADER MESSAGES*/
+div.dup-hdr-success {color:#23282d; font-size:22px; font-weight:bold}
+div.dup-hdr-error {color:#A62426; font-size:22px; font-weight:bold}
+
+/*DIALOGS: THICKBOX   */
+#TB_title { padding-bottom: 3px!important; margin-bottom:5px!important; font-size:16px!important;}
+div.dup-dlg-alert-txt {padding:10px 0; font-size:16px; line-height:22px}
+div.dup-dlg-alert-btns {position:absolute; bottom:20px; right:20px;}
+div.dup-dlg-confirm-txt {padding:10px 0; font-size:16px}
+div.dup-dlg-confirm-btns {position:absolute; bottom:20px; right:20px;}
+div.dup-dlg-confirm-progress {display:none}
+
+/*ADMIN: NOTICES   */
+div#dup-global-error-reserved-files p {font-size:14px}
+div#dup-global-error-reserved-files b.pass-msg {color:green; font-size:20px}
+div#dup-global-error-reserved-files p.pass-lnks {line-height:24px; margin:-7px 0 0 5px}
+div#dup-global-error-reserved-files div.pass-msg {padding:5px 0 0 10px; font-size:11px; color:#999; font-style: italic}
+div.dup-wpnotice-box {display:none;}
+
+/*================================================
+PARSLEY:Overrides*/
+input.parsley-error, textarea.parsley-error {
+  color:#B94A48 !important;
+  background-color:#F2DEDE !important;
+  border:1px solid #EED3D7 !important;
+}
+div.qtip-content {line-height:16px}
+ul.parsley-error-list {margin:1px 0px -7px 0px}
+div.notice-safemode {color: maroon;}
+div.cleanup-notice b.title {color: green;font-size: 20px;}
+
+/*SCREEN TABS*/
+div.dup-screen-hlp-info {line-height:26px; padding:10px 0 10px 0}
+#screen-meta-links .button { font-size:13px !important; height:auto !important;font-weight: normal; padding: 3px 6px 3px 16px !important;min-width:72px !important}
+
+/*= Duplicator Message
+---------------------------------------*/
+.notice.duplicator-message {
+	border: none;
+	padding: 20px;
+}
+
+.notice.duplicator-message .duplicator-message-inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.notice.duplicator-message .duplicator-message-icon {
+	font-size: 20px;
+}
+
+.notice.duplicator-message .duplicator-message-content {
+	padding: 0 20px;
+}
+
+.notice.duplicator-message p {
+	padding: 0;
+	margin: 0;
+}
+
+.notice.duplicator-message h3 {
+	margin: 0 0 5px;
+}
+
+.notice.duplicator-message .duplicator-message-action {
+	text-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-left: auto;
+}
+
+.notice.duplicator-message .duplicator-message-action .duplicator-button {
+	background-color: #D30C5C;
+	color: #fff;
+	border-color: #7c1337;
+	-webkit-box-shadow: 0 1px 0 #7c1337;
+	box-shadow: 0 1px 0 #7c1337;
+	padding: 5px 30px;
+	height: auto;
+	line-height: 20px;
+	text-transform: capitalize;
+}
+
+.notice.duplicator-message .duplicator-message-action .duplicator-button i {
+	margin-right: 5px;
+}
+
+.notice.duplicator-message .duplicator-message-action .duplicator-button:hover {
+	background-color: #a0124a;
+}
+
+.notice.duplicator-message .duplicator-message-action .duplicator-button:active {
+	-webkit-box-shadow: inset 0 1px 0 #7c1337;
+	box-shadow: inset 0 1px 0 #7c1337;
+	-webkit-transform: translateY(1px);
+	-ms-transform: translateY(1px);
+	transform: translateY(1px);
+}
+
+.notice.duplicator-message .duplicator-message-action .duplicator-link {
+	padding-top: 5px;
+}
+
+.notice.duplicator-message .duplicator-message-actions {
+	margin-top: 10px;
+}
+
+.notice.duplicator-message .duplicator-message-actions .button.button-primary {
+	margin-right: 5px;
+}
+
+.notice.duplicator-message-announcement {
+	border-color: #D30C5C;
+}
+
+.notice.duplicator-message-announcement a {
+	color: #D30C5C;
+}
+
+@media (min-width: 1200px) {
+	.duplicator-message-action {
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+	.notice.duplicator-message {
+		padding: 20px;
+	}
+	.notice.duplicator-message .duplicator-message-inner {
+		display: block;
+		text-align: center;
+	}
+	.notice.duplicator-message .duplicator-message-inner .duplicator-message-icon,
+	.notice.duplicator-message .duplicator-message-inner .duplicator-message-content,
+	.notice.duplicator-message .duplicator-message-inner .duplicator-message-action {
+		display: block;
+	}
+	.notice.duplicator-message .duplicator-message-inner .duplicator-message-action {
+		text-align: center;
+	}
+	.notice.duplicator-message .duplicator-message-inner .duplicator-message-icon {
+		width: auto;
+	}
+	.notice.duplicator-message .duplicator-message-inner .duplicator-message-content {
+		padding: 10px 0;
+	}
+}

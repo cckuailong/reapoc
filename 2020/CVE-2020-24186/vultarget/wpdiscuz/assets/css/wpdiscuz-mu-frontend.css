@@ -1,0 +1,55 @@
+#cboxCurrent {bottom: 0;font-size: 15px;}
+#wpdcom{height:auto; padding:5px 1px;}
+#wpdcom .wmu-hide{display:none!important;}
+#wpdcom .wmu-show{display:inline-block!important;}
+#wpdcom .wmu-upload-wrap{float: right;}
+#wpdcom .wmu-add{cursor: pointer; margin:0px 2px; color:#aaaaaa; cursor:pointer; display:inline;}
+#wpdcom .wmu-add i{color:#444;}
+#wpdcom .wmu-add input[type="file"]{visibility:hidden;display:none;}
+#wpdcom .wmu-tabs{width:100%; padding: 8px 0px 17px 0px; margin:1px 0px 0px 0px;  border-top: 1px dotted #dddddd; text-align:left; }
+#wpdcom .wmu-tabs .wmu-preview-images .wmu-preview-remove .wmu-file-name{display: none;}
+#wpdcom .wmu-tabs .wmu-preview-remove {position:relative;}
+#wpdcom .wmu-tabs .wmu-preview-remove img{max-height:45px;}
+#wpdcom .wmu-tabs .wmu-preview-remove .wmu-delete{line-height:45px; position: absolute; display:none; top:0px; left:0px; width:100%; z-index:100; background: url('../img/delete.png') center no-repeat #eeeeee; opacity:0.8;}
+#wpdcom .wmu-tabs .wmu-preview-remove:hover .wmu-delete{display:block; z-index:100;}
+#wpdcom .wmu-preview{margin:0px 3px; cursor:pointer;display: inline-block;}
+#wpdcom .wmu-attachment img{vertical-align:bottom;}
+#wpdcom .wmu-attachment audio{vertical-align:bottom;}
+#wpdcom .wmu-attachment-delete,
+.wpd-content .wmu-attachment-delete{cursor:pointer; border-top:1px solid #ffffff; visibility:hidden; font-size:5px; line-height:12px; text-align:center; padding:2px 0px 1px 0px; margin:0px; z-index:100; background: url('../img/file-icons/delete.png') center no-repeat; border-bottom:white 1px solid;}
+#wpdcom .wmu-attachment:hover > .wmu-attachment-delete,
+.wpd-content .wmu-attachment:hover > .wmu-attachment-delete{visibility:visible;}
+#wpdcom .wmu-attachment-delete:hover,
+.wpd-content .wmu-attachment-delete:hover{visibility:visible; background-color:#FFEFEF; border-bottom:#FFD6D6 1px solid;}
+#wpdcom .wmu-attached-images {border-bottom: 1px dotted #dfdfdf; display: flex; margin-bottom: 5px;}
+#wpdcom .wmu-attached-images .wmu-attachment{margin:10px 2px 1px 2px;}
+#wpdcom .wmu-attached-images .wmu-attached-image,
+#wpdcom .wmu-attached-images .attachment-thumbnail{border: 3px solid #f1f1f1;}
+#wpdcom .wmu-attached-image-link{display: inline-block;}
+#wpdcom .wmu-attached-images .wmu-separator{padding:4px 0px; display:block;}
+#wpdcom .wmu-action-wrap{width:100%; margin:0px; padding:0px; text-align:left;}
+#wpdcom .wmu-action-wrap img{display:inline-block; vertical-align:bottom;}
+#wpdcom .wmu-top-title{padding:5px 20px 5px 3px; font-size:10px; color:#888888; text-align:left; margin-top:-27px; margin-bottom:7px; line-height:14px; white-space:nowrap; display:table; text-transform:uppercase;}
+#wpdcom .wmu-filreader-not-exist {/*show filename before uploading if file reader not exists*/}
+#wpdcom .wmuPhraseNotAllowedFile,#wpdcom .wmuPhraseMaxFileCount,#wpdcom .wmuPhraseMaxFileSize,
+#wpdcom .wmuPhrasePostMaxSize,#wpdcom .msgEmptyFile,#wpdcom .msgUploadingNotAllowed,
+#wpdcom .msgPermissionDenied{background-color:#fce8e8!important; font-size:14px; text-align:center; color:#ce4a66; border:#f2d3d2 1px solid; padding:5px 10px; width:100%; box-sizing:border-box; margin:5px 0; border-radius:3px}
+
+@media screen and (max-width:655px){
+    #wpdcom .wmu-preview-remove .wmu-file-name{font-size:11px;}
+    #wpdcom .wmu-preview-remove .wmu-file-name{font-size:11px;}
+    #wpdcom .wmu-attached-images .wmu-attached-image{height:auto!important;}
+}
+
+@media screen and (max-width:500px) {
+    #wpdcom .wc-comment-text iframe{width:98%;}
+}
+
+@media screen and (max-width:420px){
+    #wpdcom .wmu-top-title{display:none;}
+}
+
+/* MY MEDIA TAB */
+.wpd-wrapper #wpd-content-item-4 .wpd-item-left{float:left; width:88%; border-right: 1px dotted #ccc; margin-top:5px;}
+.wpd-wrapper #wpd-content-item-4 .wpd-item-right{margin-left:92%; text-align:center; vertical-align:middle; padding-top:24px; color:#666;}
+.wpd-wrapper #wpd-content-item-4 .wpd-item-right i{display:inline-block; vertical-align:middle; font-size:20px; line-height:20px;color: #e8484a;}

@@ -1,0 +1,169 @@
+.boxSizing *{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.fm_notificationWrap .tab {
+    border-bottom: 1px solid #ccc;
+    /*background-color: #f1f1f1;*/
+}
+.fm_notificationWrap .tab::after {
+	content:"";
+	display:table;
+	clear:both;
+}
+/* Style the buttons inside the tab */
+.fm_notificationWrap .tab a {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	color: #000;
+	width: 33.3333334%;
+	display: inline-block;
+	text-align: center;
+	position:relative;
+}
+/* Change background color of buttons on hover */
+.fm_notificationWrap .tab a:hover {
+    /*background-color: #ddd;*/
+}
+/* Create an active/current tablink class */
+.fm_notificationWrap .tab a.active {
+   /* background-color: #ccc;
+	color: #fff;*/
+}
+.fm_notificationWrap .tab a.active::before{
+	content:"";
+	height:3px;
+	position:absolute;
+	bottom:-1px;
+	left:0;
+	right:0;
+	background:#09F;
+}
+.fm_notificationWrap .tab a.active::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 11px solid #09F;
+	bottom: -10px;
+	left: 46%;
+}
+/* Style the tab content */
+.fm_notificationWrap .tabcontent {
+    display: none;
+    padding: 25px;
+}
+.fm_notificationWrap .fmNotifyWrap{
+	background:#fff;
+	padding-bottom: 25px;
+}
+.fm_notificationWrap .fmNotifyWrap p.description{
+	padding:0 25px;
+}
+.fm_notificationWrap .fmNotifyWrap p.description.noPadding{
+	padding:0px;
+}
+.fm_notificationWrap .fmNotifyWrap p.description.mb15{
+	margin:15px 0;
+}
+.fm_notificationWrap .fmNotifyWrap p.submit{
+	padding:0 25px;
+}
+.fm_notificationWrap .fmNotifyWrap p.submit .button {
+	background: #09F;
+	border: none;
+	padding: 8px 25px;
+	color: #fff;
+	text-shadow: none;
+	font-size: 16px;
+	height: inherit;
+	box-shadow: none;
+	border-radius: 0px;
+}
+.fmNotifyWrap .form-table .regular-text{
+	border:1px solid #ddd;
+	padding: 10px;
+}
+.fmNotifyWrap input[type='text']{
+	border:1px solid #ddd;
+	padding: 10px;
+}
+.fmNotifyWrap .fm_addMoreBtnDv{
+	margin-top:10px;
+	margin-bottom: 20px;
+}
+.fmNotifyWrap .fm_addMoreBtnDv .add_more_ten_email {
+	border: 1px solid #ddd;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 5px 20px;
+	height: inherit;
+	background: #ddd;
+	font-weight: 600;
+}
+.fmNotifyWrap .delete_ten_email{
+	color:#F00;
+}
+.fmNotifyWrap #admin-email-description{
+	padding:0;
+	color: #a1a1a1;
+}
+.fm_headingTitle{
+	margin: 0;
+    margin-bottom: 0px;
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+	background: #fff;
+}
+.fm_rootWrap{
+}
+.fm_rootWrap .fm_whiteBg{
+	background:#fff;
+	padding:25px;
+}
+.fm_rootWrap .regular-text{
+	border:1px solid #ddd;
+	padding: 10px;
+}
+.fm_rootWrap .description.mb15{
+	margin:15px 0px;
+}
+.fm_rootWrap p.submit .button {
+	background: #09F;
+	border: none;
+	padding: 8px 25px;
+	color: #fff;
+	text-shadow: none;
+	font-size: 16px;
+	height: inherit;
+	box-shadow: none;
+	border-radius: 0px;
+}
+.fm_systemPropertyTbl th, .fm_systemPropertyTbl td{
+	padding:12px;
+	border:1px solid #f0f0f0;
+}
+.fm_systemPropertyWrap .fm_BuyProBtn {
+	background: #09F;
+	border: none;
+	padding: 3px 20px;
+	color: #fff;
+	text-shadow: none;
+	font-size: 14px;
+	height: inherit;
+	box-shadow: none;
+	border-radius: 0px;
+	margin-top: -6px;
+	margin-left: 15px;
+	margin-bottom: -6px;
+}

@@ -1,0 +1,105 @@
+.form-builder{font-size:11px;width:100%;min-width:780px;}
+.clearer{clear:both;}
+.column{float:left;}
+.columnr{float:right;}
+.ctrlsColumn{width:380px;}
+.dashboardColumn{ width:calc(100% - 400px); }
+.width50{width:48%}
+.width20{width:24%}
+.width40{width:40%}
+.width30{width:30%}
+.padding10{padding:10px;}
+.button, .form-builder .button{float:left;margin:5px 15px;}
+.button.n span{color:#AED0EA}
+#tabs{height:650px;width:100%;overflow-y:auto;}
+#fbuilder{height:640px;overflow:auto;position:relative;}
+#fbuilder .fields{border:1px solid transparent;padding:3px 10px 14px 10px;margin:5px 0px;display:block;position:relative}
+#fbuilder .fields .arrow{position:absolute;left:-15px;top:20px;display:none}
+#fbuilder .fields .remove{position:absolute;bottom:0;right:0;display:none;background-color:#fff;cursor:pointer}
+#fbuilder .fields .copy{position:absolute;bottom:0;right:20px;display:none;background-color:#fff;cursor:pointer}
+#fbuilder legend{ border:1px solid rgba(222,222,222,.75); background:#FFF; margin-left:5px; padding: 0 5px; }
+#fbuilder .fcontainer{ border:1px solid rgba(222,222,222,.75); min-height:67px; }
+.groupBox,
+.dependenciesBox,
+.choicesSet{border:1px dashed #888;margin:10px 0px;padding:5px}
+.choicesEdit input[type=text]{width:120px;}
+.choicesEdit,.choicesEditDep{position:relative;}
+.choicesSet .t{margin-left:18px;width:115px;float:left}
+.addComplexRule{cursor:pointer;}
+.cf_dependence_rule{width:230px;}
+.choicesEdit .choice_down{position:absolute;top:5px;left:255px;cursor:pointer;}
+.choicesEdit .choice_up{position:absolute;top:5px;left:266px;cursor:pointer;}
+.addDep,
+.choicesEdit .choice_add{position:absolute;top:5px;left:278px;cursor:pointer;}
+.removeDep,
+.choicesEdit .choice_remove{position:absolute;top:5px;left:293px;cursor:pointer;}
+.choicesEditDep .choice_addDep{position:absolute;top:5px;left:278px;cursor:pointer;}
+.choicesEditDep .choice_removeDep{position:absolute;top:5px;left:293px;cursor:pointer;}
+.calc_dependent{width:150px;}
+.choicesEditDep select{width:170px;}
+.addDep,
+.ui-widget-content .choice_addDep.ui-icon {background-image: url(cupertino/images/ui-icons_2e83ff_256x240.png); }
+.removeDep,
+.ui-widget-content .choice_removeDep.ui-icon {background-image: url(cupertino/images/ui-icons_2e83ff_256x240.png); }
+.addDep, .removeDep{float:right;}
+.cf_dependence_field{width:150px;}
+.showHideDependencies,.dep{float:right}
+.choicesSet.hide {display:block !important;visibility: visible !important;}
+.choicesSet.hide .choicesEditDep{display:none}
+.choicesSet.show .choicesEditDep{display:block}
+a.helpfbuilder.dep{font-size:100%;padding-left:10px}
+input [disabled] {background-color: #f00;}
+input [readonly] {background-color: #f00;}
+#fbuilder .fields.ui-selected{background-color:#DFEFFF;border:1px solid #C2D7EF}
+#fbuilder .fields.ui-selected .arrow,#fbuilder .fields.ui-selected>.remove,#fbuilder .fields.ui-selected>.copy{display:inline}
+#fbuilder .fields.fmark,
+#fbuilder .fields.ui-over{border:1px dashed #888;}
+
+#fbuilder .fform{border:1px solid transparent;padding:10px 10px 20px 10px;margin:5px 0px;display:block;position:relative}
+#fbuilder .fform .arrow{position:absolute;left:-15px;top:20px;display:none}
+#fbuilder .fform.ui-selected{background-color:#E7FFCF;border:1px solid #C2EF95}
+#fbuilder .fform.ui-selected .arrow{display:inline}
+#fbuilder .fform.ui-over{border:1px dashed #888;}
+#fbuilder .fform h1{margin:5px 0px;padding:0px;}
+input.disabled {background: #fff;color: #888;cursor: default;}
+label1{display:inline}
+input.small, select.small, textarea.small, .small{width:25%}
+input.medium, select.medium, textarea.medium, .medium{width:50%}
+input.large, select.large, textarea.large, .large{width:100%;box-sizing: border-box;-webkit-box-sizing:border-box;-moz-box-sizing: border-box;}
+textarea {resize: none}            
+.one_column{}
+.two_column{float:left;width:48%}
+.three_column{float:left;width:30%}
+.side_by_side{float:left;}
+.top_aligned .fields label{}
+.top_aligned .fields .dfield{}
+.left_aligned .fields label{float:left;width:31%}
+.left_aligned .fields .dfield{float:left;width:65%;}
+.right_aligned .fields label{float:left;width:31%;text-align:right;padding:3px 3px 0px 0px}
+.right_aligned .fields .dfield{float:left;width:65%} 
+#tabs  span.uh,
+#fbuilder span.uh{display:block;font-size:80%;clear:both}
+#fbuilder .section_break{border-top:1px dotted #555;clear:both}
+
+#fbuilder .uh_phone{float:left;margin:0px 5px;font-size:80%;text-align:center;position: relative;}
+#fbuilder .uh_phone input{text-align:center;font-size:100%;}
+#fbuilder .uh_phone div.cpefb_error{display:block;white-space:nowrap;width:400px}
+
+.eq_btn{min-width:45px;}
+.cf_dependence_value{ width:20%; }
+#sEq{resize:vertical; min-height:70px;}
+#fCalculated{
+    background: url("cupertino/images/ui-bg_glass_80_eebd4d_1x400.png") repeat-x scroll 50% 50% #EEBD4D;
+    border: 1px solid #D0771D;
+    color: #643F0D;
+    font-weight: bold;
+}
+a.helpfbuilder{font-size:80%;text-decoration:underline;color:#00f;cursor:pointer;}
+.working_dates input[type='checkbox']{width:8%}
+.form-builder .ui-button-text {
+    display: block !important;
+}
+
+.form-builder-error-messages .error-text{ color: #FF0000; border: 1px solid #FF0000; margin-bottom: 10px; padding:5px; }
+
+.form-builder #tabs label{ font-size:12px !important; }

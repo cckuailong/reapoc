@@ -1,0 +1,217 @@
+.clearfix::after, ul.bu_list_cont li::after, ul.bu_list_ul li .rp::after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.pu_title {
+	font-size: 21px;
+	text-align: center;
+	padding-bottom: 20px;
+	font-weight: 300;
+	padding-top: 80px;
+}
+form {
+	width: 585px;
+	box-sizing: border-box;
+	margin: 0 auto 20px;
+	padding: 20px;
+	background-color: #fff;
+	list-style: none;
+	border: 1px solid #E5E5E5;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+	margin: 10px;
+	float: left;
+	width: 250px;
+}
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700;
+		font-size: 13px;
+}
+
+ul.bu_list_ul {
+	width: 790px;
+	box-sizing: border-box;
+	margin: 0 auto 40px;
+	padding: 0;
+}
+ul.bu_list_ul li {
+	background-color: #fff;
+	box-sizing: border-box;
+	list-style: none;
+	border: 1px solid #E5E5E5;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	margin: 0 20px -1px 20px;
+	font-size: 21px;
+	font-weight: 300;
+	-webkit-transition: margin 0.1s ease-out, background-color 0.3s ease-out;
+	-moz-transition: margin 0.1s ease-out, background-color 0.3s ease-out;
+	-o-transition: margin 0.1s ease-out, background-color 0.3s ease-out;
+	transition: margin 0.1s ease-out, background-color 0.3s ease-out;
+}
+ul.bu_list_ul li.open {
+	margin: 20px;
+}
+ul.bu_list_ul .rp {
+	border-top: 1px solid #E5E5E5;
+}
+ul.bu_list_ul .rp span {
+	font-size: 17px;
+	padding: 15px 21px;
+}
+ul.bu_list_ul li span {
+	font-size: 21px;
+	padding: 21px;
+	display: inline-block;
+}
+
+.processing{
+	background-color: gray !important;
+}
+.wcard {
+	background-color: #fff;
+	padding: 15px;
+	width: 450px;
+	margin: auto;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	position: relative;
+}
+.wcard .l1 {
+	text-align: center;
+	padding: 20px 0 30px;
+	line-height: 22px;
+}
+.wcard .btn_pri {
+	background-color: #2EA2CC;
+	color: #FFF;
+	padding: 9px 58px 11px;
+	display: block;
+	border-radius: 3px;
+	margin-right: 14px;
+	cursor: pointer;
+	box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.1) inset, 0 -4px 0 rgba(255, 255, 255, 0.1) inset;
+	float: left;
+	border:0;
+}
+.wcard .btn_pri:hover {
+	background-color: #2eaad7;
+	color: #fff !important;
+}
+.wcard .btn_pri:active {
+	padding: 10px 58px;
+	box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.0);
+}
+.wcard .btn_pri.disabled {background-color: #D7D7D7 !important;box-shadow: 0px 0px;
+text-transform: none;
+letter-spacing: 1px;
+color: rgb(255, 255, 255) !important;}
+.wcard .btn_pri.disabled:hover {padding: 9px 58px 11px; cursor: default;}
+.wcard .btn_sec {
+	background-color: #acacac;
+	color: #fff !important;
+	padding: 9px 24px 11px;
+	display: block;
+	float: left;
+	border-radius: 3px;
+	cursor: pointer;
+	text-decoration: none;
+	box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.1) inset, 0 -4px 0 rgba(255, 255, 255, 0.1) inset;
+}
+.wcard .btn_sec:hover {
+	background-color: #b9b9b9;
+}
+.wcard .btn_sec:active {
+	padding: 10px 24px;
+	box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.0);
+}
+.wcard .progress_bar {
+	z-index: 1;
+	background-color: #E0F5DE;
+	height: 60px;
+	position: absolute;
+	-webkit-transition: width 0.1s ease-out;
+	-moz-transition: width 0.1s ease-out;
+	-o-transition: width 0.1s ease-out;
+	transition: width 0.2s ease-out;
+}
+.wcard.progress_reverse .progress_bar {
+	right: 0;
+}
+.wcard .progress_cont {
+	z-index: 2;
+	width: 450px;
+	padding: 20px 5px;
+	box-sizing: border-box;
+	position: absolute;
+	text-align: center;
+}
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px !important;
+  direction: ltr;
+  cursor: pointer;
+}
+
+.wptc-custom-btn{
+	color: #fff !important;
+	font-size: 14px !important;
+	float: right;
+	position: relative;
+	top: 10px;
+	right: 32px;
+}
+
+.bridge_restore_now_wptc, .show_restore_points{
+	cursor: pointer;
+}
+
+.btn_wptc {
+	background-color: #2ea2cc !important;
+	color: #fff !important;
+	font-size: 12px !important;
+	font-weight: 600 !important;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: block !important;
+	padding: 9px 15px 11px !important;
+	margin: 10px;
+	border-radius: 3px !important;
+	border: none !important;
+}
+.btn_wptc:hover {
+	cursor: pointer;
+	background-color: #2eaad7;
+}
+.btn_wptc:active {
+	padding: 10px 15px;
+}
+.btn_wptc.disabled {
+	background-color: #dadada;
+	color: #e6e6e6;
+	box-shadow: 0 0;
+	padding: 10px 15px;
+}
+
+#resume_restore_wptc{
+    width: 110px;
+    margin: auto;
+}

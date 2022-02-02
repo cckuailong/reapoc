@@ -1,0 +1,56 @@
+.wp-block-canto-feature-block {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.canto-block {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+    width: 100%;
+	padding: 1rem;
+}
+.wp-block-canto-feature-block.canto-cols-2 .canto-block {
+	-webkit-flex: 0 1 50%;
+	-ms-flex: 0 1 50%;
+	flex: 0 1 50%;
+}
+.wp-block-canto-feature-block .canto-feature-image {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.canto-feature-image img {
+	width: auto;
+	max-height: 150px;
+}
+.wp-block-canto-feature-block.canto-cols-1 .canto-block-2 {
+    display: none;
+	visibility: hidden;
+}
+.wp-block-canto-feature-block .canto-feature-content {
+	padding: 0 1rem;
+	box-sizing: border-box;
+}
+.wp-block-canto-feature-block .canto-feature-image button {
+	margin: 0 auto;
+}
+.wp-block-canto-feature-block .canto-feature-image button.image-button {
+	line-height: 0;
+	padding: 0px;
+}
+.wp-block-canto-feature-block .canto-feature-image button.image-button img {
+	margin: 0;
+}

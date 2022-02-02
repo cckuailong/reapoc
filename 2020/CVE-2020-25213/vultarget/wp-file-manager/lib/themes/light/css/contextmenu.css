@@ -1,0 +1,43 @@
+/* contextmenu.css */
+/* **Note** that the context menu is NOT inside the main elfinder div */
+/* Context menu wrapper */
+.elfinder-contextmenu,
+.elfinder-contextmenu-sub,
+.elfinder-button-menu {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background: #fff!important;
+  border: 1px solid #b5b5b5!important;
+  box-shadow: 0 0 5px #cdcdcd!important;
+  border-radius: 0;
+  padding: 3px 3px 0 3px;
+}
+
+/* Menu item */
+.elfinder-contextmenu .elfinder-contextmenu-item,
+.elfinder-button-menu .elfinder-button-menu-item {
+  margin: 0 0 3px 0;
+}
+
+/* Hovered menu item */
+.elfinder-contextmenu .elfinder-contextmenu-item:hover,
+.elfinder-button-menu .elfinder-button-menu-item:hover  {
+  background: #dedddc;
+  color: #000;
+}
+
+/* Item icon */
+.elfinder-contextmenu .elfinder-contextmenu-item .elfinder-contextmenu-icon {
+  /* */
+}
+
+/* Separator */
+.elfinder-contextmenu .elfinder-contextmenu-separator {
+  background: #e2e3e4;
+  height: 1px;
+  margin: 1px;
+}
+
+.elfinder-contextmenu .elfinder-button-icon-open + span {
+  font-weight: bold;
+}

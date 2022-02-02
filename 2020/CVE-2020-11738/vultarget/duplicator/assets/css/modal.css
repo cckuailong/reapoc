@@ -1,0 +1,132 @@
+.duplicator-modal {
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 100000;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+}
+.duplicator-modal.active {
+    display: block;
+}
+.duplicator-modal.active:before {
+    display: block;
+}
+.duplicator-modal a[disabled] { pointer-events: none; }
+
+.duplicator-modal .duplicator-modal-dialog {
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -298px;
+    padding-bottom: 30px;
+    top: -100%;
+    z-index: 100001;
+    width: 596px;
+}
+.duplicator-modal.active .duplicator-modal-dialog {
+    top: 10%;
+}
+.duplicator-modal .duplicator-modal-body,
+.duplicator-modal .duplicator-modal-footer {
+    border: 0;
+    background: #fff;
+    padding: 15px;
+}
+.duplicator-modal .duplicator-modal-body {
+    border-bottom: 0;
+}
+.duplicator-modal .duplicator-modal-body p {
+    font-size: 1.3em;
+}
+.duplicator-modal .duplicator-modal-body h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-top: 0;
+}
+.duplicator-modal .duplicator-modal-footer {
+    border-top: #eeeeee solid 1px;
+    text-align: right;   
+}
+.duplicator-modal .duplicator-modal-footer .duplicator-modal-button-deactivate {
+    min-width: 124px;
+    text-align: center;
+}
+.duplicator-modal .duplicator-modal-footer .button {
+    margin: 0 5px;    
+}
+.duplicator-modal .duplicator-modal-footer .button:last-child {
+    margin-right: 0;
+}
+.duplicator-modal .duplicator-modal-panel>.notice.inline {
+    margin: 0;
+    display: none;
+}
+.duplicator-modal .duplicator-modal-panel:not(.active) {
+    display: none;
+}
+body.has-duplicator-modal {
+    overflow: hidden;
+}
+.duplicator-modal.duplicator-modal-deactivation-feedback .duplicator-modal-reason-input,
+.duplicator-modal.duplicator-modal-deactivation-feedback .duplicator-modal-internal-message {
+    margin: 3px 0 3px 22px; background-color:#e0f3e8;
+}
+.duplicator-modal.duplicator-modal-deactivation-feedback .duplicator-modal-reason-input input,
+.duplicator-modal.duplicator-modal-deactivation-feedback .duplicator-modal-reason-input textarea,
+.duplicator-modal.duplicator-modal-deactivation-feedback .duplicator-modal-internal-message input,
+.duplicator-modal.duplicator-modal-deactivation-feedback .duplicator-modal-internal-message textarea {
+    width: 100%;
+}
+.duplicator-modal.duplicator-modal-deactivation-feedback li.duplicator-modal-reason.has-internal-message .duplicator-modal-internal-message {
+    border: 1px solid #ccc;
+    padding: 7px;
+    display: none;
+}
+.duplicator-modal.duplicator-modal-deactivation-feedback .duplicator-modal-anonymous-label {
+    padding-top: 15px;
+}
+.duplicator-modal.duplicator-modal-deactivation-feedback .duplicator-modal-panel {
+    margin-top: 0 !important;
+}
+
+.duplicator-modal .duplicator-modal-resp-msg {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.duplicator-modal .duplicator-modal-button-skip, .duplicator-modal .duplicator-modal-resp-msg {
+    /*display: none;*/
+}
+
+
+@media (max-width: 650px) {
+    .duplicator-modal .duplicator-modal-dialog {
+        margin-left: -50%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+    .duplicator-modal .duplicator-modal-dialog .duplicator-modal-panel>h3>strong {
+        font-size: 1.3em;
+    }
+    .duplicator-modal.duplicator-modal-deactivation-feedback li.duplicator-modal-reason li.duplicator-modal-reason {
+        margin-bottom: 10px;
+    }
+    .duplicator-modal.duplicator-modal-deactivation-feedback li.duplicator-modal-reason li.duplicator-modal-reason .duplicator-modal-reason-input,
+    .duplicator-modal.duplicator-modal-deactivation-feedback li.duplicator-modal-reason li.duplicator-modal-reason .duplicator-modal-internal-message {
+        margin-left: 29px;
+    }
+    .duplicator-modal.duplicator-modal-deactivation-feedback li.duplicator-modal-reason li.duplicator-modal-reason label {
+        display: table;
+    }
+    .duplicator-modal.duplicator-modal-deactivation-feedback li.duplicator-modal-reason li.duplicator-modal-reason label>span {
+        display: table-cell;
+        font-size: 1.3em;
+    }
+}

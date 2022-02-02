@@ -1,0 +1,154 @@
+/******************************************************************/
+/*                           STATUSBAR STYLES                     */
+/******************************************************************/
+
+/* statusbar container */
+.elfinder-statusbar {
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+    text-align: center;
+    font-weight: normal;
+    padding: .2em .5em;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+}
+
+.elfinder-statusbar:before,
+.elfinder-statusbar:after {
+    display: none;
+}
+
+.elfinder-statusbar span {
+    vertical-align: bottom;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.elfinder-statusbar span.elfinder-path-other {
+    flex-shrink: 0;
+    text-overflow: clip;
+    -o-text-overflow: clip;
+}
+
+.elfinder-statusbar span.ui-state-hover,
+.elfinder-statusbar span.ui-state-active {
+    border: none;
+}
+
+.elfinder-statusbar span.elfinder-path-cwd {
+    cursor: default;
+}
+
+/* path in statusbar */
+.elfinder-path {
+    display: flex;
+    order: 1;
+    flex-grow: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    max-width: 30%\9;
+}
+
+.elfinder-ltr .elfinder-path {
+    text-align: left;
+    float: left\9;
+}
+
+.elfinder-rtl .elfinder-path {
+    text-align: right;
+    float: right\9;
+}
+
+/* path in workzone (case of swipe to navbar close) */
+.elfinder-workzone-path {
+    position: relative;
+}
+
+.elfinder-workzone-path .elfinder-path {
+    position: relative;
+    font-size: .75em;
+    font-weight: normal;
+    float: none;
+    max-width: none;
+    overflow: hidden;
+    overflow-x: hidden;
+    text-overflow: initial;
+    -o-text-overflow: initial;
+}
+
+.elfinder-mobile .elfinder-workzone-path .elfinder-path {
+    overflow: auto;
+    overflow-x: scroll;
+}
+
+.elfinder-ltr .elfinder-workzone-path .elfinder-path {
+    margin-left: 24px;
+}
+
+.elfinder-rtl .elfinder-workzone-path .elfinder-path {
+    margin-right: 24px;
+}
+
+.elfinder-workzone-path .elfinder-path span {
+    display: inline-block;
+    padding: 5px 3px;
+}
+
+.elfinder-workzone-path .elfinder-path span.elfinder-path-cwd {
+    font-weight: bold;
+}
+
+.elfinder-workzone-path .elfinder-path span.ui-state-hover,
+.elfinder-workzone-path .elfinder-path span.ui-state-active {
+    border: none;
+}
+
+.elfinder-workzone-path .elfinder-path-roots {
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 20px;
+    padding: 2px;
+    border: none;
+    overflow: hidden;
+}
+
+.elfinder-ltr .elfinder-workzone-path .elfinder-path-roots {
+    left: 0;
+}
+
+.elfinder-rtl .elfinder-workzone-path .elfinder-path-roots {
+    right: 0;
+}
+
+/* total/selected size in statusbar */
+.elfinder-stat-size {
+    order: 3;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.elfinder-ltr .elfinder-stat-size {
+    text-align: right;
+    float: right\9;
+}
+
+.elfinder-rtl .elfinder-stat-size {
+    text-align: left;
+    float: left\9;
+}
+
+/* info of current selected item */
+.elfinder-stat-selected {
+    order: 2;
+    margin: 0 .5em;
+    white-space: nowrap;
+    overflow: hidden;
+}

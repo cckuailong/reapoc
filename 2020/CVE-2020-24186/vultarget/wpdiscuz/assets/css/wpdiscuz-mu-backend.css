@@ -1,0 +1,29 @@
+#the-comment-list .wmu-attachment img{vertical-align:bottom;}
+#the-comment-list .wmu-comment-attachments{padding:0px 5px; margin:3px 0px 10px 0px;}
+#the-comment-list .wmu-attachment-delete{cursor:pointer; border-top:1px solid #ffffff; visibility:hidden; font-size:5px; line-height:12px; text-align:center; padding:2px 0px 1px 0px; margin:0px; z-index:100; background: url('../img/file-icons/delete.png') center no-repeat; border-bottom:white 1px solid;}
+#the-comment-list .wmu-attachment:hover > .wmu-attachment-delete{visibility:visible;}
+#the-comment-list .wmu-attachment-delete:hover{visibility:visible; background-color:#FFEFEF; border-bottom:#FFD6D6 1px solid;}
+
+#the-comment-list .wmu-attached-images {border-top: 1px dotted #dfdfdf;}
+#the-comment-list .wmu-attached-images.wmu-count-single{border-top:none;}
+#the-comment-list .wmu-attached-images .wmu-attachment{margin:10px 2px 1px 2px; display:inline-block;width: 60px;}
+#the-comment-list .wmu-attached-images .wmu-attached-image{border: 3px solid #f1f1f1;}
+#the-comment-list .wmu-attached-images .attachment-thumbnail{border: 3px solid #f1f1f1;}
+#the-comment-list .wmu-attached-image-link{display: inline-block;}
+#the-comment-list .wmu-attached-images .wmu-separator{padding:4px 0px; display:block;}
+
+#the-comment-list .wmu-action-wrap{width:100%; margin:0px; padding:0px; text-align:left;}
+#the-comment-list .wmu-action-wrap img{display:inline-block; vertical-align:bottom;}
+#the-comment-list .wmu-top-title{padding:5px 20px 5px 3px; font-size:10px; color:#888888; text-align:left; margin-top:-27px; margin-bottom:7px; line-height:14px; white-space:nowrap; display:table; text-transform:uppercase;}
+#the-comment-list .wmu-filreader-not-exist {/*show filename before uploading if file reader not exists*/}
+
+table.wpdiscuz-mu .wmu-block {float:left; display:inline-block; min-width:25%;}
+table.wpdiscuz-mu .wmu-block-inline {display:block;}
+
+@media screen and (max-width:655px){    
+    #the-comment-list .wmu-attached-images .wmu-attached-image{width:100%!important; height:auto!important; }
+}
+
+@media screen and (max-width:420px){
+    #the-comment-list .wmu-top-title{display:none;}    
+}

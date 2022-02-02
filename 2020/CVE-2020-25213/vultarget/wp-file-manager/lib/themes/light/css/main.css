@@ -1,0 +1,32 @@
+/* main.css */
+/* Container div for elFinder */
+.elfinder,
+.elfinder .elfinder-dialog,
+.elfinder .elfinder-toolbar .elfinder-buttonset .elfinder-button-menu {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px #cdcdcd;
+  border-radius: 0;
+}
+
+/* Override styles in child elements of elFinder div */
+/* Use for consistently setting text sizes and overriding general jQuery UI styles */
+.elfinder * {
+  /*color: #000;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Resizer */
+/* Used if elFinder is resizable and on dialogs */
+.elfinder .ui-icon-gripsmall-diagonal-se,
+.elfinder-dialog .ui-icon-gripsmall-diagonal-se {
+  /* */
+}
+.elfinder-button-icon.elfinder-button-icon-fullscreen {
+	background: url(../images/16px/fullscreen.svg);
+	background-repeat:no-repeat;
+background-size: 16px;
+}
+.elfinder-cwd-view-list td .elfinder-cwd-icon {
+	background-image: url(../images/icons-small_new.png);
+}

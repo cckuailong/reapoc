@@ -1,0 +1,616 @@
+/*
+ * Developer: Alireza Eskandarpour Shoferi
+ * Designer: Wouter de Bres (dribbble.com/wdeb)
+ *
+ * Distributed under the terms of the MIT license
+ * http://opensource.org/licenses/MIT
+ */
+
+
+/*For Bootstrap*/
+
+.dialog-div-initial-wptc .row {
+    /* height: 30px; */
+    margin: 8px 0px 42px 0;
+    padding: 0px 1px;
+}
+
+.dialog-div-initial-wptc .col-md-2 {
+    width: 16.66666667%;
+    float: left;
+}
+
+.dialog-div-initial-wptc .col-md-3 {
+    width: 25%
+}
+
+.dialog-div-initial-wptc .col-md-4 {
+    width: 16.33%;
+}
+
+.dialog-div-initial-wptc .col-md-6 {
+    width: 50%
+}
+
+.dialog-div-initial-wptc .col-md-7 {
+    width: 58.33333333%;
+}
+
+.dialog-div-initial-wptc .col-md-8 {
+    width: 66.66%;
+}
+
+.dialog-div-initial-wptc .col-md-offset-2 {
+    margin-left: 16.66666667%;
+}
+
+.dialog-div-initial-wptc .col-md-offset-6 {
+    margin-left: 50%;
+}
+
+.dialog-div-initial-wptc .col-md-offset-7 {
+    margin-left: 58.33333333%;
+    float: left;
+}
+
+.dialog-div-initial-wptc .col-md-offset-9 {
+    margin-left: 75%;
+}
+
+.dialog-div-initial-wptc .pull-left {
+    float: left!important;
+}
+
+.dialog-div-initial-wptc .pull-right {
+    float: right!important;
+}
+
+.dialog-div-initial-wptc hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.dollar_amt_style {
+    /* font-size: 19px; */
+    /* font-weight: 600; */
+    /* font-style: italic; */
+    /* padding-right: 0px; */
+}
+
+
+/*For Bootstrap End*/
+
+.wptc_plans_wrapper {
+    text-align: center;
+    /* width: 123%; */
+    height: 450px;
+    padding-bottom: 43px;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+.package_wptc {
+    margin-top: 2.3%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    border: 0px solid #a0a5aa;
+    border-radius: 7px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 250px;
+    min-height: 368px;
+    height: auto;
+    z-index: 32;
+    background-color: white;
+    -webkit-box-shadow: 3px 2px 22px -1px rgba(87, 83, 87, 0.65);
+    -moz-box-shadow: 3px 2px 22px -1px rgba(87, 83, 87, 0.65);
+    box-shadow: 1px 1px 8px -1px rgba(87, 83, 87, 0.65);
+}
+
+.package_wptc:nth-child(1) {
+    /* height: 318px; */
+    /* bottom: 44px; */
+    margin-left: 2.2%;
+}
+
+.package_wptc:nth-child(1) .package_wptc_border {
+    /* height: 284px; */
+}
+
+.package_wptc:nth-child(1) .plan_interval_group {
+    /* display: none; */
+}
+
+.package_wptc:nth-child(2) {
+    /*height: 318px;
+    bottom: 44px;*/
+}
+
+.package_wptc:nth-child(2) .package_wptc_border {
+    /* height: 284px; */
+}
+
+.package_wptc:nth-child(2) .plan_interval_group {
+    /*display: none;*/
+}
+
+.package_wptc:nth-last-child(1) {
+    margin-right: 0;
+    /*apply this only when more than one yearly plan is there*/
+}
+
+.package_wptc:nth-last-child(2):not('.lifetime') {
+    margin-right: 0;
+}
+
+.package_wptc_border {
+    /* border: 1px solid #E8E8E1; */
+    border-radius: 7px;
+    display: inline-block;
+    padding: 2px;
+    margin: 16.68px 2.125px;
+    margin-bottom: 11px;
+    width: 242px;
+    min-height: 336px;
+    height: auto;
+    overflow: auto;
+    box-sizing: border-box;
+    padding-bottom: 14px;
+}
+
+.package_wptc_border.active {
+    /* border: 1px solid #b5b5b7; */
+}
+
+.package_wptc_border:hover {
+    /* border: 1px solid #b5b5b7; */
+}
+
+.package_wptc:hover {
+    /*   margin-top: 30px; */
+    /*-webkit-transition: margin-top 0.3s linear;*/
+    /*transition: margin-top 0.3s linear;*/
+    /* width: 40%; */
+}
+
+.package_wptc.plan_disable {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.plan_name_wptc {
+    color: #0dbc68;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 9px;
+    margin-bottom: 4px;
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    line-height: 26px;
+}
+
+.price_wptc {
+    /* font-weight: 800; */
+    width: 100%;
+    text-align: center;
+    color: #05a8f5;
+    /* background-color: #fefefe; */
+    position: absolute;
+    /* margin-left: -15px; */
+    height: 45px;
+    /* font-size: 52px; */
+    /* opacity: 0.7; */
+    /* overflow: hidden; */
+    /* border-top: 45px solid #797272; */
+    /* border-right: 7px solid transparent; */
+    box-sizing: border-box;
+    line-height: 25.7143px;
+}
+
+.price_wptc span {
+    /* position: relative; */
+    /* top: 12px; */
+    /* float: left; */
+}
+
+.blah {
+    position: relative;
+    display: inline-block;
+    padding: 1em 5em 1em 1em;
+    overflow: hidden;
+    color: #fff;
+}
+
+.price_wptc:after {
+    /*position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;*/
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: skew(-45deg);
+    -ms-transform: skew(-45deg);
+    transform: skew(-45deg);
+    z-index: 0;
+}
+
+.price_wptc .dollar_group {
+    /* margin: 0 auto; */
+    /* width: 46%; */
+    /* text-align: center; */
+    /* margin: -40px 0 0 0; */
+}
+
+span.price_interval_wptc {
+    font-weight: 600;
+    font-size: 15px;
+    /* margin-left: 1px; */
+}
+
+span.dollar_wptc {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.kutty_dollar {
+    font-size: 13px;
+    position: relative;
+    bottom: 7px;
+    right: 1px;
+}
+
+.price_wptc::after {
+    font-weight: normal;
+}
+
+.package_wptc hr {
+    background-color: #dedede;
+    border: none;
+    height: 1px;
+    margin-top: 20%;
+}
+
+.trial_wptc {
+    font-size: .9rem;
+    font-weight: 600;
+    padding: 2px 21px 2px 21px;
+    color: #33c4b6;
+    border: 1px solid #e4e4e4;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    bottom: -20px;
+}
+
+.package_wptc ul::before {
+    margin-top: 20%;
+}
+
+.package_wptc ul {
+    list-style: none;
+    padding-left: 10px;
+    /*plugin only*/
+    text-align: left;
+    padding-top: 46px;
+    height: 48%;
+    /*plugin only*/
+    margin-top: 5% !important;
+    width: 230px;
+    font-size: 15px;
+    z-index: 32;
+}
+
+.package_wptc li {
+    margin-bottom: 5px;
+    /* opacity: 0.8; */
+}
+
+.checkIcon {
+    font-family: "FontAwesome";
+    content: "\f00c";
+}
+
+
+
+/*.package_wptc li::before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  font-size: 1.3rem;
+  color: #33c4b6;
+  margin-right: 3px;
+}*/
+
+.plan_select_btn_wptc.active {
+    background: #05a8ae;
+}
+
+.plan_select_btn_wptc:disabled {
+    cursor: not-allowed;
+    background: rgba(10, 205, 111, 0.72);
+}
+
+.plan_select_btn_wptc {
+    width: 84%;
+    margin: 0px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 9px 24px;
+    background: rgba(10, 205, 111, 0.86);
+    border: none;
+    outline: none;
+    /* float: right; */
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 13%;
+}
+
+.plan_select_btn_wptc:focus {
+    border: none;
+    outline: 0;
+}
+
+.plan_select_btn_wptc:hover {
+    background-color: rgb(10, 205, 111);
+    color: #fff;
+    outline: 0;
+}
+
+.plan_select_btn_wptc:active:focus {
+    outline: 0;
+    color: #fff;
+}
+
+.modal-lg {
+    width: 1280px;
+}
+
+.wptc_plans_title_info_text {
+    /* margin: 1% auto 2% auto; */
+    text-align: center;
+}
+
+.wptc_plans_title_info_text {
+    box-sizing: border-box;
+    padding: 9px;
+    /* padding-bottom: 0; */
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    background: #fafafa;
+    border-top: 1px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 999;
+}
+
+.dialog_div_adjust_wptc {
+    width: 669px !important;
+    margin: 33px 1%;
+}
+
+.plan_interval_change_wptc {
+    font-size: 12px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.plan_desc_wptc {
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 100;
+    min-height: 164px;
+}
+
+
+/*for dialog confirmation box in plugin */
+
+.bs-callout {
+    padding: 5px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+
+.bs-callout-danger {
+    border-left-color: #ce4844;
+}
+
+.plan_interval_group {
+    margin: 6px 0px 4px 0px;
+}
+
+.plan_select_btn_wptc.select_now {
+    background-color: rgba(5, 168, 245, 0.86);
+}
+
+.plan_select_btn_wptc.select_now:hover {
+    opacity: 1;
+    background: rgba(5, 168, 245, 1);
+}
+
+
+
+/*extra for plugin below */
+
+.flap_boxes_group_wptc {
+    margin-left: 0;
+    height: 41.59px;
+    width: 75%;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: normal;
+    color: rgba(68, 68, 68, 0.87);
+}
+
+
+
+/*.brilliant {
+  border-color: #33c4b6;
+}
+/* Triangle */
+
+
+/*.brilliant::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 64px 64px 0 0;
+  border-color: #3bc6b8 transparent transparent transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+}
+.brilliant::after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  color: white;
+  position: absolute;
+  left: 9px;
+  top: 6px;
+  text-shadow: 0 0 2px #37c5b6;
+  font-size: 1.4rem;
+}*/
+
+.plan_desc_sub {
+    color: rgba(51, 51, 51, .64);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.plan_name_wptc.free {
+    color: #7635cd;
+}
+
+.plans-angle-header-wptc {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: -4%;
+    overflow: hidden;
+    z-index: 1;
+    margin-left: -15px;
+}
+
+.top-angle-wptc {
+    width: 147%;
+    height: 55%;
+    background-image: radial-gradient(circle farthest-side at 80% 111%, #e0f8b0 6%, #2ec9c9 26%, #3b6dd1 60%, #420098);
+    display: block;
+    transform: rotate(3deg);
+    margin-top: -19px; /* plugin */
+    margin-left: -8px;
+    position: absolute;
+    z-index: 12;
+}
+
+.bottom-angle-wptc {
+    height: 50%;
+}
+
+.package_wptc:nth-child(4) {
+    /* margin-right: 0; */
+}
+
+.flap_boxes_group_wptc i {
+    margin: 12.3px 8px 0px 10px;
+    font-size: 16px;
+}
+
+.flap_boxes_group_wptc .close {
+    float: right;
+    cursor: pointer;
+    opacity: 0.87;
+}
+
+.offer_cut,
+.offer_cut_special_10,
+.offer_cut_special_20 {
+    width: 56px;
+    margin-right: 11px;
+    color: rgba(68, 68, 68, 0.87);
+}
+
+.offer_cut::after {
+    content: "";
+    position: absolute;
+    top: 27%;
+    left: 19.5%;
+    width: 16%;
+    height: 2px;
+    background: #444444;
+    transform: rotate(-33deg);
+    opacity: 0.87;
+}
+
+.offer_cut_special_10::after {
+    content: "";
+    position: absolute;
+    top: 28%;
+    left: 20.5%;
+    width: 20%;
+    height: 2px;
+    background: #444444;
+    transform: rotate(-33deg);
+    opacity: 0.87;
+}
+
+.offer_cut_special_20::after {
+    content: "";
+    position: absolute;
+    top: 28%;
+    left: 15.5%;
+    width: 20%;
+    height: 2px;
+    background: #444444;
+    transform: rotate(-33deg);
+    opacity: 0.87;
+}
+
+.plan_coming_soon {
+    color: rgba(180, 54, 245, 0.87);
+}
+
+.plans_modal_body_fix {
+    height: 518px !important;
+}
+
+.wptc-select-plans-div{
+    margin-left: 480px;
+    padding: 15px 0px;
+}
+
+#wptc-select-plans-status{
+    margin-top: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: none
+}
+.plans_modal_bg_fix{
+     background: #6fadb7;
+    background: -moz-linear-gradient(45deg, #6fadb7 1%, #3474d0 41%, #782bd1 100%);
+    background: -webkit-linear-gradient(45deg, #6fadb7 1%,#3474d0 41%,#782bd1 100%);
+    background: linear-gradient(45deg, #6fadb7 1%,#3474d0 41%,#782bd1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fadb7', endColorstr='#782bd1',GradientType=1 );
+}

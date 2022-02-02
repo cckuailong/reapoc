@@ -1,0 +1,335 @@
+.fmInnerWrap{
+	background:#fff;
+	border:1px solid #ddd;
+	padding:30px;
+	color:#404040;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.fmInnerWrap p{
+	color:#404040;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.fmInnerWrap h3.mainHeading{
+	color:#000;
+	font-size:22px;
+	line-height:30px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:700;
+	margin:0;
+	margin-bottom:25px;
+	padding-bottom:15px;
+	border-bottom:1px solid #ddd;
+}
+.fmInnerWrap h3.mainHeading .headingIcon{
+	float:left;
+	display:inline-block;
+	margin-right:15px;
+}
+.fmInnerWrap .labelHeading{
+	display:block;
+	font-size:16px;
+	line-height:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:700;
+	margin-bottom:10px;
+	color:#404040;
+}
+.fmInnerWrap .labelHeadingInline{
+	display:inline-block;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:700;
+	color:#404040;
+}
+.rootPageWrap .fmInnerWrap .codeTagEle .labelHeadingInline{
+	margin-top: -3px;
+}
+.fmInnerWrap code{
+	background:#ebebeb;
+	padding:2px 5px;
+	color:#404040;
+	font-size:16px;
+	line-height:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:300;
+}
+.fmInnerWrap input.fmInput {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: Arial, Helvetica, sans-serif;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border: 1px solid #ddd;
+	padding: 10px 18px;
+	color: #808080;
+	height: inherit;
+	line-height: inherit;
+	width: 100%;
+}
+.fmInnerWrap .emText{
+	font-style:italic;
+	font-size:16px;
+	line-height:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:300;
+	color:#808080;
+}
+.fmError{
+	position:relative;
+	background:#f7f1f1;
+	color:#cf3636;
+	font-size:14px;
+	padding:10px;
+	padding-left:40px;
+	font-style:italic;
+}
+.fmError::before{
+	content:url('images/warning-icon.png');
+	position:absolute;
+	left:15px;
+}
+.btnDv .fmCustomBtn {
+	border: none;
+	background: #267ddd;
+	color: #fff;
+	text-shadow: none;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	height: inherit;
+	line-height: inherit;
+	padding: 15px 20px;
+	border-radius: 5px;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+.fmInnerWrap .rootDirectoryForm .emText{
+	margin-top:15px;
+	margin-bottom:10px;
+}
+.fmInnerWrap .rootDirectoryForm .codeTagEle{
+	margin-bottom:15px;
+}
+.fmInnerWrap .btnDv{
+	margin-top:30px;
+}
+/***/
+.shortcodeDocList{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.shortcodeDocList li{
+	font-size:14px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:24px;
+	padding:12px;
+	margin:0;
+	color:#404040;
+}
+.shortcodeDocList li::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.shortcodeDocList li .lftTxt{
+	float:left;
+	width:30px;
+}
+.shortcodeDocList li .rtTxt{
+	float:left;
+	width:95%;
+}
+.shortcodeDocList li:nth-child(even){
+	background:#fff;
+}
+.shortcodeDocList li:nth-child(odd){
+	background:#f4f4f4;
+}
+.shortcodeDocList li .num {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 22px;
+	height: 22px;
+	color: #fff;
+	background: #267ddd;
+	text-align: center;
+	padding: 1px;
+	font-weight: 700;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	line-height: 20px;
+}
+.shortcodeDocList li .strongText{
+	font-weight:700;
+}
+.shortcodeDocList li .lineText{	
+}
+.twoColListWrap{
+	margin-bottom: 15px;
+}
+.twoColListWrap .numList{
+	float:left;
+	width:50%;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.twoColListWrap .numList li{
+	font-size:14px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:24px;
+	padding:6px 12px;
+	margin:0;
+	color:#404040;
+}
+.twoColListWrap .numList .num{
+	color:#267ddd;
+	font-weight:700;
+	margin-right:15px;
+}
+.twoColListWrap .numList .strongText{
+	font-weight:700;
+}
+.twoColListWrap .numList .lineText{
+}
+.twoColListWrap::after{
+	display:table;
+	clear:both;
+	content:"";
+}
+.fm_codeParaTxt{
+	border-bottom:1px solid #ddd;
+	margin-bottom:25px;
+	padding-bottom:15px;
+}
+.fm_codeParaTxt .para{
+	font-size:14px;
+	color:#404040;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	line-height: 24px;
+}
+.fm_codeParaTxt .para::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.fm_codeParaTxt .para code{
+	font-size:14px;
+}
+.fm_codeParaTxt .para strong{
+	font-weight:700;
+	color:#404040;
+}
+.fm_codeParaTxt .lftText{
+	float:left;
+	width:38px;
+}
+.fm_codeParaTxt .rtTxt{
+	float:left;
+	width: 95%;
+}
+.fmShorcodePage .subHeading{
+	color:#404040;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:700;
+	font-size:14px;
+	padding:12px;
+	margin-top:10px;
+}
+.fmShorcodePage .subHeading .num{
+	color:#267ddd;
+	margin-right: 6px;
+}
+.fmGitForm .form-table-dv{
+	margin-bottom:15px;
+}
+.fmGitForm .form-table-dv .fmInput{
+	font-size:14px;
+}
+.gitPageWrap .gitSec2{
+	margin-bottom:30px;
+	margin-top:30px;
+}
+.gitPageWrap .greyBox{
+	background:#f4f4f4;
+	padding:30px;
+	border:1px solid #ddd;
+}
+.gitStepWrap p{
+	font-size:16px;
+}
+.gitStepWrap p.descTxt{
+	margin:0;
+}
+.gitStepWrap .btnDv{
+	margin-top:15px;
+}
+.gitStepWrap .stepArea {
+	margin-bottom: 30px;
+}
+.gitStepWrap .stepArea.last {
+	margin-bottom: 10px;
+}
+/**email notification**/
+.emailNotiTable td .regular-text {
+	padding: 12px;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	width: 75%;
+	margin-bottom: 15px;
+}
+.emailNotiTable .fm_addMoreBtnDv{
+	margin-bottom: 20px;
+}
+.emailNotiTable .fm_addMoreBtnDv .button.add_more_ten_email {
+	color: #fff;
+	background: #267ddd;
+	border-radius: 30px;
+	border: none;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 14px 35px;
+	line-height: normal;
+	height: inherit;
+	text-transform: uppercase;
+}
+.emailNotiTable .delete_ten_email {
+	display: inline-block;
+	position: relative;
+	width: 30px;
+	height: 18px;
+	outline:none !important;
+	margin-left:10px;
+}
+.emailNotiTable .delete_ten_email img {
+	top: 6px;
+	position: absolute;
+}
+.grp_root{
+	margin-bottom:30px;
+}
+.rootTwoColWrap::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.rootTwoColWrap .checkCol{
+	float:left;
+	width:30px;
+	box-sizing: border-box;
+}
+.rootTwoColWrap .fmError{
+	float:left;
+	width:calc(100% - 30px);
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width:767px){
+.fmInnerWrap {
+    padding: 20px;
+}
+}
