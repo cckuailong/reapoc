@@ -48,5 +48,6 @@
 | CVE-2015-8399 | Confluence | 信息泄露 | 4.3 | [Y](CVE-2015-8399/vultarget/) | [Y](CVE-2015-8399/poc/nuclei/) | [Y](CVE-2015-8399/poc/xray/) | N | N | N | N | [Y](CVE-2015-8399/poc/others/) |
 | CVE-2015-8562 | Joomla | SQL注入 |  | [Y](CVE-2015-8562/vultarget/) | N | N | N | N | N | N | [Y](CVE-2015-8562/poc/others/) |
 | CVE-2015-8813 |  | 资料不足 | 8.2 | N | [Y](CVE-2015-8813/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2015-9323 |  | SQL注入 | 9.8 | [Y](CVE-2015-9323/vultarget/) | [Y](CVE-2015-9323/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2015-9414 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2015-9414/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2015-9480 | WordPress | 路径遍历 | 7.5 | N | [Y](CVE-2015-9480/poc/nuclei/) | N | N | N | N | N | N |

@@ -191,6 +191,7 @@
 | CVE-2020-35951 |  | 权限许可和访问控制 | 9.9 | N | [Y](CVE-2020-35951/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-36112 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-36112/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-36289 | Atlassian Jira | 信息泄露 | 5.3 | [Y](CVE-2020-36289/vultarget/) | [Y](CVE-2020-36289/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-36365 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2020-36365/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-3952 |  | 信息泄露 | 9.8 | N | [Y](CVE-2020-3952/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-3952/poc/others/) |
 | CVE-2020-4038 |  | 跨站脚本 | 7.4 | N | [Y](CVE-2020-4038/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-4463 | IBM Maximo Asset Management | 信息泄露 | 8.2 | N | [Y](CVE-2020-4463/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-4463/poc/others/) |
@@ -220,6 +221,7 @@
 | CVE-2020-7318 | McAfee-ePolicy-Orchestrator | 跨站脚本 | 4.3 | N | [Y](CVE-2020-7318/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-7473 |  | 其他 | 7.5 | N | [Y](CVE-2020-7473/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-7473/poc/others/) |
 | CVE-2020-7796 |  | 代码问题 | 9.8 | N | [Y](CVE-2020-7796/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-7934 |  | 跨站脚本 | 5.4 | [Y](CVE-2020-7934/vultarget/) | N | N | N | N | N | N | [Y](CVE-2020-7934/poc/others/) |
 | CVE-2020-7961 | Liferay Portal | 代码问题 | 9.8 | [Y](CVE-2020-7961/vultarget/) | [Y](CVE-2020-7961/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-7961/poc/others/) |
 | CVE-2020-7980 | Intellian Aptus Web | 操作系统命令注入 | 9.8 | N | N | [Y](CVE-2020-7980/poc/xray/) | N | N | N | N | [Y](CVE-2020-7980/poc/others/) |
 | CVE-2020-8091 | TYPO3 | 跨站脚本 | 6.1 | N | [Y](CVE-2020-8091/poc/nuclei/) | N | N | N | N | N | N |
