@@ -183,6 +183,7 @@
 | CVE-2020-35728 |  | 反序列化 | 8.1 | [Y](CVE-2020-35728/vultarget/) | N | N | N | N | N | N | [Y](CVE-2020-35728/poc/others/) |
 | CVE-2020-35729 |  | 注入 | 9.8 | N | [Y](CVE-2020-35729/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35729/poc/others/) |
 | CVE-2020-35736 | GateOne | 目录遍历 | 7.5 | N | [Y](CVE-2020-35736/poc/nuclei/) | [Y](CVE-2020-35736/poc/xray/) | N | N | N | N | N |
+| CVE-2020-35749 |  | 路径遍历 | 7.7 | [Y](CVE-2020-35749/vultarget/) | [Y](CVE-2020-35749/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-35774 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-35774/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-3580 | Cisco-ASA | 跨站脚本 | 6.1 | N | [Y](CVE-2020-3580/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-3580/poc/others/) |
 | CVE-2020-35846 | cockpit | SQL注入 | 9.8 | N | [Y](CVE-2020-35846/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-35846/poc/others/) |
