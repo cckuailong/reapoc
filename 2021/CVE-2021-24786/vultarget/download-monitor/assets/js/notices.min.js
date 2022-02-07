@@ -1,0 +1,1 @@
+jQuery(function(o){o(".dlm-notice.is-dismissible").on("click",".notice-dismiss",function(i){var n=o(this).closest(".dlm-notice"),t=n.attr("id"),c=n.attr("data-nonce");o.post(ajaxurl,{action:"dlm_dismiss_notice",nonce:c,notice:t},function(i){})})});

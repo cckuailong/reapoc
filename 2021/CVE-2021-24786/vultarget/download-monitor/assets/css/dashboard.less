@@ -1,0 +1,50 @@
+/* Widgets */
+table.download_chart {
+  width: 100%;
+  thead {
+    display: none;
+  }
+  td, th {
+    padding: 5px;
+    vertical-align: middle;
+    line-height: 1.5em;
+  }
+  th {
+    text-align: left;
+    font-weight: normal;
+    padding-left: 0;
+  }
+  td:last-child {
+    padding-right: 0;
+  }
+  tr:first-child {
+    td, th {
+      padding-top: 0;
+    }
+  }
+  tr:last-child {
+    td, th {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  span.bar {
+    padding: 0 0 0 1px;
+    height: 1.5em;
+    float: left;
+    margin-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    bprder: 1px solid #6e6e6e;
+    background: #6e6e6e;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#747474), to(#6e6e6e));
+    background-image: -webkit-linear-gradient(bottom, #747474, #6e6e6e);
+    background-image: -moz-linear-gradient(bottom, #747474, #6e6e6e);
+    background-image: -o-linear-gradient(bottom, #747474, #6e6e6e);
+    background-image: linear-gradient(to top, #747474, #6e6e6e);
+  }
+}

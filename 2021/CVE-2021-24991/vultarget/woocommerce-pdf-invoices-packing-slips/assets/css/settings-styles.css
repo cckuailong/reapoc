@@ -1,0 +1,148 @@
+span.wpo-warning {
+	display: inline-block;
+	border: 1px solid red;
+	border-left: 4px solid red;
+	padding: 5px 15px;
+	background-color: white;
+}
+.wcpdf-extensions-ad {
+	position: relative;
+	min-height: 90px;
+	border: 1px solid #3D5C99;
+	background-color: #EBF5FF;	
+	border-radius: 5px;
+	padding: 15px;
+	padding-left: 100px;
+	margin-top: 15px;
+}
+
+img.wpo-helper {
+	position: absolute;
+	bottom: 0px;
+	left: 3px;
+}
+
+.wcpdf-extensions-ad h3 {
+	margin: 0;
+}
+
+.wcpdf-extensions-ad ul {
+	margin: 0;
+	margin-left: 1.5em;
+}
+
+.extensions li {
+	margin: 0;
+}
+
+.extensions li ul {
+	list-style-type: square;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.extensions > li:before { 
+	content: "";
+	border-color: transparent transparent transparent #111;
+	border-style: solid;
+	border-width: 0.35em 0.35em 0.35em 0.45em;
+	display: block;
+	height: 0;
+	width: 0;
+	left: -1em;
+	top: 0.9em;
+	position: relative;
+}
+
+.extensions li:not(.expanded) {
+	cursor:pointer;
+}
+
+.extensions .expanded:before {
+	border-color: #111 transparent transparent transparent;
+	left: -1.17em;
+	border-width: 0.45em 0.45em 0.35em 0.35em !important;
+}
+
+.extensions .more {
+	padding: 10px;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.extensions table td {
+	vertical-align: top;
+}
+
+.dropbox-logo {
+	margin-bottom: -10px;
+	margin-right: 10px;
+}
+.cloud-logo {
+	margin-bottom: -10px;
+	margin-top: -5px;
+	margin-right: 10px;
+}
+
+#img-header_logo {
+	max-height: 200px;
+	width: auto;
+}
+
+.multiple-text-input label {
+    min-width: 120px;
+    display: inline-block;
+}
+
+table.wcpdf_documents_settings_list {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: white;
+	border-top: 2px solid black;
+}
+table.wcpdf_documents_settings_list tr.odd {
+	background-color: #EBF5FF;
+}
+
+table.wcpdf_documents_settings_list td {
+	padding: 5px;
+}
+
+table.wcpdf_documents_settings_list a {
+	text-decoration: none;
+}
+
+table.wcpdf_documents_settings_list td.settings-icon {
+	text-align: right;
+}
+
+table.wcpdf_documents_settings_list td.title {
+	font-weight: bold;
+}
+
+.wcpdf_document_settings_sections {
+	margin-top: 10px;
+	font-size: 120%;
+}
+.wcpdf_document_settings_sections li,
+.wcpdf_document_settings_sections ul {
+	display: inline;
+}
+.wcpdf_document_settings_sections li + li:before {
+    content: " | ";
+}
+.wcpdf_document_settings_sections a.active {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+.edit-next-number {
+	opacity:0.5;
+}
+.edit-next-number:hover {
+	opacity:1;
+	cursor:pointer;
+}

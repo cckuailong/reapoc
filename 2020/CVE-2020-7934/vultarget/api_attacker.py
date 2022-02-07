@@ -1,0 +1,19 @@
+from flask import Flask, redirect, request, session, render_template, jsonify
+
+
+
+app = Flask(__name__)
+
+@app.route("/anonymous/getsomething",methods =["GET"])
+def getpass ():
+    Mail = str(request.args.get("email"))
+    Password = str(request.args.get("password"))
+    site = str(request.args.get("site"))
+    print("Portal site: "+site)
+    print("Admin username: "+Mail)
+    print("Admin password: "+Password)
+    response = {}
+    response["return_code"]=200
+    return jsonify(response)
+if __name__ == '__main__':
+    app.run(debug=True, port=6100)

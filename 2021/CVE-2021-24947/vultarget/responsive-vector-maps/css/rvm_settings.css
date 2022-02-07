@@ -1,0 +1,660 @@
+#rvm_meta * {
+	box-sizing: border-box;
+}
+
+.rvm_hide {
+	display: none;
+}
+
+.rvm_show {
+	display: block;
+}
+
+.rvm_input {
+	margin-right:5px;
+}
+
+.rvm_label {
+	display:block;
+	vertical-align: top;
+	/*width: 10%;
+	min-width: 150px;
+	margin-right: 10px;
+	float: left;*/
+	font-weight:bold;
+	margin-bottom:3px;
+}
+
+#rvm_settings .rvm_label {
+	min-width: 200px;
+}
+
+.rvm_label_marker {
+	min-width: 180px;
+}
+
+input.rvm_regions_links {
+	/*margin-right: 10px;*/
+	vertical-align: top
+}
+
+.preview-map-container {
+	height: 400px;
+	margin-bottom: 50px
+}
+
+#rvm_regions_countries h4 span,
+#rvm_markers h4 span {
+	font-weight: 400;
+	font-size: .9em
+}
+
+.rvm_small_text {
+	font-size: 1.2em
+}
+
+#rvm_regions,
+#rvm_regions_from_db {
+	margin-top: 10px
+}
+
+#rvm_regions_from_db {
+	clear: both
+}
+
+.rvm_regions_flex_wrapper {
+	padding:0px 10px;
+	border-bottom: 3px solid #CCC;
+	margin-top: 0px;
+	background: #FAFAFA;
+}
+
+.rvm_regions_flex_wrapper h4 {
+	background:#ccc;
+	padding:5px;
+}
+
+.rvm_regions_flex {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px dashed #CCC;
+	padding: 15px 0;
+	box-sizing: border-box;
+	justify-content: space-between;
+}
+
+.rvm_regions_flex_wrapper .rvm_regions_flex:last-child {
+	border-bottom: none 0px;
+}
+
+.rvm_regions_flex > div {
+	/*min-width: 300px;*/	
+	margin: auto;
+	flex-basis: 100%;
+}
+
+.rvm_regions_flex > div.rvm_regions_wrapper_popup {
+	flex-basis: 100%;
+}
+
+.rvm_regions_flex .rvm_label {
+	width:100%;
+}
+
+.rvm_regions_flex .rvm_regions_wrapper_popup,
+.rvm_regions_flex .rvm_regions_wrapper_popup > textarea {
+	width:100%;
+}
+
+#preview_button,
+#close_preview_button {
+	float: right
+}
+
+#preview_button,
+#rvm_import_markers_button,
+#rvm_import_regions_button,
+#rvm_import_reset_markers_button,		
+#rvm_import_reset_regions_button {
+	margin-left: 5px
+}
+
+.rvm_import_regions_button_wrapper,
+.rvm_import_markers_button_wrapper,
+.rvm_export_markers_button_wrapper,
+.rvm_export_regions_button_wrapper {
+	margin-top:10px;
+	text-align: center;
+	/*padding:0px 12px;*/
+}
+
+#rvm_import_reset_markers_button,		
+#rvm_import_reset_regions_button {		
+	float:right;		
+}
+
+#rvm_import_markers_button,
+#rvm_import_regions_button,
+#rvm_import_reset_markers_button,		
+#rvm_import_reset_regions_button {
+	display:none;
+}
+
+#rvm_import_markers_status,
+#rvm_export_markers_status,
+#rvm_import_regions_status,
+#rvm_export_regions_status {
+	margin:10px 0px;
+	display:none;
+	clear:both;
+	width: 100%;
+}
+
+#rvm_import_markers_status img,
+#rvm_import_regions_status img {
+    width: auto;
+    float: none;
+}
+
+.rvm_clear_left {
+	clear: left
+}
+
+.rvm_clear_both {
+	clear: both
+}
+
+#rvm_mbe_fields_wrap {
+	margin: 10px 0
+}
+
+
+#rvm_mbe_fields_wrap .rvm_h2_title:first-child{
+	margin-bottom: 10px;
+}
+
+
+.rvm_markers {
+	padding: 5px;
+	border: 1px solid #DDD;
+	margin-top: 10px;
+}
+
+#rvm_markers_delete_button_wrapper {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#rvm_mbe_add_field_button {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.rvm_small_text {
+	font-size: 9px
+}
+
+#rvm_tabs ul,
+#rvm_tabs ul li {
+	display: inline-block
+}
+
+#rvm_tabs ul li {
+	margin: 0;
+	padding: 10px;
+	position: relative;
+	border-bottom: none;
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	background: #F1F1F1
+}
+
+#rvm_main_settings_tab {
+	border-left: 1px solid #CCC
+}
+
+
+#rvm_main_settings > p {
+	margin: 0px 0px 20px 0px;
+}
+
+.rvm_hidden_when_custom_map {
+	background:#FAFAFA;
+	padding:10px;
+	border-radius: 4px;
+	border:1px dashed #CCC;
+}
+
+#rvm_tabs ul {
+	border-bottom: 1px solid #CCC;
+	position: relative;
+	width: 100%;
+	z-index: 9
+}
+
+#rvm_tabs ul li a,
+#rvm_tabs ul li a:focus {
+	text-decoration: none;
+	outline: 0 none;
+	box-shadow: none
+}
+
+#rvm_mbe_select_map,
+#rvm_default_map_name_no_longer_available,
+a.rvm_download_custom_map span {
+	text-transform: capitalize;
+}
+
+a.rvm_download_custom_map span {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.rvm_active {
+	display: block
+}
+
+#rvm_tabs ul li.rvm_active {
+	z-index: 10;
+	top: 1px;
+	padding-top: 11px;
+	background: #FFF
+}
+
+#rvm_dim_min_value_wrapper,
+#rvm_dim_max_value_wrapper,
+#rvm_bg_color_wrapper,
+#rvm_border_color_wrapper {
+	width: 100%;
+	background:#FAFAFA;
+	padding:10px;
+	border-radius: 4px;
+	border:1px dashed #CCC;
+}
+
+#rvm_bg_color_wrapper,
+#rvm_border_color_wrapper {
+	margin-top:10px;
+	text-align: center;
+}
+
+#rvm_settings_wrap {
+	margin-top: 20px
+}
+
+.rvm_separator {
+	border-top: 2px solid #ddd;
+}
+
+
+#rvm_settings_wrap h3 {
+	padding-left: 0
+}
+
+#rvm_donation {
+	margin-top: 30px
+}
+
+.rvm_donate_link {
+	display: inline-block
+}
+
+#rvm_region_table th {
+	text-align: left
+}
+
+#rvm_region_table td {
+	width: 20%
+}
+
+#rvm_region_bg_col {
+	min-width: 175px
+}
+
+#rvm_mbe_custom_map_wrapper h3.rvm_custom_map_filename_title {
+	padding-left: 0
+}
+
+#rvm_add_custom_map {
+	font-style: italic;
+}
+
+#rvm_custom_map_filename {
+	float: left;
+	margin-right: 5px
+}
+
+.jvectormap-container {
+	min-width: 100%;
+	box-sizing: border-box
+}
+
+.rvm_messages {
+	border-radius: 4px;
+	padding: 5px;
+	margin-top: 10px !important;
+	color: #7BBF6A;
+	font-size: 14px !important;
+	color: #444;
+	text-shadow: 1px 1px 0 #FFF;
+}
+
+.rvm_messages a {
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.rvm_messages span {
+	display: inline-block;
+	margin: 15px 15px 15px 0;
+}
+
+.rvm_messages img {
+	width: 50px;
+	float: left;
+	margin-right: 10px
+}
+
+.rvm_marker_messages img {
+	width: 16px;
+}
+
+.rvm_success_messages {
+	background: #d9f2d2;
+	border: 1px solid #5aa139;
+	color: #5aa139;
+}
+
+.rvm_error_messages {
+	background: #FFC5BA;
+	border: 1px solid #B15A49;
+	color: #B15A49;
+	text-shadow: none;
+}
+
+.rvm_notice_messages {
+	background-color: #ffffe0;
+	border: 1px solid #e6db55;
+	position: relative;
+}
+
+.rvm_message_map_not_available {
+	margin:10px 0;
+}
+
+#rvm_download_custom_maps a {
+	display: block;
+	font-weight: bold;
+	padding-left: 120px;
+	padding-top: 5px;
+}
+
+.rvm_field_descr {
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+	border-radius:4px;
+	padding:2px 4px;
+	font-style: italic;
+	margin-top:0px;
+}
+
+.rvm_text {
+	vertical-align: top;
+}
+
+#rvm_custom_map_uploader_button,
+#rvm_mbe_custom_marker_icon_path {
+	margin-right: 5px
+}
+
+.rvm_wrapper {
+	margin-top: 10px;
+}
+
+.rvm_region_name {
+	background:#EEE;
+	text-align: center;
+}
+
+.rvm_region_hide + div.rvm_regions_flex_wrapper {
+    display: none;
+}
+
+#rvm_main_settings .rvm_h2_title,
+#rvm_regions_countries .rvm_h2_title,
+#rvm_markers .rvm_h2_title {
+	font-size: 20px;
+	border: 0px none;
+	border-radius:0px;
+	border-bottom: 3px solid #ccc;
+	font-weight: lighter;
+	text-align:center;
+	margin-top: 20px;
+	background:none;
+}
+
+#rvm_main_settings .rvm_h4_title,
+#rvm_regions_countries .rvm_4_title
+#rvm_markers .rvm_h4_title {
+	font-size: 16px;
+	font-weight: lighter;
+	text-align:center;
+}
+
+.rvm_region_name h4 {
+    position: relative;
+    padding: 8px 12px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    margin-bottom: 0px;
+}
+
+.rvm_region_name h4 b {
+    display: inline-block;
+    color: #FFF;
+    padding: 2px 4px;
+    background: #444;
+    border-radius: 4px;
+}
+
+.rvm_region_name h4 > span.rvm_arrow,
+.rvm_region_name h4 > span.rvm_arrow_up {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border-top: 5px solid #333;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position: absolute;
+	right: 12px;
+	text-decoration: none !important;
+	top: 17px;
+	cursor:pointer;
+}
+
+.rvm_region_name h4 > span.rvm_arrow_up {
+	border-top: 0px none;
+	border-bottom: 5px solid #333;
+}
+
+.rvm_region_name h4.rvm_region_active {
+	background: #d0e2f2;
+	border: 1px dashed #6FB4FF;
+}
+
+.rvm_region_show {
+	display:block;
+}
+
+div.rvm_regions_input {
+	margin-bottom:15px;
+}
+
+.rvm_regions_input_default_tag {
+	visibility:hidden;
+}
+
+.rvm_regions_flex :nth-child(1) {
+	order:2;
+}
+
+.rvm_regions_flex :nth-child(2) {
+	order:4;
+}
+
+.rvm_regions_flex :nth-child(3) {
+	order:3;
+}
+
+.rvm_regions_flex :nth-child(4) {
+	order:5;
+}
+
+.rvm_regions_flex :nth-child(5) {
+	order:1;
+}
+
+
+/*Forms*/
+
+#rvm_main_settings input[type="text"],
+#rvm_regions_countries input[type="text"],
+#rvm_markers input[type="text"],
+#rvm_main_settings textarea,
+#rvm_regions_countries textarea,
+#rvm_markers textarea,
+#rvm_main_settings select,
+#rvm_regions_countries select,
+#rvm_markers select {
+	padding: 8px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd;
+	border-radius: 4px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 100%;	
+}
+
+#rvm_main_settings input[type="text"]:focus,
+#rvm_regions_countries input[type="text"]:focus,
+#rvm_markers input[type="text"]:focus,
+#rvm_main_settings textarea:focus,
+#rvm_regions_countries textarea:focus,
+#rvm_markers textarea:focus {
+	box-shadow: 0px 0px 6px #6FB4FF;
+}
+
+#rvm_main_settings select,
+#rvm_regions_countries select,
+#rvm_markers select {
+	height:40px;
+}
+
+.iris-picker .iris-strip {
+    z-index: 1;
+}
+
+#rvm_custom_map_unzip_progress {
+	float:left;
+}
+
+#rvm_meta .button-primary {
+	min-height: 46px;
+}
+
+
+@media only screen 
+	and (min-width : 469px) {
+		.rvm_field_descr {
+			margin-top:5px;
+		}
+
+		.rvm_region_name {
+			text-align: left;
+		}
+
+		#rvm_main_settings .rvm_h2_title,
+		#rvm_regions_countries .rvm_h2_title,
+		#rvm_markers .rvm_h2_title {
+			font-size: 24px;
+			text-align:left;
+		}
+
+		#rvm_main_settings .rvm_h4_title,
+		#rvm_regions_countries .rvm_h2_title,
+		#rvm_markers .rvm_h4_title {
+			font-size: 20px;
+		}
+
+		#rvm_bg_color_wrapper,
+		#rvm_border_color_wrapper {
+			text-align: left;
+		}
+			
+}
+
+
+@media only screen 
+	and (min-width : 576px) {
+
+		.rvm_markers {
+			float: left;
+			margin-right: 2%;
+		}
+}
+
+
+@media only screen 
+	and (min-width : 761px) {
+		.rvm_regions_flex > div {
+			margin: unset;
+			margin-bottom:15px;
+			flex-basis:45%;
+		}
+
+		#rvm_main_settings input[type="text"],
+		#rvm_main_settings select {
+			width:50%;
+		}
+
+}
+
+
+@media only screen 
+	and (min-width : 768px) {
+		#rvm_main_settings input[type="text"],
+		#rvm_main_settings select {
+			width: auto;
+		}
+
+		#rvm_markers_delete_button_wrapper {
+		    clear: both;
+		    text-align: right;
+		    float: right;
+		}
+
+		#rvm_upload_markers_button,
+		#rvm_import_markers_button,
+		#rvm_upload_regions_button,
+		#rvm_import_regions_button {
+			float:left;
+		}
+
+		.rvm_import_regions_button_wrapper,
+		.rvm_import_markers_button_wrapper,
+		.rvm_export_markers_button_wrapper,
+		.rvm_export_regions_button_wrapper {
+			text-align: left;
+		}
+}
+
+
+
+		
+
+

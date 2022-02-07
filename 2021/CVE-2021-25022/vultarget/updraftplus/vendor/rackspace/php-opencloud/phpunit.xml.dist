@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="false" verbose="false" bootstrap="./tests/bootstrap.php">
+
+    <testsuites>
+        <testsuite name="OpenCloud">
+            <directory>./tests/OpenCloud/Tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./lib/OpenCloud</directory>
+            <exclude>
+                <directory suffix="Exception.php">./lib/OpenCloud/CloudMonitoring/Exception</directory>
+                <directory suffix="Error.php">./lib/OpenCloud/Common/Exceptions</directory>
+                <directory suffix="Exception.php">./lib/OpenCloud/Common/Exceptions</directory>
+                <directory suffix="Exception.php">./lib/OpenCloud/Compute/Exception</directory>
+                <directory suffix="Exception.php">./lib/OpenCloud/ObjectStore/Exception</directory>
+                <directory suffix="Exception.php">./lib/OpenCloud/Queues/Exception</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-clover" target="./build/logs/clover.xml" />
+    </logging>
+
+    <php>
+        <ini name="memory_limit" value="512M" />
+        <ini name="zend.enable_gc" value="0" />
+    </php>
+
+</phpunit>

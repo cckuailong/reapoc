@@ -1,0 +1,202 @@
+.shepherd-theme-arrows-plain-buttons {
+	z-index: 99;
+	max-width: 390px!important;
+}
+
+.shepherd-theme-arrows-plain-buttons.super-index {
+	z-index: 999999;
+}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons .shepherd-content {
+	border-radius: 3px;
+	-webkit-filter: none;
+	        filter: none;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 10px 40px rgba(0, 0, 0, 0.15);
+	        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.shepherd-element-attached-bottom.shepherd-element-attached-right.shepherd-target-attached-top.shepherd-target-attached-left .shepherd-content:before,
+.shepherd-element-attached-bottom.shepherd-element-attached-left.shepherd-target-attached-top.shepherd-target-attached-right .shepherd-content:before,
+.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-bottom.shepherd-target-attached-left .shepherd-content:before,
+.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-bottom.shepherd-target-attached-right .shepherd-content:before {
+	display: none;
+}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-element-attached-top.shepherd-element-attached-center.shepherd-has-title .shepherd-content:before,
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before,
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before {
+	border-bottom-color: #DD6823;
+}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header {
+	background-color: #DD6823;
+	border-radius: 3px 3px 0 0;
+	padding-right: 90px;
+}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons .shepherd-content header h3 {
+	color: #FFF;
+	font-size: 1.2em;
+	float: none;
+}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header a.shepherd-cancel-link {
+	opacity: 0.7;
+	color: rgba(255, 255, 255, 0);
+	font-size: 0.8em;
+	border: 1px solid #FFF;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	line-height: 20px;
+	padding: 0;
+	text-align: center;
+	float: none;
+	position: absolute;
+	right: 11px;
+	top: 12px
+}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header a.shepherd-cancel-link::before {
+		color: #FFF;
+		content: attr(data-btntext);
+		position: absolute;
+		right: 20px;
+		padding-right: 10px;
+	}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header a.shepherd-cancel-link::after {
+		content: "\f335";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-family: dashicons;
+		color: #FFF;
+		position: absolute;
+		left: 2px;
+		line-height: 21px;
+		font-size: 16px;
+	}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header a.shepherd-cancel-link:hover,
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header a.shepherd-cancel-link:focus {
+	border: 1px solid #A04E00;
+	opacity: 1
+}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header a.shepherd-cancel-link:hover::before, .shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header a.shepherd-cancel-link:focus::before {
+		color: #A04E00;
+	}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header a.shepherd-cancel-link:hover::after, .shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-has-title .shepherd-content header a.shepherd-cancel-link:focus::after {
+		color: #A04E00;
+	}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-right .shepherd-content:before {
+	top: 44px;
+}
+
+.shepherd-content .ud-notice {
+
+	background: #F0F0F0;
+	padding: 14px;
+	border-radius: 4px;
+	font-size: 90% !important;
+	line-height: 1.5;
+
+}
+
+.shepherd-content .ud-notice h3 {
+		margin-top: 0;
+		padding-top: 0;
+		margin-bottom: .5em;
+	}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons .shepherd-content .shepherd-text p {
+	margin-top: 0.5em;
+	margin-bottom: 1.3em;
+}
+
+.ud-notice span.ud-special-offer {
+	font-weight: bold;
+	display: inline-block;
+	padding: 1px 6px;
+	border-radius: 3px;
+	background: rgba(217, 105, 0, 0.09);
+}
+
+label[for=updraft_servicecheckbox_updraftvault] {
+
+	border: 1px solid rgba(204, 204, 204, 0.4);
+	-webkit-transition: border .5s;
+	transition: border .5s
+
+}
+
+label[for=updraft_servicecheckbox_updraftvault].emphasize {
+		border-color: #DD6823;
+	}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons .shepherd-content footer .shepherd-buttons li .shepherd-button.udp-tour-back,
+.shepherd-element.shepherd-theme-arrows-plain-buttons .shepherd-content footer .shepherd-buttons li .shepherd-button.udp-tour-end {
+	float: left;
+	position: relative;
+	padding-left: 10px;
+}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons .shepherd-content footer .shepherd-buttons li .shepherd-button.udp-tour-end {
+	padding-left: 0;
+	color: #B7B7B7;
+}
+
+.shepherd-element.shepherd-theme-arrows-plain-buttons .shepherd-content footer .shepherd-buttons li .shepherd-button.udp-tour-back::before {
+	content: ' ';
+	width: 6px;
+	height: 6px;
+	display: block;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+a.shepherd-button.udp-tour-end::before {
+	display: inline-block;
+	position: relative;
+	content: "\f335";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: dashicons;
+	font-size: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+.updraftplus-welcome-logo {
+	display: block;
+	width: 70px;
+	float: left;
+	margin-top: -11px;
+	margin-right: 12px;
+}
+
+.updraftplus-welcome-logo img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+}
+
+.highlight-udp .plugins #the-list tr:not([data-slug="updraftplus"]) {
+	opacity: 0.3;
+}
+
+@media(max-width: 790px) {
+
+	.shepherd-element.shepherd-theme-arrows-plain-buttons {
+		display: none;
+	}
+
+}

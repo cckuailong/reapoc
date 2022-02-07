@@ -1,0 +1,65 @@
+[
+    { "comment": "simplexml promotion - add after scalar",
+      "doc": { "foo":1 },
+      "patch": [ { "op":"add", "path":"/foo/1", "value":2 } ],
+      "expected": { "foo":[1, 2] } },
+
+    { "comment": "simplexml promotion - add before scalar",
+      "doc": { "foo":1 },
+      "patch": [ { "op":"add", "path":"/foo/0", "value":2 } ],
+      "expected": { "foo":[2, 1] } },
+
+    { "comment": "simplexml promotion - append",
+      "doc": { "foo":1 },
+      "patch": [ { "op":"add", "path":"/foo/-", "value":2 } ],
+      "expected": { "foo":[1, 2] } },
+
+    { "comment": "append to array",
+      "doc": { "foo":1 },
+      "patch": [ { "op":"add", "path":"/foo/-", "value":2 } ],
+      "expected": { "foo":[1, 2] } },
+
+    { "comment": "mid-path 0-index with tail 0-index - append",
+      "doc": { "foo": { "bar": 1 } },
+      "patch": [ { "op":"add", "path":"/foo/0/bar/-", "value":2 }],
+      "expected": { "foo": { "bar": [1,2] }} },
+
+    { "comment": "Add 1-length array is equivalent to scalar add",
+       "doc": { },
+       "patch": [ { "op":"add", "path":"/foo/0", "value":1 } ],
+       "expected": { "foo":1 },
+       "disabled": true
+     },
+
+    { "comment": "simple 0-index of scalar ok",
+      "doc": { "foo": 1 },
+      "patch": [ { "op":"test", "path":"/foo/0", "value":1 }] },
+
+    { "comment": "nested 0-index of scalar ok",
+      "doc": { "foo": { "bar": 1 } },
+      "patch": [ { "op":"test", "path":"/foo/bar/0", "value":1 }] },
+
+    { "comment": "0-index after actual 0-index ok",
+      "doc": { "foo": [{ "bar": 1 }, 1] },
+      "patch": [ { "op":"test", "path":"/foo/0/bar/0", "value":1 }] },
+
+    { "comment": "mid-path 0-index",
+      "doc": { "foo": { "bar": [1, 2] } },
+      "patch": [ { "op":"test", "path":"/foo/0/bar/0", "value":1 }] },
+
+    { "comment": "mid-path 0-index with tail 0-index",
+      "doc": { "foo": { "bar": 1 } },
+      "patch": [ { "op":"test", "path":"/foo/0/bar/0", "value":1 }] },
+
+    { "comment": "replace as array",
+      "doc": { "foo":1 },
+      "patch": [ { "op":"replace", "path":"/foo/0", "value":2 } ],
+      "expected": { "foo":2 } },
+
+    { "comment": "remove last demotes to singleton",
+      "doc": { "foo":[1, 2] },
+      "patch": [ { "op":"remove", "path":"/foo/1"} ],
+      "expected": { "foo":1 } },
+
+    { "comment": "tests complete" }
+]

@@ -1,0 +1,596 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Code Snippets SK\n"
+"POT-Creation-Date: 2014-12-09 06:55+0100\n"
+"PO-Revision-Date: 2014-12-09 07:10+0100\n"
+"Last-Translator: Jan Fajcak <ja@fajo.name>\n"
+"Language-Team: WordPress Slovensko <info@wp.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../admin/help/import.php:16 ../admin/help/manage.php:16
+#: ../admin/help/single.php:15
+msgid "Overview"
+msgstr "Prehľad"
+
+#: ../admin/help/import.php:18
+msgid ""
+"Snippets are similar to plugins - they both extend and expand the "
+"functionality of WordPress. Snippets are more light-weight, just a few lines "
+"of code, and do not put as much load on your server. Here you can load "
+"snippets from a Code Snippets (.xml) import file into the database with your "
+"existing snippets."
+msgstr ""
+"Snippety sa podobajú modulom- oba rozširujú a prehlbujú funkčnosť WordPress. "
+"Snippety sú jednoduché kusy kódu veľké len pár riadkov, ktoré svojim objemom "
+"nezaťažujú server. Tu môžete nahrať snippety z  Code Snippets (.xml) súboru "
+"do databáze k už existujúcim snippetom."
+
+#: ../admin/help/import.php:23
+msgid "Importing"
+msgstr "Import"
+
+#: ../admin/help/import.php:25
+msgid ""
+"You can load your snippets from a code snippets (.xml) export file using "
+"this page."
+msgstr ""
+"Môžete nahrať vaše snippety zo súboru Code Snippets (.xml) prostredníctvom "
+"tejto stránky."
+
+#: ../admin/help/import.php:26
+#, php-format
+msgid ""
+"Snippets will be added to the database along with your existing snippets. "
+"Regardless of whether the snippets were active on the previous site, "
+"imported snippets are always inactive until activated using the <a href=\"%s"
+"\">Manage Snippets</a> page.</p>"
+msgstr ""
+"Snippety budú pridané do databáze k už existujúcim snippetom. Bez ohľadu na "
+"to, že na predchádzajúcom webe boli aktívne, po importe je potrebné ich opäť "
+"aktivovať na stránke <a href=\"%s\">Spravovať snippety</a>.</p>"
+
+#: ../admin/help/import.php:31
+msgid "Exporting"
+msgstr "Export"
+
+#: ../admin/help/import.php:33
+#, php-format
+msgid ""
+"You can save your snippets to a Code Snippets (.xml) export file using the "
+"<a href=\"%s\">Manage Snippets</a> page."
+msgstr ""
+"Vaše snippety môžete uložiť pomocou súboru Code Snippets (.xml) na stránke "
+"<a href=\"%s\">Spravovať snippety</a>."
+
+#: ../admin/help/import.php:37 ../admin/help/manage.php:38
+#: ../admin/help/single.php:43
+msgid "For more information:"
+msgstr "Viac informácií:"
+
+#: ../admin/help/import.php:38 ../admin/help/single.php:44
+msgid ""
+"<a href=\"http://wordpress.org/plugins/code-snippets\" target=\"_blank"
+"\">WordPress Extend</a>"
+msgstr ""
+"<a href=\"http://wordpress.org/plugins/code-snippets\" target=\"_blank"
+"\">WordPress Extend</a>"
+
+#: ../admin/help/import.php:39 ../admin/help/manage.php:40
+#: ../admin/help/single.php:45
+msgid ""
+"<a href=\"http://wordpress.org/support/plugin/code-snippets\" target=\"_blank"
+"\">Support Forums</a>"
+msgstr ""
+"<a href=\"http://wordpress.org/support/plugin/code-snippets\" target=\"_blank"
+"\">Fórum podpory</a>"
+
+#: ../admin/help/import.php:40 ../admin/help/manage.php:41
+#: ../admin/help/single.php:46
+msgid ""
+"<a href=\"https://sheabunge.com/plugins/code-snippets/\" target=\"_blank\">Project "
+"Website</a>"
+msgstr ""
+"<a href=\"https://sheabunge.com/plugins/code-snippets/\" target=\"_blank\">Webová "
+"stránka projektu</a>"
+
+#: ../admin/help/manage.php:18
+msgid ""
+"Snippets are similar to plugins - they both extend and expand the "
+"functionality of WordPress. Snippets are more light-weight, just a few lines "
+"of code, and do not put as much load on your server. Here you can manage "
+"your existing snippets and perform tasks on them such as activating, "
+"deactivating, deleting and exporting."
+msgstr ""
+"Snippety sa podobajú modulom- oba rozširujú a prehlbujú funkčnosť WordPress. "
+"Snippety sú jednoduché kusy kódu veľké len pár riadkov, ktoré svojim objemom "
+"nezaťažujú server. Tu môžete spravovať svoje snippety: aktivovať ich a "
+"deaktivovať, mazať alebo exportovať."
+
+#: ../admin/help/manage.php:23
+msgid "Safe Mode"
+msgstr "Safe Mode"
+
+#: ../admin/help/manage.php:25
+msgid ""
+"Be sure to check your snippets for errors before you activate them, as a "
+"faulty snippet could bring your whole blog down. If your site starts doing "
+"strange things, deactivate all your snippets and activate them one at a time."
+msgstr ""
+"Pred aktivovaním vašich snippetov sa uistite, že neobsahujú žiadne chyby, "
+"inak riskujete pád vašich stránok. Ak sa začne diať niečo neočakávané, "
+"deaktivujte všetky snippety a aktivujte ich ešte raz."
+
+#: ../admin/help/manage.php:26
+msgid ""
+"If something goes wrong with a snippet and you can't use WordPress, you can "
+"cause all snippets to stop executing by adding "
+"<code>define('CODE_SNIPPETS_SAFE_MODE', true);</code> to your <code>wp-"
+"config.php</code> file. After you have deactivated the offending snippet, "
+"you can turn off safe mode by removing this line or replacing <strong>true</"
+"strong> with <strong>false</strong>."
+msgstr ""
+"Ak došlo k problému a nie je možné použiť WordPress, môžete zastaviť všetky "
+"snippety vložením <code>define('CODE_SNIPPETS_SAFE_MODE', true);</code> do "
+"súboru <code>wp-config.php</code>. Potom, ako deaktivujete problémový "
+"snippet, môžete tento kus kódu opäť odobrať alebo prepísať hodnotu "
+"<strong>true</strong> na <strong>false</strong>."
+
+#: ../admin/help/manage.php:31
+msgid "Uninstall"
+msgstr "Odinštalovať"
+
+#: ../admin/help/manage.php:33
+#, php-format
+msgid ""
+"When you delete Code Snippets through the Plugins menu in WordPress it will "
+"clear up the <code>%1$s</code> table and a few other bits of data stored in "
+"the database. If you want to keep this data (ie: you are only temporally "
+"uninstalling Code Snippets) then remove the <code>%2$s</code> folder using "
+"FTP."
+msgstr ""
+"Keď zmažete modul Code Snippets štandardnou cestou cez položku Moduly v "
+"administrácii WordPress, bude zmazaná aj tabuľka <code>%1$s</code> a ďalšie "
+"dáta, uložené v databáze. Ak chcete tieto dáta uchovať (napr. odinštalujete "
+"Code Snippets len dočasne), potom odstráňte zložku <code>%2$s</code> cez FTP "
+"ručne."
+
+#: ../admin/help/manage.php:34
+msgid ""
+"Even if you're sure that you don't want to use Code Snippets ever again on "
+"this WordPress installation, you may want to use the export feature to back "
+"up your snippets."
+msgstr ""
+"Ak máte istotu, že už v tejto inštalácii nechcete používať Code Snippets, "
+"môžete vaše snippety pomocou funkcie Export zálohovať."
+
+#: ../admin/help/manage.php:39
+msgid ""
+"<a href=\"http://wordpress.org/plugins/code-snippets\" target=\"_blank"
+"\">WordPress Extend</a></p>"
+msgstr ""
+"<a href=\"http://wordpress.org/plugins/code-snippets\" target=\"_blank"
+"\">WordPress Extend</a></p>"
+
+#: ../admin/help/single.php:17
+msgid ""
+"Snippets are similar to plugins - they both extend and expand the "
+"functionality of WordPress. Snippets are more light-weight, just a few lines "
+"of code, and do not put as much load on your server. Here you can add a new "
+"snippet, or edit an existing one."
+msgstr ""
+"Snippety sa podobajú modulom- oba rozširujú a prehlbujú funkčnosť WordPress. "
+"Snippety sú jednoduché kusy kódu veľké len pár riadkov, ktoré svojim objemom "
+"nezaťažujú server. Tu môžete pridávať nové snippety, alebo upravovať už "
+"existujúce."
+
+#: ../admin/help/single.php:22
+msgid "Finding Snippets"
+msgstr "Nájsť snippety"
+
+#: ../admin/help/single.php:24
+msgid ""
+"Here are some links to websites which host a large number of snippets that "
+"you can add to your site.\n"
+"\t\t<ul>\n"
+"\t\t\t<li><a href=\"http://wp-snippets.com\" title=\"WordPress Snippets\">WP-"
+"Snippets</a></li>\n"
+"\t\t\t<li><a href=\"http://wpsnipp.com\" title=\"WP Snipp\">WP Snipp</a></"
+"li>\n"
+"\t\t\t<li><a href=\"http://www.catswhocode.com/blog/snippets\" title=\"Cats "
+"Who Code Snippet Library\">Cats Who Code</a></li>\n"
+"\t\t\t<li><a href=\"http://www.wpfunction.me\">WP Function Me</a></li>\n"
+"\t\t</ul>"
+msgstr ""
+"Tu je niekoľko odkazov na weby, kde môžete nájsť množstvo snippetov, "
+"použiteľných aj na vašich stránkach.\n"
+"\t\t<ul>\n"
+"\t\t\t<li><a href=\"http://wp-snippets.com\" title=\"WordPress Snippets\">WP-"
+"Snippets</a></li>\n"
+"\t\t\t<li><a href=\"http://wpsnipp.com\" title=\"WP Snipp\">WP Snipp</a></"
+"li>\n"
+"\t\t\t<li><a href=\"http://www.catswhocode.com/blog/snippets\" title=\"Cats "
+"Who Code Snippet Library\">Cats Who Code</a></li>\n"
+"\t\t\t<li><a href=\"http://www.wpfunction.me\">WP Function Me</a></li>\n"
+"\t\t</ul>"
+
+#: ../admin/help/single.php:31
+msgid ""
+"More places to find snippets, as well as a selection of example snippets, "
+"can be found in the <a href=\"https://github.com/sheabunge/code-snippets/wiki/"
+"Finding-snippets\">plugin documentation</a>"
+msgstr ""
+"Viac miest, kde nájdete snippety a niekoľko ukážok snippetov nájdete v <a "
+"href=\"https://github.com/sheabunge/code-snippets/wiki/Finding-snippets"
+"\">dokumentácii modulu</a>"
+
+#: ../admin/help/single.php:36
+msgid "Adding Snippets"
+msgstr "Ako pridať snippet?"
+
+#: ../admin/help/single.php:38
+msgid ""
+"You need to fill out the name and code fields for your snippet to be added. "
+"While the description field will add more information about how your snippet "
+"works, what is does and where you found it, it is completely optional."
+msgstr "Je potrebné vyplniť názov snippetu a vložiť jeho kód."
+
+#: ../admin/help/single.php:39
+msgid ""
+"Please be sure to check that your snippet is valid PHP code and will not "
+"produce errors before adding it through this page. While doing so will not "
+"become active straight away, it will help to minimise the chance of a faulty "
+"snippet becoming active on your site."
+msgstr ""
+"Prosím skontrolujte, či vaše snippety obsahujú overený PHP kód a nespôsobia "
+"na tejto stránke chyby. Keďže nebudú hneď aktívne, nemusíte sa obávať "
+"možného pádu stránky po ich nahratí."
+
+#: ../admin/messages/import.php:32
+msgid "An error occurred when processing the import file."
+msgstr "Pri importe došlo ku chybe."
+
+#: ../admin/messages/manage.php:14
+msgid ""
+"<strong>Warning:</strong> Safe mode is active and snippets will not execute! "
+"Remove the <code>CODE_SNIPPETS_SAFE_MODE</code> constant from <code>wp-"
+"config.php</code> to turn off safe mode. <a href=\"http://code-snippets."
+"sheabunge.com/docs/safe-mode/\" target=\"_blank\">Help</a>"
+msgstr ""
+"<strong>Upozornenie:</strong> Safe mode je aktívny a snippety nebudú "
+"fungovať! Odstráňte konštantu <code>CODE_SNIPPETS_SAFE_MODE</code> z "
+"<code>wp-config.php</code> pre vypnutie safe mode. <a href=\"http://code-"
+"snippets.sheabunge.com/docs/safe-mode/\" target=\"_blank\">Pomoc</a>"
+
+#: ../admin/messages/manage.php:20
+msgid "Snippet <strong>activated</strong>."
+msgstr "Snippet <strong>aktivovaný</strong>."
+
+#: ../admin/messages/manage.php:24
+msgid "Selected snippets <strong>activated</strong>."
+msgstr "Vybrané snippety <strong>aktivované</strong>."
+
+#: ../admin/messages/manage.php:28
+msgid "Snippet <strong>deactivated</strong>."
+msgstr "Snippet <strong>deaktivovaný</strong>."
+
+#: ../admin/messages/manage.php:32
+msgid "Selected snippets <strong>deactivated</strong>."
+msgstr "Vybrané snippety <strong>deaktivované</strong>."
+
+#: ../admin/messages/manage.php:36
+msgid "Snippet <strong>deleted</strong>."
+msgstr "Snippet <strong>zmazaný</strong>."
+
+#: ../admin/messages/manage.php:40
+msgid "Selected snippets <strong>deleted</strong>."
+msgstr "Vybrané snippety <strong>zmazané</strong>."
+
+#: ../admin/messages/single.php:14
+msgid "An error occurred when saving the snippet."
+msgstr "Pri ukladaní snippetu došlo ku chybe."
+
+#: ../admin/messages/single.php:18
+msgid "Snippet <strong>updated</strong> and <strong>activated</strong>."
+msgstr "Snippet <strong>aktualizovaný</strong> a <strong>aktivovaný</strong>."
+
+#: ../admin/messages/single.php:22
+msgid "Snippet <strong>added</strong> and <strong>activated</strong>."
+msgstr "Snippet <strong>pridaný</strong> a <strong>aktivovaný</strong>."
+
+#: ../admin/messages/single.php:26
+msgid "Snippet <strong>updated</strong> and <strong>deactivated</strong>."
+msgstr ""
+"Snippet <strong>aktualizovaný</strong> a <strong>deaktivovaný</strong>."
+
+#: ../admin/messages/single.php:30
+msgid "Snippet <strong>updated</strong>."
+msgstr "Snippet <strong>aktualizovaný</strong>."
+
+#: ../admin/messages/single.php:34
+msgid "Snippet <strong>added</strong>."
+msgstr "Snippet <strong>pridaný</strong>."
+
+#: ../admin/views/import.php:20 ../includes/class-admin.php:327
+msgid "Import Snippets"
+msgstr "Importovať snippety"
+
+#: ../admin/views/import.php:24
+msgid ""
+"Howdy! Upload your Code Snippets export file and we&#8217;ll import the "
+"snippets to this site."
+msgstr ""
+"Nahrajte súbor Code Snippets (.xml) a naimportujte snippety na túto stránku."
+
+#: ../admin/views/import.php:26
+#, php-format
+msgid ""
+"You will need to go to the <a href=\"%s\">Manage Snippets</a> page to "
+"activate the imported snippets."
+msgstr ""
+"Po ukončení importu musíte ísť na stránku <a href=\"%s\">Spravovať snippety</"
+"a> a aktivovať importované snippety."
+
+#: ../admin/views/import.php:28
+msgid ""
+"Choose a Code Snippets (.xml) file to upload, then click Upload file and "
+"import."
+msgstr ""
+"Zvoľte súbor Code Snippets (.xml) a kliknite na tlačidlo Nahrať súbor a "
+"importovať."
+
+#: ../admin/views/import.php:35
+msgid "Choose a file from your computer:"
+msgstr "Zvoľte súbor vo vašom počítači:"
+
+#: ../admin/views/import.php:36
+msgid "(Maximum size: 8MB)"
+msgstr "(Maximálna veľkosť: 8MB)"
+
+#: ../admin/views/import.php:42
+msgid "Upload file and import"
+msgstr "Nahrať súbor a importovať"
+
+#: ../admin/views/manage.php:21 ../includes/class-admin.php:152
+#: ../includes/class-admin.php:276 ../includes/class-admin.php:277
+#: ../includes/class-admin.php:287
+msgid "Snippets"
+msgstr "Snippety"
+
+#: ../admin/views/manage.php:39
+msgid "Search Installed Snippets"
+msgstr "Hľadať nainštalované snippety"
+
+#: ../admin/views/single.php:29 ../includes/class-admin.php:299
+msgid "Edit Snippet"
+msgstr "Upraviť snippety"
+
+#: ../admin/views/single.php:37 ../includes/class-admin.php:299
+msgid "Add New Snippet"
+msgstr "Pridať nový snippet"
+
+#: ../admin/views/single.php:53 ../admin/views/single.php:54
+msgid "Name (short title)"
+msgstr "Názov (krátky nadpis)"
+
+#: ../admin/views/single.php:59
+msgid "Code"
+msgstr "Kód"
+
+#: ../admin/views/single.php:85
+msgid "Save Changes &amp; Activate"
+msgstr "Uložiť zmeny a aktivovať"
+
+#: ../admin/views/single.php:91
+msgid "Save Changes &amp; Deactivate"
+msgstr "Uložiť zmeny a deaktivovať"
+
+#: ../admin/views/single.php:100 ../includes/class-list-table.php:166
+#: ../includes/class-list-table.php:266
+msgid "Export"
+msgstr "Export"
+
+#: ../admin/views/single.php:107
+msgid ""
+"You are about to permanently delete this snippet.\n"
+"'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Chcete navždy zmazať tento snippet. \n"
+"'Cancel' pre zrušenie, 'OK' pre zmazanie."
+
+#: ../admin/views/single.php:112 ../includes/class-list-table.php:175
+#: ../includes/class-list-table.php:267
+msgid "Delete"
+msgstr "Zmazať"
+
+#: ../includes/class-admin.php:185
+msgid "Code Snippets"
+msgstr "Code Snippets"
+
+#: ../includes/class-admin.php:186
+msgid "Import snippets from a Code Snippets export file"
+msgstr "Importovať snippety zo súboru Code Snippets"
+
+#: ../includes/class-admin.php:246
+msgid "You are not authorized to access this page."
+msgstr "Nemáte prístup na túto stránku."
+
+#: ../includes/class-admin.php:288 ../includes/class-admin.php:695
+msgid "Manage"
+msgstr "Spravovať"
+
+#: ../includes/class-admin.php:300 ../includes/class-list-table.php:160
+msgid "Edit"
+msgstr "Upraviť"
+
+#: ../includes/class-admin.php:300
+msgid "Add New"
+msgstr "Pridať nový"
+
+#: ../includes/class-admin.php:328
+msgid "Import"
+msgstr "Import"
+
+#: ../includes/class-admin.php:663 ../includes/class-list-table.php:228
+msgid "Description"
+msgstr "Popis"
+
+#: ../includes/class-admin.php:694
+msgid "Manage your existing snippets"
+msgstr "Spravovať existujúce snippety"
+
+#: ../includes/class-admin.php:722
+msgid "Visit the WordPress.org plugin page"
+msgstr "Navštíviť stránku modulu na WordPress.org"
+
+#: ../includes/class-admin.php:723
+msgid "About"
+msgstr "O module"
+
+#: ../includes/class-admin.php:727
+msgid "Visit the support forums"
+msgstr "Navštíviť fórum podpory"
+
+#: ../includes/class-admin.php:728
+msgid "Support"
+msgstr "Podpora"
+
+#: ../includes/class-admin.php:732
+msgid "Support this plugin's development"
+msgstr "Podporiť vývoj tohoto modulu"
+
+#: ../includes/class-admin.php:733
+msgid "Donate"
+msgstr "Podporiť"
+
+#: ../includes/class-admin.php:764
+msgid ""
+"<strong>Have feedback on Code Snippets?</strong> Please take the time to "
+"answer a short survey on how you use this plugin and what you'd like to see "
+"changed or added in the future."
+msgstr ""
+"<strong>Máte spätnú väzbu na Code Snippets?</strong>Prosím, nájdite si čas a "
+"zúčastnite sa prieskumu o tom, ako používate tento modul a čo by ste na ňom "
+"v budúcnosti zmenili, alebo čím ho doplnili."
+
+#: ../includes/class-admin.php:767
+msgid "Take the survey now"
+msgstr "Zúčastnite sa prieskumu"
+
+#: ../includes/class-list-table.php:49
+msgid "Snippets per page"
+msgstr "Počet snippetov na stránke"
+
+#: ../includes/class-list-table.php:141 ../includes/class-list-table.php:265
+msgid "Network Deactivate"
+msgstr "Sieť deaktivovaná"
+
+#: ../includes/class-list-table.php:141 ../includes/class-list-table.php:265
+msgid "Deactivate"
+msgstr "Deaktivovať"
+
+#: ../includes/class-list-table.php:150 ../includes/class-list-table.php:264
+msgid "Network Activate"
+msgstr "Sieť aktivovaná"
+
+#: ../includes/class-list-table.php:150 ../includes/class-list-table.php:264
+msgid "Activate"
+msgstr "Aktivovať"
+
+#: ../includes/class-list-table.php:182
+msgid ""
+"You are about to permanently delete the selected item.\n"
+"\t\t\t\t'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Chcete navždy zmazať túto položku. \n"
+"\t\t\t\t'Cancel' pre zrušenie, 'OK' úre zmazanie."
+
+#: ../includes/class-list-table.php:190
+#, php-format
+msgid "Untitled #%d"
+msgstr "Bez názvu #%d"
+
+#: ../includes/class-list-table.php:226
+msgid "Name"
+msgstr "Názov"
+
+#: ../includes/class-list-table.php:227
+msgid "ID"
+msgstr "ID"
+
+#: ../includes/class-list-table.php:268
+msgid "Export to PHP"
+msgstr "Export do PHP"
+
+#: ../includes/class-list-table.php:342
+msgid "Filter"
+msgstr "Filter"
+
+#: ../includes/class-list-table.php:350
+msgid "Clear List"
+msgstr "Vyčistiť zoznam"
+
+#: ../includes/class-list-table.php:492
+#, php-format
+msgid ""
+"You do not appear to have any snippets available at this time. <a href=\"%s"
+"\">Add New&rarr;</a>"
+msgstr ""
+"Momentálne nemáte k dispozícii žiadne snippety. <a href=\"%s\">Pridať nový "
+"&rarr;</a>"
+
+#: ../includes/class-list-table.php:676
+msgid "Search results"
+msgstr "Výsledky hľadania"
+
+#: ../includes/class-list-table.php:679
+#, php-format
+msgid " for &#8220;%s&#8221;"
+msgstr "pre &#8220;%s&#8221;"
+
+#: ../includes/class-list-table.php:685
+msgid "Clear Filters"
+msgstr "Vyčistiť filtre"
+
+#~ msgid "Manage Snippets"
+#~ msgstr "Spravovať snippety"
+
+#~ msgid "Sorry, you&#8217;re not allowed to edit snippets"
+#~ msgstr "Prepáčte, ale nemáte oprávnenie na úpravu snippetov"
+
+#~ msgid "Please provide a name for the snippet and its code."
+#~ msgstr "Prosím, uveďte názov snippetu a vložte jeho kód."
+
+#~ msgid ""
+#~ "Enter or paste the snippet code without the <code>&lt;?php</code> and "
+#~ "<code>?&gt;</code> tags."
+#~ msgstr ""
+#~ "Napíšte alebo skopírujte kód snippetu bez značiek <code>&lt;?php</code> a "
+#~ "<code>?&gt;</code>."
+
+#~ msgid "(Optional)"
+#~ msgstr "(voliteľné)"
+
+#~ msgid "Save"
+#~ msgstr "Uložiť"
+
+#~ msgid "Cancel"
+#~ msgstr "Zrušiť"
+
+#~ msgid ""
+#~ "Make sure that you don't add the <code>&lt;?php</code>, <code>&lt;?</"
+#~ "code> or <code>?&gt;</code> the beginning and end of the code. You can "
+#~ "however use these tags in the code to stop and start PHP sections"
+#~ msgstr ""
+#~ "Uistite sa, že ste nevložili <code>&lt;?php</code>, <code>&lt;?</code> "
+#~ "alebo <code>?&gt;</code> v priebehu alebo na konci kódu. Tieto značky "
+#~ "však môžete použiť pre zastavenie alebo spustenie úsekov PHP."

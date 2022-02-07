@@ -1,0 +1,57 @@
+.rvm-map-container {
+	position:relative;
+}
+
+.rvm-card-container {
+	background: rgba(0,0,0,.5);
+	color: #FFF;
+	padding: 10px 30px 10px;
+	box-sizing: border-box;
+}
+
+.rvm-default-card-container {	
+	position: absolute;
+	height:100%;
+	width: 100%;
+	z-index:1;
+	overflow-y: auto;
+}
+
+.rvm-hide-card-container {
+	display:none;
+}
+
+.rvm-close-default-card-container {
+	position:absolute;
+	right:10px;
+	top:10px;
+	background: #83C464;
+	color:#FFF;
+	line-height: 18px;
+	text-align: center;
+	border-radius:50%;
+	width:20px;
+	height:20px;
+}
+
+.rvm-close-default-card-container:hover {
+	cursor: pointer;
+}
+
+.jvectormap-marker {
+    -webkit-transition-duration: 600ms;
+    -moz-transition-duration: 600ms;
+    -o-transition-duration: 600ms;
+    transition-duration: 600ms;
+}
+
+.jvectormap-container {
+    overflow-x: hidden;
+}
+
+.rvm_show_markers_effect {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}

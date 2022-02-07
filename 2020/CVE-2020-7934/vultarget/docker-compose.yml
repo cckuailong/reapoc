@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  liferay:
+    image: liferay/portal:7.2.1-ga2
+    container_name: liferay
+    ports:
+      - 8080:8080

@@ -1,0 +1,38 @@
+{
+    "name": "rackspace/php-opencloud",
+    "description": "PHP SDK for Rackspace/OpenStack APIs",
+    "keywords": ["rackspace", "openstack", "opencloud", "swift", "nova"],
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Jamie Hannaford",
+            "email": "jamie.hannaford@rackspace.com",
+            "homepage" : "https://github.com/jamiehannaford"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "OpenCloud": ["lib/"]
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "OpenCloud": ["tests/"]
+        }
+    },
+    "require": {
+        "php" : ">=5.4",
+        "guzzle/guzzle" : "~3.8",
+        "psr/log": "~1.0",
+        "mikemccabe/json-patch-php": "~0.1"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "4.3.*",
+        "phpspec/prophecy": "~1.4",
+        "satooshi/php-coveralls": "0.6.*@dev",
+        "jakub-onderka/php-parallel-lint": "0.*",
+        "fabpot/php-cs-fixer": "1.0.*@dev",
+        "apigen/apigen": "~4.0"
+    }
+}

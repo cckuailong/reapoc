@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* CSS Document */
+
+.post-grid{
+	overflow:hidden;
+}
+.post-grid .grid-items {
+  margin: 0 auto;
+  overflow: hidden;
+}
+.post-grid .item {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  word-break: break-word;
+  margin: 0 auto;
+}
+.post-grid .no-post-found {
+  color: #999;
+  text-align: center;
+  font-size: 18px;
+}
+.post-grid .item .layer-media {
+  line-height: 0;
+}
+.post-grid .item .layer-media img {
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+}
+.post-grid .item .layer-media iframe {
+  width: 100% !important;
+  height: auto;
+}
+
+
+/*navigation top*/
+
+.post-grid .grid-nav-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/*nav-search*/
+.post-grid .grid-nav-top .nav-search {
+  display: inline-block;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.post-grid .grid-nav-top .nav-search .submit-search {
+  background: #ddd none repeat scroll 0 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  height: 24px;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+
+.post-grid .grid-nav-top .nav-search .search {
+
+  border: 1px solid #ddd;
+  border-radius: 0;
+  display: inline-block;
+  padding-left: 35px;
+  vertical-align: top;
+}
+
+
+.post-grid .grid-nav-top .nav-search .search-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+.post-grid .grid-nav-top .nav-per-page-count {
+  display: inline-block;
+  float: right;
+}
+
+
+
+
+
+
+
+/*pagination*/
+
+.post-grid .pagination {
+  clear: both !important;
+  line-height: normal;
+  margin: 30px 0;
+  text-align: center;
+}
+.post-grid .pagination .current, .post-grid .pagination .pager.active {
+  opacity: 0.6;
+}
+.post-grid .pagination .page-numbers, .post-grid .pagination .pager, .post-grid .pagination .paginate.next-previous a{
+	
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  line-height: normal;
+  margin: 5px 2px;
+  padding: 7px 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+	}
+.post-grid .pagination .page-numbers:hover, .post-grid .pagination .pager:hover{
+	/*opacity: 0.6;*/
+	}
+
+.post-grid .pagination .prev  {}
+.post-grid .pagination .next {}
+
+
+/*infinite-scroll*/
+
+.post-grid .pagination .infinite-scroll {
+  background: rgba(220, 220, 220, 0.3) none repeat scroll 0 0;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+
+
+/*load-more*/
+.post-grid .pagination .load-more {
+  background: rgba(220, 220, 220, 0.3) none repeat scroll 0 0;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 3px;
+}
+
+.post-grid .pagination .load-more-spinner {
+  display: none;
+}
+
+
+.post-grid .pagination .load-more.loading {
+
+}
+
+.post-grid .pagination .load-more.loading .load-more-spinner{
+  display: inline-block;
+}
+
+
+
+
+.post-grid .pagination .load-more.no-post {
+  border: 1px dashed rgb(255, 91, 34);
+}
+
+/*paginate-ajax*/
+.post-grid .pagination .paginate-ajax{}
+
+.post-grid .pagination .paginate-ajax .prev, .post-grid .pagination .paginate-ajax .next {
+	display: none;
+}
+
+
+.post-grid .pagination .paginate.next-previous{}
+.post-grid .pagination .paginate.next-previous a{}
+
+
+
+/* pager-list */
+
+
+
+
+
+/*Grid Element CSS*/
+
+
+
+/*Lazy Load*/
+.post-grid-lazy {
+  text-align: center;
+}
+
+.post-grid-lazy img {
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+.grid-items-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+/*layer-content CSS*/
+
+/*################### flat ########################*/
+.layer-content .flat {
+  overflow: hidden;
+}
+
+
+/*################### flat ########################*/
+.layer-content .flat-center {
+  overflow: hidden;
+}
+
+
+
+/*################### flat-right ########################*/
+.layer-content .flat-right {
+  overflow: hidden;
+}
+
+
+/*################### flat-left ########################*/
+.layer-content .flat-left {
+  overflow: hidden;
+}
+
+
+/*################### wc-center-price ########################*/
+.layer-content .wc-center-price {
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.layer-content .wc-center-price .wc_sale_price  {
+
+}
+
+
+/*################### wc-center-cart ########################*/
+.layer-content .wc-center-cart {
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.layer-content .wc-center-cart .wc_sale_price  {
+
+}
+
+

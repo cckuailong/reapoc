@@ -1,0 +1,152 @@
+/*
+layout-editor
+*/
+
+
+.layout-editor{
+    padding: 10px;
+}
+
+.css-editor{}
+.css-editor .default-option {
+  display: inline-block;
+  width: 49%;
+}
+.css-editor .app-editor {
+  display: inline-block;
+  width: 49%;
+}
+
+
+
+.layout-editor .expandable .active .options {
+	background: #e3e3e3b3;
+}
+
+.layout-editor .add-element{
+    margin: 3px 1px;
+}
+
+
+/* layout-editor */
+
+.layout-editor .layout-items {
+
+}
+
+.layout-editor .layout-items .item {
+  /*background: rgb(240, 240, 240) none repeat scroll 0 0;*/
+  /*border-bottom: 1px solid rgb(221, 221, 221);*/
+  /*cursor: pointer;*/
+  /*display: inline-block;*/
+  /*margin: 5px 3px;*/
+  /*padding: 3px 7px;*/
+}
+
+.layout-editor .layout-items .item .fa{
+	/*display:none;*/
+
+}
+
+
+.layout-editor .layout-items .item:hover .fa {
+  /*display: inline-block;*/
+}
+
+
+
+
+.layout-editor .layout-list{
+
+}
+
+.layout-editor .layout-list .idle, .layout-editor .layout-list .hover {
+  background: rgba(0, 0, 0, 0) url("../images/tile.png") repeat scroll 0 0;
+  display: inline-block;
+  height: auto;
+  margin: 0 10px;
+  min-height: 90px;
+  vertical-align: top;
+  /*width: 300px;*/
+}
+
+.layout-editor .layout-list .idle{}
+.layout-editor .layout-list .hover{
+
+}
+
+.layout-editor .layout-list .idle .name, .layout-editor .layout-list .hover .name {
+  background: rgb(240, 240, 240) none repeat scroll 0 0;
+  border-bottom: 1px solid rgb(153, 153, 153);
+  font-size: 20px;
+  line-height: normal;
+  padding: 5px 0;
+  text-align: center;
+}
+
+
+.layout-editor .css-editor {
+
+}
+
+
+.layout-editor .css-editor .header{
+
+}
+
+.layout-editor .css-editor .header .remove {
+	background: rgb(255, 68, 63) none repeat scroll 0 0;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	margin-right: 5px;
+	padding: 1px 6px;
+}
+
+.layout-editor .css-editor .header .move {
+	background: rgb(57, 190, 234) none repeat scroll 0 0;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	margin-right: 5px;
+	padding: 1px 6px;
+	cursor: move;
+}
+
+.layout-editor .css-editor .header .expand {
+	background: rgba(188, 188, 188, 0.7) none repeat scroll 0 0;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	margin-right: 10px;
+	padding: 2px 5px 2px 8px;
+	text-align: center;
+}
+
+.layout-editor .css-editor .header .name {
+
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 1px 6px;
+}
+
+.layout-editor .css-editor .items  .expand .fa-expand{ display:inline-block;}
+.layout-editor .css-editor .items  .expand .fa-compress{ display:none;}
+
+.layout-editor .css-editor .items.active .expand .fa-expand{ display:none;}
+.layout-editor .css-editor .items.active .expand .fa-compress{ display:inline-block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,199 @@
+.download-box {
+  width: 250px;
+  border: 1px solid #ccc;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  margin: 1em auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+  h1 {
+    margin: 0.5em 0 !important;
+  }
+
+  img.wp-post-image {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-top-left-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+
+  .download-box-content {
+    padding: 0 1em 1em;
+  }
+
+  .download-count {
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    color: #777;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background: #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .6em;
+    width: auto;
+    min-width: 1em;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1em;
+    border: 1px solid #bbb;
+    margin: -.5em -.5em 0 0;
+  }
+}
+
+.download-button {
+  text-align: center;
+  text-decoration: none !important;
+  padding: 0.75em 1em;
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  background-color: #0099cc;
+  background-image: -webkit-linear-gradient(#009fd4, #0099cc, #0086b2);
+  background-image: -moz-linear-gradient(#009fd4, #0099cc, #0086b2);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  border: 1px solid #0086b2;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: #0099cc;
+    background-image: -webkit-linear-gradient(#0099cc, #0086b2);
+    background-image: -moz-linear-gradient(#0099cc, #0086b2);
+  }
+
+  &:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  small {
+    font-size: 0.8em;
+    opacity: 0.8;
+    display: block;
+  }
+}
+
+.filetype-icon {
+  padding-left: 19px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-image: url(../images/filetypes/document.png);
+}
+
+.filetype-pdf {
+  background-image: url(../images/filetypes/document-pdf.png);
+}
+
+.filetype-m4r, .filetype-au, .filetype-snd, .filetype-mid, .filetype-midi, .filetype-kar, .filetype-mpga, .filetype-mp2, .filetype-mp3, .filetype-aif, .filetype-aiff, .filetype-aifc, .filetype-m3u, .filetype-ram, .filetype-rm, .filetype-rpm, .filetype-ra, .filetype-wav, .filetype-wave {
+  background-image: url(../images/filetypes/document-music.png);
+}
+
+.filetype-mpeg, .filetype-mpg, .filetype-mpe, .filetype-qt, .filetype-mov, .filetype-mxu, .filetype-avi, .filetype-movie, .filetype-mp4, .filetype-divx, .filetype-wmv {
+  background-image: url(../images/filetypes/document-film.png);
+}
+
+.filetype-zip, .filetype-gz, .filetype-rar, .filetype-sit, .filetype-tar, .filetype-7z {
+  background-image: url(../images/filetypes/document-zipper.png);
+}
+
+.filetype-xls, .filetype-tsv, .filetype-csv, .filetype-xlsx {
+  background-image: url(../images/filetypes/document-excel.png);
+}
+
+.filetype-doc, .filetype-docx {
+  background-image: url(../images/filetypes/document-word-text.png);
+}
+
+.filetype-ai {
+  background-image: url(../images/filetypes/document-illustrator.png);
+}
+
+.filetype-swf {
+  background-image: url(../images/filetypes/document-flash-movie.png);
+}
+
+.filetype-eps, .filetype-ps, .filetype-bmp, .filetype-gif, .filetype-ief, .filetype-jpeg, .filetype-jpg, .filetype-jpe, .filetype-png, .filetype-tiff, .filetype-tif, .filetype-djv, .filetype-wbmp, .filetype-ras, .filetype-pnm, .filetype-pbm, .filetype-pgm, .filetype-ppm, .filetype-rgb, .filetype-xbm, .filetype-xpm, .filetype-xwd {
+  background-image: url(../images/filetypes/document-image.png);
+}
+
+.filetype-psd {
+  background-image: url(../images/filetypes/document-photoshop.png);
+}
+
+.filetype-ppt, .filetype-pptx {
+  background-image: url(../images/filetypes/document-powerpoint.png);
+}
+
+.filetype-js, .filetype-css, .filetype-as, .filetype-htm, .filetype-htaccess, .filetype-sql, .filetype-html, .filetype-php, .filetype-xml, .filetype-xsl {
+  background-image: url(../images/filetypes/document-code.png);
+}
+
+.filetype-rtx, .filetype-rtf {
+  background-image: url(../images/filetypes/document-text-image.png);
+}
+
+.filetype-txt {
+  background-image: url(../images/filetypes/document-text.png);
+}
+
+nav.download-monitor-pagination, #content nav.download-monitor-pagination {
+  text-align: center;
+  ul {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    clear: both;
+    border: 1px solid #eee;
+    border-right: 0;
+    margin: 1px;
+    li {
+      border-right: 1px solid #eee;
+      padding: 0;
+      margin: 0;
+      float: left;
+      display: inline;
+      overflow: hidden;
+      a, span {
+        margin: 0;
+        text-decoration: none;
+        padding: 0;
+        line-height: 1em;
+        font-size: 1em;
+        font-weight: normal;
+        padding: .5em;
+        min-width: 1em;
+        display: block;
+      }
+      span.current, a:hover, a:focus {
+        background: #eee;
+        color: darken(#eee, 40);
+      }
+    }
+  }
+}
+.dlm_widget_downloads ul, .dlm_widget_downloads ul li {
+  list-style: none;
+}

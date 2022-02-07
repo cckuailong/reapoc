@@ -1,0 +1,6 @@
+// CVE-2020-7934 Cred Phishing Example Attack
+// Author: 3ndG4me
+// Github: https://github.com/3ndG4me/liferay-xss-7.2.1GA2-poc-report-CVE-2020-7934
+
+alert("XSS Cysec 2021");
+

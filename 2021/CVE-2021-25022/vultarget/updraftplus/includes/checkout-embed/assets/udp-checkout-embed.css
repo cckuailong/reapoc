@@ -1,0 +1,140 @@
+@-webkit-keyframes spin {
+
+	100% {
+		-webkit-transform: rotate( 360deg );
+		        transform: rotate( 360deg );
+	}
+
+}
+
+@keyframes spin {
+
+	100% {
+		-webkit-transform: rotate( 360deg );
+		        transform: rotate( 360deg );
+	}
+
+}
+
+body.udp-modal-is-opened {
+	overflow: hidden;
+}
+
+.udp-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 20000;
+}
+
+.udp-modal__overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #000;
+	opacity: 0.8;
+	z-index: 1;
+}
+
+.udp-modal__modal {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 32px;
+	bottom: 0;
+	right: 0;
+	background: #FFF;
+	-webkit-box-shadow: 0px 4px 10px rgba(0,0,0,0.45882);
+	        box-shadow: 0px 4px 10px rgba(0,0,0,0.45882);
+	overflow: auto;
+}
+
+.udp-modal__content {
+	position: relative;
+	overflow: auto;
+}
+
+.udp-modal__content .img {
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	text-align: center;
+}
+
+.udp-modal__content .img img {
+	max-width: 100%;
+}
+
+.udp-modal__content .text {
+	padding: 40px;
+}
+
+.udp-modal.loading {
+	background-image: url();
+}
+
+.udp-modal.loading::before {
+	height: 1em;
+	width: 1em;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -0.5em;
+	margin-top: -0.5em;
+	content: '';
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+	background: url('loader.svg') center center;
+	background-size: cover;
+	line-height: 1;
+	text-align: center;
+	font-size: 2em;
+	color: #000;
+	z-index: 3;
+	opacity: 0.5;
+}
+
+.udp-modal.loading .udp-modal__content,
+.udp-modal.loading .udp-modal__sidebar,
+.iframe-is-opened .udp-modal__content,
+.iframe-is-opened .udp-modal__sidebar {
+	display: none;
+}
+
+.udp-modal__iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	background: #FFF;
+}
+
+.udp-modal__iframe iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+@media(min-width: 1200px) {
+
+	.udp-modal__modal {
+		left: 20px;
+		top: calc(20px + 32px);
+		bottom: 20px;
+		right: 20px;
+	}
+
+}
+
+@media(max-width: 782px) {
+
+	.udp-modal__modal {
+		top: 46px;
+	}
+
+}

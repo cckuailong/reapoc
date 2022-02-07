@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ruleset name="UpdraftPlus">
+	<!-- How to run on Commandline: vendor/bin/phpcs -p -s -d memory_limit=150M \-\-standard=CI/php-compatibility.xml src/ \-\-report-full \-\-extensions=php -->
+	<description>UpdraftPlus PHP Compatibility Check</description>
+	<!-- Set Memory Limit -->
+	<ini name="memory_limit" value="150M"/>
+	<!-- Only Test for PHP 7.3+ -->
+	<config name="testVersion" value="5.2-"/>
+	<!-- Ignoring Folders As they are part of Vendor packages -->
+	<!-- <exclude-pattern>src/tools/customer-tools/vendor</exclude-pattern> -->
+	<!-- PHPCompatibility -->
+    <rule ref="PHPCompatibility"/>
+</ruleset>

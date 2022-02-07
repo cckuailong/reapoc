@@ -1,0 +1,643 @@
+/* ========= INFORMATION ============================
+	- document:  Wow-Plugin admin style!
+	- author:    Wow-Company
+	- copyright: 2019 Wow-Company
+	- version:   1.0
+	- email:     support@wow-company.com
+==================================================== */
+
+/* Main page */
+
+.nav-tab-wrapper {
+  margin-bottom: 20px;
+}
+
+.wrap .nav-tab-wrapper .page-title-action {
+  top: 4px;
+  margin-left: 5px;
+}
+
+/* Tab style */
+.wow-plugin .tab-box {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wow-plugin .tab-box:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.wow-plugin .tab-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 145px;
+  float: left;
+  border-right: 1px solid #1f9ef8;
+}
+
+.wow-plugin .tab-nav li {
+  float: left;
+  margin-bottom: 1px;
+}
+
+.wow-plugin .tab-nav li a {
+  display: inline-block;
+  width: 125px;
+  padding: 10px 10px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.wow-plugin .tab-nav li a:hover {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wow-plugin .tab-nav li.select a {
+  background: #fff;
+  box-shadow: none;
+  border-bottom: 1px solid #1f9ef8;
+  font-weight: 700;
+}
+
+.wow-plugin .tab-nav .active {
+  display: inline-block;
+  padding: 5px;
+}
+
+.wow-plugin .tab-box > div {
+  margin: 0 0 0 145px;
+  padding: 10px;
+  border-left: 1px solid #1f9ef8;
+}
+
+.wow-plugin .tab-panels {
+  background: #fff;
+}
+
+/* Flexbox elements */
+.wow-plugin .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wow-plugin .element {
+  width: 100%;
+  padding: 10px;
+}
+
+.wow-plugin label {
+  font-weight: 600;
+  cursor: default;
+}
+
+.wow-plugin label[for] {
+  cursor: pointer;
+}
+
+/* form elements style */
+.element input[type=text], .element input[type=tel], .element input[type=number], .element input[type=date], .element select, .element textarea {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.wow-plugin fieldset {
+  border: 1px solid #999999;
+  margin: 15px 0;
+  position: relative;
+  min-height: 50px;
+  background: #ffffff;
+}
+
+.wow-plugin .control {
+  position: absolute;
+  right: 0;
+}
+
+.wow-plugin .dashicons-move {
+  cursor: move;
+  color: #cccccc;
+}
+
+.wow-plugin .dashicons-minus {
+  cursor: pointer;
+  color: #128be0;
+}
+
+.wow-plugin .dashicons-plus {
+  cursor: pointer;
+  color: #128be0;
+  display: none;
+}
+
+.wow-plugin .dashicons-no-alt {
+  cursor: pointer;
+  color: #e95645;
+}
+
+
+.wow-plugin legend {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 25px 0 10px;
+}
+
+/* Tooltip container */
+.wow-help {
+  font-size: 14px;
+  cursor: help;
+}
+
+.wow-ui-tooltip {
+  position: absolute;
+  background: #333;
+  border-width: 1px !important;
+  border-radius: 3px !important;
+  box-shadow: 1px 1px 2px 1px rgba(214, 214, 214, .5) !important;
+  color: #dedede !important;
+  max-width: 300px !important;
+  padding: 7px !important;
+  text-rendering: optimizeLegibility;
+  text-shadow: none !important;
+  z-index: 100051 !important;
+}
+
+a.wow-help.dashicons-unlock {
+  color: #37c781;
+  cursor: pointer;
+}
+
+a.wow-help.dashicons-lock {
+  color: #e95645;
+  cursor: pointer;
+}
+
+/* Right Sidebar */
+.wow-sidebar h2 {
+  border-bottom: 1px solid #eee;
+}
+
+.wow-sidebar .element {
+  padding: 0;
+}
+
+.wow-sidebar .element h4 {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.wow-facebook::after {
+  font-family: "dashicons";
+  content: "\f305";
+  margin-left: 5px;
+}
+
+.wow-email::after {
+  font-family: 'dashicons';
+  content: "\f469";
+  margin-left: 5px;
+}
+
+.wow-plugin .submit-bottom {
+  margin: 45px 0 0;
+  display: block;
+  text-align: center;
+}
+
+.wow-plugin .add-item {
+  width: 128px;
+  height: 32px;
+  background: #1f9ef8;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: .05s;
+  transition-property: all;
+}
+
+.wow-plugin .add-item:hover, .wow-plugin .add-item:active {
+  background: #128be0;
+}
+
+.wow-plugin .delete-item {
+  width: 128px;
+  height: 32px;
+  background: #797979;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: .05s;
+  transition-property: all;
+  margin-left: 2px;
+}
+
+.wow-plugin .delete-item:hover, .wow-plugin .delete-item:active {
+  background: #656565;
+}
+
+.wow-plugin .saving {
+  color: #1f9ef8;
+  margin-right: 15px;
+  opacity: 0;
+
+}
+
+.wow-plugin .saving:before {
+  content: "\f316";
+  font-family: 'Dashicons';
+  margin-right: 5px;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .wow-plugin .container {
+    flex-wrap: wrap;
+  }
+}
+
+/*
+License page
+ */
+
+.feature-section.one-col p {
+  font-size: 16px;
+}
+
+.feature-section pre {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+  overflow-y: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  background: #fff !important;
+  border: 1px solid #777;
+  padding: 10px;
+  color: #333;
+}
+
+.form-table tr {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 350px;
+  padding: 14px;
+  min-height: 220px;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-table th {
+  background: #f9f9f9;
+  padding: 14px;
+  border-bottom: 1px solid #ccc;
+  margin: -14px -14px 20px;
+  width: 100%;
+  display: block;
+}
+
+.form-table td {
+  display: block;
+}
+
+.form-table td input.regular-text {
+  margin: 0 0 8px;
+  width: 100%;
+}
+
+.form-table td div {
+  margin-top: 14px;
+  border-top: 1px solid #eee;
+  width: 100%;
+}
+
+.form-table p.submit {
+  margin-top: 25px;
+  padding: 0;
+  text-align: right;
+}
+
+/*
+Items
+ */
+
+.height_screen {
+  height: 270px;
+  background: #fff;
+}
+
+.height_screen img {
+  max-width: 100%;
+}
+
+.height_screen span {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+}
+
+.height_screen a {
+  color: #000;
+  text-decoration: none;
+}
+
+.themes {
+  overflow: hidden;
+}
+
+.theme-actions {
+  background: rgba(244, 244, 244, 1) !important;
+}
+
+.theme-name {
+  text-align: left !important;
+}
+
+.install {
+  float: right;
+}
+
+/*
+Support Page
+ */
+
+.wow-support {
+  margin: 25px auto 0;
+  padding: 15px;
+  background: #FFFFFF;
+  border: 1px solid #999999;
+
+
+}
+
+.feature-section.one-col p {
+  font-size: 16px;
+}
+
+.wow-alert-error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.wow-alert-update {
+  color: #94a540;
+  background-color: #e7f7e3;
+  border-color: #c7e5dc;
+}
+
+.wow-alert {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
+
+p.wow_error {
+  margin: 0 !important;
+}
+
+/**
+Plugin custom style
+ */
+
+
+.button-preview {
+  background-color: #fff;
+  min-height: 200px;
+  border-bottom: 1px solid #eee;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.button-preview h3 {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.button-builder {
+  text-align: center;
+}
+
+#button-preview {
+  margin: 10px auto;
+
+}
+
+.ideas .fa-star {
+  color: #ffcc01;
+}
+
+.ideas .fa-share-alt {
+  color: #006bb3;
+}
+
+.ideas .fa-bullhorn {
+  color: #e95645;
+}
+
+.ideas {
+  font-size: 14px;
+}
+
+.ideas i {
+  margin-right: 14px;
+}
+
+.ideas a {
+  font-weight: 600;
+}
+
+.ideas [data-share] {
+  color: #0073aa;
+  transition-property: border,background,color;
+  transition-duration: .05s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Color picker fixed style */
+.color-alpha, .wp-color-result-text {
+  height: 100% !important;
+}
+.wp-picker-clear {
+  height: 30px;
+  margin-left: 5px !important;
+}
+
+/* Page Pro Features*/
+
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.ds-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.ds-title .subtitle {
+  margin-bottom: 1.5rem;
+  color: #f14668!important;
+  text-transform: uppercase!important;
+  font-weight: 400;
+  line-height: 1.25;
+  font-size: 1.25rem;
+  word-break: break-word;
+}
+.ds-title .title {
+  margin-top: -1.25rem;
+  font-size: 2.5rem;
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+  word-break: break-word;
+}
+
+
+.columns {
+  display: flex;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: block;
+  padding: 0.75rem;
+  flex: none;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1215px) {
+  .column {
+    width: 33.3333333333%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.feature-box {
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 40px 20px 60px 20px;
+  height: 100%;
+  text-align: center;
+  color: #7a7a7a;
+}
+.feature-box .icon {
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+
+}
+
+.feature-box .title {
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+}
+
+.like-button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  margin: 0 15px;
+  line-height: 50px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.3s;
+}
+
+.pro-button {
+  background-color: #00d1b2;
+  border-color: transparent;
+}
+
+.pro-button:hover {
+  color: #00c4a7;
+  background-color: transparent;
+  border-color: #00c4a7;
+}
+
+.demo-button {
+  background-color: #3273dc;
+  border-color: transparent;
+}
+
+.demo-button:hover {
+  color: #276cda;
+  background-color: transparent;
+  border-color: #276cda;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-box {
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+  }
+
+  .feature-box:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  }
+  .feature-box:hover {
+    color: #363636;
+  }
+  .feature-box:hover .title {
+    color: #f14668;
+  }
+}

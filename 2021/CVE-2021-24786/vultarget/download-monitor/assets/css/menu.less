@@ -1,0 +1,77 @@
+/* Menu */
+#adminmenu {
+  #menu-posts-dlm_download {
+    .wp-menu-image:before {
+      content: "\f316";
+      font-family: "dashicons" !important;
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      text-align: center;
+
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+    }
+  }
+}
+
+/* LU upgrade notice */
+.dlm-lu-upgrade-notice {
+  position: relative;
+  padding: 1em;
+  margin: 3em 1em 1em 0;
+  color: #fff;
+  background: #419ccb;
+  box-shadow: 2px 2px 1px grey;
+
+  h3, a {
+    color: #fff;
+  }
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.05em;
+    a {
+      font-weight: bold;
+    }
+  }
+  a.dlm-lu-upgrade-notice-hide {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 0.95em;
+  }
+}
+
+.dlm-onboarding-notice {
+  border-left-color: #419ccb;
+
+  &:before {
+    display: inline-block;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 35px;
+    height: 100%;
+    content:"";
+    background-color: #419ccb;
+    background-image: url('../images/logo.png');
+    background-size: 29px 28px;
+    background-position: 1px center;
+    background-repeat: no-repeat;
+  }
+  p {
+    padding-left: 33px;
+  }
+}

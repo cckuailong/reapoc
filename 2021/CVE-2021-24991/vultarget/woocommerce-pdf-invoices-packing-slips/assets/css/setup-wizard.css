@@ -1,0 +1,372 @@
+.wpo-wizzard {
+	background:#f9f9f9;
+}
+
+.wpo-wcpdf-setup {
+	padding:0;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+    line-height: 22px;
+    color:#444;
+    background:none;
+    -webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.wpo-wcpdf-setup h1, .wpo-wcpdf-setup h2 {
+	border:none;
+	color:#444;
+	margin:0;
+}
+
+#confetti {
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:-999;
+}
+
+.wpo-setup {
+	background-color:#f9f9f9;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+    line-height: 22px;
+    color:#444;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+.confetti {
+	width:100%;
+	height:100%;
+	z-index:-999;
+	position:relative;
+}
+
+.wpo-setup-card {
+	display:block;
+	background-color:#f2fafa;
+	max-width:900px;
+	margin:100px auto 100px auto;
+    padding:0;
+    border-radius:10px;
+    box-shadow:10px 10px 80px rgba(0,0,0,0.05);
+    overflow:hidden;
+}
+
+.wpo-plugin-title {
+	width:100%;
+	padding:30px 0 50px 0;
+	margin:0;
+	background-color:#fdfdfd;
+	text-align:center;
+	display:block;
+	color:#61707d;
+}
+
+.wpo-progress-bar {
+	width:100%;
+	height:36px;
+	overflow:hidden;
+	list-style: none;
+	margin:-18px 0 0 0;
+	padding:0;
+}
+
+.wpo-progress-bar li {
+	width:14.285%;
+	float:left;
+	box-sizing: border-box;
+}
+
+.wpo-progress-marker {
+	height:24px;
+	width:24px;
+	background-color:#fdfdfd;
+	border:6px solid #3e9b9a;
+	border-radius:50%;
+	margin:0 auto;
+}
+
+.wpo-progress-bar .completed {
+	background-color:#3e9b9a;
+}
+
+.wpo-progress-bar .active {
+	background-color:#2d7170;
+}
+
+.wpo-setup-content {
+	float:left;
+	width:100%;
+	overflow:hidden;
+}
+
+.wpo-step-description {
+	width:50%;
+	float:left;
+	padding:50px;
+	box-sizing: border-box;
+}
+
+.wpo-step-description ul {
+	padding-left:16px;
+}
+
+.wpo-setup-input {
+	width:50%;
+	float:left;
+	padding:50px 50px 50px 0;
+	box-sizing: border-box;
+	position:relative;
+}
+
+.wpo-setup-input select {
+	width:100%;
+	border:none;
+	font-size:1.4em;
+	background-color:#fdfdfd;
+	color:#444;
+	border:1px solid #3e9b9a;
+	height:40px;
+}
+
+.wpo-setup-buttons {
+	width:100%;
+	float:left;
+	padding:0px 50px 50px 50px;
+	box-sizing: border-box;
+}
+
+.wpo-button-next, .wpo-button-previous, .wpo-skip-step {
+	background-color:#3e9b9a;
+	border-radius:5px;
+	padding:10px 20px;
+	border:none;
+	box-sizing: border-box;
+	font-size:1em;
+	text-decoration: none;
+	cursor:pointer;
+	color:#fdfdfd;
+	font-size:1.4em;
+	box-sizing: border-box;
+}
+
+.wpo-button-next:hover, .wpo-button-previous:hover {
+	background-color:#2d7170;
+}
+
+.wpo-button-next, .wpo-skip-step {
+	float:right;
+	margin-left:10px;
+}
+
+.wpo-button-previous {
+	float:left;
+}
+
+.wpo-skip-step {
+	background-color:#fdfdfd;
+	color:#61707d;
+}
+
+.wpo-skip-step:hover {
+	color:#333;
+}
+
+/* Shop address */
+
+.wpo-setup-input .shop-name {
+	width:100%;
+	height:40px;
+	padding:10px 15px;
+	box-sizing: border-box;
+	font-size:1.2em;
+	margin-bottom:20px;
+	border:1px solid #3e9b9a;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.wpo-setup-input .shop-address {
+	width:100%;
+	height:200px;
+	padding:15px 15px;
+	font-size:1.2em;
+	line-height:1.4em;
+	box-sizing: border-box;
+	border:1px solid #3e9b9a;
+	resize: none;
+	float:left;
+	margin:0;
+	font-family: 'Ubuntu', sans-serif;
+	text-align:left!important;
+}
+
+/* Your logo */
+
+.wpo-setup-input #img-header_logo {
+	width:100%;
+	height:auto;
+	background:#fdfdfd;
+	margin-bottom:20px;
+	padding:20px;
+	box-sizing: border-box;
+	position:relative;
+}
+
+.wpo-setup-input #logo-preview img {
+	height:80%;
+	position:absolute;
+	left:50%;
+	-ms-transform: 			translate(-50%, 0%); /* IE 9 */
+    -webkit-transform: 		translate(-50%, 0%); /* Safari */
+    transform: 				translate(-50%, 0%);
+}
+
+/* Attach to */
+
+.wpo-setup-input input[type=checkbox] {
+	background-color: #fdfdfd;
+	border: 1px solid #cacece;
+	border-radius: 3px;
+	vertical-align: text-bottom;
+	margin-right: 20px;
+}
+
+.wpo-setup-input .checkbox {
+	font-size:1.1em;
+}
+
+/* Customizer */
+
+.wpo-setup-input .how-to-box {
+	float:right;
+	width:auto;
+	max-width:100%;
+	height:auto;
+	border:1px solid #3e9b9a;
+	overflow:hidden;
+	background:#fff;
+}
+
+.wpo-setup-input .how-to-box img {
+	width:100%;
+}
+
+.wpo-step-description a:link, .wpo-step-description a:visited {
+	color:#3e9b9a;
+	text-decoration:none;
+}
+
+/* Good to go */
+
+.wpo-final {
+	text-align:center;
+	width:100%;
+	padding:50px 200px;
+}
+
+.wpo-final h1 {
+	font-size:3em;
+	line-height:1em;
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.wpo-setup-card {
+		width:80%;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.wpo-setup-card {
+		width:100%;
+		min-height:100%;
+		border-radius:0px;
+		margin:0;
+	}
+
+	.wpo-step-description, .wpo-setup-input {
+		width:100%;
+		padding-left:50px;
+	}
+
+	.wpo-final {
+		padding:50px;
+	}
+
+	.wpo-progress-bar {
+		margin-top:-12px;
+	}
+
+	.wpo-progress-marker {
+		height:16px;
+		width:16px;
+		border-width:4px;
+	}
+
+	.wpo-button-next, .wpo-button-previous, .wpo-skip-step {
+		font-size:1em;
+		padding:8px 12px;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+	.wpo-wizzard, .wpo-wcpdf-setup {
+		margin:0;
+		height:100%;
+	}
+
+	.wpo-wcpdf-setup form {
+		height:100%;
+	}
+
+	.wpo-setup-card {
+		width:100%;
+		min-height:100%;
+		border-radius:0px;
+		margin:0;
+	}
+
+	.wpo-plugin-title {
+		padding:25px 0 30px 0;
+		font-size:1.4em;
+	}
+
+	.wpo-step-description, .wpo-setup-input, .wpo-setup-buttons {
+		width:100%;
+		padding:20px;
+	}
+
+	.wpo-step-description {
+		padding-bottom:0;
+	}
+
+	.wpo-progress-bar {
+		margin-top:-12px;
+	}
+
+	.wpo-progress-marker {
+		height:16px;
+		width:16px;
+		border-width:4px;
+	}
+
+	.wpo-button-next, .wpo-button-previous, .wpo-skip-step {
+		font-size:1em;
+		padding:8px 12px;
+	}
+
+	.wpo-setup-input .checkbox {
+	font-size:1em;
+	}
+}
+
+

@@ -1,0 +1,1 @@
+jQuery(function(e){e(".dlm-select-ext").select2()});

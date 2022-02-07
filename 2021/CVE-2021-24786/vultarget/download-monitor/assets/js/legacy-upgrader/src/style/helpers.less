@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+
+.iconbefore( @glyph: "\f333" ) {
+  font-family: dashicons !important;
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 4px 0 0;
+  content: @glyph;
+  top: 1px;
+  left: -1px;
+  font-size: 1em;
+  line-height: inherit;
+  position: relative;
+  vertical-align: top;
+}

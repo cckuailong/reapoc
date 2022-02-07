@@ -1,0 +1,134 @@
+/* Order list buttons: */
+.type-shop_order .column-wc_actions a.button.wpo_wcpdf {
+	padding: 3px 2px 1px 1px !important;
+}
+
+.type-shop_order .column-wc_actions a.button.wpo_wcpdf.exists::after {
+	content: "\f147";
+	position:absolute;
+	font-size:16px;
+	left:7px;
+	color:#2aad2a;
+}
+
+.wpo_wcpdf-actions a.button.exists::after {
+	font-family: Dashicons;
+	content: "\f147";
+	font-size: 16px;
+	margin-left: 4px;
+	color: #2aad2a;
+	vertical-align: middle;
+}
+
+.type-shop_order .column-wc_actions a.button.wpo_wcpdf img,
+.type-shop_order .column-order_actions a.button.wpo_wcpdf img /* legacy: 3.2 & older */ {
+	width: 16px;
+}
+
+.widefat .column-pdf_invoice_number {
+	width: 110px;
+}
+
+@media screen and (max-width: 782px) {
+	.wp-list-table .column-pdf_invoice_number, .wp-list-table tr:not(.inline-edit-row):not(.no-items) td.column-pdf_invoice_number:not(.check-column) {
+		display: none;
+	}
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td.column-pdf_invoice_number {
+		padding: 3px 8px 3px 35%
+	}
+}
+
+#wpo_wcpdf-data-input-box > .inside {
+	margin: 0;
+	padding: 10px 0;
+	background-color: #f8f8f8;
+}
+
+#wpo_wcpdf-data-input-box h4 {
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 0;
+}
+
+#wpo_wcpdf-data-input-box p {
+	margin: 0.5em 0;
+}
+
+#wpo_wcpdf-data-input-box .form-field input {
+	width: auto;
+}
+
+.wcpdf-data-fields {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	border: 1px solid #c3c4c7;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.wcpdf-data-fields:last-child {
+	margin-bottom: 0;
+}
+
+.wcpdf-data-fields .read-only {
+	height:auto;
+	display:block;
+	padding: 10px;
+}
+
+.wcpdf-data-fields .editable,
+.wcpdf-data-fields .editable-notes {
+	height:auto;
+	display:none;
+	padding: 10px;
+}
+
+.wcpdf-data-fields h4 {
+	padding: 10px;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+/* Edit buttons Invoice, Proforma and Credit */
+.wcpdf-data-fields h4 .dashicons:first-of-type {
+	margin-left:20px !important;	
+}
+
+.wcpdf-data-fields .wpo-wcpdf-edit-date-number,
+.wcpdf-data-fields .wpo-wcpdf-delete-document,
+.wcpdf-data-fields .wpo-wcpdf-regenerate-document,
+.wcpdf-data-fields .wpo-wcpdf-edit-document-notes {
+	opacity:0.5;
+}
+
+.wcpdf-data-fields .wpo-wcpdf-edit-date-number:hover,
+.wcpdf-data-fields .wpo-wcpdf-delete-document:hover,
+.wcpdf-data-fields .wpo-wcpdf-regenerate-document:hover,
+.wcpdf-data-fields .wpo-wcpdf-edit-document-notes:hover {
+	opacity:1;
+	cursor:pointer;
+}
+
+.wcpdf-data-fields .wpo-wcpdf-document-buttons {
+	display: none;
+	padding: 10px;
+	border-top: 1px solid #dfdfdf;
+}
+
+.wcpdf-data-fields h4 .wcpdf-regenerate-spin {
+	opacity: 1;
+ 	-webkit-animation: spin 1.6s linear infinite; /* Safari */
+ 	animation: spin 1.6s linear infinite;
+ 	pointer-events: none;
+}
+
+/* Safari */
+@-webkit-keyframes wcpdf-regenerate-spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(-360deg); }
+}
+
+@keyframes wcpdf-regenerate-spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(-360deg); }
+}

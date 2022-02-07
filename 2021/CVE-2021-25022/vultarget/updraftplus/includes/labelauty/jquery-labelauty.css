@@ -1,0 +1,271 @@
+/*!
+ * LABELAUTY jQuery Plugin Styles
+ *
+ * @file: jquery-labelauty.css
+ * @author: Francisco Neves (@fntneves)
+ * @site: www.francisconeves.com
+ * @license: MIT License
+ */
+
+/* Prevent text and blocks selection */
+input.labelauty + label ::-moz-selection { background-color: rgba(255, 255, 255, 0); }
+input.labelauty + label ::selection { background-color: rgba(255, 255, 255, 0); }
+input.labelauty + label ::-moz-selection { background-color: rgba(255, 255, 255, 0); }
+
+/* Hide original checkboxes. They are ugly! */
+input.labelauty { display: none !important; }
+
+/*
+ * Let's style the input
+ * Feel free to work with it as you wish!
+ */
+input.labelauty + label
+{
+	display: inline-block;
+	font-size: 13px;
+	padding: 10px;
+	background-color: #efefef;
+	color: black;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 96%;
+
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+
+
+	transition: background-color 0.25s;
+	-moz-transition: background-color 0.25s;
+	-webkit-transition: background-color 0.25s;
+	-o-transition: background-color 0.25s;
+
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+/* Stylish text inside label */
+
+input.labelauty + label > span.labelauty-unchecked,
+input.labelauty + label > span.labelauty-checked
+{
+	display: inline-block;
+	line-height: 1.1;
+	vertical-align: middle;
+}
+
+/* Stylish icons inside label */
+
+input.labelauty + label > span.labelauty-unchecked-image,
+input.labelauty + label > span.labelauty-checked-image
+{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+
+	transition: background-image 0.5s linear;
+	-moz-transition: background-image 0.5s linear;
+	-webkit-transition: background-image 0.5s linear;
+	-o-transition: background-image 0.5s linear;
+}
+
+/* When there's a label, add a little margin to the left */
+input.labelauty + label > span.labelauty-unchecked-image + span.labelauty-unchecked,
+input.labelauty + label > span.labelauty-checked-image + span.labelauty-checked
+{
+	margin-left: 7px;
+}
+
+/* When not Checked */
+input.labelauty:not(:checked):not([disabled]) + label:hover
+{
+	background-color: #eaeaea;
+	color: #a7a7a7;
+}
+input.labelauty:not(:checked) + label > span.labelauty-checked-image
+{
+	display: none;
+}
+
+input.labelauty:not(:checked) + label > span.labelauty-checked
+{
+	display: none;
+}
+
+/* When Checked */
+input.labelauty:checked + label
+{
+	background-color: #3498db;
+	color: #ffffff;
+}
+
+input.labelauty:checked:not([disabled]) + label:hover
+{
+	background-color: #72c5fd;
+}
+input.labelauty:checked + label > span.labelauty-unchecked-image
+{
+	display: none;
+}
+
+input.labelauty:checked + label > span.labelauty-unchecked
+{
+	display: none;
+}
+
+input.labelauty:checked + label > span.labelauty-checked
+{
+	display: inline-block;
+}
+
+input.labelauty.no-label:checked + label > span.labelauty-checked
+{
+	display: block;
+}
+
+/* When Disabled */
+input.labelauty[disabled] + label
+{
+	opacity: 0.5;
+}
+
+/* Add a background to (un)checked images */
+input.labelauty + label > span.labelauty-unchecked-image
+{
+	background-image: url( images/icons/folder.png );
+}
+
+input.labelauty + label > span.labelauty-checked-image
+{
+	background-image: url( images/icons/folder.png );
+}
+
+input.labelauty.email + label > span.labelauty-checked-image,
+input.labelauty.email + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/email.png );
+}
+
+input.labelauty.cloudfiles + label > span.labelauty-checked-image,
+input.labelauty.cloudfiles + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/cloudfiles.png );
+}
+
+input.labelauty.dreamobjects + label > span.labelauty-checked-image,
+input.labelauty.dreamobjects + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/dreamobjects.png );
+}
+
+input.labelauty.dropbox + label > span.labelauty-checked-image,
+input.labelauty.dropbox + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/dropbox.png );
+}
+
+input.labelauty.ftp + label > span.labelauty-checked-image,
+input.labelauty.ftp + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/folder.png );
+}
+
+input.labelauty.sftp + label > span.labelauty-checked-image,
+input.labelauty.sftp + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/folder.png );
+}
+
+input.labelauty.googledrive + label > span.labelauty-checked-image,
+input.labelauty.googledrive + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/googledrive.png );
+}
+
+input.labelauty.s3generic + label > span.labelauty-checked-image,
+input.labelauty.s3generic + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/folder.png );
+}
+
+input.labelauty.onedrive + label > span.labelauty-checked-image,
+input.labelauty.onedrive + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/onedrive.png );
+}
+
+input.labelauty.azure + label > span.labelauty-checked-image,
+input.labelauty.azure + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/azure.png );
+}
+
+input.labelauty.backblaze + label > span.labelauty-checked-image,
+input.labelauty.backblaze + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/backblaze.png );
+}
+
+input.labelauty.openstack + label > span.labelauty-checked-image,
+input.labelauty.openstack + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/openstack.png );
+}
+
+input.labelauty.s3 + label > span.labelauty-checked-image,
+input.labelauty.s3 + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/s3.png );
+}
+
+input.labelauty.updraftvault + label > span.labelauty-checked-image,
+input.labelauty.updraftvault + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/updraftvault.png );
+}
+
+input.labelauty.webdav + label > span.labelauty-checked-image,
+input.labelauty.webdav + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/webdav.png );
+}
+
+input.labelauty.googlecloud + label > span.labelauty-checked-image,
+input.labelauty.googlecloud + label > span.labelauty-unchecked-image {
+	background-image: url( ../../images/icons/googlecloud.png );
+}
+
+#remote-storage-container {
+    height: auto;
+    width: auto;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+
+@media only screen and (min-width: 480px) {
+
+	#remote-storage-container {
+		height: auto;
+		width: auto;
+	}
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+	#remote-storage-container {
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+		column-count: 3;
+		height: auto;
+		width: auto;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	input.labelauty + label {
+		text-align: center;
+	}
+
+	input.labelauty + label > span.labelauty-unchecked-image, input.labelauty + label > span.labelauty-checked-image {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 4px;
+	}
+
+}

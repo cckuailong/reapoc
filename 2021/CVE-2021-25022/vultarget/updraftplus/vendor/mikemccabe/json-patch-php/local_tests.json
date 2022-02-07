@@ -1,0 +1,219 @@
+[
+    { "comment": "blur arrays and objects",
+      "doc": { "foo": 1 },
+      "patch": [ { "op": "add", "path": "/1", "value": 2 } ],
+      "expected": { "foo": 1, "1": 2 } },
+
+    { "comment": "Adding to \"/-\" adds to the end of the array",
+      "doc": [ 1, 2 ],
+      "patch": [ { "op": "add", "path": "/-", "value": 3 } ],
+      "expected": [ 1, 2, 3 ] },
+
+    { "comment": "value in array append not flattened",
+      "doc": [1, 2],
+      "patch": [{"op": "add", "path": "/-", "value": [3]}],
+      "expected": [1, 2, [3]] },
+
+    { "comment": "move target can use '-'",
+      "doc": {"to":[ 1, 2 ], "from": 3},
+      "patch": [{"op": "move", "from":"/from", "path": "/to/-"}],
+      "expected": {"to":[ 1, 2, 3 ]}},
+
+    { "comment": "copy target can use '-'",
+      "doc": {"to":[1, 2], "from": 3},
+      "patch": [{"op": "copy", "from": "/from", "path": "/to/-"}],
+      "expected": { "to":[ 1, 2, 3 ], "from": 3 } },
+
+    { "comment": "replace target must exist",
+      "doc": {"foo": "bar"},
+      "patch": [{"op": "replace", "path": "/baz", "value": "sil"}],
+      "error": "replace target '/baz' not set" },
+
+    { "comment": "- as remove target not allowed",
+      "doc": [1, 2],
+      "patch": [{"op": "remove", "path": "/-"}],
+      "error": "Non-array key '-' used on array" },
+
+    { "comment": "remove of numeric index from obj doesn't convert to array",
+      "doc": {"foo": 1, "0":2, "bar":3},
+      "patch": [{"op": "remove", "path":"/0"}],
+      "expected": {"foo":1, "bar":3} },
+
+    { "comment": "- as remove target for obj isn't special",
+      "doc": {"-": 1, "foo": 2},
+      "patch": [{"op": "remove", "path": "/-"}],
+      "expected": {"foo": 2} },
+
+    { "comment": "toplevel as remove target",
+      "doc": [1],
+      "patch": [{"op": "remove", "path": ""}],
+      "error": "Can't remove whole document" },
+
+    { "comment": "Ok to have doc as toplevel string?",
+      "doc": 1,
+      "patch": [{"op": "replace", "path": "", "value": "bar"}],
+      "expected": "bar" },
+
+    { "comment": "Ok to have doc as toplevel number?",
+      "doc": 1,
+      "patch": [{"op": "replace", "path": "", "value": 1}],
+      "expected": 1 },
+
+    { "comment": "Ok to have result doc as toplevel string?",
+      "doc": [ 1 ],
+      "patch": [{"op": "replace", "path": "", "value": "bar"}],
+      "expected": "bar" },
+
+    { "comment": "'add' should replace existing member if it already exists",
+      "doc": { "foo": 1 },
+      "patch": [{"op": "add", "path": "/foo", "value": 2}],
+      "expected": { "foo": 2 } },
+
+    { "comment": "test op with string at toplevel",
+      "doc": "foo",
+      "patch": [{"op": "test", "path":"", "value": "foo"}] },
+      
+    { "comment": "test op with number at toplevel",
+      "doc": 1,
+      "patch": [{"op": "test", "path":"", "value": 1}] },
+      
+    { "comment": "test op with false at toplevel",
+      "doc": false,
+      "patch": [{"op": "test", "path":"", "value": false}] },
+
+    { "comment": "test op with true at toplevel",
+      "doc": true,
+      "patch": [{"op": "test", "path":"", "value": true}] },
+
+    { "comment": "test op with null at toplevel",
+      "doc": null,
+      "patch": [{"op": "test", "path":"", "value": null}] },
+
+    { "comment": "test null != false",
+      "doc": null,
+      "patch": [{"op": "test", "path":"", "value": false}],
+      "error": "expected false value not found" },
+
+    { "comment": "test false != null",
+      "doc": false,
+      "patch": [{"op": "test", "path":"", "value": null}],
+      "error": "test target value different - expected null, found false" },
+
+    { "comment": "test null != false",
+      "doc": null,
+      "patch": [{"op": "test", "path":"", "value": false}],
+      "error": "test target value different - expected false, found null" },
+
+    { "comment": "test emptystr != false",
+      "doc": "",
+      "patch": [{"op": "test", "path":"", "value": false}],
+      "error": "test target value different - expected false, found \"\"" },
+
+    { "comment": "test false != emptystr",
+      "doc": false,
+      "patch": [{"op": "test", "path":"", "value": ""}],
+      "error": "test target value different - expected \"\", found false" },
+
+    { "comment": "null within string",
+      "doc": [ "foo\u0000foo" ],
+      "patch": [{"op":"test", "path":"/0", "value":"foo\u0000foo"}] },
+
+    { "comment": "null string",
+      "doc": [ "\u0000" ],
+      "patch": [{"op":"test", "path":"/0", "value":"\u0000"}] },
+
+    { "comment": "null in key",
+      "doc": { "foo\u0000foo": 1 },
+      "patch": [{"op":"replace", "path":"/foo\u0000foo", "value":2}],
+      "expected": { "foo\u0000foo": 2 } },
+
+    { "comment": "null in key - test against prefix",
+      "doc": { "foo": 1, "foo\u0000foo": 2 },
+      "patch": [{"op":"test", "path":"/foo\u0000foo", "value":2}] },
+
+    { "comment": "null in key - trailing",
+      "doc": { "foo": 1, "foo\u0000": 2 },
+      "patch": [{"op":"test", "path":"/foo\u0000", "value":2}] },
+
+    { "comment": "null as key",
+      "doc": { "\u0000": 1 },
+      "patch": [{"op":"replace", "path":"/\u0000", "value":2}],
+      "expected": { "\u0000": 2 } },
+
+    { "comment": "null as key prefix",
+      "doc": { "\u0000foo": 1 },
+      "patch": [{"op":"replace", "path":"/\u0000foo", "value":2}],
+      "expected": { "\u0000foo": 2 } },
+
+    { "comment": "copy doc onto child",
+      "doc": { "foo": 1 },
+      "patch": [{"op":"copy", "from":"", "path":"/bar"}],
+      "expected": { "foo": 1, "bar": { "foo": 1 }} },
+
+    { "comment": "move doc onto child ('from' must not be proper prefix)",
+      "doc": { "foo": { "bar": 1 } },
+      "patch": [{"op":"move", "from":"/foo", "path":"/foo/bar"}],
+      "error": "path '/foo/bar' not found (already removed)"},
+
+    { "comment": "need bounds check on intermediate path",
+      "doc": [1, [2]],
+      "patch": [{"op": "test", "path":"/2/0", "value": 2}],
+      "error": "path '/2/0' not in target doc" },
+
+    { "comment": "'-' should be legit member for object",
+      "doc": {"foo": 1},
+      "patch": [{"op": "add", "path":"/-", "value": 2}],
+      "expected": {"foo": 1, "-": 2} },
+
+    { "comment": "remove of array-looking element of object",
+      "doc": {"foo":1, "0":2},
+      "patch": [{"op":"remove", "path":"/0"}],
+      "expected": {"foo": 1} },
+
+    { "comment": "replace of array-looking element of object",
+      "doc": {"foo":1, "0":2},
+      "patch": [{"op":"replace", "path":"/0", "value":3}],
+      "expected": {"foo": 1, "0":3} },
+
+    { "comment": "replace string with null (elicits diff error)",
+      "doc": [""],
+      "patch": [{"op": "replace", "path": "/0", "value": null}],
+      "expected": [null] },
+
+    { "comment": "test object sorting for equality if numeric indices exist",
+      "doc": {"foo":1,"bar":3,"0":2},
+      "patch": [{"op": "test", "path":"", "value": {"foo":1,"0":2,"bar":3}}] },
+
+    { "comment": "test php-style array element delete - disabled as reverse diff (gappy array from pure array) is impossible in json-patch without borrowing php array semantics",
+      "doc": {"0":"a", "2":"c"},
+      "patch": {"op":"add", "path":"/1", "value":"b"},
+      "expected": {"0":"a", "1":"b", "2":"c"},
+      "disabled": true
+    },
+
+    { "comment": "test php-style array element delete - assoc-ish indexes",
+      "doc": {"0a":"a", "2c":"c"},
+      "patch": {"op":"add", "path":"/1b", "value":"b"},
+      "expected": {"0a":"a", "1b":"b", "2c": "c"} },
+
+    { "comment": "Numerically equal must test equal",
+      "doc": [1.00],
+      "patch": [{"op": "test", "path":"/0", "value":1}]},
+
+    { "comment": "Numerically equal must test equal",
+      "doc": [1],
+      "patch": [{"op": "test", "path":"/0", "value":1.00}]},
+
+    { "comment": "Numerically equal must test equal",
+      "doc": [1e0],
+      "patch": [{"op": "test", "path":"/0", "value":1.00}]},
+
+    { "comment": "append",
+      "doc": [1, 2, 3, 4],
+      "patch": [{"op": "append", "path": "/-", "value":[5, 6, 7, 8]}],
+      "expected": [1, 2, 3, 4, 5, 6, 7, 8],
+      "disabled": true
+    },
+
+    { "comment": "last" }
+]
