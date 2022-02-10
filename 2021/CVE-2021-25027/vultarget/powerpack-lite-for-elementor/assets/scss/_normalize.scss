@@ -1,0 +1,34 @@
+div[class^='pa-'],
+div[class*=' pa-'] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    font-size: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+.pp-icon {
+	display: inline-block;
+	line-height: 1;
+	text-align: center;
+	-webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.pp-icon i,
+.pp-icon svg {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+}
+.pp-no-trans {
+	-webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}

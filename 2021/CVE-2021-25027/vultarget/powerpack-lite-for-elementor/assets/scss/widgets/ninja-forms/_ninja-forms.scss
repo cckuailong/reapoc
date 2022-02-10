@@ -1,0 +1,37 @@
+.pp-ninja-form {
+    .nf-form-title {
+        display: none;
+    }
+    &-title-yes {
+        .nf-form-title {
+            display: block;
+        }
+    }
+    .title-description-hide {
+        .nf-form-title {
+            display: none;
+        }
+    }
+    &.title-description-hide {
+        .nf-form-title {
+            display: none;
+        }
+    }
+    .nf-field-label {
+        display: none;
+    }
+    &-labels-yes {
+        .nf-field-label {
+            display: block;
+        }
+    }
+    .submit-container input[type="button"] {
+        border: 0;
+        border-radius: 0;
+    }
+}
+.pp-ninja-form-button-full-width {
+    .submit-container input[type="button"] {
+        width: 100%;
+    }
+}

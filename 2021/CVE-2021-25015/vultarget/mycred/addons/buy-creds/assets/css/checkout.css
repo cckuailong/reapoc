@@ -1,0 +1,62 @@
+#buycred-checkout-wrapper { display: none; }
+#buycred-checkout-wrapper.open { display: table; position: fixed; top: 0; left: 0; z-index: 999999; width: 100%; height: 100%; overflow: hidden; background-color: rgba(0,0,0,0.6); border: none; padding: 0; margin: 0; text-align: center; }
+#buycred-checkout-wrapper.open .checkout-inside { display: table-cell; vertical-align: middle; text-align: center; margin: 0 auto; }
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper { display: block; margin: 0 auto; text-align: left; width: calc(100% - 52px); max-width: 400px; border: 24px solid transparent; border-radius: 6px; padding: 0; background-color: rgba(0,0,0,0.2); }
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box { border-radius: 6px; }
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .padded { background-color: white; padding: 12px; }
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .warning { background-color: orange; color: white; padding: 12px; text-align: center; text-transform: uppercase; }
+#buycred-checkout-wrapper.open #checkout-box img { display: block; margin: 0 auto; }
+#buycred-checkout-wrapper.open #checkout-box table, #buycred-checkout-page table { border: none; width: 100%; font-size: 12px; line-height: 14px; text-align: left; margin: 0 0 12px 0; }
+#buycred-checkout-wrapper.open #checkout-box table tr th, #buycred-checkout-page table tr th { font-weight: bold; text-align: left; font-size: 13px; line-height: 17px; }
+#buycred-checkout-wrapper.open #checkout-box table tr td, #buycred-checkout-page table tr td { font-weight: normal; font-size: 12px; line-height: 14px; text-align: left; }
+#buycred-checkout-wrapper.open #checkout-box table tr.total td, #buycred-checkout-page table tr.total td { font-weight: bold; }
+#buycred-checkout-wrapper.open #checkout-box table tr .right, #buycred-checkout-page table tr .right { text-align: right; }
+#buycred-checkout-wrapper.open #checkout-box table tr .item, #buycred-checkout-page table tr .item { width: 70%; }
+#buycred-checkout-wrapper.open #checkout-box table tr .cost, #buycred-checkout-page table tr .cost { width: 30%; }
+#buycred-checkout-wrapper.open #checkout-box p, #buycred-checkout-page p { text-align: left; font-size: 12px; line-height: 14px; }
+#buycred-checkout-wrapper.open #checkout-box h2, #buycred-checkout-page h2 { text-align: center; }
+#buycred-checkout-wrapper.open #checkout-box h2.gateway-title, #buycred-checkout-page h2.gateway-title { margin: 12px 0; }
+#buycred-checkout-wrapper.open #checkout-box h2 span, #buycred-checkout-page h2 span { display: block; font-size: 14px; color: #333; }
+#buycred-checkout-wrapper.open #checkout-box h1, #buycred-checkout-wrapper.open #checkout-box h2, #buycred-checkout-wrapper.open #checkout-box h3, #buycred-checkout-wrapper.open #checkout-box h4, #buycred-checkout-wrapper.open #checkout-box h5, #buycred-checkout-wrapper.open #checkout-box h6 { margin: 0 0 24px 0; }
+#buycred-checkout-wrapper.open #checkout-box h1, #buycred-checkout-wrapper.open #checkout-box h2, #buycred-checkout-wrapper.open #checkout-box h3 { text-align: center; }
+#buycred-checkout-wrapper.open #checkout-box h4, #buycred-checkout-wrapper.open #checkout-box h5, #buycred-checkout-wrapper.open #checkout-box h6 { text-align: left; margin-bottom: 12px; }
+
+#buycred-checkout-wrapper.open #checkout-box form, #buycred-checkout-page form { display: block; width: 100%; height: auto; margin: 0; border-radius: 6px; }
+#buycred-checkout-wrapper.open #checkout-box form .loading-buycred, #buycred-checkout-page .loading-buycred { padding: 12px; text-align: center; background-color: white; border-radius: 6px; }
+#buycred-checkout-wrapper.open #checkout-box form .cancel, #buycred-checkout-page .cancel { font-size: 12px; line-height: 14px; text-align: center; }
+
+#buycred-checkout-wrapper.open #checkout-box .form-group { margin-bottom: 6px; }
+#buycred-checkout-wrapper.open #checkout-box .form-group label { display: block; font-size: 12px; line-height: 18px; text-align: left; margin-bottom: 0; }
+
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .checkout-header, 
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .checkout-header > div { border-top-left-radius: 6px; border-top-right-radius: 6px; }
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .checkout-footer, 
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .checkout-footer > div { border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .checkout-footer { margin-top: 24px; }
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .checkout-body { border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; margin-bottom: 0; }
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .checkout-body.no-header { border-top-left-radius: 6px; border-top-right-radius: 6px; }
+#buycred-checkout-wrapper.open .checkout-inside .checkout-wrapper #checkout-box .checkout-footer button { width: 100%; border: none; border-radius: 6px !important; background-color: #dedede; color: #333; }
+#buycred-checkout-wrapper.open .error { color: red; }
+
+#cancel-checkout-wrapper { z-index: 9999999; position: fixed; top: -42px; right: 12px; width: 42px; height: 42px; line-height: 42px; text-align: center; transition: top 0.5s; -moz-transition: top 0.5s; -o-transition: top 0.5s; -webkit-transition: top 0.5s; -ms-transition: top 0.5s; }
+#cancel-checkout-wrapper.on { top: 12px; transition: top 0.5s; -moz-transition: top 0.5s; -o-transition: top 0.5s; -webkit-transition: top 0.5s; -ms-transition: top 0.5s; }
+#cancel-checkout-wrapper a { display: block; color: white; font-size: 24px; text-transform: uppercase; }
+#cancel-checkout-wrapper a i { display: block; line-height: inherit; }
+
+#buycred-checkout-page { display: block; padding: 24px; max-width: 600px; margin: 0 auto; min-height: 600px; }
+#buycred-checkout-page .checkout-footer { text-align: right; padding-top: 24px; }
+
+.loading-indicator { height: 5px; width: 100%; position: relative; overflow: hidden; background-color: white; }
+.loading-indicator:before { display: block; position: absolute; content: ""; left: -200px; width: 200px; height: 5px; background-color: #c5d93d; animation: loading 2s linear infinite; }
+@keyframes loading { from { left: -200px; width: 30%; } 25% { width: 50%; } 50% { width: 50%; } 70% { width: 50%; } 80% { left: 75%; } 95% { left: 100%; } to { left: 100%; } }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+width: 90%;
+}
+
+
+@keyframes blinker { 50% { opacity: 0; } }
+.blink { -webkit-animation: blinker 0.2s linear infinite; -moz-animation: blinker 0.2s linear infinite; -ms-animation: blinker 0.2s linear infinite; animation: blinker 0.2s linear infinite; }

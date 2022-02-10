@@ -1,0 +1,165 @@
+@media print {
+	#adminmenuback,
+	#adminmenuwrap,
+	.tablenav,
+	#wpfooter,
+	.check-column,
+	.column-check_in,
+	.column-edit_attendee,
+	#total_checkedin_wrapper,
+	.column-meta_details,
+	#show-settings-link,
+	.screen-meta-toggle,
+	.nav-tab-wrapper,
+	#icon-edit,
+	#wpbody-content #update-nag,
+	#wpbody-content .update-nag,
+	.row-actions,
+	.event-actions,
+	.wrap h2 + h2,
+	.search-box {
+		display: none;
+	}
+
+	.wrap h2 + h2 {
+		display: block;
+	}
+
+	#wpwrap #wpcontent,
+	#wpfooter {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	#wpwrap .wrap {
+		margin: 0;
+	}
+
+	#wpwrap #wpbody-content {
+		padding-bottom: 0;
+	}
+
+	.tribe-report-page {
+		form {
+			display: block !important;
+		}
+	}
+
+	.tribe-report-panel {
+		margin: 0 0 30px;
+		border: 0;
+		box-shadow: none;
+
+		.about-description {
+			display: none;
+		}
+
+		.welcome-panel-content {
+			margin: 0;
+		}
+
+		.welcome-panel-column {
+			padding: 0;
+			width: 32%;
+			float: left;
+			display: inline-block;
+		}
+
+		.welcome-panel-middle {
+			ul {
+				li {
+					strong {
+						display: block;
+					}
+				}
+			}
+		}
+
+		.welcome-panel-last {
+			border-left: 0;
+			float: right;
+			width: 25%;
+		}
+	}
+
+	table.widefat.attendees {
+		border-left: 0;
+		border-right: 0;
+	}
+
+	#wpwrap .widefat th,
+	#wpwrap .widefat td {
+		border-bottom: 1px solid #e1e1e1;
+		padding: 0;
+	}
+
+	#the-list tr {
+		background: #fff;
+		border: 0;
+	}
+
+	.wp-list-table {
+		thead {
+			tr {
+				border-bottom: 1px solid #e1e1e1;
+			}
+		}
+	}
+
+	a.row-title {
+		color: #000;
+	}
+
+	.widefat {
+		thead tr th,
+		tfoot tr th {
+			background: none;
+			text-shadow: none;
+		}
+	}
+
+	.postbox h3 {
+		text-shadow: none;
+	}
+
+	#total_tickets_sold {
+		display: block;
+	}
+
+	.ticket_list {
+		h4 {
+			font-size: 13px;
+		}
+
+		tr {
+			td {
+				font-size: 11px;
+				line-height: 1.4;
+
+				.totals {
+					height: 100px;
+					line-height: 2;
+					padding-top: 40px;
+					width: 75%;
+				}
+			}
+		}
+	}
+
+	table {
+		page-break-inside: auto;
+	}
+
+	tr {
+		page-break-after: auto;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group;
+	}
+
+	tfoot {
+		display: table-footer-group;
+	}
+}

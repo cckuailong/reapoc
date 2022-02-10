@@ -1,0 +1,13 @@
+<script>
+  if (!window.UiFramework) {
+    window.UiFramework = {
+      plugins: [],
+      registerPlugin: function (name, plugin, priority = 10) {
+        window.UiFramework.plugins[name] = {plugin, priority}
+        if (window.UiFramework.emit) {
+          window.UiFramework.emit('plugin-loaded', {name, plugin})
+        }
+      }
+    }
+  }
+</script>

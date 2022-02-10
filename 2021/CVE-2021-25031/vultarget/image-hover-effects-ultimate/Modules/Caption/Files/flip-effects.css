@@ -1,0 +1,135 @@
+.oxi-addons-container [class^='oxi-image-flip-'],
+.oxi-addons-container [class*=' oxi-image-flip-'],
+.oxi-addons-container [class^='oxi-image-flip-'] .oxi-image-hover-figure,
+.oxi-addons-container [class*=' oxi-image-flip-'] .oxi-image-hover-figure {
+    background: transparent !important;
+}
+
+.oxi-addons-container [class^='oxi-image-flip-'],
+.oxi-addons-container [class*=' oxi-image-flip-'],
+.oxi-addons-container [class^='oxi-image-flip-'] *,
+.oxi-addons-container [class*=' oxi-image-flip-'] * {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+.oxi-addons-container [class^='oxi-image-flip-'] .oxi-image-hover-image,
+.oxi-addons-container [class*=' oxi-image-flip-'] .oxi-image-hover-image {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.oxi-addons-container [class^='oxi-image-flip-'] .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-flip-'] .oxi-image-hover-figure-caption {
+    opacity: 0;
+}
+
+.oxi-addons-container [class^='oxi-image-flip-']:hover .oxi-image-hover-image,
+.oxi-addons-container [class*=' oxi-image-flip-']:hover .oxi-image-hover-image,
+.oxi-addons-container [class^='oxi-image-flip-'].oxi-touch .oxi-image-hover-image,
+.oxi-addons-container [class*=' oxi-image-flip-'].oxi-touch .oxi-image-hover-image {
+    opacity: 0;
+}
+
+.oxi-addons-container [class^='oxi-image-flip-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-flip-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class^='oxi-image-flip-'].oxi-touch .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-flip-'].oxi-touch .oxi-image-hover-figure-caption {
+    opacity: 1;
+    -webkit-transition-delay: 0.14s;
+    -moz-transition-delay: 0.14s;
+    -o-transition-delay: 0.14s;
+    transition-delay: 0.14s;
+}
+
+.oxi-addons-container .oxi-image-flip-horizontal .oxi-image-hover-figure-caption {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.oxi-addons-container .oxi-image-flip-horizontal:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-flip-horizontal.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+
+.oxi-addons-container .oxi-image-flip-horizontal:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-flip-horizontal.oxi-touch .oxi-image-hover-figure-caption {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.oxi-addons-container .oxi-image-flip-vertical .oxi-image-hover-figure-caption {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.oxi-addons-container .oxi-image-flip-vertical:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-flip-vertical.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.oxi-addons-container .oxi-image-flip-vertical:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-flip-vertical.oxi-touch .oxi-image-hover-figure-caption {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.oxi-addons-container .oxi-image-flip-diagonal-1 .oxi-image-hover-figure-caption {
+    -webkit-transform: rotate3d(1, -1, 0, 100deg);
+    -moz-transform: rotate3d(1, -1, 0, 100deg);
+    transform: rotate3d(1, -1, 0, 100deg);
+}
+
+.oxi-addons-container .oxi-image-flip-diagonal-1:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-flip-diagonal-1.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotate3d(-1, 1, 0, 100deg);
+    -moz-transform: rotate3d(-1, 1, 0, 100deg);
+    transform: rotate3d(-1, 1, 0, 100deg);
+}
+
+.oxi-addons-container .oxi-image-flip-diagonal-1:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-flip-diagonal-1.oxi-touch .oxi-image-hover-figure-caption {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg);
+}
+
+.oxi-addons-container .oxi-image-flip-diagonal-2 .oxi-image-hover-figure-caption {
+    -webkit-transform: rotate3d(1, 1, 0, 100deg);
+    -moz-transform: rotate3d(1, 1, 0, 100deg);
+    transform: rotate3d(1, 1, 0, 100deg);
+}
+
+.oxi-addons-container .oxi-image-flip-diagonal-2:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-flip-diagonal-2.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotate3d(-1, -1, 0, 100deg);
+    -moz-transform: rotate3d(-1, -1, 0, 100deg);
+    transform: rotate3d(-1, -1, 0, 100deg);
+}
+
+.oxi-addons-container .oxi-image-flip-diagonal-2:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-flip-diagonal-2.oxi-touch .oxi-image-hover-figure-caption {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg);
+}

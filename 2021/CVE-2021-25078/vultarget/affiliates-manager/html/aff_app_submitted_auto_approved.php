@@ -1,0 +1,1 @@
+<?php echo WPAM_MessageHelper::GetMessage('aff_app_submitted_auto_approved')?>

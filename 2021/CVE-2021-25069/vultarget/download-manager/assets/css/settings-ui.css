@@ -1,0 +1,224 @@
+#wpbody {
+    margin-left: -19px;
+}
+#wpdm-admin-page-header{
+    width: calc(100% - 160px);
+    position: fixed;
+    z-index: 99;
+}
+#wpdm-admin-main-header{
+    background: #f8fbfd;
+    padding: 0 15px;
+    line-height: 64px;
+    border-bottom: 1px solid #e1e3ee;
+    position: relative;
+    z-index: 991;
+    box-shadow: 0 2px 4px rgba(var(--admin-color-rgb), 0.1);
+    margin-top: -1px;
+}
+.pr-0{ padding-right: 0 !important; }
+#wpdm-admin-main-header .btn-full-height{
+    padding: 0 30px;
+    line-height: 64px;
+    border-radius: 0;
+    font-size: 10pt;
+    margin-top: -1px;
+    background-color: var(--admin-color);
+    font-weight: 700;
+}
+#wpdm-admin-main-header .btn-full-height i{
+    margin-right: 4px;
+}
+#wpdm-admin-main-header h3{
+    line-height: 64px;
+    padding: 0;
+    margin: 0;
+    font-size: 14pt;
+    font-weight: 600;
+    vertical-align: middle;
+}
+#wpdm-admin-main-header h3 .fas,
+#wpdm-admin-main-header h3 .fa{
+    margin-right: 8px;
+}
+
+#wpdm-admin-main-header .pull-right{
+    margin-top: -1px;
+}
+
+#wpdm-admin-sub-header {
+    background: #ffffff;
+    line-height: 32px;
+    font-size: 12px;
+}
+#wpdm-admin-sub-header .nav.nav-pills,
+#wpdm-admin-sub-header .nav.nav-pills li{
+    padding: 0;
+    margin: 0;
+}
+#wpdm-admin-sub-header .nav.nav-pills{
+    padding-left: 10px;
+    border-bottom: 1px solid #dde1e8;
+}
+#wpdm-admin-sub-header .nav.nav-pills li a {
+    padding: 0 13px;
+    border-radius: 3px;
+    background: transparent !important;
+    color: #444 !important;
+    margin: 10px 2px;
+    position: relative;
+}
+#wpdm-admin-sub-header .nav.nav-pills li a:hover{
+    background: rgb(212, 226, 255) !important;
+}
+#wpdm-admin-sub-header .nav.nav-pills li.active a{
+    color: #fff !important;
+    background: #0e68ff linear-gradient(rgba(14, 104, 255, 0.5), rgba(71, 140, 255, 0.5)) !important;
+    box-shadow: 0 0 10px rgba(0, 88, 255, 0.55) !important;
+}
+#wpdm-admin-sub-header .nav.nav-tabs{
+    padding-left: 15px;
+    padding-top: 18px;
+}
+#wpdm-admin-sub-header .nav.nav-tabs li a{
+    margin-right: 5px;
+}
+#wpdm-admin-sub-header .nav.nav-tabs li.active a{
+    background: #f0f0f1;
+    box-shadow: 0 -3px 6px rgba(var(--color-primary-rgb), 0.2) !important;
+}
+
+.wpdm-admin-page-content {
+    padding: 32px;
+    padding-top: 140px;
+}
+.wpdm-admin-page-content .panel table tfoot th,
+.wpdm-admin-page-content .panel table thead th{
+    background: #f6f6f6 !important;
+    line-height: 32px;
+    vertical-align: middle;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+.wpdm-admin-page-content .panel table td {
+    vertical-align: middle !important;
+    font-weight: 400;
+    padding: 10px 15px !important;
+}
+.wpdm-admin-page-content .panel table tfoot th {
+    border-top: 1px solid #dddddd;
+}
+.wpdm-admin-page-content .table {
+    background: #fff;
+}
+
+#wpdm-admin-page-container {
+    display: flex;
+    padding-left: 280px;
+    padding-top: 64px;
+}
+
+#wpdm-admin-page-sidebar {
+    width: 240px;
+    height: 1000px;
+    background: #f8fbfd;
+    border-right: 1px solid rgba(158, 163, 179, 0.37);
+    padding: 20px;
+    position: fixed;
+    margin-left: -261px;
+    overflow: auto;
+}
+
+#wpdm-admin-page-body {
+    padding: 30px;
+    width: 800px;
+    max-width: 100%;
+}
+
+
+#wpdm-wrapper-panel #tabs.nav-pills li {
+    margin: 0 !important;
+}
+#wpdm-wrapper-panel #tabs.nav-pills a {
+    border-radius: 3px !important;
+    color: #213e5b;
+    font-size: 10pt !important;
+}
+
+#wpdm-wrapper-panel #tabs.nav-pills a i{
+    margin-right: 10px !important;
+}
+
+#wpdm-wrapper-panel .nav-wrapper-tabs {
+    padding-top: 80px;
+    background: #F5F5F5;
+}
+
+#wpdm-wrapper-panel > .settings-panel-body {
+    padding-top: 80px;
+    border-radius: 0px;
+    background: transparent none repeat scroll 0% 0%;
+    max-width: 1000px;
+}
+
+#wpdm-wrapper-panel > .settings-panel-body #tabs:hover {
+    overflow: auto;
+}
+
+#wpdm-wrapper-panel .settings-tabs a {
+    background: transparent;
+    border: 0;
+}
+
+.settings-tabs a i {
+    display: inline-block;
+    width: 16px;
+}
+
+#wpdm-wrapper-panel .settings-tabs li.active a {
+    color: #fff !important;
+    background: var(--admin-color) !important;
+    box-shadow: 0 0 10px rgba(var(--admin-color-rgb), 0.55) !important;
+}
+
+#wpdm-wrapper-panel .settings-tabs li:not(.active) a .fas,
+#wpdm-wrapper-panel .settings-tabs li:not(.active) a .far,
+#wpdm-wrapper-panel .settings-tabs li:not(.active) a .fab,
+#wpdm-wrapper-panel .settings-tabs li:not(.active) a .fa {
+    color: var(--admin-color);
+}
+
+#wpdm-wrapper-panel .settings-tabs li:not(.active) a .fas.fa-user-shield {
+    color: var(--color-danger);
+}
+
+#wpdm-wrapper-panel .settings-tabs li:not(.active) a#privacy {
+    color: var(--color-danger);
+}
+
+.w3eden #wpdm-wrapper-panel .nav-pills li:not(.active) a#privacy:hover {
+    background: rgba(var(--color-danger-rgb), 0.1) !important;
+}
+
+.w3eden #wpdm-wrapper-panel .nav-pills li.active a#privacy {
+    background: var(--color-danger) linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) !important;
+    box-shadow: 0 0 10px rgba(var(--color-danger-rgb), 0.4) !important;
+}
+
+.w3eden .panel.panel-danger {
+    border: 1px solid var(--color-danger);
+}
+
+.w3eden .panel.panel-danger .panel-heading {
+    background-color: var(--color-danger) !important;
+    border-bottom: 1px solid var(--color-danger);
+    color: #ffffff;
+}
+
+#wpdm-wrapper-panel .settings-tabs a:hover {
+    background: rgba(var(--admin-color-rgb), 0.09);
+}
+
+#wpdm-wrapper-panel .nav-wrapper-tabs li.active a {
+    background: #f1f1f1;
+}

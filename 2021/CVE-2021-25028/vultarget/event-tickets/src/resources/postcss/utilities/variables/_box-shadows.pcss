@@ -1,0 +1,24 @@
+:root {
+	/* -----------------------------------------------------------------------------
+	 * Box Shadows
+	 * ----------------------------------------------------------------------------- */
+
+	--tec-box-shadow-default: 0 2px 5px 0 var(--tec-color-box-shadow);
+	--tec-box-shadow-tooltip: 0 2px 12px 0 var(--tec-color-box-shadow);
+	--tec-box-shadow-card: 0 1px 6px 2px var(--tec-color-box-shadow);
+	--tec-box-shadow-multiday: 16px 6px 6px -2px var(--tec-color-box-shadow-secondary);
+
+	/* -----------------------------------------------------------------------------
+	 * For backwards Compatibility with plugins that have not been updated yet.
+	 * Remove these once all plugins have been updated to use the namespaced vars.
+	 * ----------------------------------------------------------------------------- */
+
+	/* -----------------------------------------------------------------------------
+	 * Box Shadows
+	 * ----------------------------------------------------------------------------- */
+
+	--box-shadow-default: var(--tec-box-shadow-default);
+	--box-shadow-tooltip: var(--tec-box-shadow-tooltip);
+	--box-shadow-card: var(--tec-box-shadow-card);
+	--box-shadow-multiday: var(--tec-box-shadow-multiday);
+}

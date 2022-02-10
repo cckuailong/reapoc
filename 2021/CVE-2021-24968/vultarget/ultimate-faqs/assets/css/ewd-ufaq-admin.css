@@ -1,0 +1,1174 @@
+.ewd-ufaq-clear {
+  clear:both;
+}
+
+.ewd-ufaq-item {
+	cursor: move;
+}
+
+/************
+EXTRA
+************/
+#ewd-ufaq-custom-fields-table select {
+  width: 100% !important;
+}
+#ewd-ufaq-custom-fields-table th {
+  padding: 20px 10px 20px 10px !important;
+}
+
+
+/*
+==============================================
+Toggle Font
+==============================================
+*/
+
+@font-face { /* declare fonts */
+  font-family: 'ewd-toggle-icon';
+  src: url("../fonts/ewd-toggle-icon.eot");
+    src: url('../fonts/ewd-toggle-icon.woff2') format('woff2'),
+         url('../fonts/ewd-toggle-icon.woff') format('woff'),
+         url("../fonts/ewd-toggle-icon.ttf") format("truetype"),
+    url("../fonts/ewd-toggle-icon.svg#ewd-toggle-icon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ewd-ufaq-toggle-symbol {
+  font-family: 'ewd-toggle-icon';
+  letter-spacing: 6px;
+  font-size: 1.2em;
+}
+
+input[name=toggle_symbol] {
+  margin-right: 10px;
+}
+
+
+/****************
+ORDER TABLE
+****************/
+#ewd-ufaq-ordering-table-container {
+  width: calc(100% - 20px);
+}
+.ewd-ufaq-ordering-table thead tr,
+.ewd-ufaq-ordering-table tfoot tr {
+    background: #F8F4FF;
+}
+.ewd-ufaq-ordering-table th {
+  padding: 12px 10px;
+}
+.ewd-ufaq-ordering-table td {
+  padding: 8px 10px;
+}
+.ewd-ufaq-ordering-table tbody tr:nth-of-type(2n+2) {
+  background: #F8F4FF;
+}
+
+
+/*
+==============================================
+NEW DASHBOARD
+==============================================
+*/
+
+/*** WRAP ***/
+
+.ufaq_page_ewd-ufaq-dashboard #wpcontent {
+  padding-left: 0;
+}
+.ufaq_page_ewd-ufaq-dashboard .wrap {
+  margin: 10px 0 0;
+}
+
+.ewd-ufaq-import-export-container {
+  position: relative;
+  float: left;
+  margin-left: 32px;
+  width: calc(100% - 32px);
+}
+
+
+/*** BANNER ***/
+
+.ewd-ufaq-dashboard-new-upgrade-banner {
+  position: relative;
+  float: left;
+  margin-left: -20px;
+  width: calc(100% + 20px);
+  height: 256px;
+  background: url(../img/ewd-ufaq-dashboard-banner.png) center no-repeat #1b0f49;
+}
+.ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-icon {
+  position: absolute;
+  height: 112px;
+  width: 112px;
+  left: 172px;
+  top: 72px;
+  background: url(../img/ewd-ufaq-icon.png) no-repeat;
+  background-size: 112px 112px;
+}
+.ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-buttons {
+  position: absolute;
+  height: 112px;
+  width: 192px;
+  right: 128px;
+  top: 84px;
+}
+.ewd-ufaq-dashboard-new-upgrade-button  {
+  position: relative;
+  float: right;
+  width: 188px;
+  border: 2px solid #0acbaa;
+  background-color: #0acbaa;
+  color: #fff;
+  padding: 6px 0;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+.ewd-ufaq-dashboard-new-upgrade-button:hover  {
+  background-color: #1CE6C3;
+  border-color: #1CE6C3;
+  color: #fff;
+}
+.ewd-ufaq-dashboard-new-upgrade-button.ewd-ufaq-dashboard-new-trial-button  {
+  background-color: transparent;
+  color: #0acbaa;
+  font-size: 11px;
+  cursor: pointer;
+  width: 192px;
+}
+.ewd-ufaq-dashboard-new-upgrade-button.ewd-ufaq-dashboard-new-trial-button:hover  {
+  background-color: #0acbaa;
+  border-color: #0acbaa;
+  color: #fff;
+}
+.ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-text {
+  position: absolute;
+  width: calc(100% - 680px);
+  height: 112px;
+  top: 76px;
+  left: 320px;
+  color: #fff;
+}
+.ewd-ufaq-dashboard-banner-title {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 29px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-banner-brief {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1700px) {
+  .ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-icon {
+    left: 272px;
+  }
+  .ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-buttons {
+    right: 228px;
+  }
+  .ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-text {
+    width: calc(100% - 880px);
+    left: 420px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-icon {
+    left: 54px;
+  }
+  .ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-buttons {
+    right: 32px;
+  }
+  .ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-text {
+    width: calc(100% - 466px);
+    left: 202px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ewd-ufaq-dashboard-new-upgrade-banner {
+    height: 512px;
+    height: 300px;
+  }
+  .ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-icon {
+    left: calc(50% - 56px);
+    top: 48px;
+    display: none;
+  }
+  .ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-text {
+    width: 80%;
+    left: 10%;
+    top: 208px;
+    height: 160px;
+    text-align: center;
+    height: 140px;
+    top: 42px;
+  }
+  .ewd-ufaq-dashboard-banner-brief {
+    display: none;
+  }  
+  .ewd-ufaq-dashboard-new-upgrade-banner .ewd-ufaq-dashboard-banner-buttons {
+    right: calc(50% - 96px);
+    top: 368px;
+    top: 172px;
+  }
+}
+
+
+
+/*** MENU ***/
+
+.ewd-ufaq-admin-header-menu {
+  background-color: #6026B4;
+  margin-bottom: 16px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+body.post-type-ufaq .ewd-ufaq-admin-header-menu {
+  margin-left: -20px;
+  width: calc(100% + 20px);
+}
+.ewd-ufaq-admin-header-menu .nav-tab-wrapper, .wrap .ewd-ufaq-admin-header-menu h2.nav-tab-wrapper {
+  border-bottom: 0 !important;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: inherit;
+}
+.ewd-ufaq-admin-header-menu .nav-tab {
+  border: none;
+  margin-left: 0;
+  padding: 12px 48px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #6026B4;
+  color: #fff;
+  border-right: 1px solid #854DD6;
+}
+
+.ewd-ufaq-admin-header-menu .nav-tab:hover {
+  background: #682CBF;
+}
+.ewd-ufaq-admin-header-menu .nav-tab-active {
+  background: #682CBF;
+  color: #fff;
+}
+.ewd-ufaq-admin-header-menu .nav-tab-active:hover {
+  background: #682CBF;
+  color: #fff;
+}
+.ewd-ufaq-admin-header-menu .nav-tab#ewd-ufaq-dash-mobile-menu-open {
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .ewd-ufaq-admin-header-menu .nav-tab {
+    padding: 12px 32px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .ewd-ufaq-admin-header-menu .nav-tab {
+    padding: 12px 18px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ewd-ufaq-admin-header-menu .nav-tab {
+    padding: 12px 0;
+    margin: 0;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid #854DD6;
+  }
+  .ewd-ufaq-admin-header-menu .nav-tab:last-of-type {
+    border-bottom: none;
+  }
+  .ewd-ufaq-admin-header-menu .nav-tab {
+    display: none;
+  }
+  .ewd-ufaq-admin-header-menu .nav-tab#ewd-ufaq-dash-mobile-menu-open {
+    display: block;
+  }
+  #ewd-ufaq-dash-mobile-menu-up-caret {
+    display: none;
+  }
+  #ewd-ufaq-dash-mobile-menu-down-caret {
+    display: inline;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*** CONTENT ***/
+
+#ewd-ufaq-dashboard-content-area {
+  position: relative;
+  float: left;
+  width: calc(100% - 162px);
+  margin: 32px 20px 32px 142px;
+}
+#ewd-ufaq-dashboard-content-left {
+  position: relative;
+  float: left;
+  width: 74%;
+}
+#ewd-ufaq-dashboard-content-right {
+  position: relative;
+  float: right;
+  width: 24%;
+}
+
+.ewd-ufaq-dashboard-new-widget-box {
+  position: relative;
+  float: left;
+  background: #fff;
+  box-shadow: -2px 2px 6px #ccc;
+  margin-bottom: 16px;
+}
+.ewd-ufaq-dashboard-new-widget-box.ewd-widget-box-full {
+  width: 100%;
+}
+.ewd-ufaq-dashboard-new-widget-box.ewd-widget-box-two-thirds {
+  width: 66%;
+}
+.ewd-ufaq-dashboard-new-widget-box.ewd-widget-box-one-third {
+  width: 32%;
+  margin-left: 2%;
+}
+.ewd-ufaq-dashboard-new-widget-box-top, .ewd-ufaq-dashboard-new-widget-box-bottom {
+  position: relative;
+  float: left;
+  width: calc(100% - 32px);
+  padding: 8px 16px;
+  color: #777;
+}
+.ewd-ufaq-dashboard-new-widget-box-top {
+  padding: 12px 16px;
+  font-weight: bold;
+  color: #444;
+}
+.ewd-ufaq-dashboard-new-widget-box-bottom {
+  border-top: 1px solid #e2e2e2;
+}
+
+.ewd-ufaq-dashboard-key-widget {
+  position: relative; 
+  float: left;
+  width: calc(100% - 144px);
+  min-height: 30px;
+  margin: 24px 24px 8px;
+  padding: 0 0 0 96px;
+  background-image: url(../img/dash-asset-key.png);
+  background-position: left top;
+  background-size: 64px 30px;
+  background-repeat: no-repeat;
+}
+.ewd-ufaq-dashboard-key-widget-input {
+  position: relative;
+  float: left;
+  width: calc(65% - 2px);
+  height: 30px;
+  padding: 4px 8px !important;
+  background: none;
+  border: 1px solid #e2e2e2 !important;
+  margin: 0 !important;
+}
+.ewd-ufaq-dashboard-key-widget-input::placeholder {
+  color: #bbb;
+}
+.ewd-ufaq-dashboard-key-widget-submit {
+  position: relative;
+  float: left;
+  width: 35%;
+  height: 30px;
+  font-size: 14px;
+  background: #f2b52f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0 !important;
+}
+.ewd-ufaq-dashboard-key-widget-submit:hover {
+  background: #F2BD49;
+}
+.ewd-ufaq-dashboard-key-widget-text {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 7px;
+  font-size: 11px;
+  color: #888;
+  font-style: italic;
+  font-weight: normal;
+}
+.ewd-ufaq-dashboard-key-widget-text a {
+  color: #0acbaa;
+  text-decoration: none;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-key-widget-text a:hover {
+  color: #1CE6C3;
+  text-decoration: none;
+}
+
+#ewd-ufaq-dashboard-support-widget-box .ewd-ufaq-dashboard-new-widget-box-top {
+  cursor: pointer;
+}
+#ewd-ufaq-dash-mobile-support-down-caret {
+  display: none;
+  float: right;
+}
+#ewd-ufaq-dash-mobile-support-up-caret {
+  display: inline;
+  float: right;
+}
+.ewd-ufaq-dashboard-support-widgets {
+  position: relative;
+  float: left;
+  width: 90%;
+  padding: 14px 5%;
+}
+.ewd-ufaq-dashboard-support-widgets li {
+  position: relative;
+  float: left;
+  width: 18.25%;
+  margin-right: 9%;
+}
+.ewd-ufaq-dashboard-support-widgets li:last-of-type {
+  margin-right: 0;
+}
+.ewd-ufaq-dashboard-support-widgets li a {
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #444;
+  text-decoration: none;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-support-widgets li a:hover {
+  color: #6026B4;
+}
+.ewd-ufaq-dashboard-support-widgets li img {
+  position: relative;
+  float: left;
+  width: 80%;
+  height: auto;
+  border: none;
+  padding: 0 10% 12px;
+}
+.ewd-ufaq-dashboard-support-widgets li .ewd-ufaq-dashboard-support-widgets-text {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 2px;
+}
+
+#ewd-ufaq-dashboard-optional-table .ewd-ufaq-dashboard-new-widget-box-top {
+  cursor: pointer;
+}
+#ewd-ufaq-dash-optional-table-down-caret {
+  display: none;
+  float: right;
+}
+#ewd-ufaq-dash-optional-table-up-caret {
+  display: inline;
+  float: right;
+}
+
+.ewd-ufaq-dashboard-testimonials {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.ewd-ufaq-dashboard-testimonials li {
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.ewd-ufaq-dashboard-testimonials li img {
+  position: relative;
+  float: left;
+  width: 140px;
+  height: auto;
+  margin-top: 8px;
+  margin-left: calc(50% - 70px);
+}
+.ewd-ufaq-dashboard-testimonials li .ewd-ufaq-dashboard-testimonial-title {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 28px 0 20px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-testimonials li .ewd-ufaq-dashboard-testimonial-author {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 16px;
+}
+.ewd-ufaq-dashboard-testimonials li .ewd-ufaq-dashboard-testimonial-text {
+  position: relative;
+  float: left;
+  width: 80%;
+  margin: 24px 10% 0;
+  font-size: 12px;
+}
+.ewd-ufaq-dashboard-testimonials li .ewd-ufaq-dashboard-testimonial-text a {
+  color: #0acbaa;
+  text-decoration: none;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-testimonials li .ewd-ufaq-dashboard-testimonial-text a:hover {
+  color: #1CE6C3;
+}
+
+.ewd-ufaq-dashboard-review-ask {
+  position: relative;
+  float: left;
+  width: calc(100% - 32px);
+  padding: 16px 16px 12px;
+  text-align: center;
+}
+.ewd-ufaq-dashboard-review-ask img {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: auto;
+  margin-left: calc(50% - 55px);
+}
+.ewd-ufaq-dashboard-review-ask-text {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 24px 0;
+}
+.ewd-ufaq-dashboard-review-ask-button  {
+  clear: both;
+  position: relative;
+  float: left;
+  width: calc(100% - 2px);
+  border: 1px solid #888;
+  background-color: transparent;
+  color: #888;
+  padding: 6px 0;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2px;
+}
+.ewd-ufaq-dashboard-review-ask-button:hover  {
+  background-color: #888;
+  border-color: #888;
+  color: #fff;
+}
+.ewd-ufaq-dashboard-review-ask-dismiss {
+  position: relative;
+  float: left;
+  background: transparent;
+  border: none;
+  margin: 16px 0 0 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.ewd-ufaq-dashboard-review-ask-dismiss:hover {
+  color: #555;
+}
+
+.ewd-ufaq-dashboard-guarantee {
+  position: relative; 
+  float: left;
+  width: calc(100% - 208px);
+  min-height: 127px;
+  margin: 20px 24px;
+  padding: 0 0 0 160px;
+  background-image: url(../img/dash-asset-badge.png);
+  background-position: left top;
+  background-size: 128px 127px;
+  background-repeat: no-repeat;
+  color: #777;
+}
+.ewd-ufaq-dashboard-guarantee-title, .ewd-ufaq-dashboard-guarantee-text {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 16px;
+}
+.ewd-ufaq-dashboard-guarantee-title {
+  font-size: 24px;
+  line-height: 24px;
+}
+.ewd-ufaq-dashboard-guarantee-text {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.ewd-ufaq-dashboard-get-premium-widget-trial-time {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  background: #6026B4;
+}
+.ewd-ufaq-dashboard-get-premium-widget-trial-days, .ewd-ufaq-dashboard-get-premium-widget-trial-hours {
+  position: relative;
+  float: left;
+  text-align: center;
+  color: #fff;
+  font-size: 43px;
+  line-height: 35px;
+  padding: 24px 0 8px;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-get-premium-widget-trial-days span, .ewd-ufaq-dashboard-get-premium-widget-trial-hours span {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  font-weight: normal;  
+}
+.ewd-ufaq-dashboard-get-premium-widget-trial-days {
+  width: calc(50% - 7px);
+  border-right: 7px solid #fff;
+}
+.ewd-ufaq-dashboard-get-premium-widget-trial-hours {
+  width: 50%;
+}
+.ewd-ufaq-dashboard-get-premium-widget-trial-time-left {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 28px 0 24px;
+  color: #6026B4;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-get-premium-widget-features-title {
+  position: relative;
+  float: left;
+  width: calc(100% - 16px);
+  padding: 8px 8px 10px;
+  color: #0acbaa;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-get-premium-widget-features {
+  position: relative;
+  float: left;
+  width: calc(100% - 16px);
+  padding: 0 8px;
+  -webkit-margin-after: 0;
+}
+.ewd-ufaq-dashboard-get-premium-widget-features li {
+  clear: both;
+  position: relative;
+  float: left;
+  width: calc(100% - 36px);
+  margin-bottom: 8px;
+  padding-left: 36px;
+  background-image: url(../img/dash-asset-checkmark.png);
+  background-position: left top;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  font-style: italic;
+}
+.ewd-ufaq-dashboard-get-premium-widget-features li:last-of-type {
+  background-image: none;
+}
+.ewd-ufaq-dashboard-get-premium-widget-button  {
+  clear: both;
+  position: relative;
+  float: left;
+  width: calc(100% - 20px);
+  margin: 16px 8px 10px;
+  border: 2px solid #0acbaa;
+  background-color: #0acbaa;
+  color: #fff;
+  padding: 6px 0;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2px;
+}
+.ewd-ufaq-dashboard-get-premium-widget-button:hover  {
+  background-color: #1CE6C3;
+  border-color: #1CE6C3;
+  color: #fff;
+}
+.ewd-ufaq-dashboard-get-premium-widget-button.ewd-ufaq-dashboard-new-trial-button  {
+  background-color: transparent;
+  color: #0acbaa;
+  font-size: 11px;
+  cursor: pointer;
+  width: calc(100% - 16px);
+  margin: 0 8px 16px; 
+}
+.ewd-ufaq-dashboard-get-premium-widget-button.ewd-ufaq-dashboard-new-trial-button:hover  {
+  background-color: #0acbaa;
+  border-color: #0acbaa;
+  color: #fff;
+}
+
+.ewd-ufaq-dashboard-other-plugins {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.ewd-ufaq-dashboard-other-plugins li {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.ewd-ufaq-dashboard-other-plugins li:last-of-type {
+  margin-bottom: 12px;
+}
+.ewd-ufaq-dashboard-other-plugins li img {
+  position: relative;
+  float: left;
+  width: 64px;
+  height: auto;
+  margin-right: 16px;
+  border: none;
+}
+.ewd-ufaq-dashboard-other-plugins li .ewd-ufaq-dashboard-other-plugins-text {
+  position: relative;
+  float: left;
+  width: calc(100% - 80px);
+}
+.ewd-ufaq-dashboard-other-plugins li .ewd-ufaq-dashboard-other-plugins-title {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-other-plugins li .ewd-ufaq-dashboard-other-plugins-blurb {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+/** NEED HELP BOX ON PRODUCT EDIT SCREEN **/
+.ewd-ufaq-need-help-text {
+  margin: 24px 0 22px;
+  text-align: center;
+  color: #888;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.ewd-ufaq-need-help-button {
+  display: inherit;
+  width: 40%;
+  padding: 8px 0;
+  margin: 0 30% 16px;
+  text-align: center;
+  background: #f2b52f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+.ewd-ufaq-need-help-button:hover {
+  background: #d7a73f;
+  color: #fff;
+  text-decoration: none;
+}
+
+#ewd-ufaq-dashboard-restart-walkthrough-widget-box .ewd-ufaq-dashboard-new-widget-box-top {
+  cursor: pointer;
+}
+#ewd-ufaq-dashboard-restart-walkthrough-down-caret {
+  display: none;
+  float: right;
+}
+#ewd-ufaq-dashboard-restart-walkthrough-up-caret {
+  display: inline;
+  float: right;
+}
+
+@media screen and (min-width: 1441px) {
+  #ewd-ufaq-dashboard-content-area {
+    width: calc(100% - 194px);
+    margin: 32px 20px 32px 174px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #ewd-ufaq-dashboard-content-area {
+    width: calc(100% - 40px);
+    margin: 16px 20px 32px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ewd-ufaq-dashboard-key-widget-submit {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #ewd-ufaq-dashboard-content-left, #ewd-ufaq-dashboard-content-right {
+    float: left;
+    width: 100%;
+  }
+  .ewd-ufaq-dashboard-new-widget-box.ewd-widget-box-two-thirds, .ewd-ufaq-dashboard-new-widget-box.ewd-widget-box-one-third {
+    width: 100%;
+    margin-left: 0;
+  }  
+
+  .ewd-ufaq-dashboard-key-widget {
+    width: calc(100% - 48px);
+    margin: 16px 24px 8px;
+    padding: 54px 0 0 0;
+    background-image: url(../img/dash-asset-key.png);
+    background-size: 64px 30px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .ewd-ufaq-dashboard-key-widget-input {
+    width: 100%;
+  }
+  .ewd-ufaq-dashboard-key-widget-submit {
+    width: 100%;
+    margin: 8px 0 0 0 !important;
+    font-size: 14px;
+  }
+  .ewd-ufaq-dashboard-key-widget-text {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .ewd-ufaq-dashboard-support-widgets {
+    width: 90%;
+    padding: 0 5%;
+  }
+  .ewd-ufaq-dashboard-support-widgets li {
+    width: 100%;
+    margin: 0 0 12px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  .ewd-ufaq-dashboard-support-widgets li:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .ewd-ufaq-dashboard-support-widgets li a {
+    text-align: left;
+    color: #444;
+  }
+  .ewd-ufaq-dashboard-support-widgets li a:hover {
+    color: #6026B4;
+  }
+  .ewd-ufaq-dashboard-support-widgets li img {
+    width: 32px;
+    height: 32px;
+    padding: 0 24px 0 16px;
+  }
+  .ewd-ufaq-dashboard-support-widgets li .ewd-ufaq-dashboard-support-widgets-text {
+    width: calc(100% - 72px);
+    margin-top: 7px;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  #ewd-ufaq-dashboard-support-widget-box .ewd-ufaq-dashboard-new-widget-box-bottom {
+    border-top: none;
+  }
+
+  #ewd-ufaq-dashboard-get-premium-widget-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #ewd-ufaq-dashboard-guarantee-widget-box {
+    background: #6026B4;    
+  }
+  .ewd-ufaq-dashboard-guarantee {
+    width: calc(100% - 48px);
+    padding: 0;
+    height: 199px;
+    background-image: url(../img/dash-asset-badge.png);
+    background-size: 200px 199px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .ewd-ufaq-dashboard-guarantee-title, .ewd-ufaq-dashboard-guarantee-text {
+    display: none;
+  }
+}
+
+
+
+/*** FOOTER ***/
+
+#ewd-ufaq-dashboard-new-footer-one {
+  position: relative;
+  float: left;
+  width: 100%;
+  background: #fff;
+  color: #777;
+}
+.ewd-ufaq-dashboard-new-footer-one-inside {
+  position: relative;
+  float: left;
+  width: 80%;
+  margin: 0 10%;
+}
+.ewd-ufaq-dashboard-new-footer-one-left {
+  position: relative;
+  float: left;
+  width: calc(100% - 224px);
+  margin-bottom: 32px;
+}
+.ewd-ufaq-dashboard-new-footer-one-title {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 56px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.ewd-ufaq-dashboard-new-footer-one-benefits {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 32px;
+}
+.ewd-ufaq-dashboard-new-footer-one-benefits li {
+  position: relative;
+  float: left;
+  width: calc(33.333333% - 36px);
+  margin-bottom: 11px;
+  padding-left: 36px;
+  background-image: url(../img/dash-asset-checkmark.png);
+  background-position: left top;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  font-style: italic;
+}
+
+.ewd-ufaq-dashboard-new-footer-one-buttons {
+  position: relative;
+  float: right;
+  width: 192px;
+  margin-top: 112px;
+}
+
+#ewd-ufaq-dashboard-new-footer-two {
+  position: relative;
+  float: left;
+  width: 100%;
+  background: #150947;
+  color: #efd3f5;
+}
+.ewd-ufaq-dashboard-new-footer-two-inside {
+  position: relative;
+  float: left;
+  width: 90%;
+  margin: 48px 5%;
+}
+.ewd-ufaq-dashboard-new-footer-two-icon {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: auto;
+  margin-right: 40px;
+}
+.ewd-ufaq-dashboard-new-footer-two-blurb {
+  position: relative;
+  float: left;
+  width: 300px;
+  line-height: 1.7;
+  font-size: 12px;
+}
+.ewd-ufaq-dashboard-new-footer-two-menu {
+  position: relative;
+  float: right;
+  width: 150px;
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
+}
+.ewd-ufaq-dashboard-new-footer-two-menu li {
+  clear: both;
+  position: relative;
+  float: right;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #fff;
+  font-size: 13px;
+}
+.ewd-ufaq-dashboard-new-footer-two-menu li:first-of-type {
+  margin-bottom: 9px;
+}
+.ewd-ufaq-dashboard-new-footer-two-menu li:last-of-type {
+  margin-bottom: 0;
+}
+.ewd-ufaq-dashboard-new-footer-two-menu li a {
+  font-weight: normal;
+  color: #D3DFF5;
+  text-decoration: none;
+  font-size: 12px;
+}
+.ewd-ufaq-dashboard-new-footer-two-menu li a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  .ewd-ufaq-dashboard-new-footer-one-left {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .ewd-ufaq-dashboard-new-footer-one-title {
+    margin-top: 56px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .ewd-ufaq-dashboard-new-footer-one-benefits li {
+    width: calc(50% - 36px);
+  }
+  .ewd-ufaq-dashboard-new-footer-one-buttons {
+    float: left;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  .ewd-ufaq-dashboard-new-footer-one-buttons .ewd-ufaq-dashboard-new-upgrade-button {
+    float: left;
+    margin-left: calc(50% - 96px);
+  }
+
+  .ewd-ufaq-dashboard-new-footer-two-icon {
+    clear: both;
+    float: left;
+    margin: 0 0 16px calc(50% - 55px);
+  }
+  .ewd-ufaq-dashboard-new-footer-two-blurb {
+    display: none;
+  }
+  .ewd-ufaq-dashboard-new-footer-two-menu {
+    float: left;
+    width: 100%;
+    margin-top: 32px;
+  }
+  .ewd-ufaq-dashboard-new-footer-two-menu li {
+    float: left;
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 17px;
+  }
+  .ewd-ufaq-dashboard-new-footer-two-menu li:first-of-type {
+    margin-bottom: 9px;
+  }
+  .ewd-ufaq-dashboard-new-footer-two-menu li:last-of-type {
+    margin-bottom: 0;
+  }
+  .ewd-ufaq-dashboard-new-footer-two-menu li a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .ewd-ufaq-dashboard-new-footer-one-benefits li {
+    clear: both;
+    width: calc(100% - 36px);
+  }
+}
+
+
+/***************
+EXTRA
+***************/
+input[name="ewd_ufaq_export_pdf"] {
+  margin-top: 8px !important;
+}
+
+.ewd-ufaq-meta-field label {
+  display: inline-block;
+  width: 150px;
+  margin: 12px 0;
+}
+
+/*************************
+SETTINGS PREVIEW SCREENS
+*************************/
+.ewd-ufaq-settings-preview h2 {
+  font-size: 24px !important;
+}
+.ewd-ufaq-settings-preview h2 span {
+  position: absolute;
+  margin-left: 16px;
+  font-size: .45em;
+  color: #fff;
+  background: #aaa;
+  border-radius: 50px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+}
+
+.ewd-ufaq-settings-preview-images {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 36px 0 48px;
+}
+.ewd-ufaq-settings-preview img {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  width: 35%;
+  height: auto;
+  border: 8px solid #ddd;
+  margin-right: 40px;
+}
+
+.ewd-ufaq-settings-preview .ewd-ufaq-dashboard-new-footer-one-benefits {
+  margin-top: 24px;
+}
+
+.ewd-ufaq-settings-preview .ewd-ufaq-dashboard-new-footer-one-buttons {
+  float: left;
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 568px) {
+  .ewd-ufaq-settings-preview img {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 12px;
+  }  
+}

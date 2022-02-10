@@ -1,0 +1,74 @@
+.oxi-addons-container *[class^='oxi-image-fall-away-'],
+.oxi-addons-container *[class*=' oxi-image-fall-away-'] {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+.oxi-addons-container *[class^='oxi-image-fall-away-'] .oxi-image-hover-image,
+.oxi-addons-container *[class*=' oxi-image-fall-away-'] .oxi-image-hover-image {
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all 0.455s ease-in;
+    -o-transition: all 0.455s ease-in;
+    -moz-transition: all 0.455s ease-in;
+    transition: all 0.455s ease-in;
+}
+
+.oxi-addons-container *[class^='oxi-image-fall-away-'] .oxi-image-hover-figure-caption,
+.oxi-addons-container *[class*=' oxi-image-fall-away-'] .oxi-image-hover-figure-caption {
+    opacity: 0;
+}
+
+.oxi-addons-container *[class^='oxi-image-fall-away-']:hover .oxi-image-hover-image,
+.oxi-addons-container *[class*=' oxi-image-fall-away-']:hover .oxi-image-hover-image,
+.oxi-addons-container *[class^='oxi-image-fall-away-'].oxi-touch .oxi-image-hover-image,
+.oxi-addons-container *[class*=' oxi-image-fall-away-'].oxi-touch .oxi-image-hover-image {
+    opacity: 0;
+}
+
+.oxi-addons-container *[class^='oxi-image-fall-away-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container *[class*=' oxi-image-fall-away-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container *[class^='oxi-image-fall-away-'].oxi-touch .oxi-image-hover-figure-caption,
+.oxi-addons-container *[class*=' oxi-image-fall-away-'].oxi-touch .oxi-image-hover-figure-caption {
+    opacity: 1;
+    -webkit-transition-delay: 0.455s;
+    -moz-transition-delay: 0.455s;
+    -o-transition-delay: 0.455s;
+    transition-delay: 0.455s;
+}
+
+.oxi-addons-container .oxi-image-fall-away-horizontal:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-fall-away-horizontal.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotateX(-360deg) scale(0.2);
+    -moz-transform: rotateX(-360deg) scale(0.2);
+    transform: rotateX(-360deg) scale(0.2);
+}
+
+.oxi-addons-container .oxi-image-fall-away-vertical:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-fall-away-vertical.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotateY(-360deg) scale(0.2);
+    -moz-transform: rotateY(-360deg) scale(0.2);
+    transform: rotateY(-360deg) scale(0.2);
+}
+
+.oxi-addons-container .oxi-image-fall-away-cc:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-fall-away-cc.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotate(360deg) scale(0.2);
+    -moz-transform: rotate(360deg) scale(0.2);
+    -ms-transform: rotate(360deg) scale(0.2);
+    -o-transform: rotate(360deg) scale(0.2);
+    transform: rotate(360deg) scale(0.2);
+}
+
+.oxi-addons-container .oxi-image-fall-away-ccc:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-fall-away-ccc.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotate(-360deg) scale(0.2);
+    -moz-transform: rotate(-360deg) scale(0.2);
+    -ms-transform: rotate(-360deg) scale(0.2);
+    -o-transform: rotate(-360deg) scale(0.2);
+    transform: rotate(-360deg) scale(0.2);
+}

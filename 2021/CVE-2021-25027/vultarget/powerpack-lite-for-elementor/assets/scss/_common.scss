@@ -1,0 +1,139 @@
+.pp-hidden {
+	display: none !important;
+}
+.pp-v-hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+.pp-icon {
+	display: inline-block;
+	line-height: 1;
+	text-align: center;
+	-webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.pp-icon i,
+.pp-icon svg {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+}
+.pp-no-trans {
+	-webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.pp-pos-abs {
+	position: absolute;
+}
+.pp-media-content,
+.pp-media-overlay,
+.pp-image-overlay,
+.pp-media-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.pp-media-overlay {
+	@include transition();
+}
+.pp-media-background {
+	background-color: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+}
+.pp-floating-element {
+	position: fixed;
+	z-index: 999;
+	.pp-floating-element-align-top-left & {
+		top: 0;
+		left: 0;
+	}
+	.pp-floating-element-align-top-right & {
+		top: 0;
+		right: 0;
+	}
+	.pp-floating-element-align-top-center & {
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.pp-floating-element-align-middle-left & {
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	.pp-floating-element-align-middle-right & {
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	.pp-floating-element-align-bottom-left & {
+		bottom: 0;
+		left: 0;
+	}
+	.pp-floating-element-align-bottom-right & {
+		bottom: 0;
+		right: 0;
+	}
+	.pp-floating-element-align-bottom-center & {
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+.pp-submit-button,
+.pp-tooltip-click,
+.pp-wrapper-link {
+	cursor: pointer;
+}
+.elementor-section.pp-animated-gradient-bg-yes,
+.elementor-section.pp-animated-gradient-bg-yes .pp-animated-gradient-bg {
+	background-size: 400% 400% !important;
+	animation: AnimatedGradientBg 15s ease-in-out infinite;
+	-webkit-animation: AnimatedGradientBg 15s ease-in-out infinite;
+	-moz-animation: AnimatedGradientBg 15s ease-in-out infinite;
+}
+.pp-animated-gradient-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+@keyframes AnimatedGradientBg {
+	0% {
+	background-position: 0% 50%;
+	}
+	50% {
+	background-position: 100% 50%;
+	}
+	100% {
+	background-position: 0% 50%;
+	}
+}
+@-webkit-keyframes AnimatedGradientBg {
+	0% {
+	background-position: 0% 50%;
+	}
+	50% {
+	background-position: 100% 50%;
+	}
+	100% {
+	background-position: 0% 50%;
+	}
+}
+@-moz-keyframes AnimatedGradientBg {
+	0% {
+	background-position: 0% 50%;
+	}
+	50% {
+	background-position: 100% 50%;
+	}
+	100% {
+	background-position: 0% 50%;
+	}
+}

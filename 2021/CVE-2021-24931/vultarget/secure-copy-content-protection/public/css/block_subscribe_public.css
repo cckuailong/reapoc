@@ -1,0 +1,73 @@
+@keyframes shake {
+  0% { transform: translate(1px, 0px); }
+  25% { transform: translate(-3px, 0px); }
+  50% { transform: translate(1px, 0px); }
+  75% { transform: translate(3px, 0px); }
+  100% { transform: translate(1px, 0px) ; }
+}
+
+html div#consub_div_id {
+    text-align: center;
+    border: 1px solid;
+    padding: 15px;
+    margin: 25px auto;
+}
+div#consub_div_id p[class="consub_para"]{
+  text-align: center;
+
+}
+.consub_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consub_icon img {
+    margin: auto;
+}
+
+.subscribe_form {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subscribe_form input[type='submit'] {
+    text-decoration: none;
+}
+
+img.ays_sccp_lock_sub {
+    width: 30px;
+}
+
+.ays_red_border{
+    border-color:red !important;
+    outline: none;
+}
+
+.ays_green_border{
+    border-color:green !important;
+    outline: none;
+}
+
+.ays_poll_shake{
+  animation: shake 0.1s;
+  animation-iteration-count: 3;
+}
+
+div.consub_div div.subscribe_form input.ays_sccp_sb_field{
+    height: 100%;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+div.consub_div  div.subscribe_form input.ays_sccp_sb_field:focus{
+    outline-offset: unset;
+    outline: unset; 
+}
+
+div.consub_div  div.subscribe_form div.subscribe_form_email{
+    margin-right: 10px;    
+    margin-top: 10px;
+}

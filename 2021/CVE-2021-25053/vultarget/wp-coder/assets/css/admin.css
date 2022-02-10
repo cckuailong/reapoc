@@ -1,0 +1,350 @@
+/* ========= INFORMATION ============================
+	- document:  Wow Plugin!
+	- author:    Dmytro Lobov 
+	- version:   1.0
+	
+==================================================== */
+
+/* Tab style */
+.wow-plugin .tab-box{
+	width: 100%;	
+	box-sizing: border-box;
+}
+.wow-plugin .tab-box:after{
+	clear:both; 
+	content:""; 
+	display:block;
+}
+.wow-plugin .tab-nav{
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:145px;
+	float:left;
+	border-right: 1px solid #1f9ef8;
+	
+}
+.wow-plugin .tab-nav li{
+	float:left;
+	margin-bottom:1px;
+}
+.wow-plugin .tab-nav li a{
+	display:inline-block;
+	width:125px;
+	padding:10px 10px;
+	font-size:14px;
+	color:#000;
+	text-decoration:none;
+}
+.wow-plugin .tab-nav li a:hover{
+	color:#000;
+	text-decoration:none;
+	font-weight: 700;
+}
+.wow-plugin .tab-nav li.select a{ 
+	background: #fff;  
+	box-shadow: none;
+	border-bottom: 1px solid #1f9ef8;
+	font-weight: 700;
+}
+.wow-plugin .tab-nav .active{
+	display:inline-block;
+	padding:5px;
+}
+.wow-plugin .tab-box>div{
+	margin:0 0 0 145px;
+	padding:10px;
+	border-left: 1px solid #1f9ef8;
+}
+.wow-plugin .tab-panels{
+	background:#fff;
+}
+
+/* Flexbox elements */
+.wow-container {
+	display: flex;
+	justify-content: space-around;
+}
+.wow-container .wow-element {
+	width: 100%;
+	padding:10px;	
+}
+.wow-plugin label {
+	font-weight: 600;
+	cursor: default;
+}
+.wow-plugin label[for] { 
+	cursor: pointer;
+}
+/* form elements style */
+.wow-element input[type=text],.wow-element input[type=tel],.wow-element input[type=number], .wow-element input[type=date], .wow-element select , .wow-element textarea{	
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+}	
+
+.wow-plugin fieldset {
+	border: 1px solid #eee;
+	margin: 15px 0;
+}
+.wow-plugin legend {
+	font-size: 18px;
+	font-weight: bold;	
+	padding: 0 25px 0 10px;
+}
+
+/* Tooltip container */
+.wow-help {
+	font-size: 14px;
+	cursor:help;
+}
+.wow-ui-tooltip{
+	position:absolute;
+	background:#333;
+	border-width:1px!important;
+	border-radius:3px!important;
+	box-shadow:1px 1px 2px 1px rgba(214,214,214,.5)!important;
+	color:#dedede!important;
+	max-width:300px!important;
+	padding:7px!important;
+	text-rendering:optimizeLegibility;
+	text-shadow:none!important;    
+	z-index: 100051!important;
+}
+
+/* Right Sidebar */
+.wow-sidebar h2 {
+	border-bottom: 1px solid #eee;	
+}
+
+.wow-sidebar .wow-element {
+	padding: 0;
+}
+
+.wow-sidebar .wow-element h4 {
+	line-height: auto;
+	font-size: 14px;
+	margin: 0 0 10px 0;
+}
+
+.wow-facebook::after {	
+	font-family: dashicons;		
+	content: "\f305";
+	margin-left: 5px;	
+}
+
+.wow-email::after {	
+	font-family: dashicons;		
+	content: "\f469";
+	margin-left: 5px;
+}
+
+/*
+Support Page
+*/
+
+.wow-support {
+	margin: 25px auto 0;
+	padding: 15px;
+	background: #FFFFFF;
+	border: 1px solid #999999;
+
+
+}
+
+.feature-section.one-col p {
+	font-size: 16px;
+}
+
+.wow-alert-error {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.wow-alert-update {
+	color: #94a540;
+	background-color: #e7f7e3;
+	border-color: #c7e5dc;
+}
+
+.wow-alert {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid transparent;
+	vertical-align: middle;
+}
+
+p.wow_error {
+	margin: 0 !important;
+}
+
+/**
+Plugin custom style
+ */
+
+/* Pro page  */
+
+.feature-section.one-col p {
+	font-size: 16px;
+}
+
+.faq-title {
+	cursor: pointer;
+}
+
+.faq-title:before {
+	content: "\f132";
+	font-family: Dashicons;
+	vertical-align: bottom;
+	margin-right: 8px;
+	color: #e95645;
+}
+
+.toggleshow:before {
+	content: "\f132";
+	font-family: Dashicons;
+	color: #e95645
+}
+
+.togglehide:before {
+	content: "\f460";
+	font-family: Dashicons;
+}
+
+.item-title {
+	margin: 1.25em 0 .6em;
+	font-size: 1em;
+	line-height: 1;
+	color: #1e73be;
+}
+
+.items .inside {
+	margin: 10px 10px 10px 20px;
+	display: none;
+}
+
+.feature-section ul {
+	margin-left: 10px;
+}
+
+.feature-section ul li:before {
+	content: "\f147";
+	font-family: Dashicons;
+	margin-right: 5px;
+	color: #e95645
+}
+
+.wow-btn {
+	width: 380px;
+	display: inline-block;
+	height: 42px;
+	background: #43cb83;
+	border-radius: 3px;
+	line-height: 42px;
+	text-align: center;
+	color: #fff !important;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	border: none;
+}
+
+.wow-btn:hover {
+	background: #5cc38d;
+}
+
+.wow-btn-demo {
+	width: 380px;
+	display: inline-block;
+	height: 42px;
+	background: #1f9ef8;
+	border-radius: 3px;
+	line-height: 42px;
+	text-align: center;
+	color: #fff !important;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	border: none;
+}
+
+.wow-btn-demo:hover {
+	background: #128be0;
+}
+
+.wow-btn .dashicons,
+.wow-btn-demo .dashicons {
+	line-height: 42px;
+	font-size: 24px;
+}
+
+/**
+Plugin custom style
+ */
+
+
+.button-preview {
+	background-color: #fff;
+	min-height: 200px;
+	border-bottom: 1px solid #eee;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.button-preview h3 {
+	padding: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.button-builder {
+	text-align: center;
+}
+
+#button-preview {
+	margin: 10px auto;
+}
+
+.ideas .dashicons-star-filled {
+	color: #ffcc01;
+}
+
+.ideas .dashicons-share {
+	color: #006bb3;
+}
+
+.ideas .dashicons-megaphone {
+	color: #e95645;
+}
+
+.ideas {
+	font-size: 14px;
+}
+
+.ideas i {
+	margin-right: 14px;
+}
+
+.ideas a {
+	font-weight: 600;
+}
+
+.ideas [data-share] {
+	color: #0073aa;
+	transition-property: border,background,color;
+	transition-duration: .05s;
+	transition-timing-function: ease-in-out;
+	cursor: pointer;
+	text-decoration: underline;
+}
+table.wp-list-table {
+	table-layout: auto;
+}
+

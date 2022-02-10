@@ -1,0 +1,130 @@
+.slidebar {
+	box-sizing: border-box;
+	position: fixed;
+	height: 100%;
+	height: 100vh;
+	right: 0;
+	top: 0;
+	background: #f7f7f7;
+	border-left: 1px solid #d2d2d2;
+	box-shadow: 0 -3px 9px #cacaca;
+	width: 380px;
+	z-index: 9999;
+	padding: 20px 30px;
+	margin-top: 32px;
+	overflow: auto;
+	margin-right: -385px;
+	max-width: 95%;
+
+	@include media( '<=small' ) {
+		z-index: 99999;
+		margin-top: 0;
+	}
+
+	.close {
+	    float: right;
+	    margin: 0 0 16px 16px;
+	    cursor: pointer;
+	    font-size: 1.8rem;
+	}
+
+	.content {
+
+		h3 {
+			margin-top: 6px;
+			margin-bottom: 40px;
+		}
+
+		form {
+
+			label {
+				font-weight: 500;
+			}
+
+			input,
+			select {
+				margin-top: 6px;
+				margin-bottom: 15px;
+
+				&.spinbox {
+					margin-bottom: 5px;
+					float: right;
+					width: 60px;
+					display: inline-block;
+				}
+
+				&.event-argument {
+					margin-bottom: 5px;
+				}
+
+			}
+
+			.submit-row {
+				float: right;
+
+				.button {
+					float: right;
+					margin-bottom: 20px;
+				}
+
+				.spinner {
+					margin-top: 10px;
+					float: left;
+				}
+
+			}
+
+		}
+
+		@mixin placeholder-animation() {
+			animation-duration: 1s;
+		    animation-iteration-count: infinite;
+		    animation-name: pulsate;
+		    animation-timing-function: linear;
+		    background: #e2e2e2;
+		}
+
+		.form-placeholder {
+			display: none;
+
+			.header {
+				@include placeholder-animation();
+				height: 30px;
+				width: 75%;
+				margin-bottom: 3em;
+			}
+
+			.input {
+				@include placeholder-animation();
+				height: 30px;
+				width: 100%;
+				margin-bottom: 1.5em;
+			}
+
+			.send {
+				@include placeholder-animation();
+				height: 30px;
+				width: 30%;
+				float: right;
+			}
+
+		}
+
+		&.loading .form-placeholder {
+			display: block;
+		}
+
+	}
+
+}
+
+.slidebar-overlay {
+	display: none;
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.1);
+}

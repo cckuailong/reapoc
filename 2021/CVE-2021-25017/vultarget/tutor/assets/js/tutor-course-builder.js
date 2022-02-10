@@ -1,0 +1,1 @@
+window.jQuery(document).ready(function(t){t(".tutor-certificate-template-tab [data-tutor-tab-target]").click(function(){t(this).addClass("is-active").siblings().removeClass("is-active"),t("#"+t(this).data("tutor-tab-target")).show().siblings().hide()}),t(".").click(function(){t(this).siblings().filter("tutor-certificate-collapsible")})});

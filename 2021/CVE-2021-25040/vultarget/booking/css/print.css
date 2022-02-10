@@ -1,0 +1,86 @@
+/**
+ * @version 1.0
+ * @package: Booking Listing - Print view
+ * @category: Admin Pages only
+ * @author wpdevelop
+ *
+ * @web-site https://wpbookingcalendar.com/
+ * @email info@wpbookingcalendar.com 
+ * 
+ * @modified 2015-04-11
+ */
+#print_loyout_content tr.booking-listing-row td .fieldvalue,
+#print_loyout_content tr.booking-listing-row td .label.label-default {
+    background: none repeat scroll 0 0 transparent !important;
+    border: none;
+    color: #333;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0 4px !important;
+    text-shadow: none !important;
+    line-height: 2em;
+}
+#print_loyout_content tr.booking-listing-row td .label.label-default{
+    font-weight: 600;   
+}
+#print_loyout_content tr.booking-listing-row td .label.label-default {
+    white-space: nowrap;
+}
+#print_loyout_content tr.booking-listing-header th,
+#print_loyout_content tr.booking-listing-row td,
+#print_loyout_content .booking-listing-header {
+    text-shadow: none !important;
+}
+#print_loyout_content tr.booking-listing-header th {
+    padding: 7px 10px;
+    font-size: 12px;
+
+}
+#print_loyout_content tr.booking-listing-row td {
+    padding: 5px 10px;
+    font-size: 11px;
+}
+#print_loyout_content tr.booking-listing-row td strong {
+    font-size: 11px;
+}
+#print_loyout_content .booking-listing-header {
+    background: #e4e4e4; 
+    border: 1px solid #C6C6C6;
+    border-bottom-color: #CCC;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    padding: 2px 0px;
+    text-shadow: 0 1px 1px #F5F5F5;
+}
+
+@media screen {
+  #wpbc_print_section {
+    display: none;
+  }
+}
+@media print {
+  body * {
+    visibility:hidden;
+  }
+  /* Completely Hide WP interface - for having corrrect  width  and height in print loyout and number of pages */
+  #adminmenumain                                                                
+  #adminmenumain *, 
+  #wpcontent, 
+  #wpcontent *{
+    display:none;
+  }  
+  #wpbc_print_section, #wpbc_print_section * {
+    visibility:visible;
+  }
+  #wpbc_print_section {
+    position:absolute;
+    left:0;
+    top:0;
+  }
+}

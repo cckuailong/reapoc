@@ -1,0 +1,83 @@
+{
+    "packages": [
+        {
+            "name": "underdev/requirements",
+            "version": "1.3.3",
+            "version_normalized": "1.3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kubitomakita/Requirements.git",
+                "reference": "20272e8cd6c73b058d9032816195d34c298d9c07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kubitomakita/Requirements/zipball/20272e8cd6c73b058d9032816195d34c298d9c07",
+                "reference": "20272e8cd6c73b058d9032816195d34c298d9c07",
+                "shasum": ""
+            },
+            "time": "2020-01-29T07:24:21+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "underDEV_Requirements.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kuba Mikita",
+                    "email": "jakub@underdev.it"
+                }
+            ],
+            "description": "WordPress drop-in to check requirements",
+            "support": {
+                "issues": "https://github.com/Kubitomakita/Requirements/issues",
+                "source": "https://github.com/Kubitomakita/Requirements/tree/1.3.3"
+            },
+            "abandoned": true,
+            "install-path": "../underdev/requirements"
+        },
+        {
+            "name": "underdev/utils",
+            "version": "1.1.3",
+            "version_normalized": "1.1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kubitomakita/Utils.git",
+                "reference": "7b731ae48a408acaab3ba478d6acc12894ff4a9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kubitomakita/Utils/zipball/7b731ae48a408acaab3ba478d6acc12894ff4a9e",
+                "reference": "7b731ae48a408acaab3ba478d6acc12894ff4a9e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "time": "2018-10-24T07:03:17+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "underDEV\\Utils\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kuba Mikita",
+                    "email": "jakub@underdev.it"
+                }
+            ],
+            "description": "WordPress utilities",
+            "support": {
+                "issues": "https://github.com/Kubitomakita/Utils/issues",
+                "source": "https://github.com/Kubitomakita/Utils/tree/master"
+            },
+            "install-path": "../underdev/utils"
+        }
+    ],
+    "dev": false
+}

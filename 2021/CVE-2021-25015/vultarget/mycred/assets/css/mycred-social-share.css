@@ -1,0 +1,363 @@
+.social-media-br br {
+    display: none;
+}
+
+button.mycred-social-icons, a.mycred-social-icons, button.social-text {
+    text-align: center;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+
+button.mycred-social-icons:before {
+    margin-right: 11px;
+    font-size: 20px;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+button.mycred-social-icons a, button.social-text a {
+    text-decoration: none;
+    color: #FFF;
+    line-height: normal;
+    /*vertical-align: middle;*/
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+button.mycred-social-icons a {
+    vertical-align: middle;
+}
+
+button.mycred-social-icons a:hover, button.social-text a:hover {
+    box-shadow: none;
+    color: #fff;
+}
+
+button.mycred-social-icons, button.social-text {
+    padding: 10px 15px;
+    font-size: 15px;
+    text-align: center;
+    border: 0px;
+    white-space: nowrap;
+}
+
+a.mycred-social-icons {
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: none;
+    min-width: 40px;
+    height: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    flex: 0 0 10%;
+    max-width: 10%;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+a.mycred-social-icons:hover, button.mycred-social-icons:hover, button.social-text:hover {
+    opacity: 0.7;
+    box-shadow: none;
+    color: #fff;
+}
+
+a.mycred-social-icon-facebook, button.mycred-social-icon-facebook, button.facebook {
+    background: #3b5998;
+    color: white;
+}
+a.mycred-social-icon-youtube, button.mycred-social-icon-youtube, button.youtube {
+    background: #f80000;
+    color: white;
+}
+
+a.mycred-social-icon-twitter, button.mycred-social-icon-twitter, button.twitter {
+    background: #55acee;
+    color: white;
+}
+a.mycred-social-icon-twitch, button.mycred-social-icon-twitch, button.twitch {
+    background: #6441a5;
+    color: white;
+}
+
+a.mycred-social-icon-instagram, button.mycred-social-icon-instagram, button.instagram {
+    background: #C03B92;
+    color: white;
+}
+
+a.mycred-social-icon-pinterest, button.mycred-social-icon-pinterest, button.pinterest {
+    background: #bd081c;
+    color: white;
+}
+
+a.mycred-social-icon-linkedin, button.mycred-social-icon-linkedin, button.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+a.mycred-social-icon-whatsapp, button.mycred-social-icon-whatsapp, button.whatsapp {
+    background: #43d854;
+    color: white;
+}
+
+
+/*-text hover-*/
+
+a.mycred-social-icons.i-text:hover, a.mycred-social-icons.i-text-admin:hover {
+    position: relative;
+    max-width: max-content;
+    flex: 0 0 35%;
+}
+
+a.mycred-social-icons.i-text-admin:hover {
+    top: -4px;
+}
+
+a.mycred-social-icons.i-text:hover:before, a.mycred-social-icons.i-text-admin:hover:before {
+    position: absolute;
+    left: 15px;
+    z-index: 9999;
+}
+
+a.mycred-social-icons.i-text span {
+    display: none;
+}
+
+a.mycred-social-icons.i-text:hover span, a.mycred-social-icons.i-text-admin:hover:after {
+    margin-left: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a.mycred-social-icons.i-text-admin:hover:after {
+    min-width: 150px;
+    display: inline-block;
+}
+
+a.mycred-social-icons.i-text:hover span {
+    display: inline-block;
+}
+
+
+a.mycred-social-icon-whatsapp.i-text:hover {
+    min-width: 130px;
+}
+
+.entry .entry-content a.social-share {
+    text-decoration: none;
+}
+
+.social-wrapper {
+    align-items: center;
+}
+
+.social-wrapper>* {
+    flex-basis: auto;
+    margin: 5px !important;
+}
+
+.social-wrapper .mycred-social-icon-whatsapp, .social-wrapper button.whatsapp {
+    display: none !important;
+}
+
+.social-wrapper .show-more {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin-right: 0 !important;
+    min-width: 40px;
+}
+
+.social-wrapper>a+.show-more {
+    border-radius: 0;
+}
+
+span.social-span {
+    font-weight: 400;
+    color: #afaaa4;
+    display: block;
+    font-style: italic;
+}
+
+
+/*backend inputs*/
+
+ul.filter-fields-list {
+    max-width: 80%;
+}
+
+ul.filter-fields-list li {
+    clear: both;
+}
+
+ul.filter-fields-list li input[type="text"] {
+    float: right;
+}
+
+.mycred-tab-content .form-table th {
+    width: 24%;
+    text-align: right;
+}
+
+.border-row {
+    border-top: 1px solid #DDD;
+}
+
+.border-b-row {
+    border-bottom: 1px solid #DDD;
+}
+
+ 
+
+@media (max-width:1024px) {
+    ul.filter-fields-list {
+        max-width: 80%;
+    }
+}
+
+@media (max-width:768px) {
+    a.mycred-social-icons.i-text:hover, a.mycred-social-icons.i-text-admin:hover {
+        min-width: 45%;
+    }
+}
+ 
+.mycred-tab-content.tab-container {
+    background-color: white;
+    border: solid #cccccc 1px;
+    margin-top: -1px;
+}
+
+.mycred-tab-content .form-table td { 
+   padding: 15px 55px;
+}
+.filter-fields-list .mycred-social-custom-fields{   
+ width: 49%;
+margin-top: 13px;
+ }
+.filter-fields-list .mycred-select-option {
+		display: inline-block;
+		margin-top: 18px;
+		min-width: 125px;
+		max-width: 109px;
+		float: left;
+}
+.mycred-tab-content a{
+	text-decoration: none;
+}
+.correct-app-id
+{
+	border: #01ab01 solid 1px!important;
+}
+.incorrect-app-id
+{
+border: #dc3232 solid 1px!important;
+}
+small.response_message {
+    color: red;
+	display: none;
+}
+.mycred-tab-content li.sortable-item.ui-sortable-handle {
+    background-color: whitesmoke;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 8px;
+	border: 1px solid #dadada;
+	
+		 
+}
+.mycred-tab-content li.sortable-item i.mycred-social-icon-bars {
+    cursor: all-scroll;
+}
+.mycred-tab-content li.sortable-item.ui-sortable-handle:hover {
+-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+ transition: all 0.3s ease;
+}
+
+
+.mycred-tab-content i.mycred-social-icon-bars {
+    margin-right: 6px;
+}
+
+.my_cred_follow_button_input_field
+{
+	 display: inline-block;
+	 width: 78%;
+}
+.mycred_share_width_fix .my_cred_follow_button_input_field .mycred-social-custom-fields
+{
+	width: 100%;
+}
+
+.mycred-tab-content.admin-mycred  a.mycred-social-icon-pinterest.i-text-admin:hover:after,
+a.i-text-admin.mycred-social-icon-pinterest:hover:after {
+	content: "Pinterest";
+}
+.mycred-tab-content.admin-mycred  a.mycred-social-icon-facebook.i-text-admin:hover:after,
+a.mycred-social-icon-facebook.i-text-admin:hover:after {
+	content: "Facebook";
+}
+.mycred-tab-content.admin-mycred  a.mycred-social-icon-twitter.i-text-admin:hover:after,
+a.mycred-social-icon-twitter.i-text-admin:hover:after {
+	content: "Twitter";
+}
+.mycred-tab-content.admin-mycred  a.mycred-social-icon-linkedin.i-text-admin:hover:after,
+a.mycred-social-icon-linkedin.i-text-admin:hover:after {
+	content: "Linkedin";
+}
+.mycred-tab-content.admin-mycred  a.mycred-social-icon-youtube.i-text-admin:hover:after,
+a.mycred-social-icon-youtube.i-text-admin:hover:after {
+	content: "Youtube";
+}
+.mycred-tab-content.admin-mycred  a.mycred-social-icon-twitch.i-text-admin:hover:after,
+a.mycred-social-icon-twitch.i-text-admin:hover:after {
+	content: "Twitch";
+}
+.mycred-tab-content.admin-mycred  a.mycred-social-icon-instagram.i-text-admin:hover:after,
+a.mycred-social-icon-instagram.i-text-admin:hover:after {
+    content: "Instagram";
+}
+.mycred-social-wrapper button a:focus{
+	color: #fff;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+.mycred-social-wrapper a {
+    color: white;
+    text-decoration: none;
+}
+.mycred-social-wrapper button {
+    min-width: 170px;
+}
+
+.mycred_socialshare_notice {
+    width: 100%;
+    background-color: #ffc10721;
+    padding: 5px;
+    color: #7c7c7c;
+    border: 1px solid #f5da87;
+}	
+
+.mycred-social-wrapper a.social-share button{
+	padding: 10px 15px;
+    font-size: 18px;
+    text-align: center;
+    border: 0px;
+    white-space: nowrap;
+}
+
+@media (max-width:768px) {
+    .mycred-social-wrapper button.mycred-social-icons.mycred-social-icon-pinterest ,.mycred-social-wrapper button.mycred-social-icons.mycred-social-icon-facebook,
+	.mycred-social-wrapper button.mycred-social-icons.mycred-social-icon-twitter ,.mycred-social-wrapper button.mycred-social-icons.mycred-social-icon-linkedin,
+	.mycred-social-wrapper button.mycred-social-icons.mycred-social-icon-twitch ,.mycred-social-wrapper button.mycred-social-icons.mycred-social-icon-youtube, .mycred-social-wrapper button.mycred-social-icons.mycred-social-icon-instagram {
+        width: 100%;
+        display: block;
+        min-width: unset;
+    }
+}

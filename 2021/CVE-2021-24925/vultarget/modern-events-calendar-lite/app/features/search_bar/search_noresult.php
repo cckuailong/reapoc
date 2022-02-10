@@ -1,0 +1,1 @@
+<span><?php _e('No search result.', 'modern-events-calendar-lite'); ?></span>

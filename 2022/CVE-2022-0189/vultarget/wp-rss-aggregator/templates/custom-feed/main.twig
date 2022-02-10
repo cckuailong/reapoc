@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="{{ charset|escape('html_attr') }}" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ title }}</title>
+    <subtitle>{{ subtitle }}</subtitle>
+    <link href="{{ self_url }}" rel="self"/>
+    <id>{{ site_url }}</id>
+    <updated>{{ updated_date }}</updated>
+    <generator uri="{{ generator.url }}" version="{{ generator.version }}">
+        {{ generator.name }}
+    </generator>
+
+    {% for item in items %}
+    {% include('custom-feed/entry.twig') %}
+    {% endfor %}
+</feed>

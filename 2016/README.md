@@ -57,7 +57,7 @@
 | CVE-2016-4977 | Spring | 配置风险 | 8.8 | [Y](CVE-2016-4977/vultarget/) | [Y](CVE-2016-4977/poc/nuclei/) | [Y](CVE-2016-4977/poc/xray/) | [Y](CVE-2016-4977/poc/pocsuite2/) | [Y](CVE-2016-4977/poc/pocsuite3/) | N | N | [Y](CVE-2016-4977/poc/others/) |
 | CVE-2016-5649 |  | 信息泄露 | 9.8 | N | [Y](CVE-2016-5649/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2016-5734 | phpMyAdmin | 命令执行 | 9.8 | [Y](CVE-2016-5734/vultarget/) | N | N | N | N | N | N | [Y](CVE-2016-5734/poc/others/) |
-| CVE-2016-6210 | OpenSSH | 信息泄露 | 5.9 | N | [Y](CVE-2016-6210/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2016-6210/poc/others/) |
+| CVE-2016-6210 | OpenSSH | 信息泄漏 | 5.9 | N | [Y](CVE-2016-6210/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2016-6210/poc/others/) |
 | CVE-2016-6277 | Netgear router | 跨站请求伪造 | 8.8 | N | [Y](CVE-2016-6277/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2016-6277/poc/others/) |
 | CVE-2016-6816 | Apache-Tomcat | 输入验证错误 | 7.1 | [Y](CVE-2016-6816/vultarget/) | N | N | N | N | N | N | [Y](CVE-2016-6816/poc/others/) |
 | CVE-2016-7552 | Trend Micro ServerProtect | 路径遍历 | 9.8 | N | [Y](CVE-2016-7552/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2016-7552/poc/others/) |

@@ -1,0 +1,103 @@
+.type-cashcred_withdrawal .cashcred_Approved{
+	background-color: #008505;
+	padding: 5px;
+	border: 1px solid #008906;
+	color: white;
+	border-radius: 5px;
+}
+.type-cashcred_withdrawal .cashcred_Pending{
+	background-color: #f6cb4a;
+	padding: 5px;
+	border: 1px solid #cc9900;
+	color: white;
+	border-radius: 5px;
+}
+.type-cashcred_withdrawal .cashcred_Cancelled{
+	background-color: #bd2419;
+	padding: 5px;
+	border: 1px solid #a70b00;
+	color: white;
+	border-radius: 5px;
+}  
+.cashcred_bages {
+	margin-top: 10px;
+}
+.history li {
+	padding: 6px;
+	background-color: #f7f7f7;
+	border: 1px solid #c9c9c9;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+}
+
+#cashcred-comments .history li time {
+	font-weight: 600;
+}
+
+.readonly_fields[readonly]{
+	opacity: 0.6;
+}
+
+#cashcred-comments .history p {
+	border-top: 1px solid silver;
+	margin-top: 5px;
+	background-color: #e7e7e7;
+	padding: 7px;
+	border-radius: 6px;
+}
+
+
+#cashcred-developer-log pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	background-color: #e6e6e6;
+	padding: 10px;
+	border: solid 1px #c8c8c8;
+	border-radius: 5px;
+}
+
+#payment_gateway_detail input.form-control {
+	width: 100%;
+}
+#payment_gateway_detail .inside{ padding: 4px;}
+.cashcred_panel {
+	background-color: #e6e6e6;
+	padding: 10px;
+	border: 1px solid #c9c9c9;
+	margin-bottom: 5px;
+}
+#cashcred_withdrawal_request .row select ,#cashcred_withdrawal_request .row input{
+	width: 100%;
+}
+#cashcred-payment-status .spinner
+{
+	display:none;
+}
+#cashcred-payment-status .spinner.is-active {
+	display:block;
+	float: left;
+	position: absolute;
+	left: 10px;
+}
+#payment_response{
+display:none;
+background-color: #f1f1f1;
+margin-top: 10px;
+border: 1px solid #9f9f9f;
+padding: 10px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+#payment_response.true{
+    border-left: 3px solid #04a00a;
+}
+
+#payment_response.false{
+   border-left: 3px solid #F44336;
+}

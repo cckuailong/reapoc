@@ -1,0 +1,82 @@
+.oxi-addons-container .oxi-addons-row .oxi-addons-main-wrapper-image-comparison-style-2,
+.oxi-addons-container .oxi-addons-row .oxi-addons-main-wrapper-image-comparison-style-2 *{
+    transition: none;
+}
+ 
+.oxi-addons-main-wrapper-image-comparison-style-2 .oxi-addons-main { 
+    max-width: 100%; 
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-2 .beer-reveal[data-beer-label]::after,
+.oxi-addons-main-wrapper-image-comparison-style-2 .beer-slider[data-beer-label]::after {
+    background: rgba(255, 64, 96, 0.78) ;
+    color: #ffffff ;
+    display: inline-block;
+    font-family: "Crate Round";
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 16px ;
+    border: 1px none ;
+    border-color: #707070;
+    border-radius: 2px 2px 2px 2px ;
+    padding: 5px 15px 5px 15px ;
+    -webkit-border-radius: 2px 2px 2px 2px ;
+    -moz-border-radius: 2px 2px 2px 2px ;
+    -ms-border-radius: 2px 2px 2px 2px ;
+    -o-border-radius: 2px 2px 2px 2px ;
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-2 .beer-handle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px 50px 50px 50px 
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-2 .beer-handle::after,
+.oxi-addons-main-wrapper-image-comparison-style-2 .beer-handle::before {
+    color: #5e5e5e 
+}
+
+#oxi-addons-beer-image-comparison-2 {
+    width: 100%
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-2 .beer-slider>img {
+    width: 100% !important;
+}
+
+@media only screen and (min-width:669px) and (max-width:993px) {
+    .oxi-addons-main-wrapper-image-comparison-style-2 {
+        padding: 0px 0px 0px 0px
+    } 
+    .oxi-addons-main-wrapper-image-comparison-style-2 .beer-reveal[data-beer-label]::after,
+    .beer-slider[data-beer-label]::after {
+        font-size: 16px ;
+        border-radius: 2px 2px 2px 2px ;
+        padding: 5px 15px 5px 15px 
+    }
+    .oxi-addons-main-wrapper-image-comparison-style-2 .beer-handle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px 50px 50px 50px 
+    }
+}
+
+@media only screen and (max-width:668px) {
+    .oxi-addons-main-wrapper-image-comparison-style-2 {
+        padding: 0px 0px 0px 0px
+    } 
+    .oxi-addons-main-wrapper-image-comparison-style-2 .beer-reveal[data-beer-label]::after,
+    .beer-slider[data-beer-label]::after {
+        font-size: 16px ;
+        border-radius: 2px 2px 2px 2px ;
+        padding: 5px 15px 5px 15px 
+    }
+    .oxi-addons-main-wrapper-image-comparison-style-2 .beer-handle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px 50px 50px 50px 
+    }
+}

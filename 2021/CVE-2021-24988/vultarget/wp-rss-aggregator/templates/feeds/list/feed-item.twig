@@ -1,0 +1,58 @@
+{# Get the title and optionally truncating it #}
+{% set item_title = item.title %}
+{% if options.title_max_length > 0 %}
+    {% set item_title = item_title|truncate(options.title_max_length) %}
+{% endif %}
+
+{# The item title #}
+{% set item_url = wpra_item_url(item, options) %}
+
+{# Show the title #}
+{% if options.title_is_link %}
+    <a {{ wpra_link_attrs(item_url, options)|raw }}>{{ item_title|raw }}</a>
+{% else %}
+    {{ item_title|raw }}
+{% endif %}
+
+{{ options.title_after }}
+
+{# Prepare date HTML class and formatted strinng #}
+{% set date_str = item.timestamp|date(options.date_format) %}
+{% set date_class = "feed-date" %}
+{# If time-ago format is used, use alternate format and HTML class #}
+{% if options.date_use_time_ago %}
+    {% set date_str = item.timestamp|time_diff %}
+    {% set date_class = "time-ago" %}
+{% endif %}
+
+{{ wp_filter('template/list/before_item') }}
+
+<div class="wprss-feed-meta">
+    {% if options.source_enabled %}
+        <span class="feed-source">
+            {{ options.source_prefix }}
+
+            {% if options.source_is_link %}
+                <a {{ wpra_link_attrs(item.source_url, options)|raw }}>{{ item.source_name }}</a>
+            {% else %}
+                {{ item.source_name }}
+            {% endif %}
+        </span>
+    {% endif %}
+
+    {% if options.date_enabled %}
+        <span class="{{ date_class }}">
+            {{ options.date_prefix }} {{ date_str }}
+        </span>
+    {% endif %}
+
+    {% if options.author_enabled and item.author|length > 0 %}
+        <span class="feed-author">
+            {{ options.author_prefix }} {{ item.author }}
+        </span>
+    {% endif %}
+</div>
+
+{% include "feeds/_parts/audio-player.twig" %}
+
+{{ wp_filter('template/list/after_item') }}

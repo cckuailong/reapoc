@@ -1,0 +1,155 @@
+<table class="form-table images-form-table">
+    <tbody>
+
+    {# Featured image options #}
+    {% if options.import_ft_images or options.all %}
+        <tr>
+            <th>
+                <label for="wpra_ft_image">
+                    {% trans "Featured Image" %}
+                </label>
+            </th>
+            <td>
+                <select id="wpra_ft_image" name="wpra_feed[import_ft_images]">
+                    <option value="" {{ feed.import_ft_images == '' ? 'selected' : '' }}>
+                        {% trans "No featured image" %}
+                    </option>
+                    <option value="auto" {{ feed.import_ft_images == 'auto' ? 'selected' : '' }}>
+                        {% trans "Auto detect best image" %}
+                    </option>
+                    <option value="media" {{ feed.import_ft_images == 'media' ? 'selected' : '' }}>
+                        {% trans "Media thumbnail image" %}
+                    </option>
+                    <option value="enclosure" {{ feed.import_ft_images == 'enclosure' ? 'selected' : '' }}>
+                        {% trans "Enclosure image" %}
+                    </option>
+                    <option value="itunes" {{ feed.import_ft_images == 'itunes' ? 'selected' : '' }}>
+                        {% trans "iTunes image" %}
+                    </option>
+                    <option value="content" {{ feed.import_ft_images == 'content' ? 'selected' : '' }}>
+                        {% trans "First image in content/excerpt" %}
+                    </option>
+                    <option value="default" {{ feed.import_ft_images == 'default' ? 'selected' : '' }}>
+                        {% trans "Always use default image" %}
+                    </option>
+                </select>
+                {{ wpra_tooltip('ft_image') }}
+
+                {# Must have featured image option #}
+                {% if options.must_have_ft_image or options.all %}
+                    <div class="wpra_ft_image_option" id="wpra_must_have_ft_image">
+                        <input type="hidden" name="wpra_feed[must_have_ft_image]" value="0" />
+                        <label>
+                            <input type="checkbox"
+                                   name="wpra_feed[must_have_ft_image]"
+                                   value="1"
+                                   {{ feed.must_have_ft_image ? 'checked' : '' }}
+                            />
+                            {% trans "Items must have a featured image" %}
+                            {{ wpra_tooltip('must_have_ft_image', 'Items that do not have a suitable featured image will not be imported.') }}
+                        </label>
+                    </div>
+                {% endif %}
+
+                {# Remove featured image from content option #}
+                {% if options.siphon_ft_image or options.all %}
+                    <div class="wpra_ft_image_option" id="wpra_siphon_ft_image">
+                        <input type="hidden" name="wpra_feed[siphon_ft_image]" value="0" />
+                        <label>
+                            <input type="checkbox"
+                                   name="wpra_feed[siphon_ft_image]"
+                                   value="1"
+                                    {{ feed.siphon_ft_image ? 'checked' : '' }}
+                            />
+                            {% trans "Remove the featured image from the content" %}
+                            {{ wpra_tooltip('siphon_ft_image', "Tick this box to remove the featured image from an imported item's content.") }}
+                        </label>
+                    </div>
+                {% endif %}
+            </td>
+        </tr>
+    {% endif %}
+
+    <tr>
+        <th>
+            <label>
+                {% trans "Default Featured Image" %}
+            </label>
+        </th>
+        <td>
+            <input type="hidden" id="wprss-feed-def-ft-image" name="wpra_feed_def_ft_image" value="{{ feed.def_ft_image }}" />
+
+            <img src="{{ feed.def_ft_image_url }}" id="wprss-feed-def-ft-image-preview" />
+            <p id="wprss-feed-def-ft-image-preview-hint" class="howto">
+                {% trans "Click the image to edit or update" %}
+            </p>
+
+            <a href="javascript:void(0)" id="wprss-feed-set-def-ft-image">
+                {% trans "Set default featured image" %}
+            </a>
+            <a href="javascript:void(0)" id="wprss-feed-remove-def-ft-image">
+                {% trans "Remove default featured image" %}
+            </a>
+
+            {{ wpra_tooltip('def_ft_image', 'This image will be used as the featured image for imported items that do not have their own featured image.') }}
+        </td>
+    </tr>
+
+    {# Download images locally option #}
+    {% if options.download_images or options.all %}
+        <tr>
+            <th>
+                <label for="wpra_download_images">
+                    {% trans "Download other images" %}
+                </label>
+            </th>
+            <td>
+                <input type="hidden" name="wpra_feed[download_images]" value="0" />
+                <label>
+                    <input id="wpra_download_images"
+                           type="checkbox"
+                           name="wpra_feed[download_images]"
+                           value="1"
+                           {{ feed.download_images == '1' ? 'checked' : '' }}
+                    />
+                    {{ wpra_tooltip('download_images', "Tick this box to save feed item images to your WordPress Gallery."|trans) }}
+                </label>
+            </td>
+        </tr>
+    {% endif %}
+
+    {# Image minimum size option #}
+    {% if options.image_min_size or options.all %}
+        <tr id="wpra_image_min_size_row">
+            <th>
+                <label for="wpra_image_min_width">
+                    {% trans "Minimum Image Size" %}
+                </label>
+            </th>
+            <td>
+                <label>
+                    {% trans "Width:" %}
+                    <input id="wpra_image_min_width"
+                           type="number"
+                           name="wpra_feed[image_min_width]"
+                           min="0"
+                           step="1"
+                           value="{{ feed.image_min_height }}"
+                    />
+                </label>
+                <label>
+                    {% trans "Height:" %}
+                    <input id="wpra_image_min_height"
+                           type="number"
+                           name="wpra_feed[image_min_height]"
+                           min="0"
+                           step="1"
+                           value="{{ feed.image_min_height }}"
+                    />
+                </label>
+                {{ wpra_tooltip('image_min_size', "Images that are smaller than the given size will not be downloaded. Leave empty to download all images without restriction. This also applies to featured images."|trans) }}
+            </td>
+        </tr>
+    {% endif %}
+    </tbody>
+</table>

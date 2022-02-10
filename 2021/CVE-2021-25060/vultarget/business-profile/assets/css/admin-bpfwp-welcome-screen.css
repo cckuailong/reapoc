@@ -1,0 +1,367 @@
+.bpfwp-hidden {
+	display: none;
+}
+.bpfwp-welcome-clear {
+	clear: both;
+}
+
+.bpfwp-welcome-screen-header h1 {
+	padding: 48px 0 16px 0;
+	margin: 0;
+}
+.bpfwp-welcome-screen-header p {
+	margin-bottom: 32px;
+	font-size: 15px;
+}
+.bpfwp-welcome-screen h2 {
+	background: #1b335f;
+	color: #fff;
+	padding: 18px;
+	margin: 0;
+	z-index: 2;
+	position: relative;
+	float: left;
+	width: calc(100% - 36px);
+	border-top: 1px solid #42639F;
+}
+.bpfwp-welcome-screen h2:hover {
+	background: #365388;
+}
+
+.bpfwp-welcome-screen-box .bpfwp-welcome-screen-box-content {
+	display: none;
+} 
+
+.bpfwp-welcome-screen-box.bpfwp-welcome-screen-open .bpfwp-welcome-screen-box-content {
+	display: block;
+}
+
+.bpfwp-welcome-screen-box {
+    padding: 0px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bpfwp-welcome-screen-header,
+.bpfwp-welcome-screen-skip-container {
+	max-width: 800px;
+    margin: 0 auto;
+}
+
+.bpfwp-welcome-screen-header {
+	text-align: center;
+}
+
+.bpfwp-welcome-screen-box h2 {
+	cursor: pointer;
+}
+
+.bpfwp-welcome-screen-box-content {
+	position: relative;
+	float: left;
+	background: #fff;
+	width: 90%;
+    margin: 0 auto 16px;
+    box-shadow: 0 1px 12px #ddd;
+    display: block;
+    padding: 18px 5%;	
+}
+
+.bpfwp-welcome-screen-set-contact-information-button,
+.bpfwp-welcome-screen-set-hours-button,
+.bpfwp-welcome-screen-add-create_menu-button,
+.bpfwp-welcome-screen-add-contact-page-button {
+	position: relative; 
+	float: left;
+	cursor: pointer;
+	padding: 4px 8px;
+	border: 2px solid #1b335f;
+	color: #fff;
+	border-radius: 2px;
+	background: #1b335f;
+	width: auto;
+	text-align: center;
+	margin-top: 12px;
+}
+.bpfwp-welcome-screen-set-contact-information-button:hover,
+.bpfwp-welcome-screen-set-hours-button:hover,
+.bpfwp-welcome-screen-add-create_menu-button:hover,
+.bpfwp-welcome-screen-add-contact-page-button:hover {
+	border-color: #365388;
+	background: #365388;
+}
+
+.bpfwp-welcome-screen-next-button, 
+.bpfwp-welcome-screen-previous-button,
+.bpfwp-welcome-screen-finish-button a {
+	position: relative; 
+	float: right;
+	cursor: pointer;
+	padding: 4px 8px;
+	border: 2px solid #1b335f;
+	color: #1b335f;
+	border-radius: 2px;
+	background: transparent;
+	width: auto;
+	text-align: center;
+	margin-top: 32px;
+	text-decoration: none;
+}
+.bpfwp-welcome-screen-next-button:hover, 
+.bpfwp-welcome-screen-previous-button:hover,
+.bpfwp-welcome-screen-finish-button a:hover {
+	color: #fff;
+	background: #1b335f;
+	text-decoration: none;
+}
+.bpfwp-welcome-screen-next-button-not-top-margin {
+	margin-top: 12px;
+}
+.bpfwp-welcome-screen-previous-button {
+	float: left;
+}
+
+.bpfwp-welcome-screen-skip-button {
+	position: relative; 
+	float: right;
+	cursor: pointer;
+	padding: 4px 8px;
+	border: 2px solid #ccc;
+	color: #999;
+	border-radius: 2px;
+	background: transparent;
+	width: auto;
+	text-align: center;
+	margin-top: 12px;
+}
+.bpfwp-welcome-screen-skip-button:hover {
+	border-color: #aaa;
+	color: #fff;
+	background: #aaa;
+}
+
+.bpfwp-welcome-screen-box-content label {
+	width: 160px;
+	position: relative;
+	float: left;
+	font-weight: bold;
+}
+.bpfwp-welcome-screen-option label {
+	width: auto;
+	float: none;
+	font-weight: normal;
+}
+.bpfwp-welcome-screen-option label.bpfwp-admin-switch {
+	width: 40px
+}
+
+.bpfwp-welcome-screen-box-content input {
+	margin: 0;
+}
+.bpfwp-welcome-screen-box-content-divs {
+	margin-bottom: 8px;
+}
+
+
+.bpfwp-welcome-screen-show-created-sections {
+	display: none;
+}
+
+.bpfwp-welcome-screen-show-created-sections-name {
+	position: relative;
+	float: left;
+	width: 40%;
+	width: calc(40% - 2px);
+	padding: 9px 5%;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font-size: 15px;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-show-created-sections-description {
+	position: relative;
+	float: right;
+	width: 40%;
+	width: calc(40% - 1px);
+	border-right: 1px solid #ccc;
+	padding: 9px 5%;
+	font-size: 15px;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-section-name {
+	position: relative;
+	float: left;
+	width: 40%;
+	width: calc(40% - 2px);
+	padding: 7px 5%;
+	height: 18px;
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-section-description {
+	position: relative;
+	float: right;
+	width: 40%;
+	width: calc(40% - 1px);
+	padding: 7px 5%;
+	height: 18px;
+	overflow: hidden;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+
+.bpfwp-welcome-screen-show-created-menu_items {
+	display: none;
+}
+
+.bpfwp-welcome-screen-show-created-menu_items-image {
+	position: relative;
+	float: left;
+	width: 20%;
+	width: calc(20% - 2px);
+	padding: 9px 2.5%;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font-size: 15px;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-show-created-menu_items-name {
+	position: relative;
+	float: left;
+	width: 20%;
+	width: calc(20% - 1px);
+	border-right: 1px solid #ccc;
+	padding: 9px 2.5%;
+	font-size: 15px;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-show-created-menu_items-description {
+	position: relative;
+	float: left;
+	width: 20%;
+	width: calc(20% - 1px);
+	border-right: 1px solid #ccc;
+	padding: 9px 2.5%;
+	font-size: 15px;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-show-created-menu_items-price {
+	position: relative;
+	float: left;
+	width: 20%;
+	width: calc(20% - 1px);
+	border-right: 1px solid #ccc;
+	padding: 9px 2.5%;
+	font-size: 15px;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-menu_item-image {
+	position: relative;
+	float: left;
+	width: 20%;
+	width: calc(20% - 2px);
+	padding: 7px 2.5%;
+	height: 100px;
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-menu_item-image img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.bpfwp-welcome-screen-menu_item-name {
+	position: relative;
+	float: left;
+	width: 20%;
+	width: calc(20% - 1px);
+	padding: 7px 2.5%;
+	height: 100px;
+	overflow: hidden;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-menu_item-description {
+	position: relative;
+	float: left;
+	width: 20%;
+	width: calc(20% - 1px);
+	padding: 7px 2.5%;
+	height: 100px;
+	overflow: hidden;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.bpfwp-welcome-screen-menu_item-price {
+	position: relative;
+	float: left;
+	width: 20%;
+	width: calc(20% - 1px);
+	padding: 7px 2.5%;
+	height: 100px;
+	overflow: hidden;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.bpfwp-welcome-screen-add-create_menu-sections h3 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.bpfwp-save-message {
+	clear: both;
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 16px 0;
+}
+.bpfwp-save-message-inside {
+	position: relative;
+	float: left;
+	padding: 8px 12px;
+	background: #eee;
+}
+
+.bpfwp-welcome-screen-image-preview-container {
+	float: left;
+	width: calc(100% - 160px);
+	margin-bottom: 10px;
+}
+.bpfwp-welcome-screen-image-preview img {
+	width: 180px;
+	height: auto;
+}
+
+
+/*scheduler*/
+.bpfwp-welcome-screen-box-content .sap-scheduler label {
+	width: auto;
+	float: none;
+	text-align: center;
+	font-weight: normal;
+}
+.bpfwp-welcome-screen-box-content .sap-scheduler .sap-scheduler-time-input label {
+	text-align: left;
+}
+.bpfwp-welcome-screen-box-content .sap-scheduler input[type="checkbox"] {
+	margin: 6px 4px 7px 0;
+}

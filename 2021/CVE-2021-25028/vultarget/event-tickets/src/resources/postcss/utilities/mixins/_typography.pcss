@@ -1,0 +1,320 @@
+/* -----------------------------------------------------------------------------
+ * Body
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin body {
+	color: var(--tec-color-text-primary);
+	font-family: var(--tec-font-family-sans-serif);
+}
+
+/* -----------------------------------------------------------------------------
+ * Desktop Body 1
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin desktop-body-1-sup {
+	font-size: var(--tec-font-size-3);
+	line-height: var(--tec-line-height-3);
+}
+
+@define-mixin desktop-body-1 {
+	@mixin body;
+	@mixin desktop-body-1-sup;
+
+	font-weight: var(--tec-font-weight-regular);
+}
+
+@define-mixin desktop-body-1-bold {
+	@mixin desktop-body-1;
+
+	font-weight: var(--tec-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Desktop Body 2
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin desktop-body-2-sup {
+	font-size: var(--tec-font-size-2);
+	line-height: var(--tec-line-height-3);
+}
+
+@define-mixin desktop-body-2 {
+	@mixin body;
+	@mixin desktop-body-2-sup;
+
+	font-weight: var(--tec-font-weight-regular);
+}
+
+@define-mixin desktop-body-2-bold {
+	@mixin desktop-body-2;
+
+	font-weight: var(--tec-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Desktop Body 3
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin desktop-body-3-sup {
+	font-size: var(--tec-font-size-1);
+	line-height: var(--tec-line-height-0);
+}
+
+@define-mixin desktop-body-3 {
+	@mixin body;
+	@mixin desktop-body-3-sup;
+
+	font-weight: var(--tec-font-weight-regular);
+}
+
+@define-mixin desktop-body-3-bold {
+	@mixin desktop-body-3;
+
+	font-weight: var(--tec-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Mobile Body 1
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin mobile-body-1 {
+	@mixin body;
+
+	font-size: var(--tec-font-size-2);
+	font-weight: var(--tec-font-weight-regular);
+	line-height: var(--tec-line-height-3);
+}
+
+@define-mixin mobile-body-1-bold {
+	@mixin mobile-body-1;
+
+	font-weight: var(--tec-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Mobile Body 2
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin mobile-body-2 {
+	@mixin body;
+
+	font-size: var(--tec-font-size-1);
+	font-weight: var(--tec-font-weight-regular);
+	line-height: var(--tec-line-height-0);
+}
+
+@define-mixin mobile-body-2-bold {
+	@mixin mobile-body-2;
+
+	font-weight: var(--tec-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Mobile Body 3
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin mobile-body-3 {
+	@mixin body;
+
+	font-size: var(--tec-font-size-0);
+	font-weight: var(--tec-font-weight-regular);
+	line-height: var(--tec-line-height-2);
+}
+
+@define-mixin mobile-body-3-bold {
+	@mixin mobile-body-3;
+
+	font-weight: var(--tec-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin heading {
+	color: var(--tec-color-text-primary);
+	font-family: var(--tec-font-family-sans-serif);
+	font-weight: var(--tec-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 1
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin mobile-heading-1 {
+	font-size: var(--tec-font-size-8);
+	line-height: var(--tec-line-height-1);
+}
+
+@define-mixin desktop-heading-1 {
+	font-size: var(--tec-font-size-10);
+	line-height: var(--tec-line-height-0);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 2
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin mobile-heading-2 {
+	font-size: var(--tec-font-size-7);
+	line-height: var(--tec-line-height-1);
+}
+
+@define-mixin desktop-heading-2 {
+	font-size: var(--tec-font-size-9);
+	line-height: var(--tec-line-height-0);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 3
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin mobile-heading-3 {
+	font-size: var(--tec-font-size-6);
+	line-height: var(--tec-line-height-2);
+}
+
+@define-mixin desktop-heading-3 {
+	font-size: var(--tec-font-size-8);
+	line-height: var(--tec-line-height-1);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 4
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin mobile-heading-4 {
+	font-size: var(--tec-font-size-5);
+	line-height: var(--tec-line-height-1);
+}
+
+@define-mixin desktop-heading-4 {
+	font-size: var(--tec-font-size-7);
+	line-height: var(--tec-line-height-1);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 5
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin heading-5 {
+	font-size: var(--tec-font-size-4);
+	line-height: var(--tec-line-height-2);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 6
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin mobile-heading-6 {
+	font-size: var(--tec-font-size-3);
+	line-height: var(--tec-line-height-2);
+}
+
+@define-mixin desktop-heading-6 {
+	font-size: var(--tec-font-size-3);
+	line-height: var(--tec-line-height-3);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 7
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin heading-7 {
+	font-size: var(--tec-font-size-2);
+	line-height: var(--tec-line-height-3);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 8
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin heading-8 {
+	font-size: var(--tec-font-size-1);
+	line-height: var(--tec-line-height-0);
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Default
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin anchor-default {
+	border-bottom: 2px solid transparent;
+	transition: var(--tec-transition-border-color);
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-bottom: 2px solid currentColor;
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Alt
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin anchor-alt {
+	border-bottom: 2px solid var(--tec-color-link-accent);
+	color: var(--tec-color-link-primary);
+	transition: var(--tec-transition-color);
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-bottom: 2px solid currentColor;
+		color: var(--tec-color-link-accent);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Thin
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin anchor-thin {
+	border-bottom: 1px solid transparent;
+	transition: var(--tec-transition-border-color);
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-bottom: 1px solid var(--tec-color-link-primary);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Thin
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin anchor-thin-alt {
+	border-bottom: 1px solid var(--tec-color-link-accent);
+	color: var(--tec-color-link-primary);
+	transition: var(--tec-transition-color);
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-bottom: 1px solid currentColor;
+		color: var(--tec-color-link-accent);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Event Title
+ *
+ * This mixin intentionally only affects the text and border _colors_
+ * to make sure they all follow the Customizer overrides.
+ * ----------------------------------------------------------------------------- */
+@define-mixin event-title-link-color {
+	color: var(--tec-color-text-events-title);
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-color: currentColor;
+		color: var(--tec-color-text-events-title);
+	}
+
+	&:visited {
+		color: var(--tec-color-text-events-title);
+	}
+}

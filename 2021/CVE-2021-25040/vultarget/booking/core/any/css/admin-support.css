@@ -1,0 +1,589 @@
+/**
+ * @version 1.0
+ * @package: Admin Panel
+ * @category: Admin UI
+ * @author wpdevelop
+ *
+ * @web-site https://wpbookingcalendar.com/
+ * @email info@wpbookingcalendar.com 
+ * 
+ * @modified 2015-04-11
+ */
+
+/* Admin Content Pages */
+
+/* Top Header at  the page */
+.wpbc_page h2.wpbc_header {
+    color: #595959;
+    font-size: 2em;
+    line-height: 2em;
+    padding:0;   
+    text-shadow: 0 0 1px #aaaaaa;
+    margin-bottom:10px;
+}
+
+.wpbc_page .wpdevelop label{
+    font-weight: 400;
+}
+.wpbc_page .wpdevelop label.wpbc-required{
+    font-weight: 600;
+}
+.wpbc_page .wpdevelop optgroup {
+    font-weight: 600;
+}
+.wpbc_page .wpdevelop .visibility_container {
+    display:none;
+}
+.wpbc_page .wpdevelop .wpbc-no-margin {
+    margin:0;
+}
+.wpbc_page .wpdevelop .wpbc-no-padding {
+    padding:0;
+}
+.wpdevelop a.button:focus,
+.wpdevelop a.button:hover {
+    text-decoration: none;
+}
+/* Support CSS Classes **/
+.wpdevelop .visible_items,
+.visible_items {
+    display: block;
+}
+.wpdevelop .hidden_items,
+.hidden_items {
+    display: none;
+}
+
+/* M E S S A G E S  -  Backward compatibility - For showing correctly  messages in WP 4.0 */
+.wpbc_page .notice {
+	background: #fff;
+	border-left: 4px solid #fff;
+	-webkit-box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+	box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+	margin: 5px 15px 2px;
+	padding: 1px 12px;
+}
+.wpbc_page .notice-success,
+.wpbc_page div.updated {
+	border-left-color: #46b450;
+}
+.wpbc_page .notice-warning {
+	border-left-color: #ffb900;
+}
+.wpbc_page .notice-error,
+.wpbc_page div.error {
+	border-left-color: #dc3232;
+}
+.wpbc_page .notice-info {
+	border-left-color: #00a0d2;
+}
+/* Messages that show at top  of admin panel pages */
+.wpbc_page div.wpbc_inner_message {
+    padding:10px;    
+    /* Overide position and style of Updated Message. If in new WP updates this meesage showing incorrectly, remove this code */
+    position: absolute;
+    display: inline;
+    z-index: 10000;
+    width: 98%;
+    margin: 3px 0 0;
+    top: 5px;
+    left: 0;
+    padding: 12px;
+    box-sizing: border-box;    
+    min-height:1em;    
+    height:auto;   
+    /* From WordPress 4.4.1 */
+    /*
+    border-left: 4px solid #fff;
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    */
+}
+/* From WordPress 4.4.1 */
+.wpbc_page div.wpbc_inner_message a.close,
+.wpbc_page div.wpbc_inner_message a.close:hover,
+.wpbc_page div.wpbc_inner_message a.close:focus{
+    font-size: 18px;
+    float: right;
+    text-decoration: none;
+}
+/* Form Messages */
+.wpdevelop .alert.wpbc-near-field-message {    
+    height: auto;      
+    font-size: 0.9em;
+    background-image: none;
+}
+/* Alerts & Help messages */
+.wpbc-info-message,
+.wpbc-error-message, 
+.wpbc-success-message, 
+.wpbc-help-message{
+    display: block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-weight: 400;
+    text-align: center;
+    color:#777;
+    background-color: #faf8f8;
+/*    border: 1px solid #E6DB55;*/
+    border: 2px dashed #bbb;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    line-height: 1.9em; 
+    font-size: 1em;
+    padding: 5px 10px !important;
+    width: auto !important;    
+    box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+}
+.wpbc-help-message {
+    background-color: #FFFDFD;    
+    text-align: left;    
+}
+.wpbc-error-message {
+    background-color: #FFEEEE;
+    border-color: #FFBBBB;
+}
+.wpbc-success-message {
+    background-color: #F5FFF0;
+    border-color: #AAEEAA;
+}
+.wpbc-demo-alert-not-allow {
+    color: #AA4400;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-shadow: 0 -1px 0 #FFEEEE;
+}
+
+.wpbc_inner_message {
+    margin-bottom: 25px !important;
+}
+.wpbc_inner_message .close{
+    float: right;
+    font-size: 18px;
+}
+
+.alert.alert-block {
+    border:2px dashed;
+}
+.message {
+    border-left-width: 3px solid #f90;
+    clear: both;
+    display: block;
+    position: relative;
+    text-align: left;    
+}
+
+/* Internal Settings Message */
+.wpbc-settings-notice {
+    background: #ffffff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 5px 0 2px 0;
+    padding: 1px 12px;
+    line-height: 2.5em;
+    text-align:left;
+}
+.wpbc-settings-notice.notice-success {
+    border-left-color: #46b450;
+}
+.wpbc-settings-notice.notice-success.notice-alt {
+    background-color: #ecf7ed;
+}
+.wpbc-settings-notice.notice-warning {
+    border-left-color: #ffb900;
+}
+.wpbc-settings-notice.notice-warning.notice-alt {
+    background-color: #fff8e5;
+}
+.wpbc-settings-notice.notice-error {
+    border-left-color: #dc3232;
+}
+.wpbc-settings-notice.notice-error.notice-alt {
+    background-color: #fbeaea;
+}
+.wpbc-settings-notice.notice-info {
+    border-left-color: #00a0d2;
+}
+.wpbc-settings-notice.notice-info.notice-alt {
+    background-color: #e5f5fa;
+}
+
+
+
+/* Modal Content for popup windows ********************************************/
+.wpbc_popup_modal {
+    display: none;
+}
+
+
+/* Sort Table */
+table.wpbc_sort_table {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.wpbc_sort_table thead th {
+    padding:8px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size:1em;
+    color:#555 !important;
+}
+.wpbc_sort_table tfoot th {
+    padding:10px;
+}
+.wpbc_sort_table .widefat th.sort,
+.wpbc_sort_table .widefat td.sort {    
+    width: 30px;
+    padding-top:4px;
+    padding-left:4px;
+}
+.wpbc_sort_table .widefat td.sort::before{
+    color: #aaa;
+    content: "\f333";
+    
+    display: inline-block;
+    font-family: dashicons;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    height: 20px;
+    line-height: 1;
+    text-align: center;
+    text-decoration-color: inherit;
+    text-decoration-line: inherit;
+    text-decoration-style: inherit;
+    vertical-align: top;
+    width: 20px;
+    padding:4px 0 0 2px;
+}
+.wpbc_sort_table .widefat td.sort span.glyphicon {
+    vertical-align: middle;
+}
+.wpbc_sort_table .widefat td {
+    padding:0;
+}
+.wpbc_sort_table .widefat th input[type=text],
+.wpbc_sort_table .widefat td input[type=text]{
+    width:100%;
+    margin:0;
+    padding-left:5px;
+    height: 36px;
+}
+.wpbc_sortable_table.widefat {
+    background:#FAFAFA;
+}
+.wpbc_sortable_table.widefat td.border_bottom {
+    border-bottom: 1px solid #ddd;
+}
+.wpbc_sortable_table td input[type=text]{
+    border-radius: 0;
+}
+/* Color Picker */
+.wpbc_page .wpdevelop .wp-picker-container .wp-color-result, 
+.wpbc_sortable_table td .wp-picker-container .wp-color-result {
+    height: 24px;
+    
+    clear:both;
+}
+.wpbc_sortable_table td .wpbc-field-colors {
+    padding:2px 10px 2px;
+    border:1px solid #ccc;
+    font-weight: 600;
+    font-size:16px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    vertical-align: middle;
+}
+
+/* Settings table customization */
+.wpbc_page .form-table th,
+.wpbc_page .form-table td {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.form-table th label {
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+/* Dismiss button  for Welcome Page Panel *************************************/ 
+.wpbc-panel-dismiss {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        padding: 8px 3px;
+        font-size: 13px;
+        text-decoration: none;
+        line-height: 1;
+        outline: 0 none;
+        cursor: pointer;
+}
+.wpbc-panel-dismiss:before {
+        content: ' ';
+        position: absolute;
+        left: -12px;
+        width: 10px;
+        height: 100%;
+        background: url('../../../../../../wp-admin/images/xit.gif') 0 7% no-repeat;    /* //FixIn: 8.9.1.3  */
+}
+.wpbc-panel-dismiss:hover:before {
+        background-position: 100% 7%;
+}
+
+/* SORTED Support Styles and Tricks *******************************************/
+.wpbc_mobile_legend {
+    display:none;
+}
+/* Align blocks */
+.wpbc-align-right {
+    float: right !important;
+}
+.wpbc-align-left {
+    float: left !important;
+}
+
+/* Align text */
+.wpbc-text-right {
+    text-align: right !important;
+}
+.wpbc-text-left {
+    text-align: left !important;
+}
+.wpbc-text-center {
+    text-align: center !important;
+}
+.wpbc-text-justify {
+    text-align: justify !important;
+}
+
+.clear-line {
+    clear:both;
+    width:100%;
+}
+/* Trick - Fix HEIGHT for the container with FLOAT elements inside */
+.clearfix-height:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix-height {
+    /*display: inline-block;*/
+    display: block;     /*   //FixIn: 8.8.1.10 */
+}
+html[xmlns] .clearfix-height {
+    display: block;
+}
+html[xmlns] .clearfix-height.hidden_items {
+    display: none;
+}
+* html .clearfix-height {
+    height: 1%;
+}
+
+/* Sortable table */
+.wpbc_sortable_table thead th {
+    padding:10px 0;
+}
+.wpbc_sortable_table tfoot th {
+    padding:10px;
+}
+.wpbc_sortable_table .widefat th.sort,
+.wpbc_sortable_table .widefat td.sort {
+    width:30px;
+}
+.wpbc_sortable_table .widefat td.sort::before{
+    color: #aaa;
+    content: "\f333";
+    
+    display: inline-block;
+    font-family: dashicons;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    height: 20px;
+    line-height: 1;
+    text-align: center;
+    text-decoration-color: inherit;
+    text-decoration-line: inherit;
+    text-decoration-style: inherit;
+    vertical-align: top;
+    width: 20px;
+    padding:4px 0 0 2px;
+}
+.branch-3-5 .wpbc_sortable_table .widefat td.sort::before,
+.branch-3-6 .wpbc_sortable_table .widefat td.sort::before,
+.branch-3-7 .wpbc_sortable_table .widefat td.sort::before {
+    content: "=";
+}
+.wpbc_sortable_table .widefat td {
+    padding:0;
+}
+.wpbc_sortable_table .widefat th input[type=text],
+.wpbc_sortable_table .widefat td input[type=text]{
+    width:100%;
+    margin:0;
+    padding-left:5px;
+}
+.wpbc_page input[type='checkbox']:focus,
+.wpbc_page input[type='checkbox']:active,
+.wpbc_page input[type='checkbox']:hover,
+.wpbc_page input[type='checkbox'] {
+    outline: none;
+}
+
+/* Hack  to fix checkbox height in  Firefox,  otherwise sometimes, there exist weird artefact */
+@-moz-document url-prefix() {
+    .wpbc_page input[type='checkbox'] {
+        /*height: auto;*/       /* FixIn: 8.4.2.6 */
+    }
+    .wpbc_page input[type='radio'] {
+        /*height: auto;*/       /* FixIn: 8.4.2.6 */
+        /*height: 32px;*/
+    }
+}
+
+/* Ajax loading icon */
+.wpbc_ajax_icon {
+    font-size: 9px;
+    margin: 0px 5px 5px 5px;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+
+/*  Rotate Icons  for Loading   ***********************************************/
+.wpbc_spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.wpbc_rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.wpbc_rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.wpbc_rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.wpbc_flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.wpbc_flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/******************************************************************************/
+
+/* iPad mini and all iPhones  and other Mobile Devices */
+@media (max-width: 782px) { 
+    .wpbc_mobile_legend {
+        display:inline;
+        font-size: 14px;
+        font-weight: 400;
+        float: left;
+        line-height: 1.3em;
+    }
+    .wpbc_mobile_legend.clear{
+        float:none;
+        display:block;
+    } 
+    .wpdevelop .hide-sm {
+        display:none;
+    }    
+    /* Messages that show at top  of admin panel pages */
+    .wpbc_page div.wpbc_inner_message {
+        /* Overide position and style of Updated Message. If in new WP updates this meesage showing incorrectly, remove this code */
+        margin: 20px 0 25px 10px;
+        position: fixed;
+        top: 32px;
+        width: 96%;        
+        padding: 10px 12px;
+        min-height: 1em;
+        height: auto;
+    }    
+}
+@media (max-width: 480px) { 
+    .wpdevelop .hide-xs {
+        display:none;
+    }    
+}
+
+/* Support new fonts in WP 4.6 */                                               /* FixIn: 6.2.2.4 */
+.wpdevelop .label, 
+.wpdevelop strong {
+    font-weight: 600;
+}
+.wpdevelop [class^="icon-"] {
+    margin-top: 2px;
+}
+.wpdevelop .button [class^="icon-"] {
+    margin-top: 3px;
+}

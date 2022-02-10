@@ -1,0 +1,28 @@
+<div class="wrap">
+    <h1>{% trans "Tools" %}</h1>
+
+    <h2 class="nav-tab-wrapper">
+        {% for key, info in tools %}
+            <a href="javascript: void(0)"
+               class="nav-tab wpra-tool-tab {{ key == activeTab ? 'nav-tab-active' : '' }}"
+               data-wpra-tool="{{ key|e('html_attr') }}"
+            >
+                {{ info.name }}
+            </a>
+        {% endfor %}
+    </h2>
+
+    <div class="wpra-tools-container">
+        {% for key, info in tools %}
+            <div class="wpra-tool" data-wpra-tool="{{ key|e('html_attr') }}">
+                {{ info.html|raw }}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style type="text/css">
+    .wpra-tools-container > div.wpra-tool {
+        display: none;
+    }
+</style>

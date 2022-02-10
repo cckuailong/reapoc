@@ -1,0 +1,206 @@
+@import 'variables.less';
+//due to a bug in the minifier, we cannot point to the same file in the assets directory.
+.cmplz-grid {
+    position: relative;
+    .cmplz-grid-item {
+        width: @gridblock_width;
+        &.small {
+            width: @gridblock_width_small;
+        }
+        &.medium {
+            height: 650px;
+            width: @gridblock_width_small;
+        }
+        &.big {
+            height: auto;
+            margin-bottom: 20px;
+        }
+        position: absolute;
+        height: @gridblock_height - 2 * @grid-margin;
+        z-index: 1;
+
+        &.muuri-item-hidden {
+            z-index: 0;
+        }
+        &.muuri-item-releasing {
+            z-index: 2;
+        }
+        &.muuri-item-dragging {
+            z-index: 3;
+        }
+        .cmplz-grid-header {
+		  border-bottom: 1px solid @box_shadow_color;
+		  .cmplz-grid-header-container {
+                margin:0 20px;
+                height:100%;
+            }
+            cursor: pointer;
+            padding: 0;
+            height:60px;
+            .cmplz-grid-title{
+                font-size: 17px;
+                padding: 20px 0;
+                font-weight: 600;
+                float: left;
+            }
+            .cmplz-grid-controls {
+                float: right;
+                margin-top: 16px;
+			  	color: #cecece;
+			    a {
+				  color: #cecece;
+				  text-decoration:none;
+				}
+            }
+        }
+        .item-container {
+            background-color: #fff;
+            position: relative;
+            box-shadow: 0 0 5px 5px rgba(222, 222, 222, 0.2);
+		  	width: @gridblock_width - 2 * @grid-margin;
+            height: @gridblock_height - 2 * @grid-margin;
+            .item-content {
+                clear:both;
+			    position:relative;
+                margin:@green-gap;
+                height: calc(100% - 175px);
+                padding-top: 0;
+                padding-bottom:10px;
+			    table {
+				  width:100%;
+				  td {
+					height:35px;
+				  }
+				}
+            }
+		  .item-footer {
+			>div {
+			  border-top:1px solid @box_shadow_color;
+			  padding: 20px 0;
+			  margin:0 20px;
+				.cmplz-footer-contents{
+				  .button {
+					margin-top: -4px;
+				  }
+				  display:flex;
+				  .cmplz-legend {
+					flex-grow:0;
+					&.cmplz-stretch {
+					  flex-grow:1;
+					}
+					display:flex;
+					margin:auto;
+					margin-left: 10px;
+					span {
+					  padding-left:5px;
+					}
+				  }
+			  }
+			}
+		  }
+        }
+        &.half-height {
+		  height: @gridblock_height / 2 - 2 * @grid-margin;
+            .item-container {
+                height: @gridblock_height / 2 - 2 * @grid-margin;
+            }
+		  .item-content{
+			padding:0;
+			height: calc(100% - 165px);
+		  }
+        }
+        &.small {
+            .item-container {
+                width: @gridblock_width_small - 2* @grid-margin;
+            }
+        }
+        &.no-border {
+            .item-container {
+                border: none;
+            }
+        }
+        &.no-background {
+            .item-container {
+                background-color: #F1F1F1;
+            }
+        }
+        &.muuri-item-placeholder .item-container {
+            border-style: dashed;
+            padding:0;
+        }
+    }
+    .upsell-grid-container {
+        .item-container {
+                box-shadow: none;
+        }
+    }
+
+  .cmplz-other-plugins .item-container {
+	background-color: #f2f2f2;
+	.cmplz-grid-header .cmplz-grid-controls {
+	  img {
+		margin-top:0;
+		width: 182px;
+	  }
+	}
+
+	.cmplz-other-plugin {
+	  display: flex !important; //we need important here, because the grid switch overrides it on element level
+	  flex-direction: row;
+	  padding: 5px 0;
+	  align-items: center;
+	  color: @light-text-color;
+	  .plugin-text a {
+		color:@light-text-color;
+		text-decoration:none;
+
+		&:hover {
+		  text-decoration:underline;
+		}
+	  }
+	  &.cmplz-zip .cmplz-bullet {
+		background-color:@rsp-pink;
+	  }
+	  &.cmplz-wpsi .cmplz-bullet {
+		background-color:@rsp-red;
+	  }
+	  &.cmplz-rsssl .cmplz-bullet {
+		background-color:@rsp-yellow;
+	  }
+	}
+
+	  .plugin-status {
+		margin-left: auto;
+	  }
+  }
+
+
+  .cmplz-tips-tricks {
+	.item-content{
+	  display: flex;
+	  flex-wrap: wrap;
+	  flex-direction: row;
+	}
+
+	  .cmplz-trick {
+		display: flex;
+		width: 50%;
+		a {
+		  text-decoration: none;
+		  color: @light-text-color;
+		  display: flex;
+		  align-items: center;
+		  padding:2px 0;
+		}
+
+		.cmplz-tips-tricks-content {
+		  float: left;
+		  color: @light-text-color;
+		  &:hover {
+			text-decoration: underline;
+		  }
+		}
+	  }
+
+  }
+}

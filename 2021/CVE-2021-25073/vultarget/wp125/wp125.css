@@ -1,0 +1,27 @@
+/*
+Stylesheet for the WP125 ad management plugin
+URL: http://www.webmaster-source.com/wp125-ad-plugin-wordpress/
+*/
+
+
+/* Styles for one-column display */
+#wp125adwrap_1c { width:100%; }
+#wp125adwrap_1c .wp125ad { margin-bottom:8px; }
+
+/* Styles for two-column display */
+#wp125adwrap_2c { width:100%; }
+#wp125adwrap_2c .wp125ad { width:125px; float:left; padding:4px; }
+
+/* Clearfix */
+.wp125clearfix {
+  *zoom: 1;
+}
+.wp125clearfix:before,
+.wp125clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.wp125clearfix:after {
+  clear: both;
+}

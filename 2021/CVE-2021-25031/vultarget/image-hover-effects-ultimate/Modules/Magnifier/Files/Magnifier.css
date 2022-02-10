@@ -1,0 +1,34 @@
+  
+
+ .oxi_addons__image_magnifier_wrapper{
+    width: 100%; 
+    float: left;
+}
+.oxi_addons__image_magnifier{
+   display: flex; 
+   width: 100%;
+}
+
+.oxi_addons__image_magnifier .oxi_addons_grayscale{
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray;
+}
+.oxi_addons__image_magnifier .oxi_addons__image{
+   width: 100%;
+}
+.oxi_addons__image_magnifier .oxi_addons__image:hover{
+   cursor: crosshair;
+}
+.oxi_addons__image_magnifier .oxi_addons__magnifier_right{
+   top: 0px;
+}
+.oxi_addons__image_magnifier .zoomable{
+   z-index: 9999;
+}
+.oxi_addons__image.oxi__image_height_width{
+   display: flex;
+   justify-content: center;
+}

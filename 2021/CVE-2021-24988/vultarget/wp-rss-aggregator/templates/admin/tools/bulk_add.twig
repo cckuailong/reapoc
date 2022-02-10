@@ -1,0 +1,16 @@
+<h2>{% trans "Bulk Add Sources" %}</h2>
+<p>{% trans "Create multiple feed sources at once, by entering the name and URLs of your feeds below." %}</p>
+<p>{% trans "The feed sources will be created using your global settings." %}</p>
+<p>
+    {% trans "Put each feed on its own line, and separate the name and the URL using a comma. For example:" %}
+    <code>{% trans "Feed Name, http://www.myfeed.com" %}</code>
+</p>
+
+<form id="bulk-add-form" method="POST">
+    {{ wp_nonce_field('wpra_bulk_add', 'wpra_bulk_nonce') }}
+    <textarea rows="6" cols="80" form="bulk-add-form" name="wpra_bulk_feeds" autofocus></textarea>
+
+    <p>
+        <input type="submit" class="button-secondary" name="wpra_bulk_add" value="{{ "Add feeds"|trans|e('html_attr') }}" />
+    </p>
+</form>

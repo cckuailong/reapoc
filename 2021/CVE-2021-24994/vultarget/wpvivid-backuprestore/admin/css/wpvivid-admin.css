@@ -1,0 +1,266 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.list-top-chip{float:left;display:block; vertical-align:middle; }
+.list-top-chip::after{content:" "}
+.backup-basic-info{min-width:100px; margin:10px; float:left;}
+.quickbackup{width:calc(100% - 290px);float:left; box-sizing:border-box;margin-right:10px; padding:10px;}
+.quickbackup label{display:inline-block;margin-bottom:10px;}
+.qucikbackup-schedule{width:280px; float:left; box-sizing:border-box; min-width:280px;}
+.quickstart-archive-block{width:33%;float:left; position:relative; box-sizing:border-box; }
+.quickstart-storage-block{width:33%;padding:10px; float:left; position:relative; box-sizing:border-box;}
+.quickstart-btn{width:33%;padding:10px; float:left; position:relative; box-sizing:border-box;}
+.quickbackup-btn{display:block !important; margin:0 auto !important;width:150px;height:50px !important; line-height:48px !important; font-size:20px !important;}
+.schedule-block{float:left;width:100%;padding:0 10px 10px 10px;box-sizing:border-box;}
+.postbox:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.quickbackup-block .fieldset label{margin-bottom:5px;}
+.custom-info{padding:10px;}
+.quickstart-storage-setting{width:100%;float:left; padding-left:10px; box-sizing:border-box;background-color:#f1f1f1; margin-bottom:10px;}
+.action-progress-bar{background-color:#f1f1f1 !important;margin:10px;color:#000;}
+.action-progress-bar-percent{background-color:#0085ba !important;color:#fff;}
+.storage-providers{float:left;padding:10px;cursor:pointer;}
+.storage-providers:hover{background-color:#f1f1f1 !important; color:#fff !important;}
+.storage-providers-active{background-color:#0085ba !important; color:#fff !important;}
+.storage-account-block{padding:10px;}
+.storage-account-button{margin:10px 10px 10px 0 !important;display:block !important; float:left;}
+.schedule-tab-block{padding:10px;}
+.schedule-tab-block input{display:line-block; margin-top:10px; margin-bottom:10px;margin-right:10px;}
+.setting-tab-block{padding: 10px 10px 10px 0;}
+.setting-tab-block input{display:line-block; margin-top:10px; margin-bottom:10px;margin-right:10px;}
+.setting-page-content{padding-left:10px;}
+.backup-log-btn{height:30px;float:left; margin-left:10px; margin-bottom:10px;}
+@keyframes rotate { 0%   { transform: rotate(0); } 100%  { transform: rotate(359.9deg); } }
+.wpvivid-backup-storage-list tr:hover,
+.wpvivid-websiteinfo-list tr:hover,
+.wpvivid-backuplist tr:hover,
+.wpvivid-loglist tr:hover,
+.wpvivid-remote-storage-list tr:hover {background-color: #f9f9f9;}
+.restore_log{padding:10px; width:100%; height:500px; overflow:auto; box-sizing:border-box;}
+.restore-button-position{margin:10px 10px 10px 0px; float:left;}
+.restore-button-position input{margin-right:10px;}
+.nav-tab.delete{display: block;overflow: hidden;position:relative;}
+.nav-tab-delete-img{position: absolute;top: 0px;right: 3px;}
+.button-secondary.log-page{background: #fff;color: #00a0d2;border: 1px solid #00a0d2;margin: 3px;}
+.button-secondary.log-page:hover{color: #0b82a7;border: 1px solid #0b82a7;}
+.button-secondary.log-page:focus{color: #00a0d2;border: 1px solid #00a0d2;}
+.remote-storage-set-default-block{padding-top:10px;padding-left:10px;padding-right:10px;}
+.remote-storage-set-default-block input{display:line-block; margin-top:10px; margin-bottom:10px;margin-right:10px;}
+.remote-storage-ftp-passive-block,
+.remote-storage-amazons3-storage-class,
+.remote-storage-amazons3-encryption{padding-left:10px;}
+.remote-storage-ftp-passive-block input,
+.remote-storage-amazons3-storage-class input,
+.remote-storage-amazons3-encryption input{display:line-block; margin-top:10px; margin-bottom:10px;margin-right:10px;}
+.backup-list-head{}
+.storage-account-form {padding-top: 1px; padding-bottom: 1px;}
+.quicktransfer{width:100%; float:left; box-sizing:border-box;margin-right:10px; padding:10px;}
+.quicktransfer label{display:inline-block;margin-bottom:10px;}
+.quicktransfer-btn{display:block !important; margin:0 auto !important;width:220px;height:50px !important; line-height:48px !important; font-size:20px !important;}
+.wpvivid-feature-pro{font-size:12px;border:1px solid #f1f1f1;padding:3px 5px;margin: 10px 10px 10px 0;border-radius:5px;}
+@media screen and (max-width:1650px) {
+	.qucikbackup-schedule{
+		float:none;
+		width:100%;
+	}
+	.quickbackup{
+		float:none;
+		width:100%;
+	}
+	.export-import-block{
+		float:none;
+		width:100%;
+	}
+}
+@media only screen and (max-width: 1350px){
+	#poststuff #post-body.columns-2 {
+    	margin:0;
+	}
+    #wpbody-content #post-body.columns-2 #postbox-container-1 {
+        margin-right: 0;
+        width: 100%;
+	}
+
+}
+
+@media screen and (max-width:1315px) {
+	.quickstart-storage-block{
+		width:50%;
+	}
+	.quickstart-archive-block{
+		width:50%;
+	}
+	.quickstart-btn{
+		clear:both;
+		float:none;
+		width:100%;		
+	}
+}
+@media screen and (max-width:800px){
+	.tablelistcolumn{
+		display:block;
+	}
+	.backup-list-head{
+		display:none;
+	}
+    .backuptime{
+		font-size:16px;		
+	}
+	.backuplist-delete-backup{
+		display:none;
+	}
+	.website-info-head{
+		display:none;
+	}
+	.log-head{
+		display:none;
+	}
+	.lafowef{
+		display:none;
+	}
+	.storage-account-form input{
+		width:360px;
+	}
+}
+@media screen and (max-width:600px) {
+	.quickstart-storage-block{
+		float:none;
+		width:100%;
+	}
+	.quickstart-archive-block{
+		float:none;
+		width:100%;
+	}
+	.quickstart-btn{
+		float:none;
+		width:100%;		
+	}
+}
+
+/* Popup container */
+.wpvivid-popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.wpvivid-popup .wpvivid-popuptext {
+	visibility: hidden;
+	width: 220px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 75%;
+	margin-left: -80px;
+}
+
+/* Popup arrow */
+.wpvivid-popup .wpvivid-popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.wpvivid-popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+.wpvivid-popup .hide {
+	visibility: hidden;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}
+
+.wpvivid-storage-form{
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.wpvivid-storage-select{
+	margin-top:10px;
+	margin-bottom:5px;
+	padding-bottom:8px;
+	padding-left:2px;
+}
+
+.wpvivid-storage-form input[type=text],
+.wpvivid-storage-form input[type=password]{
+	width: 350px;
+}
+
+.wpvivid-storage-form-desc{
+	background-color:#f5f5f5;
+	margin-top:10px;
+	padding:4px 5px;
+}
+
+.wpvivid-debug-text-fix{
+	height: 28px;
+	line-height: 28px;
+}
+
+@media screen and (max-width: 782px) {
+	.wpvivid-debug-text-fix{
+		height: 36px;
+		line-height: 36px;
+	}
+}
+
+.wpvivid-text-space-bottom{margin-bottom: 5px;}
+.wpvivid-text-space-right{margin-right: 5px;}
+.wpvivid-element-space-bottom{margin-bottom: 10px;}
+.wpvivid-element-space-right{margin-right: 10px;}
+.wpvivid-export-type-provider{float: left; cursor: pointer; padding: 10px; height: 30px; line-height: 30px; border-right: 1px solid #e5e5e5;}
+.wpvivid-export-type-provider:hover{background-color:#f1f1f1 !important;}
+.wpvivid-export-type-provider-active{background-color:#0085ba !important;}
+.wpvivid-import-log{padding:10px; width:100%; height:500px; overflow:auto; box-sizing:border-box;}
+.import > tbody > :nth-child(odd) {background-color: #ffffff;}
+.import > tbody tr:hover {background-color: #f9f9f9;}
+.import .column-delete {width: 10%;}
+.wpvivid-export-import-block span{margin: 0;}
+.export-import-block{width:100%; box-sizing:border-box;margin-right:10px; padding:10px;}
+.export-import-block label{display:inline-block;}
+.export-import-block a{text-decoration: none;}
+
+.quickbackup-addon{width:100%; box-sizing:border-box;margin-right:10px; padding:10px;}
+.quickbackup-addon label{display:inline-block;}
+@media screen and (max-width:1650px) {
+	.quickbackup-addon{
+		float:none;
+		width:100%;
+	}
+}
+.quickbackup-addon a{
+	text-decoration: none;
+}
+
+.wpvivid-backup-tips{
+	float:left;
+	width:100%;
+	background-color:#f1f1f1;
+}

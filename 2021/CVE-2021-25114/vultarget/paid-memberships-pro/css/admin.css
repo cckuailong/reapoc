@@ -1,0 +1,839 @@
+/* icon */
+#wp-admin-bar-paid-memberships-pro .ab-item .ab-icon:before {
+	font-family: "dashicons";
+	content: "\f307";
+}
+.pmpro_admin tr td .dashicons {
+	padding-top: 5px;
+}
+
+/* header/etc */
+.pmpro_admin {
+	background-image: url(../images/Paid-Memberships-Pro_watermark.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 290px 40px;
+	padding: 1em 0 70px 0;
+}
+.pmpro_admin .pmpro_banner {
+	display: grid;
+	grid-template-areas: "logo meta";
+	grid-template-columns: 350px auto;
+}
+.pmpro_admin .pmpro_banner .pmpro_logo {
+	grid-area: logo;
+}
+.pmpro_admin .pmpro_banner .pmpro_meta {
+	align-self: center;
+	grid-area: meta;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.pmpro_admin .pmpro_banner .pmpro_meta .pmpro_version {
+	color: #77a02e;
+	display: inline-block;
+	font-weight: bold;
+	padding: 5px 10px 5px 2px;
+}
+.pmpro_admin .pmpro_banner .pmpro_meta a {
+	border-left: 1px solid #CCC;
+	padding: 5px 10px;
+}
+.pmpro_admin .pmpro_banner .pmpro_meta a.pmpro_license_tag {
+	font-weight: bold;
+	padding: 5px 10px 5px 5px;
+	text-decoration: none;
+}
+.pmpro_admin .pmpro_banner .pmpro_meta a.pmpro_license_tag:before {
+	bottom: 7px;
+	display: inline-block;
+	font: 400 20px/1 dashicons;
+	left: 0;
+	position: relative;
+	text-decoration: none;
+	vertical-align: bottom;
+}
+.pmpro_admin .pmpro_banner .pmpro_meta a.pmpro_license_tag.pmpro_license_tag-valid {
+	color: rgb( 70, 180, 80 );
+}
+.pmpro_admin .pmpro_banner .pmpro_meta a.pmpro_license_tag.pmpro_license_tag-valid:before {
+	content: "\f147";
+}
+.pmpro_admin .pmpro_banner .pmpro_meta a.pmpro_license_tag.pmpro_license_tag-invalid {
+	color: #AAA;
+}
+.pmpro_admin .pmpro_banner .pmpro_meta a.pmpro_license_tag.pmpro_license_tag-invalid:before {
+	content: "\f335";
+}
+
+.pmpro_admin .pmpro_wp-notice-fix {
+	height: 1px;
+	line-height: 1px;
+	margin: 0;
+}
+.pmpro_admin .topborder {
+	border-top: 1px solid #CCC;
+	margin-top: 1em;
+	padding-top: 1em;
+}
+.pmpro_admin #editorcontainer #description {
+	width: 100%;
+	height: 180px;
+}
+.pmpro_admin .pmpro_icon {
+	max-width: 200px;
+	height: auto;
+}
+
+/* Scollable Boxes */
+.pmpro_scrollable {
+	background-color: #FFFFFF;
+	height: 170px;
+	overflow: auto;
+}
+.pmpro_scrollable::-webkit-scrollbar {
+	background-color: #c3c4c7;
+	width: 8px;
+	height: 8px;
+}
+.pmpro_scrollable::-webkit-scrollbar-thumb {
+	background: #2c3338;
+	border-radius: 5px;
+}
+.pmpro_scrollable table.widefat {
+	border: none;
+}
+
+/**
+ * Checkbox Boxes
+ *
+ * Note: We will eventually remove the non-prefixed class names here. They are still in some Add Ons.
+ *
+ */
+.pmpro_checkbox_box,
+.checkbox_box {
+	background-color: #FFFFFF;
+	border: 1px solid #c3c4c7;
+	max-width: 300px;
+}
+.pmpro_checkbox_box div,
+.checkbox_box div {
+	border-bottom: 1px solid #CCC;
+	padding: 3px;
+}
+.pmpro_checkbox_box div:last-child,
+.checkbox_box div:last-child {
+	border-bottom: none;
+}
+.pmpro_checkbox_box .pmpro_clickable,
+.checkbox_box .clickable {
+	cursor: pointer;
+}
+.pmpro_checkbox_box .pmpro_clickable:hover,
+.checkbox_box .clickable:hover {
+	background: #FFC;
+}
+.pmpro_checkbox_box .pmpro_clickable {
+	align-items: center;
+	display: flex;
+}
+.pmpro_checkbox_box .pmpro_clickable label {
+	flex-grow: 1;
+}
+.pmpro_checkbox_box .pmpro_clickable input[type=checkbox] {
+	margin-top: 0;
+}
+
+/* Consent Log */
+.pmpro_consent_log.pmpro_scrollable {
+	max-width: 800px;
+	border: 1px solid #c3c4c7;
+	padding: 0;
+}
+.pmpro_consent_log li {
+	font-size: 13px;
+	line-height: 1.5em;
+	margin: 0;
+}
+.pmpro_consent_log.pmpro_scrollable li {
+	padding: 8px 10px;
+}
+.pmpro_consent_log.pmpro_scrollable li:nth-child(odd) {
+	background-color: #f6f7f7;
+}
+
+/* levels */
+.memberships_page_pmpro-membershiplevels .pmpro_admin #posts-filter p.search-box {
+	margin: 2em 0 1em 0;
+}
+.memberships_page_pmpro-membershiplevels .pmpro_admin tr.pmpro_gray td {
+	color: #AAA;
+}
+.memberships_page_pmpro-membershiplevels .pmpro_admin tr td.level_name span.level-name a {
+	font-size: 115%;
+	font-weight: bold;
+}
+.memberships_page_pmpro-membershiplevels .pmpro_admin .membership-levels tr {
+	background: #fff;
+}
+.memberships_page_pmpro-membershiplevels .pmpro_admin .membership-levels tr.alternate {
+	background: #f1f1f1;
+}
+.memberships_page_pmpro-membershiplevels .pmpro_admin .membership-levels tr.ui-sortable-handle {
+	border: 1px solid #2997C8;
+	cursor: move;
+}
+.memberships_page_pmpro-membershiplevels .pmpro_admin .membership-levels tr th:first-child:before,
+.memberships_page_pmpro-membershiplevels .pmpro_admin .membership-levels tr td:first-child:before {
+	color: #CCC;
+	content: "\f333";
+	display: inline-block;
+	font: 400 16px/1 dashicons;
+	opacity: 0;
+	width: 25px;
+}
+.memberships_page_pmpro-membershiplevels .pmpro_admin .membership-levels tr:hover td:first-child:before {
+	opacity: 1;
+}
+.memberships_page_pmpro-membershiplevels .pmpro_admin tr.testclass {
+	border: 3px solid #2997C8;
+	background: #2997C8;
+}
+.memberships_page_pmpro-membershiplevels .pmpro_admin tr.membership_categories ul {
+	margin-left: 25px;
+}
+
+/* payment settings */
+.admin_page_pmpro-paymentsettings .form-table select {
+	max-width: none;
+}
+
+.admin_page_pmpro-paymentsettings span.pmpro_gateway-mode {
+	border: 1px solid;
+	border-radius: 3px;
+	display: inline-block;
+	font-size:  75%;
+	margin-left: 5px;
+	padding: 3px 5px;
+}
+
+.admin_page_pmpro-paymentsettings span.pmpro_gateway-mode-live {
+	background-color: #edfaef;
+	border-color: #00a32a;
+	color: #00a32a;
+}
+
+.admin_page_pmpro-paymentsettings span.pmpro_gateway-mode-live.pmpro_gateway-mode-not-connected {
+	background-color: #fcf0f1;
+	border-color: #d63638;
+	color: #d63638;
+}
+
+.admin_page_pmpro-paymentsettings span.pmpro_gateway-mode-test {
+	background-color: #fcf9e8;
+	border-color: #dba617;
+	color: #dba617;
+}
+
+.admin_page_pmpro-paymentsettings span.pmpro_gateway-mode-test.pmpro_gateway-mode-not-connected {
+	background-color: #f9f3d3;
+	border-color: #d59a13;
+	color: #d59a13;
+}
+
+.admin_page_pmpro-paymentsettings .pmpro-stripe-connect {
+  display: inline-block;
+  margin-bottom: 1px;
+
+  background-image: -webkit-linear-gradient(#28A0E5, #015E94);
+  background-image: -moz-linear-gradient(#28A0E5, #015E94);
+  background-image: -ms-linear-gradient(#28A0E5, #015E94);
+  background-image: linear-gradient(#28A0E5, #015E94);
+
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  padding: 1px;
+  height: 30px;
+  text-decoration: none;
+
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+
+  cursor: pointer;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.admin_page_pmpro-paymentsettings .pmpro-stripe-connect span {
+  display: block;
+  position: relative;
+  padding: 0 12px 0 44px;
+  height: 30px;
+
+  background: #1275FF;
+  background-image: -webkit-linear-gradient(#7DC5EE, #008CDD 85%, #30A2E4);
+  background-image: -moz-linear-gradient(#7DC5EE, #008CDD 85%, #30A2E4);
+  background-image: -ms-linear-gradient(#7DC5EE, #008CDD 85%, #30A2E4);
+  background-image: linear-gradient(#7DC5EE, #008CDD 85%, #30A2E4);
+
+  font-size: 14px;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.admin_page_pmpro-paymentsettings .pmpro-stripe-connect span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  width: 23px;
+  height: 24px;
+  margin-top: -12px;
+  background-repeat: no-repeat;
+  background-size: 23px 24px;
+}
+
+.admin_page_pmpro-paymentsettings .pmpro-stripe-connect:active {
+  background: #005D93;
+}
+
+.admin_page_pmpro-paymentsettings .pmpro-stripe-connect:active span {
+  color: #EEE;
+
+  background: #008CDD;
+  background-image: -webkit-linear-gradient(#008CDD, #008CDD 85%, #239ADF);
+  background-image: -moz-linear-gradient(#008CDD, #008CDD 85%, #239ADF);
+  background-image: -ms-linear-gradient(#008CDD, #008CDD 85%, #239ADF);
+  background-image: linear-gradient(#008CDD, #008CDD 85%, #239ADF);
+
+  -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.admin_page_pmpro-paymentsettings .pmpro-stripe-connect span:before {
+  background-image: url("data:image/png;base64,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");
+}
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+  .admin_page_pmpro-paymentsettings .pmpro-stripe-connect span:before {
+    background-image: url("data:image/png;base64,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");
+  }
+}
+
+.admin_page_pmpro-paymentsettings .pmpro-admin-secure-key {
+	-webkit-text-security: disc;
+}
+
+/* advanced settings */
+.admin_page_pmpro-advancedsettings .form-table select:not(.admin_page_pmpro-advancedsettings .form-table select#tospage) {
+	max-width: none;
+}
+
+/* orders */
+.memberships_page_pmpro-orders .pmpro_admin .nav-tab-wrapper {
+	margin-bottom: 10px;
+}
+
+/* members list */
+.wp-list-table.members .column-ID {
+	white-space: nowrap;
+}
+.wp-list-table.members #display_name {
+	width: auto;
+}
+
+/* settings */
+tr.pmpro_settings_divider td {
+	padding: 0;
+	margin: 0;
+}
+
+/* admin pages */
+.pmpro_admin_section-email-templates-content .pmpro-email-templates-variable-reference .form-table td {
+	padding: 5px;
+}
+.pmpro_admin_section-email-templates-content .pmpro-email-templates-variable-reference .form-table .widefat {
+	margin-bottom: 20px;
+}
+
+/* messages */
+.pmpro_admin .pmpro_message {
+	background: #FFF;
+	border-left: 4px solid #FFF;
+	margin-right: 15px;
+	padding: 15px;
+}
+.pmpro_admin .pmpro_success {
+	background-color: rgba( 70, 180, 80, 0.1 );
+	border-left-color: rgb( 70, 180, 80 );
+}
+.pmpro_admin .pmpro_error,
+.pmpro_admin tr.pmpro_error td {
+	background-color: rgba( 220, 50, 50, 0.1 );
+	border-left-color: rgb( 220, 50, 50 );
+}
+.pmpro_admin .pmpro_alert {
+	background-color: rgba( 255, 185, 0, 0.1 );
+	border-left-color: rgb( 255, 185, 0 );
+}
+.pmpro_admin .pmpro_success a {
+	color: #208A1B;
+}
+.pmpro_admin .pmpro_error a,
+.pmpro_admin tr.pmpro_error td {
+	color: #CC0000;
+}
+.pmpro_admin .pmpro_alert a {
+	color: #CF8516;
+}
+
+/* notifications */
+#pmpro_notifications .pmpro_notification {
+	position: relative;
+}
+#pmpro_notifications .pmpro_notification .pmpro_notification-general {
+	background: #FFF;
+	border-left: 4px solid #77A02E;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	margin: 1em 0;
+	padding: 15px;
+}
+#pmpro_notifications .pmpro_notification .pmpro_notification-error {
+	background: #FFF;
+	border-left: 4px solid #DC3232;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	margin: 1em 0;
+	padding: 15px;
+}
+#pmpro_notifications .pmpro_notification h3 {
+	font-size: 24px;
+	font-weight: 400;
+	margin: 0;
+}
+#pmpro_notifications .pmpro_notification p {
+	margin: 1em 0 0 0;
+}
+#pmpro_notifications .pmpro_notification .button {
+	margin-right: 5px;
+}
+#pmpro_notifications .pmpro_notification .pmpro_notification-general h3 {
+	color: #77A02E;
+}
+#pmpro_notifications .pmpro_notification .pmpro_notification-error h3 {
+	color: #DC3232;
+}
+
+/* highlighted trs */
+tr.pmpro_message {
+	background-image: none;
+}
+tr.pmpro_success {
+	background-image: none;
+}
+tr.pmpro_error {
+	background-image: none;
+}
+tr.pmpro_alert {
+	background-image: none;
+}
+
+/* discount levels */
+.pmpro_discount_levels .pmpro_discount_level {
+	border: 1px solid #CCC;
+	margin: 15px 0;
+	padding: 10px;
+}
+.pmpro_discount_levels .pmpro_discount_level .pmpro_discount_levels_pricing {
+	background: #FFFFFF;
+	border: 1px solid #CCC;
+	margin: 10px 0 0 0;
+	padding: 0px 20px;
+}
+
+/* pagination */
+div.pmpro_pagination {
+	padding: 3px;
+	margin: 5px 0px 5px 0px;
+	font-size: 10px;
+	float: right;
+}
+div.pmpro_pagination a {
+	padding: 2px 5px 2px 5px;
+	margin: 1px;
+	border: 1px solid #666;
+	text-decoration: none;
+	/* no underline */ color: #666;
+	background: #EEE;
+}
+div.pmpro_pagination a:hover, div.pmpro_pagination a:active {
+	background: #FFF;
+}
+div.pmpro_pagination span.current {
+	border: 1px solid #FFF;
+	color: #FFF;
+	background: #666;
+	padding: 2px 5px 2px 5px;
+	margin: 1px;
+	font-weight: bold;
+}
+div.pmpro_pagination span.disabled {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #BBB;
+	color: #BBB;
+	background: #EFEFEF;
+}
+
+p.pmpro_meta_notice {
+	font-size: .8em;
+	padding-top: 5px;
+	border-top: 1px solid #CCC;
+}
+
+/* add ons */
+.memberships_page_pmpro-addons .pmpro_admin .nav-tab-wrapper {
+	margin-bottom: 10px;
+}
+.pmpro_admin .widgets-holder-wrap {
+	clear: both;
+	margin-top: 20px;
+	padding: 0 8px;
+}
+.pmpro_admin .widgets-holder-wrap .widget {
+	float: left;
+	width: 32%;
+	margin: 0 1% 1% 0;
+	position: relative;
+}
+.pmpro_admin .widgets-holder-wrap p.description {
+	padding: 0;
+}
+.pmpro_admin .widgets-holder-wrap .widget-top {
+	height: auto;
+	cursor: default;
+}
+.pmpro_admin .widgets-holder-wrap .widget-inside {
+	display: block;
+	height: 130px;
+	overflow: hidden;
+}
+.pmpro_admin .widgets-holder-wrap .widget-inside p {
+	height: 80px;
+	overflow: hidden;
+}
+.pmpro_admin #pmpro-gists.widgets-holder-wrap .widget-inside,
+.pmpro_admin #pmpro-gists.widgets-holder-wrap .widget-inside p {
+	height: auto;
+}
+.pmpro_admin .widgets-holder-wrap .widget-title { }
+.pmpro_admin .widgets-holder-wrap .widget-title h4 { }
+.pmpro_admin .widgets-holder-wrap .widget-title .status-label {
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #DFDFDF;
+	text-indent: -9999em;
+}
+.pmpro_admin .widgets-holder-wrap .disabled .widget-title .status-label {
+	background: #F00;
+}
+.pmpro_admin .widgets-holder-wrap .enabled .widget-title .status-label {
+	background: #0C0;
+}
+
+.pmpro_admin .widgets-holder-wrap .widget-title .version {
+	position: absolute;
+	top: 13px;
+	right: 10px;
+}
+.pmpro_admin .widgets-holder-wrap .widget-inside .addon-thumb {
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin: 10px 0 0 10px;
+	border: 1px solid #DFDFDF;
+	background: #FFF;
+	padding: 2px;
+}
+
+@media (max-width:900px) {
+	.auto-fold .pmpro_admin .widgets-holder-wrap .widget {
+		float: none;
+		width: 100%;
+	}
+	.auto-fold .pmpro_admin .widgets-holder-wrap .widget-inside,
+	.auto-fold .pmpro_admin .widgets-holder-wrap .widget-inside p {
+		height: auto;
+	}
+}
+
+/* license */
+.memberships_page_pmpro-license h2 {
+	text-align: left;
+}
+.memberships_page_pmpro-license .pmpro_icon {
+	margin-top: 20px;
+}
+
+/* misc */
+.pmpro_lite {
+	color: #777;
+}
+.pmpro_pad20 {
+	padding: 20px !important;
+}
+.pmpro_red {
+	color: #CC0000;
+}
+.pmpro_green {
+	color: #00AA00;
+}
+.ssp_description #description {
+	width: 100%;
+}
+.top0em {
+	margin-top: 0;
+}
+h2.nav-tab-wrapper {
+	margin-bottom: 1em;
+}
+
+/* reports */
+.memberships_page_pmpro-reports .pmpro_admin .nav-tab-wrapper {
+	margin-bottom: 10px;
+}
+.pmpro_reports-holder { }
+.pmpro_reports-holder .postbox h2 {
+	border-bottom: 1px solid #eee;
+	font-size: 14px;
+	padding: 8px 12px;
+	margin: 0;
+	line-height: 1.4;
+}
+.pmpro_clickable {
+	cursor: pointer;
+}
+.js .postbox.pmpro_clickable h3 {
+	cursor: pointer;
+}
+#pmpro_report_login .wp-list-table tbody td,
+#pmpro_report_memberships .wp-list-table tbody tr.pmpro_report_tr td,
+#pmpro_report_sales .wp-list-table tbody tr.pmpro_report_tr td {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+#pmpro_report_sales .wp-list-table tbody td:last-child {
+	text-align: right;
+}
+.pmpro_report-holder .wp-list-table tbody th button {
+	border: none;
+	background: 0 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	color: #555;
+	cursor: pointer;
+	line-height: 1.7;
+	padding: 0;
+}
+button.pmpro_report_th:before {
+	bottom: 2px;
+	display: inline-block;
+	font: 400 20px/1 dashicons;
+	left: 0;
+	padding: 0 5px 0 0;
+	position: relative;
+	text-decoration: none;
+	vertical-align: bottom;
+}
+button.pmpro_report_th_opened:before {
+	content: "\f140";
+}
+button.pmpro_report_th_closed:before {
+	content: "\f139";
+}
+.pmpro_report-holder .wp-list-table tbody tr.pmpro_report_tr_sub:last-child th,
+.pmpro_report-holder .wp-list-table tbody tr.pmpro_report_tr_sub:last-child td {
+	border-bottom: 1px solid #CCC;
+}
+#pmpro_report_memberships .wp-list-table tbody:nth-child(odd) .pmpro_report_tr th,
+#pmpro_report_memberships .wp-list-table tbody:nth-child(odd) .pmpro_report_tr td,
+#pmpro_report_sales .wp-list-table tbody:nth-child(odd) .pmpro_report_tr th,
+#pmpro_report_sales .wp-list-table tbody:nth-child(odd) .pmpro_report_tr td {
+	background-color: #fff;
+}
+#pmpro_report_memberships .wp-list-table tbody:nth-child(even) .pmpro_report_tr th,
+#pmpro_report_memberships .wp-list-table tbody:nth-child(even) .pmpro_report_tr td,
+#pmpro_report_sales .wp-list-table tbody:nth-child(even) .pmpro_report_tr th,
+#pmpro_report_sales .wp-list-table tbody:nth-child(even) .pmpro_report_tr td {
+	background-color: #f9f9f9;
+}
+.pmpro_report-holder .pmpro_report-button {
+	text-align: center;
+}
+
+/* Dashboard */
+.pmpro_admin #pmpro_dashboard_welcome h3 {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 1rem 0 0;
+}
+.pmpro_admin #pmpro_dashboard_welcome .pmpro-dashboard-welcome-columns {
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.pmpro_admin #pmpro_dashboard_welcome .button-action {
+	background: #dd823b;
+	border-color: #c36922 #ad5d1e #ad5d1e;
+	color: #fff;
+	box-shadow: 0 1px 0 #ad5d1e;
+	text-shadow: 0 -1px 1px #ad5d1e, 1px 0 1px #ad5d1e, 0 1px 1px #ad5d1e, -1px 0 1px #ad5d1e;
+}
+.pmpro_admin #pmpro_dashboard_welcome ul li {
+	font-size: 14px;
+	line-height: 16px;
+	padding: 0 0 8px;
+}
+.pmpro_admin #pmpro_dashboard_welcome ul li a .dashicons {
+	color: #82878c;
+}
+.pmpro_admin p.text-center {
+	text-align: center;
+}
+
+/* new installation notices */
+.pmpro-new-install {
+	padding: 2rem;
+	text-align: center;
+}
+.pmpro-new-install h2 {
+	color: #AAA;
+	font-size: 2rem;
+}
+.pmpro-new-install h2:before {
+	display: block;
+	font: 400 5rem/1.5 dashicons;
+}
+.memberships_page_pmpro-membershiplevels .pmpro-new-install h2:before {
+	content: "\f110";
+}
+.memberships_page_pmpro-pagesettings .pmpro-new-install h2:before {
+	content: "\f133";
+}
+.memberships_page_pmpro-discountcodes .pmpro-new-install h2:before {
+	content: "\f323";
+}
+#wpbody-content .pmpro-new-install .button-primary,
+#wpbody-content .pmpro-new-install .button {
+	font-size: 1.2em;
+	height: auto;
+	margin-bottom: .5rem;
+	padding: .75em 1.5em;
+}
+
+@media screen and (max-width: 782px) {
+	.pmpro_admin .pmpro_banner {
+		display: block;
+	}
+	.pmpro_admin .nav-tab-wrapper:after {
+		clear: both;
+		display: block;
+	}
+	.pmpro_admin .nav-tab-wrapper a {
+		margin-top: 5px;
+	}
+	.dashboard-widgets-wrap .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column),
+	.pmpro_report-holder .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) {
+		display: table-cell;
+		overflow: hidden;
+		word-wrap: break-word;
+	}
+	#pmpro_dashboard_report_recent_members .wp-list-table .column-username img {
+		display: none;
+	}
+	#pmpro_dashboard_report_recent_orders .wp-list-table {
+		border: none;
+	}
+	#pmpro_dashboard_report_recent_orders .wp-list-table thead,
+	#pmpro_dashboard_report_recent_orders br {
+		display: none;
+	}		
+	#pmpro_dashboard_report_recent_orders .wp-list-table tr,
+	#pmpro_dashboard_report_recent_orders .wp-list-table tr td {
+		background: none;
+		display: inline-block;
+		padding: 0;
+		position: relative;
+	}
+	#pmpro_dashboard_report_recent_orders .wp-list-table tr td:after {
+		color: #CCC;
+		content: ' |';
+	}
+	#pmpro_dashboard_report_recent_orders .wp-list-table tr {
+		padding: 5px;
+	}
+	#pmpro_dashboard_report_recent_orders .wp-list-table tr td:last-child:after {
+		content: '';
+	}
+	.pmpro-new-install {
+		padding: 0;
+	}
+	.pmpro-new-install h2 {
+		font-size: 1.4rem;
+	}
+	.pmpro-new-install .button-primary, .pmpro-new-install .button {
+		display: block;
+	}
+	.pmpro_admin #pmpro_dashboard_welcome .pmpro-dashboard-welcome-columns {
+		display: block;
+	}
+	.pmpro_admin #pmpro_dashboard_welcome .pmpro-dashboard-welcome-column {
+		border-bottom: 1px solid #CCC;
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+	}
+	.pmpro_admin #pmpro_dashboard_welcome .pmpro-dashboard-welcome-column:last-child {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	.memberships_page_pmpro-membershiplevels .pmpro_admin .membership-levels tr th:first-child:before,
+	.memberships_page_pmpro-membershiplevels .pmpro_admin .membership-levels tr td:first-child:before {
+		content: '';
+		width: 0;
+	}
+}

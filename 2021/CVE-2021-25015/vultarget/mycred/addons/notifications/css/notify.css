@@ -1,0 +1,40 @@
+.notice-wrap {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	z-index: 9999;
+	opacity: 0.8;
+}
+
+* html .notice-wrap {
+	position: absolute;		
+}
+
+.notice-item {
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 0 0 24px 0;
+	padding: 12px;
+	
+	line-height: 22px;
+	font-size: 12px;
+
+	border-radius: 5px;
+	background-color: #dedede;
+	color: #333;
+}
+.notice-item p { display: block; float: right; margin: 0; padding: 0; }
+.notice-item h1 { margin: 0 !important; padding: 0; }
+
+.notice-item-close{
+	display: block;
+	float: left;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+}

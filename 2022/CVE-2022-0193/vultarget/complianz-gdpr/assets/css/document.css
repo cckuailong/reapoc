@@ -1,0 +1,398 @@
+/*
+  To ensure this file is minified, comment the import in document.less, then save this file.
+*/
+#cmplz-manage-consent-container {
+  display: none;
+}
+#cmplz-cookies-overview .cmplz-dropdown .cmplz-service-description,
+#cmplz-document .cmplz-dropdown .cmplz-service-description,
+#cmplz-cookies-overview .cmplz-dropdown .cmplz-sharing-data,
+#cmplz-document .cmplz-dropdown .cmplz-sharing-data {
+  display: inline-block;
+  width: calc(50% - 35px);
+  vertical-align: top;
+}
+@media only screen and (max-width: 600px) {
+  #cmplz-cookies-overview .cmplz-dropdown .cmplz-service-description,
+  #cmplz-document .cmplz-dropdown .cmplz-service-description,
+  #cmplz-cookies-overview .cmplz-dropdown .cmplz-sharing-data,
+  #cmplz-document .cmplz-dropdown .cmplz-sharing-data {
+    width: 100%;
+  }
+}
+#cmplz-cookies-overview .cmplz-dropdown summary::-webkit-details-marker,
+#cmplz-document .cmplz-dropdown summary::-webkit-details-marker,
+#cmplz-cookies-overview .cmplz-dropdown summary::marker,
+#cmplz-document .cmplz-dropdown summary::marker {
+  display: none;
+  content: '';
+}
+#cmplz-cookies-overview .cmplz-dropdown summary div,
+#cmplz-document .cmplz-dropdown summary div {
+  display: grid;
+  grid-template: "heading chevron";
+  grid-template-columns: 2fr 35px;
+  grid-gap: 15px;
+  align-items: center;
+}
+#cmplz-cookies-overview .cmplz-dropdown summary div h3,
+#cmplz-document .cmplz-dropdown summary div h3 {
+  grid-area: heading;
+  margin: 0;
+}
+#cmplz-cookies-overview .cmplz-dropdown summary div:after,
+#cmplz-document .cmplz-dropdown summary div:after {
+  grid-area: chevron;
+}
+#cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy summary div,
+#cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy summary div {
+  grid-template: "heading paragraph chevron";
+  grid-template-columns: 2fr auto 35px;
+}
+#cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy summary div p,
+#cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy summary div p {
+  grid-area: paragraph;
+}
+#cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose,
+#cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose {
+  display: grid;
+}
+@media only screen and (min-width: 600px) {
+  #cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose,
+  #cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose {
+    grid-column: span 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: "purpose purpose purpose" "header1 header2 header3" auto;
+  }
+  #cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .purpose,
+  #cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .purpose {
+    grid-area: purpose;
+  }
+  #cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .name-header,
+  #cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .name-header {
+    grid-area: header1;
+  }
+  #cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .retention-header,
+  #cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .retention-header {
+    grid-area: header2;
+  }
+  #cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .function-header,
+  #cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .function-header {
+    grid-area: header3;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose,
+  #cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose {
+    grid-template-columns: 100px 1fr;
+  }
+  #cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .purpose,
+  #cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy .cookies-per-purpose .purpose {
+    grid-column: span 2;
+  }
+}
+.postbox #cmplz-document {
+  margin: auto auto;
+}
+#cmplz-document {
+  font-size: 14px;
+  margin-top: 0;
+  max-width: 600px;
+  text-justify: inter-word;
+  /* Buttons styles */
+  /*WCAG2.0 */
+}
+#cmplz-document input::-moz-focus-inner,
+#cmplz-document button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+#cmplz-document a {
+  text-decoration: underline;
+}
+#cmplz-document a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}
+#cmplz-document a:focus {
+  border: 1px solid black;
+  padding: 2px;
+}
+#cmplz-document #cmplz-dnsmpd-form label {
+  margin-right: 20px;
+  min-width: 100px;
+  display: inline-block;
+}
+#cmplz-document .alert {
+  padding: 7px;
+  color: white;
+  margin: 10px 0;
+}
+#cmplz-document .alert.error {
+  background-color: #f44336;
+}
+#cmplz-document .alert.success {
+  background-color: green;
+}
+#cmplz-document .close {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#cmplz-document .close:hover {
+  color: black;
+}
+#cmplz-document a.cc-revoke-custom {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  outline: none;
+  *zoom: 1;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 300;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  border: 1px solid;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
+  border-radius: 3px;
+  font-size: 0.9375em;
+  padding: 0.5375em 1.375em;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4682B4;
+  border-color: #4682B4;
+}
+#cmplz-document a.cc-revoke-custom:hover {
+  background-color: #396a93;
+  color: #fff;
+  border-color: #396a93;
+}
+#cmplz-document h2,
+#cmplz-document h3 {
+  font-size: 22px;
+  text-align: left;
+  margin-top: 15px;
+  text-transform: initial;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c6c6c6;
+  margin-bottom: 10px;
+}
+#cmplz-document.impressum h2,
+#cmplz-document.impressum h3 {
+  border-bottom: none;
+  font-size: 1em;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+#cmplz-document.impressum p {
+  margin-bottom: 7px;
+}
+#cmplz-document h4 {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-transform: initial;
+}
+#cmplz-document h5 {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-transform: initial;
+}
+#cmplz-document h3.annex,
+#cmplz-document h4.annex {
+  font-weight: bold;
+}
+#cmplz-document span h3 {
+  font-size: 14px;
+  border-bottom: 0;
+}
+#cmplz-document p,
+#cmplz-document li,
+#cmplz-document td {
+  font-size: 14px;
+  margin-top: 0;
+}
+#cmplz-document ol.alphabetic {
+  counter-reset: list;
+  list-style-type: none;
+}
+#cmplz-document ol.alphabetic li:before {
+  font-weight: bold;
+  content: counter(list, lower-alpha) ") ";
+  counter-increment: list;
+}
+#cmplz-document ul {
+  list-style: disc;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+#cmplz-document ol.alphabetic ol {
+  counter-reset: list;
+  list-style-type: none;
+}
+#cmplz-document ol.alphabetic ol li:before {
+  font-weight: bold;
+  content: counter(list, decimal) ") ";
+  counter-increment: list;
+}
+#cmplz-document .cmplz-subtitle {
+  font-weight: bold;
+  margin-top: 25px;
+}
+#cmplz-document .cmplz-indent {
+  margin-left: 36px;
+}
+#cmplz-cookies-overview .cmplz-dropdown,
+#cmplz-document .cmplz-dropdown {
+  background-color: rgba(239, 239, 239, 0.25);
+}
+#cmplz-cookies-overview .cmplz-dropdown h4,
+#cmplz-document .cmplz-dropdown h4 {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-transform: initial;
+}
+#cmplz-cookies-overview .cmplz-dropdown p,
+#cmplz-document .cmplz-dropdown p,
+#cmplz-cookies-overview .cmplz-dropdown a,
+#cmplz-document .cmplz-dropdown a {
+  font-size: 14px;
+  margin-top: 0;
+}
+#cmplz-cookies-overview .cmplz-dropdown p,
+#cmplz-document .cmplz-dropdown p,
+#cmplz-cookies-overview .cmplz-dropdown a,
+#cmplz-document .cmplz-dropdown a,
+#cmplz-cookies-overview .cmplz-dropdown h4,
+#cmplz-document .cmplz-dropdown h4,
+#cmplz-cookies-overview .cmplz-dropdown ul,
+#cmplz-document .cmplz-dropdown ul {
+  padding: 0 15px ;
+}
+#cmplz-cookies-overview .cmplz-dropdown p.legal-obligations-description,
+#cmplz-document .cmplz-dropdown p.legal-obligations-description {
+  padding-bottom: 15px;
+}
+#cmplz-cookies-overview .cmplz-dropdown summary,
+#cmplz-document .cmplz-dropdown summary {
+  background-color: rgba(239, 239, 239, 0.5);
+  margin: 5px 0;
+  padding: 5px 10px;
+  align-items: center;
+  justify-items: stretch;
+}
+#cmplz-cookies-overview .cmplz-dropdown summary h3,
+#cmplz-document .cmplz-dropdown summary h3 {
+  padding: 0 5px;
+  font-size: 18px;
+  border-bottom: 0;
+}
+#cmplz-cookies-overview .cmplz-dropdown summary p,
+#cmplz-document .cmplz-dropdown summary p {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  border-bottom: 0;
+}
+#cmplz-cookies-overview .cmplz-dropdown summary div:after,
+#cmplz-document .cmplz-dropdown summary div:after {
+  cursor: pointer;
+  content: '';
+  background: url(../images/down.png) no-repeat;
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+}
+#cmplz-cookies-overview .cmplz-dropdown[open],
+#cmplz-document .cmplz-dropdown[open] {
+  padding-bottom: 1px;
+}
+#cmplz-cookies-overview .cmplz-dropdown[open] summary div:after,
+#cmplz-document .cmplz-dropdown[open] summary div:after {
+  transform: rotate(180deg);
+}
+#cmplz-cookies-overview .cmplz-dropdown h4,
+#cmplz-document .cmplz-dropdown h4 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+#cmplz-cookies-overview .cmplz-dropdown h5,
+#cmplz-document .cmplz-dropdown h5 {
+  margin: 0;
+}
+#cmplz-cookies-overview .cmplz-dropdown .cmplz-service-description,
+#cmplz-document .cmplz-dropdown .cmplz-service-description {
+  padding: 0 15px;
+}
+#cmplz-cookies-overview .cmplz-dropdown .cmplz-sharing-data,
+#cmplz-document .cmplz-dropdown .cmplz-sharing-data {
+  padding: 0 15px;
+}
+#cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose,
+#cmplz-document .cmplz-dropdown .cookies-per-purpose {
+  border: 1px solid #dadada;
+  grid-gap: 1px;
+  background-color: #dadada;
+  margin-bottom: 10px;
+}
+#cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose div,
+#cmplz-document .cmplz-dropdown .cookies-per-purpose div {
+  background-color: white;
+  padding: 15px;
+}
+@media only screen and (min-width: 600px) {
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose .name-header,
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose .name-header {
+    background-color: #f7f7f7;
+  }
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose .retention-header,
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose .retention-header {
+    background-color: #f7f7f7;
+  }
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose .function-header,
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose .function-header {
+    background-color: #f7f7f7;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose h5,
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose h5 {
+    line-height: 1.8;
+  }
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+2),
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+2),
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+3),
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+3),
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+4),
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+4),
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+5),
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+5),
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+6),
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+6),
+  #cmplz-cookies-overview .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+7),
+  #cmplz-document .cmplz-dropdown .cookies-per-purpose div:nth-child(12n+7) {
+    background-color: #f7f7f7;
+  }
+}
+/*# sourceMappingURL=document.css.map */

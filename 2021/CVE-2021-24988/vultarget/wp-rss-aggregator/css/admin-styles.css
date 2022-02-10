@@ -1,0 +1,1307 @@
+body.post-type-wprss_feed q {
+    font-style: italic;
+}
+body.post-type-wprss_feed q:before {
+    content: '"';
+}
+body.post-type-wprss_feed q:after {
+    content: '"';
+}
+
+span.wp-rss-footer-text {
+    font-style: italic;
+}
+
+.wprss-input {
+    background: none repeat scroll 0 0 #EAF2FA;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 600px;
+}
+
+.wprss-input p { line-height: 28px; }
+
+.wprss-input label {
+    float: left;
+    width: 95px !important;
+}
+
+.wprss-input input {
+    height: 28px;
+    margin-bottom: 0;
+    padding: 0 0 0 5px;
+    width: 400px;
+}
+
+.wprss-text-input {
+    display: inline-block;
+    width: 400px;
+    max-width: 100%;
+}
+
+label.description {
+    font-size: 13px;
+    font-style: italic;
+}
+
+span.wprss-row-id {
+	color: #8f8f8f;
+}
+
+#icon-wprss-aggregator {
+    background: transparent url( '../images/icon-adminpage32.png' ) no-repeat !important;
+}
+
+body.post-type-wprss_feed #titlediv div.inside { display: none !important; }
+
+#misc-publishing-actions,
+#minor-publishing-actions { display: none; }
+
+div#force-feed-container {
+    border-top: 1px solid #ddd;
+}
+
+
+/* FORM TABLES */
+.wprss-form-table th {
+    width: 160px;
+    max-width: 200px;
+    padding: 10px;
+}
+.wprss-form-table th label {
+    padding-top: 7px;
+}
+.wprss-form-table td {
+    padding: 8px 10px;
+}
+.wprss-form-table td label {
+    line-height: 15px;
+}
+@media screen and (max-width: 1025px) {
+    .wprss-form-table th {
+        display: block;
+        padding: 0;
+    }
+    .wprss-form-table td {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wprss-form-table td input[type="text"],
+    .wprss-form-table td input[type="url"],
+    .wprss-form-table td select {
+        display: block;
+        width: 100%;
+    }
+
+    .wprss-form-table td span.description {
+        display: inline;
+    }
+
+    .wprss-form-table td input[type="checkbox"] + label {
+        display: inline !important;
+    }
+
+    .wprss-form-table td input {
+        line-height: normal;
+    }
+}
+
+
+
+body.post-type-wprss_feed_item .add-new-h2,
+body.post-type-wprss_feed_item .tablenav select[name="m"],
+body.post-type-wprss_feed_item #post-query-submit
+{ display: none; }
+
+body.post-type-wprss_feed_item a.row-title {
+            cursor: default;
+            font-weight: normal;
+            color: #555;
+}
+
+#latest-news-cpac-settings li {
+list-style: none;
+line-height: 16px;
+}
+
+li.twitter a {
+background: transparent url('../images/twitter.png') no-repeat 0;
+padding-left: 20px;
+}
+
+li.facebook a {
+background: transparent url('../images/facebook.png') no-repeat 0;
+padding-left: 20px;
+}
+
+li.donate_link a:hover {
+color: darkGreen;
+}
+
+#preview_meta_box ul {
+    list-style: disc;
+    margin-left: 16px;
+}
+
+#preview_meta_box .invalid-feed-url {
+    color: red;
+}
+
+#preview_meta_box .rss-date {
+    color: #666;
+
+}
+
+/*.rss-aggregator_page_wprss-aggregator-settings .form-table th { width: 80px; }*/
+
+
+/* For excerpts and thumbnails admin screens
+.wprss_feed_page_wprss-aggregator-settings input,
+.wprss_feed_page_wprss-aggregator-settings input[type="checkbox"], 
+.wprss_feed_page_wprss-aggregator-settings input[type="radio"] {
+    margin-right: 8px; 
+}
+*/
+
+.wprss-license-status-text {
+  margin-left: 8px;
+  line-height: 27px;
+  vertical-align: middle;
+}
+
+.wprss-license-icon-valid {
+  color: green;
+}
+
+.wprss-license-icon-invalid,
+.wprss-license-icon-expired {
+  color: #b71919;
+}
+.wprss-license-icon-inactive {
+  color: #d19e5b;
+}
+
+input#default-thumbnail,
+input#wprss-et-license-key,
+input#wprss-c-license-key,
+input#wprss-kf-license-key,
+input#wprss-ftp-license-key {
+    width: 300px;
+}
+
+input#thumbnails-height,
+input#thumbnails-width {
+    /*width: 29px;*/
+}
+
+
+/* Red Button */
+
+.wp-core-ui .button-red {
+    background: #BD2B2B;
+    border-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.wp-core-ui .button-red.hover,
+.wp-core-ui .button-red:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #AC0F0F;
+}
+
+.wp-core-ui .button-red.focus,
+.wp-core-ui .button-red:focus {
+    color: #fff;
+    background-color: #AC0F0F;
+    border-color: transparent;
+    box-shadow: 0 0 0 1px #fff,0 0 0 3px #AC0F0F;
+}
+
+.wp-core-ui .button-red.active,
+.wp-core-ui .button-red:active {
+    color: #fff;
+    background-color: #A20909;
+    border-color: transparent;
+}
+
+.wp-core-ui .button-red[disabled],
+.wp-core-ui .button-red:disabled,
+.wp-core-ui .button-red-disabled {
+    color: #fba6a8 !important;
+    background: #DD383A !important;
+    box-shadow: 0 0 0 transparent !important;
+    border-color: transparent !important;
+    text-shadow: 0 0 0 transparent !important;
+}
+
+#wpra-system-info-textarea,
+#wprss-error-log-textarea {
+    width: 800px;
+    height: 400px;
+    font-family: Menlo, Monaco, monospace;
+    white-space: pre;
+    overflow: auto;
+    display: block;
+}
+
+#wpra-system-info-textarea {
+    display: block;
+    width: 100%;
+    height: 600px;
+    font-family: Menlo, Monaco, monospace;
+    white-space: pre;
+    overflow: auto;
+}
+
+.wprss-error-log-action {
+    display: inline-block;
+}
+
+#wprss-clear-error-log-form {
+    display: inline-block;
+}
+#wprss-clear-error-log-form,
+#wprss-clear-error-log-form > button {
+    vertical-align: baseline;
+}
+
+form.wprss-error-log-action input[type="submit"]:active {
+    vertical-align: baseline;
+}
+/* The debug log root element */
+div.wpra-log {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+/* The "Filters" label */
+div.wpra-log > p > strong:first-child {
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+/* The debug log filters separator */
+div.wpra-log .wpra-toggle-logs:not(:last-of-type)::after {
+    content: ' | ';
+    color: #3c3c3c;
+    pointer-events: none;
+}
+/* The debug log filters */
+div.wpra-log .wpra-toggle-logs a {
+    text-decoration: none;
+    outline: none;
+    box-shadow: 0 0 transparent;
+}
+/* The debug log filters when not selected */
+div.wpra-log .wpra-toggle-logs:not(.wpra-selected):not(.wpra-log-filter-disabled) a {
+    color: #626262;
+}
+/* The debug log filters when selected */
+div.wpra-log .wpra-toggle-logs.wpra-selected:not(.wpra-log-filter-disabled) a {
+    font-weight: bold;
+}
+
+/* The debug log "error" filter text color when there are errors */
+div.wpra-log .wpra-toggle-logs.wpra-selected[data-level="error"]:not(.wpra-log-filter-disabled) a {
+    color: #d40000;
+}
+/* The debug log "warning" filter text color when there are warnings */
+div.wpra-log .wpra-toggle-logs.wpra-selected[data-level="warning"]:not(.wpra-log-filter-disabled) a {
+    color: #d45500;
+}
+/* The debug log "notice" filter text color when there are notices */
+div.wpra-log .wpra-toggle-logs.wpra-selected[data-level="notice"]:not(.wpra-log-filter-disabled) a {
+    color: #d48a00;
+}
+/* The debug log "info" filter text color when there are info logs */
+div.wpra-log .wpra-toggle-logs.wpra-selected[data-level="info"]:not(.wpra-log-filter-disabled) a {
+    color: #009cd6;
+}
+/* The debug log "debug" filter text color when there are debug logs */
+div.wpra-log .wpra-toggle-logs.wpra-selected[data-level="debug"]:not(.wpra-log-filter-disabled) a {
+    color: #8242d4;
+}
+
+/* Disabled debug log filters */
+div.wpra-log .wpra-toggle-logs.wpra-log-filter-disabled a {
+    color: #8b8b8b !important;
+    font-style: italic;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+/* The debug log */
+div.wpra-log-container {
+    width: 100%;
+    max-height: 600px;
+    border: 1px solid #d1d1d1;
+    padding: 5px;
+    margin-bottom: 15px;
+    overflow: auto;
+    background: #222833;
+}
+
+/* The debug log & empty log notice */
+div.wpra-log-container,
+.notice.wpra-empty-log-notice {
+    display: block;
+    box-sizing: border-box;
+}
+.notice.wpra-empty-log-notice {
+    width: 400px;
+}
+
+/* The log table */
+div.wpra-log-container > table {
+    font-family: monospace;
+    min-width: 100%;
+    border: 0;
+    border-collapse: collapse;
+}
+/* Log table: row formatting */
+div.wpra-log-container > table > tbody > tr {
+}
+/* Log table: cell formatting */
+div.wpra-log-container > table > tbody > tr > td {
+    color: #cbcdda;
+    vertical-align: baseline;
+    padding: 4px 10px;
+    border-bottom: 2px solid #222833;
+}
+
+/* Log table: row on hover */
+div.wpra-log-container > table > tbody > tr:hover {
+    background: rgba(200, 200, 200, 0.1);
+}
+
+/* Log table: date and level cells do not wrap */
+div.wpra-log-container > table > tbody > tr > td.wpra-log-date,
+div.wpra-log-container > table > tbody > tr > td.wpra-log-level {
+    white-space: nowrap;
+    overflow: hidden;
+}
+div.wpra-log-container > table > tbody > tr > td.wpra-log-date {
+    width: 150px;
+}
+div.wpra-log-container > table > tbody > tr > td.wpra-log-level {
+    text-align: center;
+    width: 60px;
+}
+div.wpra-log-container > table > tbody > tr > td.wpra-log-feed {
+    width: 150px;
+}
+
+/* Log table: styling for DEBUG log messages */
+div.wpra-log-container > table > tbody > tr.wpra-log-debug > td:not(.wpra-log-date) {
+    color: #b695e6;
+}
+/* Log table: styling for INFO log messages */
+div.wpra-log-container > table > tbody > tr.wpra-log-info > td:not(.wpra-log-date) {
+    color: #38eaff;
+}
+/* Log table: styling for NOTICE log messages */
+div.wpra-log-container > table > tbody > tr.wpra-log-notice > td:not(.wpra-log-date) {
+    color: #ffea00;
+}
+/* Log table: styling for WARNING log messages */
+div.wpra-log-container > table > tbody > tr.wpra-log-warning > td {
+    color: #000;
+    background-color: #ffea00;
+    font-weight: bold;
+}
+/* Log table: styling for ERROR log messages */
+div.wpra-log-container > table > tbody > tr.wpra-log-error > td {
+    color: white;
+    background-color: #b90000;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 782px) {
+    #custom_feed_title {
+        width: 400px;
+    }
+}
+
+/* Number Roller for Feed Source Limit */
+.wprss-number-roller {
+    width: 80px;
+    vertical-align: middle;
+}
+@media screen and (max-width: 782px) {
+    .wprss-number-roller {
+        width: 100px;
+    }
+}
+
+/* Welcome Screen */
+.about-wrap ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+/* Excerpts and Thumbnails */
+
+input#thumbnails-height,
+input#thumbnails-width {
+    margin-right: 2px;
+}
+
+label[for=thumbnails-height],
+label[for=thumbnails-width] {
+    margin-left: 8px;
+}
+
+.wp-list-table > thead > tr > th#thumbnail[scope="col"] {
+    width: 95px;
+}
+
+select + label.description {
+    margin-left: 8px;
+}
+
+input#title-limit {
+    width: 100px;
+}
+
+.wprss-form-table th,
+.wprss-form-table tr,
+.wprss-form-table td {
+    border: 0 transparent !important;
+}
+
+.wprss-indicator-green,
+.wprss-indicator-red,
+.wprss-indicator-grey {
+    font-size: 1.6em;
+    vertical-align: middle;
+    margin-right: 10px;
+    line-height: 30px;
+}
+.wprss-indicator-green {
+    color: #009922;
+}
+.wprss-indicator-grey {
+    color: #888;
+}
+.wprss-indicator-red {
+    color: #EB442A;
+}
+
+
+.wprss-meta-slider {
+    display: none;
+    margin-top: 5px;
+}
+
+.wprss-slider-button {
+    cursor: pointer;
+    margin-right: 8px !important;
+}
+
+#wprss_activate_feed,
+#wprss_pause_feed {
+    display: block;
+}
+
+.wprss-date-error {
+    background: rgba( 245, 45, 45, 0.6 );
+}
+
+div.wprss-meta-side-setting {
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+div.wprss-meta-side-setting > p {
+    margin: 2px 0;
+}
+div.wprss-meta-side-setting > p > label {
+    vertical-align: baseline;
+}
+div.wprss-meta-side-setting a.wprss-slider-button {
+    vertical-align: middle;
+}
+
+div.inside .wprss-meta-side-setting:last-child {
+    border-bottom: 0 solid transparent;
+}
+
+input[type="checkbox"]#wprss-force-feed {
+    margin-left: 10px;
+}
+
+/******************************
+ * FEED SOURCES PAGE COLUMNS
+ */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th {
+    text-align: left;
+    overflow: hidden;
+}
+/* CHECKBOX */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead td#cb {
+    width: 30px !important;
+}
+/* STATE */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#state {
+    width: 70px !important;
+}
+/* NAME */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#title {
+    width: auto;
+}
+/* NEXT UPDATE */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#updates {
+    width: 300px !important;
+}
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts td.column-updates p {
+    margin-bottom: 0 !important;
+}
+/* FEED COUNT */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#feed-count {
+    width: 200px !important;
+}
+/* CATEGORIES */
+body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts thead th#category,
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#category {
+    width: 130px !important;
+}
+
+/* FEED ITEM IMAGE */
+body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts thead th#image {
+    width: 120px;
+}
+body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts tbody img.wpra-item-ft-image {
+    width: 100px;
+}
+
+@media screen and (max-width: 660px) {
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#id,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tfoot th.column-id,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tbody td.column-id,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#state,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tfoot th.column-state,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tbody td.column-state {
+        display: none;
+    }
+}
+@media only screen and (max-width: 782px) {
+    /* WIDEN CHECKBOX COLUMN */
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead td#cb {
+        width: 50px !important;
+    }
+
+    /* HIDE STATE COLUMN */
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#state,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tfoot th.column-state,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tbody td.column-state {
+        display: none;
+        padding: 8px 10px;
+    }
+
+    /* HIDE ITEM IMAGE COLUMN */
+    body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts thead th#image,
+    body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts tfoot th.column-image,
+    body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts tbody td.column-image {
+        display: none;
+    }
+
+    /* IMAGE IS LARGER IN RESPONSIVE MOBILE VIEW */
+    body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts tbody img.wpra-item-ft-image {
+        width: 350px;
+    }
+
+    /* HIDE INLINE IMAGE COLUMN NAME IN RESPONSIVE MOBILE VIEW */
+    body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts tbody td.column-image::before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    /* HIDE ITEM PERMALINK COLUMN */
+    body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts thead th#permalink,
+    body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts tfoot th.column-permalink,
+    body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts tbody td.column-permalink {
+        display: none;
+    }
+}
+
+/* For feed items */
+body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts thead th#publishdate {
+	width: 150px;
+}
+body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts thead th#source {
+	width: 200px;
+}
+
+
+
+i.wprss-feed-error-symbol {
+    display: none;
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: rgb(200,0,0);
+    margin-left: 8px;
+}
+
+i.wprss-updating-feed-icon {
+    margin-left: 8px;
+    display: none;
+}
+
+i.wprss-feed-error-symbol.wprss-show,
+i.wprss-updating-feed-icon.wprss-show {
+    display: inline-block;
+}
+
+/* Log textarea styles */
+#wprss-log-textarea {
+    width: 800px;
+    height: 400px;
+    font-family: Menlo, Monaco, monospace;
+    background: none;
+    white-space: pre-wrap;
+    overflow: auto;
+    display: block;
+    background: rgb( 255, 245, 245 );
+}
+
+
+
+/*--------------------------------------------------------------------------
+*
+*   Add-Ons
+*   
+*-------------------------------------------------------------------------*/
+
+#add-ons {
+    margin-bottom: 20px;
+}
+
+#add-ons .add-on-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#add-ons .add-on-group:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#add-ons .add-on {
+    display: inline-block;
+    position: relative;
+    flex: 0 0 220px;
+    width: 220px;
+    margin: 10px 20px 10px 0;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    min-height: 320px;
+    overflow: hidden;
+}
+
+#add-ons .add-on h3 {
+    margin: 0.5em 0 1.5em;
+}
+
+#add-ons .add-on h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#add-ons .add-on .inner {
+    min-height: 170px;
+    padding: 20px 15px;
+}
+
+#add-ons .add-on .footer {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15px 0;
+}
+
+#add-ons .add-on .footer .button {
+    float: left;
+    margin-left: 15px;
+}
+
+.add-on .corner-ribbon {
+    position: absolute;
+    top: 18px;
+    right: -47px;
+    font-size: 12px;
+    width: 150px;
+    padding: 2px 0;
+    color: #fff;
+    background: #333;
+    text-align: center;
+    transform: rotate(45deg);
+    transform-origin: center center;
+}
+
+#add-ons .add-on.bundle-plan {
+    border: 2px solid #ff792b;
+    box-shadow: 0 0 25px -12px rgba(255, 121, 43, 0.6);
+}
+
+#add-ons .add-on.bundle-plan .corner-ribbon {
+    background: #ff792b;
+}
+
+#add-ons .add-on.spotlight .corner-ribbon {
+    background: #DD234B;
+}
+
+#add-ons .add-on.bundle-plan .footer,
+#add-ons .add-on.spotlight .footer {
+    background: transparent;
+    border-top: 0;
+}
+
+
+#add-ons .add-on-active .button-disabled:focus,
+#add-ons .add-on-active .button-disabled:active {
+    background: #fafafa;
+}
+
+#add-ons .add-on-title {
+    float: left;
+    width: 100%;
+    margin: 25px 0 25px;
+    border-top: #F5F5F5 solid 1px;
+}
+
+/*== BLACKLIST */
+body.post-type-wprss_blacklist .add-new-h2,
+body.post-type-wprss_blacklist ul.subsubsub,
+body.post-type-wprss_blacklist .alignleft.actions {
+    display: none;
+}
+
+body.post-type-wprss_blacklist .alignleft.actions.bulkactions {
+    display: inline-block;
+}
+
+.wprss-header-small {
+	color: #777;
+	font-size: 0.7em;
+}
+
+/* Inline Help ============================================================== */
+
+.wprss-tooltip-handle,
+.wprss-tooltip-handle:hover,
+.wprss-tooltip-handle:focus {
+    text-decoration: none;
+    color: #aaaaaa;
+    outline: none;
+}
+
+.wprss-tooltip-handle {
+    margin-left: 5px;
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+    vertical-align: middle;
+}
+
+.wprss-tooltip-handle-side {
+    float: right;
+}
+
+.wprss-tooltip-content {
+    display: none;
+}
+
+.wprss-ui-tooltip {
+    color: #444 !important;
+    padding: 8px 10px !important;
+    background: #fefefe !important;
+    border: 1px solid #ccc !important;
+    border-radius: 1px !important;
+    font-family: "Open Sans", sans-serif !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.17) !important;
+}
+.wprss-ui-tooltip p:first-child {
+    margin-top: 0;
+}
+.wprss-ui-tooltip p:last-child {
+    margin-bottom: 0;
+}
+.wprss-ui-tooltip p {
+    margin: 8px 0;
+}
+.wprss-ui-tooltip p, code {
+    font-size: 0.9em !important;
+}
+.wprss-ui-tooltip hr {
+    margin: 0;
+}
+
+.wprss-section-tooltip-handle,
+.wprss-section-tooltip-handle:hover,
+.wprss-section-tooltip-handle:active,
+.wprss-section-tooltip-handle:visited,
+.wprss-section-tooltip-handle:link,
+.wprss-section-tooltip-handle:focus {
+    color: #006799;
+    margin-left: 5px;
+    text-decoration: none;
+    outline: none;
+    cursor: help;
+    font-size: 15px;
+}
+
+/* For non settings page screens */
+@media only screen and (max-width: 850px) {
+
+    body:not(.wprss_feed_page_wprss-aggregator-settings) .wprss-tooltip-handle {
+        color: #999;
+        font-size: 1em;
+        padding: 6px 10px;
+        margin-left: 0;
+        background: #e5e5e5;
+        border-radius: 3px;
+        vertical-align: middle;
+    }
+
+    body:not(.wprss_feed_page_wprss-aggregator-settings) select + .wprss-tooltip-handle,
+    body:not(.wprss_feed_page_wprss-aggregator-settings) input[type="input"] + .wprss-tooltip-handle,
+    body:not(.wprss_feed_page_wprss-aggregator-settings) input[type="password"] + .wprss-tooltip-handle {
+        margin-top: 5px;
+    }
+
+    body:not(.wprss_feed_page_wprss-aggregator-settings) .wprss-tooltip-handle:after {
+        content: 'Help';
+        margin-left: 5px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+}
+
+
+/* For settings page screens */
+@media only screen and (max-width: 782px) {
+
+    body.wprss_feed_page_wprss-aggregator-settings .wprss-tooltip-handle {
+        color: #999;
+        font-size: 1em;
+        padding: 6px 10px;
+        margin-left: 0;
+        background: #e5e5e5;
+        border-radius: 3px;
+        vertical-align: middle;
+    }
+
+    body.wprss_feed_page_wprss-aggregator-settings select + .wprss-tooltip-handle,
+    body.wprss_feed_page_wprss-aggregator-settings input[type="input"] + .wprss-tooltip-handle,
+    body.wprss_feed_page_wprss-aggregator-settings input[type="password"] + .wprss-tooltip-handle {
+        margin-top: 5px;
+    }
+
+    body.wprss_feed_page_wprss-aggregator-settings .wprss-tooltip-handle:after {
+        content: 'Help';
+        margin-left: 5px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+}
+
+
+@media only screen and (max-width: 1026px) {
+    .wprss-tr-hr th {
+        padding-top: 10px;
+    }
+}
+
+.ajax-error,
+.ajax-error:hover,
+.ajax-error:visited,
+.ajax-error:link,
+.ajax-error:active {
+    color: #a00;
+}
+
+/* Removes the "Add New" button for Feed Items */
+.post-type-wprss_feed_item .page-title-action {
+    display: none
+}
+
+/* Changelog styles */
+.wpra-changelog-container h2 {
+    font-size: 1.4em;
+}
+.wpra-changelog-container h3 {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+.wpra-changelog-container ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.wpra_ft_image_option {
+    margin-top: 10px;
+}
+
+#wpra_image_min_size_row {
+    display: none;
+}
+
+/* Spacing between image width and height fields */
+#wpra_image_min_size_row > td > label {
+    margin-right: 10px;
+}
+
+#wprss-feed-def-ft-image-preview {
+    width: 220px;
+}
+
+#wprss-feed-def-ft-image-preview-hint {
+    margin-bottom: 8px;
+}
+
+
+/*
+ * The Feed Source List Table styles that mimic the plugins table
+ */
+
+.post-type-wprss_feed table.wp-list-table.posts tbody tr th,
+.post-type-wprss_feed table.wp-list-table.posts tbody tr td
+{
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1);
+}
+
+/* Feed updating/deleting animation in feed sources table */
+.post-type-wprss_feed table.wp-list-table.posts tbody tr.wpra-feed-is-updating,
+.post-type-wprss_feed table.wp-list-table.posts tbody tr.wpra-feed-is-deleting {
+    /*background-image: linear-gradient(-45deg, rgba(30, 30, 30, 0.05) 25%, transparent 0, transparent 50%, rgba(50, 50, 50, 0.05) 50%, rgba(30, 30, 30, 0.05) 75%, transparent 0, #0000);*/
+    /*background-image: linear-gradient(*/
+    /*        -45deg, rgba(0, 0, 0, 0.9) 25%,*/
+    /*        transparent 0,*/
+    /*        transparent 50%,*/
+    /*        rgba(0, 0, 0, 0.9) 50%,*/
+    /*        rgba(0, 0, 0, 0.9) 75%,*/
+    /*        transparent 0, #0000*/
+    /*);*/
+    background-size: 80px 80px;
+    background-blend-mode: overlay;
+}
+
+.post-type-wprss_feed table.wp-list-table.posts tbody tr.wpra-feed-is-updating > *,
+.post-type-wprss_feed table.wp-list-table.posts tbody tr.wpra-feed-is-deleting > * {
+    background: transparent !important;
+}
+
+.post-type-wprss_feed table.wp-list-table.posts tbody tr.wpra-feed-is-updating {
+    animation: wpra-feed-updating-animation 1.3s linear infinite;
+    background-color: #e9f9ee;
+}
+.post-type-wprss_feed table.wp-list-table.posts tbody tr.wpra-feed-is-deleting {
+    animation: wpra-feed-updating-animation 1s linear infinite;
+    background-color: #f8eaea;
+}
+
+@keyframes wpra-feed-updating-animation {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 80px 80px;
+    }
+    100% {
+        background-position: 160px 160px;
+    }
+}
+
+/*
+ * Styles for the Feed Source List Table "State" column
+ */
+div.wprss-feed-state-container,
+div.wprss-feed-source-type
+{
+    display: inline-block;
+}
+
+/* the feed type icon */
+div.wprss-feed-source-type {
+    float: right;
+}
+/* inactive color */
+.post-type-wprss_feed table.wp-list-table tr div.wprss-feed-source-type {
+    color: #aaa;
+}
+/* active color */
+.post-type-wprss_feed table.wp-list-table tr.active div.wprss-feed-source-type {
+    color: #ff792b;
+}
+/* youtube color */
+.post-type-wprss_feed table.wp-list-table tr.active div.wprss-feed-source-type.wprss-feed-source-type-yt {
+    color: #ff0000;
+}
+
+.post-type-wprss_feed table.wp-list-table tbody td.column-state {
+    padding-right: 0;
+}
+
+.column-updates > p {
+    margin: 0 !important;
+}
+.post-type-wprss_feed table.wp-list-table.posts tbody tr .next-update-container {
+    font-weight: bold;
+}
+.post-type-wprss_feed table.wp-list-table.posts tbody tr:not(.active) .next-update-container {
+    display: none;
+}
+
+/* The last update time in the feed sources page table */
+.post-type-wprss_feed table.wp-list-table.posts .last-update-num-items-container {
+    color: #666;
+    font-style: italic;
+    font-size: 90%;
+}
+
+/* The imported items link in the feed sources page - disabled when 0 items */
+.post-type-wprss_feed table.wp-list-table.posts .items-imported-link.has-imported-items {
+    font-weight: bold;
+    line-height: 20px;
+}
+.post-type-wprss_feed table.wp-list-table.posts .items-imported-link:not(.has-imported-items) {
+    color: #777;
+    pointer-events: none;
+}
+
+/* The delete items row action in the feed sources page - hidden when 0 items */
+.post-type-wprss_feed table.wp-list-table.posts .row-actions .purge-posts:not(.has-imported-items) {
+    display: none;
+}
+
+/* Styles for the disabled "Fetch" and "Delete" feed source row actions */
+.post-type-wprss_feed table.wp-list-table.posts .row-actions a.wprss_fetch_items_ajax_action[disabled] {
+    color: #555;
+}
+.post-type-wprss_feed table.wp-list-table.posts .row-actions a.wprss_delete_items_ajax_action[disabled] {
+    color: #666;
+}
+
+/* The feed updating/deleting spinner icon */
+.post-type-wprss_feed table.wp-list-table.posts .column-feed-count .spinner {
+    float: none;
+    vertical-align: bottom;
+}
+.post-type-wprss_feed table.wp-list-table.posts tr.wpra-feed-is-updating .column-feed-count .spinner,
+.post-type-wprss_feed table.wp-list-table.posts tr.wpra-feed-is-deleting .column-feed-count .spinner {
+    visibility: visible;
+}
+
+/*
+ * TOGGLE SWITCH
+ */
+.wprss-switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+}
+.wprss-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.wprss-switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: #ccc;
+    transition: .2s;
+    -webkit-transition: .2s;
+}
+.wprss-switch-slider:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    bottom: 3px;
+    border-radius: 50%;
+    background-color: white;
+    transition: .2s;
+    -webkit-transition: .2s;
+}
+input:checked + .wprss-switch-slider {
+    background-color: #0baa3c;
+}
+input:focus + .wprss-switch-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .wprss-switch-slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+.postbox .inside .wpra-feed-save-meta-box {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 -10px;
+    margin-top: -11px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.postbox .inside .wpra-feed-save-meta-box label span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.postbox .inside .wpra-feed-save-meta-box input[type="text"] {
+    text-align: left !important;
+}
+
+/* -- INLINE STYLES -- */
+
+form.wpra-inline-form {
+    display: inline-block;
+}
+
+form.wpra-header-form {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1.wpra-inline-header,
+h2.wpra-inline-header,
+h3.wpra-inline-header,
+h4.wpra-inline-header
+{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+button.button.wpra-header-button {
+    position: relative;
+    vertical-align: baseline;
+    top: -1px;
+}
+
+/* -- SLIDE BOX -- */
+
+div.wpra-slide-box {
+    display: none;
+    margin: 10px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+div.wpra-slide-box.wpra-slide-box-open {
+    display: block;
+}
+
+div.wpra-slide-box form {
+    display: block;
+}
+
+div.wpra-slide-box h4 {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+div.wpra-slide-box form label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+div.wpra-slide-box label > * {
+    flex-grow: 1;
+}
+
+div.wpra-slide-box label > span {
+    display: inline-block;
+    flex-grow: 0;
+    width: 200px;
+    font-size: 1em;
+}
+div.wpra-slide-box label input[type="text"],
+div.wpra-slide-box label input[type="number"],
+div.wpra-slide-box label input[type="text"]
+{
+    height: 28px;
+    min-height: 28px;
+}
+
+div.wpra-slide-box div.wpra-submit-wrap {
+    margin-top: 10px;
+}
+div.wpra-slide-box div.wpra-submit-wrap.right {
+    text-align: right;
+}
+
+div.wpra-slide-box div.wpra-submit-wrap > button {
+    text-align: center;
+}
+
+/* -- ERROR LOG OPTIONS (SLIDE BOX) -- */
+
+#wprss-log-options-form input[name="logging_limit_days"] {
+    width: 80px;
+}
+
+/* -- BLACKLIST TOOL -- */
+
+#wpra-add-blacklist-container form label span:first-child {
+    width: 120px;
+}
+
+/* -- LOG TOOL -- */
+
+#wprss-error-log-options {
+    margin: 15px 0;
+}
+
+#wprss-clear-error-log-form {
+    float: right;
+    position: relative;
+    top: -3px;
+}
+
+.wpra-log-filters {
+    padding: 2px 0;
+    margin: 0;
+}
+p.wpra-logs-shown-msg {
+    margin: 5px 0;
+}
+
+/* -- MISC -- */
+.wpra-no-margin {
+    margin: 0;
+}

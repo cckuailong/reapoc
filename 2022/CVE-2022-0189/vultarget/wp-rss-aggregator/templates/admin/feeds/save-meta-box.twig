@@ -1,0 +1,12 @@
+<div class="wpra-feed-save-meta-box">
+    <label>
+        <span>
+            {% trans "Slug:" %}
+        </span>
+        <input type="text"
+               name="wpra_feed[slug]"
+               value="{{ feed.slug|e("html_attr") }}"
+               placeholder="{% trans "Auto Generate" %}"
+        />
+    </label>
+</div>

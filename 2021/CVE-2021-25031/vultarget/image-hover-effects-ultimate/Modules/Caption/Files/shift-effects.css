@@ -1,0 +1,51 @@
+.oxi-addons-container [class^='oxi-image-shift'],
+.oxi-addons-container [class*=' oxi-image-shift'],
+.oxi-addons-container [class^='oxi-image-shift'] *,
+.oxi-addons-container [class*=' oxi-image-shift'] * {
+    overflow: visible !important;
+}
+
+.oxi-addons-container [class^='oxi-image-shift'] .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-shift'] .oxi-image-hover-figure-caption {
+    opacity: 0;
+}
+
+.oxi-addons-container .oxi-image-shift-top-left:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-shift-top-left.oxi-touch .oxi-image-hover-figure-caption {
+    opacity: 1;
+    -webkit-transform: translate(-10px, -10px);
+    -moz-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    -o-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+}
+
+.oxi-addons-container .oxi-image-shift-top-right:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-shift-top-right.oxi-touch .oxi-image-hover-figure-caption {
+    opacity: 1;
+    -webkit-transform: translate(10px, -10px);
+    -moz-transform: translate(10px, -10px);
+    -ms-transform: translate(10px, -10px);
+    -o-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+}
+
+.oxi-addons-container .oxi-image-shift-bottom-left:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-shift-bottom-left.oxi-touch .oxi-image-hover-figure-caption {
+    opacity: 1;
+    -webkit-transform: translate(-10px, 10px);
+    -moz-transform: translate(-10px, 10px);
+    -ms-transform: translate(-10px, 10px);
+    -o-transform: translate(-10px, 10px);
+    transform: translate(-10px, 10px);
+}
+
+.oxi-addons-container .oxi-image-shift-bottom-right:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-shift-bottom-right.oxi-touch .oxi-image-hover-figure-caption {
+    opacity: 1;
+    -webkit-transform: translate(10px, 10px);
+    -moz-transform: translate(10px, 10px);
+    -ms-transform: translate(10px, 10px);
+    -o-transform: translate(10px, 10px);
+    transform: translate(10px, 10px);
+}

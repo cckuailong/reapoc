@@ -1,0 +1,49 @@
+{
+    "name": "dhii/iterator-helper-base",
+    "description": "Common functionality for working with iterables",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.4 | ^7.0",
+        "dhii/exception": "^0.1-alpha4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "dev-master",
+        "dhii/php-cs-fixer-config": "^0.1",
+        "codeclimate/php-test-reporter": "<=0.3.2",
+        "dhii/stringable-interface": "^0.1",
+        "dhii/invocable-interface": "0.1-alpha1"
+    },
+    "suggest": {
+        "dhii/callback-abstract": "For structural invocation of callables"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Iterator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Iterator\\UnitTest\\": "test/unit",
+            "Dhii\\Iterator\\FuncTest\\": "test/functional"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "csfix": "php-cs-fixer fix -vvv"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
+        }
+    }
+}

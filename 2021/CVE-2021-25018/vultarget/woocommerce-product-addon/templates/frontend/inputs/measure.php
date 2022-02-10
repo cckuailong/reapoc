@@ -1,0 +1,85 @@
+<?php
+/**
+* Measure Input Template
+* 
+* This template can be overridden by copying it to yourtheme/ppom/frontend/inputs/measure.php
+* 
+* @version 1.0
+**/
+
+/* 
+**========== Block direct access =========== 
+*/
+if( ! defined('ABSPATH' ) ){ exit; }
+
+$fm = new PPOM_InputManager($field_meta, 'measure');
+
+$minlength  = $fm->get_meta_value('min', 0);
+$maxlength  = $fm->get_meta_value('max');
+$step       = $fm->get_meta_value('step');
+$input_attr = $fm->get_meta_value('attributes');
+
+// Unit Input Attr
+$option_id = "{$fm->data_name()}_unit";
+$unit_price = ppom_get_product_price($product);
+
+$use_units = false;
+
+// Strip Tags
+$default_value = strip_tags($default_value);
+
+$input_classes = $fm->input_classes();
+$input_classes = $input_classes. ' ppom-measure-input';
+?>
+
+<div class="<?php echo esc_attr($fm->field_inner_wrapper_classes()); ?>" >
+
+	<!-- if title of field exist -->
+	<?php if ($fm->field_label()): ?>
+		<label class="<?php echo esc_attr($fm->label_classes()); ?>" for="<?php echo esc_attr($fm->data_name()); ?>" ><?php echo $fm->field_label(); ?></label>
+	<?php endif ?>
+	
+	<div class="ppom-measure">
+		
+		<!-- Unit Input -->
+		<input 
+			type="radio" 
+			name="ppom[unit][<?php echo esc_attr($fm->data_name()); ?>]" 
+			id="<?php echo esc_attr($option_id); ?>" 
+			class="form-check-input ppom-input ppom-measure-unit" 
+			data-apply="measure" 
+			data-use_units="no" 
+			data-price="<?php echo esc_attr($unit_price); ?>" 
+			data-label="<?php echo esc_attr($fm->field_label()); ?>" 
+			data-data_name="<?php echo esc_attr($fm->data_name()); ?>" 
+			data-optionid="<?php echo esc_attr($option_id); ?>" 
+			data-qty="<?php echo esc_attr($default_value); ?>" 
+			style="display: none;" 
+			checked
+		>
+	
+		<!-- Regular Measure Input -->
+		<input 
+			type="number" 
+			name="<?php echo esc_attr($fm->form_name()); ?>" 
+			id="<?php echo esc_attr($fm->data_name()); ?>" 
+			class="<?php echo esc_attr($input_classes); ?>" 
+			placeholder="<?php echo esc_attr($fm->placeholder()); ?>" 
+			autocomplete="false" 
+			data-type="measure" 
+			data-price="<?php echo esc_attr($unit_price); ?>" 
+			data-title="<?php echo esc_attr($fm->field_label()); ?>" 
+			data-use_units="<?php echo esc_attr($use_units); ?>" 
+			data-errormsg="<?php echo esc_attr($fm->error_msg()); ?>" 
+			max="<?php echo esc_attr($maxlength); ?>" 
+			min="<?php echo esc_attr($minlength); ?>" 
+			step="<?php echo esc_attr($step); ?>" 
+			value="<?php echo esc_attr($default_value); ?>" 
+			
+			<?php 
+			// Add input extra attributes
+			foreach ($input_attr as $key => $val){ echo $key . '="' . $val .'"'; }
+			?>
+		>
+	</div>
+</div>

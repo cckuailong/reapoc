@@ -1,0 +1,1063 @@
+/**********************************
+ *   PPOM Form Design CSS   *
+ **********************************/
+
+/*---------------------------------
+    1- PPOM Fields CSS
+    2- Helper Icon With Desciption CSS
+    3- Tabs CSS
+    4- Checkbox Design CSS
+    5- Media Queries
+    6- Basic Settings Section CSS
+    7- Existin Meta Section CSS
+    8- Bulk Quantity Addon CSS
+    9- NM Plugins Template CSS
+    10- PPOM Model CSS
+    11- Wordpress 5.3.1 CSS
+    12- Bootstrap 4.0.0 beta issues fixes
+-----------------------------------*/
+
+/*
+    1- PPOM Fields CSS
+*/
+
+.ppom-admin-wrap {
+    margin: 10px 20px 0 2px;
+}
+
+.ppom-sortable-handle {
+    cursor: move;
+}
+
+.ppom-dataname-reader {
+    font-size: 17px;
+}
+
+.ppom-helper-icon i {
+    margin-top: 0px;
+    color: #f95700ff;
+    font-size: 21px;
+    margin-left: 2px;
+    cursor: help !important;
+}
+
+.ppom-fields-name-model .ppom-modal-body ul li {
+    width: 32%;
+    /*background-color: #d6d3da !important;*/
+    background-color: #fff !important;
+    margin: 1px;
+    margin-left: 4px;
+    text-align: center;
+    font-size: 13px !important;
+    cursor: pointer;
+    border-radius: unset !important;
+    position: relative;
+    /*height: 40px;*/
+    border: 1px solid #f9570094 !important;
+    display: inline-block !important;
+    box-shadow: 10px 10px 5px #f2e8e8a1;
+    -webkit-box-shadow: 10px 10px 5px #f2e8e8a1;
+    -moz-box-shadow: 10px 10px 5px #f2e8e8a1;
+}
+
+.ppom-fields-name-model .ppom-modal-body ul li:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    text-decoration: none;
+    color: white !important;
+    /*background-color: #0d008ab5 !important;*/
+    background-color: #F95700FF !important;
+
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ppom-fields-name-model .ppom-modal-body ul li span {
+    float: left;
+    margin-left: 6px;
+}
+
+.ppom-fields-name-model .ppom-modal-body ul li .ppom-fields-icon {
+    font-size: 18px;
+    color: #556068;
+}
+
+.ppom-fields-name-model .ppom-modal-body ul li .ppom-fields-icon i {
+    display: block;
+}
+
+.ppom-thead-bg {
+    background-color: #a4c1da8c;
+}
+
+.ppom_field_table tbody {
+    font-size: 12px;
+}
+
+#ppom_fields_id,
+#ppom_fields_id .inside {
+    position: unset;
+}
+
+.ppom-req-field-id {
+    margin-right: 12px;
+    color: red;
+}
+
+.ppom-main-field-wrapper {
+    background-color: #ebeeef;
+    padding: 11px;
+}
+
+.ppom-main-field-wrapper .table>thead>tr>th {
+    vertical-align: top;
+}
+
+ul.ppom-options-container li {
+    padding: 3px !important;
+    margin: 2px !important;
+    background: #0202028c;
+}
+
+.ppom-adjust-box-height {
+    min-height: 105px;
+    max-height: 105px;
+}
+
+.ppom-condition-style-wrap p {
+    font-size: 15px;
+}
+
+/*.ppom-slider select.form-control {*/
+
+/*    height: 34px !important;*/
+
+/*}*/
+
+ul.ppom-options-container li {
+    padding: 3px !important;
+    margin: 2px 0px 7px !important;
+    background: #ececec8a;
+    border-bottom: 1px solid #00640099;
+    border-top: 1px solid #00640091;
+}
+
+.ppom-options-container .dashicons-move {
+    margin-top: 5px;
+    color: #000025;
+    cursor: move;
+}
+
+.ppom-uploader-img-title {
+    margin-left: 20px;
+    color: black;
+    font-weight: 700;
+}
+
+.ppom-uploader-img-center .dashicons-admin-media {
+    margin-top: 2px !important;
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.ppom-meta-card-block {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px 0;
+    background-color: #ebeeef;
+}
+
+.btn-yellow {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.ppom-nm-plugins {
+    float: right;
+}
+
+.ppom-cancle-import-export-wrap {
+    margin-top: 7px;
+    margin-right: 7px;
+}
+
+@media (min-width: 992px) {
+    .ppom-slider .row>div {
+        display: unset;
+        vertical-align: top;
+        padding-left: 15px;
+        padding-right: 0;
+    }
+}
+
+/*
+    2- Helper Icon With Desciption CSS
+*/
+
+#ppom_tooltip {
+    font-family: Ubuntu, sans-serif;
+    font-size: 0.875em;
+    text-align: center;
+    text-shadow: 0 1px rgba( 0, 0, 0, .5);
+    line-height: 1.5;
+    color: #fff;
+    background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+    background: -moz-linear-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+    background: -ms-radial-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+    background: -o-linear-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+    background: linear-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-top: 1px solid #fff;
+    -webkit-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3);
+    -moz-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba( 0, 0, 0, .3);
+    position: absolute;
+    z-index: 10024;
+    padding: 15px;
+    overflow: visible;
+
+}
+
+#ppom_tooltip:after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;
+    border-top-color: rgba( 0, 0, 0, .7);
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+}
+
+#ppom_tooltip.top:after {
+    border-top-color: transparent;
+    border-bottom: 10px solid #333;
+    border-bottom-color: rgba( 0, 0, 0, .6);
+    top: -20px;
+    bottom: auto;
+}
+
+#ppom_tooltip.left:after {
+    left: 10px;
+    margin: 0;
+}
+
+#ppom_tooltip.right:after {
+    right: 10px;
+    left: auto;
+    margin: 0;
+}
+
+/*
+    3- Tabs CSS
+*/
+
+.ppom-tabs-header {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #a29494;
+}
+
+.ppom_handle_fonts_family_tab textarea,
+.ppom_handle_custom_fonts_tab textarea,
+.ppom_handle_vm_row_tab textarea {
+    min-height: 206px;
+}
+
+.ppom-tabs .ppom-tabs-label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+.ppom-tabs .ppom-tabs-label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+    content: '\f1cb';
+}
+
+.ppom-tabs .ppom-tabs-label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+.ppom-tabs .ppom-active-tab {
+    color: #555;
+    border: 1px solid #a29494;
+    border-top: 2px solid #f95700;
+    border-bottom: 1px solid #fff;
+}
+
+.ppom-control-all-fields-tabs {
+    display: none;
+}
+
+
+/*
+    4- Checkbox Design CSS
+*/
+
+.ppom-checkboxe-style input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.ppom-checkboxe-style input[type="checkbox"]+span {
+    color: #000;
+}
+
+.ppom-checkboxe-style input[type="checkbox"]+span:before {
+    font: 16pt FontAwesome;
+    content: '\00f096';
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.ppom-checkboxe-style input[type="checkbox"]:checked+span:before {
+    content: '\00f046';
+}
+
+.ppom-checkboxe-style input[type="checkbox"]:focus+span:before {
+    outline: 1px dotted #aaa;
+}
+
+.ppom-checkboxe-style input[type="checkbox"]:disabled+span {
+    color: #999;
+}
+
+.ppom-checkboxe-style input[type="checkbox"]:not(:disabled)+span:hover:before {
+    text-shadow: 0 1px 2px #77F;
+}
+
+
+/*
+    5- Media Queries
+*/
+
+@media screen and (max-width: 700px) {
+    .ppom-fields-name-model .ppom-modal-body ul li {
+        width: 48%
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .ppom-fields-name-model .ppom-modal-body ul li {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ppom-tabs .ppom-tabs-label {
+        font-size: 0;
+    }
+    .ppom-tabs .ppom-tabs-label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ppom-tabs .ppom-tabs-label {
+        padding: 15px;
+    }
+}
+
+
+/*
+    6- Basic Settings Section CSS
+*/
+
+.ppom-basic-setting-section select {
+    height: 34px !important;
+}
+
+.ppom-basic-setting-section textarea {
+    min-height: 140px;
+    max-height: 140px;
+}
+
+.ppom-heading-style {
+    border-bottom: 2px solid #f957006e;
+    padding-bottom: 9px;
+    font-family: roboto;
+    /*font-size: 30px;*/
+}
+
+.ppom-wrapper .CodeMirror {
+    height: 139px !important;
+}
+
+/*.CodeMirror pre {*/
+
+/*    padding: 0 33px !important;*/
+
+/*}*/
+
+.cm-s-default span.cm-property {
+    color: red !important;
+}
+
+
+/*
+    7- Existin Meta Section CSS
+*/
+
+.ppom-meta-table-checkbox-mr label {
+    margin-left: 7px;
+}
+
+#ppom-meta-table .dashicons,
+.dashicons-before:before {
+    line-height: unset;
+}
+
+.ppom-product-table-header {
+    margin: 0px 0px 10px 0px;
+}
+
+.ppom-product-count-span {
+    font-weight: 600;
+}
+
+.ppom-product-count-span span {
+    font-size: 19px;
+}
+
+
+/*
+    8- Bulk Quantity Addon CSS
+*/
+
+.ppom-bulk-quantity-wrapper {
+    background: #ffc5c536;
+}
+
+.ppom-bulk-quantity-wrapper .table-content {
+    padding: 20px;
+}
+
+.ppom-bulk-quantity-wrapper .remove {
+    color: red;
+}
+
+.ppom-bulkqty-adjust-cross {
+    display: flex;
+}
+
+.ppom-bulkqty-adjust-cross i {
+    margin-right: 6px;
+    margin-top: 8px;
+}
+
+.ppom-bulk-quantity-wrapper .remove:hover {
+    cursor: pointer;
+}
+
+.ppom-bulkquantity-qty-wrap {
+    display: flex;
+    margin: 0px 0px 10px 0px;
+}
+
+.ppom-bulkquantity-variation-wrap {
+    display: flex;
+    margin: 0px 0px 10px 11px;
+}
+
+.ppom-bulkquantity-variation-wrap input,
+.ppom-bulkquantity-qty-wrap input {
+    margin-left: 7px;
+}
+
+.ppom-bulk-action-wrap {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .ppom-bulk-quantity-wrapper .ppom-bulkquantity-qty-wrap,
+    .ppom-bulk-quantity-wrapper .ppom-bulkquantity-variation-wrap {
+        display: block !important;
+        margin: 0px 0px 9px 0px !important;
+    }
+    .ppom-bulk-action-wrap {
+        display: block !important;
+    }
+    .ppom-bulkquantity-variation-wrap input,
+    .ppom-bulkquantity-qty-wrap input {
+        margin-left: 0px !important;
+        margin-top: 6px !important;
+    }
+}
+
+.ppom-edit-bulk-json {
+    display: none;
+}
+
+
+
+/*
+    9- NM Plugins Template CSS
+*/
+
+.ppom-nm-plugins-wrapper .ppom-nm-card-block {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #D9EDF8;
+    margin-bottom: 8px;
+    border: 1px solid #5ef39a;
+}
+
+.ppom-nm-plugins-wrapper .ppom-nm-card-block h3 {
+    border-bottom: 2px solid #0efc2b7a;
+    padding-bottom: 3px;
+    font-family: roboto;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.ppom-nm-plugins-wrapper .ppom-nm-card-block .ppom-card-header {
+    padding: 1px 0px 0px 0px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.ppom-nm-plugins-wrapper .ppom-nm-card-block .ppom-card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 5px;
+}
+
+.ppom-nm-plugins-wrapper .ppom-nm-card-block .ppom-card-footer {
+    padding: 0px 10px 6px 0px;
+    text-align: right;
+}
+
+.ppom-nm-plugins-wrapper .ppom-nm-logo {
+    width: 30px;
+    float: left;
+    margin-right: 12px;
+    margin-top: -2px;
+}
+
+/*
+    10- PPOM Model CSS
+*/
+
+.ppom-modal-box {
+    display: none;
+    width: 60%;
+    background: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-clip: padding-box;
+}
+
+.ppom-modal-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-height: 90%;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    outline: 0;
+    margin: 30px auto;
+    overflow: auto;
+}
+
+@media (min-width: 32em) {
+    .ppom-modal-box {
+        width: 70%;
+    }
+}
+
+.ppom-modal-box header {
+    padding: 1.25em 1.5em;
+    border-bottom: 1px solid #ddd;
+}
+
+.ppom-modal-box header h3,
+.ppom-modal-box header h4 {
+    margin: 0;
+}
+
+.ppom-modal-box .ppom-modal-body {
+    padding: 1em 2.5em;
+}
+
+.ppom-modal-box footer {
+    padding: 1em;
+    border-top: 1px solid #ddd;
+    background: rgba(0, 0, 0, 0.02);
+    text-align: right;
+}
+
+.ppom-overlay-meta {
+    overflow: hidden;
+}
+
+.ppom-modal-overlay {
+    filter: alpha(opacity=0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#ppom-pre-loading {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url('loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10000000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    /* For IE8 and earlier */
+}
+
+table#ppom-meta-table.dataTable th:nth-of-type(4) {
+    width: 60%;
+}
+
+/*
+    11- Wordpress 5.3.1 CSS
+*/
+
+.ppom-existing-meta-wrapper td.ppom-admin-meta-actions-colunm a {
+    line-height: 26px !important;
+}
+
+#ppom-product-table tbody tr input[type="checkbox"],
+[data-metatype="is_customfont"] {
+    width: 16px !important;
+    height: 16px !important;
+    margin: -4px 4px 0 0;
+}
+
+#ppom-product-table tbody tr input[type=checkbox]:checked:before,
+[data-metatype="is_customfont"]:checked:before {
+    width: 21px !important;
+    margin: -3px 0 0 -4px !important;
+}
+
+select {
+    max-width: 100% !important;
+}
+
+.ppom-slider input[type="date"] {
+    padding: 6px 12px !important;
+}
+
+
+.paired-pricematrix .option-price,
+.paired-pricematrix .option-title,
+.paired-pricematrix .option-label,
+.paired-pricematrix .option-id {
+    width: 20%;
+    margin: 3px;
+}
+
+/*Hide Prices from fields*/
+
+/*[data-meta-id="price"] {
+    */
+
+/*    display: none !important;*/
+
+/*}*/
+
+/*
+    12- Bootstrap 4.0.0 beta issues fixes
+*/
+
+.ppom-wrapper .row:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.ppom-wrapper .row {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9 {
+        float: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9 {
+        float: left;
+    }
+}
+
+.wp-core-ui select {
+    -webkit-appearance: none;
+    background: #fff url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E) no-repeat right 5px top 55% !important;
+}
+
+/*@media (min-width: 576px) {
+    */
+
+/*    .ppom-wrapper .col-sm-6 {*/
+
+/*        max-width: 100% !important;*/
+
+/*    }*/
+
+/*}*/
+
+.ppom-wrapper .btn {
+    cursor: pointer !important;
+}
+
+.ppom-wrapper .list-group {
+    display: block !important;
+}
+
+.ppom-wrapper .btn-primary {
+    color: #fff !important;
+}
+
+
+
+
+/*PPOM New Tabs*/
+
+.ppom-admin-tabs-css {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ppom-admin-tabs-css label.ppom-tab-label {
+    order: 1;
+    display: block;
+    padding: 12px 30px;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #90CAF9;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    margin: 0 !important;
+}
+
+.ppom-admin-tabs-css .ppom-admin-tab-content {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+}
+
+.ppom-admin-tabs-css input[type=radio] {
+    display: none;
+}
+
+.ppom-admin-tabs-css input[type=radio]:checked+label {
+    background: #fff;
+    border-top: 2px solid #f95700;
+}
+
+.ppom-admin-tabs-css input[type=radio]:checked+label+.ppom-admin-tab-content {
+    display: block;
+}
+
+@media (max-width: 45em) {
+    .ppom-admin-tabs-css .ppom-admin-tab-content,
+    .ppom-admin-tabs-css label.ppom-tab-label {
+        order: initial;
+    }
+
+    .ppom-admin-tabs-css label.ppom-tab-label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0.2rem;
+    }
+}
+
+.ppom-color-picker-cloner .wp-picker-container .wp-color-result.button {
+    margin: 0 !important
+}
+
+ul.ppom-options-container li input[type="text"] {
+    height: 34px;
+}
+
+ul.ppom-options-container li label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Inactive/active CSS*/
+
+.onoffswitch {
+    position: relative;
+    width: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.onoffswitch-label {
+    display: block !important;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 50px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 20px;
+    padding: 0;
+    line-height: 20px;
+    font-size: 11px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 5px;
+    background-color: #34C279;
+    color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 5px;
+    background-color: #DB1515;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 24px;
+    /*margin: -1.5px;*/
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 32px;
+    border: 2px solid #999999;
+    border-radius: 50px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+/*ppom addon models*/
+
+/* Font */
+
+/*@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');*/
+
+/* Design */
+
+.ppom_addons_model {
+    color: #272727;
+    background-color: #ecf9ff;
+    font-family: 'Quicksand', serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 2rem;
+    margin: -8px !important;
+}
+
+.ppom_addons_model_heading {
+    text-align: center;
+}
+
+.ppom_addons_model_cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ppom_addons_model_heading_button_display {
+    display: flow-root;
+}
+
+.ppom-admin-wrap .ppom_addons_model_card_btn {
+    padding: 6px;
+    font-weight: 400;
+    text-decoration: none !important;
+    cursor: pointer;
+    background-color: #F95700FF;
+    /*float: right;*/
+    color: #fff !important;
+    margin-left: 2px;
+}
+
+.ppom_addons_model_card_btn a {
+    color: #000000;
+    text-decoration: none !important;
+    /*outline-color: #f1a22cad;*/
+}
+
+.ppom_addons_model_card_btn a:hover {
+    /*color:#00A0C6; */
+    color: brown;
+    text-decoration: none !important;
+}
+
+.ppom_addons_model_cards_item {
+    display: flex;
+    padding: 1rem;
+    width: 33%;
+}
+
+@media only screen and (max-width: 600px) {
+    .ppom_addons_model_cards_item {
+        width: 100% !important;
+    }
+}
+
+.ppom_addons_model_card {
+    /*background: linear-gradient(to bottom left, #EF8D9C 60%, #FFC39E 95%);*/
+    background: #fff;
+    /*border-radius: 0.75rem;*/
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;
+
+    overflow: hidden;
+}
+
+.ppom_addons_model_card_content {
+    padding: 1rem;
+}
+
+.ppom_addons_model_card_content p {
+    min-height: 115px;
+}
+
+a[data-modal-id="ppom-nm-plugins-modal"] {
+    display: none !important;
+}
+
+.ppom_addons_model_card_title {
+    color: #000;
+    font-weight: 600 !important;
+    text-transform: capitalize;
+    margin: 0px !important;
+    float: left;
+}
+
+.ppom_addons_model_card_text {
+    color: #000;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+
+/*New Addons List View*/
+
+.ppom-admin-addons-header {
+    padding: 4px;
+    min-height: 90px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    justify-content: space-between;
+    border-bottom: 2px solid #F95700FF;
+}
+
+.ppom-admin-addons-header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.ppom-admin-addons-header-logo img {
+    margin-right: 12px;
+    margin-top: -2px;
+    width: 34px;
+}
+
+.ppom-admin-addons-actions {
+    text-align: center;
+    display: flex;
+}

@@ -1,0 +1,173 @@
+/* FixIn: 8.0.2.5 */
+#wh_booking_type,
+.chzn-container-multi,
+.chzn-container-multi .chzn-choices,
+.wpdevelop .btn-group,
+.wpdevelop .btn-group-vertical {
+	box-shadow: none !important;
+	border-color: #d8d8d8 !important;
+}
+.chzn-container-multi .chzn-choices .search-choice {
+    margin: 3px 0 0px 5px;
+    padding: 2px 20px 1px 5px;
+    border-color: #d5d5d5;
+}
+.wpdevelop .input-group .dropdown-menu-text-element .form-control {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+/* Border Color and Shadow */
+.wpdevelop .button:not([class*="button-primary"]),
+.wpdevelop .control-group .btn-toolbar .btn-group > .button:not([class*="button-primary"]),
+.wpdevelop .control-group .btn-toolbar .btn-group > input[type=text],
+.wpdevelop .control-group .btn-toolbar .btn-group > select,
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button,
+.wpdevelop .control-group .btn-toolbar .input-group .input-group-btn .button,
+.wpdevelop .control-group .btn-toolbar .input-group > select,
+.wpdevelop .control-group .btn-toolbar .input-group > input[type='text'],
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon {
+  	border: 1px solid #d8d8d8;
+}
+.wpdevelop .button,
+.wpdevelop .control-group .btn-toolbar .btn-group > .button,
+.wpdevelop .control-group .btn-toolbar .btn-group > input[type=text],
+.wpdevelop .control-group .btn-toolbar .btn-group > select,
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button,
+.wpdevelop .control-group .btn-toolbar .input-group .input-group-btn .button,
+.wpdevelop .control-group .btn-toolbar .input-group > select,
+.wpdevelop .control-group .btn-toolbar .input-group > input[type='text'],
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon {
+  	box-shadow: 0 1px 0px #f1f1f1;
+}
+.wp-core-ui .wpdevelop .control-group .button-secondary:focus,
+.wp-core-ui .wpdevelop .control-group .wpdevelop .button-secondary:hover,
+.wp-core-ui .wpdevelop .control-group .button.focus,
+.wp-core-ui .wpdevelop .control-group .button.hover:not([class*="button-primary"]),
+.wp-core-ui .wpdevelop .control-group .button:focus,
+.wp-core-ui .wpdevelop .control-group .button:hover:not([class*="button-primary"]) {
+	border-color: #d8d8d8;
+}
+
+/* Margin */
+.wpdevelop .input-group .dropdown-menu-text-element-count-1 .form-control,
+.wpdevelop .input-group .form-control,
+.wpdevelop .control-group .btn-toolbar .btn-group > .button,
+.wpdevelop .control-group .btn-toolbar .btn-group > select,
+.wpdevelop .control-group .btn-toolbar .btn-group > input[type=text],
+.wpdevelop .control-group .btn-toolbar .btn-group > .button,
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button,
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon,
+/*.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button,*/
+/*.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button,*/
+/*.wpdevelop .control-group .btn-toolbar .input-group .input-group-btn .button,*/
+.wpdevelop .control-group .btn-toolbar .input-group > select,
+.wpdevelop .control-group .btn-toolbar .input-group > input[type='text'] {
+	margin:0 0 0 -2px !important;
+}
+.wpdevelop .btn-group-vertical > .button + .button,
+.wpdevelop .btn-group-vertical > .button + .btn-group,
+.wpdevelop .btn-group-vertical > .btn-group + .button,
+.wpdevelop .btn-group-vertical > .btn-group + .btn-group{
+    margin-top: -2px;
+}
+/* In Dropdown lists buttons */
+.wpdevelop .dropdown-menu > li .btn-group .button {
+    font-size: 14px;
+    line-height: 1.4;
+	height: auto;
+	padding: 5px 15px;
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group.text-group .dropdown-menu-text-element {
+	width:100%;
+}
+/* Booking Listing */
+.wpbc-listing-header,
+.wpbc-listing-row,
+/* Toolbar (sub tab) border */
+.wpdvlp-sub-tabs,
+.wpdvlp-top-tabs .nav-tabs,
+.wpdevelop .visibility_container .tab-bottom {
+	border-color:#dfdfdf;
+}
+/* Dates */
+.wpbc-listing-collumn.field-dates .field-booking-date,
+.wpbc-listing-collumn.field-dates .field-booking-date:hover,
+/* Labels */
+.wpbc-listing-collumn .label,
+.wpbc_resources_table .label,
+/* TimeLine Popover Labels */
+.wpdevelop .popover-content .wpbc-popover-content-data.wpbc-listing-collumn .field-dates .field-booking-date,
+.wpdevelop .popover-content .wpbc-popover-content-data.wpbc-listing-collumn .field-dates .field-booking-date:hover,
+.wpdevelop .popover-content .wpbc-popover-content-data.wpbc-listing-collumn .field-labels span.label,
+.wpdevelop .popover-content .wpbc-popover-content-data.wpbc-listing-collumn .field-id span.label {
+    border: 0;
+    box-shadow: 0 0 1px #ddd;
+    padding: 5px 10px;
+    white-space: nowrap;
+    line-height: 2.5em;
+    margin-right: 3px;
+    font-size: 11px;
+	border-radius: .2em;
+}
+/* TimeLine Popover Labels - ID */
+.wpdevelop .popover-content .wpbc-popover-content-data.wpbc-listing-collumn .field-id span.label {
+	border-radius: 0.9em;
+    line-height: 2.7em;
+}
+.wpdevelop .popover-content .wpbc-popover-content-data.wpbc-listing-collumn .field-dates .field-booking-date,
+.wpdevelop .popover-content .wpbc-popover-content-data.wpbc-listing-collumn .field-dates .field-booking-date:hover,
+.wpdevelop .popover-content .wpbc-popover-content-data.wpbc-listing-collumn .field-labels span.label {
+	font-weight:400;
+    text-shadow: none;
+    font-size: 12px;
+}
+/* Dates */
+.wpbc-listing-collumn.field-dates .field-booking-date,
+.wpbc-listing-collumn.field-dates .field-booking-date:hover {
+	font-size: 12px;
+}
+/* Booking Listing page */
+/* Selected row */
+.wpdevelop.wpbc_resources_table table > tbody > tr.row_selected_color > th,
+.wpdevelop.wpbc_resources_table table > tbody > tr.row_selected_color > td,
+.wpbc-listing-row.row.row_selected_color {
+	/*background: #f9f9e7;*/
+	/*background: #ffffeb;*/
+	/*border-color: #d2d2d2 !important;*/
+    background: transparent;
+    border-color: #d2d2d2 !important;
+    border-left: 4px solid #08a !important;
+}
+.wpdevelop.wpbc_resources_table table > tbody > tr.row_selected_color > td{
+	border-left: 0px solid #d2d2d2 !important;
+}
+/* "Content of booking fields data" in booking listing */
+.wpbc-listing-collumn .fieldvalue{
+	padding: 4px 5px 5px;				/* FixIn: 8.5.2.5 */
+	line-height: 2.5em;
+}
+/* Cehckbox for Selection */
+.wpbc_page .wpdevelop .wpbc-listing-collumn.col-sm-2 .field-checkbox input[type="checkbox"],
+.wpbc_page .wpdevelop .wpbc-listing-collumn.col-sm-3 .field-checkbox input[type="checkbox"] {
+	margin-top:5px;
+}
+/* booking resource slection  list - selected booking resource in a selectbox*/
+.chzn-container .chzn-results li.highlighted {
+	background: #3875d7;
+}
+
+.chzn-container-multi .chzn-choices li.search-choice {
+	margin: 3px 5px 3px 0;
+	border: 1px solid #ccc;
+	background: #eeeeee !important;
+}
+.chzn-container-multi .chzn-choices li.search-field input[type="text"] {
+	margin: 0;
+}
+.chzn-container-multi .chzn-choices {
+	min-height: 31px !important;
+}
+.chzn-container-multi .chzn-choices .search-choice a.search-choice-close {
+    font-size: 10px;
+}

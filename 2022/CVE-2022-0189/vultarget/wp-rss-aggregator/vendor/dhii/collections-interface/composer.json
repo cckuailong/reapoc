@@ -1,0 +1,32 @@
+{
+    "name": "dhii/collections-interface",
+    "description": "Interfaces for collections",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^5.3 | ^7.0"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "^4.8",
+        "codeclimate/php-test-reporter": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Collection\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Collection\\UnitTest\\": "test/unit",
+            "Dhii\\Collection\\FuncTest\\": "test/functional"
+        }
+    }
+}

@@ -1,0 +1,271 @@
+/* ========= INFORMATION ============================
+	- document:  Wow Modal Windows Pro - The most powerful creator of popups & flyouts!
+	- author:    Wow-Company & Dmytro Lobov 
+	- url:       https://wow-estore.com/item/wow-modal-windows-pro/
+	- version:   2.2.3
+	- email:     support@wow-company.com
+==================================================== */
+
+html.no-scroll,
+body.no-scroll {
+	overflow: hidden;
+}
+.wow-modal-overlay{
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+	position: fixed; 
+	cursor: default; 
+	display: none; 
+	width: 100%; 
+	height: 100%; 
+	overflow: auto;
+}
+.wow-modal-overclose{
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+	cursor: default;		
+	width: 100%; 
+	height: 100%;
+}
+.wow-modal-window {
+	box-sizing: border-box;
+	display: none;
+	margin: auto;
+}
+
+.wow-modal-window div {
+	box-sizing: border-box;
+}
+
+
+.modal-window-content {
+	position: relative;
+	display: block;
+	height: 100%;
+	overflow-y: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.modal-window-content:hover {
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	-moz-overflow-scrolling: touch;
+	-ms-overflow-scrolling: touch;
+	-o-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+
+.modal-window-content::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 2px;
+}
+
+.modal-window-content::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* ========================
+	Close buttons
+======================== */
+.mw-close-btn {
+	z-index: 99999;
+}
+
+.mw-close-btn.topLeft {
+	top: 0;
+	left: 0;
+}
+
+.mw-close-btn.topRight {
+	top: 0;
+	right: 0;
+}
+
+.mw-close-btn.bottomLeft {
+	bottom: 0;
+	left: 0;
+}
+
+.mw-close-btn.bottomRight {
+	bottom: 0;
+	right: 0;
+}
+
+.mw-close-btn {
+	cursor: pointer;
+	position: absolute;
+	display: none;
+}
+
+.mw-close-btn,
+.mw-close-btn:before {
+	transition: all 0.1s ease;
+}
+.mw-close-btn:before {
+	white-space: nowrap;
+	display: block;
+	position: relative;
+	transition: all 0.1s ease;
+}
+
+.wow_modal_button_left,
+.wow_modal_button_right,
+.wow_modal_button_top,
+.wow_modal_button_bottom {
+	display:block;
+	position:fixed;
+	text-align:center;
+	text-decoration: none;
+	float: none;
+	text-shadow: none;
+	cursor:pointer;
+}
+
+
+.wow_modal_button_left {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transform-origin: left top 0;
+	-moz-transform-origin: left top 0;
+	-o-transform-origin: left top 0;
+	-moz-transform-origin: left top 0;
+	transform-origin: left top 0;
+}
+.wow_modal_button_right {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: right top 0;
+	-moz-transform-origin: right top 0;
+	-o-transform-origin: right top 0;
+	-moz-transform-origin: right top 0;
+	transform-origin: right top 0;
+}
+
+
+@media only screen and (max-width: 780px){
+	html.no-scroll, body.no-scroll { 
+		width: 100%;
+		height: 100%;
+		position: absolute;		
+	}
+}
+
+/* ========================
+	Columns
+======================== */
+
+.wow-col {
+	display: flex;
+	flex-wrap: wrap;
+}
+.wow-col-1, .wow-col-2, .wow-col-3, .wow-col-4, .wow-col-5, .wow-col-6, .wow-col-7, .wow-col-8, .wow-col-9, .wow-col-10, .wow-col-11, .wow-col-12 {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wow-col-12 {
+	width: 100%;
+}
+.wow-col-11 {
+	width: 91.66666667%;
+}
+.wow-col-10 {
+	width: 83.33333333%;
+}
+.wow-col-9 {
+	width: 75%;
+}
+.wow-col-8 {
+	width: 66.66666667%;
+}
+.wow-col-7 {
+	width: 58.33333333%;
+}
+.wow-col-6 {
+	width: 50%;
+}
+.wow-col-5 {
+	width: 41.66666667%;
+}
+.wow-col-4 {
+	width: 33.33333333%;
+}
+.wow-col-3 {
+	width: 25%;
+}
+.wow-col-2 {
+	width: 16.66666667%;
+}
+.wow-col-1 {
+	width: 8.33333333%;
+}
+
+/* ========================
+	Buttons
+======================== */
+a.ds-button {
+	text-decoration: none;
+}
+
+.ds-button {
+	border: none;
+	border-radius: 0;
+	font-weight: 400;
+	cursor: pointer;
+	justify-content: center;
+	padding: calc(0.5em - 1px) 1em;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+.ds-button.is-small {
+	border-radius: 2px;
+	font-size: 0.75em;
+}
+
+.ds-button.is-normal {
+	font-size: 1em;
+}
+
+.ds-button.is-medium {
+	font-size: 1.25em;
+}
+
+.ds-button.is-large {
+	font-size: 1.5em;
+}
+
+.ds-button.is-fullwidth {
+	display: flex;
+	width: 100%;
+}
+
+/* ========================
+	Form
+======================== */
+
+.modal-window-content .smw-input,
+.modal-window-content textarea {
+	padding: 10px;
+	display: block;
+	max-width: none;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 13px;
+}

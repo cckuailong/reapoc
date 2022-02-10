@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+th {
+    text-align: left;
+}
+
+th > p {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.vi-ui.toggle.checkbox label {
+    font-size: 14px;
+}
+
+.select2-search__field {
+    width: 100% !important;
+}
+
+input.vi-ui.button {
+    height: auto;
+}
+tr.description td {
+    padding-top: 0;
+}
+.woo-orders-tracking-import-container {
+    margin: 20px 0;
+}
+.woo-orders-tracking-import-container-form table.woo-orders-tracking-order-statuses{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form-table thead th {
+    text-align: center;
+}
+
+.woo-orders-tracking-updating {
+    animation: vi_rotation 3s infinite linear;
+}
+
+@keyframes vi_rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}

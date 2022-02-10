@@ -1,0 +1,39 @@
+{
+    "name": "dhii/di",
+    "description": "A DI container implementation",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "container",
+        "di",
+        "dependency injection"
+    ],
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^5.3 | ^7.0",
+        "dhii/di-interface": "^0.1",
+        "dhii/di-abstract": "^0.1",
+        "container-interop/container-interop": "^1.1",
+        "container-interop/service-provider": "^0.3"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1",
+        "codeclimate/php-test-reporter": "<=0.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Di\\": "src/"
+        }
+    },
+    "provide": {
+        "container-interop/container-interop-implementation": "^1.0"
+    }
+}

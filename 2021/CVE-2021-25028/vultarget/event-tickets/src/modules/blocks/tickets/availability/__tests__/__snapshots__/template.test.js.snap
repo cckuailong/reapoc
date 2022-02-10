@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Availability render component 1`] = `
+<div
+  className="tribe-editor__tickets__availability"
+>
+  <span
+    class="tribe-tooltip"
+    title="Ticket availability is based on the lowest number of inventory, stock, and capacity."
+  >
+    <span
+      className="dashicons dashicons-info"
+    />
+  </span>
+</div>
+`;
+
+exports[`Availability render component with available property 1`] = `
+<div
+  className="tribe-editor__tickets__availability"
+>
+  <span
+    class="tribe-tooltip"
+    title="Ticket availability is based on the lowest number of inventory, stock, and capacity."
+  >
+    <span
+      className="tribe-editor__numeric-label tribe-editor__tickets__availability-label tribe-editor__tickets__availability-label--available tribe-tooltip"
+    >
+      
+      <span
+        className="tribe-editor__numeric-label--count"
+      >
+        10
+      </span>
+      <span
+        className="tribe-editor__numeric-label--after"
+      >
+         tickets available
+      </span>
+    </span>
+    <span
+      className="dashicons dashicons-info"
+    />
+  </span>
+</div>
+`;
+
+exports[`Availability renders component with available and total properties 1`] = `
+<div
+  className="tribe-editor__tickets__availability"
+>
+  <span
+    class="tribe-tooltip"
+    title="Ticket availability is based on the lowest number of inventory, stock, and capacity."
+  >
+    <span
+      className="tribe-editor__numeric-label tribe-editor__tickets__availability-label tribe-editor__tickets__availability-label--available tribe-tooltip"
+    >
+      
+      <span
+        className="tribe-editor__numeric-label--count"
+      >
+        1
+      </span>
+      <span
+        className="tribe-editor__numeric-label--after"
+      >
+         ticket available
+      </span>
+    </span>
+    <span
+      className="dashicons dashicons-info"
+    />
+  </span>
+  <span
+    className="tribe-editor__numeric-label tribe-editor__tickets__availability-label tribe-editor__tickets__availability-label--total"
+  >
+    
+    <span
+      className="tribe-editor__numeric-label--count"
+    >
+      20
+    </span>
+    <span
+      className="tribe-editor__numeric-label--after"
+    >
+       total tickets
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Availability renders component with total property 1`] = `
+<div
+  className="tribe-editor__tickets__availability"
+>
+  <span
+    class="tribe-tooltip"
+    title="Ticket availability is based on the lowest number of inventory, stock, and capacity."
+  >
+    <span
+      className="dashicons dashicons-info"
+    />
+  </span>
+  <span
+    className="tribe-editor__numeric-label tribe-editor__tickets__availability-label tribe-editor__tickets__availability-label--total"
+  >
+    
+    <span
+      className="tribe-editor__numeric-label--count"
+    >
+      20
+    </span>
+    <span
+      className="tribe-editor__numeric-label--after"
+    >
+       total tickets
+    </span>
+  </span>
+</div>
+`;

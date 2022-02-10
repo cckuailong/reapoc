@@ -1,0 +1,293 @@
+/**
+ * @version 1.0
+ * @package: Admin Panel
+ * @category: Admin UI
+ * @author wpdevelop
+ *
+ * @web-site https://wpbookingcalendar.com/
+ * @email info@wpbookingcalendar.com 
+ * 
+ * @modified 2016-01-10
+ */
+
+ /* M o d a l s  **************************************************************/
+.wpdevelop .modal.wpbc_popup_modal {
+     z-index: 50000;
+ }
+.wpdevelop .modal-header {
+    background: none repeat scroll 0 0 #F5F5F5;
+    text-shadow: 0 0 2px #FFF;
+}
+ 
+ /* Payment request Modal */
+#wpbc_payment_request_modal .modal-header h3 {
+    color: #333;
+}
+#wpbc_payment_request_modal .modal-body textarea {
+    width: 100%;
+}
+
+/* Print Loyout Modal */
+#wpbc_print_modal .modal-header {
+    background: none repeat scroll 0 0 #F5F5F5;
+    text-shadow: 0 0 2px #FFF;
+}
+#wpbc_print_modal .modal-header h3 {
+    color: #333;
+}
+#wpbc_print_modal .modal-header {
+    text-shadow: none;
+}
+
+/* Modal Google Calendar Events Import */
+#wpbc_gcal_import_events_modal span.description {
+    display:none;
+}
+#wpbc_gcal_import_events_modal #booking_gcal_events_until, 
+#wpbc_gcal_import_events_modal .booking_gcal_events_until_offset, 
+#wpbc_gcal_import_events_modal #booking_gcal_events_from, 
+#wpbc_gcal_import_events_modal .booking_gcal_events_from_offset {
+    float:left;
+    margin:5px 0 0 0 !important;
+}
+#wpbc_gcal_import_events_modal .booking_gcal_events_from_offset label, 
+#wpbc_gcal_import_events_modal .booking_gcal_events_until_offset label {
+    margin: 0 10px;
+    float:left;
+    line-height: 29px;
+}
+#wpbc_gcal_import_events_modal input[type=text],
+#wpbc_gcal_import_events_modal select {
+    height:28px;
+}
+#wpbc_gcal_import_events_modal th {
+    vertical-align: middle;
+}
+#wpbc_gcal_import_events_modal th,
+#wpbc_gcal_import_events_modal td {
+    border:none;
+}
+#wpbc_gcal_import_events_modal label {
+    line-height: 28px;
+    margin: 0;
+    vertical-align: middle;
+}
+#wpbc_gcal_import_events_modal #booking_gcal_events_from_offset_type, 
+#wpbc_gcal_import_events_modal #booking_gcal_events_until_offset_type {    
+    vertical-align: initial;
+}
+
+/* Export */
+#wpbc_export_csv_modal {
+}
+@media (max-width: 782px) { 
+    .wpdevelop .modal-dialog{
+        margin: 60px 10px 10px;
+    }
+    
+    /* Import Google Events Dialog*/
+    #wpbc_gcal_import_events_modal .modal-dialog.modal-lg {
+        width: auto;
+    }
+    #wpbc_gcal_import_events_modal label{
+        font-weight: 600;
+        font-size: 1.1em;
+        width:100%;
+        display:block;
+        float:none;
+    }    
+    #wpbc_gcal_import_events_modal input[type=text],
+    #wpbc_gcal_import_events_modal select {
+        display:block;
+        width:100%;
+        clear:both;
+        height:34px;
+        float:none !important;
+    }
+    #wpbc_gcal_import_events_modal th,
+    #wpbc_gcal_import_events_modal td {
+        display:block;
+        padding:0;
+    }
+    #wpbc_gcal_import_events_modal td {
+        margin-bottom: 15px;
+    }
+    #wpbc_gcal_import_events_modal #booking_gcal_events_until, 
+    #wpbc_gcal_import_events_modal .booking_gcal_events_until_offset, 
+    #wpbc_gcal_import_events_modal #booking_gcal_events_from, 
+    #wpbc_gcal_import_events_modal .booking_gcal_events_from_offset {
+        float:none;
+        margin:0 !important;
+    }
+    #wpbc_gcal_import_events_modal .booking_gcal_events_from_offset label, 
+    #wpbc_gcal_import_events_modal .booking_gcal_events_until_offset label {
+        float:none;
+        margin:10px 0 0!important;
+    }
+    #wpbc_gcal_import_events_modal #booking_gcal_events_from_offset, 
+    #wpbc_gcal_import_events_modal #booking_gcal_events_from_offset_type, 
+    #wpbc_gcal_import_events_modal #booking_gcal_events_until_offset, 
+    #wpbc_gcal_import_events_modal #booking_gcal_events_until_offset_type {
+        width:100% !important;
+        float:none;
+    }
+    #wpbc_gcal_import_events_modal .booking_gcal_events_from_offset > span.wpbc_offset_value select,
+    #wpbc_gcal_import_events_modal .booking_gcal_events_until_offset > span.wpbc_offset_value select {
+        margin-top:10px !important;
+    }
+    
+    /* M o d a l     TinyMCE      t o o l b a r    ****************************/
+    #wpbc_tiny_modal .form-table td select {
+            height: 40px;
+    }
+    #wpbc_tiny_modal .wpdvlp-top-tabs .nav-tab {
+        -moz-border-radius:0;
+        -webkit-border-radius:0;
+        border-radius:0;
+        border: 1px solid #cccccc;
+        padding: 10px;
+        width: 100%;
+    }    
+}
+/* Fix position of modal window,  that depend from sidebar in admin panel */
+@media (min-width: 992px) and (max-width: 1300px) {
+    .wpdevelop .modal-dialog {
+        margin: 30px 170px auto;
+    }
+    .wpdevelop .modal-dialog.modal-lg {
+        width: 815px;
+    }
+    #wpbc_gcal_import_events_modal th {
+        width:140px;
+    }
+}
+
+/* M o d a l     TinyMCE      t o o l b a r    ****************************************/
+
+#wpbc_tiny_modal .modal-dialog.modal-lg {
+    width:94%;
+}
+/* Scrollbar for modal */
+#wpbc_tiny_modal {
+    overflow-y: auto !important;
+}
+/* this pasrt for having scrollbar inside of the modal window with  fixed height */
+#wpbc_tiny_modal_NO .modal-dialog{
+    overflow-y: initial !important;
+}
+#wpbc_tiny_modal_NO .modal-body{
+    height: 250px;
+    overflow-y: auto;
+}
+.wp-admin .modal-backdrop {
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+}
+.wp-admin .modal-backdrop.fade {
+    opacity: 0;
+}
+.wp-admin .modal-backdrop.in {
+    opacity: 0.5;
+}
+#wpbc_tiny_modal strong, 
+#wpbc_tiny_modal label {
+    font-weight: 600;
+}
+#wpbc_tiny_modal .form-table th {
+    font-weight: 600;
+    line-height: 1.3;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+    vertical-align: top;
+    width: 200px;
+}
+#wpbc_tiny_modal .form-table td {
+    line-height: 1.3;
+    margin-bottom: 9px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+#wpbc_tiny_modal .modal-footer a.button, 
+#wpbc_tiny_modal .modal-footer a.button:hover,
+#wpbc_tiny_modal .modal-footer a.button:active,
+#wpbc_tiny_modal .modal-footer a.button:focus {
+    text-decoration: none;
+    outline: 0;
+}
+#wpbc_tiny_modal .wpbc_expand_section_link,
+#wpbc_tiny_modal a.wpbc_expand_section_link:hover,
+#wpbc_tiny_modal a.wpbc_expand_section_link:focus {
+    color:#21759b;
+    cursor: pointer;
+    outline: 0;
+    border:none;
+    border-bottom:1px dashed #21759B;
+    text-decoration: none;      
+}
+#wpbc_tiny_modal .booking_advanced_section, 
+#wpbc_tiny_modal .bookingcalendar_advanced_section, 
+#wpbc_tiny_modal .bookingselect_advanced_section, 
+#wpbc_tiny_modal .bookingtimeline_advanced_section0{
+    display:none;
+}
+#wpbc_tiny_modal .put-in {
+    cursor: pointer;
+    font-weight: 600;
+    background: none repeat scroll 0 0 #E9E9E9;
+    border: 1px solid #BBBBBB;
+    width:100%;
+}
+#wpbc_tiny_modal input[type="checkbox"],  
+#wpbc_tiny_modal input[type="radio"] {
+    margin: 0 10px 2px 0;
+    vertical-align: middle;
+    outline: 0;
+}
+#wpbc_tiny_modal .wpbc_sub_settings_grayed {
+    background-color: #f3f3f3;
+}
+#wpbc_tiny_modal .wpbc_sub_settings_grayed th {
+    padding: 10px 0 0 20px;
+}
+/* Placeholders */
+#wpbc_tiny_modal ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+}
+#wpbc_tiny_modal ::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+}
+#wpbc_tiny_modal :-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+}
+#wpbc_tiny_modal :-moz-placeholder {
+   color: #999;
+}
+#wpbc_tiny_modal .bookingsearch_search_results{
+    display:none;
+}
+#wpbc_tiny_modal .bookingsearch_search_form.wpbc_sub_settings_grayed{
+    display:none;
+}
+#wpbc_tiny_modal .wpbc_shortcode_bookingresource {
+    display:none;
+}
+#wpbc_tiny_modal select option:disabled {
+       color: #ccc;
+       display: none;
+}
+/* FixIn: 7.1.2.7 */
+@media (max-width: 782px) { 
+    .wp-admin .modal-backdrop.in {
+        display:none;
+    }
+}

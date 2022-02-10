@@ -1,0 +1,52 @@
+{
+    "name": "dhii/validation-base",
+    "description": "Base concrete functionality for validation.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.4 | ^7.0",
+        "dhii/validation-interface": "^0.2-alpha2",
+        "dhii/validation-abstract": "^0.2",
+        "dhii/i18n-helper-base": "^0.1",
+        "dhii/exception": "^0.1-alpha4",
+        "dhii/iterator-helper-base": "^0.1",
+        "dhii/normalization-helper-base": "^0.1"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1",
+        "codeclimate/php-test-reporter": "<=0.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Validation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Validation\\UnitTest\\": "test/unit",
+            "Dhii\\Validation\\FuncTest\\": "test/functional"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.2.x-dev"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "csfix": "php-cs-fixer fix -vvv",
+        "analyze": [
+            "phan --progress-bar --output-mode=text --output=test/phan-report.txt"
+        ]
+    }
+}

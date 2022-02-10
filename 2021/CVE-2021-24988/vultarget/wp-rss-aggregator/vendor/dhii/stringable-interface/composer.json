@@ -1,0 +1,27 @@
+{
+    "name": "dhii/stringable-interface",
+    "description": "Interoperability interface for objects that can be cast to string",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^5.3 | ^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1",
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "codeclimate/php-test-reporter": "<=0.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Util\\String\\": "src/"
+        }
+    }
+}

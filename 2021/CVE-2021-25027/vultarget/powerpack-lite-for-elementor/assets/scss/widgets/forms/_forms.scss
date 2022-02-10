@@ -1,0 +1,99 @@
+.pp-contact-form {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    textarea {
+        background: #fff;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        float: none;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        width: auto;
+    }
+    input[type="submit"] {
+        border: 0;
+        float: none;
+        height: auto;
+        margin: 0;
+        padding: 10px 20px;
+        width: auto;
+    }
+    input[type="submit"],
+    input[type="button"] {
+        @include transition($target: all, $time: 0.25s, $timing-function: linear);
+    }
+    &.placeholder-hide {
+        input,
+        textarea {
+            &::-webkit-input-placeholder {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+    &.placeholder-hide {
+        input,
+        textarea {
+            &::-moz-placeholder {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+    &.placeholder-hide {
+        input,
+        textarea {
+            &:-ms-input-placeholder {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+    &.placeholder-hide {
+        input,
+        textarea {
+            &:-moz-placeholder {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}
+.pp-custom-radio-checkbox {
+    input[type="checkbox"],
+    input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-style: solid;
+        border-width: 0;
+        outline: none;
+        min-width: 1px;
+        width: 15px;
+        height: 15px;
+        background: #ddd;
+        padding: 3px;
+        &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
+        &:checked:before {
+            background: #999;
+            @include transition($target: all, $time: 0.25s, $timing-function: linear);
+        }
+    }
+    input[type="radio"] {
+        border-radius: 50%;
+        &:before {
+            border-radius: 50%;
+        }
+    }
+}

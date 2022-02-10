@@ -1,0 +1,35 @@
+/*-------------------------------------------------------------------------------------------*/
+/* WP Admin */
+/*-------------------------------------------------------------------------------------------*/
+@charset "UTF-8";
+
+#toplevel_page_email-inquiry-ultimate .wp-menu-image:before {
+  font-family: "a3-sidebar-menu" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  	display:inline-block;
+  	font-size:17px !important;
+  	font-weight:400;
+  	height: 36px;
+	padding: 8px 0;
+	transition: all 0.1s ease-in-out 0s;
+	width: 20px;
+  
+  content: "\a3" !important;
+}
+#toplevel_page_email-inquiry-ultimate .wp-menu-image {
+	text-align:center;
+	background:none;	
+}
+
+@media screen and ( max-width: 782px ) {
+	.auto-fold #adminmenu #toplevel_page_email-inquiry-ultimate a.menu-top {
+		height:auto;	
+	}
+}

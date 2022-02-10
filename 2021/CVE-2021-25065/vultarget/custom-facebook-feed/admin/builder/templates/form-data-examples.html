@@ -1,0 +1,146 @@
+<!--
+Tool to help understand how sending and retrieving feed related info from the database works.
+-->
+<div style="clear: left;">
+
+    <p>Create/update source</p>
+
+    <p>Retrieve pages/groups (will store available ones in cff_builder if successful)</p>
+    <a href="" id="cff_page_link">Retrieve Pages</a><br>
+    <a href="" id="cff_group_link">Retrieve Groups</a>
+
+    <p>Manual account adding</p>
+
+    <form id="cff_add_source_form" method="post" action="">
+        <label for="cff_access_token">Access Token:</label><input id="cff_access_token" type="text" name="access_token" value=""><br>
+        <label for="cff_page_name">Page Name (not required):</label><input id="cff_page_name" type="text" name="name" value=""><br>
+        <label for="cff_page_id">Page ID:</label><input id="cff_page_id" type="text" name="id" value=""><br>
+        <label for="cff_type">Type:</label><input id="cff_type" type="text" name="type" value="page"><br>
+        <label for="cff_privilege">Privilege (events or leave blank):</label><input id="cff_privilege" type="text" name="privilege" value="events"><br>
+
+        <input type="hidden" name="action" value="cff_source_builder_update"/>
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <p>Create/update feed and settings</p>
+    <form id="cff_save_settings_form" method="post" action="">
+        <label for="cff_feed_id">Feed ID: (leave blank for new)</label><input id="cff_feed_id" type="text" name="feed_id" value=""><br>
+        <label for="cff_feed_title">Feed Title:</label><input id="cff_feed_title" type="text" name="feed_title" value=""><br>
+        <label for="cff_feed_status">Feed Status (publish or draft):</label><input id="cff_feed_status" type="text" name="status" value="publish"><br>
+        <label for="cff_src_1">Source 1 (must be the account/page ID):</label><input id="cff_src_1" type="text" name="sources[]" value=""><br>
+        <label for="cff_src_1">Source 2 (must be the account/page ID):</label><input id="cff_src_2" type="text" name="sources[]" value=""><br>
+        <label for="cff_num">Number:</label><input id="cff_num" type="text" name="num" value="10"><br>
+        <label for="cff_settings_include_post_set1">Include Posts in Return:</label><input id="cff_settings_include_post_set1" type="checkbox" name="include_post_set" value="1"/>
+        <br><label for="cff_settings_include_header1">Include Header in Return:</label><input id="cff_settings_include_header1" type="checkbox" name="include_header" value="1"/>
+
+        <input type="hidden" name="action" value="cff_feed_saver_manager_builder_update"/>
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <p>Get feed settings/posts by ID</p>
+    <form id="cff_get_settings_form" method="post" action="">
+        <label for="cff_settings_feed_id">Feed ID:</label><input id="cff_settings_feed_id" type="text" name="feed_id" value="1"><br>
+        <label for="cff_settings_include_post_set">Include Posts:</label><input id="cff_settings_include_post_set" type="checkbox" name="include_post_set" value="1"/>
+        <br><label for="cff_settings_include_header">Include Header:</label><input id="cff_settings_include_header" type="checkbox" name="include_header" value="1"/>
+
+        <input type="hidden" name="action" value="cff_feed_saver_manager_get_feed_settings"/>
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <p>Pages of things</p>
+    <form id="cff_get_source_page" method="post" action="">
+        <label for="cff_settings_source_page">Source Page:</label><input id="cff_settings_source_page" type="text" name="page" value="2"><br>
+        <input type="hidden" name="action" value="cff_source_get_page"/>
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <form id="cff_get_feed_page" method="post" action="">
+        <label for="cff_settings_feed_page">Feed Page:</label><input id="cff_settings_feed_page" type="text" name="page" value="2"><br>
+        <input type="hidden" name="action" value="cff_feed_saver_manager_get_feed_list_page"/>
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <p>Locations page by feed ID</p>
+
+    <form id="cff_get_locations_page" method="post" action="">
+        <label for="cff_settings_locations_feed_id">Feed ID:</label><input id="cff_settings_locations_feed_id" type="text" name="feed_id" value="1"><br>
+        <label for="cff_settings_locations_page">Locations Page:</label><input id="cff_settings_locations_page" type="text" name="page" value="2"><br>
+        <br><label for="cff_settings_is_legacy">This is a legacy feed:</label><input id="cff_settings_is_legacy" type="checkbox" name="is_legacy" value="1"/>
+        <input type="hidden" name="action" value="cff_feed_saver_manager_get_locations_page"/>
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <p>Dismiss Onboarding</p>
+    <form id="cff_dismiss_onboarding" method="post" action="">
+        <input type="hidden" name="action" value="cff_dismiss_onboarding"/>
+        <input class="button-primary" type="submit" value="Dismiss"/>
+    </form>
+
+    <p>Featured Post Preview</p>
+    <form id="cff_source_get_featured_post_preview" method="post" action="">
+        <input type="hidden" name="action" value="cff_source_get_featured_post_preview"/>
+        <label for="cff_source_get_featured_post_preview_thing">URL or Post ID:</label><input id="cff_source_get_featured_post_preview_thing" type="text" name="url_or_id" value="https://www.facebook.com/facebook/videos/10153231379946729/"><br>
+        <label for="cff_src_id">Source ID:</label><input id="cff_src_id" type="text" name="source_id" value=""><br>
+
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <p>Video Playlist Preview</p>
+    <form id="cff_source_get_playlist_post_preview" method="post" action="">
+        <input type="hidden" name="action" value="cff_source_get_playlist_post_preview"/>
+        <label for="cff_source_get_playlist_post_preview_thing">URL or Post ID:</label><input id="cff_source_get_playlist_post_preview_thing" type="text" name="url_or_id" value="https://www.facebook.com/watch/539051002877739/1979731855647067"><br>
+        <label for="cff_src_id_vid">Source ID:</label><input id="cff_src_id_vid" type="text" name="source_id" value=""><br>
+
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <p>Import/Export</p>
+    <form id="cff_import" method="post" action="">
+        <input type="hidden" name="action" value="cff_feed_saver_manager_importer"/>
+        <label for="cff_import_field">Import JSON</label><br>
+        <textarea id="cff_import_field" name="feed_json"></textarea>
+
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <p>Get feed comments</p>
+    <form id="cff_get_comments" method="post" action="">
+        <label for="cff_get_comments_feed_id">Feed ID:</label><input id="cff_get_comments_feed_id" type="text" name="feed_id" value="1"><br>
+
+        <input type="hidden" name="action" value="cff_feed_saver_manager_retrieve_comments"/>
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+    <p>Clear single feed cache</p>
+    <form id="cff_clear_single_feed_cache" method="post" action="">
+        <label for="cff_cc_feed_id">Feed ID:</label><input id="cff_cc_feed_id" type="text" name="feed_id" value="1"><br>
+
+        <input type="hidden" name="action" value="cff_feed_saver_manager_clear_single_feed_cache"/>
+        <input class="button-primary" type="submit" value="Submit"/>
+    </form>
+
+</div>
+<script>
+    jQuery(document).ready(function($) {
+        $('#cff_page_link').attr('href',cff_builder.sourceConnectionURLs.page);
+        $('#cff_group_link').attr('href',cff_builder.sourceConnectionURLs.group);
+
+        $('#cff_source_get_playlist_post_preview, #cff_clear_single_feed_cache, #cff_get_comments, #cff_add_source_form, #cff_save_settings_form, #cff_get_settings_form, #cff_get_source_page, #cff_get_feed_page, #cff_get_locations_page, #cff_dismiss_onboarding, #cff_source_get_featured_post_preview, #cff_import').submit(function(event) {
+
+            event.preventDefault();
+
+            var thisData = $(this).serializeArray();
+            $.ajax({
+                url: cff_builder.ajax_handler,
+                type: 'post',
+                data: thisData,
+                success: function (data) {
+                    if (data.indexOf('{') === 0) {
+                        data = JSON.parse(data);
+                    }
+
+                }
+            });
+        });
+    });
+</script>

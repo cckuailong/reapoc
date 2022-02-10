@@ -1,0 +1,36 @@
+{
+	"name": "page-views-count/stats",
+	"title": "Page Views",
+	"description": "Show all time views and views today",
+	"textdomain": "page-views-count",
+	"icon": {
+		"foreground": "#24b6f1"
+	},
+	"category": "a3rev-blocks",
+	"supports": {
+		"multiple": false
+	},
+	"keywords": [ "Page Views Count", "Views", "Stats" ],
+	"example": {
+		"attributes": {
+			"isPreview": true
+		}
+	},
+	"attributes": {
+		"align": {
+			"type": "string"
+		},
+		"postID": {
+			"type": "string",
+			"default": 0
+		},
+		"isDisabled": {
+			"type": "boolean",
+			"default": true
+		},
+		"isPreview": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

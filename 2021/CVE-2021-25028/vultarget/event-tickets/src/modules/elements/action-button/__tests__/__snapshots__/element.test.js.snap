@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionButton component rendered 1`] = `
+<button
+  className="tribe-editor__button tribe-editor__action-button tribe-editor__action-button--icon-left"
+  onClick={[Function]}
+  type="button"
+>
+  <span
+    aria-label="Emoji"
+    role="img"
+  >
+    🦖
+  </span>
+  <span
+    className="tribe-editor__action-button__label"
+  >
+    Custom Action
+  </span>
+</button>
+`;
+
+exports[`ActionButton component rendered as link 1`] = `
+<a
+  className="tribe-editor__link tribe-editor__action-button tribe-editor__action-button--icon-left"
+  href="#"
+>
+  <span
+    aria-label="Emoji"
+    role="img"
+  >
+    🦖
+  </span>
+  <span
+    className="tribe-editor__action-button__label"
+  >
+    Test Action
+  </span>
+</a>
+`;
+
+exports[`ActionButton component rendered with the correct class when icon is on the right 1`] = `
+<button
+  className="tribe-editor__button tribe-editor__action-button tribe-editor__action-button--icon-right"
+  onClick={[Function]}
+  type="button"
+>
+  <span
+    aria-label="Emoji"
+    role="img"
+  >
+    🦖
+  </span>
+  <span
+    className="tribe-editor__action-button__label"
+  >
+    Custom Action
+  </span>
+</button>
+`;

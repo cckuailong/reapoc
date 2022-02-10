@@ -1,0 +1,49 @@
+.tribe-editor__quantity-bar {
+	border: 1px solid #E1E3E6;
+	position: relative;
+	height: 10px;
+	margin: 5px 0;
+}
+
+.tribe-editor__quantity-bar__bar--sold,
+.tribe-editor__quantity-bar__bar--shared-sold,
+.tribe-editor__quantity-bar__bar--capacity {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.tribe-editor__quantity-bar__bar--capacity {
+	z-index: 3;
+
+	&:after {
+		width: 1px;
+		content: '';
+		height: 20px;
+		position: absolute;
+		background-color: #009FD4;
+		right: 0;
+		top: -5px;
+	}
+}
+
+.tribe-editor__quantity-bar__bar--sold {
+	background-color: #009FD4;
+	z-index: 2;
+}
+
+.tribe-editor__quantity-bar__bar--shared-sold {
+	background-color: #C9EBF7;
+	z-index: 1;
+}
+
+.tribe-editor__quantity-bar__bar-label {
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+	transform: translateX(50%);
+	font-size: 12px;
+	line-height: 1;
+	color: #545D66;
+}

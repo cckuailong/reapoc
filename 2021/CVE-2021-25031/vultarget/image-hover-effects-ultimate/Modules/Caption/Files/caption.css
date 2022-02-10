@@ -1,0 +1,161 @@
+.oxi-addons-container .oxi-image-hover-style-caption {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.oxi-addons-container .oxi-image-hover-style-caption:after {
+    padding-bottom: 100%;
+    content: "";
+    display: block;
+}
+
+.oxi-addons-container .oxi-image-hover-style-caption .oxi-image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.oxi-addons-container .oxi-image-caption-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.oxi-addons-container .oxi-image-caption-hover:hover,
+.oxi-addons-container .oxi-image-caption-hover.oxi-touch {
+    z-index: 5;
+}
+
+.oxi-addons-container .oxi-image-caption-hover,
+.oxi-addons-container .oxi-image-caption-hover:before,
+.oxi-addons-container .oxi-image-caption-hover:after,
+.oxi-addons-container .oxi-image-caption-hover *,
+.oxi-addons-container .oxi-image-caption-hover *:before,
+.oxi-addons-container .oxi-image-caption-hover *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.oxi-addons-container .oxi-image-caption-hover .oxi-image-hover-figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.oxi-addons-container .oxi-image-caption-hover .oxi-image-hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.oxi-addons-container .oxi-image-caption-hover .oxi-image-hover-image img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.oxi-addons-container .oxi-image-caption-hover .oxi-image-hover-figure-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+}
+
+.oxi-addons-container .oxi-image-caption-hover .oxi-image-hover-caption-tab  {
+    background: transparent;
+}
+
+.oxi-addons-container .oxi-image-hover-caption-tab {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.oxi-addons-container [class^='oxi-image-caption-']:before,
+.oxi-addons-container [class*='oxi-image-caption-']:before,
+.oxi-addons-container [class*='oxi-image-caption-']:after,
+.oxi-addons-container [class*='oxi-image-caption-']:after {
+    z-index: 2;
+}
+
+.oxi-addons-container [class^='oxi-image-caption-'] .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*='oxi-image-caption-'] .oxi-image-hover-figure-caption {
+    z-index: 3;
+}
+
+.oxi-addons-container .oxi-image-hover-style-caption .oxi-image-hover-heading {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.oxi-addons-container .oxi-image-hover-figure-caption .oxi-image-hover-content {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.oxi-addons-container .oxi-image-hover-style-caption .oxi-image-hover-button {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.oxi-addons-container .oxi-image-hover-style-caption a.oxi-image-btn {
+    display: inline-block;
+    font-size: 12px;
+    color: #00a88f;
+    background: #fafafa;
+    font-weight: 300;
+    padding: 7px 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    transition-delay: 0.0s;
+}
+
+.oxi-addons-container .oxi-image-hover-style-caption a.oxi-image-btn:hover {
+    color: #fafafa;
+    background: #00a88f;
+}

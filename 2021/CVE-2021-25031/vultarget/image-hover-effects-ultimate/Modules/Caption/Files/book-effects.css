@@ -1,0 +1,400 @@
+.oxi-addons-container .oxi-image-caption-hover-style-3,
+.oxi-addons-container .oxi-image-caption-hover-style-3:before,
+.oxi-addons-container .oxi-image-caption-hover-style-3:after,
+.oxi-addons-container .oxi-image-caption-hover-style-3 .oxi-image-hover-figure,
+.oxi-addons-container .oxi-image-caption-hover-style-3 .oxi-image-hover-figure:before,
+.oxi-addons-container .oxi-image-caption-hover-style-3 .oxi-image-hover-figure:after,
+.oxi-addons-container .oxi-image-caption-hover-style-3 .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-caption-hover-style-3 .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-caption-hover-style-3 .oxi-image-hover-figure-caption:after {
+    background-color: rgba(205, 11, 219, 1);
+}
+
+.oxi-addons-container [class^='oxi-image-book-open-'] *,
+.oxi-addons-container [class*=' oxi-image-book-open-'] * {
+    overflow: visible !important;
+}
+
+.oxi-addons-container *[class^='oxi-image-book-open-'] .oxi-image-hover-figure,
+.oxi-addons-container *[class*=' oxi-image-book-open-'] .oxi-image-hover-figure,
+.oxi-addons-container *[class^='oxi-image-book-open-'] .oxi-image-hover-figure-caption,
+.oxi-addons-container *[class*=' oxi-image-book-open-'] .oxi-image-hover-figure-caption {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none;
+}
+
+.oxi-addons-container *[class^='oxi-image-book-open-'] .oxi-image-hover-figure-caption:before,
+.oxi-addons-container *[class^='oxi-image-book-open-'] .oxi-image-hover-figure-caption:after,
+.oxi-addons-container *[class*=' oxi-image-book-open-'] .oxi-image-hover-figure-caption:before,
+.oxi-addons-container *[class*=' oxi-image-book-open-'] .oxi-image-hover-figure-caption:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    -moz-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+.oxi-addons-container *[class^='oxi-image-book-open-']:hover .oxi-image-hover-figure-caption:before,
+.oxi-addons-container *[class^='oxi-image-book-open-']:hover .oxi-image-hover-figure-caption:after,
+.oxi-addons-container *[class*=' oxi-image-book-open-']:hover .oxi-image-hover-figure-caption:before,
+.oxi-addons-container *[class*=' oxi-image-book-open-']:hover .oxi-image-hover-figure-caption:after,
+.oxi-addons-container *[class^='oxi-image-book-open-'].oxi-touch .oxi-image-hover-figure-caption:before,
+.oxi-addons-container *[class^='oxi-image-book-open-'].oxi-touch .oxi-image-hover-figure-caption:after,
+.oxi-addons-container *[class*=' oxi-image-book-open-'].oxi-touch .oxi-image-hover-figure-caption:before,
+.oxi-addons-container *[class*=' oxi-image-book-open-'].oxi-touch .oxi-image-hover-figure-caption:after {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.oxi-addons-container .oxi-image-book-open-horizontal * {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+.oxi-addons-container .oxi-image-book-open-horizontal .oxi-image-hover-figure-caption * {
+    opacity: 0;
+}
+
+.oxi-addons-container .oxi-image-book-open-horizontal .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-book-open-horizontal .oxi-image-hover-figure-caption:after {
+    height: 100%;
+    width: 50%;
+    top: 0;
+}
+
+.oxi-addons-container .oxi-image-book-open-horizontal .oxi-image-hover-figure-caption:before {
+    background-image: -webkit-linear-gradient( left, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, transparent), color-stop(99%, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.15)));
+    background-image: -webkit-linear-gradient(left, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -moz-linear-gradient(left, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -o-linear-gradient(left, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: linear-gradient(to right, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    left: 0;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.oxi-addons-container .oxi-image-book-open-horizontal .oxi-image-hover-figure-caption:after {
+    background-image: -webkit-linear-gradient( right, transparent 60%, rgba(0, 0, 0, 0.12) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(60%, transparent), color-stop(99%, rgba(0, 0, 0, 0.12)), to(rgba(0, 0, 0, 0.15)));
+    background-image: -webkit-linear-gradient(right, transparent 60%, rgba(0, 0, 0, 0.12) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -moz-linear-gradient(right, transparent 60%, rgba(0, 0, 0, 0.12) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -o-linear-gradient(right, transparent 60%, rgba(0, 0, 0, 0.12) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: linear-gradient(to left, transparent 60%, rgba(0, 0, 0, 0.12) 99%, rgba(0, 0, 0, 0.15) 100%);
+    right: 0;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.oxi-addons-container .oxi-image-book-open-horizontal:hover,
+.oxi-addons-container .oxi-image-book-open-horizontal:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-book-open-horizontal:hover .oxi-image-hover-figure,
+.oxi-addons-container .oxi-image-book-open-horizontal.oxi-touch,
+.oxi-addons-container .oxi-image-book-open-horizontal.oxi-touch .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-book-open-horizontal.oxi-touch .oxi-image-hover-figure {
+    background: transparent !important;
+}
+
+.oxi-addons-container .oxi-image-book-open-horizontal:hover .oxi-image-hover-figure-caption *,
+.oxi-addons-container .oxi-image-book-open-horizontal.oxi-touch .oxi-image-hover-figure-caption * {
+    opacity: 1;
+    -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
+    -o-transition-delay: 0.21s;
+    transition-delay: 0.21s;
+}
+
+.oxi-addons-container .oxi-image-book-open-vertical * {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+.oxi-addons-container .oxi-image-book-open-vertical .oxi-image-hover-figure-caption * {
+    opacity: 0;
+}
+
+.oxi-addons-container .oxi-image-book-open-vertical:hover,
+.oxi-addons-container .oxi-image-book-open-vertical:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-book-open-vertical:hover .oxi-image-hover-figure,
+.oxi-addons-container .oxi-image-book-open-vertical.oxi-touch,
+.oxi-addons-container .oxi-image-book-open-vertical.oxi-touch .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-book-open-vertical.oxi-touch .oxi-image-hover-figure {
+    background: transparent !important;
+}
+
+.oxi-addons-container .oxi-image-book-open-vertical .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-book-open-vertical .oxi-image-hover-figure-caption:after {
+    height: 50%;
+    width: 100%;
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-book-open-vertical .oxi-image-hover-figure-caption:before {
+    background-image: -webkit-linear-gradient( top, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(99%, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.15)));
+    background-image: -webkit-linear-gradient(top, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -moz-linear-gradient(top, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -o-linear-gradient(top, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.15) 100%);
+    top: 0;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.oxi-addons-container .oxi-image-book-open-vertical .oxi-image-hover-figure-caption:after {
+    background-image: -webkit-linear-gradient( bottom, transparent 60%, rgba(0, 0, 0, 0.13) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(60%, transparent), color-stop(99%, rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0.15)));
+    background-image: -webkit-linear-gradient(bottom, transparent 60%, rgba(0, 0, 0, 0.13) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -moz-linear-gradient(bottom, transparent 60%, rgba(0, 0, 0, 0.13) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -o-linear-gradient(bottom, transparent 60%, rgba(0, 0, 0, 0.13) 99%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: linear-gradient(to top, transparent 60%, rgba(0, 0, 0, 0.13) 99%, rgba(0, 0, 0, 0.15) 100%);
+    bottom: 0;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.oxi-addons-container .oxi-image-book-open-vertical:hover .oxi-image-hover-figure-caption *,
+.oxi-addons-container .oxi-image-book-open-vertical.oxi-touch .oxi-image-hover-figure-caption * {
+    opacity: 1;
+    -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
+    -o-transition-delay: 0.21s;
+    transition-delay: 0.21s;
+}
+
+.oxi-addons-container .oxi-image-book-open-up * {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+.oxi-addons-container .oxi-image-book-open-up .oxi-image-hover-image {
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.oxi-addons-container .oxi-image-book-open-up .oxi-image-hover-figure-caption {
+    z-index: -1;
+}
+
+.oxi-addons-container .oxi-image-book-open-up .oxi-image-hover-figure-caption * {
+    opacity: 1;
+}
+
+.oxi-addons-container .oxi-image-book-open-up .oxi-image-hover-figure-caption:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-linear-gradient( bottom, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, transparent), color-stop(99%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -webkit-linear-gradient(bottom, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -moz-linear-gradient(bottom, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -o-linear-gradient(bottom, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: linear-gradient(to top, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-book-open-up:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-book-open-up.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotateX(86deg);
+    -moz-transform: rotateX(86deg);
+    transform: rotateX(86deg);
+}
+
+.oxi-addons-container .oxi-image-book-open-up * {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+.oxi-addons-container .oxi-image-book-open-up .oxi-image-hover-figure-caption {
+    z-index: -1;
+}
+
+.oxi-addons-container .oxi-image-book-open-up .oxi-image-hover-figure-caption * {
+    opacity: 1;
+}
+
+.oxi-addons-container .oxi-image-book-open-up .oxi-image-hover-figure-caption:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-linear-gradient( top, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(99%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -webkit-linear-gradient(top, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -moz-linear-gradient(top, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -o-linear-gradient(top, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-book-open-left * {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+.oxi-addons-container .oxi-image-book-open-left .oxi-image-hover-image {
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.oxi-addons-container .oxi-image-book-open-left .oxi-image-hover-figure-caption {
+    z-index: -1;
+}
+
+.oxi-addons-container .oxi-image-book-open-left .oxi-image-hover-figure-caption * {
+    opacity: 1;
+}
+
+.oxi-addons-container .oxi-image-book-open-left .oxi-image-hover-figure-caption:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-linear-gradient( right, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(80%, transparent), color-stop(99%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -webkit-linear-gradient(right, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -moz-linear-gradient(right, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -o-linear-gradient(right, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: linear-gradient(to left, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-book-open-left:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-book-open-left.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotateY(-86deg);
+    -moz-transform: rotateY(-86deg);
+    transform: rotateY(-86deg);
+}
+
+.oxi-addons-container .oxi-image-book-open-right * {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+.oxi-addons-container .oxi-image-book-open-right .oxi-image-hover-image {
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.oxi-addons-container .oxi-image-book-open-right .oxi-image-hover-figure-caption {
+    z-index: -1;
+}
+
+.oxi-addons-container .oxi-image-book-open-right .oxi-image-hover-figure-caption * {
+    opacity: 1;
+}
+
+.oxi-addons-container .oxi-image-book-open-right .oxi-image-hover-figure-caption:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-linear-gradient( left, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(80%, transparent), color-stop(99%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -webkit-linear-gradient(left, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -moz-linear-gradient(left, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -o-linear-gradient(left, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: linear-gradient(to right, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-book-open-right:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-book-open-right.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotateY(86deg);
+    -moz-transform: rotateY(86deg);
+    transform: rotateY(86deg);
+}
+
+.oxi-addons-container .oxi-image-book-open-down * {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+.oxi-addons-container .oxi-image-book-open-down .oxi-image-hover-image {
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.oxi-addons-container .oxi-image-book-open-down .oxi-image-hover-figure-caption {
+    z-index: -1;
+}
+
+.oxi-addons-container .oxi-image-book-open-down .oxi-image-hover-figure-caption * {
+    opacity: 1;
+}
+
+.oxi-addons-container .oxi-image-book-open-down .oxi-image-hover-figure-caption:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-linear-gradient( top, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(99%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -webkit-linear-gradient(top, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -moz-linear-gradient(top, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: -o-linear-gradient(top, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.2) 99%, rgba(0, 0, 0, 0.3) 100%);
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-book-open-down:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-book-open-down.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: rotateX(-86deg);
+    -moz-transform: rotateX(-86deg);
+    transform: rotateX(-86deg);
+}

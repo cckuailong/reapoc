@@ -1,0 +1,54 @@
+/**
+ * This file should contain frontend styles that
+ * will be applied to all module instances.
+ */
+
+.bb-gf-input.input-small {
+    width: 46px !important;
+}
+.fl-module .pp-cf7-content input.wpcf7-submit {
+    clear: both;
+}
+
+@media only screen and (min-width: 769px) {
+    .pp-cf7-content .pp-cf7-col-1 {
+        width: 100%;
+        padding: 0 5px;
+        clear: left;
+    }
+    .pp-cf7-content .pp-cf7-col-2 {
+    	width: 50%;
+    	float: left;
+        padding: 0 5px;
+    }
+    .pp-cf7-content .pp-cf7-col-3 {
+    	width: 33.33%;
+    	float: left;
+        padding: 0 5px;
+    }
+    .pp-cf7-content .pp-cf7-col-4 {
+    	width: 25%;
+    	float: left;
+        padding: 0 5px;
+    }
+    .pp-cf7-content .pp-cf7-col-5 {
+    	width: 20%;
+    	float: left;
+        padding: 0 5px;
+    }
+    .pp-cf7-content .pp-cf7-col-6 {
+    	width: 16.66%;
+    	float: left;
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+	.pp-cf7-content .wpcf7-text,
+	.pp-cf7-content .wpcf7-email,
+	.pp-cf7-content .wpcf7-textarea,
+	.pp-cf7-content .wpcf7-quiz,
+	.pp-cf7-content .wpcf7-number {
+		width: 100% !important;
+	}
+}

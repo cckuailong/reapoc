@@ -1,0 +1,29 @@
+/*
+ * These are the styles that get enqueued by WP RSS Aggregator on all pages of
+ * the admin panel.
+ */
+
+#menu-posts-wprss_feed .dashicons {
+    vertical-align: text-top;
+}
+
+.dashicons-star-filled.wprss-more-features-glyph {
+    color: #ffd700;
+    margin-left: 5px;
+    font-size: 12pt;
+}
+
+table.plugins tbody tr[data-slug="wp-rss-aggregator-excerpts-and-thumbnails"] > td,
+table.plugins tbody tr[data-slug="wp-rss-aggregator-excerpts-and-thumbnails"] > th {
+    box-shadow: none !important;
+}
+
+table.plugins tbody tr.wprss-et-plugin-row-msg > td > div > p::before {
+    content: "\f348";
+    color: #00a0d2;
+}
+
+/* Hide the image options in the new/edit page */
+.postbox-container #wpra-images {
+    display: none;
+}

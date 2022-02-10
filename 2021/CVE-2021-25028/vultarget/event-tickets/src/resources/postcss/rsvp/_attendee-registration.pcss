@@ -1,0 +1,206 @@
+/**
+ * Event Tickets - RSVP Attendee Registration
+ *
+ * @since 5.0.0
+ */
+
+.event-tickets {
+
+	.tribe-tickets__rsvp-ar {
+		padding-left: var(--tec-grid-gutter-small-half);
+		padding-right: var(--tec-grid-gutter-small-half);
+
+		@media (--viewport-medium) {
+			flex-direction: row-reverse;
+			padding-left: var(--tec-grid-gutter-half);
+			padding-right: var(--tec-grid-gutter-half);
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-sidebar-wrapper {
+		display: flex;
+		flex: none;
+
+		@media (--viewport-medium) {
+			border-left: 1px dashed var(--tec-color-border-secondary);
+			width: calc(3 * var(--tec-grid-width-1-of-8));
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-sidebar {
+		border-bottom: 1px dashed var(--tec-color-border-secondary);
+		margin-top: var(--tec-spacer-5);
+		padding: var(--tec-spacer-5) 0;
+		width: 100%;
+
+		@media (--viewport-medium) {
+			border: 0;
+			margin-top: 0;
+			padding-left: var(--tec-spacer-4);
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-quantity {
+		align-items: center;
+		display: flex;
+		margin-top: var(--tec-spacer-4);
+
+		@media (--viewport-medium) {
+			display: block;
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-quantity-input {
+		align-items: center;
+		display: flex;
+		margin-left: var(--tec-spacer-3);
+
+		@media (--viewport-medium) {
+			margin-left: 0;
+		}
+
+		input[type="number"] {
+			appearance: textfield;
+			background: transparent;
+			border: none;
+			height: var(--tec-spacer-8);
+			max-width: var(--tec-spacer-8);
+			padding: var(--tec-spacer-0) 0;
+			text-align: center;
+
+			@media (--viewport-small) {
+				height: var(--tec-spacer-8);
+			}
+
+			&:-webkit-inner-spin-button,
+			&:-webkit-outer-spin-button {
+				appearance: none;
+			}
+		}
+	}
+
+	/* @todo @juanfra: check this and see if we do a minus/plus and one for the number input instead of generic. */
+	.tribe-tickets__rsvp-ar-quantity-input-number {
+		background-color: transparent;
+		border: 1px solid var(--tec-color-border-default);
+		border-radius: 50%;
+		flex: none;
+		height: 28px;
+		padding: 0;
+		position: relative;
+		width: 28px;
+
+		&:before,
+		&:after {
+			background-color: var(--tec-color-icon-active);
+			content: '';
+			height: 2px;
+			left: 9px;
+			position: absolute;
+			top: 12px; /* Fix for IE11 */
+			width: 8px;
+		}
+
+		&:hover,
+		&:focus {
+			background: none;
+			border-color: var(--tec-color-border-active);
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-quantity-input-number--plus {
+
+		&:after {
+			transform: rotate(90deg);
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-guest-list {
+		margin-top: var(--tec-spacer-7) !important; /* @todo @juanfra: see why common is setting specificity for this. */
+	}
+
+	.tribe-tickets__rsvp-ar-guest-list-item {
+		display: inline-block;
+
+		@media (--viewport-medium) {
+			display: block;
+		}
+
+		&:not(:first-of-type) {
+			@media (--viewport-medium) {
+				margin-top: var(--tec-spacer-7);
+			}
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-guest-list-item-button,
+	.tribe-tickets__rsvp-ar-guest-list-item-button--inactive {
+
+		&:hover,
+		&:focus {
+			color: var(--tec-color-text-primary);
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-guest-list-item-button--inactive {
+		color: var(--tec-color-text-secondary);
+
+		.tribe-tickets__rsvp-ar-guest-icon {
+			path {
+				fill: var(--tec-color-icon-disabled);
+				stroke: var(--tec-color-icon-disabled);
+			}
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-guest-list-item-title {
+		@media (--viewport-medium) {
+			@mixin visually-show;
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-guest-icon {
+		display: inline-block;
+		height: 17px;
+		margin-right: var(--tec-spacer-5);
+		width: 14px;
+
+		@media (--viewport-medium) {
+			height: 14px;
+			margin-right: var(--tec-spacer-0);
+			width: 11px;
+		}
+
+		path {
+			fill: var(--tec-color-icon-active);
+			stroke: var(--tec-color-icon-active);
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-form-wrapper {
+		background-color: #f6f7f9;
+		display: flex;
+		flex: none;
+
+		@media (--viewport-medium) {
+			width: calc(5 * var(--tec-grid-width-1-of-8));
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-form {
+		padding: var(--tec-spacer-5) 0;
+		width: 100%;
+
+		@media (--viewport-medium) {
+			text-align: initial;
+		}
+
+		.tribe-tickets__form {
+			margin-top: var(--tec-spacer-4);
+		}
+	}
+
+	.tribe-tickets__rsvp-ar-form-title {
+		color: var(--tec-color-text-secondary);
+	}
+}

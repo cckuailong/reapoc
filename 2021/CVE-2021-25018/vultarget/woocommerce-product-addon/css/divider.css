@@ -1,0 +1,109 @@
+.ppom-divider-with-txt {
+	display: flex;
+	font-size: 1rem !important;
+}
+
+.ppom-divider-with-txt:before,
+.ppom-divider-with-txt:after {
+	content: "";
+	flex: 1;
+}
+
+.ppom-divider-line {
+	align-items: center;
+	margin: 1em -1em;
+	width: auto !important;
+}
+
+.ppom-divider-line:before,
+.ppom-divider-line:after {
+	margin: 0 1em;
+}
+
+.ppom-divider-gradient {
+	align-items: stretch;
+	margin: 1em 0;
+	height: 2em;
+	line-height: 2em;
+	color: white !important;
+	background: black;
+}
+
+.ppom-divider-gradient:before {
+	background: linear-gradient(to right, white, black);
+}
+
+.ppom-divider-gradient:after {
+	background: linear-gradient(to left, white, black);
+}
+
+.ppom-divider-donotcross {
+	overflow: hidden;
+	align-items: center;
+	background: #ffd500;
+	/*padding-top: 11px;*/
+	color: black !important;
+	height: 2em;
+	line-height: 2em !important;
+}
+
+.ppom-divider-donotcross:before,
+.ppom-divider-donotcross:after {
+	background: white;
+	padding: 15px 0;
+	height: 0;
+	transform: rotate(45deg);
+}
+
+.ppom-divider-easy-shadow {
+	display: table;
+	font-size: 24px;
+	text-align: center;
+	margin: 2px auto;
+}
+
+.ppom-divider-easy-shadow span {
+	display: table-cell;
+	position: relative;
+}
+
+.ppom-divider-easy-shadow span:first-child,
+.ppom-divider-easy-shadow span:last-child {
+	width: 50%;
+	top: 13px;
+	-moz-background-size: 100% 2px;
+	background-size: 100% 2px;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+}
+
+.ppom-divider-easy-shadow span:nth-child(2) {
+	color: #000;
+	padding: 0px 5px;
+	width: auto;
+	white-space: nowrap;
+	line-height: 30px;
+}
+
+.ppom-divider-fancy-heading {
+	font-size: 1.5em !important;
+	letter-spacing: 0.08em;
+	font-weight: 300 !important;
+	color: #F60 !important;
+	text-shadow: 0 1px 1px #FFFFFF;
+	text-transform: uppercase;
+}
+
+.ppom-divider-fancy-line {
+	border-bottom: 1px solid #e8e6e6;
+	background-color: #DADADA;
+	/*height: 1px;*/
+	margin-bottom: 10px;
+}
+
+.ppom-divider-fancy-line span {
+	display: block;
+	width: 50px;
+	height: 1px;
+	background-color: #F60;
+}

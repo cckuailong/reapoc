@@ -1,0 +1,192 @@
+.woo-orders-tracking-order-tracking-info-wrap {
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    min-height: 50px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 5px auto;
+    line-height: 1.5;
+    cursor: initial;
+    position: relative;
+}
+
+.woo-orders-tracking-order-tracking-info-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    transform: rotate(0);
+    transition: transform 200ms ease;
+}
+
+.woo-orders-tracking-order-tracking-info-icon.woo-orders-tracking-order-tracking-info-open {
+    transform: rotate(45deg);
+}
+
+.woo-orders-tracking-order-tracking-info-refresh i:before {
+    font-size: inherit;
+    transition: font-size 200ms ease;
+}
+
+.woo-orders-tracking-order-tracking-info-refresh i {
+    font-size: 16px;
+}
+
+.woo-orders-tracking-order-tracking-info-refresh i:hover {
+    font-size: 18px;
+}
+
+.woo-orders-tracking-order-tracking-info-refresh {
+    cursor: pointer;
+}
+
+.woo-orders-tracking-order-tracking-info-wrap a {
+    font-size: 12px;
+}
+
+.woo-orders-tracking-order-tracking-info-hidden {
+    display: none !important;
+}
+
+.woo-orders-tracking-order-tracking-info-wrap .woo-orders-tracking-order-tracking-info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(225, 225, 225, 0.25);
+    cursor: default;
+}
+
+.woo-orders-tracking-tracking-number-container {
+    margin: 5px 0;
+    position: relative;
+    border: 1px solid rgba(1, 1, 1, .1);
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+}
+
+.woo-orders-tracking-tracking-number-container:first-child {
+    margin-top: 0;
+}
+
+.woo-orders-tracking-tracking-number-container:last-child {
+    margin-bottom: 0;
+}
+
+.woo-orders-tracking-tracking-number-container a {
+    color: #000;
+    transition: opacity 200ms ease;
+}
+
+.woo-orders-tracking-tracking-number-container.woo-orders-tracking-tracking-number-container-delivered .woo-orders-tracking-tracking-service-refresh {
+    display: none;
+}
+
+.woo-orders-tracking-tracking-number-container-alert a {
+    color: red;
+}
+
+.woo-orders-tracking-tracking-service-action-button-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+}
+
+.woo-orders-tracking-tracking-number-container:hover .woo-orders-tracking-tracking-service-action-button-container,
+.woo-orders-tracking-tracking-number-container-loading .woo-orders-tracking-tracking-service-action-button-container {
+    display: flex;
+}
+
+.woo-orders-tracking-tracking-number-container:hover .woo-orders-tracking-tracking-number {
+    opacity: .3;
+}
+
+span.woo-orders-tracking-tracking-service-action-button {
+    vertical-align: middle;
+    font-size: 18px;
+    transition: font-size 200ms ease;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    color: #000;
+}
+
+span.woo-orders-tracking-tracking-service-action-button:hover {
+    font-size: 20px;
+}
+
+.woo-orders-tracking-tracking-number-container-loading .woo-orders-tracking-tracking-service-refresh:before {
+    content: url('../images/loading.gif');
+    display: inline-block;
+    transform: scale3d(0.3, 0.3, 0.3) translate(-64px, -64px);
+    width: 56px;
+    height: 56px;
+}
+
+/*paypal*/
+td.vi_wot_tracking_code.column-vi_wot_tracking_code {
+    position: relative;
+}
+
+.woo-orders-tracking-tracking-number-column-container {
+    cursor: initial;
+    margin-right: 10px;
+}
+
+span.woo-orders-tracking-item-tracking-button-add-to-paypal-container {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container.woo-orders-tracking-paypal-active img.woo-orders-tracking-item-tracking-button-add-to-paypal {
+    cursor: pointer;
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container img.woo-orders-tracking-item-tracking-button-add-to-paypal {
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    vertical-align: middle;
+    transform: scale3d(1, 1, 1);
+    transition: transform 200ms ease;
+}
+
+.woo-orders-tracking-paypal-inactive img.woo-orders-tracking-item-tracking-button-add-to-paypal {
+    opacity: .5;
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container.woo-orders-tracking-paypal-active img.woo-orders-tracking-item-tracking-button-add-to-paypal:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container span.woo-orders-tracking-paypal-result {
+    position: absolute;
+    right: -100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container span.woo-orders-tracking-paypal-result.woo-orders-tracking-paypal-result-success {
+    color: #20d020;
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container span.woo-orders-tracking-paypal-result.woo-orders-tracking-paypal-result-error {
+    color: red;
+}
+
+strong.woo-orders-tracking-order-tracking-info-tracking-number-code {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,247 @@
+/*
+ * CSS Stylesheet for Simple Admin Pages library
+ *
+ * This stylesheet formats the display components placed into the WordPress
+ * admin menu. It attempts to replicate WordPress's existing admin menu style.
+ *
+ * @package Simple Admin Pages
+*/
+
+/**
+ * Clear floats
+ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+/**
+ * Textarea
+ */
+textarea.small-text {
+	width: 25em;
+	height: 10em;
+}
+textarea.large-text {
+	height: 30em;
+}
+
+/**
+ * Image
+ */
+.sap-image-wrapper img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	margin-bottom: 1em;
+}
+.sap-image-wrapper-no-image .sap-image-btn-change,
+.sap-image-wrapper-no-image .sap-image-btn-remove,
+.sap-image-wrapper-no-image img {
+	display: none;
+}
+.sap-image-wrapper-has-image .sap-image-btn-add {
+   display: none;
+}
+
+/*
+ * Opening Hours
+ */
+.sap-opening-hours td {
+	padding-left: 0;
+	padding-right: 1em;
+	padding-top: 0;
+}
+input.sap-opening-hours-day {
+	width: 15em;
+}
+input.sap-opening-hours-hours {
+	width: 9em;
+}
+
+/*
+ * Scheduler
+ */
+.sap-add-scheduler {
+	margin-top: 1em;
+}
+.sap-scheduler-rule {
+	position: relative;
+	padding: 1em;
+	margin: 1em 0;
+	max-width: 800px;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.sap-selector {
+	display: inline-block;
+	margin-top: 0;
+	margin-right: 1em;
+	border-bottom: 1px solid #ccc;
+}
+.sap-selector li {
+	display: inline-block;
+	margin-right: 1em;
+	line-height: 20px;
+}
+.sap-selector a {
+	text-decoration: none;
+}
+.sap-selector .selected {
+	font-weight: 600;
+	color: #666;
+}
+.sap-scheduler-weekdays li,
+.sap-scheduler-weeks li {
+	display: inline-block;
+	margin-right: 0.5em;
+	text-align: center;
+}
+.sap-scheduler-date .label,
+.sap-scheduler-date-input label {
+	display: block;
+	font-style: italic;
+	text-align: left;
+	margin-bottom: 0;
+}
+.sap-scheduler-weekdays input,
+.sap-scheduler-weeks input {
+	margin-top: 6px;
+	margin-bottom: 7px;
+}
+.sap-scheduler-date label {
+	display: block;
+}
+.sap-scheduler-date-input {
+	display: none;
+	margin-top: 1em;
+}
+.sap-scheduler-date.date .sap-scheduler-weeks,
+.sap-scheduler-date.date .sap-scheduler-weekdays {
+	display: none;
+}
+.sap-scheduler-date.weekly .sap-scheduler-weeks,
+.sap-scheduler-date.date .sap-scheduler-weeks {
+	display: none;
+}
+.sap-scheduler-date.date .sap-scheduler-date-input {
+	display: block;
+}
+.sap-scheduler-time {
+	margin-top: 4em;
+}
+.sap-scheduler-time.all-day .sap-scheduler-time-input {
+	display: none;
+}
+.sap-scheduler-time-input .start,
+.sap-scheduler-time-input .end {
+	margin-top: 1em;
+	display: inline-block;
+}
+.sap-scheduler-time-input .start {
+	margin-right: 1em;
+}
+.sap-scheduler-time-input label {
+	display: block;
+	font-style: italic;
+}
+.sap-scheduler-time-input input {
+	max-width: 8em;
+}
+.sap-scheduler-all-day {
+	display: block;
+	margin-top: 1.7em;
+	font-style: italic;
+	padding: 1em;
+	background: #eee;
+}
+.sap-scheduler-all-day p {
+	margin-top: 0;
+}
+.sap-scheduler-time.time-slot .sap-scheduler-all-day {
+	display: none;
+}
+.sap-scheduler-control {
+	clear: both;
+	line-height: 1.5em;
+}
+.sap-scheduler-control {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+.sap-scheduler-control a {
+	text-decoration: none;
+}
+.sap-scheduler-control .delete {
+	color: #a00;
+}
+.sap-scheduler-control .delete:hover,
+.sap-scheduler-control .delete:focus {
+	color: red;
+}
+.sap-scheduler-rule.list .sap-scheduler-date,
+.sap-scheduler-rule.list .sap-scheduler-time {
+	display: none;
+}
+.sap-scheduler-rule .sap-scheduler-brief {
+	display: none;
+	clear: both;
+}
+.sap-scheduler-rule.list .sap-scheduler-brief {
+	display: block;
+}
+.sap-scheduler-brief {
+	margin-right: 4em;
+	line-height: 1.5em;
+}
+.sap-scheduler-brief .date,
+.sap-scheduler-brief .time {
+	display: inline-block;
+}
+.sap-scheduler-brief .date {
+	margin-right: 1em;
+}
+.sap-add-scheduler.disabled {
+	display: none;
+}
+@media (min-width: 783px) {
+	.sap-selector li {
+		font-size: 13px;
+	}
+	.sap-scheduler-time {
+		margin-top: 0;
+	}
+	.sap-scheduler-date {
+		float: left;
+		width: 50%;
+	}
+	.sap-scheduler-date.full-width {
+		float: none;
+		width: 100%;
+	}
+	.sap-scheduler-time {
+		float: right;
+		width: 50%;
+	}
+}
+
+/**
+ * Adjustements to pickadate library css to override WP admin styles
+ */
+.picker .picker__table {
+	table-layout: auto;
+}
+.picker .picker__table th,
+.picker .picker__table td {
+	text-align: center;
+	display: table-cell;
+	padding: 0.5em;
+	font-size: 1em;
+}

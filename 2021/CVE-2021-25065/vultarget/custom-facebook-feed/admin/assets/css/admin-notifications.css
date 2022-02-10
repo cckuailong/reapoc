@@ -1,0 +1,267 @@
+#cff-notifications {
+  position: relative;
+  background: #FFFFFF 0 0 no-repeat padding-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 4px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  opacity: 1;
+  min-height: 48px;
+  padding: 20px 120px 20px 82px;
+  margin: 0 0 14px 0;
+  box-sizing: border-box;
+}
+#cff-notifications.cff_review_notice,
+#cff-notifications.cff_discount_notice {
+  padding: 16px 70px 16px 82px
+}
+#cff-notifications * {
+  box-sizing: border-box;
+}
+
+#cff-notifications .bell,
+#cff-notifications .thumb{
+  position: absolute;
+  top: 11px;
+  left: 24px;
+  width: 42px;
+  height: 42px;
+}
+
+#cff-notifications .rn_step_2 .bell,
+#cff-notifications .rn_step_2 .thumb,
+.cff_discount_notice .bell,
+.cff_discount_notice .cff_thumb {
+  top: 16px !important;
+}
+#cff-notifications .thumb img,
+#cff-notifications .bell img {
+  max-width: 100%;
+}
+#cff-notifications .thumb .img-overlay {
+  top: 42px;
+  left: -6px;
+  width: 54px;
+  position: absolute;
+  background: #ca4a1f;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 3px;
+  line-height: 1;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#cff-notifications .messages .message {
+  display: none;
+}
+
+#cff-notifications .messages .message.current {
+  display: block;
+}
+
+#cff-notifications .messages .message .title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0;
+  color: #141B38;
+  letter-spacing: -0.01em;
+}
+
+#cff-notifications .messages .message .content {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 2px 0 32px 0;
+  color: #434960;
+}
+
+#cff-notifications .messages .message .buttons {
+  margin: -15px 0px 3px 0;
+  display: flex;
+}
+.cff-btn {
+  transition: all 0.15s ease-in-out;
+  letter-spacing: 0.2px;
+}
+/*orange*/
+.cff-btn-orange{
+	background: #E34F0E!important;
+	color: #fff!important;
+}
+.cff-btn-orange:hover{
+	background: #F37036!important;
+	color: #fff!important;
+}
+.cff-btn-orange:focus,
+.cff-btn-orange:active{
+	background: #B8400B!important;
+	color: #fff!important;
+}
+/*grey*/
+.cff-btn-grey{
+	background: #F3F4F5!important;
+	color: #141B38!important;
+	border: 1px solid #D0D1D7!important;
+}
+.cff-btn-grey:hover{
+	background: #fff!important;
+	color: #141B38!important;
+	border: 1px solid #DCDDE1!important;
+}
+.cff-btn-grey:focus,
+.cff-btn-grey:active{
+	background: #E8E8EB!important;
+	color: #141B38!important;
+	border: 1px solid #D0D1D7!important;
+}
+#cff-notifications .messages .message .buttons a {
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 32px;
+  text-decoration: none;
+  font-size: 12px;
+  border: none;
+}
+#cff-notifications .messages .message .buttons a.cff-btn-orange {
+  border: 1px solid #E34F0E
+}
+#cff-notifications .messages .message .buttons a:not(:last-child) {
+  margin-right: 8px;
+}
+#cff-notifications .messages .message .buttons a:focus,
+#cff-notifications .messages .message .buttons a:active {
+  outline: none;
+  box-shadow: none;
+}
+#cff-notifications .dismiss {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  width: 30px;
+  height: 32px;
+  color: #72777C;
+  font-size: 16px;
+  cursor: pointer;
+  align-items: center;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+}
+#cff-notifications .dismiss svg {
+	width: 15px;
+	height: 15px;
+}
+#cff-notifications .dismiss svg path {
+  fill: #8C8F9A;
+}
+#cff-notifications .navigation {
+  position: absolute;
+  bottom: 24px;
+  right: 21px;
+  width: 72px;
+  height: 30px;
+}
+
+#cff-notifications .navigation a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #DCDDE1;
+  border-radius: 2px;
+  font-size: 8px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  cursor: pointer;
+  background: #F3F4F5;
+  color: #141B38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+}
+
+#cff-notifications .navigation svg {
+  width: 9px;
+  height: 9px;
+}
+
+#cff-notifications .navigation a:not(.disabled):hover {
+  background-color: #fff;
+}
+#cff-notifications .navigation a:not(.disabled):focus,
+#cff-notifications .navigation a:not(.disabled):active {
+  background: #E8E8EB;
+  color: #141B38;
+}
+
+#cff-notifications .navigation .prev {
+  float: left;
+}
+
+#cff-notifications .navigation .next {
+  float: right;
+}
+
+#cff-notifications .navigation .disabled {
+  background: #E8E8EB;
+  color: #8C8F9A;
+  cursor: default;
+}
+@media screen and (max-width: 880px) {
+  #cff-notifications .messages .message .buttons {
+    flex-wrap: wrap;
+  }
+  #cff-notifications .messages .message .buttons a,
+  .cff-notice-links a {
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #cff-notifications {
+    padding: 15px 15px 15px 72px;
+  }
+  #cff-notifications .messages .message .title {
+    margin: 0 30px 0 0;
+  }
+  #cff-notifications .messages .message .content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #cff-notifications .messages .message .buttons {
+    margin: -10px 0 0;
+  }
+
+  #cff-notifications .messages .message .buttons .button-secondary {
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #cff-notifications.cff_review_notice, #cff-notifications.cff_discount_notice {
+    padding: 16px 30px 16px 82px;
+  }
+}
+.cff-notice-alert {
+  display: inline-block;
+  position: absolute;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 1px 0 0 4px;
+  padding: 0 5px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background-color: #d63638;
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+  z-index: 26;
+}
+

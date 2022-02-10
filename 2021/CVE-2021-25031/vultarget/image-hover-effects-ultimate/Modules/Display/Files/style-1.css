@@ -1,0 +1,43 @@
+.oxi-image-hover-load-more-button-wrap {
+    text-align: center;
+    padding: 10px;
+}
+.oxi-image-hover-load-more-button-wrap .oxi-image-load-more-button{
+    display: inline-flex;
+    color: #ffffff;
+    background: rgba(40, 41, 54, 1);
+    font-size: 16px;
+    color: #00a88f;
+    background: #fafafa;
+    font-weight: 300;
+    padding: 10px 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border:0px solid;
+    align-items: center;
+}
+.oxi-image-hover-loader{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 4px solid rgba(255,255,255,.2);
+    border-right: 4px solid rgba(255,255,255,.2);
+    border-bottom: 4px solid rgba(255,255,255,.2);
+    border-left: 4px solid #fff;
+    transform: translateZ(0);
+    -webkit-animation: loaderSpin 1.1s infinite linear;
+    animation: loaderSpin 1.1s infinite linear;
+    display: none;
+    margin-right: 5px;
+}
+.button--loading span{
+    display: none;
+}
+.button--loading .oxi-image-hover-loader{
+    display: block;
+}
+@-webkit-keyframes loaderSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+@keyframes loaderSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}

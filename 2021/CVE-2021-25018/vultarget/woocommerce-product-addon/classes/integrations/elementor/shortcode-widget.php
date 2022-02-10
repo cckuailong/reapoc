@@ -1,0 +1,81 @@
+<?php
+/**
+ * PPOM Shortcode Elementor Widget.
+ *
+ * Elementor widget that display the ppom fields by given product ID
+ *
+ * @since 1.0
+ */
+ 
+class PPOM_Elementor_Shortcode_Widget extends \Elementor\Widget_Base {
+
+	/**
+	 * widget name
+	*/
+	public function get_name() {
+		return 'ppom_shortcode';
+	}
+
+
+	/**
+	 * widget title
+	*/
+	public function get_title() {
+		return __( 'PPOM Shortcode', 'plugin-name' );
+	}
+	
+
+	/**
+	 * widget icon
+	*/
+	public function get_icon() {
+		return 'fa fa-list';
+	}
+	
+
+	/**
+	 * Set this widget to category
+	 */
+	public function get_categories() {
+		return [ 'general' ];
+	}
+	
+
+	/**
+	 * Register widget controls/setings
+	 */
+	protected function _register_controls() {
+
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => __( 'Product Details', 'ppom' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
+
+		$this->add_control(
+			'ppom_product_id',
+			[
+				'label' => __( 'Product ID', 'ppom' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'placeholder' => __( 'Provide Product ID', 'ppom' ),
+			]
+		);
+
+		$this->end_controls_section();
+	}
+	
+
+	/**
+	 * Render widget output on the frontend
+	*/
+	protected function render() {
+
+		$settings = $this->get_settings_for_display();
+
+		$product_id = isset($settings['ppom_product_id']) ? $settings['ppom_product_id']: 0;
+		
+		echo do_shortcode( '[ppom product_id="'.esc_attr($product_id).'" context="elementor_shortcode"]' );
+	}
+}

@@ -1,0 +1,43 @@
+.tribe-editor__ticket__ecommerce-options {
+	padding-top: 30px;
+}
+
+.tribe-editor__labeled-item__label {
+
+	.tribe-editor__ticket__ecommerce-options & {
+		flex: none;
+		width: 31%;
+	}
+}
+
+.tribe-editor__ticket__ecommerce-options-links {
+	display: flex;
+	line-height: 18px;
+}
+
+.tribe-editor__ticket__ecommerce-options-link-wrapper {
+	flex: none;
+
+	&:after {
+		content: "|";
+		color: #545D66;
+		margin: 0 6px;
+
+		.tribe-editor__ticket--disabled & {
+			color: #AEB4BB;
+		}
+	}
+
+	&:last-child:after {
+		content: "";
+	}
+}
+
+.tribe-editor__ticket__ecommerce-options-link {
+	font-size: 15px;
+	text-decoration: none;
+
+	.tribe-editor__ticket--disabled & {
+		color: #AEB4BB;
+	}
+}

@@ -1,0 +1,189 @@
+/**
+ * Custom css
+ */
+.zoom {
+	transition: transform .2s;
+}
+
+.zoom:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5);
+}
+.ibtana_visual_editor_general_settings a.lightbox img {
+	height: 200px;
+	width: 30%;
+	border: 2px solid #111;
+	padding:4px;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+}
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+.ibtana_visual_editor_general_settings .lightbox-target {
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	background: rgba(0,0,0,.7);
+	width: 100%;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	overflow: hidden;
+}
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+.ibtana_visual_editor_general_settings .lightbox-target img {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom: 0;
+	max-height: 0%;
+	max-width: 0%;
+	border: 3px solid white;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+	box-sizing: border-box;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+/* Styles the close link, adds the slide down transition */
+.ibtana_visual_editor_general_settings a.lightbox-close {
+	display: block;
+	width:50px;
+	height:50px;
+	box-sizing: border-box;
+	background: white;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: -80px;
+	right: 0;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+/* Provides part of the "X" to eliminate an image from the close link */
+.ibtana_visual_editor_general_settings a.lightbox-close:before {
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: black;
+	position: absolute;
+	left: 26px;
+	top:10px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+/* Provides part of the "X" to eliminate an image from the close link */
+.ibtana_visual_editor_general_settings a.lightbox-close:after {
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: black;
+	position: absolute;
+	left: 26px;
+	top:10px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+.ibtana_visual_editor_general_settings .lightbox-target:target {
+	opacity: 1;
+	top: 0;
+	bottom: 0;
+}
+.ibtana_visual_editor_general_settings .lightbox-target:target img {
+	max-height: 100%;
+	max-width: 100%;
+}
+.ibtana_visual_editor_general_settings .lightbox-target:target a.lightbox-close {
+	position: relative;
+	top: 5%;
+	left:80%;
+}
+.ibtana_visual_editor_general_settings .setting_para{
+	max-width:90%;color:#666;font-size:15px;
+}
+.setting_h5{
+	font-size:22px;
+	color: #6059a9;
+}
+.listing {
+    font-size: 15px;
+}
+.ibtana_visual_editor_general_settings {
+    padding: 25px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+.ibtana_visual_editor_general_settings h2{
+	font-size: 25px;
+	background-color:#6059a9;
+    width: 110px;
+    padding: 10px;
+    color: #fff;
+    border:1px solid #fff;
+}
+span.ibtana_visual_editor_first {
+    font-size: 18px;
+    font-weight:500;
+}
+.ibtana_visual_editor_general_settings li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.ibtana_visual_editor_general_settings h4 {
+    font-size: 24px;
+    margin-top: 40px;
+    text-align: center;
+    color: #6059a9;
+}
+.ibtana_visual_editor_general_settings img.ibtana_editor_img {
+    margin-left: 13px;
+    margin-bottom: 15px;
+}
+p.ibtana_visual_editor_para_class {
+    font-size: 18px;
+}
+.wpcontent.ibtana_visual_editor_blocks {
+    margin-left: 25px;
+}
+.theme-browser .rendered {
+	padding-top:20px;
+}
+ul.ibtana_visual_editor_premium_blocks li {
+    display: inline-block;
+}
+img.ibtana_editor_premium_block_img {
+    width: 92%;
+    border: 2px solid;
+    margin-right: 10px;
+    padding:4px;
+    height: 300px;
+}
+th.ibtana_editor_premium_block_title {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #000;
+}
+.ibtana_visual_editor_premium_blocks_class h3 {
+    background-color: #6059a9;
+    width: 170px;
+    padding: 10px;
+    color: #FFF;
+    border:1px solid;
+}

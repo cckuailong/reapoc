@@ -1,0 +1,83 @@
+.oxi-addons-container [class^='oxi-image-parallax-'],
+.oxi-addons-container [class*=' oxi-image-parallax-'] {
+    overflow: hidden;
+}
+
+.oxi-addons-container [class^='oxi-image-parallax-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-parallax-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class^='oxi-image-parallax-'].oxi-touch .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-parallax-'].oxi-touch .oxi-image-hover-figure-caption {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.oxi-addons-container .oxi-image-parallax-up .oxi-image-hover-figure-caption {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.oxi-addons-container .oxi-image-parallax-up:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-parallax-up.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.oxi-addons-container .oxi-image-parallax-down .oxi-image-hover-figure-caption {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.oxi-addons-container .oxi-image-parallax-down:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-parallax-down.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+.oxi-addons-container .oxi-image-parallax-left .oxi-image-hover-figure-caption {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.oxi-addons-container .oxi-image-parallax-left:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-parallax-left.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.oxi-addons-container .oxi-image-parallax-right .oxi-image-hover-figure-caption {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.oxi-addons-container .oxi-image-parallax-right:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-parallax-right.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+}

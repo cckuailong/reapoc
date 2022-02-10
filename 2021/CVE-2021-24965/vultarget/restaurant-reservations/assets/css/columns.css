@@ -1,0 +1,128 @@
+.rtb-booking-form fieldset {
+	border: 0 solid #ccc;
+	margin: 0;
+	padding: 0;
+	margin-inline-start: 0;
+	padding-inline-start: 0;
+	position: relative;
+	float: left;
+	margin-top: 32px;
+}
+.rtb-booking-form fieldset {
+	width: 47.5%;
+	margin-right: 5%;
+}
+.rtb-booking-form fieldset:nth-of-type(2n+2) {
+	margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+	.rtb-booking-form fieldset {
+		width: 100%;
+		margin-right: 0 !important;
+	}
+}
+
+.rtb-booking-form fieldset legend {
+	padding: 0;
+}
+
+.rtb-booking-form fieldset>div {
+	margin-top: 2em;
+}
+
+.rtb-booking-form fieldset label {
+	width: 100%;
+	background: #f1f1f1;
+	padding: 3px;
+	text-align: center;
+	color: #666;
+	font-weight: bold;
+	margin-bottom: 0 !important
+}
+
+.rtb-booking-form fieldset.optin {
+	clear: both;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.rtb-booking-form fieldset.optin label {
+	position: relative;
+	float: right;
+	width: auto;
+	background: transparent;
+	padding: 0;
+	text-align: center;
+	color: inherit;
+	font-weight: normal;
+}
+
+.rtb-booking-form form select,
+.rtb-booking-form form textarea,
+.rtb-booking-form form input,
+#stripe-payment-form #cardElement {
+	border: 1px solid #ddd;
+	border-top-color: #f1f1f1;
+	border-radius: 0;
+	background-color: white;
+	color: #777;
+	padding: 12px 21px;
+	max-width: 100%;
+}
+.rtb-booking-form form select,
+.rtb-booking-form form input,
+#stripe-payment-form #cardElement {
+	height: 48px;
+	width: 100%;
+}
+#stripe-payment-form #cardElement {
+	margin: 18px 0;
+}
+
+.rtb-booking-form form input::webkit-input-placeholder,
+.rtb-booking-form form input:ms--input-placeholder,
+.rtb-booking-form form input::placeholder {
+	color: #aaa;
+}
+
+.rtb-booking-form form fieldset .add-message {
+	clear: both;
+	position: relative;
+	float: right;
+	margin-top: 16px;
+}
+.rtb-booking-form .add-message a {
+	box-shadow: none;
+	padding: 6px 12px;
+	border: 1px solid #ddd;
+	background: white;
+	color: #888;
+	text-decoration: none;
+}
+.rtb-booking-form .add-message a:hover {
+	background: #aaa;
+	border-color: #aaa;
+	color: white;
+	text-decoration: none;
+}
+
+.rtb-booking-form button {
+	clear: both;
+	float: left;
+	margin-top: 36px;
+	cursor: pointer;
+	display: block;
+	align-items: stretch;
+	text-decoration: none;
+}
+:is(.rtb-booking-form, #stripe-booking-form) button:disabled {
+	background-color: gray;
+}
+:is(.rtb-booking-form, #stripe-booking-form) button:disabled:hover {
+	text-decoration: none;
+}
+
+.rtb-booking-form fieldset.optin input[type="checkbox"] {
+    vertical-align: top;
+    margin-top: -10px;
+}

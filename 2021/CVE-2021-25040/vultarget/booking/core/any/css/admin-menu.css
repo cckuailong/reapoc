@@ -1,0 +1,242 @@
+/**
+ * @version 1.0
+ * @package: Tabs 
+ * @category: Admin UI
+ * @author wpdevelop
+ *
+ * @web-site https://wpbookingcalendar.com/
+ * @email info@wpbookingcalendar.com 
+ * 
+ * @modified 2015.04.10
+ */
+
+
+/* Top Tab Menu ***************************************************************/
+.wpdvlp-top-tabs {
+    margin:0;
+    position: relative;
+    width: auto;
+}
+.wpdvlp-top-tabs .wpdvlp-tabs-wrapper {
+    height: 28px;
+    margin-bottom: -1px;
+    width: 100%;
+}
+.wpdvlp-top-tabs .nav-tabs {
+    float: left;
+    margin-left: 0;
+    padding-left: 0px;
+    /* border-bottom: none !important;*/
+    border-bottom: 1px solid #CCC;
+    width: 100%;
+}
+.wpdvlp-top-tabs .nav-tab {
+    border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-color: #D5D5D5 #D5D5D5 #BBC #D5D5D5;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    border-bottom: none;
+    display: inline-block;
+    background: none repeat scroll 0 0 #F4F4F4;
+    background: #DFDFDF;
+    color: #464646;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #F1F1F1;
+    line-height: 18px;    
+    padding: 4px 14px 6px;
+    padding: 5px 15px 5px;
+    margin: 0 5px 0 0;
+}
+.wpdvlp-top-tabs .pull-right .nav-tab {
+    margin: 0 0 0 5px;
+}
+.wpdvlp-top-tabs a.nav-tab:hover, 
+.wpdvlp-top-tabs a.nav-tab:visited, 
+.wpdvlp-top-tabs a.nav-tab:link ,
+.wpdvlp-sub-tabs a.nav-tab:hover, 
+.wpdvlp-sub-tabs a.nav-tab:visited, 
+.wpdvlp-sub-tabs a.nav-tab:link {
+    text-decoration: none;
+    outline: none;
+}
+/* IE6 */
+* html .wpdvlp-top-tabs .nav-tab {
+    padding: 4px 14px 5px 32px;
+}
+.wpdvlp-top-tabs a.nav-tab:hover {
+    color: #D54E21 !important;
+    background-color: #E7E7E7 !important; 
+}
+.wpdvlp-top-tabs .nav-tab-active, 
+.wpdvlp-top-tabs a.nav-tab-active:hover, 
+.wpdvlp-top-tabs a.nav-tab-active:focus {
+    border-color: #777;
+    border-bottom-color: #AAB;
+    background: none repeat scroll 0 0 #7A7A88;
+    text-shadow: 0 0px 0 #111;
+    border-width: 1px;
+    color: #FFF;
+}
+.wpdvlp-top-tabs a.nav-tab-active:hover,
+.wpdvlp-top-tabs a.nav-tab-active:focus {
+    color: #FFF !important;
+    background: none repeat scroll 0 0 #7A7A88 !important;    
+}
+.wpdvlp-top-tabs .nav-tab-position-right {
+    float:right;
+    margin: 0 0 0 5px;
+}
+
+/* Sub Menu *******************************************************************/
+.wpdvlp-sub-tabs {
+    height: auto;
+    clear: both;
+    border: 1px solid #BBC;
+    border-top: none;
+    -moz-border-radius: 0px 0px 3px 3px;
+    -moz-box-shadow: 0 1px 1px #DDD;
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -webkit-box-shadow: 0 1px 1px #DDD;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 0 1px 1px #DDD;
+    background: #EEE;
+    margin: 0;
+    padding: 5px;    
+}
+.wpdvlp-sub-tabs .wpdvlp-tabs-wrapper {
+    height: auto;
+    margin-bottom: -1px;
+    width: 100%;
+}
+
+.wpdvlp-sub-tabs .nav-tabs {
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 0; 
+    margin: 0;      
+}
+.wpdvlp-sub-tabs .nav-tabs .nav-tab {
+    border: 1px solid #bbb;
+    
+    background: #F5F5F5;
+    color: #777;
+    font-weight: 600;
+    font-size:13px;
+    height: 18px;
+    line-height: 16px;
+    
+    padding: 6px 10px 4px;
+    margin: 5px 2px -4px;
+    border-bottom: none;
+    
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-sizing: content-box;
+}
+.wpdvlp-top-tabs .nav-tabs .nav-tab input[type="checkbox"], 
+.wpdvlp-sub-tabs .nav-tabs .nav-tab input[type="checkbox"] {    
+    margin: 0 0 0 8px !important;
+    vertical-align: middle;
+}
+.wpdvlp-sub-tabs .nav-tabs .nav-tab.wpdevelop-submenu-tab-selected, 
+.wpdvlp-sub-tabs .nav-tabs .nav-tab.wpdevelop-submenu-tab-selected:hover {
+    border-color: #777;
+    border-bottom-color: #AAB;
+    text-shadow: 0 0px 0 #111;
+    border-width: 1px;
+    color: #FFF !important;
+    background: none repeat scroll 0 0 #7A7A88 !important;
+}
+.wpdvlp-top-tabs .nav-tabs .nav-tab.wpdevelop-tab-disabled, 
+.wpdvlp-sub-tabs .nav-tabs .nav-tab.wpdevelop-submenu-tab-disabled {
+    color: #bbb;
+    text-shadow: 0 -1px 1px #fff;
+}
+.wpdvlp-top-tabs .nav-tabs .nav-tab.nav-tab-active.wpdevelop-tab-disabled, 
+.wpdvlp-sub-tabs .nav-tabs .nav-tab.wpdevelop-submenu-tab-selected.wpdevelop-submenu-tab-disabled {
+    color: #555 !important;
+    text-shadow: 0 0 1px #aaa;
+}
+.wpdvlp-sub-tabs .nav-tabs .nav-tab.go-to-link, 
+.wpdvlp-sub-tabs .nav-tabs .nav-tab.go-to-link:hover,
+.wpdvlp-sub-tabs .nav-tabs .nav-tab.go-to-link:active {
+    box-shadow: 0 0 0;
+    font-weight: 400;
+    border:none;    
+    background: transparent !important;
+    margin:0 0 -4px;    
+    box-shadow: none;
+}
+.wpdvlp-sub-tabs .nav-tabs .nav-tab.go-to-link span {
+    border-bottom: 1px dashed;
+    padding:0 2px;
+}
+.wpdvlp-sub-tabs .wpbc_submit_button {
+    float:right;
+    margin:0px 5px 0px 0px;
+}
+.wpdvlp-sub-tabs .wpdevelop-submenu-tab-separator-vertical {
+    -moz-box-shadow: 1px 0px 0px #FEFEFE;
+    -webkit-box-shadow: 1px 0px 0px #FEFEFE;
+    box-shadow: 1px 0px 0px #FEFEFE;
+    border-right: #BBB solid 1px;
+    border-left: #CCC solid 1px;
+    background: none;
+    color: #777;
+    padding: 5px 0px 5px;
+    margin: 10px 15px 0px 10px;
+}
+.clear-for-mobile {
+    display:none;
+}
+/* iPad mini and all iPhones  and other Mobile Devices */
+@media (max-width: 782px) { 
+    /* Settings Top TABS */
+    .wpdvlp-top-tabs .nav-tab {        
+        padding: 10px 15px 5px;
+        padding: 8px 15px 8px;
+        font-size: 1.2em;
+    }
+    .wpdvlp-top-tabs .nav-tab .nav-tab-text {
+        display:none;
+    }
+    .wpdevelop-submenu-tab.nav-tab {
+        border-radius: 0 !important;
+        -moz-border-radius:0 !important;
+        -webkit-border-radius:0 !important;
+        display: block;
+        float: none;
+        width: auto;
+        clear:both;
+        vertical-align: middle !important;
+        border-bottom: 1px solid #bbb !important;      
+        margin:-1px 0 0 !important;
+        padding:0px 10px !important;     
+        height:3em !important;
+        line-height:3em !important;
+    }    
+    .wpdevelop-submenu-tab-separator-vertical {
+        display:none;
+    }
+    .wpdevelop-submenu-tab.go-to-link {
+        border-bottom: none !important;
+        width:auto;
+    }
+    .clear-for-mobile {
+        clear:both;
+        width:100%;
+        height:10px;
+        display:block;
+    }
+    .wpdevelop-submenu-tab input[type="checkbox"] {    
+        margin: -4px 0 0 8px !important
+        vertical-align: middle !important;
+        padding:0px !important;             
+    }
+}

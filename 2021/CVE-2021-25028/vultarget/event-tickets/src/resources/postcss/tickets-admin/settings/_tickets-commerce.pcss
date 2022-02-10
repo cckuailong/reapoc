@@ -1,0 +1,403 @@
+/**
+ * Event Tickets Admin Settings - Tickets Commerce
+ *
+ * @since 5.1.10
+ */
+
+/*
+	@todo @juanfra: This was already here, inherited. We need to move to common.
+*/
+
+#tribe-field-tickets-commerce-paypal-commerce-configure {
+	padding-left: 0;
+	width: 100%;
+
+	/*
+		@todo @juanfra: This was already here, inherited. We need to move to common.
+	*/
+
+	.tribe-field-wrap {
+		float: none;
+		max-width: none;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-toggle-wrapper {
+	margin-bottom: 20px;
+	margin-top: 45px;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-toggle {
+	cursor: pointer;
+	display: flex;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-toggle-switch {
+	background: #ccc;
+	border-radius: 16px;
+	display: inline-block;
+	height: 22px;
+	position: relative;
+	transition: background 0.4s;
+	vertical-align: middle;
+	width: 40px;
+
+	&:before,
+	&:after {
+		content: "";
+	}
+
+	&:before {
+		background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+		border-radius: 50%;
+		display: block;
+		height: 16px;
+		left: 3px;
+		position: absolute;
+		top: 3px;
+		transition: left 0.4s;
+		width: 16px;
+	}
+
+	.tec-tickets__admin-settings-tickets-commerce-toggle:hover &:before {
+		background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+	}
+
+	.tec-tickets__admin-settings-tickets-commerce-toggle-checkbox:checked + & {
+		background: #278dbc;
+
+		&:before {
+			left: 20px;
+		}
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-toggle-checkbox {
+	position: absolute;
+	visibility: hidden;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-toggle-label {
+	color: #1d2327;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 23px;
+	margin-left: 15px;
+	position: relative;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-description {
+	font-size: 13px;
+	font-weight: normal;
+	margin-bottom: 35px;
+	max-width: 84%;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 45px 32px 20px 32px;
+
+	@media (--viewport-medium) {
+		background-image: url("../images/background-paypal-connect.png");
+		background-position: center right;
+		background-repeat: no-repeat;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-title {
+	font-size: 20px;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-description {
+	margin-bottom: 20px;
+
+	p {
+		max-width: 470px;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-signup-links {
+	margin-top: var(--tec-spacer-8);
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-help-links {
+	margin-top: var(--tec-spacer-8);
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-help-link {
+	align-items: center;
+	display: flex;
+
+	&:not(:last-of-type) {
+		margin-bottom: 8px;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-refresh-link,
+.tec-tickets__admin-settings-tickets-commerce-paypal-help-link-url {
+	margin-left: 8px;
+
+	&,
+	&:hover,
+	&:active,
+	&:visited,
+	&:focus {
+		color: #405bfb;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-merchant-country-container {
+	@media (--viewport-medium) {
+
+		.tribe-dropdown .select2-selection--single {
+			height: 42px;
+		}
+
+		.tribe-dropdown .select2-selection--single .select2-selection__rendered {
+			line-height: 42px;
+			padding-left: 16px;
+		}
+
+		.select2-container--default .select2-selection--single .select2-selection__arrow {
+			height: 42px;
+			right: 12px;
+		}
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-logo ul {
+	list-style: none;
+	margin: inherit;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-logo li {
+	line-height: 1.8;
+	margin-bottom: 16px;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-logo ul li:before {
+	background-color: #405bfb;
+	border-radius: 100%;
+	content: '';
+	display: inline-block;
+	height: 7px;
+	margin-right: 7px;
+	width: 7px;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-logo {
+	display: none;
+	flex-basis: 290px;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 0.02em;
+	line-height: 16px;
+
+	@media (--viewport-medium) {
+		display: flex;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-logo-image {
+	height: auto;
+	margin-bottom: 32px;
+	max-width: 232px;
+	width: 100%;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connect {
+	display: flex;
+	flex: 1;
+
+	@media (--viewport-medium) {
+		padding-right: 74px;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connect-text--connected {
+	color: #1eb056;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-row {
+	display: flex;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 20px 0;
+	text-align: left;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-col1 {
+	flex-basis: 20%;
+	min-width: 125px;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-col2 {
+	flex-basis: 80%;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connect,
+.tec-tickets__admin-settings-tickets-commerce-paypal-logo {
+	flex-direction: column;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connect-button-link {
+	background: #405bfb;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
+	margin-top: 25px;
+	min-width: 340px;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+
+	&:hover,
+	&:active,
+	&:visited,
+	&:focus {
+		color: #fff;
+	}
+
+	&.disabled {
+		background-color: var(--tec-color-button-primary-background);
+		pointer-events: none;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-text-name {
+	font-weight: 700;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-text-disconnect-link {
+	border-bottom: 1px solid #405bfb;
+	font-size: 13px;
+	margin-left: 10px;
+	text-transform: lowercase;
+
+	&,
+	&:hover,
+	&:active,
+	&:visited,
+	&:focus {
+		color: #405bfb;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-signup-settings {
+	max-width: 340px;
+	width: 100%;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-webhook {
+	&:not(last-of-type) {
+		margin-bottom: 8px;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-webhook--active {
+	.tec-tickets__admin-settings-tickets-commerce-paypal-connected-webhook-error {
+		@mixin hidden;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-webhook:not(.tec-tickets__admin-settings-tickets-commerce-paypal-connected-webhook--active) {
+	.tec-tickets__admin-settings-tickets-commerce-paypal-connected-webhook-name {
+		color: var(--tec-color-text-primary-light);
+		text-decoration: line-through;
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-webhook-error {
+	color: var(--color-icon-error);
+	margin-left: 8px;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-actions-debug {
+	margin-top: 20px;
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-resync-button {
+	@mixin button-solid;
+
+	background-color: var(--tec-color-button-primary);
+	padding: 11px 20px 11px;
+	width: auto;
+
+	&:focus,
+	&:hover {
+		background-color: var(--tec-color-button-primary-hover);
+		color: white;
+	}
+
+	&:active {
+		background-color: var(--tec-color-button-primary-active);
+	}
+
+	&:disabled {
+		background-color: var(--tec-color-button-primary-background);
+	}
+}
+
+.tec-tickets__admin-settings-tickets-commerce-paypal-connected-resync-button-icon {
+	margin-right: 8px;
+	position: relative;
+	stroke: white;
+	top: 3px;
+	width: 16px;
+
+	path {
+		fill: none;
+	}
+}
+
+.tribe-common,
+.event-tickets {
+	&.tribe-modal__wrapper--paypal-connected {
+		.tribe-tickets__notice {
+			display: block;
+		}
+
+		.tribe-common-c-btn {
+			width: auto;
+		}
+
+		.tec-tickets__admin-modal-list {
+			list-style: initial;
+			margin: 1em 0;
+			padding-left: 16px;
+		}
+
+		p {
+			margin: 1em 0;
+		}
+
+		.tec-tickets__admin-modal-buttons {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 26px;
+		}
+	}
+
+	body.events-cal & {
+		div.tribe-dialog {
+			z-index: 99999;
+		}
+	}
+}
+
+#paypal-connected-modal-button {
+	display: none;
+}

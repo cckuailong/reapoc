@@ -1,0 +1,232 @@
+/**
+ * This CSS file was auto-generated via PostCSS
+ *
+ * Contributors should avoid editing this file, but instead edit the associated
+ * src/resources/postcss/ file. For more information, check out our engineering
+ * docs on how we handle CSS in our engineering docs.
+ *
+ * @see: https://the-events-calendar.github.io/products-engineering/docs/code-standards/css/
+ */
+
+/* fix a z-index issue with postbox and tooltips */
+#tribetickets {
+	z-index: 1;
+}
+.tribe-tickets-editor-table {
+	border: 1px solid var(--tec-color-border-default);
+	border-radius: var(--tec-border-radius-default);
+	border-spacing: 0;
+	margin: 20px 0;
+}
+.tribe-tickets-editor-table thead,
+	.tribe-tickets-editor-table .table-header {
+		background-color: #fafafa;
+		border-bottom: 1px solid var(--tec-color-border-default);
+	}
+.tribe-tickets-editor-table tr {
+		background-color: #fff;
+	}
+.tribe-tickets-editor-table tr td {
+		border-bottom: 1px solid var(--tec-color-border-default);
+	}
+.tribe-tickets-editor-table tr:first-child {
+		border-top-left-radius: var(--tec-border-radius-default);
+		border-top-right-radius: var(--tec-border-radius-default);
+	}
+.tribe-tickets-editor-table tr:first-child td:first-child {
+			border-top-left-radius: var(--tec-border-radius-default);
+		}
+.tribe-tickets-editor-table tr:first-child td:last-child {
+			border-top-right-radius: var(--tec-border-radius-default);
+		}
+.tribe-tickets-editor-table tr:last-child {
+		border-bottom-left-radius: var(--tec-border-radius-default);
+		border-bottom-right-radius: var(--tec-border-radius-default);
+	}
+.tribe-tickets-editor-table tr:last-child td:first-child {
+			border-bottom-left-radius: var(--tec-border-radius-default);
+		}
+.tribe-tickets-editor-table tr:last-child td:last-child {
+			border-bottom-right-radius: var(--tec-border-radius-default);
+		}
+.tribe-tickets-editor-table tbody tr:only-child .tribe-tickets__tickets-editor-ticket-name-sortable, .tribe-tickets-editor-table tr.Tribe__Tickets__RSVP .tribe-tickets__tickets-editor-ticket-name-sortable {
+			display: none;
+		}
+.tribe-tickets-editor-table td.column-primary .tribe-handle {
+			color: #ccc;
+			cursor: move;
+			float: left;
+			font-size: 1.8em;
+			margin-right: 10px;
+			position: relative;
+		}
+.tribe-tickets-editor-table .ui-sortable td.column-primary .tribe-handle {
+				display: block;
+			}
+.tribe-tickets-editor-table .tribe-mobile-only {
+		display: none;
+	}
+.tribe-tickets-editor-table .tribe-tickets__tickets-editor-ticket-name {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+.tribe-tickets-editor-table .tribe-tickets__tickets-editor-ticket-name-sortable,
+	.tribe-tickets-editor-table .tribe-tickets__tickets-editor-ticket-name-title {
+		display: table-cell;
+		vertical-align: middle;
+	}
+.tribe-tickets-editor-table .tribe-tickets__tickets-editor-ticket-name-title .dashicons {
+			height: 16px;
+			line-height: 16px;
+			width: 16px;
+		}
+.tribe-tickets-editor-table .tribe-tickets__tickets-editor-ticket-name-title .dashicons:before {
+				font-size: 16px;
+			}
+.tribe-tickets-editor-table .tribe-tickets__tickets-editor-ticket-name-sortable {
+		width: 32px;
+	}
+.tribe-tickets-editor-table .ticket_available,
+	.tribe-tickets-editor-table .ticket_capacity,
+	.tribe-tickets-editor-table .ticket_price {
+		width: 115px;
+	}
+.tribe-tickets-editor-table .ticket_edit {
+		width: 60px;
+	}
+/* Edit button styles - separate for portability */
+.tribe-tickets-editor-table .ticket_edit_button,
+	.tribe-tickets-editor-table .ticket_delete,
+	.tribe-tickets-editor-table .global_capacity_edit_button {
+		background: none;
+		border: 0;
+		color: #ccc;
+		cursor: pointer;
+		padding: 0;
+	}
+.tribe-tickets-editor-table .ticket_edit_button:hover, .tribe-tickets-editor-table .ticket_delete:hover, .tribe-tickets-editor-table .global_capacity_edit_button:hover {
+			color: #727272;
+		}
+.tribe-tickets-editor-table .ticket_edit_button .ticket_edit_text,
+		.tribe-tickets-editor-table .ticket_edit_button .global_capacity_edit_text,
+		.tribe-tickets-editor-table .ticket_edit_button .ticket_delete_text,
+		.tribe-tickets-editor-table .ticket_delete .ticket_edit_text,
+		.tribe-tickets-editor-table .ticket_delete .global_capacity_edit_text,
+		.tribe-tickets-editor-table .ticket_delete .ticket_delete_text,
+		.tribe-tickets-editor-table .global_capacity_edit_button .ticket_edit_text,
+		.tribe-tickets-editor-table .global_capacity_edit_button .global_capacity_edit_text,
+		.tribe-tickets-editor-table .global_capacity_edit_button .ticket_delete_text {
+			font-size: 0;
+		}
+.tribe-tickets-editor-table .ticket_edit_button .ticket_edit_text:before, .tribe-tickets-editor-table .ticket_edit_button .global_capacity_edit_text:before, .tribe-tickets-editor-table .ticket_edit_button .ticket_delete_text:before, .tribe-tickets-editor-table .ticket_delete .ticket_edit_text:before, .tribe-tickets-editor-table .ticket_delete .global_capacity_edit_text:before, .tribe-tickets-editor-table .ticket_delete .ticket_delete_text:before, .tribe-tickets-editor-table .global_capacity_edit_button .ticket_edit_text:before, .tribe-tickets-editor-table .global_capacity_edit_button .global_capacity_edit_text:before, .tribe-tickets-editor-table .global_capacity_edit_button .ticket_delete_text:before {
+				content: '\f464';
+				font-family: 'dashicons';
+				font-size: 20px;
+				vertical-align: top;
+			}
+.tribe-tickets-editor-table .ticket_edit_button .ticket_delete_text:before, .tribe-tickets-editor-table .ticket_delete .ticket_delete_text:before, .tribe-tickets-editor-table .global_capacity_edit_button .ticket_delete_text:before {
+				content: '\f182';
+			}
+.tribe-tickets-editor-table .ticket_delete {
+		margin-left: 12px;
+	}
+.tribe-tickets-editor-table .global_capacity_edit_button {
+		vertical-align: middle;
+	}
+/* Expanded capacity table */
+#tribe_panel_settings .tribe-tickets-editor-table tbody tr {
+			box-shadow: none;
+		}
+#tribe_panel_settings .tribe-tickets-editor-table tbody tr td {
+				border-bottom: 1px solid var(--tec-color-border-default);
+			}
+#tribe_panel_settings .tribe-tickets-editor-table tbody tr:nth-last-child(2) td,
+		#tribe_panel_settings .tribe-tickets-editor-table tbody tr:last-child td {
+			border-bottom: 0;
+		}
+#tribe_panel_settings .tribe-tickets-editor-table tbody tr:last-child td {
+			border-top: 1px dashed var(--tec-color-border-default);
+		}
+.tribe-tickets-editor-table .tribe_capacity_table_ticket_list {
+		color: #ccc;
+	}
+.tribe-tickets-editor-table .settings_total_global_stock {
+		font-size: inherit;
+		margin-left: -5px;
+	}
+.tribe-tickets-editor-table .settings_total_global_stock:disabled {
+			background: none;
+			border: 0;
+			box-shadow: none;
+		}
+@media screen and (max-width: 782px) {
+.tribe-tickets-editor-table .tribe-mobile-only {
+			display: inline-block
+	}
+#tribe_panel_settings .tribe-tickets-editor-table tbody tr {
+				border-bottom: 1px solid var(--tec-color-border-default);
+				display: block
+		}
+
+				#tribe_panel_settings .tribe-tickets-editor-table tbody tr:before,
+				#tribe_panel_settings .tribe-tickets-editor-table tbody tr:after {
+					content: '';
+					display: table;
+				}
+
+				#tribe_panel_settings .tribe-tickets-editor-table tbody tr:after {
+					clear: both;
+				}
+
+				#tribe_panel_settings .tribe-tickets-editor-table tbody tr td:nth-last-child(2),
+				#tribe_panel_settings .tribe-tickets-editor-table tbody tr td:last-child {
+					border-bottom: 0;
+				}
+					#tribe_panel_settings .tribe-tickets-editor-table tbody tr.tribe-tickets-editor-table-row-capacity-independent td:first-child {
+						display: none;
+					}
+		.tribe-tickets-editor-table .tribe-mobile-hidden {
+			display: none;
+		}
+
+		.tribe-tickets-editor-table td.ticket_edit {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 37px;
+		}
+
+		.tribe-tickets-editor-table tr {
+			border-bottom: 1px solid var(--tec-color-border-default);
+			position: relative;
+		}
+
+		.tribe-tickets-editor-table th:not(.column-primary) {
+			display: none;
+		}
+
+		.tribe-tickets-editor-table thead th.column-primary {
+			width: 100%;
+		}
+			.tribe-tickets-editor-table.tribe-tickets-editor-capacity-table td:first-child,
+			.tribe-tickets-editor-table.tribe-tickets-editor-capacity-table td[colspan='2'] {
+				width: 100%;
+			}
+
+		.tribe-tickets-editor-table tr td {
+			border: 0;
+			box-sizing: border-box;
+			display: block;
+			float: left;
+			min-height: 36px;
+			padding: 6px;
+			position: relative;
+			width: 50%;
+		}
+
+		.tribe-tickets-editor-table .is-expanded {
+			display: block;
+			overflow: hidden; /* clearfix */
+		}
+		}

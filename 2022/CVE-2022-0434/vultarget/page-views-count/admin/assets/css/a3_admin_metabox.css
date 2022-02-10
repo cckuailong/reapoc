@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "a3-metabox-plugin-framework";
+  src:url("../fonts/a3-metabox-plugin-framework.eot");
+  src:url("../fonts/a3-metabox-plugin-framework.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/a3-metabox-plugin-framework.woff") format("woff"),
+    url("../fonts/a3-metabox-plugin-framework.ttf") format("truetype"),
+    url("../fonts/a3-metabox-plugin-framework.svg#a3-metabox-plugin-framework") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.a3-metabox-panel-wrap .a3-metabox-icon:before {
+    font-family: "a3-metabox-plugin-framework" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.a3-metabox-wrapper .expand_all:before, .a3-metabox-wrapper .close_all:before {
+    font-size: 12px;
+    color: #aaa;
+    font-weight: bold !important;
+    margin-right: 5px;
+}
+.a3-metabox-wrapper .expand_all:before {
+    content: "\e000";
+}
+.a3-metabox-wrapper .close_all:before {
+    content: "\e002";
+}
+.a3-metabox-wrapper .a3-metabox-item .handlediv:before {
+    font-size: 16px !important;
+}
+.a3-metabox-wrapper .a3-metabox-item.closed .handlediv:before {
+    content: "\e005"!important;
+}
+.a3-metabox-wrapper .a3-metabox-item.open .handlediv:before {
+    content: "\e004"!important;
+}
+
+.a3-metabox-panel-wrap {
+    background: #fff;
+    padding-left: 146px;
+    box-sizing: border-box;
+}
+.a3-metabox-wrapper, .a3-metabox-options-panel {
+    float: right;
+    width: 100%;
+}
+.a3-metabox-wrapper p.toolbar,
+.a3-metabox-options-panel .a3-metabox-items,
+.a3-metabox-options-panel p.toolbar {
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+.a3-metabox-tabs-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #f5f5f5;
+    width: 145px;
+    border-right: 1px solid #DFDFDF;
+}
+ul.a3-metabox-data-tabs {
+    background: #f5f5f5;
+    line-height: 1em;
+    float: left;
+    width: 145px;
+    margin: 0 0 0 -146px;
+    position: relative;
+    padding: 0 0 10px;
+}
+ul.a3-metabox-data-tabs li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+ul.a3-metabox-data-tabs li a {
+    padding: 10px;
+    line-height: 18px!important;
+    margin: 0;
+    display: block;
+    background: #f5f5f5;
+    text-decoration: none;
+    border-bottom: 1px solid #f5f5f5;
+    border-top: 1px solid #eaeaea;
+}
+ul.a3-metabox-data-tabs li:first-child a {
+    border-top: 0 !important;
+}
+ul.a3-metabox-data-tabs li.active a {
+    border-color: #DFDFDF;
+    position: relative;
+    background-color: #fff;
+    color: #555;
+    margin: 0 -1px 0 0;
+}
+.a3-metabox-panel, .a3-metabox-options-panel {
+    padding: 0;
+    color: #555
+}
+.a3-metabox-panel table.form-table td label,
+.a3-metabox-panel table.form-table td span,
+.a3-metabox-panel table.form-table td a,
+.a3-metabox-panel table.form-table td input,
+.a3-metabox-panel table.form-table td select,
+.a3-metabox-panel table.form-table td *,
+.a3-metabox-panel table.form-table td,
+.a3-metabox-panel * {
+    font-size: 13px;
+}
+.a3-metabox-panel table td {
+    padding: 10px 15px;
+}
+
+.a3-metabox-wrapper .toolbar {
+    margin: 0!important;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #DFDFDF;
+    padding: 9px 15px!important;
+}
+.a3-metabox-wrapper .toolbar:first-child {
+    border-top: 0
+}
+.a3-metabox-wrapper .toolbar:last-child {
+    border-bottom: 0
+}
+.a3-metabox-wrapper p.toolbar {
+    overflow: hidden;
+    zoom: 1;
+}
+.a3-metabox-wrapper .a3-metabox-items {
+    border-bottom: 1px solid #DFDFDF;
+}
+.a3-metabox-wrapper .a3-metabox-item-sortable-placeholder {
+    border-color: #bbb;
+    background-color: #f5f5f5;
+    margin-bottom: 9px;
+    border-width: 1px;
+    border-style: dashed;
+}
+.a3-metabox-wrapper .a3-metabox-item {
+    background: #fff;
+    border-bottom: 1px solid #DFDFDF;
+    margin: 0!important;
+}
+.a3-metabox-wrapper .a3-metabox-item:last-of-type {
+    border-bottom: 0 none;
+}
+.a3-metabox-wrapper .a3-metabox-item .handlediv:before {
+    line-height: 1!important;
+}
+.a3-metabox-wrapper .a3-metabox-item.closed h3 {
+    border: 0;
+}
+.a3-metabox-wrapper .a3-metabox-item h3 {
+    margin: 0!important;
+    padding: 10px 15px !important;
+    font-size: 1em!important;
+    overflow: hidden;
+    zoom: 1;
+    cursor: move;
+    position: relative;
+}
+.a3-metabox-wrapper .a3-metabox-item h3 span {
+    font-weight: 400;
+}
+.a3-metabox-wrapper .a3-metabox-item.open h3 {
+    cursor: ne-resize;
+}
+.a3-metabox-wrapper .a3-metabox-item.closed h3 {
+    cursor: sw-resize;
+}
+.a3-metabox-wrapper .a3-metabox-item h3 button {
+    float: right;
+}
+.a3-metabox-wrapper .a3-metabox-item h3 strong {
+    line-height: 1;
+}
+.a3-metabox-wrapper .a3-metabox-item h3 .handlediv {
+    background-position: 6px 5px!important;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+}
+.a3-metabox-wrapper .a3-metabox-item h3.fixed {
+    cursor: pointer!important;
+}
+.a3-metabox-wrapper .a3-metabox-item h3:hover .handlediv {
+    display: block;
+}
+.a3-metabox-wrapper .a3-metabox-item table {
+    width: 100%;
+    position: relative;
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+.a3-metabox-wrapper .a3-metabox-item h3 table {
+    margin: 0;
+}
+.a3-metabox-wrapper .a3-metabox-item h3 table td:first-child {
+    width: 27%;
+}
+.a3-metabox-panel table tr td:first-child {
+    width: 27%;
+}
+.a3-metabox-wrapper .a3-metabox-item table td {
+    text-align: left;
+    vertical-align: top;
+    border: 0
+}
+.a3-metabox-wrapper .a3-metabox-item h3 table td {
+    padding: 0;
+}
+.a3-metabox-wrapper .a3-metabox-item table td label {
+    text-align: left;
+    display: block;
+    line-height: 21px;
+}
+.a3-metabox-wrapper .close_all, .a3-metabox-wrapper .expand_all {
+    float: right;
+    margin-left: 14px;
+    line-height: 22px;
+    text-decoration: none
+}
+@media only screen and (max-width: 900px) {
+    .a3-metabox-panel-wrap {
+        padding-left: 35px;
+    }
+    .a3-metabox-tabs-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 28px;
+        border-right: 1px solid #DFDFDF;
+    }
+    ul.a3-metabox-data-tabs {
+        width: 28px;
+        margin-left: -35px;
+    }
+    ul.a3-metabox-data-tabs li a {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .a3-metabox-tabs-back, ul.a3-metabox-data-tabs {
+            width: 40px;
+    }
+    ul.a3-metabox-data-tabs li a {
+        position: relative;
+        text-indent: -999px;
+        padding: 10px;
+    }
+    ul.a3-metabox-data-tabs li a:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-indent: 0;
+        text-align: center;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+    }
+    .a3-metabox-wrapper, .a3-metabox-options-panel {
+        width: 98%;
+    }
+}

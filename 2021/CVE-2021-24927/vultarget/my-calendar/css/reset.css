@@ -1,0 +1,187 @@
+.mc-main div, .mc-main span, .mc-main h1, .mc-main h2, .mc-main h3, .mc-main h4, .mc-main h5, .mc-main h6, .mc-main p, .mc-main blockquote, .mc-main pre, .mc-main a, .mc-main img, .mc-main dl, .mc-main dt, .mc-main dd, .mc-main ol, .mc-main ul, .mc-main li, .mc-main fieldset, .mc-main form, .mc-main label, .mc-main legend, .mc-main table, .mc-main caption, .mc-main tbody, .mc-main tfoot, .mc-main thead, .mc-main tr, .mc-main th, .mc-main td, .mc-main article, .mc-main aside, .mc-main details, .mc-main footer, .mc-main header, .mc-main menu, .mc-main meter, .mc-main nav, .mc-main output, .mc-main progress, .mc-main section, .mc-main summary {
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+/* Override overflow:hidden */
+div.site-content, table {
+	overflow: visible !important; 
+}
+
+.mc-main {
+	line-height: 1;
+}
+
+.mc-main article, .mc-main aside, .mc-main dialog, .mc-main figure, .mc-main footer, .mc-main header, .mc-main nav, .mc-main section, .mc-main blockquote {
+	display: block;
+}
+
+.mc-main .my-calendar-header select,
+.mc-main .mc-footer select {
+	display: inline;
+}
+
+.mc-main h2:before {
+	display: none;
+}
+
+.mc-main nav ul {
+	list-style: none;
+}
+
+.mc-main ol {
+	list-style: decimal;
+}
+
+.mc-main ul {
+	list-style: disc;
+}
+
+.mc-main ul ul {
+	list-style: circle;
+}
+
+.mc-main blockquote, .mc-main q {
+	quotes: none;
+}
+
+.mc-main blockquote:before, .mc-main blockquote:after, .mc-main q:before, .mc-main q:after {
+	content: none;
+}
+
+.mc-main table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.mc-main input[type=submit], .mc-main input[type=button], .mc-main button {
+	margin: 0 !important;
+	padding: 0 !important;
+	text-transform: none;
+}
+
+.mc-main input, .mc-main select, .mc-main a img {
+	vertical-align: middle;
+}
+
+.mc-main select {
+	height: auto;
+}
+
+.mc-main *, .mc-main *:before, .mc-main *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mc-main .screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	color: inherit;
+}
+
+.mc-adjacent .mc-event-date {
+	display: block;
+	font-size: 80%;
+}
+
+button.mc-toggle {
+	border: 0;
+	padding: 4px;
+	background-color: transparent !important;
+	font-size: 20px;
+	color: #a00 !important;
+	font-family: dashicons !important;
+}
+
+button .mc-toggle:before {
+	font-family: dashicons !important;
+}
+
+button.mc-toggle:hover, button.mc-toggle:focus {
+	outline: 1px solid #766;
+}
+
+button.mc-text-button {
+	border: 0;
+	color: inherit;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+button.mc-text-button:hover, button .mc-text-button:focus {
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+.mc-main .mc-loading {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin: -20px 0 0 -20px;
+	height: 40px;
+	width: 40px;
+	border: 2px solid rgba(0,0,0,0.3);
+	border-left-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.05);
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	-webkit-animation: animation-rotate 1250ms linear infinite;
+	-moz-animation: animation-rotate 1250ms linear infinite;
+	-o-animation: animation-rotate 1250ms linear infinite;
+	animation: animation-rotate 1250ms linear infinite;
+}
+
+@-webkit-keyframes animation-rotate {
+	100% {
+	-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes animation-rotate {
+	100% {
+	-moz-transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes animation-rotate {
+	100% {
+	-o-transform: rotate(360deg);
+	}
+}
+
+@keyframes animation-rotate {
+	100% {
+	transform: rotate(360deg);
+	}
+}
+
+/**
+ * This is focus passed to a div for the purpose of navigation; visible focus not required.
+ */
+.mc-main:focus {
+	outline: none;
+}
+
+/* Prevent missing background image on google maps */
+.mc-gmap-fupup img {
+	max-width: none ! important; 
+}
+
+.mcjs.mc-main.listjs .details, .mcjs.mc-main.gridjs .calendar-events { display: none; }
+.mcjs.mc-main .single-event .details, .mcjs.mc-main .list.day .details { display: block; }
+

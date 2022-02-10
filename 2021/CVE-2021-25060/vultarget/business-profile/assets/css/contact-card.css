@@ -1,0 +1,116 @@
+/* Frontend CSS Stylesheet for Business Profile contact cards */
+
+.bp-contact-card {
+	font-style: normal;
+}
+.bp-contact-card>div {
+	margin: 1em 0;
+}
+.bp-name {
+	font-weight: bold;
+}
+.bp-opening-hours {
+	max-width: 25em;
+}
+.bp-opening-hours .bp-title {
+	text-align: center;
+	display: block;
+	margin-bottom: 10px;
+}
+.bp-weekday:before,
+.bp-weekday:after {
+	content: " ";
+	display: table;
+}
+.bp-weekday:after {
+	clear: both;
+}
+.bp-weekday-name {
+	float: left;
+	clear: left;
+	width: 45%;
+}
+.bp-times {
+	float: right;
+	clear: right;
+	width: 45%;
+	text-align: right;
+}
+.bp-times .bp-time {
+	display: block;
+}
+.bp-map {
+	height: 20em;
+	color: #333;
+	font-weight: 400;
+}
+.bp-map a {
+	color: #3a84df;
+}
+.bp-map a:hover {
+	text-decoration: underline;
+}
+
+.bp-map p {
+	margin: 4px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.bp-map img {
+	max-width: none; /* Fixes Google Maps info window close button */
+}
+
+.bp-map-info-window {
+	width: 200px;
+	max-width: 100%;
+}
+
+.bp-directions:before,
+.bp-phone:before,
+.bp-contact:before,
+.bp-ordering-link:before,
+.bp-booking:before,
+.bp-opening-hours-brief:before,
+.bp-opening-hours .bp-title:before {
+	display: inline-block;
+	width: 1.5em;
+	height: 1em;
+	font-size: 1.5em;
+	line-height: 1;
+	font-family: dashicons;
+	text-decoration: inherit;
+	font-weight: 400;
+	font-style: normal;
+	vertical-align: top;
+	text-align: center;
+	-webkit-transition: color .1s ease-in 0;
+	transition: color .1s ease-in 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.bp-directions:before {
+	content: "\f230";
+}
+
+.bp-phone:before {
+	content: "\f470";
+}
+
+.bp-ordering-link::before {
+	content: "\f116";
+}
+
+.bp-contact:before {
+	content: "\f466";
+}
+
+.bp-booking:before {
+	content: "\f145";
+}
+
+.bp-opening-hours-brief:before,
+.bp-opening-hours .bp-title:before {
+	content: "\f469";
+}

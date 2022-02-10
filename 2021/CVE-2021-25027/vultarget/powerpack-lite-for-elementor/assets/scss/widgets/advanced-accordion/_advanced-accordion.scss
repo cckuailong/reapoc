@@ -1,0 +1,61 @@
+.pp-advanced-accordion {
+    width: auto;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    .pp-accordion-tab-title {
+        padding: 15px;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+		justify-content: space-between;
+		align-items: center;
+        cursor: pointer;
+        outline: 0;
+    }
+    &.pp-toggle-icon-align-left {
+        .pp-accordion-tab-title {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+    }
+}
+.pp-accordion-toggle-icon {
+	transition: none;
+	z-index: 10;
+}
+.pp-accordion-toggle-icon-open,
+.pp-accordion-tab-show .pp-accordion-toggle-icon-close,
+.pp-accordion-tab-active-default .pp-accordion-toggle-icon-close {
+	display: none;
+}
+.pp-accordion-tab-show .pp-accordion-toggle-icon-open,
+.pp-accordion-tab-active-default .pp-accordion-toggle-icon-open {
+	display: inline-block;
+}
+.pp-accordion-tab-content {
+	display: none;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 1rem;
+	line-height: 1.7;
+	p:last-child {
+		margin: 0;
+	}
+	&.pp-accordion-tab-active {
+		display: block;
+	}
+}
+.pp-accordion-item {
+	overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.pp-accordion-title-icon {
+	display: flex;
+	align-items: center;
+}
+.pp-accordion-tab-icon {
+    display: inline-block;
+    margin-right: 10px;
+}

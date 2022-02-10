@@ -1,0 +1,171 @@
+.tribe-editor__container-panel__header {
+
+	.tribe-editor__rsvp & {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.tribe-editor__rsvp-container-header__header-details {
+	flex: auto;
+}
+
+/* extra classes to override gutenberg styles */
+.tribe-editor__rsvp .tribe-editor__rsvp-container {
+
+	.tribe-editor__rsvp-container-header__title {
+		color: #141827;
+		margin: 0;
+		padding-top: 3px;
+		font-weight: bold;
+		font-size: 21px;
+		line-height: 25px;
+		letter-spacing: 0.16px;
+	}
+
+	.tribe-editor__rsvp-container--disabled .tribe-editor__rsvp-container-header__title {
+		color: #AEB4BB;
+	}
+}
+
+.tribe-editor__rsvp-container-header__title-input-wrapper {
+	align-items: baseline;
+	display: flex;
+
+	svg {
+		flex: none;
+		margin: 6px 0 0 10px;
+		fill: #8d949b;
+	}
+}
+
+/* extra class to override gutenberg styles */
+.tribe-editor__rsvp {
+
+	.tribe-editor__rsvp-container-header__title-input {
+		background-color: transparent;
+		border: none;
+		color: #000;
+		font-family: 'Helvetica Neue', Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+		font-size: 21px;
+		font-weight: bold;
+		letter-spacing: 0.16px;
+		line-height: 25px;
+		margin: 3px 0 0;
+		padding: 0;
+		resize: none;
+		width: calc(95% - 26px);
+
+		&:hover,
+		&:focus {
+			background-color: #fff;
+		}
+
+		&:disabled {
+
+			&,
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				color: #aeb4bb;
+			}
+		}
+	}
+}
+
+.tribe-editor__rsvp-container-header__description {
+	display: block;
+	color: #545D66;
+	padding-top: 7px;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.04px;
+
+	.tribe-editor__rsvp-container--disabled & {
+		color: #AEB4BB;
+	}
+}
+
+/* extra class to override gutenberg styles */
+.tribe-editor__rsvp {
+
+	.tribe-editor__rsvp-container-header__description-input {
+		display: flex;
+		width: 95%;
+		background-color: transparent;
+		color: #5d5d5d;
+		margin: 0;
+		padding: 0;
+		border: none;
+		font-family: 'Helvetica Neue', Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 0.04px;
+		max-height: 108px;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			box-shadow: none;
+		}
+
+		&:disabled {
+
+			&,
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				color: #AEB4BB;
+			}
+		}
+
+		& > * {
+			flex: none;
+		}
+	}
+}
+
+.tribe-editor__rsvp-container-header__capacity-label {
+	display: flex;
+	color: #545D66;
+	padding-top: 15px;
+	line-height: 18px;
+
+	.tribe-editor__rsvp-container--disabled & {
+		color: #AEB4BB;
+	}
+}
+
+.tribe-editor__numeric-label--count {
+
+	.tribe-editor__rsvp-container-header__capacity-label & {
+		flex: none;
+		font-weight: bold;
+		font-size: 18px;
+		letter-spacing: 0.05px;
+	}
+}
+
+.tribe-editor__numeric-label--after {
+
+	.tribe-editor__rsvp-container-header__capacity-label & {
+		flex: none;
+		margin-left: 2px;
+		font-size: 12px;
+		letter-spacing: 0.04px;
+		white-space: pre;
+	}
+}
+
+.tribe-editor__rsvp-container-header__capacity-label-fallback {
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.04px;
+	color: #545D66;
+	padding-top: 15px;
+
+	.tribe-editor__rsvp-container--disabled & {
+		color: #AEB4BB;
+	}
+}

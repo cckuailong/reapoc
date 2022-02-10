@@ -1,0 +1,249 @@
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    .wp-gmap-properties-outer {
+        width: 100% !important;
+    }
+    .wp-gmap-preview {
+        width: 98% !important;
+        float: left !important;
+        margin-top: 10px !important;
+    }
+    .wp-gmap-single-left {
+        width: 100% !important;
+        float: left;
+    }
+    .wp-gmap-single-action {
+        width: 100% !important;
+        text-align:left !important;
+    }
+    .wp-gmap-list .regular-text{
+        width: 98% !important;
+    }
+
+    ul#wp-gmap-nav{
+        margin: 5px 0 0 5px !important;
+    }
+    ul#wp-gmap-nav li a{
+        /*min-width: 130px !important;*/
+    }
+    .wp-gmap-list{
+        width: 98.5% !important;
+    }
+    .srm_gmap_contact_area, .srm_gmap_instructions{
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+    #wpgmap_title{
+        margin-bottom: 5px !important;
+    }
+    .gmap_properties tr .regular-text {
+        width: 99% !important;
+        max-width: 99%;
+    }
+    .gmap_header_section{
+        text-align: center !important;
+    }
+    .gmap_header_section_left{
+        width: 100% !important;
+    }
+    .gmap_header_section_right{
+        width: 100% !important;
+        max-width: 100% !important;
+        float: left;
+    }
+    .gmap_get_pro_version {
+        padding: 2px 5px !important;
+        font-weight: normal !important;
+        margin: 5px 5px 0 0 !important;
+        font-size: 12px !important;
+    }
+    .gmap_donate_button img{
+        width: 110px !important;
+        height: 40px !important;
+    }
+    .gmap_header_section_right_inner{
+        width: 71% !important;
+        margin: 0 auto !important;
+    }
+    .gmap_embed_create_new_link_area {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .wgm_setup_body iframe {
+        height: auto;
+    }
+
+    .wgm_setup_wizard_container .wgm_header_bar_left, .wgm_header_bar {
+        display: block;
+    }
+
+    .wgm_api_btn {
+        margin: 10px 0 !important;
+    }
+
+    .wgm_setup_wizard_container .wgm_header_bar_left {
+        text-align: center;
+    }
+
+    .wgm_header_bar .wgm_admin_logo_inline {
+        margin: 0 auto;
+    }
+
+    .wgm_header_right {
+        display: block;
+        text-align: center;
+    }
+
+    .wgm_header_right .button.wgm_btn {
+        margin-right: 10px;
+    }
+
+
+
+    .wgm_gmap_embed_create_new_link_area a {
+        margin-left: 0;
+    }
+
+    .wgm_gmap_embed_create_new_link_area {
+        width: 100% !important;
+        text-align: center;
+    }
+
+
+
+    .col-half {
+        flex-basis: 100%;
+    }
+
+    .wgm_admin_block_header {
+        display: block;
+        padding: 15px 15px 0;
+    }
+
+    .wgm_admin_block_content {
+        padding: 15px;
+    }
+
+    #wgm_gmap_contact {
+        padding: 0 15px;
+    }
+
+    #wgm_gmap_contact .form-table th {
+        padding: 10px 0 0 0;
+    }
+
+    .wgm_setup_wizard li {
+        padding: 10px 0;
+    }
+
+    .wgm_box {
+        padding: 15px 15px 30px;
+    }
+
+    .wgm_api_btn {
+        margin-left: 15px;
+    }
+
+    .wgm_setup_wizard.four {
+        grid-template-columns: repeat(4, 22%);
+        grid-gap: 4%;
+        margin: 0 1%;
+    }
+
+    .wgm_setup_footer {
+        display: flex;
+        float: right;
+    }
+
+    .widefat td, .widefat th {
+        font-size: 11px;
+    }
+
+    .wgm_d_flex {
+        display: block;
+    }
+
+    .wgm_setup_body input[type=text], .wgm_setup_body select {
+        width: 100%;
+    }
+
+    .wgm_setup_body label {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #wgm_finalize_step .wgm_highlight label {
+        border-right: none;
+        margin-bottom: 0;
+    }
+
+
+    #wgm_finalize_step p {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .swal2-container.swal2-center {
+        z-index: 99999;
+    }
+
+    .swal2-content {
+        padding: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .wgm_setup_wizard.four {
+        grid-template-columns: repeat(4, 22%);
+        grid-gap: 4%;
+        margin: 0 1%;
+    }
+
+    .wgm_setup_footer {
+        display: flex;
+        float: right;
+    }
+
+    .wgm_d_flex {
+        display: block;
+    }
+
+    .wgm_setup_body input, .wgm_setup_body select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .wgm_setup_body label {
+        margin-bottom: 10px;
+    }
+
+
+    #wgm_finalize_step p {
+        text-align: left;
+    }
+
+    .swal2-container.swal2-center {
+        z-index: 99999;
+    }
+
+    .wgm_header_bar .title {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    input[type=checkbox], input[type=radio] {
+        margin: 0;
+    }
+
+    .wgm_setup_body input {
+        width: 100%;
+    }
+
+    .wgm_setup_body label {
+        min-width: 160px;
+    }
+}

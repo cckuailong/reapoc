@@ -1,0 +1,40 @@
+.tribe-editor__ticket__container-header-price {
+	flex: none;
+	min-width: 65px;
+	color: #141827;
+	margin: 0 20px 0 15px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 25px;
+	letter-spacing: 0.16px;
+	text-align: center;
+
+	.tribe-editor__ticket--selected & {
+		margin-right: 118px;
+	}
+
+	.tribe-editor__ticket--disabled & {
+		color: #AEB4BB;
+	}
+}
+
+.tribe-editor__ticket__container-header-price-input {
+
+	& > input[type=number] {
+		background-color: transparent;
+		color: #141827;
+		margin: 0;
+		padding: 0;
+		border: none;
+		font-family: inherit;
+		font-weight: bold;
+		font-size: 21px;
+		line-height: 25px;
+		letter-spacing: 0.16px;
+
+		&:disabled {
+			color: #AEB4BB;
+		}
+	}
+}

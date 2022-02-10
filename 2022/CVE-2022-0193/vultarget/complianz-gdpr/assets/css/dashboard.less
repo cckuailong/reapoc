@@ -1,0 +1,294 @@
+// Import Complianz LESS Variables
+@import 'variables.less';
+#cmplz_selected_region {
+  font-size:13px;
+}
+.cmplz-plusone {
+  border-radius: 50%;
+  background-color: @color-warning;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 10px;
+}
+.cmplz-bullet {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  text-decoration: none;
+}
+
+.cmplz-other-plugins .cmplz-bullet {
+  background-color: @rsp-black;
+}
+
+.plugin-color, .cmplz-trick {
+  .cmplz-bullet {
+	margin-right: 10px;
+  }
+}
+#complianz {
+  .dashicons, .dashicons-before:before {
+	font-size: 15px;
+	width: 15px;
+	height: 15px;
+  }
+}
+
+
+#cmplz-dashboard {
+
+  /*
+	Progress labels
+   */
+  .cmplz-progress-warning-container {
+	position:relative;
+	display:grid;
+	grid-template-columns: 126px auto 50px;
+	>div {
+	  padding: 10px 0;
+	}
+	>div:nth-child(3) {
+	  padding:0;
+	}
+
+	button {
+	  margin-top:10px;
+	  border: 0;
+	  background-color: transparent;
+	  cursor:pointer;
+	  .cmplz-close-warning-x {
+		color: #ccc;
+		font-size: 0.9em;
+	  }
+	}
+  }
+  .cmplz-scroll-container {
+	height: 260px;
+	margin-top: 20px;
+  }
+ .cmplz-progress-status-container {
+   margin-right:40px;
+ }
+
+  .cmplz-progress-status {
+	display: block;
+	min-width: 60px;
+	text-align: center;
+	border-radius: 15px;
+	padding: 4px 8px 4px 8px;
+	font-size: 0.8em;
+	font-weight: 600;
+	height: 17px;
+	line-height:17px;
+
+	&.cmplz-completed {
+	  background-color: @color-success;
+	  color: white;
+	}
+
+	&.cmplz-open {
+	  background-color: @color-open;
+	}
+
+	&.cmplz-urgent {
+	  background-color: @color-warning;
+	  color: white;
+	}
+  }
+
+  //progress bar
+  .cmplz-progress-bar, .cmplz-sync-progress-bar {
+	border-radius:5px;
+	background: @grey-light;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	display: flex;
+	height: 20px;
+	width: 100%;
+	.cmplz-progress-bar-value {
+	  border-radius:5px;
+	  animation: cmplz-load-progress-bar 3s normal forwards;
+	  box-shadow: 0 10px 40px -10px #fff;
+	  background: @color-success;
+	  height: 20px;
+	  width: 0;
+	}
+  }
+
+  .cmplz-progress-percentage, .cmplz-progress-description {
+	float:left;
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 18px;
+  }
+
+  .cmplz-progress-percentage{
+	margin-right: 6px;
+	font-size: 32px;
+  }
+
+  .cmplz-grid-progress {
+	display: grid;
+	grid-template-columns: 125px auto;
+  }
+
+  .cmplz-task {
+	margin-left:10px;
+	&.active {
+	  color:#333;
+	  text-decoration:underline;
+
+	}
+  }
+
+  .cmplz-support {
+	textarea {
+	  width: 100%;
+	  height: 75px;
+	  border-color: #cecece;
+	  font-size: 13px;
+	}
+  }
+
+  // Dashboard Documents
+  .cmplz-document {
+	.cmplz-icon {
+	  margin-top:2px;
+	  margin-right:5px;
+	  &.bullet {
+		margin-top:4px;
+	  }
+	}
+	display: grid;
+	grid-template-columns: 160px 24px 24px 24px auto;
+	&.compact {
+	  grid-template-columns: 190px auto;
+	}
+	>div:not(:first-child) {
+	  margin-left: auto;
+	}
+	&.cmplz-header{
+	  >div:last-child {padding-top: 14px;}
+	  a {
+		color:#d7d7d7;
+		font-size: 12px;
+		line-height: 2em;
+	  }
+	}
+	&.flags {
+	  margin-right:-10px;
+	  >div:not(:first-child) {
+		margin-left: initial;
+	  }
+	  grid-template-columns: 160px auto;
+	  .cmplz-flags-container {
+		align-content:center;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 24px);
+		//grid-template-columns: repeat(auto-fit, minmax(20px, 30px));
+		justify-content: flex-end;
+		grid-gap:0;
+	  }
+	}
+	margin:10px 0;
+	h3 {
+	  margin-bottom:5px;
+	}
+
+	select {
+	  width:200px;
+	  font-size:13px;
+	}
+  }
+
+  .button {
+	min-width:100px;
+	text-align:center;
+  }
+  .item-footer {
+	a.button + a.button {
+	  margin-left:10px;
+	}
+  }
+
+  // Dashboard Tools
+  .cmplz-tools-row {
+	display: grid;
+	grid-template-columns: 190px auto;
+	margin:10px 0;
+	>div:last-child {
+	  margin-left: auto;
+	}
+	.cmplz-last-updated-poc {
+	  white-space: nowrap;
+	  font-size:13px;
+	}
+  }
+
+
+}
+
+
+// break points
+@grid-margin:10px;
+@break-xs: 400px;
+@break-s: 600px;
+@break-m: 768px;
+@break-l: 992px;
+@break-xl: 1555px;
+// Code below should be integrated in to the code above.
+.cmplz-grid {
+  position: relative;
+  .cmplz-grid-item {
+	padding:10px;
+	.item-container {
+	  width: 100% !important;
+	}
+
+	@media only screen and (min-width: @break-xs) {
+	  width: calc(100% - 2 *  @grid-margin );
+	}
+
+	@media only screen and (min-width: @break-s) {
+	  width: calc(100% - 2 *  @grid-margin );
+	}
+
+	@media only screen and (min-width: @break-m) {
+	  width: calc(100% - 2 *  @grid-margin );
+	}
+
+	@media only screen and (min-width: @break-l) {
+	  width: calc(100% - 2 *  @grid-margin );
+	}
+
+	@media only screen and (min-width: @break-xl) {
+	  width: calc(50% - 2 *  @grid-margin );
+	}
+
+	&.small {
+	  width: calc(100% - 2 *  @grid-margin);
+
+	  @media only screen and (min-width: @break-xs) {
+		width: calc(100% - 2 * @grid-margin);
+	  }
+
+	  @media only screen and (min-width: @break-s) {
+		width: calc(100% - 2 * @grid-margin);
+	  }
+
+	  @media only screen and (min-width: @break-m) {
+		width: calc(50% - 2 *  @grid-margin);
+	  }
+
+	  @media only screen and (min-width: @break-l) {
+		width: calc(50% - 2 *  @grid-margin);
+	  }
+
+	  @media only screen and (min-width: @break-xl) {
+		width: calc(25% - 2 *  @grid-margin);
+	  }
+	}
+  }
+}

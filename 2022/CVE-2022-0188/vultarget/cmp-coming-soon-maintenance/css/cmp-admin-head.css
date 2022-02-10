@@ -1,0 +1,111 @@
+#wpadminbar .cmp-logo {
+    position: absolute;
+    display: inline-block;
+    height: 18px;
+    padding-right: 0px;
+    top: 7px;
+    left: 13px;
+}
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice a {
+    padding-left: 30px;
+}
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice .toggle-wrapper {
+  display: inline-block;
+}
+#wpadminbar #wp-admin-bar-cmp-admin-notice #cmp-toggle-adminbar {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 88px;
+    height: 32px;
+    margin-top: -2px;
+    font-weight: 600;
+    background: transparent;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    border: none;
+}
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice #cmp-toggle-adminbar:before, #wpadminbar #cmp-toggle-adminbar:after {
+    position: absolute;
+    line-height: 32px;
+    font-size: 11px;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice input[type=checkbox].toggle-checkbox {
+  display: none;
+}
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice .toggle_handler {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background: #e63946;
+    width: 40px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+    border-radius: 3px;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice #cmp-toggle-adminbar.status-1 .toggle_handler {
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+    background: #2d936c;
+}
+
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice #cmp-toggle-adminbar:before {
+    content: "OFF";
+    left: 15px;
+    color: #ffffff;
+}
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice #cmp-toggle-adminbar:after {
+    content: "ON";
+    right: 16px;
+    color: #ffffff;
+}
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice #cmp-toggle-adminbar.status-1:before {
+    color: #ffffff;
+}
+
+#wpadminbar #wp-admin-bar-cmp-admin-notice #cmp-toggle-adminbar.status-1:after {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 782px) {
+    #wpadminbar ul li#wp-admin-bar-cmp-admin-notice {
+        display: block;
+    }
+
+    #wpadminbar ul li#wp-admin-bar-cmp-admin-notice span {
+        display: none;
+    }
+
+    #wpadminbar #wp-admin-bar-cmp-admin-notice a {
+        padding-left: 40px;
+    }
+
+    #wpadminbar .cmp-logo {
+        height: 28px;
+        top: 9px;
+        left: 18px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    #wpadminbar ul li#wp-admin-bar-cmp-admin-notice {
+        display: none;
+    }
+}

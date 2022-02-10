@@ -1,0 +1,82 @@
+.tribe-editor__ticket__container-header-title {
+	align-items: baseline;
+	display: flex;
+
+	/* Clipboard tooltip */
+	.tribe-editor__ticket__container-header-clipboard-tooltip {
+		flex: none;
+		height: 20px;
+		margin: 6px 0 0 10px;
+	}
+
+	/* Pencil icon */
+	& > svg {
+		flex: none;
+		margin: 6px 0 0 10px;
+		opacity: 0;
+		transition: opacity 0.2s ease;
+
+		.tribe-editor__ticket--selected &,
+		.is-hovered[data-type="tribe/tickets-item"] & {
+			opacity: 1;
+		}
+	}
+
+	svg {
+		fill: #8d949b;
+	}
+}
+
+/* extra classes to override gutenberg styles */
+.tribe-editor__ticket .tribe-editor__ticket__container {
+
+	.tribe-editor__ticket__container-header-title-label {
+		flex: none;
+		max-width: calc(100% - 28px);
+		color: #141827;
+		margin: 0;
+		padding-top: 3px;
+		font-weight: bold;
+		font-size: 21px;
+		line-height: 25px;
+		letter-spacing: 0.16px;
+	}
+
+	.tribe-editor__ticket--disabled .tribe-editor__ticket__container-header-title-label {
+		color: #AEB4BB;
+	}
+}
+
+/* extra class to override gutenberg styles */
+.tribe-editor__ticket {
+
+	.tribe-editor__ticket__container-header-title-input {
+
+		background-color: transparent;
+		border: none;
+		color: #000;
+		font-size: 21px;
+		font-weight: bold;
+		letter-spacing: 0.16px;
+		line-height: 25px;
+		margin: 3px 0 0;
+		padding: 0;
+		resize: none;
+		width: calc(95% - 26px);
+
+		&:hover,
+		&:focus {
+			background-color: #fff;
+		}
+
+		&:disabled {
+
+			&,
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				color: #aeb4bb;
+			}
+		}
+	}
+}

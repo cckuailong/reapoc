@@ -1,0 +1,355 @@
+.tribe-report-panel {
+	overflow: visible;
+	padding: 0;
+	position: relative;
+
+	&.welcome-panel {
+		overflow: visible;
+	}
+
+	.about-description {
+		width: 66%;
+	}
+
+	.about-description a {
+		color: inherit;
+	}
+
+	.welcome-panel-column-container {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		position: initial;
+		*zoom: 1;
+
+		@media screen and (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.welcome-panel-column {
+		padding: 20px 10px;
+
+		@media screen and (max-width: 768px) {
+			padding: 20px 0;
+			width: 100%;
+		}
+
+		@media screen and (min-width: 1024px) {
+			display: inline-block;
+			padding: 20px 2%;
+			width: 29%;
+			min-width: 29%;
+		}
+
+		h3 {
+			@media screen and (max-width: 768px) {
+				display: inline-block;
+				padding-left: 15px;
+			}
+		}
+
+		ul {
+			@media screen and (max-width: 768px) {
+				padding: 0 15px;
+			}
+		}
+
+		li {
+			line-height: 1.4em;
+			margin-bottom: 6px;
+			padding: 0;
+
+			@media screen and (max-width: 870px) {
+				display: list-item;
+			}
+		}
+
+		.tribe-event-meta-note {
+			div {
+				padding: 0 0 0 15px;
+
+				@media screen and (max-width: 768px) {
+					padding: 0 15px;
+				}
+			}
+		}
+	}
+
+	.welcome-panel-middle {
+		> div {
+			@media screen and (max-width: 768px) {
+				padding: 0 15px;
+			}
+		}
+	}
+
+	.welcome-panel-last {
+		border-left: 1px solid #eee;
+		display: flex;
+		flex-flow: row wrap;
+		padding: 10px 20px 5px;
+		*zoom: 1;
+
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
+
+		li {
+			margin-bottom: 2px;
+		}
+
+		.totals-header {
+			flex: 0 0 100%;
+
+			h3 {
+				display: inline-block;
+				width: auto;
+			}
+
+			.order-total {
+				font-size: 16px;
+				margin: 1.2em 0 0;
+				font-weight: 600;
+			}
+		}
+
+		h4 {
+			font-size: 1.5em;
+			text-align: center;
+		}
+
+		li {
+			font-size: 1.1em;
+		}
+
+		ul {
+			@media screen and (max-width: 870px) {
+				width: 50%;
+			}
+
+			@media screen and (min-width: 870px) {
+				&:first-child {
+					margin-bottom: 0;
+				}
+
+				&:last-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+.tribe-report-page {
+	.welcome-panel-content h3 {
+		margin-top: 0;
+	}
+
+	h4.tickets-summary {
+		margin: 0;
+	}
+
+	.tickets_checkin {
+		min-width: 87px;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	.tickets_uncheckin {
+		display: none;
+		height: auto;
+		line-height: 1.5;
+		white-space: normal;
+	}
+
+	.tickets_checked {
+		td {
+			opacity: 0.6;
+		}
+
+		td.check_in {
+			opacity: 1;
+		}
+
+		.tickets_checkin {
+			display: none;
+		}
+
+		.tickets_uncheckin {
+			display: block;
+			opacity: 1;
+		}
+
+		.inline .tickets_uncheckin {
+			display: inline;
+		}
+	}
+
+	.cancelled {
+		font-style: italic;
+	}
+
+	.cancelled {
+		.check_in {
+			font-style: normal;
+		}
+	}
+
+	.column-attendee_id,
+	.column-order_id {
+		width: 70px;
+	}
+
+	td[class*='column'] {
+		word-break: break-word;
+	}
+
+	td.column-status {
+		font-size: 13px;
+		width: 80px;
+	}
+
+	.column-security {
+		width: 120px;
+	}
+
+	.column-check_in {
+		min-width: 90px;
+		width: auto;
+	}
+
+	.attendees-actions {
+		input.print,
+		a.email,
+		a.export {
+			float: left;
+			margin: 1px 8px 0 0;
+		}
+	}
+}
+
+.tribe-attendees-email {
+	.tribe-attendees-email-message {
+		float: left;
+		margin: 0;
+	}
+
+	.button-primary {
+		margin-top: 3px;
+	}
+}
+
+.tribe-attendees-email-message {
+	ul {
+		font-size: 13px;
+		line-height: 1.5;
+		margin: 0.5em 0;
+		padding: 2px;
+
+		li:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	@media screen and (max-width: 782px) {
+		.notice-dismiss {
+			padding: 9px;
+		}
+	}
+}
+
+#attendees_email_wrapper {
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 20px;
+
+	label {
+		display: block;
+
+		span {
+			display: inline-block;
+			width: 105px;
+		}
+	}
+
+	select,
+	input[type='text'] {
+		width: 285px;
+	}
+
+	.attendees_or {
+		display: block;
+		font-size: 20px;
+		margin: 20px 0;
+		text-align: center;
+	}
+}
+
+.wp-list-table {
+	font-size: 14px;
+
+	td.check_in {
+		.delete {
+			text-align: center;
+		}
+	}
+}
+
+.welcome-panel {
+	.welcome-panel-content {
+		margin: 0;
+		*zoom: 1;
+
+		@media screen and (max-width: 768px) {
+			margin-left: 0;
+			max-width: 100%;
+		}
+	}
+}
+
+/*
+ * Preserves utility of modal windows, especially the "Email Attendees" modal, in views above the
+ * mobile view but under the upper limits of "tablet" views. The weird class names and !important declarations
+ * are unfortunately needed to override Thickbox's inline styles.
+ */
+@media screen and (max-width: 782px) {
+	#TB_window {
+		height: auto !important;
+	}
+
+	#plugin-information-title {
+		height: auto !important;
+		overflow: hidden !important;
+	}
+
+	#plugin-information-footer {
+		position: relative !important;
+	}
+}
+
+/*
+ * Preserves utility of modal windows in mobile view. !important declarations
+ * are unfortunately needed to override Thickbox's inline styles.
+ */
+@media screen and (max-width: 440px) {
+	#TB_window {
+		left: 0 !important;
+		margin-left: 0 !important;
+		width: 100% !important;
+	}
+
+	#TB_iframeContent {
+		width: 100% !important;
+	}
+}
+
+table.orders {
+	tr {
+		&.refunded,
+		&.denied,
+		&.pending {
+			font-style: italic;
+		}
+	}
+}

@@ -1,0 +1,181 @@
+/******************************************************************************************/
+/* Single Calendar Resets
+/******************************************************************************************/
+.wpbs-container { position: relative; visibility: hidden; }
+.wpbs-container .wpbs-calendars-wrapper { position: relative; }
+
+.wpbs-container .wpbs-calendars:after { content: ''; display: block; clear: both; }
+
+.wpbs-container .wpbs-calendars .wpbs-calendar table { table-layout: fixed; width: 100%; border-collapse: collapse; margin: 0 !important; padding: 0 !important; border: 0 !important; }
+.wpbs-container .wpbs-calendars .wpbs-calendar table thead,
+.wpbs-container .wpbs-calendars .wpbs-calendar table tbody,
+.wpbs-container .wpbs-calendars .wpbs-calendar table tr { border: 0 !important; padding: 0 !important; margin: 0 !important; background: transparent; }
+.wpbs-container .wpbs-calendars .wpbs-calendar table tr th,
+.wpbs-container .wpbs-calendars .wpbs-calendar table tr td { position: relative; border: 0 !important; padding: 0 !important; margin: 0 !important; vertical-align: middle; background: transparent; text-shadow: none; box-shadow: none; box-sizing: border-box; }
+
+
+
+
+/******************************************************************************************/
+/* Single Calendar Default Styles
+/******************************************************************************************/
+.wpbs-container .wpbs-calendars .wpbs-calendar { position: relative; border: 1px solid #f1f1f1; background: #fff; margin-bottom: 1em; }
+.wpbs-container .wpbs-calendars .wpbs-calendar table thead tr th {padding-bottom: 8px !important; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;}
+.wpbs-container .wpbs-calendars .wpbs-calendar-wrapper { padding: 8px 7px 7px 7px; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+
+/******************************************************************************************/
+/* Calendar Loading Overlay
+/******************************************************************************************/
+.wpbs-container .wpbs-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba( 255,255,255,0.6 ); }
+
+.wpbs-overlay-spinner { position: absolute; top: 50%; left: 50%; margin-top: -6px; margin-left: -35px; width: 70px; text-align: center; }
+.wpbs-overlay-spinner > div { width: 12px; height: 12px; background-color: #333; border-radius: 100%; display: inline-block; -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both; animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
+.wpbs-overlay-spinner .wpbs-overlay-bounce1 { -webkit-animation-delay: -0.32s; animation-delay: -0.32s; }
+.wpbs-overlay-spinner .wpbs-overlay-bounce2 { -webkit-animation-delay: -0.16s; animation-delay: -0.16s; }
+@-webkit-keyframes sk-bouncedelay { 0%, 80%, 100% { -webkit-transform: scale(0) } 40% { -webkit-transform: scale(1.0) } }
+@keyframes sk-bouncedelay { 0%, 80%, 100% { -webkit-transform: scale(0); transform: scale(0); } 40% { -webkit-transform: scale(1.0); transform: scale(1.0); } }
+
+/******************************************************************************************/
+/* Single Calendar Header
+/******************************************************************************************/
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header { text-align: center; padding: 8px; background: #f5f5f5 }
+
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation { position: relative; padding: 0 30px; min-height: 26px; font-size: 13px; line-height: 26px; }
+
+/******************************************************************************************/
+/* Single Calendar Header Button Navigation
+/******************************************************************************************/
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-prev,
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-next { position: absolute; display: block; top: 50%; height: 26px; width: 26px; line-height: 26px; margin-top: -13px; vertical-align: middle; text-decoration: none; border: 0; box-shadow: none; color: #fff; background: #bdc3c7; border-radius: 2px; }
+
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-prev { left: 0; }
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-next { right: 0; }
+
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-next .wpbs-arrow,
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-prev .wpbs-arrow { position: absolute; top: 50%; margin-top: -5px; display: inline-block; width: 0; height: 0; border-style: solid; }
+
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-next .wpbs-arrow { right: 50%; margin-right: -5px; border-width: 5px 0 5px 8.7px; border-color: transparent transparent transparent #ffffff; }
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-prev .wpbs-arrow { left: 50%; margin-left: -5px; border-width: 5px 8.7px 5px 0; border-color: transparent #fff transparent transparent; }
+
+/******************************************************************************************/
+/* Single Calendar Header Select Navigation
+/******************************************************************************************/
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-select-container select { width: 100%; height: 26px; line-height: 26px; margin: 0; padding: 0 10px; vertical-align: top; font-size: 13px; box-sizing: border-box !important; }
+
+/******************************************************************************************/
+/* Single Calendar Table Week Numbers
+/******************************************************************************************/
+.wpbs-container .wpbs-calendars .wpbs-calendar table td .wpbs-week-number { background: #e8e8e8; height: 32px; }
+
+/******************************************************************************************/
+/* Single Calendar Table Dates
+/******************************************************************************************/
+.wpbs-container .wpbs-calendars .wpbs-calendar table tr th,
+.wpbs-container .wpbs-calendars .wpbs-calendar table tr td { text-align: center; padding: 1px !important; font-size: 13px; }
+
+.wpbs-container .wpbs-calendars .wpbs-calendar table th { font-weight: bold; color: inherit; }
+
+.wpbs-container .wpbs-calendars .wpbs-calendar table tr td .wpbs-date { position: relative; width: 100%; height: 100%; }
+.wpbs-container .wpbs-calendars .wpbs-calendar table tr td .wpbs-date-inner { position: relative; width: 100%; height: 32px; }
+.wpbs-container .wpbs-calendars .wpbs-calendar table tr td .wpbs-date-inner .wpbs-date-number { position: absolute; z-index: 0; top: 0; left: 0; width: 100%; height: 100%; font-size: 13px; }
+
+.wpbs-container .wpbs-calendars .wpbs-calendar table tr td .wpbs-date.wpbs-gap { background: #f7f7f7; }
+
+/******************************************************************************************/
+/* Legend: Legend Item
+/******************************************************************************************/
+.wpbs-legend { text-align: left; margin: 1em 0; padding: 8px 8px 0; border: 1px solid #f1f1f1; }
+
+.wpbs-legend .wpbs-legend-item { display: inline-block; margin-bottom: 8px; margin-right: 8px; }
+.wpbs-legend .wpbs-legend-item-icon { position: relative; display: inline-block; width: 24px; height: 24px; vertical-align: middle; margin-right: 5px; box-sizing: border-box; overflow: hidden; }
+.wpbs-legend .wpbs-legend-item-name { display: inline-block; vertical-align: middle; font-size: 13px; }
+
+/* Legend position: side */
+.wpbs-calendars-wrapper.wpbs-legend-position-side { padding-right: 165px; box-sizing: content-box !important; }
+.wpbs-calendars-wrapper.wpbs-legend-position-side .wpbs-legend { position: absolute; top: 0; right: 0; width: 155px; margin-top: 0; background: #fff; box-sizing: border-box !important; }
+.wpbs-calendars-wrapper.wpbs-legend-position-side .wpbs-legend .wpbs-legend-item { display: block; margin-right: 0; }
+
+/******************************************************************************************/
+/* Calendar: Legend Item Icon
+/******************************************************************************************/
+.wpbs-calendars .wpbs-legend-item-icon { position: absolute; z-index: 0; top: 0; left: 0; display: inline-block; width: 100%; height: 100%; box-sizing: border-box; overflow: hidden; }
+
+.wpbs-legend-item-icon[data-type="single"] div { display: none; }
+.wpbs-legend-item-icon[data-type="single"] div:first-of-type { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; }
+
+
+.wpbs-legend-item-icon[data-type="split"] div svg {position:absolute; width:100%; height:100%; left: 0;top: 0;}
+
+.wpbs-legend-item-icon[data-type="blank"] {background-color: #f3f3f3; height: 100%;}
+
+/******************************************************************************************/
+/* Calendar: Tooltip
+/******************************************************************************************/
+.wpbs-container .wpbs-tooltip{ display: none; position: fixed; z-index: 2; left: 0; top: 0; font-size: 12px; background: #fff; text-align: left; padding: 10px; box-shadow: 0 0 5px 1px rgba(0,0,0,0.1); box-sizing: border-box; width: 180px; margin-left: 2px; }
+
+.wpbs-container .wpbs-date:hover .wpbs-tooltip { display: block; }
+
+.wpbs-container .wpbs-tooltip strong{ display: block; margin-bottom: 5px; }
+
+.wpbs-container .wpbs-tooltip-corner{ position: absolute; top: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 6px 6px 0; border-color: transparent red transparent transparent; z-index: 1; }
+
+/******************************************************************************************/
+/* Calendar Columns
+/******************************************************************************************/
+.wpbs-container[data-columns] .wpbs-calendars .wpbs-calendar { float: left; margin-left: 5px; margin-right: 5px; box-sizing: border-box !important; }
+.wpbs-container[data-columns] .wpbs-calendars { margin-left: -5px; margin-right: -5px; }
+
+.wpbs-container[data-columns="6"] .wpbs-calendars .wpbs-calendar { width: calc( 16.6666% - 10px ); }
+.wpbs-container[data-columns="4"] .wpbs-calendars .wpbs-calendar { width: calc( 25% - 10px ); }
+.wpbs-container[data-columns="3"] .wpbs-calendars .wpbs-calendar { width: calc( 33.3333% - 10px ); }
+.wpbs-container[data-columns="2"] .wpbs-calendars .wpbs-calendar { width: calc( 50% - 10px ); }
+
+/******************************************************************************************/
+/* Media Queries
+/******************************************************************************************/
+@media screen and (max-width: 420px){
+    .wpbs-calendars-wrapper.wpbs-legend-position-side {padding-right: 0;}
+    .wpbs-calendars-wrapper.wpbs-legend-position-side .wpbs-legend {position: relative; top: auto; right: auto; width: auto;}
+    .wpbs-calendars-wrapper.wpbs-legend-position-side .wpbs-legend .wpbs-legend-item {display: inline-block; margin-right: 8px;}
+}
+
+/******************************************************************************************/
+/* Forms
+/******************************************************************************************/
+
+.wpbs-main-wrapper .wpbs-container.wpbs-disable-selection {pointer-events: none;}
+
+.wpbs-main-wrapper:not(.wpbs-main-wrapper-form-0) .wpbs-container.wpbs-enable-hover .wpbs-date.wpbs-is-bookable:hover {cursor:pointer;}
+.wpbs-container .wpbs-date.wpbs-date-hover:hover {cursor:pointer;}
+.wpbs-container.wpbs-enable-hover .wpbs-date.wpbs-gap.wpbs-is-bookable:hover {cursor:default;}
+
+/* Split Hover */
+.wpbs-container .wpbs-legend-item-icon .wpbs-legend-icon-select {display:block;}
+.wpbs-container .wpbs-legend-item-icon .wpbs-legend-icon-select svg  { width:100%; height:100%; position:absolute; left:0; top:0; z-index:2;}
+.wpbs-container .wpbs-date.wpbs-date-hover.wpbs-selected-first.wpbs-selected-last .wpbs-legend-item-icon svg {display:block;}
+
+/* Form Payment Confirmation */
+.wpbs-main-wrapper .wpbs-payment-confirmation .wpbs-overlay-spinner {position:static; margin:0; width:36px;}
+
+
+/******************************************************************************************/
+/* Form General Styles
+/******************************************************************************************/
+.wpbs-main-wrapper .wpbs-form-container {padding: 30px 0 20px 0; max-width: 450px;}
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-field {padding-bottom: 20px;}
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-field .wpbs-form-field-input label {margin-right: 25px; display: inline-block; font-weight: inherit;}
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-field .wpbs-form-field-input label input[type="radio"] {position: relative; top: 1px;}
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-field .wpbs-form-field-input label input[type="checkbox"] {position: relative; top: 1px;}
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-field input[type="text"],
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-field input[type="email"],
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-field select,
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-field textarea {width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-field-error, .wpbs-main-wrapper .wpbs-form-container .wpbs-form-general-error {color:#f00f00;}
+.wpbs-main-wrapper .wpbs-form-container .wpbs-form-general-error {padding-bottom: 15px;}
+
+
+/******************************************************************************************/
+/* Payments
+/******************************************************************************************/
+
+.wpbs-main-wrapper .wpbs-payment-confirmation form {display:none;}

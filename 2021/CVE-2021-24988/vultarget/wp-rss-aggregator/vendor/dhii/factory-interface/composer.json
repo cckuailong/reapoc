@@ -1,0 +1,46 @@
+{
+    "name": "dhii/factory-interface",
+    "description": "Interfaces for working with factories.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.3 | ^7.0",
+        "dhii/exception-interface": "^0.1|^0.2"
+    },
+    "require-dev": {
+        "psr/container": "^1.0",
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1",
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "codeclimate/php-test-reporter": "<=0.3.2",
+        "dhii/stringable-interface": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Factory\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Factory\\UnitTest\\": "test/unit",
+            "Dhii\\Factory\\FuncTest\\": "test/functional"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "csfix": "php-cs-fixer fix -vvv"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
+        }
+    }
+}

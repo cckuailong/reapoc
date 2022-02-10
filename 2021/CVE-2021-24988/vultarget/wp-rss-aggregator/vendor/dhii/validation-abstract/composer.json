@@ -1,0 +1,52 @@
+{
+    "name": "dhii/validation-abstract",
+    "description": "Common abstract functionality for validation.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.3 | ^7.0",
+        "dhii/validation-interface": "^0.2"
+    },
+    "suggest": {
+        "dhii/stringable-interface": "To be able to pass stringable objects instead of strings",
+        "dhii/validation-interface": "Needed to be able to create exceptions that are expected to be thrown",
+        "dhii/iterator-helper-base": "For implementations of iterable-related helper functionality",
+        "dhii/normalization-helper-base": "For simple types normalization",
+        "dhii/i18n-helper-base": "For string internationalization"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1",
+        "codeclimate/php-test-reporter": "<=0.3.2",
+        "dhii/stringable-interface": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Validation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Validation\\TestStub\\": "test/stub/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.2.x-dev"
+        }
+    },
+    "scripts": {
+        "analyze": [
+            "phan --progress-bar --output-mode=text --output=test/phan-report.txt"
+        ]
+    }
+}

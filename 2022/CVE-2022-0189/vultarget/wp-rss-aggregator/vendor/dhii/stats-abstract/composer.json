@@ -1,0 +1,27 @@
+{
+    "name": "dhii/stats-abstract",
+    "description": "Abstract base for stats",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dhii/stats-interface": "^0.1.0",
+        "dhii/collections-abstract-base": "^0.1.0"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Stats\\": "src/"
+        }
+    }
+}

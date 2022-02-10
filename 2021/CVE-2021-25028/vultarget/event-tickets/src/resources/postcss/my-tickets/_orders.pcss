@@ -1,0 +1,63 @@
+/**
+ * Event Tickets - Tickets Stylesheet - My Tickets
+ *
+ * @since 5.2.0
+ */
+
+.tribe-tickets {
+	ul.tribe-orders-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		> .tribe-item {
+			margin-top: 20px;
+		}
+
+		.tribe-tickets-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			> .tribe-item {
+				background-color: var(--tec-color-background);
+				border: 1px solid #ededed;
+				border-bottom: 0;
+				padding: 20px;
+
+				&:last-child {
+					border-bottom: 1px solid #ededed;
+				}
+
+				&.tribe-disabled {
+					background-color: #efefef;
+					border-color: #ddd;
+					color: #717171;
+
+					&:last-child {
+						border-bottom-color: #ddd;
+					}
+				}
+
+				.tribe-ticket-information {
+					display: inline-block;
+					float: right;
+				}
+
+				.tribe-answer {
+					display: block;
+					float: right;
+				}
+
+				table {
+					border: 0;
+					margin: 0;
+				}
+
+				td {
+					border: 0;
+				}
+			}
+		}
+	}
+}

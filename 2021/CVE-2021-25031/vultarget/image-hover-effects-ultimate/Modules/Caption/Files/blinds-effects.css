@@ -1,0 +1,370 @@
+.oxi-addons-container .oxi-image-caption-hover-style-1 {
+    overflow: hidden;
+}
+
+.oxi-addons-container .oxi-image-caption-hover-style-1,
+.oxi-addons-container .oxi-image-caption-hover-style-1:before,
+.oxi-addons-container .oxi-image-caption-hover-style-1:after,
+.oxi-addons-container .oxi-image-caption-hover-style-1 .oxi-image-hover-figure,
+.oxi-addons-container .oxi-image-caption-hover-style-1 .oxi-image-hover-figure:before,
+.oxi-addons-container .oxi-image-caption-hover-style-1 .oxi-image-hover-figure:after,
+.oxi-addons-container .oxi-image-caption-hover-style-1 .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-caption-hover-style-1 .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-caption-hover-style-1 .oxi-image-hover-figure-caption:after {
+    background-color: rgba(126, 0, 184, 1);
+}
+
+.oxi-addons-container [class^='oxi-image-blinds']:before,
+.oxi-addons-container [class^='oxi-image-blinds']:after,
+.oxi-addons-container [class^='oxi-image-blinds'] .oxi-image-hover-figure-caption:before,
+.oxi-addons-container [class^='oxi-image-blinds'] .oxi-image-hover-figure-caption:after,
+.oxi-addons-container [class*=' oxi-image-blinds']:before,
+.oxi-addons-container [class*=' oxi-image-blinds']:after,
+.oxi-addons-container [class*=' oxi-image-blinds'] .oxi-image-hover-figure-caption:before,
+.oxi-addons-container [class*=' oxi-image-blinds'] .oxi-image-hover-figure-caption:after {
+    opacity: 0;
+    position: absolute;
+    content: '';
+}
+
+.oxi-addons-container [class^='oxi-image-blinds']:before,
+.oxi-addons-container [class^='oxi-image-blinds']:after,
+.oxi-addons-container [class*=' oxi-image-blinds']:before,
+.oxi-addons-container [class*=' oxi-image-blinds']:after {
+    z-index: 2;
+}
+
+.oxi-addons-container [class^='oxi-image-blinds']:before,
+.oxi-addons-container [class*=' oxi-image-blinds']:before {
+    top: 0;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.oxi-addons-container [class^='oxi-image-blinds']:after,
+.oxi-addons-container [class*=' oxi-image-blinds']:after {
+    top: 25%;
+    -webkit-transition-delay: 0.105s;
+    -moz-transition-delay: 0.105s;
+    -o-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+}
+
+.oxi-addons-container [class^='oxi-image-blinds'] .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-blinds'] .oxi-image-hover-figure-caption {
+    z-index: 3;
+    background-color: transparent !important;
+}
+
+.oxi-addons-container [class^='oxi-image-blinds'] .oxi-image-hover-figure-caption *,
+.oxi-addons-container [class*=' oxi-image-blinds'] .oxi-image-hover-figure-caption * {
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.oxi-addons-container [class^='oxi-image-blinds'] .oxi-image-hover-figure-caption:before,
+.oxi-addons-container [class^='oxi-image-blinds'] .oxi-image-hover-figure-caption:after,
+.oxi-addons-container [class*=' oxi-image-blinds'] .oxi-image-hover-figure-caption:before,
+.oxi-addons-container [class*=' oxi-image-blinds'] .oxi-image-hover-figure-caption:after {
+    z-index: -1;
+}
+
+.oxi-addons-container [class^='oxi-image-blinds']:hover:before,
+.oxi-addons-container [class^='oxi-image-blinds']:hover:after,
+.oxi-addons-container [class^='oxi-image-blinds']:hover .oxi-image-hover-figure-caption:before,
+.oxi-addons-container [class^='oxi-image-blinds']:hover .oxi-image-hover-figure-caption:after,
+.oxi-addons-container [class*=' oxi-image-blinds']:hover:before,
+.oxi-addons-container [class*=' oxi-image-blinds']:hover:after,
+.oxi-addons-container [class*=' oxi-image-blinds']:hover .oxi-image-hover-figure-caption:before,
+.oxi-addons-container [class*=' oxi-image-blinds']:hover .oxi-image-hover-figure-caption:after,
+.oxi-addons-container [class^='oxi-image-blinds'].oxi-touch:before,
+.oxi-addons-container [class^='oxi-image-blinds'].oxi-touch:after,
+.oxi-addons-container [class^='oxi-image-blinds'].oxi-touch .oxi-image-hover-figure-caption:before,
+.oxi-addons-container [class^='oxi-image-blinds'].oxi-touch .oxi-image-hover-figure-caption:after,
+.oxi-addons-container [class*=' oxi-image-blinds'].oxi-touch:before,
+.oxi-addons-container [class*=' oxi-image-blinds'].oxi-touch:after,
+.oxi-addons-container [class*=' oxi-image-blinds'].oxi-touch .oxi-image-hover-figure-caption:before,
+.oxi-addons-container [class*=' oxi-image-blinds'].oxi-touch .oxi-image-hover-figure-caption:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.oxi-addons-container [class^='oxi-image-blinds']:hover .oxi-image-hover-figure-caption *,
+.oxi-addons-container [class*=' oxi-image-blinds']:hover .oxi-image-hover-figure-caption *,
+.oxi-addons-container [class^='oxi-image-blinds'].oxi-touch .oxi-image-hover-figure-caption *,
+.oxi-addons-container [class*=' oxi-image-blinds'].oxi-touch .oxi-image-hover-figure-caption * {
+    opacity: 1;
+    -webkit-transition-delay: 0.4025s;
+    -moz-transition-delay: 0.4025s;
+    -o-transition-delay: 0.4025s;
+    transition-delay: 0.4025s;
+}
+
+.oxi-addons-container  .oxi-image-blinds-horizontal:before,
+.oxi-addons-container .oxi-image-blinds-horizontal:after,
+.oxi-addons-container .oxi-image-blinds-horizontal .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-blinds-horizontal .oxi-image-hover-figure-caption:after {
+    height: 25%;
+    width: 100%;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-blinds-horizontal:before {
+    top: 0;
+}
+
+.oxi-addons-container .oxi-image-blinds-horizontal:after {
+    top: 25%;
+}
+
+.oxi-addons-container .oxi-image-blinds-horizontal .oxi-image-hover-figure-caption:before {
+    top: 50%;
+}
+
+.oxi-addons-container .oxi-image-blinds-horizontal .oxi-image-hover-figure-caption:after {
+    top: 75%;
+}
+
+.oxi-addons-container .oxi-image-blinds-horizontal:hover .oxi-image-hover-figure-caption *,
+.oxi-addons-container .oxi-image-blinds-horizontal.oxi-touch .oxi-image-hover-figure-caption * {
+    -webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
+    -o-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+.oxi-addons-container .oxi-image-blinds-vertical:before,
+.oxi-addons-container .oxi-image-blinds-vertical:after,
+.oxi-addons-container .oxi-image-blinds-vertical .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-blinds-vertical .oxi-image-hover-figure-caption:after {
+    width: 25%;
+    height: 100%;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    top: 0;
+}
+
+.oxi-addons-container .oxi-image-blinds-vertical:before {
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-blinds-vertical:after {
+    left: 25%;
+}
+
+.oxi-addons-container .oxi-image-blinds-vertical .oxi-image-hover-figure-caption:before {
+    left: 50%;
+}
+
+.oxi-addons-container .oxi-image-blinds-vertical .oxi-image-hover-figure-caption:after {
+    left: 75%;
+}
+
+.oxi-addons-container .oxi-image-blinds-vertical.oxi-touch .oxi-image-hover-figure-caption *,
+.oxi-addons-container .oxi-image-blinds-vertical:hover .oxi-image-hover-figure-caption * {
+    -webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
+    -o-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+.oxi-addons-container .oxi-image-blinds-up:before,
+.oxi-addons-container .oxi-image-blinds-up:after,
+.oxi-addons-container .oxi-image-blinds-up .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-blinds-up .oxi-image-hover-figure-caption:after {
+    height: 25%;
+    width: 100%;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-blinds-up:before {
+    top: 0;
+    -webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
+    -o-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+.oxi-addons-container .oxi-image-blinds-up:after {
+    top: 25%;
+    -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
+    -o-transition-delay: 0.21s;
+    transition-delay: 0.21s;
+}
+
+.oxi-addons-container .oxi-image-blinds-up .oxi-image-hover-figure-caption:before {
+    top: 50%;
+    -webkit-transition-delay: 0.105s;
+    -moz-transition-delay: 0.105s;
+    -o-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+}
+
+.oxi-addons-container .oxi-image-blinds-up .oxi-image-hover-figure-caption:after {
+    top: 75%;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.oxi-addons-container .oxi-image-blinds-down:before,
+.oxi-addons-container .oxi-image-blinds-down:after,
+.oxi-addons-container .oxi-image-blinds-down .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-blinds-down .oxi-image-hover-figure-caption:after {
+    height: 25%;
+    width: 100%;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    left: 0;
+}
+
+.oxi-addons-container .oxi-image-blinds-down:before {
+    top: 0;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.oxi-addons-container .oxi-image-blinds-down:after {
+    top: 25%;
+    -webkit-transition-delay: 0.105s;
+    -moz-transition-delay: 0.105s;
+    -o-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+}
+
+.oxi-addons-container .oxi-image-blinds-down .oxi-image-hover-figure-caption:before {
+    top: 50%;
+    -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
+    -o-transition-delay: 0.21s;
+    transition-delay: 0.21s;
+}
+
+.oxi-addons-container .oxi-image-blinds-down .oxi-image-hover-figure-caption:after {
+    top: 75%;
+    -webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
+    -o-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+.oxi-addons-container .oxi-image-blinds-left:before,
+.oxi-addons-container .oxi-image-blinds-left:after,
+.oxi-addons-container .oxi-image-blinds-left .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-blinds-left .oxi-image-hover-figure-caption:after {
+    width: 25%;
+    height: 100%;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    top: 0;
+}
+
+.oxi-addons-container .oxi-image-blinds-left:before {
+    left: 0;
+    -webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
+    -o-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+.oxi-addons-container .oxi-image-blinds-left:after {
+    left: 25%;
+    -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
+    -o-transition-delay: 0.21s;
+    transition-delay: 0.21s;
+}
+
+.oxi-addons-container .oxi-image-blinds-left .oxi-image-hover-figure-caption:before {
+    left: 50%;
+    -webkit-transition-delay: 0.105s;
+    -moz-transition-delay: 0.105s;
+    -o-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+}
+
+.oxi-addons-container .oxi-image-blinds-left .oxi-image-hover-figure-caption:after {
+    left: 75%;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.oxi-addons-container .oxi-image-blinds-right:before,
+.oxi-addons-container .oxi-image-blinds-right:after,
+.oxi-addons-container .oxi-image-blinds-right .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-blinds-right .oxi-image-hover-figure-caption:after {
+    width: 25%;
+    height: 100%;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    top: 0;
+}
+
+.oxi-addons-container .oxi-image-blinds-right:before {
+    left: 0;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.oxi-addons-container .oxi-image-blinds-right:after {
+    left: 25%;
+    -webkit-transition-delay: 0.105s;
+    -moz-transition-delay: 0.105s;
+    -o-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+}
+
+.oxi-addons-container .oxi-image-blinds-right .oxi-image-hover-figure-caption:before {
+    left: 50%;
+    -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
+    -o-transition-delay: 0.21s;
+    transition-delay: 0.21s;
+}
+
+.oxi-addons-container .oxi-image-blinds-right .oxi-image-hover-figure-caption:after {
+    left: 75%;
+    -webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
+    -o-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}

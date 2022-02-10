@@ -1,0 +1,225 @@
+/*******************************************************************************/
+/*  Traditionsl   -   C O L O R    S K I N          ****************************/
+/*******************************************************************************/
+/* For better compatibility, please change here only folowing properties:      */
+/* 
+*        background , background-color, background-repeat, background-image,  background-repeat, background-position
+*        border
+*        box-shadow, -moz-box-shadow, -webkit-box-shadow
+*        border-radius, -moz-border-radius, -webkit-border-radius
+*        color
+*        font-weight
+*        text-shadow
+*        text-transform
+*
+*/
+
+/* Full Calendar Frame */
+.datepick-inline {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #999999;
+  box-shadow: 0 0 2px #AAAAAA;
+  -moz-box-shadow: 0 0 2px #AAAAAA;
+  -webkit-box-shadow: 0 0 2px #AAAAAA;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/* Background of one calendar month */
+.datepick-inline .datepick{
+  background:  transparent;
+}
+/* Previous & Next links  and TITLE BACKGROUND */
+.datepick-inline .calendar-links {
+  background-color: #ccc; 
+  background-repeat: repeat-x; 
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#ddd));   /* Safari 4-5, Chrome 1-9 */ 
+  background: -webkit-linear-gradient(top, #ddd, #ccc);                         /* Safari 5.1, Chrome 10+ */ 
+  background: -moz-linear-gradient(top, #ddd, #ccc);                            /* Firefox 3.6+ */ 
+  background: -ms-linear-gradient(top, #ddd, #ccc);                             /* IE 10 */ 
+  background: -o-linear-gradient(top, #ddd, #ccc);                              /* Opera 11.10+ */ 
+  
+  border-bottom: 1px solid #aaa;
+}
+/* Prev - Next Text */
+.datepick-inline .calendar-links .datepick-prev a,
+.datepick-inline .calendar-links .datepick-next a,
+.datepick-inline .calendar-links .datepick-prev a:hover,
+.datepick-inline .calendar-links .datepick-next a:hover{
+    color: #888;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #ddd;
+}
+/* Month Titles */
+.datepick-inline .datepick-header {
+  color: #555;
+  font-weight: 600;
+  text-shadow: 0 1px 0 #DDDDDD;  
+}
+/* Week Titles */
+div.datepick-inline .datepick-title-row th{
+    border: 1px solid #ccc;     
+    color: #555;
+    font-weight: 600;    
+    text-transform: uppercase;    
+}
+/* Cell border*/
+.block_hints .block_free, .block_hints .block_time, .block_hints .block_booked, .block_hints .block_pending, .block_hints .block_check_in_out, 
+.datepick-inline .datepick-days-cell{
+    border: 1px solid #ccc;
+    color:#757575;
+}
+
+/*  Dates Cells       **********************************************************/
+/*******************************************************************************/
+
+/* A V A I L A B L E - BACKGROUND */
+.block_hints .block_free,
+.block_hints .block_time, 
+.block_hints .block_check_in_out div.check-in-div,                             /* Item  for the LEGEND */
+.block_hints .block_check_in_out div.check-out-div,                             /* Item  for the LEGEND */
+.datepick-inline .date_available,
+.datepick-inline .timespartly.check_in_time div.check-in-div,                   /* Define the COLOR fot the check  in / out times the same as available*/
+.datepick-inline .timespartly.check_out_time div.check-out-div {
+  background: none repeat scroll 0 0 #f5f5f5;
+}
+/* A V A I L A B L E  and UNSELECTABLE - Text */
+.block_hints .block_free,
+.datepick-inline .date_available,
+.datepick-inline .date_available.datepick-unselectable{
+  color: #CCCCCC;                                                               /* This style for the uvailbale date, when we are select the dates */
+  text-shadow: 0 1px 0 #FFFFFF;                                                 /* This style for the uvailbale date, when we are select the dates */
+}
+/* A V A I L A B L E  - Text A */
+.block_hints .block_free a,
+.block_hints .block_time, 
+.datepick-inline .date_available a{
+    color:#89a;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #fff;
+}
+/*******************************************************************************/
+
+/* T I M E   S L O T S */
+.block_hints .block_time, 
+.datepick-inline .timespartly{
+  background-image: url("../../assets/img/clock_fill.png");
+  background-repeat: no-repeat;
+  background-position:100% 100%; 
+}
+/*******************************************************************************/
+
+/* A P P R O V E D  - BACKGROUND */
+.block_hints .date_approved.block_check_in_out, 
+.block_hints .block_booked, 
+.datepick-inline .date_approved, 
+/* A P P R O V E D  - BACKGROUND for Check In Pending & Check Out Approved ||  Check Out Pending & Check In Approved   Dates    //FixIn: 6.0.1.2 */
+td.timespartly.check_in_time.check_out_time.check_in_time_date2approve.check_out_time_date_approved div.check-in-div, 
+td.timespartly.check_in_time.check_out_time.check_out_time_date2approve.check_in_time_date_approved div.check-out-div {    
+    background-color: #C60B0B;
+}
+/* A P P R O V E D  -  T E X T /including partially booked - timeslots/ */
+.block_hints .date_approved.block_check_in_out,  
+.block_hints .block_booked, 
+.datepick-inline .date_approved,   
+.block_hints .block_booked a, 
+.datepick-inline .date_approved a{
+    color: #5F0000;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #DD0000;
+}
+/* CHECK IN and CHECK OUT  Borders for the approved cells - the COLOR have to be the SAME as BACKGROUND of this cell*/
+.block_hints .date_approved.block_check_in_out div.check-in-div,                /* Item  for the LEGEND */
+.datepick-inline .date_approved.timespartly.check_in_time div.check-in-div{
+    border-right: 1px dotted #C60B0B;
+}
+.block_hints .date_approved.block_check_in_out div.check-out-div,               /* Item  for the LEGEND */
+.datepick-inline .date_approved.timespartly.check_out_time div.check-out-div{
+    border-left: 1px dotted #C60B0B;
+}
+/*******************************************************************************/
+
+/* P E N D I N G  - BACKGROUND */
+.block_hints .date2approve.block_check_in_out, 
+.block_hints .block_pending, 
+.datepick-inline .date2approve, 
+/* P E N D I N G  - BACKGROUND for Check In Approved & Check Out Pending ||  Check Out Approved & Check In Pending    Dates     //FixIn: 6.0.1.2  */
+td.timespartly.check_in_time.check_out_time.check_in_time_date_approved.check_out_time_date2approve div.check-in-div, 
+td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_in_time_date2approve div.check-out-div {    
+  background-color: #DF9A00;
+}
+/* P E N D I N G  -  T E X T /including partially booked - timeslots/ */
+.block_hints .date2approve.block_check_in_out, 
+.block_hints .block_pending, 
+.datepick-inline .date2approve, 
+.block_hints .block_pending a, 
+.datepick-inline .date2approve a {
+    color: #885500;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #FFAA00;
+}
+/* CHECK IN and CHECK OUT  Borders for the approved cells - the COLOR have to be the SAME as BACKGROUND of this cell*/
+.block_hints .date2approve.block_check_in_out div.check-in-div,                 /* Item  for the LEGEND */
+.datepick-inline .date2approve.timespartly.check_in_time div.check-in-div{
+    border-right: 1px dotted #DF9A00;
+}
+.block_hints .date2approve.block_check_in_out div.check-out-div,                /* Item  for the LEGEND */
+.datepick-inline .date2approve.timespartly.check_out_time div.check-out-div{
+    border-left: 1px dotted #DF9A00;
+}
+/*******************************************************************************/
+
+/* S E L E C T E D   Dates - Background */
+.datepick-inline .datepick-one-month .datepick .datepick-current-day {
+  background-color: #555;
+}
+/* S E L E C T E D   Dates - Text color */
+.datepick-inline .datepick-one-month .datepick .datepick-current-day a{
+    color: #EEEEEE;
+    text-shadow: 0 -1px 0 #000000;
+}
+/*******************************************************************************/
+
+/* C e l l   O V E R   Dates - Background */
+.datepick-inline .datepick .datepick-days-cell-over{
+    background:#aaa;
+}
+/* C e l l   O V E R   Dates - Text color */
+.datepick-inline .datepick .datepick-days-cell-over a:hover, 
+.datepick-inline .datepick .datepick-days-cell-over a{    
+    color: #eee;
+    text-shadow: 0 -1px 0 #888;
+}
+/*******************************************************************************/
+/* FixIn: 6.0.1.2 */
+/* Text style for Check In Approved & Check Out Pending ||  Check Out Approved & Check In Pending || Check In Pending & Check Out Approved ||  Check Out Pending & Check In Approved   */
+td.timespartly.check_in_time.check_out_time.check_in_time_date_approved.check_out_time_date2approve span, 
+td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_in_time_date2approve span, 
+td.timespartly.check_in_time.check_out_time.check_in_time_date2approve.check_out_time_date_approved span, 
+td.timespartly.check_in_time.check_out_time.check_out_time_date2approve.check_in_time_date_approved span {
+    font-weight: 600;
+    text-shadow: none;
+}
+
+/* Show partially (time-slots) booked days with Background color as for available days ********************************/
+/** //FixIn: 8.2.1.27   Updated 2018-07-04   ****/
+/* Color as in this section A V A I L A B L E - BACKGROUND */
+.wpbc_timeslot_day_bg_as_available .datepick-inline .times_clock {
+    background-color: #f5f5f5;
+}
+/* Same as in this Section above --- A V A I L A B L E  - Text A  */
+.wpbc_timeslot_day_bg_as_available .datepick-inline .times_clock.date_available a {
+    color:#89a;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #fff;
+}
+/*  Same as in this Section above --- S E L E C T E D   Dates - Text color */
+.wpbc_timeslot_day_bg_as_available .datepick-inline .datepick-one-month .datepick .times_clock.date_available.datepick-current-day a{
+    color: #EEEEEE;
+    text-shadow: 0 -1px 0 #000000;
+}
+/*   Same as in this Section above --- A V A I L A B L E  and UNSELECTABLE - Text */
+.wpbc_timeslot_day_bg_as_available .datepick-inline .date_available {
+  color: #CCCCCC;                                                               /* This style for the uvailbale date, when we are select the dates */
+  text-shadow: 0 1px 0 #FFFFFF;                                                 /* This style for the uvailbale date, when we are select the dates */
+}

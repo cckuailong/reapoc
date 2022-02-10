@@ -1,0 +1,208 @@
+@import "mixins.less";
+
+/*-------------------------------------------------------------------------------------------*/
+/* A3rev Panel RTL UI */
+/*-------------------------------------------------------------------------------------------*/
+
+body.rtl {
+	.a3rev_panel_container {
+		font-family: "Open Sans",sans-serif;
+	}
+}
+.a3rev_panel_container {
+
+	.a3rev_panel_box_handle {
+		padding: 8px 38px 8px 12px;
+
+		.pro_feature_top_message {
+			text-align: right;
+		}
+	}
+
+	.a3-plugin-ui-panel-box {
+		&:before {
+			left: auto;
+			right: 10px;
+		}
+	}
+
+	code {
+    	float: right;
+	}
+
+	/* Chosen RTL */
+	.chosen-container {
+		margin-right: 0px;
+		margin-left: 2px;
+
+		.chosen-drop {
+			left: auto;
+			right: -9999px;
+		}
+		&.chosen-with-drop {
+			.chosen-drop {
+				left: auto;
+				right: 0;
+			}
+		}
+		&.chosen-container-multi {
+			.chosen-choices {
+				li.search-choice {
+					margin-left: 0px;
+					margin-right: 5px;
+					float: left;
+					padding-left: 20px;
+					padding-right: 5px;
+
+					.search-choice-close {
+						left: 3px;
+						right: auto;
+					}
+				}
+			}
+		}
+	}
+
+	/* Description */
+	span.description {
+		margin-right: 5px;
+	}
+
+	/* Preview Remove Button */
+	.typography-preview-container, .settings-preview-container {
+		.preview_remove {
+			left: -10px;
+			right: auto;
+		}
+
+	}
+	.a3rev-ui-settings-preview-button {
+		float: right;
+	}
+
+	/* Border Rounded Corner Control */
+	.forminp-border_corner {
+		.iPhoneCheckContainer {
+			margin-left: 30px;
+			margin-right: 0px;
+		}
+
+		.a3rev-ui-border-corner-value-container {
+			float: right;
+		}
+
+		.a3rev-ui-border_corner-top_left, .a3rev-ui-border_corner-top_right, .a3rev-ui-border_corner-bottom_left, .a3rev-ui-border_corner-bottom_right {
+			float: right;
+		}
+
+		.a3rev-ui-border_corner-span {
+			float: right;
+		}
+
+		.a3rev-ui-border_corner-px {
+			float: right;
+			margin-left: 10px;
+			margin-right: 0px;
+		}
+	}
+
+	/* SLIDER Control */
+	.a3rev-ui-slide-container {
+		float: right;
+	}
+	.a3rev-ui-slide-container-start {
+		padding-left: 20px;
+		margin-right: 12px;
+		float: right;
+	}
+	.a3rev-ui-slide-result-container {
+		float: right;
+	}
+	.a3rev-ui-slider  {
+		float: right;
+	}
+	.a3rev-ui-slide {
+		float: right;
+	}
+
+	/* OnOff Radio Control */
+	.forminp-onoff_radio {
+		ul, li {
+			float: right;
+		}
+	}
+
+	/* OnOff Checkbox & Radio Control */
+	.iPhoneCheckContainer, .iOSCheckContainer {
+		margin-left: 10px;
+		margin-right: 0px;
+		float: right;
+	}
+	label.iPhoneCheckLabelOff, label.iOSCheckLabelOff {
+		text-align: left;
+		left: 0;
+		right: auto;
+
+		span {
+			padding-right: 0px;
+			padding-left: 10px;
+		}
+	}
+	label.iPhoneCheckLabelOn, label.iOSCheckLabelOn {
+		text-align: right;
+		left: auto;
+		right: 0;
+
+		span {
+			padding-left: 0px;
+			padding-right: 10px;
+		}
+	}
+
+	.iPhoneCheckHandle, .iOSCheckHandle {
+		left: auto;
+		right: -1px;
+	}
+
+	/* TextFields */
+	.a3rev-ui-array_textfields-container {
+		label {
+			float: right;
+			margin-left: 5px;
+		}
+	}
+
+	/* Help Tip */
+	table {
+		&.form-table {
+			th {
+				img.help_tip {
+					float: left;
+					margin: 0 0 0 -12px;
+				}
+			}
+
+			img.help_tip {
+				margin: -4px 5px 0 0;
+			}
+		}
+	}
+}
+
+/* Style for yellow box about Pro or Ultimate version */
+#a3_plugin_panel_fields {
+	padding-left: 280px;
+	padding-right: 0px;
+}
+#a3_plugin_panel_upgrade_area {
+	padding-left: 0px;
+	padding-right:20px;
+	float: left;
+}
+
+/* Custom for each element web icons font */
+.a3-plugin-ui-help-icon {
+	float: left;
+	margin-left: -15px;
+	margin-right: 0px;
+}

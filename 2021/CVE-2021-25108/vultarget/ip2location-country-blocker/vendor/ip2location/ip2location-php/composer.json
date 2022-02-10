@@ -1,0 +1,30 @@
+{
+	"name": "ip2location/ip2location-php",
+	"description": "[Official Release] IP2Location PHP API to get location info from IPv4 and IPv6 address.",
+	"keywords": ["ip2location", "ip2locationlite", "geolocation", "ip geolocation", "isp", "time zone", "mnc", "mcc", "usage type", "zip code", "area code"],
+	"homepage": "https://www.ip2location.com",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "IP2Location",
+			"email": "support@ip2location.com",
+			"homepage": "https://www.ip2location.com"
+		}
+	],
+	"require-dev": {
+		"phpunit/phpunit": "^9.5"
+	},
+	"require": {
+		"php": ">=7.2",
+		"ext-bcmath": "*",
+		"ext-curl": "*",
+		"ext-gmp": "*",
+		"ext-json": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"IP2Location\\": "src"
+		}
+	}
+}

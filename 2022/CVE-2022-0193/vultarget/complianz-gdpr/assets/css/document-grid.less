@@ -1,0 +1,85 @@
+/*
+  To ensure this file is minified, comment the import in document.less, then save this file.
+*/
+#cmplz-manage-consent-container {
+  display:none;
+}
+
+//needs to apply both to separate cookie shortcode, cookie policy and privacy policy
+#cmplz-cookies-overview .cmplz-dropdown, #cmplz-document .cmplz-dropdown{
+	.cmplz-service-description, .cmplz-sharing-data{
+		display:inline-block;
+		width: calc(50% - 35px);
+		vertical-align: top;
+	}
+
+	@media only screen and (max-width: 600px) {
+		.cmplz-service-description, .cmplz-sharing-data{
+			width: 100%;
+		}
+	}
+	summary{
+		&::-webkit-details-marker, &::marker {
+		  display:none;
+		  content:'';
+		}
+	  div {
+		display: grid;
+		grid-template: "heading chevron";
+		grid-template-columns: 2fr 35px;
+		grid-gap: 15px;
+		align-items: center;
+
+		h3{
+		  grid-area: heading;
+		  margin: 0;
+		}
+		&:after{
+		  grid-area: chevron;
+		}
+	  }
+	}
+	&.cmplz-dropdown-cookiepolicy{
+		summary{
+		  div {
+			grid-template: "heading paragraph chevron";
+			grid-template-columns: 2fr auto 35px;
+			p {
+				grid-area: paragraph;
+			}
+		  }
+		}
+		.cookies-per-purpose {
+			display: grid;
+
+			@media only screen and (min-width: 600px) {
+				  grid-column: span 2;
+				  grid-template-columns: 1fr 1fr 1fr;
+				  grid-template: "purpose purpose purpose" "header1 header2 header3" auto;
+				.purpose {
+					grid-area: purpose;
+				}
+
+				.name-header {
+					grid-area: header1;
+				}
+
+				.retention-header {
+					grid-area: header2;
+				}
+
+				.function-header {
+					grid-area: header3;
+				}
+			}
+
+			@media only screen and (max-width: 600px) {
+				grid-template-columns: 100px 1fr;
+				.purpose {
+					grid-column: span 2;
+				}
+			}
+		}
+	}
+}
+

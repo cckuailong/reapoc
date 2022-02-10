@@ -1,0 +1,442 @@
+/**
+ * @version 1.1
+ * @package: Tabs 
+ * @category: Admin UI
+ * @author wpdevelop
+ *
+ * @web-site https://wpbookingcalendar.com/
+ * @email info@wpbookingcalendar.com 
+ * 
+ * @modified 2015-10-29
+ */
+/* DropDown Selectbox */
+.wpdevelop .btn-group.open .dropdown-toggle {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125) inset;
+    background: #ccc;
+}
+/* Drop Down Menu */  
+.wpdevelop ul.dropdown-menu {
+    display: none;
+}
+.wpdevelop .dropdown-menu li {
+    padding:0;
+    margin:0;
+}
+.wpdevelop .dropdown-menu li.dropdown-header {
+    padding:0 15px;
+    color: #999;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 600;    
+}
+.wpdevelop .dropdown-menu > .disabled > a, 
+.wpdevelop .dropdown-menu > .disabled > a:focus, 
+.wpdevelop .dropdown-menu > .disabled > a:hover {
+    color:#ccc;
+}
+.wpdevelop .dropdown-menu > li > a, 
+.wpdevelop .dropdown-menu a {
+    clear: both;
+    display: block;
+    font-weight: 400;
+    padding:5px 15px;
+    white-space: nowrap;
+    font-size:13px;
+    line-height: 18px;
+}
+.wpdevelop .dropdown-menu li > a:hover, 
+.wpdevelop .dropdown-menu li.active > a, 
+.wpdevelop .dropdown-menu li.active > a:hover {
+    background: #08c;
+    color: #fff;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+/* radio button or checbox togther with selctbox as option in dropdown list */
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group {
+    margin:2px 5px 4px 5px;
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group .input-group-addon {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group .input-group-addon input {
+    margin:0 5px 0 0;
+    vertical-align: middle;
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group .input-group-addon label {
+    color: #444;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 16px;
+} 
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group select {
+    border-radius:0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+} 
+/* button group in drop down list*/
+.wpdevelop .dropdown-menu li .btn-toolbar .btn-group {
+    float: right;
+    margin: 0 5px;
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .btn-group a.button {
+    clear:none;
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group.text-group {
+    display:block;
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group.text-group .input-group-addon {
+    text-align: left;
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group.text-group .dropdown-menu-text-element{
+    box-sizing: padding-box;
+    float: left;
+    font-size: 11px;
+    padding: 0 0 0 15px;
+    width: 50%;    
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group.text-group .dropdown-menu-text-element.dropdown-menu-text-element-count-1 {
+    width: 100%;    
+}
+.wpdevelop .dropdown-menu li .btn-toolbar .input-group.text-group .dropdown-menu-text-element input[type=text] {
+    font-size: 12px;
+    width: 100%;  
+}
+/* Containers in Toolbars */
+.wpdevelop .visibility_container .tab-bottom {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #EEE;
+    border-color: #BBC;
+    border-width: 1px;
+    border-style: dashed solid solid;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 1px #DDD;
+    padding: 0px 7px;
+    position: absolute;
+    margin-top: 4px;
+}
+.wpdevelop .visibility_container .tab-bottom a {
+    color:#777;
+}
+.wpdevelop .visibility_container .control-group {
+    float:left;
+    margin-right:15px;
+    margin-top:8px;
+    min-height: 31px;
+}
+.wpdevelop .btn-toolbar > .btn,
+.wpdevelop .btn-toolbar > .btn-group {
+    min-height: 31px;
+}
+.wpdevelop .control-group .dropdown-toggle label.label_in_filters {
+    font-weight: 600;
+} 
+/* Buttons Group */
+.wpdevelop .btn-group a.button:focus, 
+.wpdevelop .btn-group a.button:hover,
+.wpdevelop .form-group .input-group a.button:focus,
+.wpdevelop .form-group .input-group a.button:hover{
+    text-decoration: none;
+}
+.wpdevelop .control-group .btn-group > .button{    
+    float: left;
+    margin:0 0 0 -1px;
+    position: relative; 
+}
+.wpdevelop .control-group .btn-group > .button.active {
+    background-color: #E6E6E6;
+    background-image: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.5);
+    outline: 0 none;
+    border-color: #CCCCCC;
+}
+
+/* control-group | btn-group */ 
+.wpdevelop .control-group .btn-toolbar .input-group > input[type='text'],  
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button {
+    height: 34px;
+    line-height: 1.42857143;  
+    
+    height: 28px;
+    
+}
+.wpdevelop .control-group .btn-toolbar .input-group > select, 
+.wpdevelop .control-group .btn-toolbar .input-group > input[type='text'],  
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon {
+    padding: 4px 12px;
+    font-size: 13px; 
+    box-shadow: inset 0 0px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+}
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon {    
+    text-shadow: 0 1px 1px #fff;
+    background-color: #eee;
+    color: #444;
+}
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon > input {
+    vertical-align: bottom;
+}
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button {
+    line-height: 28px;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 0 10px -1px;
+}
+.wpdevelop .control-group .btn-toolbar .input-group > input[type='text'] {
+    padding: 4px 4px 4px 8px;
+    height: 30px;
+}
+.wpdevelop .control-group .btn-toolbar .input-group > select {
+    height: 28px;
+    line-height: 22px;  
+    padding: 0 12px;
+    font-size: 13px;    
+}
+.wpdevelop .control-group .btn-toolbar .input-group > select option:disabled {
+    color: #bbb;
+}
+.wpdevelop .control-group .btn-toolbar .input-group .input-group-btn .button {
+    box-shadow: 0 0 0 #ffffff inset, 0 1px 0 rgba(0, 0, 0, 0.08);
+} 
+.wpdevelop .control-group-text {
+    float:left;
+    margin-right:10px;
+    height:28px;
+    line-height:28px;
+}
+.wpdevelop .btn-toolbar .input-group > .input-group-btn .button.disabled, 
+.wpdevelop .btn-toolbar .btn-group > .button.disabled, 
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button.disabled, 
+.wpdevelop .control-group .btn-toolbar .btn-group > .button.disabled {
+    box-shadow: 0 1px 0 #cfcfcf !important;
+}
+.wpdevelop .btn-toolbar .input-group > .input-group-btn .button.active, 
+.wpdevelop .btn-toolbar .btn-group > .button.active, 
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button.active, 
+.wpdevelop .control-group .btn-toolbar .btn-group > .button.active {
+    transform: none;   
+    border-color: #ccc;
+}
+.wpdevelop .control-group .btn-toolbar .input-group > input[type='text'],  
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button, 
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon,  
+.wpdevelop .control-group .btn-toolbar .btn-group > .button,
+.wpdevelop .control-group .btn-toolbar .btn-group > input[type=text], 
+.wpdevelop .control-group .btn-toolbar .btn-group > select {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;     
+}
+.wpdevelop .control-group .btn-toolbar .input-group > input[type='text']:first-child, 
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn:first-child .button,  
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon:first-child,  
+.wpdevelop .control-group .btn-toolbar .btn-group > .button:first-child,
+.wpdevelop .control-group .btn-toolbar .btn-group > input[type=text]:first-child, 
+.wpdevelop .control-group .btn-toolbar .btn-group > select:first-child {
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;         
+}
+.wpdevelop .control-group .btn-toolbar .input-group > input[type='text']:last-child, 
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn:last-child .button,  
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon:last-child,
+.wpdevelop .control-group .btn-toolbar .btn-group > .button:last-child,
+.wpdevelop .control-group .btn-toolbar .btn-group > input[type=text]:last-child, 
+.wpdevelop .control-group .btn-toolbar .btn-group > select:last-child {
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;         
+    margin-left: -1px;
+}
+.wpdevelop .control-group .btn-group .dropdown-toggle label{
+    margin-bottom: 3px;
+}
+/*FixIn: 7.1.2.15 */
+.wpdevelop .control-group .btn-group .dropdown-toggle span.wpbc_selected_in_dropdown{   
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+/* .form-group  */
+.wpdevelop .form-group .input-group > .button,
+.wpdevelop .form-group .input-group .input-group-btn .button {    
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height:34px;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;        
+}
+.wpdevelop .form-group .input-group .input-group-btn .btn-toolbar .btn-group .button {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px; 
+    margin:0;
+}
+.wpdevelop .form-group .input-group > .button:first-child,
+.wpdevelop .form-group .input-group > input[type=text]:first-child, 
+.wpdevelop .form-group .input-group > select:first-child, 
+.wpdevelop .form-group .input-group .input-group-btn:first-child .button, 
+.wpdevelop .form-group .input-group .input-group-btn .btn-toolbar .btn-group .button:first-child{    
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;    
+    border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;    
+    margin-left: 0;
+}
+.wpdevelop .form-group .input-group > .button:last-child, 
+.wpdevelop .form-group .input-group > input[type=text]:last-child, 
+.wpdevelop .form-group .input-group > select:last-child, 
+.wpdevelop .form-group .input-group > .dropdown-toggle, 
+.wpdevelop .form-group .input-group > .input-group-btn:last-child .button, 
+.wpdevelop .form-group .input-group .input-group-btn .btn-toolbar > .btn-group > .button:last-child {
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;   
+    margin-left: -1px;
+}
+.wpdevelop .form-group .input-group ul.dropdown-menu {
+    margin-top:0;
+    border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;   
+    border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;       
+}
+
+/* Fix: for showing correct width in Chrome. Its trick, so  need to test more... 2016-08-31 */
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon, 
+.wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn {
+    width:auto;
+}
+
+/* .btn-group-vertical  */
+
+.wpdevelop .btn-group-vertical > .button,
+.wpdevelop .btn-group-vertical > .btn-group,
+.wpdevelop .btn-group-vertical > .btn-group > .button {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+    margin-bottom: 0;
+}
+.wpdevelop .btn-group-vertical > .btn-group > .button {
+  float: none;
+}
+.wpdevelop .btn-group-vertical > .button + .button,
+.wpdevelop .btn-group-vertical > .button + .btn-group,
+.wpdevelop .btn-group-vertical > .btn-group + .button,
+.wpdevelop .btn-group-vertical > .btn-group + .btn-group {
+  margin-top: -1px;
+  margin-left: 0;
+}
+.wpdevelop .btn-group-vertical > .button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.wpdevelop .btn-group-vertical > .button:first-child:not(:last-child) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.wpdevelop .btn-group-vertical > .button:last-child:not(:first-child) {
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.wpdevelop .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button {
+  border-radius: 0;
+}
+.wpdevelop .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button:last-child,
+.wpdevelop .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.wpdevelop .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+/*******************************************************************************/
+
+@media (max-width: 782px) { 
+    .wpdevelop .wpbc-sm-100 {
+        width:100% !important;
+    }
+
+/*    .wpdevelop .control-group .btn-toolbar .input-group {
+        margin-bottom: 10px;
+    }*/
+    .wpdevelop .in-button-text {
+        display:none;
+    }
+    .wpdevelop .control-group .btn-group > .button,
+    .wpdevelop .control-group .btn-toolbar .btn-group > .button, 
+    .wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button {
+        height: 34px;
+        /*line-height: 1.5em;          */
+    }
+    .wpdevelop .control-group .btn-toolbar .input-group > input[type='text']{
+        height: 34px;
+        padding:0 12px;
+        line-height:auto;  
+    }
+    #wpbody .wpdevelop .control-group .btn-toolbar .input-group > select {
+        height: 34px;
+        line-height: 28px;  
+    }    
+    .wpdevelop .control-group-text {
+        height: 34px;
+        line-height: 34px;  
+    }
+    .wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button {
+        margin:0 0 0 -1px;
+    }
+    .wpdevelop .control-group .btn-toolbar .input-group > .input-group-addon {        
+        
+        padding-top:0;  
+        padding-bottom:0;          
+    }
+}
+
+@media (max-width: 400px) { 
+    .wpdevelop .wpbc-sm-100 {
+        width:100% !important;
+    }
+}
+
+
+.wp-core-ui .chzn-right-buttons a {
+    min-height: 31px;
+}

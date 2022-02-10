@@ -1,0 +1,196 @@
+.pp-media-content {
+    .pp-gallery-image-caption {
+        color: #fff;
+        padding: 5px 10px;
+		a {
+			color: inherit;
+		}
+    }
+}
+.pp-random-image-wrap {
+    overflow: hidden;
+	position: relative;
+	text-align: center;
+	.pp-random-image {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.pp-media-content {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.pp-random-image-caption-over .pp-random-image-link {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+.pp-gallery-image-content,
+.pp-gallery-image-caption {
+    @include transition($target: all, $time: 0.25s, $timing-function: linear);
+}
+.pp-caption-hover-effect-fade-in {
+	.pp-gallery-image-caption {
+		opacity: 0;
+	}
+	.pp-image:hover {
+		.pp-media-content {
+			.pp-gallery-image-caption {
+				opacity: 1;
+			}
+		}
+	}
+}
+.pp-caption-hover-effect-fade-out {
+	.pp-gallery-image-caption {
+		opacity: 1;
+	}
+	.pp-image:hover {
+		.pp-media-content {
+			.pp-gallery-image-caption {
+				opacity: 0;
+			}
+		}
+	}
+}
+.pp-caption-hover-effect-slide-from-top {
+    .pp-media-content {
+        transform: translateY(-100%);
+    }
+}
+.pp-caption-hover-effect-slide-from-bottom {
+    .pp-media-content {
+        transform: translateY(100%);
+    }
+}
+.pp-caption-hover-effect-slide-from-left {
+    .pp-media-content {
+        transform: translateX(-100%);
+    }
+}
+.pp-caption-hover-effect-slide-from-right {
+    .pp-media-content {
+        transform: translateX(100%);
+    }
+}
+.pp-caption-hover-effect-fade-from-top {
+    .pp-media-content {
+        transform: translateY(-24px);
+    }
+}
+.pp-caption-hover-effect-fade-from-bottom {
+    .pp-media-content {
+        transform: translateY(24px);
+    }
+}
+.pp-caption-hover-effect-fade-from-left {
+    .pp-media-content {
+        transform: translateX(-24px);
+    }
+}
+.pp-caption-hover-effect-fade-from-right {
+    .pp-media-content {
+        transform: translateX(24px);
+    }
+}
+.pp-caption-hover-effect-fade-to-top {
+	.pp-image:hover {
+		.pp-media-content {
+			transform: translateY(-24px);
+		}
+	}
+}
+.pp-caption-hover-effect-fade-to-bottom {
+	.pp-image:hover {
+    	.pp-media-content {
+            transform: translateY(24px);
+        }
+    }
+}
+.pp-caption-hover-effect-fade-to-left {
+    .pp-image:hover {
+    	.pp-media-content {
+            transform: translateX(-24px);
+        }
+    }
+}
+.pp-caption-hover-effect-fade-to-right {
+    .pp-image:hover {
+    	.pp-media-content {
+            transform: translateX(24px);
+        }
+    }
+}
+.pp-caption-hover-effect-slide-to-top {
+    .pp-image:hover {
+    	.pp-media-content {
+            transform: translateY(-100%);
+        }
+    }
+}
+.pp-caption-hover-effect-slide-to-bottom {
+    .pp-image:hover {
+    	.pp-media-content {
+            transform: translateY(100%);
+        }
+    }
+}
+.pp-caption-hover-effect-slide-to-left {
+    .pp-image:hover {
+    	.pp-media-content {
+            transform: translateX(-100%);
+        }
+    }
+}
+.pp-caption-hover-effect-slide-to-right {
+    .pp-image:hover {
+    	.pp-media-content {
+            transform: translateX(100%);
+        }
+    }
+}
+.pp-caption-hover-effect-fade-from-top,
+.pp-caption-hover-effect-fade-from-bottom,
+.pp-caption-hover-effect-fade-from-left,
+.pp-caption-hover-effect-fade-from-right {
+    .pp-media-content {
+        opacity: 0;
+    }
+}
+.pp-caption-hover-effect-fade-to-top,
+.pp-caption-hover-effect-fade-to-bottom,
+.pp-caption-hover-effect-fade-to-left,
+.pp-caption-hover-effect-fade-to-right {
+    .pp-image:hover {
+    	.pp-media-content {
+            opacity: 0;
+        }
+    }
+}
+.pp-caption-hover-effect-slide-from-bottom,
+.pp-caption-hover-effect-slide-from-top,
+.pp-caption-hover-effect-slide-from-right,
+.pp-caption-hover-effect-slide-from-left,
+.pp-caption-hover-effect-fade-from-top,
+.pp-caption-hover-effect-fade-from-bottom,
+.pp-caption-hover-effect-fade-from-left,
+.pp-caption-hover-effect-fade-from-right {
+    .pp-image:hover {
+    	.pp-media-content {
+            transform: translateY(0) translateX(0);
+        }
+    }
+}
+.pp-caption-hover-effect-fade-from-top,
+.pp-caption-hover-effect-fade-from-bottom,
+.pp-caption-hover-effect-fade-from-left,
+.pp-caption-hover-effect-fade-from-right {
+    .pp-image:hover {
+    	.pp-media-content {
+            opacity: 1;
+        }
+    }
+}

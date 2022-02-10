@@ -11,7 +11,7 @@
 | CVE-2019-0195 | web | 代码问题 | 9.8 | [Y](CVE-2019-0195/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-0221 | Apache-Tomcat | 跨站脚本 | 6.1 | N | [Y](CVE-2019-0221/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-0221/poc/others/) |
 | CVE-2019-0230 | Apache Struts | 代码执行  | 9.8 | [Y](CVE-2019-0230/vultarget/) | [Y](CVE-2019-0230/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-0230/poc/others/) |
-| CVE-2019-0708 | RDP | 命令执行 | 9.8 | N | N | N | [Y](CVE-2019-0708/poc/pocsuite2/) | [Y](CVE-2019-0708/poc/pocsuite3/) | N | N | [Y](CVE-2019-0708/poc/others/) |
+| CVE-2019-0708 | RDP | 代码执行  | 9.8 | N | N | N | [Y](CVE-2019-0708/poc/pocsuite2/) | [Y](CVE-2019-0708/poc/pocsuite3/) | N | N | [Y](CVE-2019-0708/poc/others/) |
 | CVE-2019-100300 | Unknown | Unknown | Unknown | [Y](CVE-2019-100300/vultarget/) | N | N | N | N | N | N | [Y](CVE-2019-100300/poc/others/) |
 | CVE-2019-10068 |  | 反序列化 | 9.8 | N | [Y](CVE-2019-10068/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10068/poc/others/) |
 | CVE-2019-10092 | web | 跨站脚本 | 6.1 | N | [Y](CVE-2019-10092/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10092/poc/others/) |
@@ -31,7 +31,7 @@
 | CVE-2019-11869 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2019-11869/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-12276 |  | 路径遍历 | 7.5 | N | [Y](CVE-2019-12276/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-12276/poc/others/) |
 | CVE-2019-12314 |  | 路径遍历 | 9.8 | N | [Y](CVE-2019-12314/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-12314/poc/others/) |
-| CVE-2019-12409 | Apache Solr | 代码问题 | 9.8 | [Y](CVE-2019-12409/vultarget/) | N | N | N | N | N | N | [Y](CVE-2019-12409/poc/others/) |
+| CVE-2019-12409 | Apache Solr | 代码执行  | 9.8 | [Y](CVE-2019-12409/vultarget/) | N | N | N | N | N | N | [Y](CVE-2019-12409/poc/others/) |
 | CVE-2019-12461 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2019-12461/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-12461/poc/others/) |
 | CVE-2019-12593 | IceWarp | 路径遍历 | 7.5 | N | [Y](CVE-2019-12593/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-12593/poc/others/) |
 | CVE-2019-12616 | phpMyAdmin | 跨站请求伪造 | 6.5 | N | [Y](CVE-2019-12616/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-12616/poc/others/) |
@@ -104,14 +104,14 @@
 | CVE-2019-2579 | Oracle-Fusion-Middleware | 信息泄露 | 4.3 | N | [Y](CVE-2019-2579/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-2588 | Oracle-Fusion-Middleware | 信息泄露 | 4.9 | N | [Y](CVE-2019-2588/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-2588/poc/others/) |
 | CVE-2019-2616 | Oracle-Fusion-Middleware | 访问控制错误 | 7.2 | N | [Y](CVE-2019-2616/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-2616/poc/others/) |
-| CVE-2019-2725 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2019-2725/vultarget/) | [Y](CVE-2019-2725/poc/nuclei/) | [Y](CVE-2019-2725/poc/xray/) | N | N | N | N | [Y](CVE-2019-2725/poc/others/) |
+| CVE-2019-2725 | Weblogic_interface_7001 | 代码执行  | 9.8 | [Y](CVE-2019-2725/vultarget/) | [Y](CVE-2019-2725/poc/nuclei/) | [Y](CVE-2019-2725/poc/xray/) | N | N | N | N | [Y](CVE-2019-2725/poc/others/) |
 | CVE-2019-2729 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2019-2729/vultarget/) | [Y](CVE-2019-2729/poc/nuclei/) | [Y](CVE-2019-2729/poc/xray/) | N | N | N | N | [Y](CVE-2019-2729/poc/others/) |
 | CVE-2019-2767 |  | 访问控制错误 | 7.2 | N | [Y](CVE-2019-2767/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-3396 | Confluence | 代码执行 | 9.8 | [Y](CVE-2019-3396/vultarget/) | [Y](CVE-2019-3396/poc/nuclei/) | [Y](CVE-2019-3396/poc/xray/) | N | N | N | N | [Y](CVE-2019-3396/poc/others/) |
 | CVE-2019-3401 |  | 信息泄露 | 5.3 | N | [Y](CVE-2019-3401/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-3402 | JIRA | 跨站脚本 | 6.1 | N | [Y](CVE-2019-3402/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-3403 | JIRA | 授权问题 | 5.3 | [Y](CVE-2019-3403/vultarget/) | [Y](CVE-2019-3403/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-3403/poc/others/) |
-| CVE-2019-3799 | Spring | 路径遍历 | 6.5 | [Y](CVE-2019-3799/vultarget/) | [Y](CVE-2019-3799/poc/nuclei/) | [Y](CVE-2019-3799/poc/xray/) | [Y](CVE-2019-3799/poc/pocsuite2/) | [Y](CVE-2019-3799/poc/pocsuite3/) | N | N | [Y](CVE-2019-3799/poc/others/) |
+| CVE-2019-3799 | Spring | 信息泄漏 | 6.5 | [Y](CVE-2019-3799/vultarget/) | [Y](CVE-2019-3799/poc/nuclei/) | [Y](CVE-2019-3799/poc/xray/) | [Y](CVE-2019-3799/poc/pocsuite2/) | [Y](CVE-2019-3799/poc/pocsuite3/) | N | N | [Y](CVE-2019-3799/poc/others/) |
 | CVE-2019-3929 | Crestron-AM-100 | 操作系统命令注入 | 9.8 | N | [Y](CVE-2019-3929/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-3929/poc/others/) |
 | CVE-2019-5120 |  | SQL注入 | 8.8 | [Y](CVE-2019-5120/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-5127 | YouPHPTube | 操作系统命令注入 | 9.8 | N | [Y](CVE-2019-5127/poc/nuclei/) | [Y](CVE-2019-5127/poc/xray/) | N | N | N | N | N |

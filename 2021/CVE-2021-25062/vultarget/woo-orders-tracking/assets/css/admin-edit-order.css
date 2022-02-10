@@ -1,0 +1,345 @@
+.select2-container.select2-container--wotv-select2-custom-carrier.select2-container--open .select2-dropdown--below, .select2-container.select2-container--wotv-select2-custom-country.select2-container--open .select2-dropdown--below {
+    max-width: 100% !important;
+}
+
+.woo-orders-tracking-container {
+    background: #f5f5f5;
+    padding: 4px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.woo-orders-tracking-container .woo-orders-tracking-item-details {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.woo-orders-tracking-item-tracking-code-label {
+    width: 120px;
+}
+
+.woo-orders-tracking-container .woo-orders-tracking-item-details .woo-orders-tracking-item-tracking-code-value {
+    background: #ffffff;
+    line-height: 27px;
+    width: calc(100% - 180px);
+    min-width: 100px;
+    min-height: 25px;
+}
+
+.woo-orders-tracking-item-tracking-button-edit-container {
+    width: 60px;
+}
+
+.woo-orders-tracking-error {
+    text-align: center;
+    color: red;
+}
+
+.woo-orders-tracking-container .woo-orders-tracking-item-details > div {
+    margin: 4px 0;
+    text-align: center;
+}
+
+.woo-orders-tracking-edit-tracking-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(1, 1, 1, 0.3);
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-saving-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 100;
+    cursor: progress;
+}
+
+.woo-orders-tracking-saving-overlay:before {
+    content: url('../images/loading.gif');
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale3d(0.5, 0.5, 0.5);
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content {
+    position: relative;
+    z-index: 99;
+    max-width: calc(100% - 40px);
+    max-height: 90%;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-header {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    position: relative;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-header .woo-orders-tracking-edit-tracking-close {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-header .woo-orders-tracking-edit-tracking-close:before {
+    font-family: Dashicons;
+    content: "\f335";
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .woo-orders-tracking-edit-tracking-content-body-row {
+    display: flex;
+    padding-top: 20px;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .woo-orders-tracking-edit-tracking-content-body-row .woo-orders-tracking-edit-tracking-number-wrap,
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .woo-orders-tracking-edit-tracking-content-body-row .woo-orders-tracking-edit-tracking-carrier-wrap {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .woo-orders-tracking-edit-tracking-content-body-row .woo-orders-tracking-edit-tracking-shipping-carrier-wrap {
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .woo-orders-tracking-edit-tracking-content-body-row .woo-orders-tracking-edit-tracking-send-email-wrap {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .woo-orders-tracking-edit-tracking-content-body-row .woo-orders-tracking-edit-tracking-change-order-status-wrap {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .woo-orders-tracking-edit-tracking-content-body-row .woo-orders-tracking-edit-tracking-send-email-wrap .woo-orders-tracking-edit-tracking-send-email {
+    margin: 0 10px 0 0;
+}
+
+label[for="woo-orders-tracking-edit-tracking-change-order-status"] {
+    width: 50%;
+    text-align: center;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-footer {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-footer .button {
+    margin: 0 5px;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .woo-orders-tracking-edit-tracking-content-body-row input[type=text],
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .woo-orders-tracking-edit-tracking-content-body-row select {
+    min-height: 34px !important;
+    border-radius: 3px;
+    box-shadow: unset;
+}
+
+.select2-container--default .select2-selection--single {
+    height: 41px !important;
+    border: 1px solid rgba(34, 36, 38, .15) !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li .select2-search__field {
+    width: 100% !important;
+    border: 0;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid rgba(34, 36, 38, .15) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 34px !important;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .select2-container.select2-container--wotv-select2-custom-carrier.select2-container--open {
+    width: 600px;
+    max-width: calc(100vh - 40px);
+    position: relative !important;
+    border-bottom: 0;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .select2-container.select2-container--wotv-select2-custom-carrier {
+    height: 34px !important;
+    border: 1px solid rgba(34, 36, 38, .15);
+    border-radius: 3px;
+}
+
+.select2-container.select2-container--wotv-select2-custom-carrier.select2-container--open {
+    max-height: 280px !important;
+    z-index: 9999999999999;
+    width: 560px;
+    max-width: calc(100vh - 40px);
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .select2-container.select2-container--wotv-select2-custom-country.select2-container--open {
+    position: relative !important;
+    border-bottom: 0;
+}
+
+.woo-orders-tracking-edit-tracking-container .woo-orders-tracking-edit-tracking-content .woo-orders-tracking-edit-tracking-content-body .select2-container.select2-container--wotv-select2-custom-country {
+    height: 34px !important;
+    border: 1px solid rgba(34, 36, 38, .15);
+    border-radius: 3px;
+    line-height: 34px;
+}
+
+.select2-container.select2-container--wotv-select2-custom-country.select2-container--open {
+    z-index: 9999999999999;
+    width: 250px;
+    max-width: 250px;
+
+}
+
+.select2-container .select2-results__options {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.woo-orders-tracking-hidden {
+    display: none !important;
+}
+
+/*html no scroll*/
+html.vi_wotg-noscroll {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*paypal button*/
+
+span.woo-orders-tracking-item-tracking-button-add-to-paypal-container {
+    text-align: center;
+    display: inline-block;
+    padding: 0 5px;
+    position: relative;
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container .woo-orders-tracking-paypal-result {
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container .woo-orders-tracking-paypal-result.woo-orders-tracking-paypal-result-success {
+    color: #20d020;
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container .woo-orders-tracking-paypal-result.woo-orders-tracking-paypal-result-error {
+    color: red;
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container.woo-orders-tracking-paypal-active img.woo-orders-tracking-item-tracking-button-add-to-paypal {
+    cursor: pointer;
+}
+
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container img.woo-orders-tracking-item-tracking-button-add-to-paypal {
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    vertical-align: middle;
+    transform: scale3d(1, 1, 1);
+    transition: transform 200ms ease;
+}
+
+.woo-orders-tracking-paypal-inactive img.woo-orders-tracking-item-tracking-button-add-to-paypal {
+    opacity: .5;
+}
+
+.woo-orders-tracking-item-tracking-button-edit-container .woo-orders-tracking-button-edit {
+    cursor: pointer;
+    transform: scale3d(1, 1, 1);
+    transition: transform 200ms ease;
+}
+
+.woo-orders-tracking-item-tracking-button-edit-container .woo-orders-tracking-button-edit:hover,
+.woo-orders-tracking-item-tracking-button-add-to-paypal-container.woo-orders-tracking-paypal-active img.woo-orders-tracking-item-tracking-button-add-to-paypal:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+}
+
+/*paypal added tracking numbers*/
+.woo-orders-tracking-item-tracking-paypal-added-tracking-numbers-icon {
+    width: 18px;
+    vertical-align: middle;
+}
+
+.woo-orders-tracking-item-tracking-paypal-added-tracking-numbers-values {
+    width: calc(100% - 26px);
+}
+
+.woo-orders-tracking-edit-tracking-content-body-row-add-to-paypal img {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0 10px;
+}

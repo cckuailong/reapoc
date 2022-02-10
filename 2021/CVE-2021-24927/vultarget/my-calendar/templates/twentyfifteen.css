@@ -1,0 +1,485 @@
+/* New theme for 2015 */
+.my-calendar-header *, .mc_bottomnav * {
+	line-height: 1.5;
+}
+
+.mc-main .my-calendar-header, .mc-main .mc_bottomnav {
+	background-color: rgba( 0, 0, 0, .15 );
+	color: #000;
+	padding: 2px 10px;
+}
+
+.mc-main a {
+	border-bottom: none;
+}
+
+.mc-main .details ul, .mc-main .details ol, .mc-main details li  {
+	margin: 5px 0 10px 30px;
+}
+
+.my-calendar-header > div, .mc_bottomnav > div {
+	margin: 5px;
+	display: inline-block; 
+}
+
+.mc-main .maybe-hide {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;	
+}
+
+.my-calendar-header > div:nth-of-type(1), .mc_bottomnav > div:nth-of-type(1) {
+	margin-left: 0;
+}
+	
+.my-calendar-header > div:nth-of-type(last), .mc_bottomnav > div:nth-of-type(last) {
+	margin-right: 0;
+}
+
+.mc-main .my-calendar-header a, .mc-main .mc_bottomnav a {
+    color: #333;
+    text-decoration: none;
+	border-radius: 5px;
+	padding: 4px 6px;
+	font-size: .8em;
+    background: linear-gradient(to top, rgba(230, 230, 230, .95) 0%, rgba(250, 250, 250, .95) 70%);
+}
+
+.mc-main .my-calendar-header a:hover, .mc-main .mc_bottomnav a:hover, .mc-main .my-calendar-header a:focus, .mc-main .mc_bottomnav a:focus {
+    color: #fff;
+    text-decoration: underline;
+    background: linear-gradient(to bottom, rgba(125, 125, 125, .95) 0%, rgba( 90, 90, 90, .95) 70%);
+}
+
+.mc-main.calendar {
+    width: 100% !important;
+}
+
+.mc-main .heading {
+	margin: 0;
+}
+
+.mc-main table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mc-main tr td {
+    width: 14.285714%;
+    border: 1px solid #f6f6f6;
+    padding: 0 !important;
+    height: 5em;
+}
+
+.mc-main th {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 0;
+    background: rgba(0, 0, 0, .8);
+    color: #fff !important;
+}
+
+.mc-main {
+    position: relative;
+}
+
+.mc-main table .current-day .mc-date {
+    background: rgba(0, 0, 0, .8) !important;
+    color: #fff;
+}
+
+.mc-main caption {
+    font-size: 2em;
+	color: #fff;
+	background: #333; 
+	padding: 5px;
+	text-align: right;
+	caption-side: bottom;
+}
+
+.mc-main.mini caption {
+    font-size: 1.2em;
+}
+
+.mc-main .event-title {
+    margin: 0 !important;
+	font-size: .8em;
+}
+
+.mc-main .event-title a {
+    display: block;
+    line-height: 1.5;
+    padding: 6px;
+    font-size: .9em;
+	position: relative;
+	border-bottom: none;
+}
+
+.mc-main .event-title .has-image {
+	padding-left: 24px; 
+}
+
+.mc-main.mini .event-title {
+	padding: 10px 30px 10px 5px;
+}
+
+.mc-main.mini .event-title img {
+	position: relative;
+	margin-right: 4px;
+	top: 0;
+	left: 0;
+}
+
+.mc-main .mc-format a:before {
+	font-family: dashicons;
+	margin-right: 4px;
+	vertical-align: text-top;
+}
+
+.mc-main .mc-format .list:before {
+	content: "\f163";
+}
+
+.mc-main .mc-format .grid:before {
+	content: "\f508";
+}
+
+.mc-main .event-title img {
+	position: absolute;
+	top: 6px;
+	left: 4px;
+}
+
+.mc-main .calendar-event .details, .mc-main .calendar-events {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: rgba(255, 255, 255, .98);
+    box-shadow: 0 0 4px;
+    color: #333;
+}
+
+.mc-main.calendar .details.no-image {
+	padding-top: 60px;
+}
+
+.mc-main.calendar .single-event .details.no-image {
+	padding-top: 0;
+}
+
+.mc-main .details {
+	padding: 10px;
+}
+
+.mc-main .mc-list .details {
+	padding: 0;
+}
+
+.mc-main .close {
+    position: absolute;
+    left: .5em;
+    top: .5em;
+	padding: 4px;
+	line-height: 2;
+	border-bottom: none;
+}
+.mc-main.mini .close {
+	left: auto;
+	top: .25em;
+	right: .5em;
+}
+
+.mc-main .close:hover, .mc-main .close:focus {
+	background: rgba( 240, 240, 240, .8 );
+}
+
+.mc-main .details img {
+    width: 100%;
+    height: auto;
+}
+
+.mc-main .details img.alignleft {
+    width: auto;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.mc-main .details img.alignright {
+    width: auto;
+    float: left;
+    margin: 0 0 10px 20px;
+}
+
+.mc-main .details img.aligncenter {
+    width: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.mc-main .details p {
+    margin: 0 0 20px;
+    line-height: 1.6;
+	font-size: 1em;
+}
+
+.mc-main .details h2, .mc-main .details h3 {
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 1.3;
+}
+
+.mc-main .details h4, .mc-main .details h5, .mc-main .details h6 {
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.mc-main .details li {
+    line-height: 1.5;
+}
+
+/* Sharing */
+.mc-main .details .sharing {
+    clear: both;
+}
+
+/* Date/times */
+
+#mc-day .time-block p {
+	top: -1.5em;
+}
+
+.mc-main.mini .time-block p {
+	position: relative;
+	display: block; 
+	text-align: center;
+	top: 0;
+	right: 0;
+}
+.mc-main .time-block p{
+    color: #000;
+	display: inline-block;
+    margin: 0 !important;
+	position: absolute;
+	top: .5em;
+	right: .5em;
+	background: rgba( 255, 255, 255, .7 );
+	padding: 0 10px !important;
+}
+.mc-main .single-event .time-block p, .mc-main.list .time-block p {
+	position: static;
+	padding: 0!important;
+}
+
+.mc-main .time-block p:before {
+	font-family: dashicons;
+	content: "\f469";
+	vertical-align: top;
+	margin-right: 4px;
+}
+
+.mc-main .mc-event-date {
+    font-weight: 700;
+    color: #333;
+}
+
+.mc-main .has-events .mc-date {
+	font-weight: 700;
+	background: #333;
+	color: #fff;
+}
+
+.mc-main .has-events .mc-date a {
+	color: #fff;
+}
+
+.mc-main .mc-date {
+    display: block;
+    padding: 4px;
+    font-size: 1.2em;
+    background: rgba(240, 240, 240, .9);
+    color: #111;
+}
+
+.mc-main.mini .mc-date {
+	text-align: center;
+}
+
+.mc-main .mc-single {
+    font-size: 1.4em;
+	margin: 0;
+}
+
+/* Navigation */
+.my-calendar-nav ul, .mc-main .category-key ul, .mc-main .mc-export ul, .mc-main .mc-list {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.my-calendar-nav ul li, .mc-main .category-key ul li, .mc-main .mc-export ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 0 6px;
+}
+
+.my-calendar-nav .my-calendar-prev a {
+	border-radius: 5px 0 0 5px;
+	border-right: 1px solid #bbb;	
+}
+
+.my-calendar-nav .my-calendar-next a {
+	border-radius: 0 5px 5px 0;
+	border-left: 1px solid #fff;	
+}
+
+.my-calendar-prev a:before {
+    content: '\25C0 ';
+}
+
+.my-calendar-next a:after {
+    content: ' \25b6';
+}
+
+/* Category Key */
+.mc-main .category-key h3 {
+	margin: 0 0 10px 0 !important;	
+}
+
+.mc-main .no-icon {
+    display: inline-block;
+    width: 1.25em;
+    margin-right: .25em;
+    border-radius: 12px;
+}
+
+.mc-main .category-color-sample img {
+    padding: 2px;
+	display: inline;
+    vertical-align: text-top;
+    margin-right: .25em;
+}
+
+/* hCard */
+.mc-main .vcard {
+    margin: 0 0 15px 15px;
+    float: right;
+    padding: 20px;
+    max-width: 50%;
+	background: rgba( 0, 0, 0, .1 );
+}
+
+.mc-main .vcard .street-address {
+    display: inline;
+}
+
+.mc-main .vcard .street-address:nth-of-type(2):before {
+    content: ', ';
+}
+
+/* Jumpbox */
+.mc-main .my-calendar-date-switcher select {
+    padding: 0;
+    width: auto;
+    margin: 0;
+}
+
+.mc-main .my-calendar-date-switcher input[type=submit] {
+    min-width: 2em;
+	font-size: 1em;
+}
+
+/* List View */
+.mc-main .mc-list li, #mc-day {
+	position: relative;
+}
+
+.mc-list .current-day .event-date:before {
+    content: "\f139 ";
+	font-family: dashicons;
+	vertical-align: middle;
+}
+
+.mc-main .mc-list .mc-events {
+    list-style-type: none !important;
+    padding: 10px;
+    background: rgba(0, 0, 0, .05);
+    margin: 0;
+}
+
+.mc-main .mc-list .mc-events.odd {
+    padding: 10px;
+    background: none;
+}
+
+.mc-main.list .my-calendar-month {
+    font-size: 1.4em;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    text-align: right;
+}
+
+.mc-main .list-event .event-title {
+	margin-top: 10px !important;;
+    padding: 5px;
+}
+
+.mc-main .mc-list .event-date {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.mc-main .list-event {
+	margin-top: 1em;
+}
+
+.mc-main .mc-list-extended {
+	font-size: .9em;
+	font-style: italic;
+}
+
+.mc-main .list-event .details img {
+    width: auto;
+    max-width: 100%;
+}
+
+.mc-main .list-event .event-title img {
+    margin-right: .5em;
+    position: relative;
+    top: -1px;
+}
+
+.mc-main .nextmonth .event-title {
+    opacity: .7;
+}
+
+/* Single view */
+.single-event .event-title {
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.single-event .event-title img {
+    margin-right: 10px;
+	position: static;
+}
+
+/* Mini */
+.mc-main.mini table {
+    margin-bottom: 0;
+}
+
+.mc-main.mini tr td {
+    height: auto;
+}
+
+.mc-main.mini .vcard {
+    line-height: 1.5;
+    margin: 0 0 15px;
+    float: none;
+    padding: 10px;
+    max-width: 100%;
+}

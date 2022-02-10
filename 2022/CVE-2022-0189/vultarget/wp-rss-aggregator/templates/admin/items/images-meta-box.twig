@@ -1,0 +1,14 @@
+<p>{% trans "Found images:" %}</p>
+{% for group, list in item.images %}
+    <p><b>{{ group|title }}:</b></p>
+    <ul>
+        {% for url in list %}
+            <li>
+                <a href="{{ url|escape('html_attr') }}" target="_blank">{{ url }}</a>
+                {% if (url == item.best_image) %}
+                    <b>(Best)</b>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}

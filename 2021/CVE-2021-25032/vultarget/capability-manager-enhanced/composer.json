@@ -1,0 +1,22 @@
+{
+    "name": "publishpress/publishpress-capabilities",
+    "type": "wordpress-plugin",
+    "description": "",
+    "license": "GPL-2",
+    "authors": [
+      {
+        "name": "PublishPress",
+        "email": "help@publishpress.com"
+      }
+    ],
+    "config": {
+      "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "require": {
+      "php": ">=5.6.20",
+	  "pimple/pimple": "3.2.3.*",
+      "publishpress/wordpress-reviews":  "^1.1",
+      "publishpress/wordpress-version-notices": "dev-master"
+    }
+  }

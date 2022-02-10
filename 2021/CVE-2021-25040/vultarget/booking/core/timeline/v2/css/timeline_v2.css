@@ -1,0 +1,609 @@
+/* Timeline Main Container */
+.flex_tl_table {
+	display: flex;
+	flex-flow: column nowrap;
+	box-sizing: border-box;
+}
+/* Timeline: Header, 	Dates number,  	all bookings 	Rows	*/
+.flex_tl_table .flex_tl_table_header,
+.flex_tl_table .flex_tl_table_titles,
+.flex_tl_table .flex_tl_table_row_bookings {
+	flex: 1;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+/* Column 1 - booking resources */
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_1,
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_1,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 {
+	flex:0 1 auto;
+	width: 180px;
+	min-width: 0;
+	word-wrap: break-word;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+/* Column  2 -  dates/bookings */
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2,
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 {
+	flex: 1 1 0;
+	min-width: 0;
+}
+/**********************************************************************************************************************/
+@media (max-width: 782px) {
+
+	/* Wrap  to  New lines */
+	.flex_tl_table .flex_tl_table_header,
+	.flex_tl_table .flex_tl_table_titles,
+	.flex_tl_table .flex_tl_table_row_bookings {
+		flex-flow: row wrap;
+	}
+	/* Show booking resources in a ROW above the dates */
+	.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_1,
+	.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2,
+	.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1,
+	.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 {
+		width: 100%;
+		flex: 1 1 auto;
+	}
+	.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1{
+		border-bottom: 1px solid #eee;
+	}
+}
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/* Ajax Header Nav */
+/**********************************************************************************************************************/
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2 .flex_tl_nav{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2 .flex_tl_nav .flex_tl_title {
+	flex: 1 1 0;
+	word-break: break-word;
+ 	min-width: 0;
+}
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/* 	T i t l e    D a t e s    B a r  		-		.flex_tl_table_titles		*/
+/**********************************************************************************************************************/
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar {
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+/* Header "Dates number" 	Cell */
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell {
+	flex: 1 1 0;
+	min-width: 0;
+
+	display:flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+/* "Top  Month Line" & "Date Number CELL container"  */
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_month_year,
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container {
+	flex: 1;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	overflow: hidden;
+}
+/* Day Number & WeekDay  	- 	in 	-		Title   D a t e s    B a r  	*/
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container .in_cell_day_num,
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container .in_cell_day_week {
+	flex: 1;
+
+	font-size:0.85em;
+	font-weight: 600;
+	text-align: center;
+}
+.flex_tl_matrix_resources .flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container .in_cell_day_week {
+	font-weight: 400;
+	font-size:0.75em;
+}
+.flex_tl_single_resource .flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container .in_cell_day_week {
+	font-size:0.9em;
+	padding: 4px 0;
+}
+.flex_frame_view_days_num_60 .flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container .in_cell_day_num,
+.flex_frame_view_days_num_60 .flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container .in_cell_day_week {
+	font-size:0.7em;
+	font-weight: 400;
+}
+/**********************************************************************************************************************/
+/* "Responsive Mode" 	- 	in 	-		T i t l e    D a t e s    B a r  	*/
+@media (max-width: 782px) {
+	.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container {
+		overflow: hidden;
+		padding:0;
+	}
+	/* Show Scroller for Months and 2 Months view modes */
+	.flex_tl_matrix_resources.flex_frame_view_days_num_1,
+	.flex_tl_matrix_resources.flex_frame_view_days_num_30,
+	.flex_tl_matrix_resources.flex_frame_view_days_num_60,
+	.flex_tl_single_resource.flex_frame_view_days_num_30,
+	.flex_tl_single_resource.flex_frame_view_days_num_365 {
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.flex_tl_matrix_resources.flex_frame_view_days_num_30 .flex_tl_table,
+	.flex_tl_single_resource.flex_frame_view_days_num_365 .flex_tl_table{
+		min-width: 500px;
+	}
+	.flex_tl_matrix_resources.flex_frame_view_days_num_1 .flex_tl_table,
+	.flex_tl_matrix_resources.flex_frame_view_days_num_60 .flex_tl_table,
+	.flex_tl_single_resource.flex_frame_view_days_num_30 .flex_tl_table {
+		min-width: 1000px;
+	}
+}
+/**********************************************************************************************************************/
+/* "Top  Month Line" 	- 	in 	-		D a t e s    B a r  	*/
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar_month {
+	height: 1.5em;
+	overflow: hidden;
+}
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar_month.flex_tl_dates_bar .flex_tl_day_cell {
+	border:none;
+}
+/* Header "Month Name" 			Cell */
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar_month .flex_tl_day_cell .in_cell_month_year {
+	overflow: visible;
+	word-wrap: normal;
+	white-space: nowrap;
+}
+/**********************************************************************************************************************/
+/* "Time Slots" 		- 	in 	-		D a t e s    B a r  	*/
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_time_section_in_day {
+	flex: 1;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_time_section_in_day .in_cell_time_hour {
+	flex: 1 1 0;
+	min-width: 0;
+}
+/* Date Number during showing 1 day */
+.flex_tl_matrix_resources.flex_frame_view_days_num_1 .flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container,
+.flex_tl_single_resource.flex_frame_view_days_num_30 .flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container {
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+/**********************************************************************************************************************/
+/*  Dates in First Column during single resource view mode */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container .flex_tl_resource_title_dates_days,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container .flex_tl_resource_title_dates_weeks {
+	flex: 1 1 0;
+	text-align: left;
+
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container .flex_tl_resource_title_dates_weeks{
+	text-align: right;
+	padding:0 1em;
+}
+@media (max-width: 782px) {
+	.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container {
+		justify-content: flex-start;
+	}
+	.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container .flex_tl_resource_title_dates_days,
+	.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container .flex_tl_resource_title_dates_weeks {
+		flex: 0 1 auto;
+		text-align: left;
+		padding:0 1em;
+	}
+}
+/**********************************************************************************************************************/
+/*   B o o k i n g s 	R o w    -	 B o o k  i n g s    D a t e s    B a r  	-		.flex_tl_table_row_bookings	  */
+/**********************************************************************************************************************/
+/* Define Height of Bookings Row 			for 	.flex_tl_row_bar_show_bookings 	& 	.flex_tl_row_bar_show_dates 	*/
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar{
+	min-height: 3em;
+}
+/* Move Bookings Row to Dates Row */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar.flex_tl_row_bar_show_bookings {
+	margin-top:-3em;
+}
+/* Move Bookings Titles Row to Dates Row */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar.flex_tl_row_bar_show_booking_titles {
+	margin-top:-3em;
+	overflow: hidden;	/* Hide booking titles,  that overflow timeline frame */
+}
+/*  Bookings Row */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar {
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+/**********************************************************************************************************************/
+/* B o o k i n g      T i m e s		C e l l  	*/
+/**********************************************************************************************************************/
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .in_cell_time_section_in_day {
+    flex: 1 1 0;
+	min-width: 0;
+
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .in_cell_time_section_in_day .in_cell_time_hour {
+	flex: 1 1 0;
+	min-width: 0;
+
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+/**********************************************************************************************************************/
+/* B o o k i n g  		C e l l  	*/
+/**********************************************************************************************************************/
+/*  Cell - "Container" 	*/
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell {
+	flex: 1 1 0;
+	min-width: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+/* Cell - Date Number */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_dates {
+	flex: 1 1 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+/* Show Times in Cells during 1 day  view mode */
+.flex_timeline_frame.flex_frame_view_days_num_30.flex_tl_single_resource
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_dates,
+.flex_timeline_frame.flex_frame_view_days_num_1.flex_tl_matrix_resources
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_dates{
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+/* Cell - Booking  Pipelines (container for several  bookings in cell) */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings {
+	flex: 1 1 0;
+	min-width: 0;
+	display: flex;
+	flex-flow: column nowrap;			/* Show booking pipeline in a CELL - Horizontally */
+	/*flex-flow: row nowrap;*/			/* Show booking pipeline in a CELL - Vertically   */
+	justify-content: space-between;
+}
+/* Cell - Booking  Pipeline for specific one booking in Cell */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id{
+	flex: 1 1 0;
+	min-width: 0;
+	word-wrap: normal;
+	white-space: nowrap;
+}
+/* Borders for several horizontal booking pipelines in day cell */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id.pending_booking{
+	border-bottom:1px dashed #555;
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id.approved_booking{
+	border-bottom:1px dashed #ccc;
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id:last-child{
+	border-bottom:none;
+}
+/* Booking Pipeline ( background bar ) - Link for showing titles */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id .in_cell_date_booking_pipeline_a:hover,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id .in_cell_date_booking_pipeline_a:active,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id .in_cell_date_booking_pipeline_a{
+	position: relative;
+	cursor: default;
+	outline : none;
+	box-shadow: none;
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id .in_cell_date_booking_pipeline_a .in_cell_date_booking_pipeline_a_sizer {
+	width: 100%;
+	height: 100%;
+}
+/* Cell - Show Booking Titles (container) *****************************************************************************/
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_booking_titles {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+}
+/* Cell - Show Booking Title */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_booking_titles .in_cell_date_booking_title{
+	overflow: visible;
+	white-space: nowrap;
+	word-wrap: initial;
+	padding: 0px 0.5em;
+	margin-left: 4px;
+	margin-top: 4px;
+	z-index: 1;				/* Important for working links in neighborhood cells, when title overflow to them */
+}
+/*  Cell - Do  not show border for Booking Cell title */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar.flex_tl_row_bar_show_booking_titles .flex_tl_day_cell{
+	border:none;
+}
+/**********************************************************************************************************************/
+
+
+/**********************************************************************************************************************/
+/* On initial Loading - Showing with  JavaScript */
+.flex_tl_table {
+	display:none;
+}
+
+/**********************************************************************************************************************/
+/*             P O P O V E R   in   T i m e l i n e                ****************************************************/
+/**********************************************************************************************************************/
+.hidden_items {
+	display: none;
+}
+@media (max-width: 782px) {
+	.flex_timeline_frame .popover{
+		width:98%;
+		max-width:98%;
+	}
+}
+.flex_timeline_frame .popover {
+    border: 2px solid #555;
+    font-size: 12px;
+	max-width: 299px;
+}
+/**   P o p o v e r     T i t l e   **/
+.flex_timeline_frame .popover .popover-title {
+ 	display: flex;
+	flex-flow:row wrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	min-height: 2.5em;
+	margin:0;
+	padding: 5px 30px 5px 6px;
+	border-radius: 5px 5px 0 0;
+	background-color: #f7f7f7;
+}
+.flex_timeline_frame .popover .popover-title .popover-title-id {
+	flex: 0 0 auto;
+	width: 100%;			/*Start  with  new line*/
+
+	font-size:14px;
+	font-weight: 500;
+	line-height: 1.8;
+	margin: 0;
+	padding: 0 12px 0 5px;
+	border: 0;
+	vertical-align: baseline;
+}
+/** Buttons **************************************/
+.flex_timeline_frame .popover .popover-title .popover-title-buttons{
+	flex: 1 1 auto;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	margin: 2px 0;
+}
+.flex_timeline_frame .popover  .popover-title .popover-title-buttons a,
+.flex_timeline_frame .popover  .popover-title .popover-title-buttons a:hover,
+.flex_timeline_frame .popover  .popover-title .popover-title-buttons a:focus {
+	flex: none;
+
+	box-sizing: border-box;
+	margin: 0 5px 0 0;
+	padding: 0 10px 1px;
+	font-size: 13px;
+	height: 28px;
+	line-height: 28px;
+	white-space: nowrap;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	color: #555;
+	background: #f7f7f7;
+	border-radius: 3px;
+	border: 1px solid #d8d8d8;
+    box-shadow: none;
+    outline: none;
+}
+.flex_timeline_frame .popover  .popover-title .popover-title-buttons a:hover {
+	background: #fafafa;
+	border-color: #ccc;
+	color: #23282d;
+}
+.flex_timeline_frame .popover .popover-title .popover-title-buttons a.timeline_button_print{
+	margin-right:1.5em;
+}
+/**    Close X   ********************************/
+.flex_timeline_frame .popover .popover-close,
+.flex_timeline_frame .popover .popover-close:hover {
+	position: absolute;
+	right: 0;
+	top: 0;
+    font-size: 20px;
+	line-height: 1.5em;
+	padding: 5px;
+}
+.flex_timeline_frame .popover .popover-close a,
+.flex_timeline_frame .popover .popover-close a:hover,
+.flex_timeline_frame .popover .popover-close a:active,
+.flex_timeline_frame .popover .popover-close a:focus {
+    text-decoration: none;
+    border-style: none;
+    outline: 0;
+    color:#444;
+	background: transparent;
+	padding: 0 5px;
+}
+/**********************************************/
+.flex_timeline_frame .popover.bottom > .arrow::after {
+	border-bottom-color: transparent;
+}
+/**********************************************************************************************************************/
+/**   P o p o v e r     C o n t e n t   **/
+/**********************************************************************************************************************/
+.popover-content .flex-popover-content-data {
+	display:flex;
+	flex-flow:column wrap;
+	justify-content: space-between;
+}
+.popover-content .flex-popover-content-data .flex-popover-bars,
+.popover-content .wpbc-popover-content-data .wpbc-popover-cost-bar,
+.popover-content .wpbc-popover-content-data .booking-labels,
+.popover-content .wpbc-popover-content-data .wpbc-popover-booking-data,
+.popover-content .wpbc-popover-content-data .wpbc-popover-booking-notes,
+.popover-content .wpbc-popover-content-data .booking-dates{
+	flex: 1 1 auto;														/* //FixIn: 8.7.9.4 */
+}
+		.popover-content .flex-popover-content-data .flex-popover-bars {
+			display:flex;
+			flex-flow:row nowrap;
+			justify-content: space-between;
+		}
+		.popover-content .flex-popover-content-data .flex-popover-bars .flex-popover-labels-bar{
+			flex: 1 1 0;
+			clear: both;
+		}
+		.popover-content .flex-popover-content-data .flex-popover-bars .flex-popover-cost-bar {
+			flex: none;
+			padding: 0.3em 0;
+			margin: 0;
+		}
+.popover-content .flex-popover-content-data .flex-popover-labels-bar{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: flex-start;
+}
+
+.popover-content .flex-popover-content-data .flex-popover-labels-bar .flex-label {
+	flex: 0 1 auto;
+	min-width: 0;
+}
+.popover-content .flex-popover-content-data .flex-label {
+	border: 0;
+	border-radius: 3px;
+	text-shadow: none;
+	box-shadow: 0 0 1px #ddd;
+	font-weight: 400;
+	font-size: 95%;
+
+	line-height: 1.7em;
+	padding: .2em .8em 0.2em;
+	background-color: #5bc0de;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: baseline;
+	margin: 0.15em 0.75em 0.5em 0;
+
+	word-wrap: break-word;
+	word-wrap: anywhere;
+	white-space: pre-wrap;
+}
+.popover-content .flex-popover-content-data .flex-label .label-prefix {
+	font-size: 70%;
+	font-weight: 400;
+}
+.popover-content .flex-popover-content-data .flex-label.flex-label-id {
+	background: #888;
+}
+.popover-content .flex-popover-content-data .flex-label.flex-label-booking-status.label-pending {
+	background: #FFBB45;
+}
+.popover-content .flex-popover-content-data .flex-label.flex-label-booking-status.label-approved {
+	background: #9BE;
+}
+.popover-content .flex-popover-content-data .flex-label.flex-label-payment.payment-label-success {
+	background: #468847;
+}
+.popover-content .flex-popover-content-data .flex-label.flex-label-payment.payment-label-unknown {
+	background: #999;
+}
+.popover-content .flex-popover-content-data .flex-label.flex-label-trash {
+	background: #D94A48;
+}
+.popover-content .flex-popover-content-data .flex-label.flex-label-resource {
+	text-align: left;
+}
+/* Move cost  to  right side*/
+.popover-content .flex-popover-content-data .flex-label.flex-label-cost {
+	margin-left:auto;
+	background: transparent;
+	font-weight: 600;
+	color:#333;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+}
+
+.popover-content .flex-popover-content-data .flex-popover-booking-data {
+	margin: 1em 0;
+	text-align: left;
+ 	font-size: 1.05em;
+	line-height: 1.8em;
+	color: #333;
+	max-width: 100%;
+	word-wrap: break-word;
+	word-wrap: anywhere;
+}
+.popover-content .flex-popover-content-data .flex-popover-booking-data span.fieldvalue {
+	background: transparent; /* #FFF9E3; */
+	padding: 4px 5px;
+	border-radius: 2px;
+}
+/* Notes ***************************************************/
+.popover-content .flex-popover-content-data .wpbc-popover-booking-notes{
+	margin: 0 0 1em 0;
+}
+/* Dates ***************************************************/
+.popover-content .flex-popover-content-data .flex-label-dates {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.popover-content .flex-popover-content-data .flex-label-dates .flex-label.field-booking-date{
+	flex:0 1 auto;
+	font-size: 103%;
+	padding: 0.1em .7em 0.1em;
+	margin: 0 0 0.2em;
+}
+.popover-content .flex-popover-content-data .flex-label-dates .date_tire{
+	flex:0 1 auto;
+	margin: 0 0.2em;
+	font-size: 175%;
+	line-height: 1em;
+}
+.popover-content .flex-popover-content-data .flex-label-dates .flex-label.field-booking-date .field-booking-time{
+	font-size: 0.7em;
+	font-weight: 400;
+	color:#23282d;
+}
+/* Pending Background */
+.popover-content .flex-popover-content-data .flex-label-dates .flex-label.field-booking-date{
+	background: #FFBB45;
+}
+/* Approved Background */
+.popover-content .flex-popover-content-data .flex-label-dates .flex-label.field-booking-date.approved{
+	background: #9BE;
+}
+/* HR separator for several  bookings in popover */
+.popover-content .wpbc_tl_popover_booking_separator {
+	margin: 20px 0;
+	border-top: 1px solid #ddd;
+	box-shadow: 0 1px 1px #f9f9f9;
+}

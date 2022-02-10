@@ -1,0 +1,86 @@
+#toast-container {
+	display: block;
+	position: fixed;
+	z-index: 999999;
+
+	@include media( '<=small' ) {
+		min-width: 100%;
+		bottom: 0%;
+	}
+
+	@include media( '>small', '<=xlarge' ) {
+		right: 5%;
+		bottom: 7%;
+		max-width: 90%;
+	}
+
+	@include media( '>xlarge' ) {
+		top: 10%;
+		right: 7%;
+		max-width: 86%;
+	}
+
+}
+
+.toast {
+	box-sizing: border-box;
+	border-radius: 2px;
+	top: 35px;
+	width: auto;
+	clear: both;
+	margin-top: 10px;
+	position: relative;
+	max-width:100%;
+	height: auto;
+	min-height: 48px;
+	line-height: 1.5em;
+	word-break: break-all;
+	background-color: #222;
+	padding: 10px 25px 10px 15px;
+	font-size: 1.1rem;
+	font-weight: 300;
+	color: #fff;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.btn {
+		margin: 0;
+		margin-left: 2rem;
+		padding: 5px 10px;
+		border-radius: 5px;
+		background: #444;
+		color: white;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 1rem;
+	}
+
+	.dashicons {
+		margin-right: 10px;
+
+		&.dashicons-yes {
+			color: #00b300;
+		}
+
+		&.dashicons-warning {
+			color: #ff2626;
+		}
+
+	}
+
+	@include media( '<=small' ) {
+		width:100%;
+		border-radius: 0;
+	}
+
+	@include media( '>small', '<=xlarge' ) {
+		float: left;
+	}
+
+	@include media( '>xlarge' ) {
+		float: right;
+	}
+
+}

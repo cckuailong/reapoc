@@ -1,0 +1,408 @@
+.mec_form_field_types .button {
+    position: relative;
+    outline: 0;
+    border-radius: 50px;
+    padding: 2px 21px 2px 31px !important;
+    line-height: 1;
+    font-size: 11px;
+    font-weight: 600;
+    color: #40d9f1;
+    letter-spacing: 2px;
+    height: auto;
+    cursor: pointer;
+    margin-top: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 6px -3px #40d9f1;
+    border: 2px solid #cfeff5;
+}
+
+.mec_form_field_types .button.red {
+    color: #ea6485;
+    box-shadow: 0 2px 6px -3px #ea6485;
+    background: #fff;
+    border-color: #ffd2dd;
+}
+
+.mec_form_field_types .button.red:hover {
+    background: #ea6485;
+    color: #fff;
+}
+
+.mec_form_field_types .button:before {
+    position: absolute;
+    left: 12px;
+    color: #40d9f1;
+    content: "\e095";
+    font-family: simple-line-icons;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.mec_form_field_types .button.red:before {
+    color: #ea6485;
+}
+
+.mec_form_field_types .button.red:hover:before{
+    color: #fff;
+}
+.mec_form_field_types .button:hover:before {
+    color: #0a4b78;
+}
+
+.mec_form_field_types .button.red:hover {
+    color: #fff;
+    border: 2px solid #ea6485;
+}
+
+.mec-fes-form .mec_form_fields span.mec_field_sort,
+.mec-fes-form .mec_form_fields span.mec_bfixed_field_sort {
+    font-size: 0;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.mec-fes-form .mec_form_fields .mec_waiting_field_options,
+.mec-fes-form .mec_form_fields .mec_bfixed_field_option_sort,
+.mec-fes-form .mec_form_fields span.mec_field_option_sort {
+    font-size: 0;
+}
+
+.mec-fes-form .mec_form_fields span.mec_field_option_sort:before,
+.mec-fes-form .mec_form_fields span.mec_waiting_field_options:before,
+.mec-fes-form .mec_form_fields span.mec_field_sort:before,
+.mec-fes-form .mec_form_fields span.mec_bfixed_field_option_sort:before,
+.mec-fes-form .mec_form_fields span.mec_bfixed_field_sort:before {
+    position: absolute;
+    left: px;
+    top: 12px;
+    width: 80px;
+    height: 20px;
+    display: block;
+    cursor: move;
+    font-family: simple-line-icons;
+    content: "\e023";
+    font-size: 18px;
+    color: #888
+}
+
+.mec-fes-form .mec_form_fields span.mec_field_option_sort:before,
+.mec-fes-form .mec_form_fields span.mec_waiting_field_options:before,
+.mec-fes-form .mec_form_fields span.mec_bfixed_field_option_sort:before {
+    font-size: 13px;
+    left: 2px;
+    top: 26px;
+    width: 14px;
+    height: 14px
+}
+
+
+.mec_form_fields,
+#mec_event_form_fields,
+.mec_form_fields {
+    padding: 20px;
+    background: #f7f8f9;
+    margin: 0 0 20px 0;
+    border-radius: 3px;
+    min-height: 150px;
+    border: 2px dashed #dcdee0
+}
+
+.mec_form_fields li, #mec_event_form_fields li {
+    margin: 4px 10px;
+    border-radius: 2px;
+    padding: 20px 34px 24px;
+    background: #fff;
+    position: relative;
+    transition: all .3s ease;
+
+    /*border-radius: 3px 11px 3px 3px;*/
+    /*padding: 10px 20px 15px;*/
+    position: relative;
+    border: 1px solid #f1f3f5;
+    box-shadow: 0 1px 5px rgba(0,0,0,2%)
+}
+
+.mec_form_fields li, #mec_event_form_fields li {
+
+}
+
+
+.mec_form_fields li,
+#mec_event_form_fields li,
+.mec_form_fields li {
+    margin: 4px;
+    border-radius: 2px;
+    padding: 20px 34px 24px;
+    background: #fff;
+    position: relative;
+    transition: all .3s ease
+}
+
+
+.mec_form_fields li ul,
+#mec_event_form_fields li ul,
+.mec_form_fields li ul {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 1px
+}
+
+.mec_form_fields li ul li,
+#mec_event_form_fields li ul li,
+.mec_form_fields li ul li {
+    padding: 7px 30px 7px 46px
+}
+
+.mec_form_fields span.mec_event_field_type,
+#mec_event_form_fields span.mec_event_field_type,
+.mec_form_fields span.mec_field_type {
+    font-size: 11px;
+    font-weight: 600;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.mec_form_fields span.mec_bfixed_field_option_sort,
+.mec_form_fields span.mec_bfixed_field_remove,
+.mec_form_fields span.mec_bfixed_field_sort,
+#mec_event_form_fields span.mec_event_field_option_sort,
+#mec_event_form_fields span.mec_event_field_remove,
+#mec_event_form_fields span.mec_event_field_sort,
+.mec_form_fields span.mec_field_option_sort,
+.mec_form_fields span.mec_field_remove,
+.mec_form_fields span.mec_field_sort {
+    font-size: 0;
+    color: #fff
+}
+
+.mec_form_fields span.mec_bfixed_field_remove,
+#mec_event_form_fields span.mec_event_field_remove,
+.mec_form_fields span.mec_field_remove {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.mec_form_fields span.mec_bfixed_field_option_sort:before,
+.mec_form_fields span.mec_bfixed_field_remove:before,
+.mec_form_fields span.mec_bfixed_field_sort:before,
+#mec_event_form_fields span.mec_event_field_option_sort:before,
+#mec_event_form_fields span.mec_event_field_remove:before,
+#mec_event_form_fields span.mec_event_field_sort:before,
+.mec_form_fields span.mec_field_option_sort:before,
+.mec_form_fields span.mec_field_remove:before,
+.mec_form_fields span.mec_field_sort:before {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 80px;
+    height: 20px;
+    display: block;
+    cursor: move;
+    font-family: simple-line-icons;
+    content: "\e023";
+    font-size: 18px;
+    color: #888
+}
+
+.mec_form_fields span.mec_bfixed_field_remove:before,
+#mec_event_form_fields span.mec_event_field_remove:before,
+.mec_form_fields span.mec_field_remove:before {
+    content: "\e082";
+    width: 20px;
+    height: 20px;
+    left: auto;
+    right: 15px;
+    color: #f96666;
+    cursor: pointer
+}
+
+#mec_event_form_fields span.mec_event_field_option_sort:before,
+.mec_form_fields span.mec_field_option_sort:before {
+    font-size: 13px;
+    left: 2px;
+    top: 23px;
+    width: 14px;
+    height: 14px
+}
+
+#mec_event_form_fields li ul li span.mec_event_field_remove,
+.mec_form_fields li ul li span.mec_field_remove {
+    right: auto;
+    left: 60px;
+    top: 2px
+}
+
+#mec_event_form_fields p.mec_event_field_options,
+.mec_form_fields p.mec_waiting_field_options {
+    margin: 6px 0 8px
+}
+
+.mec_form_fields input[type=number], .mec_form_fields input[type=text], .mec_form_fields select, .mec_form_fields textarea,
+#mec_event_form_fields input[type=number], #mec_event_form_fields input[type=text], #mec_event_form_fields select, #mec_event_form_fields textarea,
+.mec_form_fields input[type=number], .mec_form_fields input[type=text], .mec_form_fields select, .mec_form_fields textarea {
+    min-width: 260px;
+    min-height: 34px;
+    margin-bottom: 7px;
+    margin-top: 7px
+}
+
+.mec_form_fields textarea,
+#mec_event_form_fields textarea,
+.mec_form_fields textarea {
+    min-height: 66px
+}
+
+#mec_event_form_field_types button, #mec_event_form_fields button,
+.mec_form_field_types button, .mec_form_fields button {
+    position: relative;
+    outline: 0;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    padding: 11px 21px 11px 31px;
+    line-height: 1;
+    font-size: 11px;
+    font-weight: 600;
+    color: #444;
+    letter-spacing: 2px;
+    height: auto;
+    cursor: pointer;
+    margin-top: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .03)
+}
+
+#mec_event_form_field_types button:hover, #mec_event_form_fields button:hover,
+.mec_form_field_types button:hover, .mec_form_fields button:hover {
+    border-color: #008aff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .1)
+}
+
+#mec_bfixed_form_field_types button:before, .mec_form_fields button:before,
+#mec_event_form_field_types button:before, #mec_event_form_fields button:before,
+.mec_form_field_types button:before, .mec_form_fields button:before {
+    position: absolute;
+    left: 12px;
+    color: #008aff;
+    content: "\e095";
+    font-family: simple-line-icons;
+    font-size: 13px;
+    display: inline-block
+}
+
+.mec_form_fields button.red:hover,
+#mec_event_form_field_types button.red:hover, #mec_event_form_fields button.red:hover,
+.mec_form_field_types button.red:hover, .mec_form_fields button.red:hover {
+    border-color: red;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .1)
+}
+
+.mec_form_fields button.red:before,
+#mec_event_form_field_types button.red:before, #mec_event_form_fields button.red:before,
+.mec_form_field_types button.red:before, .mec_form_fields button.red:before {
+    position: absolute;
+    left: 12px;
+    color: red;
+    content: "\e095";
+    font-family: simple-line-icons;
+    font-size: 13px;
+    display: inline-block
+}
+
+.mec_form_fields .mec_bfixed_notification_placeholder,
+#mec_event_form_fields .mec_event_notification_placeholder {
+    padding: 2px;
+    display: block;
+    margin: 10px 0 20px;
+}
+
+@media (max-width: 768px) {
+    .mec_form_fields input[type=number], .mec_form_fields input[type=text], .mec_form_fields select, .mec_form_fields textarea,
+    #mec_event_form_fields input[type=number], #mec_event_form_fields input[type=text], #mec_event_form_fields select, #mec_event_form_fields textarea,
+    .mec_form_fields input[type=number], .mec_form_fields input[type=text], .mec_form_fields select, .mec_form_fields textarea {
+        min-width: 80px;
+        width: 100%
+    }
+}
+
+
+.mec-admin-dark-mode.post-type-mec-events .mec_form_fields li,
+.mec-admin-dark-mode.m-e-calendar_page_MEC-settings .mec_form_fields li {
+    background: #1F1F1F;
+    color: #fff;
+}
+
+.mec-admin-dark-mode.post-type-mec-events .mec_form_fields {
+    background: #282828;
+    border-color: #353535;
+}
+
+.mec-admin-dark-mode.post-type-mec-events .mec_form_fields button,
+.mec-admin-dark-mode.m-e-calendar_page_MEC-settings .mec_form_fields button,
+.mec-admin-dark-mode.m-e-calendar_page_MEC-settings .mec_form_fields {
+    background: #000;
+}
+
+/* MEC Backend Responsive Mobile & Tablet */
+@media (max-width: 480px) {
+    #mec_event_form_fields,
+    .mec_form_fields {
+        padding: 10px;
+    }
+}
+
+
+.mec_form_fields span.mec_field_remove,
+.mec_form_fields span.mec_field_sort {
+    font-size: 0;
+    color: #fff;
+    padding: 5px;
+}
+
+.mec_form_fields span.mec_field_remove {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.mec_form_fields span.mec_field_sort:before {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 80px;
+    height: 20px;
+    display: block;
+    cursor: move;
+    font-family: simple-line-icons;
+    content: "\e023";
+    font-size: 18px;
+    color: #888
+}
+
+.mec_form_fields span.mec_field_remove:before {
+    content: "\e082";
+    width: 20px;
+    height: 20px;
+    left: auto;
+    right: 15px;
+    color: #f96666;
+    cursor: pointer
+}
+
+.mec_form_fields li ul li span.mec_field_remove {
+    right: auto;
+    left: 60px;
+    top: 2px
+}
+
+.mec_form_fields li ul, #mec_event_form_fields li ul {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 1px
+}
+
+.mec_form_fields li ul li, #mec_event_form_fields li ul li {
+    padding: 7px 30px 7px 46px
+}

@@ -1,0 +1,160 @@
+
+.oxi_addons__light_box .oxi_addons__image_main {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.oxi_addons__light_box .oxi_addons__image_main::after {
+    display: block;
+    content: "";
+    padding-bottom: 70%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+   
+}  
+.oxi_addons__light_box .oxi_addons__light_box_item{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.oxi_addons__light_box .oxi_addons__image_main:hover::after {
+   background: rgba(177, 177, 177, 0.5); 
+}  
+.oxi_addons__light_box .oxi_addons__image_main:hover .oxi_addons__overlay  {
+   opacity: 1;
+   visibility: visible;
+}  
+.oxi_addons__light_box .oxi_addons__overlay {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   visibility: hidden;
+   z-index: 999;
+
+}
+.oxi_addons__light_box .oxi_addons__overlay .oxi-icons {
+    color: white;
+}
+
+
+.oxi_addons__light_box .oxi_addons__image_main {
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+    box-shadow: 0px 13px 19px -10px #ababab;
+} 
+
+.oxi_addons__light_box .oxi_addons__heading {
+   width: 100%;
+   font-size: 32px;
+   font-family: "Open Sans";
+   font-weight: bold;
+   font-style: normal;
+   line-height: 1;
+   color: #ffffff;
+   padding: 5px 5px 5px 5px;
+   line-height: 1;
+}
+
+.oxi_addons__light_box .oxi_addons__heading::after {
+   content: '';
+   display: none;
+}
+
+.oxi_addons__light_box .oxi_addons__details {
+    width: 100%;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.3;
+    color: #f0f0f0;
+    padding: 5px;
+}
+
+.oxi_addons__light_box .oxi_addons__icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+.oxi_addons__light_box .oxi_addons__icon::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 50px;
+   transition: 0.5s all;
+   -webkit-transition: 0.5s all;
+   -moz-transition: 0.5s all;
+   -ms-transition: 0.5s all;
+   -o-transition: 0.5s all;
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   -ms-border-radius: 50px;
+   -o-border-radius: 50px;
+}
+.oxi_addons__light_box .oxi_addons__icon:hover .oxi_addons__overlay  {
+   opacity: 1;
+   visibility: visible;
+}  
+
+.oxi_addons__light_box .oxi-icons {
+    font-size: 30px;
+}
+
+.oxi_addons__light_box .oxi_addons__button {
+    background: rgba(17, 106, 177, 1.00);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-family: "verdana";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    border: 0px solid;
+    vertical-align: middle;
+    border-color: #ffffff;
+    border-radius: 50px 50px 50px 50px;
+    padding: 15px 40px 15px 40px;
+    margin: 0px 0px 0px 5px;
+    cursor: pointer;
+    box-shadow: 0px 11px 25px -8px rgb(177, 177, 177);
+ }
+ .oxi_addons__light_box .oxi_addons__button:hover {
+    background: rgb(54, 132, 248);
+    color: #ffffff;
+    border-color: #ffffff
+}

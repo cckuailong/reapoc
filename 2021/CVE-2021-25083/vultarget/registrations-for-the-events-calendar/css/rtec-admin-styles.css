@@ -1,0 +1,1380 @@
+/* Notices */
+.rtec-notice-all-admin {
+    display: block;
+    margin-top:30px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.rtec-all-admin-error {
+    border-left: 4px solid #dc3232;
+}
+.rtec-notice-all-admin:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.rtec-tooltip-link i {
+    font-size: 16px;
+    padding: 0 5px;
+}
+.rtec-img-wrap {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    padding: 10px;
+}
+.rtec-img-wrap img {
+    width: 100%;
+}
+.rtec-msg-wrap {
+    display: inline;
+    float: left;
+    max-width: 500px;
+    padding: 10px;
+}
+.rtec-msg-wrap p:first-child {
+    margin-top: 0px;
+}
+.rtec-instructions {
+    font-weight: bold;
+    color: #a00;
+}
+.rtec-admin-wrap .rtec-notice,
+.rtec-notice{
+    display: inline-block;
+    margin: 5px 0 15px;
+    padding: 1px 12px;
+    border-radius: 5px;
+    background: #CFF7F3;
+    border: 1px solid #9EE6DE;
+}
+#rtec-admin-addons .rtec-notice {
+    margin-bottom: 10px;
+}
+.rtec-admin-wrap .rtec-notice {
+    margin-bottom: 0;
+}
+.rtec-wrapper {
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+.rtec-radio-label {
+    margin-right: 20px;
+}
+.rtec-view-selector a{
+    display: inline-block;
+    margin-right: 15px;
+}
+.rtec-fade {
+    opacity: .7;
+}
+.rtec-single-event + .rtec-single-event.rtec-single-mvt {
+    float: right;
+}
+/* remove notice */
+.rtec-conf-alert {
+    margin: 10px 0;
+    box-shadow: 2px 2px 3px #ddd;
+}
+.rtec-individual-available {
+    font-size: 16px;
+    color: #d54e21;
+}
+/*
+9EE6DE
+46A99E
+
+*/
+div.rtec-green-bg,
+div.rtec-a-button {
+    display: inline-block;
+    text-align: center;
+}
+.rtec-clear:after {
+    display: table;
+    clear: both;
+    content: " ";
+    visibility: hidden;
+}
+.rtec-admin-wrap hr {
+    margin: 40px 0;
+}
+.rtec-admin-2-columns {
+    width: 45.5%;
+    display: inline-block;
+}
+.rtec-single-event {
+    display: inline-block;
+    vertical-align: top;
+    width: 47.5%;
+    margin: 0 2% 2em 0;
+    border-radius: 5px;
+}
+.rtec-single-event:nth-child(2n) {
+    margin-right: 0;
+    margin-left: 2%;
+}
+#rtec-back-overview {
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+.rtec-event-actions,
+.rtec-outline {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.rtec-event-actions {
+    border-bottom: 1px solid #ccc;
+}
+.rtec-single-event .rtec-event-meta,
+.rtec-single-event .rtec-event-actions,
+.rtec-email-creator {
+    background: #e5e5e5;
+}
+.rtec-single-event .rtec-mvt-list-item .rtec-event-actions {
+    background: #FFEECD;
+}
+#rtec_csv_export_form {
+    display: inline-block;
+    vertical-align: top;
+}
+.rtec-event-meta {
+    position: relative;
+}
+.rtec-single-event h3{
+    margin: .25em 60px .25em 0;
+    padding: .5em 10px 0;
+}
+.rtec-event-meta a,
+.rtec-mvt-list-item a {
+    text-decoration: none;
+}
+.rtec-event-meta a h3:hover,
+.rtec-mvt-list-item a h3:hover {
+    color: #00a0d2;
+}
+.rtec-event-meta p,
+.rtec-mvt-list-item p {
+    margin: 0;
+    padding: .25em 10px;
+}
+.rtec-single .rtec-event-meta .rtec-reg-info p {
+    padding-left: 0;
+}
+.rtec-venue-highlight,
+.widefat  td.rtec-venue-highlight{
+    color: #333;
+    background-color: #ccc;
+}
+.rtec-single-mvt-event .rtec-venue-highlight,
+.widefat .rtec-single-mvt-event td.rtec-venue-highlight {
+    background-color: #FFEECD;
+}
+.rtec-single-mvt-event p.rtec-venue-highlight {
+    border: 1px solid #D7B46F;
+}
+.rtec-admin-wrap .rtec-input-notice {
+    background-color: #FFEECD;
+    border: 1px solid #D7B46F;
+}
+.rtec-single .rtec-border-sides {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.rtec-event-meta .rtec-reg-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: .5em 5px 0 0;
+    text-align: center;
+}
+.rtec-single .rtec-event-meta .rtec-reg-info {
+    position: relative;
+    border-radius: 0;
+}
+.rtec-primary-button {
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    -webkit-box-shadow: 0 1px 0 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799,1px 0 1px #006799,0 1px 1px #006799,-1px 0 1px #006799;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 0;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.rtec-next { float: right; }
+.rtec-view-all {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+a.rtec-wide {
+    display: inline-block;
+    width: 100%;
+}
+
+.rtec-admin-wrap .rtec-add-field,
+.rtec-admin-wrap .rtec-add-mvt {
+    width: 425px;
+}
+.rtec-single-event table td {
+    word-wrap: break-word;
+    max-width: 120px;
+}
+.rtec-wrapper .rtec-admin-secondary-button,
+.rtec-wrapper .tablenav a.button {
+    margin: 0 0 0 1em;
+    display: inline-block;
+}
+.rtec-overview .rtec-admin-secondary-button{
+    float: right;
+    margin: .5em 1em .5em 1em;
+}
+.rtec-manage-match-actions {
+    position: relative;
+    display: none;
+}
+.rtec-manage-match-actions .spinner {
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.rtec-overview .rtec-match-action {
+    display: block;
+    margin-top: .5em;
+}
+.rtec-admin-wrap .rtec-green-bg {
+    font-weight: 700;
+    background-color: #009688;
+    border: none;
+    border-radius: 2px;
+}
+.rtec-admin-wrap .rtec-green-bg a,
+.rtec-admin-wrap .rtec-green-bg span {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.rtec-admin-wrap .rtec-green-bg:hover,
+.rtec-admin-wrap .rtec-green-bg:active,
+.rtec-admin-wrap .rtec-green-bg:focus {
+    opacity: .8;
+}
+
+.rtec-admin-wrap .rtec-green-bg:focus {
+    border-color: #46A99E;
+    -webkit-box-shadow: 0 0 3px #46A99E;
+    box-shadow: 0 0 3px #46A99E;
+}
+.rtec-admin-wrap .wp-editor-wrap,
+#wp-rtecSingleCustomConfirmation-wrap{
+    max-width: 620px;
+}
+/* hidden event options */
+.rtec-hidden-option-wrap {
+    margin-bottom: 10px;
+}
+.rtec-sameline {
+    display: inline-block;
+}
+.rtec-sameline label {
+    margin-right: 10px;
+}
+.rtec-hidden-option-wrap code,
+#rtec-event-details code{
+    line-height: 2.0;
+}
+.rtec-hidden-options h4 {
+    margin-bottom: .66em;
+}
+
+/* Single */
+.rtec-single .rtec-single-event {
+    width: 100%;
+}
+.rtec-single .rtec-reg-info {
+    text-align: left;
+    padding: .25em 10px;
+}
+.rtec-single table {
+    position: relative;
+}
+.rtec-single .rtec-single-event table td {
+    max-width: none;
+}
+.rtec-single table td input[type="checkbox"] {
+    width: auto;
+    margin: 0 0 0 8px;
+}
+.rtec-single table .rtec-checkbox {
+    padding: 11px 0 0 3px;
+}
+.rtec-single .rtec-event-actions {
+    padding-top: 1px;
+}
+.rtec-new-registration input,
+.rtec-reg-row input {
+    max-width: 100%;
+}
+.rtec-table-changing {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+    left: 50%;
+}
+.rtec-first-data,
+.rtec-checkbox {
+    position: relative;
+}
+.rtec-status-icon-wrap {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 23px;
+}
+.rtec-notice-new {
+    position: absolute;
+    left: -15px;
+    top: -2px;
+    padding: 4px 5px 5px;
+    line-height: 1;
+    border-radius:50%;
+    background: #ff6600;
+    color: #fff;
+    font-size: 10px;
+}
+.rtec-status-icon-wrap .rtec-notice-new {
+    left: 0;
+    top: 0;
+}
+.rtec-status-explanation {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    padding: 4px 8px;
+    width: 150px;
+    line-height: 1.2;
+    right: -166px;
+    top: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.rtec-status-icon-wrap:hover .rtec-status-explanation {
+    display: block;
+}
+#rtec-new-dismiss {
+    padding-bottom: 5px;
+    display: block;
+}
+#rtec-new-dismiss .rtec-notice-new {
+    position: relative;
+    top:auto;
+    left:auto;
+    margin:0;
+    padding: 3px 5px;
+}
+.rtec-field-options-wrapper {
+    width: 425px;
+}
+.rtec-field-options-wrapper,
+.rtec-availability-options-wrapper {
+    position: relative;
+    margin-bottom: .5em;
+    border: 1px solid #ddd;
+    background: #fbfbfb;
+}
+.rtec-field-options-wrapper h4,
+.rtec-availability-options-wrapper h4 {
+    margin: 0;
+    padding: .5em 1em;
+    font-size: 1.2em;
+    background: #ddd;
+}
+.rtec-field-options-wrapper .fa-trash{
+    font-size: 1.2em;
+}
+.rtec-admin-wrap .rtec-field-options-wrapper > p,
+.rtec-admin-wrap .rtec-field-options-wrapper .rtec-padded-group{
+    padding: 0 1em;
+    margin-bottom: 10px;
+}
+/* Form Settings */
+.rtec-admin-wrap .rtec-box{
+    max-width: 600px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+.rtec-admin-wrap .rtec-form-location-example img {
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+}
+.rtec-form-location-example p > span {
+    font-style: italic;
+}
+
+.rtec-admin-wrap .rtec-field-options-wrapper label {
+    font-weight: 600;
+}
+.rtec-reveal-field-atts {
+    padding: 0 1em;
+    margin: 5px 1em 1em !important;
+}
+.rtec-field-atts {
+    padding: 0 1em;
+    display: none;
+}
+.rtec-field-atts ul {
+    list-style: disc inside;
+}
+#rtec-message-text-wrapper-up,
+#rtec-message-text-wrapper-down,
+#rtec-message-text-wrapper-other {
+    margin-top: 0;
+}
+.rtec-message-group-wrap {
+    box-sizing: border-box;
+}
+.rtec-message-group-wrap .rtec-admin-2-columns {
+    width: 48.75%;
+    margin: 0 0 5px;
+    vertical-align: top;
+}
+.rtec-message-group-wrap .rtec-admin-row .rtec-admin-2-columns:first-child {
+    margin-right: 1%;
+}
+.rtec-message-group-wrap .rtec-input-group {
+    padding: 1em;
+}
+.rtec-field-options-wrapper h4 span {
+    font-size: 12px;
+    font-weight: normal;
+}
+.rtec-field-options-wrapper .rtec-other-input {
+    width: 300px;
+}
+.rtec-field-options-wrapper .rtec-valid-count-input {
+    width: 130px;
+}
+.rtec-custom-field-remove{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .5em;
+    font-size: 1.2em;
+    background: #FDA7AD;
+    color: #23282d;
+}
+.rtec-checkbox-row label {
+    margin-right: 1em;
+}
+.rtec-availability-options-wrapper {
+    margin: 1.5em 0 .5em;
+}
+.rtec-confirmation-message-tr td {
+    width: 400px;
+    vertical-align: top;
+}
+.rtec-button-wrapper {
+    display: block;
+}
+#rtec_registration_deadline {
+    width: 70px;
+}
+.rtec-admin-wrap .form-table tbody tr td .description {
+    display: block;
+    width: 415px;
+}
+.rtec-admin-wrap .form-table th {
+    min-width: 200px;
+}
+.rtec-mvt-field-remove i {
+    font-size: 16px;
+}
+/* Tooltip */
+.rtec-tooltip {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Tooltip table */
+.rtec-tooltip-table{
+    display: block;
+    width: 94%;
+    margin: 30px 0;
+}
+.rtec-tooltip-table .rtec-col-1,
+.rtec-tooltip-table .rtec-col-2{
+    padding: 4px 1%;
+    border-bottom: 1px solid #ddd;
+}
+.rtec-tooltip-table .rtec-col-1{
+    display: inline-block;
+    width: 26%;
+}
+.rtec-tooltip-table .rtec-col-2{
+    display: inline-block;
+    width: 70%;
+}
+.rtec-preview-image {
+    width: 300px;
+}
+.rtec-preview-image img {
+    max-width: 290px;
+}
+.wp-core-ui .rtec-media-button {
+    padding-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    padding-right: 7px;
+}
+.rtec-media-button span.wp-media-buttons-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: text-top;
+    margin: 0 2px;
+}
+.rtec-media-button span.wp-media-buttons-icon:before {
+    font: 400 18px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f104";
+}
+
+.rtec-support-button {
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 3px 6px 4px;
+    margin-bottom: 1em;
+    width: auto;
+    background-color: rgba(0, 102, 102, .8);
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+}
+.rtec-support-button:hover {
+    background-color: rgb(0, 102, 102);
+}
+.rtec-admin-event-registration-options-wrapper {
+    width: 100%;
+}
+.rtec-admin-event-registration-options-wrapper a {
+    float: right;
+}
+
+/** Styles added that can be removed once sortable elements introduced **/
+/*
+.rtec-wrapper .rtec-event-options.postbox.open .toggle-indicator:before,
+.rtec-mvt-list-item .rtecbox.open .toggle-indicator:before {
+    content: "\f142";
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none!important;
+}
+.rtec-wrapper .rtec-event-options.postbox.closed .toggle-indicator:before,
+.rtec-mvt-list-item .rtecbox.closed .toggle-indicator:before {
+    content: "\f140";
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none!important;
+}
+
+.rtec-event-options.postbox {
+    margin: 0;
+    padding: 8px 2px 8px 10px;
+    border: 1px solid #ddd;
+    background: #e5e5e5;
+}
+.rtec-hidden-options.postbox {
+    background-color: #eee;
+}
+.rtec-event-options.postbox .handlediv,
+.rtec-mvt-list-item .handlediv{
+    width: 32px;
+    height: 32px;
+    margin-top: -8px;
+}
+.rtec-event-options.postbox .hndle {
+    cursor: pointer;
+    border-bottom: none;
+}
+.rtec-event-options .rtec-update-event-options {
+    float: left;
+    margin: 16px 0 0;
+}*/
+
+@media all and (max-width: 910px) and (min-width: 600px){
+    .rtec-overview .rtec-single-event tr th:nth-child(4),
+    .rtec-overview .rtec-single-event tr td:nth-child(4) {
+        display: none;
+    }
+}
+
+@media all and (max-width: 600px){
+    .rtec-overview .rtec-single-event,
+    .rtec-overview .rtec-single-event {
+        width: 100%;
+        margin: 2em 2% 2em 2%;
+    }
+}
+
+/* List View */
+.rtec-registrations-data td {
+    max-width: 150px;
+}
+
+.rtec-toolbar-secondary {
+    max-width: 66%;
+    display: inline-block;
+}
+.wp-core-ui .rtec-toolbar-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 0 0;
+}
+.rtec-highlight {
+    background: #ddd;
+    font-weight: bold;
+}
+.rtec-wrapper .striped tbody .rtec-unconfirmed {
+    background: #efefef;
+}
+span.rtec-unconfirmed,
+span.rtec-is-user{
+    padding: 4px 5px;
+}
+.rtec-wrapper .striped tbody .rtec-is-user {
+    background: #C8F6F1;
+}
+.rtec-wrapper .striped tbody .rtec-unconfirmed.rtec-notice-new,
+.rtec-legend.rtec-unconfirmed i {
+    background: #333;
+    color: #fff;
+}
+.rtec-admin-wrap .rtec-in-use .rtec-create-field.rtec-create-format {
+    background: #d0aa27;
+    color: #fff;
+    font-weight: bold;
+}
+.rtec-wrapper .striped tbody .rtec-is-user.rtec-notice-new,
+.rtec-legend.rtec-is-user i {
+    background: #009688;
+    color: #fff;
+}
+.rtec-legend.rtec-is-user i {
+    padding: 4px 5px;
+}
+.rtec-legend i {
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 10px
+}
+.rtec-event-meta {
+    margin-top: 10px
+}
+.rtec-unverified {
+    background: #FDACB2;
+}
+.rtec-block {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    border: 1px solid #333;
+}
+
+.rtec-list-attendance {
+    text-align: center;
+}
+.rtec-alert {
+    display: inline-block;
+    line-height: 19px;
+    padding: 11px 15px;
+    font-size: 14px;
+    text-align: left;
+    margin: 25px 20px 0 2px;
+    background-color: #fff;
+    border-left: 4px solid #ffba00;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.rtec-overview-nav a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+#rtec-date-picker {
+    background-color: #9EE6DE;
+    border-color: #46A99E;
+}
+
+/* icons */
+.rtec-field-options-wrapper .fa-question-circle {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* hidden event options */
+.rtec-hidden-options .rtec-field-options-wrapper {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Support tab */
+.rtec-support-title { font-size: 16px; font-weight: bold; }
+
+/* Date Picker */
+.rtec-ui-datepicker .ui-datepicker-prev .ui-icon,
+.rtec-ui-datepicker .ui-datepicker-next .ui-icon {
+    display: none;
+}
+
+/* Overview Actions */
+.rtec-overview .rtec-event-actions {
+    text-align: right;
+}
+.rtec-event-actions {
+    text-align: left;
+}
+.rtec-overview .rtec-admin-secondary-button {
+    padding: 3px 5px;
+    height: auto;
+    margin: 3px 10px 3px 0;
+    min-height: 1px;
+    line-height: 1;
+}
+.rtec-overview .rtec-admin-secondary-button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/* Lite Notice */
+@media screen and (max-width: 900px) {
+    #rtec-notice-bar {
+        display:none !important
+    }
+}
+
+#rtec-notice-bar {
+    background-color: #DDDDDD;
+    color: #777777;
+    text-align: center;
+    position: relative;
+    padding: 7px;
+    margin-bottom: 0;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    max-height: 100px;
+    overflow: hidden
+}
+
+#rtec-notice-bar.out {
+    opacity: .5;
+    max-height: 0
+}
+
+#rtec-notice-bar a {
+    color: #009688;
+}
+
+#rtec-notice-bar a:hover {
+    opacity: .7;
+}
+
+#rtec-notice-bar .dismiss {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 5px;
+    margin-top: 1px;
+    background: 0 0;
+    color: #72777c;
+    cursor: pointer
+}
+
+#rtec-notice-bar .dismiss:before {
+    background: 0 0;
+    color: #72777c;
+    content: "\f335";
+    display: block;
+    font: normal 20px/20px dashicons;
+    speak: none;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+    -webkit-font-smoothing: antialiased
+}
+
+/* ad */
+#rtec-admin-footer .rtec-pro-ad-wrap {
+    display: block;
+    max-width: 700px;
+    text-decoration: none;
+}
+#rtec-admin-footer .rtec-pro-ad,
+#rtec-admin-footer .rtec-pro-features {
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+#rtec-admin-footer .rtec-pro-ad {
+    background: #CDF7F3;
+    max-width: 400px;
+}
+#rtec-admin-footer .rtec-pro-ad img,
+#rtec-admin-footer .rtec-pro-copy {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+#rtec-admin-footer .rtec-pro-copy span {
+    font-size: 14px;
+    color: #777;
+}
+#rtec-admin-footer .rtec-pro-copy span.rtec-bold {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #444;
+    line-height: 1.2;
+}
+
+#rtec-admin-footer .rtec-pro-features {
+    width: 95%;
+    padding: 12px;
+    background: #fff;
+}
+#rtec-admin-footer .rtec-pro-features h3 {
+    color: #009788;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.2;
+}
+#rtec-admin-footer .rtec-pro-features h3 span {
+    color: #777;
+    font-weight: normal;
+}
+
+#rtec-admin-footer .rtec-pro-features-list-items {
+    max-width: 600px;
+    margin: auto;
+    width: 300px;
+}
+#rtec-admin-footer .feature-feature-list-item {
+    display: inline-block;
+    position: relative;
+    color: #333;
+    line-height: 1.2;
+    width: 100%;
+}
+@media all and (min-width: 620px){
+    #rtec-admin-footer .rtec-pro-ad {
+        max-width: 700px;
+    }
+    #rtec-admin-footer .rtec-pro-ad img{
+        display: inline-block;
+    }
+    #rtec-admin-footer .rtec-pro-copy {
+        display: inline-block;
+        width: 70%;
+        max-width: 490px;
+        vertical-align: top;
+        margin-top: 50px;
+        padding: 0;
+    }
+    #rtec-admin-footer .feature-feature-list-item {
+        width: 49%;
+    }
+    #rtec-admin-footer .rtec-pro-features-list-items {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+#rtec-admin-footer .feature-feature-list-item .featured-feature-check {
+    position: absolute;
+    top: -2px;
+}
+
+#rtec-admin-footer .feature-feature-list-item .featured-feature-item {
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#rtec-admin-footer .featured-feature-check {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background: #009788;
+    border-radius: 50%
+}
+
+#rtec-admin-footer .featured-feature-check .dashicons {
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    right: 1px;
+    left: 0;
+    color: #fff
+}
+.rtec-pro-cta-wrap {
+    text-align: center;
+}
+#rtec-admin-footer .rtec-pro-cta {
+    color: #fff;
+    width: auto;
+    display: inline-block;
+    background: #eb5a49;
+    border: 1px solid #DA301E;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+/* New Styles */
+.rtec-new-styles h1,
+.rtec-new-styles h2,
+.rtec-new-styles h3,
+.rtec-new-styles h4,
+.rtec-new-styles p{
+    margin-top: 0;
+    color: #003544;
+}
+/** Welcome Screen **/
+
+.rtec-welcome-screen {
+    padding: 40px;
+    max-width: 500px;
+    margin: 60px auto;
+
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .05), 0 4px 5px rgba(0, 0, 0, .05);
+    color: #003544;
+}
+.rtec-welcome-text h3 {
+    margin-top: 0;
+}
+.rtec-welcome-text p {
+    font-size: 14px;
+}
+
+/* Generic */
+.rtec-hide {
+    display: none;
+}
+/* Colors */
+.rtec-button {
+    background: #1D6E85;
+}
+.rtec-primary {
+    background-color: #1D6E85;
+}
+.rtec-primary:hover {
+    background-color: #468b9d;
+}
+.rtec-primary:focus,
+.rtec-primary:active{
+    background-color: #156379;
+}
+
+
+.rtec-primary-2 {
+    background-color: #0E7C2F;
+}
+.rtec-primary-2:hover {
+    background-color: #03933f;
+}
+.rtec-primary-2:focus,
+.rtec-primary-2:active{
+    background-color: #00702b;
+}
+.rtec-alert {
+    /*background-color: #d1972b;*/
+}
+.rtec-danger {
+    background-color: #d33828;
+}
+.rtec-danger:hover {
+    background-color: #e95948;
+}
+.rtec-danger:focus,
+.rtec-danger:active{
+    background-color: #a02217;
+}
+.rtec-admin-wrap .rtec-danger-outline {
+    border: 1px solid #d33828;
+}
+.rtec-danger-message {
+    margin-top: 4px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: #d33828;
+}
+.rtec-danger-message a {
+    color: #7C0A01;
+}
+.rtec-success-message {
+    margin-top: 4px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: #03933f;
+}
+.rtec-success-message a {
+    color: #00702b;
+}
+.rtec-action-disabled {
+    position: relative;
+    opacity: .9;
+}
+/* Buttons */
+.rtec-button {
+    padding: 8px 12px;
+    margin-left: 6px;
+
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+}
+a.rtec-button {
+    text-decoration: none;
+}
+a.rtec-button:hover {
+    color: #fff;
+}
+.rtec-button:hover {
+    cursor: pointer;
+}
+.rtec-button:first-child {
+    margin-left: 0;
+}
+.rtec-button svg {
+    height: 14px;
+    margin-right: 4px;
+}
+.rtec-disabled-button {
+    background-color: #E1E5F8;
+    color: #1D6E85;
+}
+.rtec-action-disabled:hover,
+.rtec-disabled-button:hover{
+    cursor: default;
+    pointer-events: none;
+}
+.rtec-vertical-align-flex {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.rtec-flex-center {
+    justify-content: center;
+}
+.rtec-flex-center-space {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.rtec-main-wrap .rtec-add-on-status-message {
+    margin-top: 6px;
+    line-height: 16px;
+}
+.rtec-main-wrap .rtec-add-on-status-message.rtec-top-message > div {
+    background: #fff;
+    padding: 10px;
+
+    font-size: 16px;
+}
+.rtec-add-on-status-message span {
+    margin-right: 6px;
+}
+.rtec-add-on-status-message svg {
+    height: 16px;
+    vertical-align: top;
+}
+.rtec-main-wrap .rtec-add-on-status-message.rtec-top-message .rtec-warning-message {
+    color: #9e6f1a;
+    border: 1px solid #9e6f1a;
+    border-left: 3px solid #9e6f1a;
+}
+.rtec-main-wrap .rtec-add-on-status-message.rtec-top-message .rtec-success-message {
+    color: #03933f;
+    border: 1px solid #03933f;
+    border-left: 3px solid #03933f;
+}
+.rtec-main-wrap .rtec-add-on-status-message.rtec-top-message .rtec-danger-message {
+    color: #d33828;
+    border: 1px solid #d33828;
+    border-left: 3px solid #d33828;
+}
+.rtec-boxes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
+.rtec-doing-ajax {
+    pointer-events: none;
+}
+/* Spinners */
+.rtec-spinner-active .rtec-button-text {
+    visibility: hidden;
+}
+.rtec-spinner-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 0 4px;
+}
+button .rtec-spinner-container {
+    display: block;
+}
+.rtec-spinner-circle {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 4px solid rgba(15, 84, 104, 0.2);
+    border-top-color: #1D6E85;
+    -webkit-animation: rtecspin 1s infinite linear;
+    animation: rtecspin 1s infinite linear;
+}
+button .rtec-spinner-circle {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top-color: #fff;
+}
+button .rtec-spinner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -2px;
+}
+@keyframes rtecspin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add On containers */
+.rtec-admin-section {
+    max-width: 1100px;
+}
+.rtec-standout {
+    display: flex;
+    margin: 20px 0;
+}
+
+.rtec-license-container,
+.rtec-addon-container {
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0,0,0,.05), 0 4px 5px rgba(0,0,0,.05);
+    color: #003544;
+}
+
+.rtec-addon-container {
+    width: calc((100% / 3) - 8px);
+
+    background: #fff;
+}
+.rtec-standout {
+    background-color: #E6F5F9;
+}
+.rtec-standout .rtec-success-message {
+    color: #003544;
+}
+.rtec-addon-container.rtec-full-width {
+    width: 100%;
+}
+.rtec-welcome-screen .rtec-button {
+    margin-left: 0;
+}
+.rtec-welcome-screen .rtec-addon-container {
+    display: flex;
+}
+.rtec-welcome-screen .rtec-addon-icon {
+    max-width: 150px;
+    min-width: 120px;
+    display: inline-block;
+    float: left;
+}
+.rtec-welcome-screen .rtec-addon-icon img{
+    width: 100%;
+}
+.rtec-license-container .rtec-license-field {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.rtec-tec-success button,
+.rtec-tec-install .rtec-addon-activate,
+.rtec-tec-activate .rtec-addon-install{
+    display: none;
+}
+.rtec-tec-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: left;
+    margin-left: 20px;
+}
+.rtec-tec-content h4{
+    margin-top: 0;
+}
+.rtec-tec-content .rtec-addon-description {
+    font-size: 13px;
+    color: #444;
+}
+.rtec-license-options {
+    margin-top: 2px;
+}
+.rtec-addon-icon svg {
+    height: 80px;
+}
+.rtec-addon-title {
+    margin-bottom: 8px;
+    margin-top: 12px;
+
+    font-size: 16px;
+}
+.rtec-addon-description {
+    margin-bottom: 16px
+}
+.rtec-addon-license-wrap {
+    margin-top: 22px;
+}
+
+.rtec-boxes .rtec-addon-license-input,
+.rtec-license-container .rtec-addon-license-input{
+    width: 74%;
+    min-height: 0;
+    padding: 7px 12px;
+    line-height: 1;
+
+    font-size: 14px;
+}
+.rtec-boxes .rtec-is-installed .rtec-addon-license-input,
+.rtec-license-container .rtec-addon-license-input{
+    width: 100%;
+}
+.rtec-license-container .rtec-addon-license-input{
+    margin-bottom: 6px;
+}
+.rtec-license-container .rtec-addon-buttons button{
+    display: none;
+    margin-left: 0;
+    margin-right: 6px;
+}
+.rtec-license-container .rtec-license-field-show-activate .rtec-addon-activate {
+    display: block;
+}
+.rtec-license-container .rtec-license-field-show-deactivate .rtec-addon-deactivate {
+    display: block;
+}
+.rtec-license-container .rtec-license-field-show-clear .rtec-addon-clear {
+    display: block;
+}
+.rtec-addon-license-wrap button {
+    width: calc(24% - 5px);
+    margin-left: 5px;
+}
+.rtec-boxes .rtec-addon-license-input::placeholder,
+.rtec-license-container .rtec-addon-license-input::placeholder{
+    color: #7b8f9b;
+    font-size: 14px;
+}
+.rtec-license-options a {
+    margin-right: 8px;
+}
+@media all and (max-width: 850px) {
+    .rtec-addon-container {
+        width: calc((100% / 2) - 6px);
+    }
+}
+
+.rtec-admin-notice-banner {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top:30px;
+  background: #d3faf6;
+  color: #009688;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 3px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 3px 14px rgba(0, 0, 0, 0.12);
+  border: none;
+}
+.rtec-admin-notice-banner .rtec-img-wrap,
+.rtec-admin-notice-banner .rtec-msg-wrap{
+  float: none;
+  min-width: 80px;
+}
+.rtec-admin-notice-banner .rtec-msg-wrap {
+  margin-left: 10px;
+  max-width: 700px;
+}
+.rtec-admin-notice-banner .rtec-msg-wrap h3 {
+  margin: 10px 0 10px;
+}
+.rtec-admin-notice-banner .rtec-msg-wrap h3,
+.rtec-admin-notice-banner .rtec-msg-wrap div {
+  color: #009688;
+}
+.rtec-admin-notice-banner .rtec-msg-wrap div {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.rtec-admin-notice-banner .rtec-msg-wrap .rtec-button-wrap {
+  margin: 10px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}

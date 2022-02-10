@@ -1,0 +1,10 @@
+parameters:
+    level: 1
+    paths:
+        - %currentWorkingDirectory%/src
+        - %currentWorkingDirectory%/tests
+        - %currentWorkingDirectory%/examples
+    excludes_analyse:
+        - %currentWorkingDirectory%/vendor
+includes:
+    - .phpstan.ignoreErrors.neon

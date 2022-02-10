@@ -1,0 +1,566 @@
+/*
+*Captcha
+*/
+.leadform-show-form span .g-recaptcha div {
+    width: auto !important;
+    height: auto !important;
+}
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+/*
+*Form Design
+*/
+.leadform-show-form .lead-form-front{
+    overflow:hidden;
+	padding:15px;
+	background-size:100%;       
+}
+.lead-form-front:before{
+content: '';
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+z-index:-1;
+display: block;
+}
+.lead-form-front{
+position:relative;
+z-index: 0;
+}
+/***Global Form Style***/
+.sidebar .leadform-show-form h2, 
+.footer .leadform-show-form h2{
+	display:none;
+}
+.leadform-show-form input, 
+.leadform-show-form select, 
+.leadform-show-form textarea{
+	max-width:100%;
+}
+.leadform-show-form div.lf-field{
+margin-bottom:17px;
+}
+.leadform-show-form .radio-type label,
+.leadform-show-form  .checkbox-type label{
+ margin: 0;
+}  
+.leadform-show-form label{
+	margin: 1.1em 0 .4em;
+	display:block;
+}
+.leadform-show-form label span {
+	font-weight: 500;
+	font-size:16px;
+	line-height: 1.9;
+}
+.leadform-show-form input[type="radio"]:first-child, 
+.leadform-show-form input[type="checkbox"]:first-child {
+	margin:0px 7px 0px 0px;
+	line-height: normal;
+}
+.leadform-show-form input[type="radio"], 
+.leadform-show-form input[type="checkbox"]{
+	margin:0px 5px 0px 10px;
+	line-height: normal;
+	height: 14px;  
+	width: 14px;   
+	vertical-align: middle;
+}
+.lead-form-front input[type=checkbox] {
+    border: 1px solid #b4b9be;
+    background: #fff;
+    color: #555;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;    
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0!important;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    min-width: 16px;
+    -webkit-appearance: checkbox;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    -webkit-transition: .05s border-color ease-in-out;
+    transition: .05s border-color ease-in-out;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* Safari only override */
+   ::i-block-chrome,.lead-form-front input[type=checkbox]{
+      -webkit-appearance: checkbox;
+       -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeSpeed;
+   }
+/* Safari only override */
+   ::i-block-chrome,.lead-form-front input[type=checkbox]:checked:before {
+ display:none;
+}
+}
+.lead-form-front input[type=radio] {
+    border: 1px solid #b4b9be;
+    background: #fff;
+    color: #555;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+     width: 14px;
+    min-width: 14px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 4px;
+    line-height: 10px;
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0!important;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    -webkit-transition: .05s border-color ease-in-out;
+    transition: .05s border-color ease-in-out;
+}
+.lead-form-front input[type=radio]:checked:before {
+    content: "\2022";
+    text-indent: -9999px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 5px;
+    height: 5px;
+    margin: 4px;
+    line-height: 12px;
+    background-color: #1e8cbe;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    font: 400 21px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.leadform-show-form select{
+  text-transform: none;
+  min-width:100%;
+  padding:6px;
+  letter-spacing: normal;
+  text-indent:0em;
+  padding-left:6px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  min-height: 38px;
+  background-color: #fff;
+  border-radius: 2px;
+  outline:0px;
+  border: 1px solid #ccc;
+}
+.leadform-show-form select:focus{
+ outline:0px;   
+}
+.leadform-show-form input[type="number"],
+.leadform-show-form input[type="date"]{
+	text-transform: none;
+	min-width:100%;
+	padding: .313em 0;
+	letter-spacing: normal;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  min-height: 38px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.leadform-show-form textarea, 
+.leadform-show-form input:not([type]), 
+.leadform-show-form input[type="email"], 
+.leadform-show-form input[type="number"], 
+.leadform-show-form input[type="password"], 
+.leadform-show-form input[type="tel"], 
+.leadform-show-form input[type="url"], 
+.leadform-show-form input[type="text"], 
+.leadform-show-form input[type="number"]  
+{
+width:100%;
+font-family: inherit;
+letter-spacing: normal;
+}
+.leadform-show-form input[type="date"],
+.leadform-show-form input[type="time"],
+.leadform-show-form input[type="datetime-local"], 
+.leadform-show-form input[type="month"] 
+{
+line-height: 15px; 
+font-family: inherit;
+padding: .313em 0;
+letter-spacing: normal;
+}
+.leadform-show-form h2{
+	margin-top:20px;
+	margin-bottom:30px;
+}
+.leadform-show-form input[type="file"] {
+    display: inherit;
+}
+.leadform-show-form ul{
+padding-left:0px;
+margin:0;
+}
+.leadform-show-form ul li {
+    list-style-type: none;
+}
+.leadform-show-form textarea,
+.leadform-show-form input:not([type]), 
+.leadform-show-form input[type="email"], 
+.leadform-show-form input[type="number"], 
+.leadform-show-form input[type="password"], 
+.leadform-show-form input[type="tel"], 
+.leadform-show-form input[type="url"], 
+.leadform-show-form input[type="text"], 
+.leadform-show-form input[type="number"] {
+    min-height: 38px;
+    padding: 6px!important;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.leadform-show-form input[type="submit"] {
+  min-height: 38px;
+  padding: 10px 30px;
+  border-color: #000;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  cursor:pointer;
+  background: #0C0C10;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  white-space: inherit;
+}
+.leadform-show-form .successmsg_3{
+font-size:20px;
+text-align:center;
+padding:50px 0;
+border:1px solid #f8f8f8;
+border-top:0px;
+}
+.leadform-show-form .submit-type label{
+display:inline;
+}
+/***Upload field style***/
+.lfb_input_upload{
+position:relative;
+}
+.lfb-input-upload{
+position:absolute;
+width:100%;
+height:38px;
+top:-38px;
+opacity:0;
+cursor:pointer;
+}
+.lfb_input_upload::before {
+position:absolute;
+content: "\f093";
+font-family: fontawesome;
+display: inline-block;
+background:#c1c1c1;
+color:#fff;
+border: 0px solid #c1c1c1;
+border-radius: 0px;
+outline: none;
+white-space: nowrap;
+-webkit-user-select: none;
+cursor: pointer;
+font-weight: 700;
+font-size: 10pt;
+height:36px;
+width:38px;
+right:1px;
+line-height:37px;
+text-align:center;
+top: -37px;
+text-indent: 1px;
+z-index:0;
+}
+
+/***date Style***/
+
+.leadform-show-form .lf-field{
+position:relative;
+}
+/*.leadform-show-form .lfb-date-icon{
+position: absolute;
+right:1px; 
+bottom:1px;
+height: 36px;
+width: 38px;
+text-align:center;
+color:#fff;
+background-color:#c1c1c1;
+z-index:1;
+line-height: 37px;
+cursor:pointer;
+}*/
+
+.lfb-date-parent::after {
+/*    font-family: "Font Awesome 5 Free";
+*/    font-family: fontawesome;
+    content: "\f073";
+    font-weight: 900;
+    color: #717171;
+    font-size: 20px;
+    float: right;
+    margin-top: -35px;
+    padding-right: 10px;
+}
+
+
+
+
+.leadform-show-form .lfb-date-icon i.fa-calendar{
+text-indent:1px;
+}
+
+/***Form Style***/
+.leadform-show-form{
+display: block;
+margin: auto;
+max-width: 100%;
+
+}
+.leadform-show-form .lead-head {
+background-size: cover!important;  
+}
+.leadform-show-form textarea {
+width:100%;
+min-height:150px;
+text-indent:0;
+}
+
+.lead-form-frontdiv #ui-datepicker-div {
+    max-width: 300px;
+}
+.ui-datepicker{
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #F1F1F1;
+}
+.ui-datepicker table, .ui-datepicker th, .ui-datepicker td {
+    border: none;
+}
+.ui-datepicker-calendar tr:nth-child(1) th:nth-child(1){
+padding-left:0;
+}
+.ui-datepicker .ui-datepicker-header{
+padding:5px 0;
+}
+.ui-datepicker-calendar{
+width:auto;
+}
+.ui-datepicker-calendar td{
+	line-height: 20px;
+    font-size: 13px;
+}
+.ui-datepicker-calendar tr th {
+    font-size: 14px;
+    background: rgba(0, 185, 235, 0);
+    color: #676767;
+    padding: 5px;
+    font-weight: normal;
+}
+.ui-datepicker .ui-datepicker-title{
+	display:inline-block;
+	width: 82%;
+	text-align: center;
+	font-size:15px;
+	letter-spacing: 1px;
+}
+.ui-datepicker-calendar tr td a{
+	padding:5px;
+}
+.ui-datepicker-calendar tr td a:hover{
+	background:#000;
+	color:#fff;
+}
+.ui-datepicker-calendar tr td a.ui-state-highlight{
+	background:#000;
+	color:#fff;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-prev:before{
+	content:"<";
+	font-size:16px;
+	float:left;
+}
+.ui-datepicker .ui-datepicker-next:after{
+content:">";
+font-size:16px;
+float:right;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{
+font-size:0px;
+}
+
+/* Loader Style */
+
+.spinner {
+/*  margin: 100px auto 0;
+*/  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+.leadform-show-form span ul li{
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #555;
+}
+/*notification massage*/
+.leadform-show-form .error p{
+font-size:14px;
+padding:6px 10px;
+background:#f2dede;
+display:block;
+color:#D8000C;
+position:relative;
+}
+.leadform-show-form .error p::before{
+content: "\f00d";
+font-family: fontawesome;
+position: absolute;
+right: 10px;
+cursor:pointer;
+}
+.leadform-show-form p.successmsg{
+font-size:14px;
+padding:6px 10px;
+background:#DFF2BF;
+display:block;
+color:#4F8A10;
+position:relative;
+ text-align: center;
+}
+.leadform-show-form p.successmsg::before{
+content: "\f00c";
+font-family: fontawesome;
+position: absolute;
+right: 10px;
+cursor:pointer;
+}
+.leadform-show-form input,  .leadform-show-form textarea{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.leadform-show-form  select{
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* arrows */
+.leadform-show-form  select{
+  background-image:
+    linear-gradient(45deg, transparent 50%, #6b563e 50%),
+    linear-gradient(135deg, #6b563e 50%, transparent 50%),
+   linear-gradient(to right, transparent, transparent);
+  background-position:
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 10px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 767px){
+     .lead-form-front h2{
+font-size:26px;
+}   
+.leadform-show-form .lead-form-front {
+    background-size: cover!important;
+}
+}
+
+@media screen and (max-width: 550px){
+     .lead-form-front h2{
+font-size:22px;
+}   
+.leadform-show-form{
+    max-width: 100%!important;
+    width:100%;
+    min-width:280px;
+  }
+}

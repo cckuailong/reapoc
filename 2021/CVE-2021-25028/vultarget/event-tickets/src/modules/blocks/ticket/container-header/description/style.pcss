@@ -1,0 +1,44 @@
+.tribe-editor__ticket__container-header-description {
+	display: block;
+	color: #545D66;
+	padding-top: 7px;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.04px;
+
+	.tribe-editor__ticket--disabled & {
+		color: #AEB4BB;
+	}
+}
+
+/* extra class to override gutenberg styles */
+.tribe-editor__ticket {
+
+	.tribe-editor__ticket__container-header-description-input {
+		display: flex;
+		background-color: transparent;
+		color: #545D66;
+		margin: 0;
+		padding: 0;
+		border: none;
+		font-size: 12px;
+		max-height: 108px;
+		line-height: 18px;
+		letter-spacing: 0.04px;
+		width: 100%;
+
+		&:disabled {
+			color: #AEB4BB;
+		}
+
+		&:hover,
+		&:focus {
+			box-shadow: none;
+			outline: none;
+		}
+
+		& > * {
+			flex: none;
+		}
+	}
+}

@@ -1,0 +1,150 @@
+{
+    "packages": [
+        {
+            "name": "udx/lib-settings",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WPDevelopers/lib-settings.git",
+                "reference": "09ab1814500b8e5969186b6c90500fecb80e25f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WPDevelopers/lib-settings/zipball/09ab1814500b8e5969186b6c90500fecb80e25f9",
+                "reference": "09ab1814500b8e5969186b6c90500fecb80e25f9",
+                "shasum": ""
+            },
+            "require": {
+                "udx/lib-utility": "~0.3"
+            },
+            "require-dev": {
+                "justinrainbow/json-schema": "1.1.*"
+            },
+            "time": "2021-09-09T10:54:24+00:00",
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "static/scripts/settings.js"
+                    ],
+                    "templates": [
+                        "static/views/new-installation.xhtml"
+                    ],
+                    "files": [
+                        "static/schemas/settings.json"
+                    ]
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Potanin",
+                    "email": "andy.potanin@usabilitydynamics.com",
+                    "homepage": "https://www.usabilitydynamics.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Maxim Peshkov",
+                    "email": "maxim.peshkov@usabilitydynamics.com",
+                    "homepage": "https://www.usabilitydynamics.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anton Korotkov",
+                    "email": "anton.korotkov@usabilitydynamics.com",
+                    "homepage": "https://www.usabilitydynamics.com",
+                    "role": "Developer"
+                }
+            ],
+            "homepage": "https://github.com/udx/lib-settings",
+            "keywords": [
+                "settings"
+            ],
+            "support": {
+                "source": "https://github.com/WPDevelopers/lib-settings/tree/master"
+            },
+            "install-path": "../udx/lib-settings"
+        },
+        {
+            "name": "udx/lib-utility",
+            "version": "0.4.0",
+            "version_normalized": "0.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/udx/lib-utility.git",
+                "reference": "7c91df528b1ab2ccc75717c18bb6fad607eb8e8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/udx/lib-utility/zipball/7c91df528b1ab2ccc75717c18bb6fad607eb8e8c",
+                "reference": "7c91df528b1ab2ccc75717c18bb6fad607eb8e8c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*"
+            },
+            "time": "2019-01-06T16:01:39+00:00",
+            "type": "library",
+            "extra": {
+                "installer-name": "lib-utility",
+                "component": {
+                    "name": "utility",
+                    "scripts": [
+                        "scripts/*.js"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Potanin",
+                    "email": "andy.potanin@usabilitydynamics.com",
+                    "homepage": "https://www.usabilitydynamics.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Maxim Peshkov",
+                    "email": "maxim.peshkov@usabilitydynamics.com",
+                    "homepage": "https://www.usabilitydynamics.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anton Korotkov",
+                    "email": "anton.korotkov@usabilitydynamics.com",
+                    "homepage": "https://www.usabilitydynamics.com",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "job",
+                "process",
+                "utility"
+            ],
+            "support": {
+                "source": "https://github.com/udx/lib-utility/tree/0.4.0",
+                "issues": "https://github.com/udx/lib-utility/issues"
+            },
+            "install-path": "../udx/lib-utility"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

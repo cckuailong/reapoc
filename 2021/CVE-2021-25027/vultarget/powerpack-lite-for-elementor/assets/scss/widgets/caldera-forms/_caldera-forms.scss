@@ -1,0 +1,47 @@
+.pp-caldera-form {
+    .control-label {
+        display: none;
+    }
+    &-labels-yes {
+        .control-label {
+            display: block;
+        }
+    }
+    &-button-center {
+        .form-group {
+            input[type="button"],
+            input[type="submit"] {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    &-button-right {
+        .form-group {
+            input[type="button"],
+            input[type="submit"] {
+                float: right;
+            }
+        }
+    }
+    .intl-tel-input {
+        display: inherit;
+    }
+}
+.pp-custom-radio-checkbox {
+    .caldera-grid {
+        input[type="checkbox"],
+        input[type="radio"] {
+            border-style: solid;
+            border-width: 0;
+            padding: 3px;
+            -webkit-appearance: none;
+        }
+    }
+}
+.pp-caldera-form-button-full-width {
+    .form-group input[type="submit"],
+    .form-group input[type="button"] {
+        width: 100%;
+    }
+}

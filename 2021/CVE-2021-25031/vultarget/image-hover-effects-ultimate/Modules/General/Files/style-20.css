@@ -1,0 +1,54 @@
+.oxi-addons-container .oxi-image-general-hover-style-20 .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    visibility: hidden;
+    pointer-events: none;  
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; 
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-image{
+    opacity: 1;
+    pointer-events: none;
+}
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption{
+    -webkit-transform: translate(15px, 15px);
+    -moz-transform: translate(15px, 15px);
+    -ms-transform: translate(15px, 15px);
+    transform: translate(15px, 15px);
+}
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption{
+    -webkit-transform: translate(-15px, -15px);
+    -moz-transform: translate(-15px, -15px);
+    -ms-transform: translate(-15px, -15px);
+    transform: translate(-15px, -15px);
+}
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover:hover .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover.oxi-touch .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-figure-caption{
+    -webkit-transform: translate(-15px, 15px);
+    -moz-transform: translate(-15px, 15px);
+    -ms-transform: translate(-15px, 15px);
+    transform: translate(-15px, 15px);
+}
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover:hover .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-20.oxi-image-hover.oxi-touch .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-figure-caption{
+    -webkit-transform: translate(15px, -15px);
+    -moz-transform: translate(15px, -15px);
+    -ms-transform: translate(15px, -15px);
+    transform: translate(15px, -15px);
+}

@@ -1,0 +1,101 @@
+.oxi-addons-container [class^='oxi-image-stack-'],
+.oxi-addons-container [class*=' oxi-image-stack-'] {
+    overflow: hidden;
+}
+
+.oxi-addons-container [class^='oxi-image-stack-'] .oxi-image-hover-image,
+.oxi-addons-container [class^='oxi-image-stack-'] .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-stack-'] .oxi-image-hover-image,
+.oxi-addons-container [class*=' oxi-image-stack-'] .oxi-image-hover-figure-caption {
+    -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.oxi-addons-container [class^='oxi-image-stack-']:hover .oxi-image-hover-image,
+.oxi-addons-container [class*=' oxi-image-stack-']:hover .oxi-image-hover-image,
+.oxi-addons-container [class^='oxi-image-stack-'].oxi-touch .oxi-image-hover-image,
+.oxi-addons-container [class*=' oxi-image-stack-'].oxi-touch .oxi-image-hover-image {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.5;
+}
+
+.oxi-addons-container [class^='oxi-image-stack-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-stack-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class^='oxi-image-stack-'].oxi-touch .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-stack-'].oxi-touch .oxi-image-hover-figure-caption {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.oxi-addons-container .oxi-image-stack-up .oxi-image-hover-figure-caption {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.oxi-addons-container .oxi-image-stack-down .oxi-image-hover-figure-caption {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.oxi-addons-container .oxi-image-stack-left .oxi-image-hover-figure-caption {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.oxi-addons-container .oxi-image-stack-right .oxi-image-hover-figure-caption {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.oxi-addons-container .oxi-image-stack-top-left .oxi-image-hover-figure-caption {
+    -webkit-transform: translate(-100%, -100%);
+    -moz-transform: translate(-100%, -100%);
+    -ms-transform: translate(-100%, -100%);
+    -o-transform: translate(-100%, -100%);
+    transform: translate(-100%, -100%);
+}
+
+.oxi-addons-container .oxi-image-stack-top-right .oxi-image-hover-figure-caption {
+    -webkit-transform: translate(100%, -100%);
+    -moz-transform: translate(100%, -100%);
+    -ms-transform: translate(100%, -100%);
+    -o-transform: translate(100%, -100%);
+    transform: translate(100%, -100%);
+}
+
+.oxi-addons-container .oxi-image-stack-bottom-left .oxi-image-hover-figure-caption {
+    -webkit-transform: translate(-100%, 100%);
+    -moz-transform: translate(-100%, 100%);
+    -ms-transform: translate(-100%, 100%);
+    -o-transform: translate(-100%, 100%);
+    transform: translate(-100%, 100%);
+}
+
+.oxi-addons-container .oxi-image-stack-bottom-right .oxi-image-hover-figure-caption {
+    -webkit-transform: translate(100%, 100%);
+    -moz-transform: translate(100%, 100%);
+    -ms-transform: translate(100%, 100%);
+    -o-transform: translate(100%, 100%);
+    transform: translate(100%, 100%);
+}

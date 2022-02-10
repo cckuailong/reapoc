@@ -1,0 +1,365 @@
+/* 
+    Document   : admin-wpbc-listing
+    Created on : 09.02.2014, 11:38:06
+    Author     : wpdevelop
+    Description: Listing Table CSS 
+*/
+
+/* Header */
+.wpbc-listing-header {
+    background: #e4e4e4; /* for non-css3 browsers */
+    border: 1px solid #C6C6C6;
+    border-bottom-color: #CCC;
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    padding: 2px 0px;
+    text-shadow: 0 1px 1px #F5F5F5;
+}
+
+/* Row */
+.wpbc-listing-row {
+    border: 1px solid #C6C6C6;
+    border-top: none;
+    margin: 0px;
+    padding: 0px;
+}
+.wpbc-listing-row.row_alternative_color.row,
+.wpbc-listing-row.row_alternative_color {
+    background: #F7F7F7;
+}
+.wpbc-listing-row.row.row_selected_color {
+    background: #9cf;
+    border-color: #aaa !important;
+}
+.wpbc-listing-row.wpbc-listing-last_row {
+    border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -ms-border-radius: 0 0 4px 4px;
+}
+
+/* Columns */
+.wpbc-listing-collumn {
+    margin: 5px 0px 2px;
+}
+.wpbc-listing-collumn .field-id {
+    
+    color: #999;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: right;
+    
+/*  background-color: #777;
+    border: 1px solid #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 2px #888;
+    color: #EEE;    
+    font-size: 9px;
+    font-weight: 600;
+    padding: 2px 4px;
+    text-shadow: 0 0 3px #333;*/
+}
+.wpbc-listing-collumn .field-id span.label {
+    border-radius: 5px;
+    background: #bbb;    
+    color: #fff;
+    margin: 0;
+    padding: 2px 5px;
+    background: #888;
+    border:none;
+}
+.wpbc-listing-collumn.field-system-info {
+    font-size: 9px;
+    font-style: italic;
+    line-height: 1.2em;
+    text-align: left;
+    text-shadow: 0 -1px 0 #eee;
+    white-space: nowrap;    
+    padding: 2em 5px 0;
+    text-align: right;
+    color: #777;
+}
+.wpbc-listing-collumn.field-system-info .field-creation-date {
+    font-weight: 600;
+}
+/* Checkbox */
+.wpbc-listing-collumn .field-checkbox {
+    vertical-align: middle;
+}
+
+/* Main Content */        
+.wpbc-listing-collumn.field-content,
+.wpbc-listing-collumn .standard-content-form {
+    text-align: left; 
+    word-wrap: break-word; 
+    line-height: 1.7em;
+}
+/* Data Titles style - Yellow Values*/
+.wpbc-listing-collumn .fieldvalue {
+    background: #FFF3C3; /*#FE9;*/                                              /* FixIn: 8.5.2.5 */
+    color: #333;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0 2px 0 1px;
+    padding: 2px 3px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+/*    text-shadow: 0 1px 1px #EEE;*/
+}
+
+/* Labels Colors */
+.wpbc-listing-collumn .label {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 0 1px #ddd;
+    padding: 2px 5px;
+    white-space: nowrap;
+    line-height: 2.4em;
+}
+.wpbc-listing-collumn .label.label-resource {                                   /* FixIn: 7.0.1.66 */
+    white-space: pre-wrap;
+} 
+.wpbc-listing-collumn .label span, 
+.wpbc-listing-collumn .label a,
+.wpbc-listing-collumn .label a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.wpbc-listing-collumn .label-pending {
+    background: #FFBB45;
+}
+.wpbc-listing-collumn .label-approved {
+    background: #9BE;
+}
+.wpbc-listing-collumn .label-trash {    
+    background: #D94A48;
+    color: #fff;
+    text-shadow: 0 0 1px #E00;
+}
+.wpbc-listing-collumn .label-success {
+    
+}
+.wpbc-listing-collumn .label-unknown {
+    background-color: #999 !important;
+}
+.wpbc-listing-collumn .label-error {
+    background-color: #FA773D !important;
+}
+.wpbc-listing-collumn .payment-label-success {
+    background-color: #468847 !important;
+}
+.wpbc-listing-collumn .payment-label-pending {
+    background-color: #992 !important;
+}
+.wpbc-listing-collumn .payment-label-unknown {
+    background-color: #999 !important;
+}
+.wpbc-listing-collumn .payment-label-error {
+    background-color: #FA773D !important;
+}
+/* //FixIn: 8.4.7.2 */
+.wpbc-listing-collumn .label-imported {
+    background-color: #81A6C6 !important;
+}
+
+/* Pagination */ 
+.wpdevelop.wpbc-pagination a.button{
+    box-shadow: none;
+    height: 32px;
+    line-height: 30px;
+    margin: 0 0 5px;
+    padding: 0 15px;
+}   
+.wpdevelop.wpbc-pagination .container-fluid .row .btn-toolbar .btn-group > .button.disabled {
+    box-shadow: none !important;
+}
+.wpdevelop.wpbc-pagination .btn-toolbar .btn-group > .button.active {
+    box-shadow: 0 1px 5px -4px rgba(0, 0, 0, 0.5) inset;
+    font-weight: 600;
+}
+    
+@media (max-width: 782px) { 
+    .wpbc-listing-header .wpbc-listing-collumn {
+        font-size: 1.2em;
+        line-height: 2.2em;
+        margin:0;        
+    }
+    .wpbc-listing-header .wpbc-listing-collumn input[type=checkbox] {
+        margin:-4px 0 0;
+    }
+    .wpbc-listing-collumn.field-system-info {
+        padding:0 5px;
+    }
+    /* Pagination */ 
+    .wpbc-pagination .button {    
+        font-size: 14px;
+        height: 36px;
+        line-height: 34px;
+        margin: 0 0 5px;
+        padding: 0 16px;
+    }    
+}
+
+
+
+/* C U S T O M ****************************************************************/
+
+/* New Label   //FixIn 8.7.9.6 */
+.new-label {
+    display: block;
+}
+.wpbc-listing-collumn.new-label {
+    margin: 5px 0 0 -32px;
+    position: absolute !important;
+}
+.wpbc-listing-collumn.new-label a{
+    font-size:13px;
+}
+.wpbc-listing-collumn.new-label a i.glyphicon{
+    color:#8ac;
+}
+/* Dates */
+.wpbc-listing-collumn.field-dates .field-booking-date,
+.wpbc-listing-collumn.field-dates .field-booking-date:hover {
+    background: none repeat scroll 0 0 #FFBB45;
+    border: 1px solid #EEE;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 1px #CCC;
+    color: #FFF;
+    font-weight: 600;    
+    padding: 4px 10px 4px;
+    text-decoration: none;
+    text-shadow: 0 0px 0 #CCC;
+    white-space: nowrap;
+    font-size: 0.85em;    
+    line-height: 2.5em;    
+}
+.wpbc-listing-collumn.field-dates .field-booking-date.approved,
+.wpbc-listing-collumn.field-dates .field-booking-date.approved:hover {
+    background: none repeat scroll 0 0 #9BE;
+}
+.wpbc-listing-collumn.field-dates .field-booking-time {
+    color: #555;
+    text-decoration: none;
+    text-shadow: 0 0 1px #AAA;
+}
+.wpbc-listing-collumn.field-dates .date_tire {
+    font-size: 17px;
+    font-weight: 600;
+}
+.wpbc-listing-collumn.field-dates .booking_dates_small,
+.wpbc-listing-collumn.field-dates .booking_dates_full {
+    line-height: 24px;
+}
+.wpbc-listing-collumn.field-dates .date_from_dif_type {
+    color: #FFF;
+    text-shadow: 0 -1px 0 #BBB;
+}
+/* Actions buttons */
+.wpbc-listing-collumn.field-action-buttons {
+    padding-right: 2px;
+}
+.wpbc-listing-collumn.field-action-buttons a.button {
+    margin:0 5px 5px 0;
+} 
+.wpbc-listing-collumn .glyphicon.red_icon_color {
+    color:#d54e21;
+}
+.wpbc-listing-collumn .wpbc-buttons-separator {
+    margin-right: 15px;
+}
+.wpbc_free .wpbc-listing-collumn .wpbc-buttons-separator {
+    margin-right: 0px;
+}    
+/* Cost Group */
+.wpbc-listing-collumn.field-action-buttons .cost-fields-group {
+    float:left;
+}
+.wpbc-listing-collumn.field-action-buttons .cost-fields-group .field-currency {
+    color: #444;
+    display: inline;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    height: 26px;
+    padding:0;
+    vertical-align: top;    
+}
+.wpbc-listing-collumn.field-action-buttons .cost-fields-group.control-group .btn-toolbar .input-group > input[type="text"].field-booking-cost { 
+    display: inline-block;
+    margin: 0 5px 5px 0 !important;
+    width: 75px;
+    font-weight: 600;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.wpbc-listing-collumn.field-action-buttons select.wpbc-select-locale {
+    display: none;
+    margin: 0 5px 5px 0;
+}
+.wpbc_free .wpbc-listing-collumn.field-system-info {
+    padding:0 5px;
+    margin-top:-0.5em;
+}
+/* Columns customizations - labels header */
+#listing_visible_wpbc .wpbc-listing-header .wpbc_column_3 {
+    white-space: nowrap;
+}
+
+.label_resource_not_exist {
+    color: #000 !important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.wpbc-listing-row .booking_row_modification_element {
+    display: none;
+    clear: both;
+    width: 100%;
+}
+.wpbc-listing-row .booking_row_modification_element_changing_resource {
+    height: auto;
+}
+.wpbc-listing-row .booking_row_modification_element .btn-save-cost,
+.wpbc-listing-row .booking_row_modification_element.booking_edit_note a,
+.wpbc-listing-row .booking_row_modification_element select{
+    float: left;
+    margin: 0 0 5px 5px;
+}
+#hided_boking_modifications_elements, 
+.hided_boking_modifications_elements {    /* FixIn:5.4.5.1 */
+    display: none;
+}
+
+@media (max-width: 782px) { 
+    /* New Label */
+    .wpbc-listing-collumn.new-label {
+        margin: 7px 0 0 -26px;
+        position: absolute !important;
+    }    
+    /* Dates */
+    .wpbc-listing-collumn .field-id.text-center, 
+    .wpbc-listing-collumn .booking-labels.text-center, 
+    .wpbc-listing-collumn.booking-dates.text-center{
+        text-align: left;
+    }    
+    .wpbc-listing-collumn.field-action-buttons .control-group a.button {
+        height: 34px;
+        line-height: 2.2;
+    }
+    /* Cost Group */
+    .wpbc-listing-collumn.field-action-buttons .cost-fields-group .field-currency {
+        line-height: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+    .wpbc-listing-collumn.field-action-buttons .cost-fields-group.control-group .btn-toolbar .input-group > input[type="text"].field-booking-cost {
+        padding: 2px 5px;
+    }
+}

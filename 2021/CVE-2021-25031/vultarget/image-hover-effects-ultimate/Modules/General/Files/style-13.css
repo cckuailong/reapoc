@@ -1,0 +1,24 @@
+.oxi-addons-container .oxi-image-general-hover-style-13 .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease 0.2s;
+    -moz-transition: all 0.35s ease 0.2s;
+    transition: all 0.35s ease 0.2s;
+}
+
+.oxi-addons-container .oxi-image-general-hover-style-13.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-13.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-image{
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.oxi-addons-container .oxi-image-general-hover-style-13.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-13.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}

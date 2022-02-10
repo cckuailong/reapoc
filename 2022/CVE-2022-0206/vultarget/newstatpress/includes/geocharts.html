@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawRegionsMap);
+
+     function drawRegionsMap() {
+       var data = new google.visualization.DataTable();
+       var parts = window.location.search.substr(1).split("&");
+       var $_GET = {};
+       for (var i = 0; i < parts.length; i++) {
+          var temp = parts[i].split("=");
+          $_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
+       }
+
+       var country=$_GET['cht'];
+       var popularity=$_GET['chlt'];
+
+       data.addColumn('string', country);
+       data.addColumn('number', popularity);
+
+       var values = $_GET['chd'].split(",");
+       var labels = $_GET['chld'].split(",");
+         
+       for (var i = 0; i < values.length; i++) {
+         var stateName=labels[i];
+         if (stateName=='EN') stateName='GB'; // fix English language
+         var num= parseInt(values[i]);
+         data.addRow([stateName, num]);
+       }
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    };
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 650px; height: 500px;"></div>
+  </body>
+</html>
+
+  

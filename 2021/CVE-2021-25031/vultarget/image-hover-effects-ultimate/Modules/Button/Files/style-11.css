@@ -1,0 +1,87 @@
+.oxi-addons-container  .oxi-image-button-hover-style-11 .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption,
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+.oxi-addons-container  .oxi-image-button-hover-style-11 .oxi-image-hover-figure .oxi-image-hover-caption-tab{
+    background: transparent;
+}
+.oxi-addons-container  .oxi-image-button-hover-style-11 .oxi-image-hover-figure .overlayT{
+    z-index: 1;
+}
+.oxi-addons-container  .oxi-image-button-hover-style-11 .oxi-image-hover-figure .overlayT{
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.oxi-addons-container  .oxi-image-button-hover-style-11 .oxi-image-hover-figure .overlayT{
+    position: absolute;
+    height: 400%;
+    width: 400%;
+}
+
+.oxi-addons-container  .oxi-image-button-hover-style-11 .oxi-image-hover-figure.left_to_right .overlayT{
+    right: 0%;
+    bottom: 0%;
+    -webkit-transform:  translateY(-100%) skewX(-45deg);
+    -moz-transform: translateY(-100%) skewX(-45deg);
+    -ms-transform:  translateY(-100%) skewX(-45deg);
+    -o-transform:  translateY(-100%) skewX(-45deg);
+    transform: translateY(-100%) skewX(-45deg);
+}
+
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .overlayT,
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .overlayT{
+    transform: translateY(50%) skewX(-45deg);
+}
+.oxi-addons-container  .oxi-image-button-hover-style-11 .oxi-image-hover-figure.right_to_left .overlayT{
+    left: 0%;
+    top: 0;
+    -webkit-transform:translateY(-100%) skewX(45deg);
+    -moz-transform:translateY(-100%) skewX(45deg);
+    -ms-transform:translateY(-100%) skewX(45deg);
+    -o-transform:translateY(-100%) skewX(45deg);
+    transform: translateY(-100%) skewX(45deg);
+}
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .overlayT,
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .overlayT{
+    transform: translateY(0%) skewX(45deg);
+}
+
+.oxi-addons-container  .oxi-image-button-hover-style-11 .oxi-image-hover-figure.top_to_bottom .overlayT{
+    top: 0%;
+    left: 0%;
+    -webkit-transform:  translateX(50%) translateY(0%) skewX(-45deg);
+    -moz-transform: translateX(50%) translateY(0%) skewX(-45deg);
+    -ms-transform:  translateX(50%) translateY(0%) skewX(-45deg);
+    -o-transform:  translateX(50%) translateY(0%) skewX(-45deg);
+    transform: translateX(50%) translateY(0%) skewX(-45deg);
+}
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover:hover .oxi-image-hover-figure.top_to_bottom .overlayT,
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover.oxi-touch .oxi-image-hover-figure.top_to_bottom .overlayT{
+    transform:translateX(-50%) translateY(0%) skewX(-45deg);
+}
+
+.oxi-addons-container  .oxi-image-button-hover-style-11 .oxi-image-hover-figure.bottom_to_top .overlayT{
+    right: 0%;
+    top: 0%;
+    -webkit-transform:  translateX(-50%) translateY(0%) skewX(45deg);
+    -moz-transform: translateX(-50%) translateY(0%) skewX(45deg);
+    -ms-transform:  translateX(-50%) translateY(0%) skewX(45deg);
+    -o-transform:  translateX(-50%) translateY(0%) skewX(45deg);
+    transform: translateX(-50%) translateY(0%) skewX(45deg);
+}
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover:hover .oxi-image-hover-figure.bottom_to_top .overlayT,
+.oxi-addons-container  .oxi-image-button-hover-style-11.oxi-image-hover.oxi-touch .oxi-image-hover-figure.bottom_to_top .overlayT{
+    transform: translateX(50%) translateY(0%) skewX(45deg);
+}

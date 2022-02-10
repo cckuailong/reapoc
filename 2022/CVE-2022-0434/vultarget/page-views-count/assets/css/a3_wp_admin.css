@@ -1,0 +1,29 @@
+/*-------------------------------------------------------------------------------------------*/
+/* WP Admin */
+/*-------------------------------------------------------------------------------------------*/
+@charset "UTF-8";
+
+@font-face {
+  font-family: "a3-sidebar-menu";
+  src:url("../fonts/a3-sidebar-menu.eot");
+  src:url("../fonts/a3-sidebar-menu.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/a3-sidebar-menu.woff") format("woff"),
+    url("../fonts/a3-sidebar-menu.ttf") format("truetype"),
+    url("../fonts/a3-sidebar-menu.svg#a3-sidebar-menu") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+#media-upload .ui-sortable .media-item {
+	clear:both;	
+}
+
+@media screen and ( max-width: 782px ) {
+	#media-items {
+		width:100%;	
+	}
+	.media-item .describe input[type="text"], .media-item .describe textarea {
+		width:100%;	
+	}
+}

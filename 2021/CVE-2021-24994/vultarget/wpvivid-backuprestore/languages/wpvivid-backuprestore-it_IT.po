@@ -1,0 +1,2192 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpvivid backup plugin\n"
+"Last-Translator: \n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-12 15:27+0000\n"
+"PO-Revision-Date: 2020-07-27 18:40+0800\n"
+"Language: it_IT\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.3; wp-5.4.1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-wpvivid-admin.php:100
+#: admin/class-wpvivid-admin.php:114
+#: admin/class-wpvivid-admin.php:635
+msgid "Backup & Restore"
+msgstr "Backup & Ripristino"
+
+#: admin/class-wpvivid-admin.php:123
+#: admin/class-wpvivid-admin.php:313
+#: admin/class-wpvivid-admin.php:653
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: admin/class-wpvivid-admin.php:139
+msgid "Current Version:"
+msgstr "Versione Corrente:"
+
+#: admin/class-wpvivid-admin.php:142
+msgid "ChangeLog"
+msgstr "ChangeLog"
+
+#: admin/class-wpvivid-admin.php:149
+msgid "Troubleshooting"
+msgstr "Risoluzione dei problemi"
+
+#: admin/class-wpvivid-admin.php:154
+msgid "Read <a href=\"https://wpvivid.com/troubleshooting-issues-wpvivid-backup-plugin\" target=\"_blank\">Troubleshooting page</a> for faster solutions."
+msgstr "Leggi <a href=\"https://wpvivid.com/troubleshooting-issues-wpvivid-backup-plugin\" target=\"_blank\">la pagina di Risoluzione dei problemi</a> per soluzioni più rapide."
+
+#: admin/class-wpvivid-admin.php:157
+msgid "Adjust <a href=\"https://wpvivid.com/wpvivid-backup-plugin-advanced-settings.html\" target=\"_blank\">Advanced Settings</a> for higher task success rate."
+msgstr "Configura le <a href=\"https://wpvivid.com/wpvivid-backup-plugin-advanced-settings.html\" target=\"_blank\">Impostazioni avanzate</a> per una percentuale più alta di successo nello svolgimento delle attività."
+
+#: admin/class-wpvivid-admin.php:164
+msgid "How-to"
+msgstr "Come fare"
+
+#: admin/class-wpvivid-admin.php:168
+msgid "WPvivid Backup Settings"
+msgstr "Impostazioni di Backup WPvivid "
+
+#: admin/class-wpvivid-admin.php:169
+msgid "Create a Manual Backup"
+msgstr "Crea un Backup Manuale"
+
+#: admin/class-wpvivid-admin.php:170
+msgid "Restore Your Site from a Backup"
+msgstr "Ripristina il tuo sito da un backup"
+
+#: admin/class-wpvivid-admin.php:171
+msgid "Migrate WordPress"
+msgstr "Migra WordPress"
+
+#: admin/class-wpvivid-admin.php:209
+msgid "Warning:"
+msgstr "Attenzione:"
+
+#: admin/class-wpvivid-admin.php:210
+msgid "Error:"
+msgstr "Errore:"
+
+#: admin/class-wpvivid-admin.php:211
+msgid "Warning: An alias for remote storage is required."
+msgstr "Attenzione: Un alias per l'archiviazione remota è necessario."
+
+#: admin/class-wpvivid-admin.php:212
+msgid "Warning: The alias already exists in storage list."
+msgstr "Attenzione: l'alias esiste già nella lista degli storage."
+
+#: admin/class-wpvivid-admin.php:213
+msgid "Calculating the size of files, folder and database timed out. If you continue to receive this error, please go to the plugin settings, uncheck 'Calculate the size of files, folder and database before backing up', save changes, then try again."
+msgstr "Il calcolo delle dimensioni dei file, delle cartelle e database è terminata a causa di un time out. Se si continua a ricevere questo errore, si prega di andare alle impostazioni dei plug-in, deselezionare 'Calcolare le dimensioni dei file, delle cartelle e database prima di eseguire il backup', salvare le modifiche, quindi provare di nuovo."
+
+#: admin/class-wpvivid-admin.php:346
+msgid "Migration is complete and htaccess file is replaced. In order to successfully complete the migration, you'd better reinstall 301 redirect plugin, firewall and security plugin, and caching plugin if they exist."
+msgstr "La migrazione è completa e il file htaccess è stato sostituito. Per completare con successo la migrazione, è meglio reinstallare il plugin 301 redirect, il plugin firewall e il plugin di sicurezza e il plugin di caching, se esistono."
+
+#: admin/class-wpvivid-admin.php:361
+msgid "Cheers! WPvivid Backup plugin has restored successfully your website. If you found WPvivid Backup plugin helpful, a 5-star rating would be highly appreciated, which motivates us to keep providing new features."
+msgstr "Evviva! WPvivid Backup plugin ha ripristinato con successo il tuo sito web. Se hai trovato WPvivid Backup plugin utile, una valutazione di 5 stelle sarebbe molto apprezzata, cosa che ci spinge a continuare a offrire nuove funzionalità."
+
+#: admin/class-wpvivid-admin.php:367
+msgid "Restore completed successfully."
+msgstr "Ripristino completato."
+
+#: admin/class-wpvivid-admin.php:454
+#: admin/class-wpvivid-admin.php:471
+msgid "Rate Us"
+msgstr "Votaci"
+
+#: admin/class-wpvivid-admin.php:455
+#: admin/class-wpvivid-admin.php:472
+msgid "Maybe Later"
+msgstr "Forse Più Tardi"
+
+#: admin/class-wpvivid-admin.php:456
+#: admin/class-wpvivid-admin.php:473
+msgid "Never"
+msgstr "Mai"
+
+#: admin/class-wpvivid-admin.php:509
+msgid "As Amazon S3 and DigitalOcean Space have upgraded their connection methods, please delete the previous connections and re-add your Amazon S3/DigitalOcean Space accounts to make sure the connections work."
+msgstr "Poiché Amazon S3 e DigitalOcean Space hanno aggiornato i loro metodi di connessione, si prega di cancellare le precedenti connessioni e ri-aggiungere i tuoi account tuo Amazon S3/DigitalOcean Space per assicurarti che le connessioni funzionino."
+
+#: admin/class-wpvivid-admin.php:561
+#, php-format
+msgid "The %s extension is not detected. Please install the extension first."
+msgstr "L'estensione %s non è stata rilevata. Si prega di installare prima l'estensione."
+
+#: admin/class-wpvivid-admin.php:564
+#, php-format
+msgid "The %s extensions are not detected. Please install the extensions first."
+msgstr "Le estensioni %s non sono state rilevate. Si prega di installare prima le estensioni."
+
+#: admin/class-wpvivid-admin.php:570
+msgid "Class PclZip is not detected. Please update or reinstall your WordPress."
+msgstr "Classe PclZip non rilevata. Si prega di aggiornare o reinstallare WordPress."
+
+#: admin/class-wpvivid-admin.php:575
+msgid "In order to execute the scheduled backups properly, please set the DISABLE_WP_CRON constant to false."
+msgstr "Per eseguire correttamente i backup pianificati, impostare la costante DISABLE_WP_CRON su false."
+
+#: admin/class-wpvivid-admin.php:641
+msgid "Schedule"
+msgstr "Pianificazione"
+
+#: admin/class-wpvivid-admin.php:647
+msgid "Remote Storage"
+msgstr "Archiviazione Remota"
+
+#: admin/class-wpvivid-admin.php:659
+msgid "Debug"
+msgstr "Debug"
+
+#: admin/class-wpvivid-admin.php:665
+msgid "Logs"
+msgstr "Logs"
+
+#: admin/class-wpvivid-admin.php:672
+#: admin/partials/wpvivid-backup-restore-page-display.php:130
+#: admin/partials/wpvivid-backup-restore-page-display.php:1505
+msgid "Log"
+msgstr "Registro"
+
+#: admin/class-wpvivid-admin.php:683
+msgid "MainWP"
+msgstr "MainWP"
+
+#: admin/class-wpvivid-admin.php:693
+msgid "Premium"
+msgstr "Premium"
+
+#: admin/class-wpvivid-admin.php:735
+#: admin/class-wpvivid-admin.php:822
+#: admin/partials/wpvivid-remote-storage-page-display.php:48
+msgid "Save Changes"
+msgstr "Salvare le modifiche"
+
+#: admin/class-wpvivid-admin.php:870
+msgid "There are two ways available to send us the debug information. The first one is recommended."
+msgstr "Ci sono due modi per inviarci le informazioni di debug. Il primo è raccomandato."
+
+#: admin/class-wpvivid-admin.php:872
+msgid "Method 1."
+msgstr "Metodo 1."
+
+#: admin/class-wpvivid-admin.php:872
+msgid "If you have configured SMTP on your site, enter your email address and click the button below to send us the relevant information (website info and errors logs) when you are encountering errors. This will help us figure out what happened. Once the issue is resolved, we will inform you by your email address."
+msgstr "Se è stato configurato l'SMTP sul tuo sito, inserisci il tuo indirizzo e-mail e fai clic sul pulsante qui sotto per inviarci le informazioni rilevanti (informazioni sul sito e gli errori di log) quando si verificano errori. Questo ci aiuterà a capire cosa è successo. Una volta risolto il problema, provvederemo ad informarti per tuo indirizzo e-mail."
+
+#: admin/class-wpvivid-admin.php:875
+msgid "WPvivid support email:"
+msgstr "Supporto e-mail di WPvivid :"
+
+#: admin/class-wpvivid-admin.php:876
+msgid "Your email:"
+msgstr "La tua email:"
+
+#: admin/class-wpvivid-admin.php:881
+msgid "I am using:"
+msgstr "Io sto utilizzando:"
+
+#: admin/class-wpvivid-admin.php:893
+msgid "My web hosting provider is:"
+msgstr "Il mio provider di web hosting è:"
+
+#: admin/class-wpvivid-admin.php:902
+msgid "Please describe your problem here."
+msgstr "Si prega di descrivere il problema qui."
+
+#: admin/class-wpvivid-admin.php:905
+msgid "Send Debug Information to Us"
+msgstr "Invia le Informazioni di Debug a Noi"
+
+#: admin/class-wpvivid-admin.php:909
+msgid "Method 2."
+msgstr "Metodo 2."
+
+#: admin/class-wpvivid-admin.php:909
+msgid "If you didn’t configure SMTP on your site, click the button below to download the relevant information (website info and error logs) to your PC when you are encountering some errors. Sending the files to us will help us diagnose what happened."
+msgstr "Se non hai configurato l'SMTP sul tuo sito, clicca sul pulsante qui sotto per scaricare le informazioni rilevanti (informazioni sul sito web e registri degli errori) sul tuo PC quando incontrate degli errori. L'invio dei file ci aiuterà a diagnosticare l'accaduto."
+
+#: admin/class-wpvivid-admin.php:912
+#: admin/partials/wpvivid-backup-restore-page-display.php:178
+msgid "Download"
+msgstr "Scarica"
+
+#: admin/class-wpvivid-admin.php:916
+msgid "Website Info Key"
+msgstr "Info Key del sito web"
+
+#: admin/class-wpvivid-admin.php:917
+msgid "Website Info Value"
+msgstr "Valore Info del sito web "
+
+#: admin/class-wpvivid-admin.php:1030
+msgid "Date"
+msgstr "Data"
+
+#: admin/class-wpvivid-admin.php:1031
+msgid "Log Type"
+msgstr "Tipo di Log"
+
+#: admin/class-wpvivid-admin.php:1032
+msgid "Log File Name"
+msgstr "Nome del File di Log"
+
+#: admin/class-wpvivid-admin.php:1033
+msgid "Action"
+msgstr "Azione"
+
+#: admin/class-wpvivid-admin.php:1045
+msgid " < Pre page "
+msgstr "< Pagina Precedente"
+
+#: admin/class-wpvivid-admin.php:1056
+msgid " Next page > "
+msgstr "Pagina Seguente >"
+
+#: admin/class-wpvivid-admin.php:1164
+msgid "If you are a MainWP user, you can set up and control WPvivid Backup Free and Pro for every child site directly from your MainWP dashboard, using our WPvivid Backup for MainWP extension."
+msgstr "Se sei un utente MainWP, puoi impostare e controllare WPvivid Backup Free e Pro per ogni sito child direttamente dalla Bacheca di MainWP, utilizzando la nostra estensione WPvivid Backup for MainWP."
+
+#: admin/class-wpvivid-admin.php:1167
+msgid "Download WPvivid Backup for MainWP"
+msgstr "Scarica WPvivid di Backup per MainWP"
+
+#: admin/class-wpvivid-admin.php:1170
+msgid "1. Create and download backups for a specific child site"
+msgstr "1. Crea e scarica i backup per un determinato sito child"
+
+#: admin/class-wpvivid-admin.php:1173
+msgid "2. Set backup schedules for all child sites"
+msgstr "2. Pianifica backup per tutti i siti child"
+
+#: admin/class-wpvivid-admin.php:1177
+msgid "3. Set WPvivid Backup Free and Pro settings for all child sites"
+msgstr "3. Configura le impostazioni di WPvivid Backup Free e Pro per tutti i siti child"
+
+#: admin/class-wpvivid-admin.php:1182
+msgid "4. Install, claim and update WPvivid Backup Pro for child sites in bulk"
+msgstr "4. Installa, attiva e aggiorna WPvivid Backup Pro in massa per i siti child"
+
+#: admin/class-wpvivid-admin.php:1187
+msgid "5. Set up remote storage for child sites in bulk (for WPvivid Backup Pro only)"
+msgstr "5. Imposta in massa l'archiviazione remota per i siti child (per WPvivid Backup Pro)."
+
+#: admin/class-wpvivid-admin.php:1192
+#, php-format
+msgid "We also offer a 40% off discount on WPvivid Backup Pro for MainWP users."
+msgstr "Offriamo anche uno sconto del 40% su WPvivid Backup Pro per gli utenti MainWP."
+
+#: admin/class-wpvivid-admin.php:1196
+msgid "Ask For A 40% OFF Discount"
+msgstr "Chiedi uno sconto del 40% di sconto"
+
+#: admin/class-wpvivid-admin.php:1219
+msgid "Pro Version Features"
+msgstr "Funzionalità della versione Pro"
+
+#: admin/class-wpvivid-admin.php:1220
+msgid "Basic"
+msgstr "Di base"
+
+#: admin/class-wpvivid-admin.php:1221
+msgid "Freelancer"
+msgstr "Freelance"
+
+#: admin/class-wpvivid-admin.php:1222
+msgid "Ultimate"
+msgstr "Ultimate"
+
+#: admin/class-wpvivid-admin.php:1228
+msgid "Websites"
+msgstr "Siti web"
+
+#: admin/class-wpvivid-admin.php:1229
+#: admin/class-wpvivid-admin.php:1230
+#: admin/class-wpvivid-admin.php:1231
+#: admin/class-wpvivid-admin.php:1232
+msgid "Backup:"
+msgstr "Backup:"
+
+#: admin/class-wpvivid-admin.php:1229
+#: admin/class-wpvivid-admin.php:1233
+msgid "Custom Content"
+msgstr "Contenuto Personalizzato"
+
+#: admin/class-wpvivid-admin.php:1230
+msgid "Incremental Backup"
+msgstr "Backup Incrementale"
+
+#: admin/class-wpvivid-admin.php:1231
+msgid "Create a restore point"
+msgstr "Crea un punto di ripristino"
+
+#: admin/class-wpvivid-admin.php:1232
+msgid "Include/exclude files/folders"
+msgstr "Includere/escludere i file e le cartelle"
+
+#: admin/class-wpvivid-admin.php:1233
+#: admin/class-wpvivid-admin.php:1234
+msgid "Migration:"
+msgstr "Migrazione:"
+
+#: admin/class-wpvivid-admin.php:1234
+msgid "Migration via remote storage"
+msgstr "Migrazione tramite archiviazione remota"
+
+#: admin/class-wpvivid-admin.php:1235
+#: admin/class-wpvivid-admin.php:1236
+msgid "Remote Storage:"
+msgstr "Archiviazione Remota:"
+
+#: admin/class-wpvivid-admin.php:1235
+msgid "Custom Directory (leading cloud storage providers)"
+msgstr "Directory personalizzata (fornitori leader di cloud storage)"
+
+#: admin/class-wpvivid-admin.php:1236
+msgid "WASABI/Pcloud (Only Pro)"
+msgstr "WASABI/Pcloud (Solo Pro)"
+
+#: admin/class-wpvivid-admin.php:1237
+#: admin/class-wpvivid-admin.php:1238
+#: admin/class-wpvivid-admin.php:1239
+#: admin/class-wpvivid-admin.php:1240
+msgid "Schedule:"
+msgstr "Pianificazione:"
+
+#: admin/class-wpvivid-admin.php:1237
+msgid "Incremental Backup Schedule"
+msgstr "Pianificazione Di Backup Incrementale"
+
+#: admin/class-wpvivid-admin.php:1238
+msgid "Custom Timezone"
+msgstr "Fuso Orario Personalizzato"
+
+#: admin/class-wpvivid-admin.php:1239
+msgid "Custom content for each schedule"
+msgstr "Contenuti personalizzati per ogni programma"
+
+#: admin/class-wpvivid-admin.php:1240
+msgid "Custom start time of schedule"
+msgstr "Orario personalizzato di inizio del programma "
+
+#: admin/class-wpvivid-admin.php:1241
+#: admin/class-wpvivid-admin.php:1242
+msgid "Restore:"
+msgstr "Ripristino:"
+
+#: admin/class-wpvivid-admin.php:1241
+msgid "Restore a website from remote storage"
+msgstr "Ripristina un sito web dallo storage remoto"
+
+#: admin/class-wpvivid-admin.php:1242
+msgid "Restore what you want from a backup"
+msgstr "Ripristina ciò che vuoi da un backup"
+
+#: admin/class-wpvivid-admin.php:1243
+msgid "Email Reports:"
+msgstr "Rapporti E-Mail:"
+
+#: admin/class-wpvivid-admin.php:1243
+msgid "Send email reports to multiple email addresses"
+msgstr "Invia rapporti e-mail a più indirizzi e-mail"
+
+#: admin/class-wpvivid-admin.php:1244
+#: admin/class-wpvivid-admin.php:1245
+msgid "Staging (add-on):"
+msgstr "Staging (add-on):"
+
+#: admin/class-wpvivid-admin.php:1244
+msgid "Create a sub-directory staging site with one-click"
+msgstr "Crea una sotto-cartella del sito di staging con un solo clic"
+
+#: admin/class-wpvivid-admin.php:1245
+msgid "Publish a staging site to a live site with one-click"
+msgstr "Pubblica un sito di staging su un sito live con un solo clic"
+
+#: admin/class-wpvivid-admin.php:1246
+msgid "Roles & Capabilities (add-on):"
+msgstr "Ruoli e capacità (add-on):"
+
+#: admin/class-wpvivid-admin.php:1246
+msgid "Display the individual sections according to user roles & capabilities"
+msgstr "Visualizza le singole sezioni in base ai ruoli e alle capacità dell'utente"
+
+#: admin/class-wpvivid-admin.php:1247
+msgid "Support:"
+msgstr "Supporto:"
+
+#: admin/class-wpvivid-admin.php:1247
+msgid "Ticket 7x24 support"
+msgstr "Ticket di supporto 7x24 "
+
+#: admin/class-wpvivid-admin.php:1250
+msgid "Up to 3 sites"
+msgstr "Fino a 3 siti"
+
+#: admin/class-wpvivid-admin.php:1272
+msgid "Up to 100 sites"
+msgstr "Fino a 100 siti"
+
+#: admin/class-wpvivid-admin.php:1294
+msgid "Unlimited"
+msgstr "Illimitato"
+
+#: admin/class-wpvivid-admin.php:1319
+msgid "*No credit card needed. Trial starts with the Free Trial plan with 2 sites. You can choose a plan at the end of the trial."
+msgstr "*Non è necessaria la carta di credito. La prova inizia con il piano di prova gratuita con 2 siti. È possibile scegliere un piano alla fine della prova."
+
+#: admin/class-wpvivid-admin.php:1320
+msgid "START 14-DAY FREE TRIAL"
+msgstr "INIZIA LA PROVA GRATUITA DI 14 GIORNI"
+
+#: admin/partials/wpvivid-admin-display.php:49
+msgid "WPvivid Backup Plugin"
+msgstr "WPvivid Backup Plugin"
+
+#: admin/partials/wpvivid-admin-display.php:63
+msgid "Warning: There is no default remote storage available for the scheduled backups, please set up it first."
+msgstr "Attenzione: non è disponibile uno storage remoto predefinito per i backup pianificati, si prega di impostarla prima."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:7
+#: admin/partials/wpvivid-schedule-page-display.php:126
+msgid "Database + Files (WordPress Files)"
+msgstr "Database + File (File Di WordPress)"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:11
+#: admin/partials/wpvivid-schedule-page-display.php:131
+msgid "WordPress Files (Exclude Database)"
+msgstr "File WordPress (Escludi database)"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:15
+#: admin/partials/wpvivid-schedule-page-display.php:136
+msgid "Only Database"
+msgstr "Solo Database"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:20
+msgid "Create a staging site"
+msgstr "Crea un sito di staging"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:23
+#: admin/partials/wpvivid-backup-restore-page-display.php:32
+#: admin/partials/wpvivid-schedule-page-display.php:24
+#: admin/partials/wpvivid-schedule-page-display.php:36
+#: admin/partials/wpvivid-schedule-page-display.php:98
+#: admin/partials/wpvivid-schedule-page-display.php:146
+msgid "Pro feature: learn more"
+msgstr "Funzionalità Pro: per saperne di più"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:29
+#: admin/partials/wpvivid-schedule-page-display.php:142
+msgid "Custom"
+msgstr "Personalizzato"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:100
+msgid "About backup download"
+msgstr "Riguardo il download dei backup "
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:102
+msgid "->If backups are stored in remote storage, our plugin will retrieve the backup to your web server first. This may take a little time depending on the size of backup files. Please be patient. Then you can download them to your PC."
+msgstr "->Se i backup sono memorizzati nello storage remoto, il nostro plugin recupererà prima il backup sul tuo server web. Questo può richiedere un po' di tempo a seconda della dimensione dei file di backup. Si prega di avere pazienza. Poi potrai scaricarli sul vostro PC."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:103
+msgid "->If backups are stored in web server, the plugin will list all relevant files immediately."
+msgstr "->Se i backup sono memorizzati nel server web, il plugin elencherà immediatamente tutti i file rilevanti."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:109
+msgid "How to restore your website from a backup(scheduled, manual, uploaded and received backup)"
+msgstr "Come ripristinare il vostro sito web da un backup(programmato, manuale, caricato e ricevuto)"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:123
+msgid "Backups"
+msgstr "Backup"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:141
+#: admin/partials/wpvivid-backup-restore-page-display.php:179
+#: admin/partials/wpvivid-backup-restore-page-display.php:892
+msgid "Restore"
+msgstr "Ripristina"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:176
+msgid "Backup"
+msgstr "Backup"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:177
+msgid "Storage"
+msgstr "Storage"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:180
+msgid "Delete"
+msgstr "Elimina"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:193
+msgid "Delete the selected backups"
+msgstr "Elimina i backup selezionati"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:725
+msgid "This backup is locked, are you sure to remove it? This backup will be deleted permanently from your hosting (localhost) and remote storages."
+msgstr "Questo backup è bloccato, sei sicuro di poterlo rimuovere? Questo backup sarà cancellato in modo permanente dal vostro hosting (localhost) e dai magazzini remoti."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:729
+msgid "Are you sure to remove this backup? This backup will be deleted permanently from your hosting (localhost) and remote storages."
+msgstr "Sei sicuro di voler rimuovere questo backup? Questo backup verrà eliminato in modo permanente dal tuo hosting (localhost) e storage remoto."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:734
+msgid "This request will delete the backup being downloaded, are you sure you want to continue?"
+msgstr "Questa richiesta cancellerà il backup in fase di download, sei sicuro di voler continuare?"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:773
+msgid "Please select at least one item."
+msgstr "Si prega di selezionare almeno un elemento."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:778
+msgid "This request might delete the backup being downloaded, are you sure you want to continue?"
+msgstr "Questa richiesta potrebbe cancellare il backup in fase di download, sei sicuro di voler continuare?"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:781
+msgid "Are you sure to remove the selected backups? These backups will be deleted permanently from your hosting (localhost)."
+msgstr "Sei sicuro di voler rimuovere il backup? Questi backup verranno eliminati in modo permanente dal tuo hosting (localhost)."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:842
+msgid "Step One: In the backup list, click the 'Restore' button on the backup you want to restore. This will bring up the restore tab"
+msgstr "Passo 1: Nell'elenco dei backup, fare clic sul pulsante 'Ripristina' del backup che si desidera ripristinare. In questo modo si aprirà la scheda di ripristino"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:843
+msgid "Step Two: Choose an option to complete restore, if any"
+msgstr "Fase Due: Scegliere una opzione per completare il ripristino, se presente"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:844
+msgid "Step Three: Click 'Restore' button"
+msgstr "Fase Tre: fare Clic su pulsante 'Ripristina' "
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:877
+msgid "Restore backup from:"
+msgstr "Ripristino backup da:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:878
+msgid "Please do not close the page or switch to other pages when a restore task is running, as it could trigger some unexpected errors."
+msgstr "Si prega di non chiudere la pagina o di non passare ad altre pagine quando è in corso un'attività di ripristino, in quanto potrebbe innescare alcuni errori imprevisti."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:879
+msgid "Restore function will replace the current site's themes, plugins, uploads, database and/or other content directories with the existing equivalents in the selected backup."
+msgstr "La funzione Ripristino sostituirà i temi, i plugin, gli upload, i database e/o altre directory di contenuti del sito corrente con gli equivalenti esistenti nel backup selezionato."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:882
+#, php-format
+msgid "Restore and replace the original domain (URL) with %s (migration)"
+msgstr "Ripristina e sostituisci il dominio originale (URL) con %s (migrazione)"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:885
+msgid "Restore and keep the original domain (URL) unchanged"
+msgstr "Ripristina e mantenere il dominio originale (URL) invariato"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:889
+#: admin/partials/wpvivid-backup-restore-page-display.php:1787
+msgid "Tips:"
+msgstr "Suggerimenti:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:889
+msgid "The plugin detects automatically either site restoration or migration (replacing the domain name) based on the current domain name. If the domain name in backup file is same as the current one, it starts restoring. On the contrary, restoring backup means to replace with the current domain name. The precondition is that the backup is created by version 0.9.21 or later."
+msgstr "Il plugin rileva automaticamente il ripristino del sito o la migrazione (sostituzione del nome a dominio) in base al nome a dominio corrente. Se il nome del dominio nel file di backup è uguale a quello attuale, inizia il ripristino. Al contrario, ripristinare il backup significa sostituire con il nome di dominio corrente. Il presupposto è che il backup venga creato dalla versione 0.9.21 o successiva."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:893
+msgid "Terminate"
+msgstr "Termina"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:894
+msgid "Rollback"
+msgstr "Rollback"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:896
+msgid "Retrieve the backup to localhost"
+msgstr "Recupera il backup su localhost"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:897
+msgid "The backup is stored on the remote storage, click on the button to download it to localhost."
+msgstr "Il backup viene memorizzato sullo storage remoto, fai clic sul pulsante per scaricarlo su localhost."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1489
+msgid "Database Size:"
+msgstr "Dimensione del database:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1490
+msgid "File Size:"
+msgstr "Dimensione del File:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1493
+#: admin/partials/wpvivid-settings-page-display.php:291
+msgid "Total Size:"
+msgstr "Dimensione Totale:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1494
+msgid "Uploaded:"
+msgstr "Caricato:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1495
+msgid "Speed:"
+msgstr "Velocità:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1498
+msgid "Network Connection:"
+msgstr "Connessione di rete:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1504
+msgid "Cancel"
+msgstr "Annulla"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1557
+msgid "Back Up Manually"
+msgstr "Esegui Il Backup Manualmente"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1559
+msgid "Export Content"
+msgstr "Esporta il contenuto"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1560
+msgid "new feature"
+msgstr "nuova funzionalità"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1563
+msgid "Local Storage Directory:"
+msgstr "Directory di storage locale:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1565
+msgid "rename directory"
+msgstr "rinomina directory"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1594
+msgid "Save Backups to Local"
+msgstr "Salva i backup in locale"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1598
+msgid "Send Backup to Remote Storage:"
+msgstr "Invia il backup allo storage remoto:"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1611
+msgid "Backup Now"
+msgstr "Esegui il Backup Ora"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1616
+msgid "This backup can only be deleted manually"
+msgstr "Questo backup può essere cancellato solo manualmente"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1787
+msgid "The settings are only for manual backup, which won't affect schedule settings."
+msgstr "Le impostazioni sono solo per il backup manuale, che non influisce sulle impostazioni di programmazione."
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1806
+msgid "Backup Schedule"
+msgstr "Pianifica il Backup"
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1808
+msgid "Schedule Status: "
+msgstr "Stato di Pianificazione: "
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1810
+msgid "Server Time: "
+msgstr "Ora del Server: "
+
+#: admin/partials/wpvivid-backup-restore-page-display.php:1812
+msgid "Next Backup: "
+msgstr "Backup Successivo: "
+
+#: admin/partials/wpvivid-remote-storage-page-display.php:6
+#: admin/partials/wpvivid-remote-storage-page-display.php:318
+msgid "Storages"
+msgstr "Storage"
+
+#: admin/partials/wpvivid-remote-storage-page-display.php:14
+#: admin/partials/wpvivid-remote-storage-page-display.php:320
+msgid "Storage Edit"
+msgstr "Modifica Storage"
+
+#: admin/partials/wpvivid-remote-storage-page-display.php:26
+#: admin/partials/wpvivid-remote-storage-page-display.php:327
+msgid "Please choose one storage to save your backups (remote storage)"
+msgstr "Scegli un solo storage per salvare i tuoi backup (storage remoto)"
+
+#: admin/partials/wpvivid-remote-storage-page-display.php:34
+#: admin/partials/wpvivid-remote-storage-page-display.php:335
+msgid "Storage Provider"
+msgstr "Storage Provider"
+
+#: admin/partials/wpvivid-remote-storage-page-display.php:35
+#: admin/partials/wpvivid-remote-storage-page-display.php:336
+msgid "Remote Storage Alias"
+msgstr "Archiviazione Remota Alias"
+
+#: admin/partials/wpvivid-remote-storage-page-display.php:36
+#: admin/partials/wpvivid-remote-storage-page-display.php:337
+msgid "Actions"
+msgstr "Azioni"
+
+#: admin/partials/wpvivid-schedule-page-display.php:7
+msgid "Schedule Settings"
+msgstr "Impostazioni Di Pianificazione"
+
+#: admin/partials/wpvivid-schedule-page-display.php:15
+msgid "Enable backup schedule"
+msgstr "Attiva la pianificazione del backup"
+
+#: admin/partials/wpvivid-schedule-page-display.php:20
+msgid "Enable Incremental Backup"
+msgstr "Attiva Il Backup Incrementale"
+
+#: admin/partials/wpvivid-schedule-page-display.php:32
+msgid "Advanced Schedule"
+msgstr "Pianificazione Avanzata"
+
+#: admin/partials/wpvivid-schedule-page-display.php:85
+msgid "Highlighted icon illuminates that you have choosed a remote storage to store backups"
+msgstr "L'icona evidenziata indica che è stata scelta uno storage remoto per memorizzare i backup"
+
+#: admin/partials/wpvivid-schedule-page-display.php:95
+msgid "+ Add another schedule"
+msgstr "+ Aggiungi un'altra pianificazione"
+
+#: admin/partials/wpvivid-schedule-page-display.php:117
+msgid "Scheduled job will start at <strong>UTC</strong> time:"
+msgstr "Il lavoro pianificato inizierà a <strong>UTC</strong> time:"
+
+#: admin/partials/wpvivid-schedule-page-display.php:118
+msgid "Being subjected to mechanisms of PHP, a scheduled backup task for your site will be triggered only when the site receives at least a visit at any page."
+msgstr "Essendo soggetto a meccanismi di PHP, un'attività di backup pianificata per il vostro sito verrà attivata solo quando il sito riceverà almeno una visita in qualsiasi pagina."
+
+#: admin/partials/wpvivid-settings-page-display.php:88
+msgid "backups retained"
+msgstr "backup conservati"
+
+#: admin/partials/wpvivid-settings-page-display.php:88
+msgid "Pro feature: Retain more backups"
+msgstr "Funzionalità Pro: conserva più copie di backup"
+
+#: admin/partials/wpvivid-settings-page-display.php:93
+msgid "Calculate the size of files, folder and database before backing up"
+msgstr "Calcola la dimensione dei file, delle cartelle e del database prima di eseguire il backup"
+
+#: admin/partials/wpvivid-settings-page-display.php:99
+msgid "Show WPvivid backup plugin on top admin bar"
+msgstr "Mostra WPvivid backup plugin in cima all'admin bar"
+
+#: admin/partials/wpvivid-settings-page-display.php:105
+msgid "Merge all the backup files into single package when a backup completes. This will save great disk spaces, though takes longer time. We recommended you check the option especially on sites with insufficient server resources."
+msgstr "Unisci tutti i file di backup in un unico pacchetto quando un backup è completato. In questo modo si risparmiano grandi spazi su disco, anche se ci vuole più tempo. Si consiglia di controllare l'opzione soprattutto su siti con risorse server insufficienti."
+
+#: admin/partials/wpvivid-settings-page-display.php:111
+msgid "Keep storing the backups in localhost after uploading to remote storage"
+msgstr "Continua a memorizzare i backup in localhost dopo l'upload nello storage remoto"
+
+#: admin/partials/wpvivid-settings-page-display.php:116
+msgid "Backup Folder"
+msgstr "Cartella Di Backup"
+
+#: admin/partials/wpvivid-settings-page-display.php:118
+msgid "Name your folder, this folder must be writable for creating backup files."
+msgstr "Dai un nome alla tua cartella, questa cartella deve essere scrivibile per la creazione di file di backup."
+
+#: admin/partials/wpvivid-settings-page-display.php:120
+msgid "Local storage directory:"
+msgstr "Directory di archiviazione locale:"
+
+#: admin/partials/wpvivid-settings-page-display.php:125
+msgid "Display domain(url) of current site in backup name. (e.g. domain_wpvivid-5ceb938b6dca9_2019-05-27-07-36_backup_all.zip)"
+msgstr "Visualizza il dominio(url) del sito corrente nel nome di backup. (ad esempio dominio_wpvivid-5ceb938b6dca9_2019-05-27-07-36_backup_all.zip)"
+
+#: admin/partials/wpvivid-settings-page-display.php:130
+msgid "Remove out-of-date backups"
+msgstr "Rimuovi i backup obsoleti"
+
+#: admin/partials/wpvivid-settings-page-display.php:134
+msgid "Web Server Directory:"
+msgstr "Directory Del Server Web:"
+
+#: admin/partials/wpvivid-settings-page-display.php:135
+msgid "Remote Storage Directory:"
+msgstr "Archiviazione Remota Directory:"
+
+#: admin/partials/wpvivid-settings-page-display.php:147
+msgid "Remove"
+msgstr "Rimuovere"
+
+#: admin/partials/wpvivid-settings-page-display.php:148
+msgid "The action is irreversible! It will remove all backups are out-of-date (including local web server and remote storage) if they exist."
+msgstr "L'azione è irreversibile! Rimuove tutti i backup non aggiornati (incluso il server web locale e l'archiviazione remota) se presenti."
+
+#: admin/partials/wpvivid-settings-page-display.php:208
+msgid "In order to use this function, please install a <strong><a target=\"_blank\" href=\"https://wpvivid.com/8-best-smtp-plugins-for-wordpress.html\" style=\"text-decoration: none;\">WordPress SMTP plugin</a></strong> of your preference and configure your SMTP server first. This is because WordPress uses the PHP Mail function to send its emails by default, which is not supported by many hosts and can cause issues if it is not set properly."
+msgstr "Per utilizzare questa funzione, si prega di installare un <strong><a target=\"_blank\" href=\"https://wpvivid.com/8-best-smtp-plugins-for-wordpress.html\" style=\"text-decoration: none;\">plugin di SMTP di WordPress </a></strong> di tua preferenza e configurare prima il tuo server SMTP. Questo perché WordPress utilizza la funzione PHP Mail per inviare le sue e-mail di default, che non è supportata da molti host e può causare problemi se non è impostata correttamente."
+
+#: admin/partials/wpvivid-settings-page-display.php:213
+msgid "Enable email report"
+msgstr "Attiva il report via e-mail"
+
+#: admin/partials/wpvivid-settings-page-display.php:227
+msgid "Test Email"
+msgstr "E-Mail di Prova"
+
+#: admin/partials/wpvivid-settings-page-display.php:232
+msgid "Always send an email notification when a backup is complete"
+msgstr "Invia sempre una mail di notifica quando il backup è completo"
+
+#: admin/partials/wpvivid-settings-page-display.php:236
+msgid "Only send an email notification when a backup fails"
+msgstr "Invia una notifica via e-mail solo quando un backup non riesce"
+
+#: admin/partials/wpvivid-settings-page-display.php:240
+msgid "Pro feature: Add another email address to get report"
+msgstr "Funzionalità Pro: aggiungi un altro indirizzo email per ottenere report"
+
+#: admin/partials/wpvivid-settings-page-display.php:287
+msgid "Web-server disk space in use by WPvivid"
+msgstr "Spazio su disco del server web in uso da WPvivid"
+
+#: admin/partials/wpvivid-settings-page-display.php:293
+msgid "Calculate Sizes"
+msgstr "Calcola Le Dimensioni"
+
+#: admin/partials/wpvivid-settings-page-display.php:298
+msgid "logs"
+msgstr "logs"
+
+#: admin/partials/wpvivid-settings-page-display.php:299
+#: admin/partials/wpvivid-settings-page-display.php:310
+#: admin/partials/wpvivid-settings-page-display.php:317
+msgid "Path:"
+msgstr "Percorso:"
+
+#: admin/partials/wpvivid-settings-page-display.php:305
+msgid "Backup Cache"
+msgstr "Backup Della Cache"
+
+#: admin/partials/wpvivid-settings-page-display.php:309
+msgid "Junk"
+msgstr "Spazzatura"
+
+#: admin/partials/wpvivid-settings-page-display.php:316
+msgid "Temporary Files"
+msgstr "File Temporanei"
+
+#: admin/partials/wpvivid-settings-page-display.php:318
+msgid "Temporary Files are created by wpvivid when restoring a website."
+msgstr "I file temporanei vengono creati da wpvivid durante il ripristino di un sito web."
+
+#: admin/partials/wpvivid-settings-page-display.php:322
+msgid "Empty"
+msgstr "Vuoto"
+
+#: admin/partials/wpvivid-settings-page-display.php:424
+msgid "Export"
+msgstr "Esporta"
+
+#: admin/partials/wpvivid-settings-page-display.php:425
+msgid "Click 'Export' button to save WPvivid settings on your local computer."
+msgstr "Clicca sul pulsante \"Esporta\" per salvare le impostazioni di WPvivid sul computer locale."
+
+#: admin/partials/wpvivid-settings-page-display.php:429
+msgid "Import"
+msgstr "Importazione"
+
+#: admin/partials/wpvivid-settings-page-display.php:430
+msgid "Importing the json file can help you set WPvivid's configuration on another wordpress site quickly."
+msgstr "L'importazione del file json può aiutare ad impostare rapidamente la configurazione di WPvivid su un altro sito WordPress."
+
+#: admin/partials/wpvivid-settings-page-display.php:550
+msgid "Enable the option when backup failed."
+msgstr "Attiva l'opzione quando il backup fallisce."
+
+#: admin/partials/wpvivid-settings-page-display.php:550
+msgid "Special optimization for web hosting/shared hosting"
+msgstr "Ottimizzazione speciale per il web hosting/hosting condiviso"
+
+#: admin/partials/wpvivid-settings-page-display.php:554
+msgid "Enable optimization mode for web hosting/shared hosting"
+msgstr "Attiva la modalità di ottimizzazione per il web hosting/hosting condiviso"
+
+#: admin/partials/wpvivid-settings-page-display.php:557
+msgid "Enabling this option can improve the backup success rate, but it will take more time for backup."
+msgstr "L'attivazione di questa opzione consente di migliorare il tasso di successo del backup, ma richiede più tempo per il backup."
+
+#: admin/partials/wpvivid-settings-page-display.php:564
+msgid "Database access method."
+msgstr "Metodo di accesso al database."
+
+#: admin/partials/wpvivid-settings-page-display.php:569
+msgid "WPDB option has a better compatibility, but the speed of backup and restore is slower."
+msgstr "L'opzione WPDB ha una migliore compatibilità, ma la velocità di backup e ripristino è più lenta."
+
+#: admin/partials/wpvivid-settings-page-display.php:575
+msgid "It is recommended to choose PDO option if pdo_mysql extension is installed on your server, which lets you backup and restore your site faster."
+msgstr "Si consiglia di scegliere l'opzione PDO se l'estensione pdo_mysql è installata sul vostro server, che consente di eseguire il backup e il ripristino del sito più velocemente."
+
+#: admin/partials/wpvivid-settings-page-display.php:583
+msgid "It will cause a lower CPU Usage and is recommended in a web hosting/ shared hosting environment."
+msgstr "Ciò comporterà un minore utilizzo della CPU e non è raccomandato in un web hosting/ ambiente di hosting condiviso."
+
+#: admin/partials/wpvivid-settings-page-display.php:583
+msgid "Only Archive without compressing"
+msgstr "Solo archivio senza compressione"
+
+#: admin/partials/wpvivid-settings-page-display.php:587
+msgid "It will cause a higher CPU Usage and is recommended in a VPS/ dedicated hosting environment."
+msgstr "Provocherà un maggiore utilizzo della CPU ed è raccomandato in un ambiente di hosting dedicato o VPS."
+
+#: admin/partials/wpvivid-settings-page-display.php:587
+msgid "Compress and Archive"
+msgstr "Comprimi e Archivia"
+
+#: admin/partials/wpvivid-settings-page-display.php:596
+msgid "Compress Files Every"
+msgstr "Comprimi ogni File"
+
+#: admin/partials/wpvivid-settings-page-display.php:599
+msgid "Some web hosting providers limit large zip files (e.g. 200MB), and therefore splitting your backup into many parts is an ideal way to avoid hitting the limitation if you are running a big website.  Please try to adjust the value if you are encountering backup errors. If you use a value of 0 MB, any backup files won't be split."
+msgstr "Alcuni fornitori di web hosting limitano i file zip di grandi dimensioni (ad esempio 200 MB), e quindi dividere il backup in molte parti è un modo ideale per evitare di colpire la limitazione se si esegue un grande sito web.  Si prega di provare a regolare tale valore se si riscontrano errori di backup. Se si utilizza un valore di 0 MB, i file di backup non verranno divisi."
+
+#: admin/partials/wpvivid-settings-page-display.php:601
+msgid "Exclude the files which are larger than"
+msgstr "Escludi i file che sono più grandi di"
+
+#: admin/partials/wpvivid-settings-page-display.php:604
+msgid "Using the option will ignore the file larger than the certain size in MB when backing up, '0' (zero) means unlimited."
+msgstr "Usando l'opzione si ignorerà il file più grande della dimensione determinata in MB durante il backup, '0' (zero) significa illimitato."
+
+#: admin/partials/wpvivid-settings-page-display.php:606
+msgid "PHP script execution timeout for backup"
+msgstr "Timeout di esecuzione dello script PHP per il backup"
+
+#: admin/partials/wpvivid-settings-page-display.php:609
+msgid "The time-out is not your server PHP time-out. With the execution time exhausted, our plugin will shut the process of backup down. If the progress of backup encounters a time-out, that means you have a medium or large sized website, please try to scale the value bigger."
+msgstr "Il time-out non è il time-out del vostro server PHP. Con il tempo di esecuzione esaurito, il nostro plugin interromperà il processo di backup. Se l'avanzamento del backup incontra un time-out, ciò significa che hai un sito web di medie o grandi dimensioni, prova ad aumentare il valore."
+
+#: admin/partials/wpvivid-settings-page-display.php:611
+msgid "PHP script execution timeout for restore"
+msgstr "Timeout di esecuzione dello script PHP per il ripristino"
+
+#: admin/partials/wpvivid-settings-page-display.php:614
+msgid "The time-out is not your server PHP time-out. With the execution time exhausted, our plugin will shut the process of restore down. If the progress of restore encounters a time-out, that means you have a medium or large sized website, please try to scale the value bigger."
+msgstr "Il time-out non è il time-out del vostro server PHP. Con il tempo di esecuzione esaurito, il nostro plugin chiuderà il processo di ripristino. Se il processo di ripristino incontra un time-out, ciò significa che avete un sito web di medie o grandi dimensioni, prova ad aumentare il valore."
+
+#: admin/partials/wpvivid-settings-page-display.php:616
+msgid "PHP Memory Limit for backup"
+msgstr "Limite di memoria PHP per il backup"
+
+#: admin/partials/wpvivid-settings-page-display.php:619
+msgid "Adjust this value to apply for a temporary PHP memory limit for WPvivid backup plugin to run a backup. We set this value to 256M by default. Increase the value if you encounter a memory exhausted error. Note: some web hosting providers may not support this."
+msgstr "Regola questo valore da applicare temporaneamente a PHP memory limit per WPvivid backup plugin nel processo di ripristino. Per impostazione predefinita abbiamo regolato questo valore a 256M. Aumenta il valore se si verifica un errore di memoria esaurita,. Nota: per alcuni provider di web hosting questo valore non può essere modificato."
+
+#: admin/partials/wpvivid-settings-page-display.php:621
+msgid "PHP Memory Limit for restoration"
+msgstr "Limite di memoria PHP per il ripristino"
+
+#: admin/partials/wpvivid-settings-page-display.php:624
+msgid "Adjust this value to apply for a temporary PHP memory limit for WPvivid backup plugin in restore process. We set this value to 256M by default. Increase the value if you encounter a memory exhausted error. Note: some web hosting providers may not support this."
+msgstr "Regola questo valore da applicare temporaneamente a PHP memory limit per WPvivid backup plugin nel processo di ripristino. Per impostazione predefinita abbiamo regolato questo valore a 256M. Aumenta il valore se si verifica un errore di memoria esaurita,. Nota: per alcuni provider di web hosting questo valore non può essere modificato."
+
+#: admin/partials/wpvivid-settings-page-display.php:626
+msgid "Chunk Size"
+msgstr "Dimensione del Blocco"
+
+#: admin/partials/wpvivid-settings-page-display.php:629
+msgid "e.g.  if you choose a chunk size of 2MB, a 8MB file will use 4 chunks. Decreasing this value will break the ISP's transmission limit, for example:512KB"
+msgstr "ad esempio, se si sceglie una dimensione del blocco di 2MB, un file da 8MB userà 4 blocchi. Ridurre questo valore per spezzare il limite di trasmissione ISP, ad esempio:512 KB"
+
+#: admin/partials/wpvivid-settings-page-display.php:643
+#, php-format
+msgid "<strong>Retrying </strong>%s<strong> times when encountering a time-out error</strong>"
+msgstr "<strong>Riprovando </strong>%s<strong>volte</strong> quando si verifica un errore di timeout</strong>"
+
+#: admin/partials/wpvivid-settings-page-display.php:659
+msgid "General Settings"
+msgstr "Impostazioni Generali"
+
+#: admin/partials/wpvivid-settings-page-display.php:665
+msgid "Advanced Settings"
+msgstr "Impostazioni Avanzate"
+
+#: includes/class-wpvivid-backup-uploader.php:493
+msgid "Tips: Click the button below to scan all uploaded or received backups in directory"
+msgstr "Suggerimenti: Fare clic sul pulsante qui sotto per scansionare tutti i backup caricati o ricevuti nella directory"
+
+#: includes/class-wpvivid-backup-uploader.php:496
+msgid "Scan uploaded backup or received backup"
+msgstr "Scansiona backup caricato o ricevuto"
+
+#: includes/class-wpvivid-backup-uploader.php:543
+msgid "Drop files here"
+msgstr "Rilascia i file qui"
+
+#: includes/class-wpvivid-backup-uploader.php:545
+msgid "Select Files"
+msgstr "Selezionare i File"
+
+#: includes/class-wpvivid-backup.php:1062
+msgid "Ready to backup. Progress: 0%, running time: 0second."
+msgstr "Pronti per il backup. Progressi: 0%, tempo di esecuzione: 0 secondi."
+
+#: includes/class-wpvivid-backup.php:1097
+#: includes/class-wpvivid-backup.php:1110
+#: includes/class-wpvivid-export-import.php:1308
+msgid "Progress: "
+msgstr "Avanzamento:"
+
+#: includes/class-wpvivid-backup.php:1097
+#: includes/class-wpvivid-backup.php:1110
+#: includes/class-wpvivid-export-import.php:1308
+msgid "running time: "
+msgstr "tempo di esecuzione: "
+
+#: includes/class-wpvivid-backup.php:1116
+#: includes/class-wpvivid-backup.php:1133
+#: includes/class-wpvivid-function-realize.php:42
+msgid "The backup will be canceled after backing up the current chunk ends."
+msgstr "Il backup sarà annullato dopo aver eseguito il backup delle parti correnti."
+
+#: includes/class-wpvivid-backup.php:2256
+#, php-format
+msgid "Start backing up %s."
+msgstr "Avvia il backup di %s."
+
+#: includes/class-wpvivid-backup.php:2264
+#, php-format
+msgid "Backing up %s finished."
+msgstr "Il backup di %s finito."
+
+#: includes/class-wpvivid-export-import.php:65
+#: includes/class-wpvivid-export-import.php:78
+msgid "Export & Import"
+msgstr "Esporta & Importa"
+
+#: includes/class-wpvivid-export-import.php:119
+msgid "Export posts or pages with images in bulk."
+msgstr "Esporta in massa i post o le pagine con immagini."
+
+#: includes/class-wpvivid-export-import.php:121
+#: includes/class-wpvivid-export-import.php:1515
+msgid "Learn more"
+msgstr "Per saperne di più"
+
+#: includes/class-wpvivid-export-import.php:124
+msgid "This will contain all of your posts, pages, comments, terms and images (original images, featured images and thumbnails)."
+msgstr "Questo conterrà tutti i vostri post, pagine, commenti, termini e immagini (immagini originali, immagini in primo piano e miniature)."
+
+#: includes/class-wpvivid-export-import.php:125
+#: includes/class-wpvivid-export-import.php:1518
+msgid "Note:"
+msgstr "Nota:"
+
+#: includes/class-wpvivid-export-import.php:125
+msgid "Try to select fewer items when you are facing a shortage of server resources (typically presented as a timeout error)."
+msgstr "Provare a selezionare un numero inferiore di elementi quando si trovano di fronte a una carenza di risorse del server (in genere presentato come un errore di timeout)."
+
+#: includes/class-wpvivid-export-import.php:135
+#, php-format
+msgid "Exported files will be temporarily stored in %s directory"
+msgstr "I file esportati saranno temporaneamente memorizzati nella directory %s"
+
+#: includes/class-wpvivid-export-import.php:141
+msgid "Choose post type"
+msgstr "Scegli il tipo di post"
+
+#: includes/class-wpvivid-export-import.php:147
+msgid "Post"
+msgstr "Post"
+
+#: includes/class-wpvivid-export-import.php:150
+msgid "Page"
+msgstr "Pagina"
+
+#: includes/class-wpvivid-export-import.php:153
+msgid "More post types coming soon..."
+msgstr "Altri tipi di post in arrivo..."
+
+#: includes/class-wpvivid-export-import.php:158
+#: includes/class-wpvivid-export-import.php:181
+msgid "Next Step"
+msgstr "Prossimo passo"
+
+#: includes/class-wpvivid-export-import.php:623
+msgid "Choose what to export"
+msgstr "Scegli ciò che vuoi esportare"
+
+#: includes/class-wpvivid-export-import.php:631
+msgid "Filter Posts/Pages"
+msgstr "Filtro Messaggi/Pagine"
+
+#: includes/class-wpvivid-export-import.php:650
+msgid "All Categories"
+msgstr "Tutte le Categorie"
+
+#: includes/class-wpvivid-export-import.php:660
+#, php-format
+msgid "Export %s of all categories or a specific category."
+msgstr "Esporta %s tutte le categorie o una categoria specifica."
+
+#: includes/class-wpvivid-export-import.php:680
+msgid "All Authors"
+msgstr "Tutti gli Autori"
+
+#: includes/class-wpvivid-export-import.php:691
+#, php-format
+msgid "Export %s of all authors or a specific author."
+msgstr "Esporta %s di tutti gli autori o un autore specifico."
+
+#: includes/class-wpvivid-export-import.php:703
+#: includes/class-wpvivid-export-import.php:724
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Seleziona &mdash;"
+
+#: includes/class-wpvivid-export-import.php:712
+#, php-format
+msgid "Export %s published after this date."
+msgstr "Esporta %s\", pubblicati dopo questa data."
+
+#: includes/class-wpvivid-export-import.php:733
+#, php-format
+msgid "Export %s published before this date."
+msgstr "Esportare %s pubblicati prima di questa data."
+
+#: includes/class-wpvivid-export-import.php:769
+msgid "Search"
+msgstr "Ricerca"
+
+#: includes/class-wpvivid-export-import.php:776
+#, php-format
+msgid "Search for %s according to the above rules."
+msgstr "Ricerca per %s secondo le regole di cui sopra."
+
+#: includes/class-wpvivid-export-import.php:789
+msgid "Comment the export (optional)"
+msgstr "Commenta l'esportazione (opzionale)"
+
+#: includes/class-wpvivid-export-import.php:794
+msgid "Comment the export: "
+msgstr "Commenta l'esportazione: "
+
+#: includes/class-wpvivid-export-import.php:798
+msgid "Only letters (except for wpvivid) and numbers are allowed."
+msgstr "Sono ammesse solo lettere (eccetto per wpvivid) e numeri."
+
+#: includes/class-wpvivid-export-import.php:802
+msgid "Sample:"
+msgstr "Campione:"
+
+#: includes/class-wpvivid-export-import.php:811
+msgid "Export and Download"
+msgstr "Esporta e Scarica"
+
+#: includes/class-wpvivid-export-import.php:1116
+msgid "Empty post id"
+msgstr "Post id vuoto "
+
+#: includes/class-wpvivid-export-import.php:1123
+#: includes/class-wpvivid-export-import.php:1159
+msgid "A task is already running. Please wait until the running task is complete, and try again."
+msgstr "Un task è già in esecuzione. Si prega di attendere fino a quando il task in esecuzione sia completato, e di provare di nuovo."
+
+#: includes/class-wpvivid-export-import.php:1149
+msgid "Error occurred while parsing the request data. Please try to run export task again."
+msgstr "Si è verificato un errore durante l'analisi dei dati della richiesta. Si prega di provare a eseguire di nuovo l'attività di esportazione."
+
+#: includes/class-wpvivid-export-import.php:1304
+msgid "Ready to export. Progress: 0%, running time: 0second."
+msgstr "Pronto per l'esportazione. Progressi: 0%, tempo di esecuzione: 0 secondi."
+
+#: includes/class-wpvivid-export-import.php:1316
+msgid "The export task is not responding."
+msgstr "Il task di esportazione non risponde."
+
+#: includes/class-wpvivid-export-import.php:1341
+msgid "Export error:"
+msgstr "Errore di esportazione:"
+
+#: includes/class-wpvivid-export-import.php:1375
+msgid "Task time out."
+msgstr "Task time out."
+
+#: includes/class-wpvivid-export-import.php:1482
+msgid "File size not match. please retry again."
+msgstr "La dimensione del file non corrisponde. Riprovare di nuovo."
+
+#: includes/class-wpvivid-export-import.php:1488
+msgid "File not found. please retry again."
+msgstr "File non trovato. si prega di riprovare di nuovo."
+
+#: includes/class-wpvivid-export-import.php:1513
+msgid "Import posts or pages with images in bulk."
+msgstr "Importa in massa post o pagine con immagini."
+
+#: includes/class-wpvivid-export-import.php:1519
+msgid "To properly display the imported content, please make sure that the importing and exporting sites have the same environment, for example, same theme or pages built with the same page builder."
+msgstr "Per visualizzare correttamente il contenuto importato, si prega di assicurarsi che l'importazione e l'esportazione siti abbiano lo stesso ambiente, per esempio, lo stesso tema o pagine costruite con lo page-builder."
+
+#: includes/class-wpvivid-export-import.php:1528
+#, php-format
+msgid "Imported files will be temporarily stored in directory %s"
+msgstr "I file importati saranno temporaneamente memorizzati nella directory %s"
+
+#: includes/class-wpvivid-export-import.php:1529
+msgid "Delete Exported Files In Folder"
+msgstr "Elimina I file esportati nella Cartella"
+
+#: includes/class-wpvivid-export-import.php:1534
+msgid "Choose an export from your computer to import: "
+msgstr "Scegli dal computer un'esportazione da importare: "
+
+#: includes/class-wpvivid-export-import.php:1535
+msgid "Upload and Import"
+msgstr "Carica e Importa"
+
+#: includes/class-wpvivid-export-import.php:1538
+#, php-format
+msgid "Or you can use ftp to upload the export to the directory %s. Then click the button below to scan the file to import."
+msgstr "Oppure puoi usare ftp per caricare il file di esportazione nella directory %s. Quindi clicca sul pulsante qui sotto per scansionare il file da importare."
+
+#: includes/class-wpvivid-export-import.php:1539
+msgid "Scan Uploaded Exports"
+msgstr "Scansiona Esportazioni Caricate"
+
+#: includes/class-wpvivid-export-import.php:1543
+msgid "The importing file info"
+msgstr "Le informazioni sul file di importazione"
+
+#: includes/class-wpvivid-export-import.php:1546
+msgid "Assign author"
+msgstr "Assegna un autore"
+
+#: includes/class-wpvivid-export-import.php:1548
+msgid "Select an existing author:"
+msgstr "Selezionare un autore esistente:"
+
+#: includes/class-wpvivid-export-import.php:1549
+msgid "- Select -"
+msgstr "- Seleziona -"
+
+#: includes/class-wpvivid-export-import.php:1551
+msgid "Import Setting"
+msgstr "Impostazione di Importazione"
+
+#: includes/class-wpvivid-export-import.php:1555
+msgid "Overwrite existing pages"
+msgstr "Sovrascrivere le pagine esistenti"
+
+#: includes/class-wpvivid-export-import.php:1559
+msgid "With this option checked, Pages/posts already existing will be overwritten with the updated ones in an import."
+msgstr "Con questa opzione selezionata, le pagine/pubbliche già esistenti saranno sovrascritte con quelle aggiornate in un'importazione."
+
+#: includes/class-wpvivid-export-import.php:1561
+msgid "Start to Import"
+msgstr "Inizia l'Importazione"
+
+#: includes/class-wpvivid-export-import.php:1562
+msgid "Back to Import Page"
+msgstr "Torna alla Pagina di Importazione"
+
+#: includes/class-wpvivid-exporter.php:71
+#: includes/class-wpvivid-importer.php:50
+msgid "Select All"
+msgstr "Seleziona Tutto"
+
+#: includes/class-wpvivid-exporter.php:118
+msgid "Author"
+msgstr "Autore"
+
+#: includes/class-wpvivid-exporter.php:150
+msgid "Comments"
+msgstr "Commenti"
+
+#: includes/class-wpvivid-exporter.php:265
+msgid "Unpublished"
+msgstr "Inedito"
+
+#: includes/class-wpvivid-exporter.php:275
+#, php-format
+msgid "%s ago"
+msgstr "%s fa"
+
+#: includes/class-wpvivid-exporter.php:282
+msgid "Published"
+msgstr "Pubblicato"
+
+#: includes/class-wpvivid-exporter.php:285
+msgid "Missed schedule"
+msgstr "Programmazione mancata"
+
+#: includes/class-wpvivid-exporter.php:287
+msgid "Scheduled"
+msgstr "Pianificate"
+
+#: includes/class-wpvivid-exporter.php:290
+msgid "Last Modified"
+msgstr "Ultima Modifica"
+
+#: includes/class-wpvivid-exporter.php:548
+#: includes/class-wpvivid-importer.php:304
+msgid "First page"
+msgstr "Prima pagina"
+
+#: includes/class-wpvivid-exporter.php:559
+#: includes/class-wpvivid-importer.php:315
+msgid "Previous page"
+msgstr "Pagina precedente"
+
+#: includes/class-wpvivid-exporter.php:566
+#: includes/class-wpvivid-exporter.php:570
+#: includes/class-wpvivid-importer.php:322
+#: includes/class-wpvivid-importer.php:326
+msgid "Current Page"
+msgstr "Pagina Corrente"
+
+#: includes/class-wpvivid-exporter.php:584
+#: includes/class-wpvivid-importer.php:340
+msgid "Next page"
+msgstr "Pagina successiva"
+
+#: includes/class-wpvivid-exporter.php:594
+#: includes/class-wpvivid-importer.php:350
+msgid "Last page"
+msgstr "Ultima pagina"
+
+#: includes/class-wpvivid-function-realize.php:65
+#: includes/class-wpvivid-function-realize.php:93
+msgid "Retrieving the backup information failed while showing log. Please try again later."
+msgstr "Il recupero delle informazioni di backup non è riuscito mentre si mostrava il log. Riprovare più tardi."
+
+#: includes/class-wpvivid-function-realize.php:70
+#: includes/class-wpvivid-function-realize.php:82
+#: includes/class-wpvivid-function-realize.php:99
+msgid "The log not found."
+msgstr "Log non trovato."
+
+#: includes/class-wpvivid-importer.php:86
+msgid "File Name"
+msgstr "Nome del File"
+
+#: includes/class-wpvivid-importer.php:87
+msgid "Post Types"
+msgstr "Tipi di post"
+
+#: includes/class-wpvivid-importer.php:88
+msgid "Count"
+msgstr "Conta"
+
+#: includes/class-wpvivid-importer.php:89
+msgid "Media Files Size"
+msgstr "Dimensione dei file multimediali"
+
+#: includes/class-wpvivid-importer.php:167
+msgid "Type: "
+msgstr "Tipo: "
+
+#: includes/class-wpvivid-importer.php:1669
+msgid "File not exist, file:"
+msgstr "Il File non esiste, file:"
+
+#: includes/class-wpvivid-importer.php:1676
+#: includes/class-wpvivid-importer.php:1777
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr "Mi dispiace, questo tipo di file non è consentito per motivi di sicurezza."
+
+#: includes/class-wpvivid-importer.php:1724
+msgid "Fetching attachments is not enabled"
+msgstr "Il recupero degli allegati non è abilitato"
+
+#: includes/class-wpvivid-importer.php:1737
+msgid "Invalid file type"
+msgstr "Tipo di file non valido"
+
+#: includes/class-wpvivid-importer.php:1782
+msgid "File not exist file:"
+msgstr "File non esiste file:"
+
+#: includes/class-wpvivid-importer.php:1877
+#: includes/class-wpvivid-importer.php:1913
+#: includes/class-wpvivid-importer.php:1921
+msgid "There was an error when reading this WXR file"
+msgstr "Si è verificato un errore durante la lettura di questo file WXR"
+
+#: includes/class-wpvivid-importer.php:1878
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr "I dettagli sono riportati sopra. L'importatore ora riproverà con un altro parser..."
+
+#: includes/class-wpvivid-importer.php:1925
+#: includes/class-wpvivid-importer.php:1930
+#: includes/class-wpvivid-importer.php:2155
+#: includes/class-wpvivid-importer.php:2351
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr "Questo non sembra essere un file WXR, numero di versione WXR mancante/non valido"
+
+#: includes/class-wpvivid-interface-mainwp.php:138
+msgid "Error occurred while parsing the request data. Please try to run backup again."
+msgstr "Si è verificato un errore durante l'analisi dei dati della richiesta. Si prega di provare a eseguire di nuovo il backup."
+
+#: includes/class-wpvivid-interface-mainwp.php:182
+#: includes/class-wpvivid-interface-mainwp.php:220
+#: includes/class-wpvivid-interface-mainwp.php:273
+msgid "Unable to open the log file."
+msgstr "Impossibile aprire il file di registro."
+
+#: includes/class-wpvivid-interface-mainwp.php:211
+msgid "Reading the log failed. Please try again."
+msgstr "La lettura del registro dei log non è riuscita. Riprovare."
+
+#: includes/class-wpvivid-mail-report.php:558
+msgid "Unable to send email. Please check the configuration of email server."
+msgstr "Impossibile inviare e-mail. Si prega di controllare la configurazione del server di posta elettronica."
+
+#: includes/class-wpvivid-migrate.php:49
+msgid "Auto-Migration"
+msgstr "Auto-Migrazione"
+
+#: includes/class-wpvivid-migrate.php:55
+msgid "Key"
+msgstr "Chiave"
+
+#: includes/class-wpvivid-migrate.php:390
+msgid "In order to allow another site to send a backup to this site, please generate a key below. Once the key is generated, this site is ready to receive a backup from another site. Then, please copy and paste the key in sending site and save it."
+msgstr "Per consentire ad un altro sito di inviare un backup a questo sito, si prega di generare una chiave qui sotto. Una volta generata la chiave, questo sito è pronto a ricevere un backup da un altro sito. Quindi, si prega di copiare e incollare la chiave nel sito di invio e salvarla."
+
+#: includes/class-wpvivid-migrate.php:392
+msgid "The key will expire in "
+msgstr "La chiave scadrà in "
+
+#: includes/class-wpvivid-migrate.php:399
+msgid "Tips: For security reason, please choose an appropriate expiration time for the key."
+msgstr "Suggerimenti: Per motivi di sicurezza, si prega di scegliere un tempo di scadenza appropriato per la chiave."
+
+#: includes/class-wpvivid-migrate.php:401
+msgid "Generate"
+msgstr "Genera"
+
+#: includes/class-wpvivid-migrate.php:850
+msgid "Please paste the key below."
+msgstr "Si prega di incollare la chiave qui di seguito."
+
+#: includes/class-wpvivid-migrate.php:850
+msgid "How to get a site key?"
+msgstr "Come ottenere una site key?"
+
+#: includes/class-wpvivid-migrate.php:853
+msgid "Save"
+msgstr "Salva"
+
+#: includes/class-wpvivid-migrate.php:969
+msgid "1. Visit Key tab page of WPvivid backup plugin of destination site."
+msgstr "1. Visita la scheda Chiave nella pagina di WPvivid backup plugin del sito di destinazione."
+
+#: includes/class-wpvivid-migrate.php:970
+msgid "2. Generate a key by clicking Generate button and copy it."
+msgstr "2. Genera una chiave cliccando il pulsante Genera e copialo."
+
+#: includes/class-wpvivid-migrate.php:971
+msgid "3. Go back to this page and paste the key in key box below. Lastly, click Save button."
+msgstr "3. Torna a questa pagina e incolla il codice nella casella chiave sottostante. Infine, fai clic su Salva."
+
+#: includes/class-wpvivid-migrate.php:985
+msgid "The feature can help you transfer a Wordpress site to a new domain(site). It would be a convenient way to migrate your WP site from dev environment to live server or from old server to the new."
+msgstr "La funzione può aiutare a trasferire un sito Wordpress su un nuovo dominio (sito). Sarebbe un modo conveniente per migrare il vostro sito WP dall'ambiente dev al live server o dal vecchio server al nuovo."
+
+#: includes/class-wpvivid-migrate.php:995
+msgid "Choose the content you want to transfer"
+msgstr "Scegli il contenuto che vuoi trasferire"
+
+#: includes/class-wpvivid-migrate.php:1010
+msgid "Clone then Transfer"
+msgstr "Clona e Trasferisci"
+
+#: includes/class-wpvivid-migrate.php:1090
+msgid "Note: "
+msgstr "Nota: "
+
+#: includes/class-wpvivid-migrate.php:1091
+msgid "1. In order to successfully complete the migration, you'd better deactivate <a href=\"https://wpvivid.com/best-redirect-plugins.html\" target=\"_blank\" style=\"text-decoration: none;\">301 redirect plugin</a>, <a href=\"https://wpvivid.com/8-best-wordpress-firewall-plugins.html\" target=\"_blank\" style=\"text-decoration: none;\">firewall and security plugin</a>, and <a href=\"https://wpvivid.com/best-free-wordpress-caching-plugins.html\" target=\"_blank\" style=\"text-decoration: none;\">caching plugin</a> (if they exist) before transferring website."
+msgstr "1. Per completare con successo la migrazione, è meglio disattivare <a href=\"https://wpvivid.com/best-redirect-plugins.html\" target=\"_blank\" style=\"text-decoration: none;\">plugin di reindirizzamento 301</a>, <a href=\"https://wpvivid.com/8-best-wordpress-firewall-plugins. html\" target=\"_blank\" style=\"text-decoration: nessuno;\">firewall e plugin di sicurezza</a>, e <a href=\"https://wpvivid.com/best-free-wordpress-caching-plugins.html\" target=\"_blank\" style=\"text-decoration: nessuno;\">plugin di caching</a> (se esistono) prima di trasferire il sito web."
+
+#: includes/class-wpvivid-migrate.php:1092
+msgid "2. Please migrate website with the manual way when using <strong>Local by Flywheel</strong> environment."
+msgstr "2. Si prega di migrare sito web manualmente quando si utilizza <strong>Local by Flywheel</strong>."
+
+#: includes/class-wpvivid-migrate.php:1098
+msgid "<strong>Tips: </strong>The unstable connection between sites could cause a failure of files transfer. In this case, uploading backups to destination site is a good alternative to the automatic website migration."
+msgstr "<strong>Suggerimenti: </strong>La connessione instabile tra i siti potrebbe causare un fallimento del trasferimento dei file. In questo caso, il caricamento del backup sul sito di destinazione è una buona alternativa alla migrazione automatica del sito web."
+
+#: includes/class-wpvivid-migrate.php:1099
+msgid "How to migrate Wordpress site manually to a new domain(site) with WPvivid backup plugin?"
+msgstr "Come migrare manualmente il sito Wordpress su un nuovo dominio (sito) con il plugin di backup WPvivid?"
+
+#: includes/class-wpvivid-migrate.php:1100
+msgid "1. Download a backup in backups list to your computer."
+msgstr "1. Scarica un backup dall'elenco di backup sul tuo computer."
+
+#: includes/class-wpvivid-migrate.php:1101
+msgid "2. Upload the backup to destination site. There are two ways available to use:"
+msgstr "2. Carica il backup del sito di destinazione. Ci sono due modi disponibili:"
+
+#: includes/class-wpvivid-migrate.php:1102
+msgid "2.1 Upload the backup to the upload section of WPvivid backup plugin in destination site."
+msgstr "2.1 Carica il backup nella sezione di caricamento di WPvivid backup plugin nel sito di destinazione."
+
+#: includes/class-wpvivid-migrate.php:1103
+#, php-format
+msgid "2.2 Upload the backup with FTP client to backup directory %s in destination site, then click <strong>Scan uploaded backup or received backup</strong> button."
+msgstr "2.2 Carica il backup tramite client FTP nella directory di backup %s del sito di destinazione, quindi fai clic sul pulsante <strong>Scan backup caricato o backup ricevuto</strong>."
+
+#: includes/class-wpvivid-migrate.php:1104
+msgid "3. Once done, the backup appears in backups list. Then, restore the backup."
+msgstr "3. Una volta fatto, il backup viene visualizzato nell'elenco dei backup. Quindi, ripristina il backup."
+
+#: includes/class-wpvivid-migrate.php:1124
+msgid "Choose what to migrate"
+msgstr "Scegli ciò che vuoi migrare"
+
+#: includes/class-wpvivid-migrate.php:1185
+msgid "Transfer succeeded. Please scan the backup list on the destination site to display the backup, then restore the backup."
+msgstr "Il trasferimento è riuscito. Si prega di scansione l'elenco di backup del sito di destinazione per visualizzare il backup e poi ripristinare il backup."
+
+#: includes/class-wpvivid-migrate.php:1245
+msgid "Upload"
+msgstr "Carica"
+
+#: includes/class-wpvivid-migrate.php:1255
+#, php-format
+msgid "The backups will be uploaded to %s directory."
+msgstr "I backup verranno caricati nella directory %s."
+
+#: includes/class-wpvivid-migrate.php:1258
+msgid "Note: The files you want to upload must be a backup created by WPvivid backup plugin. Make sure that uploading every part of a backup to the directory if the backup is split into many parts"
+msgstr "Nota: I file che si desidera caricare devono essere un backup creato dal plugin di backup di WPvivid. Assicurarsi di aver caricato ogni parte del backup nella directory se il backup è suddiviso in più parti"
+
+#: includes/class-wpvivid-schedule.php:34
+msgid "12 Hours"
+msgstr "12 Ore"
+
+#: includes/class-wpvivid-schedule.php:40
+#: includes/class-wpvivid-schedule.php:94
+msgid "Daily"
+msgstr "Giornaliero"
+
+#: includes/class-wpvivid-schedule.php:46
+#: includes/class-wpvivid-schedule.php:97
+msgid "Weekly"
+msgstr "Settimanale"
+
+#: includes/class-wpvivid-schedule.php:52
+#: includes/class-wpvivid-schedule.php:100
+msgid "Fortnightly"
+msgstr "Quindicinale"
+
+#: includes/class-wpvivid-schedule.php:58
+#: includes/class-wpvivid-schedule.php:103
+msgid "Monthly"
+msgstr "Mensile"
+
+#: includes/class-wpvivid-schedule.php:91
+msgid "12Hours"
+msgstr "12 ore"
+
+#: includes/class-wpvivid-schedule.php:282
+#: includes/class-wpvivid-schedule.php:296
+msgid "Creating scheduled tasks failed. Please try again later."
+msgstr "Creazione di attività pianificate non riuscita. Si prega di riprovare più tardi."
+
+#: includes/class-wpvivid.php:507
+#: includes/class-wpvivid.php:515
+msgid "A backup type is required."
+msgstr "È richiesto un tipo di backup."
+
+#: includes/class-wpvivid.php:521
+#: includes/class-wpvivid.php:530
+msgid "Choose at least one storage location for backups."
+msgstr "Scegli almeno una posizione di archiviazione per il backup."
+
+#: includes/class-wpvivid.php:541
+#: includes/class-wpvivid.php:4557
+msgid "There is no default remote storage configured. Please set it up first."
+msgstr "Non è stata configurata una memoria remota predefinita. Si prega di impostarla prima."
+
+#: includes/class-wpvivid.php:1408
+#: includes/class-wpvivid.php:1430
+#: includes/class-wpvivid.php:1456
+#: includes/class-wpvivid.php:1581
+#: includes/class-wpvivid.php:1701
+msgid "Too many resumption attempts."
+msgstr "Troppi tentativi di ripresa."
+
+#: includes/class-wpvivid.php:1589
+#: includes/class-wpvivid.php:1709
+msgid "Task timed out."
+msgstr "Task è scaduto."
+
+#: includes/class-wpvivid.php:2479
+msgid "Retrieving the backup(s) information failed while deleting the selected backup(s). Please try again later."
+msgstr "Il recupero delle informazioni del backup non è riuscito mentre si cancellavano i backup selezionati. Riprovare più tardi."
+
+#: includes/class-wpvivid.php:2489
+msgid "Unable to delete the locked backup. Please unlock it first and try again."
+msgstr "Non è possibile cancellare il backup bloccato. Si prega di sbloccarlo prima e provare di nuovo."
+
+#: includes/class-wpvivid.php:2592
+msgid "You have successfully added a remote storage."
+msgstr "Hai aggiunto con successo uno storage remoto."
+
+#: includes/class-wpvivid.php:2644
+msgid "Fail to delete the remote storage, can not retrieve the storage infomation. Please try again."
+msgstr "Impossibile cancellare lo storage remoto, non è possibile recuperare le informazioni sulla storage. Si prega di riprovare."
+
+#: includes/class-wpvivid.php:2672
+msgid "Failed to get the remote storage information. Please try again later."
+msgstr "Impossibile ottenere le informazioni di archiviazione remota. Si prega di riprovare più tardi."
+
+#: includes/class-wpvivid.php:3416
+msgid "restore failed error unknown"
+msgstr "ripristino non riuscito errore sconosciuto"
+
+#: includes/class-wpvivid.php:3449
+msgid "The restore file not found. Please verify the file exists."
+msgstr "Il file di ripristino non è stato trovato. Si prega di verificare che il file esista."
+
+#: includes/class-wpvivid.php:3561
+#: includes/class-wpvivid.php:3577
+msgid "The last backup message not found."
+msgstr "L'ultimo messaggio di backup non è stato trovato."
+
+#: includes/class-wpvivid.php:3580
+msgid "Last Backup: "
+msgstr "Ultimo Backup: "
+
+#: includes/class-wpvivid.php:3677
+#, php-format
+msgid "%d backup tasks have been completed. Please switch to <a href=\"#\" onclick=\"wpvivid_click_switch_page('wrap', 'wpvivid_tab_log', true);\">Log</a> page to check the details."
+msgstr "%d I task di backup sono stati completati.. Vai alla <a href=\"#\" onclick=\"wpvivid_click_switch_page('wrap', 'wpvivid_tab_log', true);\">Pagina di Log</a>  per controllare i dettagli."
+
+#: includes/class-wpvivid.php:3770
+msgid "Getting backup directory failed. Please try again later."
+msgstr "Impossibile ottenere la directory di backup. Riprovare più tardi."
+
+#: includes/class-wpvivid.php:3965
+msgid "Choose at least one type of junk files for deleting."
+msgstr "Scegli almeno un tipo di file indesiderato da eliminare."
+
+#: includes/class-wpvivid.php:4039
+msgid "The selected junk flies have been deleted."
+msgstr "I file spazzatura selezionati sono stati cancellati."
+
+#: includes/class-wpvivid.php:4210
+msgid "Choose one storage from the list to be the default storage."
+msgstr "Scegli uno storage dalla lista come storage predefinito."
+
+#: includes/class-wpvivid.php:4465
+#: includes/class-wpvivid.php:4473
+msgid "The maximum zip file size is required."
+msgstr "È richiesta la dimensione massima del file zip."
+
+#: includes/class-wpvivid.php:4479
+#: includes/class-wpvivid.php:4486
+msgid "The size for excluded files is required."
+msgstr "È richiesta la dimensione per i file esclusi."
+
+#: includes/class-wpvivid.php:4492
+#: includes/class-wpvivid.php:4499
+msgid "The maximum execution time for PHP script is required."
+msgstr "È richiesto il tempo di esecuzione massimo per gli script PHP."
+
+#: includes/class-wpvivid.php:4505
+#: includes/class-wpvivid.php:4512
+msgid "The local storage path is required."
+msgstr "È necessario il percorso di storage locale."
+
+#: includes/class-wpvivid.php:4522
+msgid "An email address is required."
+msgstr "Un indirizzo e-mail è obbligatorio."
+
+#: includes/class-wpvivid.php:4531
+#: includes/class-wpvivid.php:4535
+msgid "The pdo_mysql extension is not detected. Please install the extension first or choose wpdb option for Database connection method."
+msgstr "L'estensione pdo_mysql non viene rilevata. Si prega di installare prima l'estensione o di scegliere l'opzione wpdb per il metodo di connessione al database."
+
+#: includes/class-wpvivid.php:4654
+msgid "The selected file is not the setting file for WPvivid. Please upload the right file."
+msgstr "Il file selezionato non è il file di impostazione di WPvivid. Si prega di caricare il file giusto."
+
+#: includes/class-wpvivid.php:4676
+msgid "Invalid email address"
+msgstr "Indirizzo email non valido"
+
+#: includes/class-wpvivid.php:5248
+msgid "Type:"
+msgstr "Tipo:"
+
+#: includes/class-wpvivid.php:5402
+msgid "Save backups on localhost (web server)"
+msgstr "Salva i backup su localhost (server web)"
+
+#: includes/class-wpvivid.php:5406
+msgid "Send backups to remote storage (choose this option, the local backup will be deleted after uploading to remote storage completely)"
+msgstr "Invia i backup allo storage remoto (scegli questa opzione, il backup locale verrà cancellato dopo averlo caricato completamente nello storage remoto)"
+
+#: includes/class-wpvivid.php:5571
+msgid "User's email address is required."
+msgstr "Indirizzo email dell'utente è obbligatorio."
+
+#: includes/class-wpvivid.php:5576
+msgid "Please enter a valid email address."
+msgstr "Si prega di inserire un indirizzo email valido."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:44
+msgid "Amazon S3"
+msgstr "Amazon S3"
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:62
+#: includes/customclass/class-wpvivid-amazons3-plus.php:200
+msgid "Enter Your Amazon S3 Account"
+msgstr "Inserisci Il Tuo Account Amazon S3"
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:70
+#: includes/customclass/class-wpvivid-amazons3-plus.php:208
+msgid "Enter a unique alias: e.g. Amazon S3-001"
+msgstr "Inserisci un alias univoco: ad esempio, Amazon S3-001"
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:75
+#: includes/customclass/class-wpvivid-amazons3-plus.php:213
+#: includes/customclass/class-wpvivid-dropbox.php:477
+#: includes/customclass/class-wpvivid-dropbox.php:602
+#: includes/customclass/class-wpvivid-ftpclass.php:57
+#: includes/customclass/class-wpvivid-ftpclass.php:184
+#: includes/customclass/class-wpvivid-google-drive.php:319
+#: includes/customclass/class-wpvivid-google-drive.php:447
+msgid "A name to help you identify the storage if you have multiple remote storage connected."
+msgstr "Un nome per aiutarti a identificare lo storage se hai collegato più storage remoti."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:82
+#: includes/customclass/class-wpvivid-amazons3-plus.php:220
+msgid "Amazon S3 access key"
+msgstr "Amazon S3 access key"
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:87
+#: includes/customclass/class-wpvivid-amazons3-plus.php:225
+msgid "Enter your Amazon S3 access key."
+msgstr "Inserisci la tua access key di Amazon S3."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:87
+#: includes/customclass/class-wpvivid-amazons3-plus.php:225
+msgid "How to get an AmazonS3 access key."
+msgstr "Come ottenere una access key di AmazonS3."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:94
+#: includes/customclass/class-wpvivid-amazons3-plus.php:232
+msgid "Amazon S3 secret key"
+msgstr "Amazon S3 secret key"
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:99
+#: includes/customclass/class-wpvivid-amazons3-plus.php:237
+msgid "Enter your Amazon S3 secret key."
+msgstr "Inserisci la tua secret key di Amazon S3."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:99
+#: includes/customclass/class-wpvivid-amazons3-plus.php:237
+msgid "How to get an AmazonS3 secret key."
+msgstr "Come ottenere una secret key di AmazonS3."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:106
+#: includes/customclass/class-wpvivid-amazons3-plus.php:244
+msgid "Amazon S3 Bucket Name(e.g. test)"
+msgstr "Nome del Bucket di Amazon S3 (ad esempio, test)"
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:111
+#: includes/customclass/class-wpvivid-amazons3-plus.php:249
+msgid "Enter an existed Bucket to create a custom backup storage directory."
+msgstr "Inserisci un Bucket esistente per creare una directory di archiviazione di backup personalizzata."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:118
+#: includes/customclass/class-wpvivid-amazons3-plus.php:256
+msgid "Custom Path"
+msgstr "Percorso Personalizzato"
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:123
+#: includes/customclass/class-wpvivid-amazons3-plus.php:261
+msgid "Customize the directory where you want to store backups within the Bucket."
+msgstr "Personalizza la directory in cui si desidera archiviare i backup all'interno del Bucket."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:131
+#: includes/customclass/class-wpvivid-dropbox.php:509
+#: includes/customclass/class-wpvivid-ftpclass.php:125
+#: includes/customclass/class-wpvivid-google-drive.php:351
+msgid "Set as the default remote storage."
+msgstr "Impostato come storage remoto predefinito."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:137
+#: includes/customclass/class-wpvivid-dropbox.php:515
+#: includes/customclass/class-wpvivid-ftpclass.php:131
+#: includes/customclass/class-wpvivid-google-drive.php:357
+msgid "Once checked, all this sites backups sent to a remote storage destination will be uploaded to this storage by default."
+msgstr "Una volta spuntati, tutti i backup di questi siti inviati a una destinazione di archiviazione remota saranno caricati in questo storage di default."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:145
+#: includes/customclass/class-wpvivid-amazons3-plus.php:269
+msgid "Storage class: Standard (infrequent access)."
+msgstr "Classe di storage: Standard (accesso non frequente)."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:151
+#: includes/customclass/class-wpvivid-amazons3-plus.php:275
+msgid "Check the option to use Amazon S3 Standard-Infrequent Access (S3 Standard-IA) storage class for data transfer."
+msgstr "Seleziona l'opzione per utilizzare la classe di archiviazione Amazon S3 Standard-Infrequent Access (S3 Standard-IA) per il trasferimento dei dati."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:159
+#: includes/customclass/class-wpvivid-amazons3-plus.php:283
+msgid "Server-side encryption."
+msgstr "Crittografia Lato Server."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:165
+#: includes/customclass/class-wpvivid-amazons3-plus.php:289
+msgid "Check the option to use Amazon S3 server-side encryption to protect data."
+msgstr "Seleziona l'opzione per utilizzare la crittazione lato server di Amazon S3 per proteggere i dati."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:173
+#: includes/customclass/class-wpvivid-ftpclass.php:153
+msgid "Test and Add"
+msgstr "Testa e Aggiungi"
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:178
+msgid "Click the button to connect to Amazon S3 storage and add it to the storage list below."
+msgstr "Clicca il pulsante per connetterti allo storage di Amazon S3 e aggiungerlo alla lista degli storage qui di seguito."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:187
+msgid "The simplexml extension is not detected. Please install the extension first."
+msgstr "L'estensione simplexml non viene rilevata. Si prega di installare prima l'estensione."
+
+#: includes/customclass/class-wpvivid-amazons3-plus.php:302
+#: includes/customclass/class-wpvivid-dropbox.php:614
+#: includes/customclass/class-wpvivid-ftpclass.php:259
+#: includes/customclass/class-wpvivid-google-drive.php:459
+msgid "Click the button to save the changes."
+msgstr "Clicca il pulsante per salvare le modifiche."
+
+#: includes/customclass/class-wpvivid-dropbox.php:433
+msgid "You have authenticated the Dropbox account as your remote storage."
+msgstr "Hai autenticato l'account Dropbox come tuo storage remoto."
+
+#: includes/customclass/class-wpvivid-dropbox.php:441
+#: includes/customclass/class-wpvivid-google-drive.php:280
+msgid "You have successfully updated the storage alias."
+msgstr "Hai aggiornato con successo l'alias di archiviazione."
+
+#: includes/customclass/class-wpvivid-dropbox.php:452
+msgid "Dropbox"
+msgstr "Dropbox"
+
+#: includes/customclass/class-wpvivid-dropbox.php:462
+msgid "Please read <a target=\"_blank\" href=\"https://wpvivid.com/privacy-policy\" style=\"text-decoration: none;\">this privacy policy</a> for use of our Dropbox authorization app (none of your backup data is sent to us)."
+msgstr "Si prega di leggere <a target=\"_blank\" href=\"https://wpvivid.com/privacy-policy\" style=\"text-decoration: none;\">questa informativa sulla privacy</a> per l'utilizzo della nostra applicazione di autorizzazione per Dropbox (nessuno dei dati di backup viene inviato a noi)."
+
+#: includes/customclass/class-wpvivid-dropbox.php:465
+#: includes/customclass/class-wpvivid-dropbox.php:590
+msgid "Enter Your Dropbox Information"
+msgstr "Inserisci le informazioni del tuo account Dropbox"
+
+#: includes/customclass/class-wpvivid-dropbox.php:472
+#: includes/customclass/class-wpvivid-dropbox.php:597
+msgid "Enter a unique alias: e.g. Dropbox-001"
+msgstr "Inserisci un alias univoco: ad esempio Dropbox-001"
+
+#: includes/customclass/class-wpvivid-dropbox.php:489
+#: includes/customclass/class-wpvivid-google-drive.php:331
+msgid "All backups will be uploaded to this directory."
+msgstr "Tutti i backup verranno caricati in questa directory."
+
+#: includes/customclass/class-wpvivid-dropbox.php:501
+#: includes/customclass/class-wpvivid-google-drive.php:343
+msgid "Pro feature: Create a directory for storing the backups of the site"
+msgstr "Funzionalità Pro: crea una cartella per memorizzare il backup del sito"
+
+#: includes/customclass/class-wpvivid-dropbox.php:522
+msgid "Authenticate with Dropbox"
+msgstr "Autenticati con Dropbox"
+
+#: includes/customclass/class-wpvivid-dropbox.php:527
+msgid "Click the button to get Dropbox authentication and add it to the storage list below."
+msgstr "Clicca il pulsante per ottenere il codice di autenticazione di Dropbox e aggiungerlo alla lista degli storage qui di seguito."
+
+#: includes/customclass/class-wpvivid-ftpclass.php:36
+msgid "FTP"
+msgstr "FTP"
+
+#: includes/customclass/class-wpvivid-ftpclass.php:45
+#: includes/customclass/class-wpvivid-ftpclass.php:172
+msgid "Enter Your FTP Account"
+msgstr "Inserisci il tuo Account FTP"
+
+#: includes/customclass/class-wpvivid-ftpclass.php:52
+#: includes/customclass/class-wpvivid-ftpclass.php:179
+msgid "Enter an unique alias: e.g. FTP-001"
+msgstr "Inserisci un alias univoco: ad esempio FTP-001"
+
+#: includes/customclass/class-wpvivid-ftpclass.php:64
+#: includes/customclass/class-wpvivid-ftpclass.php:191
+msgid "FTP server (server's port 21)"
+msgstr "FTP server (server sulla porta 21)"
+
+#: includes/customclass/class-wpvivid-ftpclass.php:69
+#: includes/customclass/class-wpvivid-ftpclass.php:196
+msgid "Enter the FTP server."
+msgstr "Inserisci il server FTP."
+
+#: includes/customclass/class-wpvivid-ftpclass.php:81
+msgid "Pro feature: Change the FTP default port number"
+msgstr "Funzionalità Pro: cambia il numero di porta predefinito FTP"
+
+#: includes/customclass/class-wpvivid-ftpclass.php:88
+#: includes/customclass/class-wpvivid-ftpclass.php:203
+msgid "FTP login"
+msgstr "Accesso FTP"
+
+#: includes/customclass/class-wpvivid-ftpclass.php:93
+#: includes/customclass/class-wpvivid-ftpclass.php:208
+msgid "Enter your FTP server user name."
+msgstr "Inserisci il nome utente del tuo server FTP."
+
+#: includes/customclass/class-wpvivid-ftpclass.php:100
+#: includes/customclass/class-wpvivid-ftpclass.php:215
+msgid "FTP password"
+msgstr "Password FTP"
+
+#: includes/customclass/class-wpvivid-ftpclass.php:105
+#: includes/customclass/class-wpvivid-ftpclass.php:220
+msgid "Enter the FTP server password."
+msgstr "Inserisci la password del server FTP."
+
+#: includes/customclass/class-wpvivid-ftpclass.php:112
+#: includes/customclass/class-wpvivid-ftpclass.php:227
+msgid "Absolute path must exist(e.g. /home/username)"
+msgstr "Un percorso assoluto deve esistere(per esempio, /home/nomeutente)"
+
+#: includes/customclass/class-wpvivid-ftpclass.php:117
+#: includes/customclass/class-wpvivid-ftpclass.php:232
+msgid "Enter an absolute path and a custom subdirectory (optional) for holding the backups of current website. For example, /home/username/customfolder"
+msgstr "Inserisci un percorso assoluto e una sottodirectory personalizzata (opzionale) per tenere i backup del sito web corrente. Ad esempio, /home/nomeutente/cartellapersonalizzata"
+
+#: includes/customclass/class-wpvivid-ftpclass.php:139
+#: includes/customclass/class-wpvivid-ftpclass.php:240
+msgid "Uncheck this to enable FTP active mode."
+msgstr "Deseleziona questa opzione per abilitare il server FTP in modalità attiva."
+
+#: includes/customclass/class-wpvivid-ftpclass.php:145
+#: includes/customclass/class-wpvivid-ftpclass.php:246
+msgid "Uncheck the option to use FTP active mode when transferring files. Make sure the FTP server you are configuring supports the active FTP mode."
+msgstr "Deselezionare l'opzione per utilizzare l'FTP in modalità attiva quando il trasferimento di file. Assicurarsi che il server FTP configurazione supporti la modalità FTP attiva."
+
+#: includes/customclass/class-wpvivid-ftpclass.php:158
+msgid "Click the button to connect to FTP server and add it to the storage list below."
+msgstr "Clicca il pulsante per connetterti al server FTP e aggiungerlo alla lista degli storage qui di seguito."
+
+#: includes/customclass/class-wpvivid-google-drive.php:111
+#: includes/customclass/class-wpvivid-google-drive.php:207
+msgid "Authentication failed, the client_secrets.json file is missing. Please make sure the client_secrets.json file is in wpvivid-backuprestore\\includes\\customclass directory."
+msgstr "Autenticazione non riuscita, il file client_secrets.json è mancante. Si prega di assicurarsi che il file  client_secrets.json sia in wpvivid-backuprestore\\include\\customclass directory."
+
+#: includes/customclass/class-wpvivid-google-drive.php:115
+#: includes/customclass/class-wpvivid-google-drive.php:211
+msgid "Authentication failed, the format of the client_secrets.json file is incorrect. Please delete and re-install the plugin to recreate the file."
+msgstr "Autenticazione non riuscita, il formato del file client_secrets.json non è corretto. Si consiglia di cancellare e re-installare il plugin per ricreare il file."
+
+#: includes/customclass/class-wpvivid-google-drive.php:272
+msgid "You have authenticated the WPvividGoogle Drive account as your remote storage."
+msgstr "Hai autenticato l'account WPvividGoogle Drive come tuo storage remoto."
+
+#: includes/customclass/class-wpvivid-google-drive.php:292
+msgid "WPvividGoogle Drive"
+msgstr "WPvividGoogle Drive"
+
+#: includes/customclass/class-wpvivid-google-drive.php:304
+msgid "Please read <a target=\"_blank\" href=\"https://wpvivid.com/privacy-policy\" style=\"text-decoration: none;\">this privacy policy</a> for use of our WPvividGoogle Drive authorization app (none of your backup data is sent to us)."
+msgstr "Si prega di leggere <a target=\"_blank\" href=\"https://wpvivid.com/privacy-policy\" style=\"text-decoration: none;\">questa informativa sulla privacy</a> per l'utilizzo della nostra applicazione di autorizzazione a WPvividGoogle Drive (nessuno dei dati di backup viene inviato a noi)."
+
+#: includes/customclass/class-wpvivid-google-drive.php:307
+#: includes/customclass/class-wpvivid-google-drive.php:435
+msgid "Enter Your WPvividGoogle Drive Information"
+msgstr "Inserisci le informazioni del tuo account WPvividGoogle Drive"
+
+#: includes/customclass/class-wpvivid-google-drive.php:314
+#: includes/customclass/class-wpvivid-google-drive.php:442
+msgid "Enter a unique alias: e.g. WPvividGoogle Drive-001"
+msgstr "Inserisci un alias univoco: ad esempio WPvividGoogle Drive-001"
+
+#: includes/customclass/class-wpvivid-google-drive.php:364
+msgid "Authenticate with WPvividGoogle Drive"
+msgstr "Autenticati con WPvividGoogle Drive"
+
+#: includes/customclass/class-wpvivid-google-drive.php:369
+msgid "Click the button to get WPvividGoogle authentication and add it to the storage list below."
+msgstr "Clicca il pulsante per ottenere il codice di autenticazione di WPvividGoogle e aggiungerlo alla lista degli storage qui di seguito."
+
+#: includes/customclass/class-wpvivid-one-drive.php:240
+msgid "You have authenticated the Microsoft OneDrive account as your remote storage."
+msgstr "Hai autenticato l'account Microsoft OneDrive come tuo storage remoto."
+
+#: includes/customclass/class-wpvivid-one-drive.php:260
+msgid "Microsoft OneDrive"
+msgstr "Microsoft OneDrive"
+
+#: includes/customclass/class-wpvivid-one-drive.php:272
+msgid "Please read <a target=\"_blank\" href=\"https://wpvivid.com/privacy-policy\" style=\"text-decoration: none;\">this privacy policy</a> for use of our Microsoft OneDrive authorization app (none of your backup data is sent to us)."
+msgstr "Si prega di leggere <a target=\"_blank\" href=\"https://wpvivid.com/privacy-policy\" style=\"text-decoration: none;\">questa informativa sulla privacy</a> per l'utilizzo della nostra applicazione di autorizzazione a Microsoft OneDrive (nessuno dei dati di backup viene inviato a noi)."
+
+#: includes/customclass/class-wpvivid-one-drive.php:275
+#: includes/customclass/class-wpvivid-one-drive.php:403
+msgid "Enter Your Microsoft OneDrive Information"
+msgstr "Inserisci le informazioni del tuo account Microsoft OneDrive"
+
+#: includes/customclass/class-wpvivid-one-drive.php:282
+#: includes/customclass/class-wpvivid-one-drive.php:410
+msgid "Enter a unique alias: e.g. OneDrive-001"
+msgstr "Inserisci un alias univoco: ad esempio OneDrive-001"
+
+#: includes/customclass/class-wpvivid-one-drive.php:332
+msgid "Authenticate with Microsoft OneDrive"
+msgstr "Autenticati con Microsoft OneDrive"
+
+#: includes/customclass/class-wpvivid-one-drive.php:337
+msgid "Click the button to get Microsoft authentication and add it to the storage list below."
+msgstr "Clicca il pulsante per ottenere il codice di autenticazione di Microsoft e  aggiungerlo alla lista degli storage qui di seguito."
+
+#: includes/customclass/class-wpvivid-s3compat.php:403
+msgid "DigitalOcean Spaces"
+msgstr "DigitalOcean Spaces"
+
+#: includes/customclass/class-wpvivid-s3compat.php:412
+#: includes/customclass/class-wpvivid-s3compat.php:527
+msgid "Enter Your DigitalOcean Spaces Account"
+msgstr "Inserisci l'account dei tuoi Spazi DigitalOcean"
+
+#: includes/customclass/class-wpvivid-s3compat.php:420
+#: includes/customclass/class-wpvivid-s3compat.php:535
+msgid "Enter a unique alias: e.g. DOS-001"
+msgstr "Inserisci un alias univoco: ad esempio DOS-001"
+
+#: includes/customclass/class-wpvivid-s3compat.php:432
+#: includes/customclass/class-wpvivid-s3compat.php:547
+msgid "DigitalOcean Spaces access key"
+msgstr "DigitalOcean Spaces access key"
+
+#: includes/customclass/class-wpvivid-s3compat.php:437
+#: includes/customclass/class-wpvivid-s3compat.php:552
+msgid "Enter your DigitalOcean Spaces access key"
+msgstr "Inserisci l'access key degli Spazi DigitalOcean"
+
+#: includes/customclass/class-wpvivid-s3compat.php:444
+#: includes/customclass/class-wpvivid-s3compat.php:559
+msgid "DigitalOcean Spaces secret key"
+msgstr "DigitalOcean Spaces secret key"
+
+#: includes/customclass/class-wpvivid-s3compat.php:449
+#: includes/customclass/class-wpvivid-s3compat.php:564
+msgid "Enter your DigitalOcean Spaces secret key"
+msgstr "Inserisci la secret key dei tuoi Spazi DigitalOcean"
+
+#: includes/customclass/class-wpvivid-s3compat.php:456
+#: includes/customclass/class-wpvivid-s3compat.php:571
+msgid "Space Name(e.g. test)"
+msgstr "Nome dello spazio(ad esempio test)"
+
+#: includes/customclass/class-wpvivid-s3compat.php:461
+#: includes/customclass/class-wpvivid-s3compat.php:576
+msgid "Enter an existed Space to create a custom backup storage directory."
+msgstr "Inserisci uno Spazio esistente per creare una directory di archiviazione di backup personalizzata."
+
+#: includes/customclass/class-wpvivid-s3compat.php:473
+#: includes/customclass/class-wpvivid-s3compat.php:588
+msgid "Customize the directory where you want to store backups within the Space."
+msgstr "Personalizzare la directory in cui si desidera archiviare i backup all'interno dello Spazio."
+
+#: includes/customclass/class-wpvivid-s3compat.php:480
+#: includes/customclass/class-wpvivid-s3compat.php:595
+msgid "region.digitaloceanspaces.com"
+msgstr "region.digitaloceanspaces.com"
+
+#: includes/customclass/class-wpvivid-s3compat.php:485
+#: includes/customclass/class-wpvivid-s3compat.php:600
+msgid "Enter the DigitalOcean Endpoint for the storage"
+msgstr "Inserisci l'Endpoint di DigitalOcean per l'archiviazione"
+
+#: includes/customclass/class-wpvivid-s3compat.php:512
+msgid "Click the button to connect to DigitalOcean Spaces storage and add it to the storage list below."
+msgstr "Clicca il pulsante per connetterti allo storage di DigitalOcean Space e di aggiungerlo alla lista degli storage qui di seguito."
+
+#: includes/customclass/class-wpvivid-sftpclass.php:38
+msgid "SFTP"
+msgstr "SFTP"
+
+#: includes/customclass/class-wpvivid-sftpclass.php:48
+#: includes/customclass/class-wpvivid-sftpclass.php:163
+msgid "Enter Your SFTP Account"
+msgstr "Inserisci il Tuo SFTP Account"
+
+#: includes/customclass/class-wpvivid-sftpclass.php:56
+#: includes/customclass/class-wpvivid-sftpclass.php:171
+msgid "Enter a unique alias: e.g. SFTP-001"
+msgstr "Inserisci un alias univoco: ad esempio, SFTP-001"
+
+#: includes/customclass/class-wpvivid-sftpclass.php:68
+#: includes/customclass/class-wpvivid-sftpclass.php:183
+msgid "Server Address"
+msgstr "Indirizzo del Server"
+
+#: includes/customclass/class-wpvivid-sftpclass.php:73
+#: includes/customclass/class-wpvivid-sftpclass.php:188
+msgid "Enter the server address."
+msgstr "Inserisci l'indirizzo del server."
+
+#: includes/customclass/class-wpvivid-sftpclass.php:80
+#: includes/customclass/class-wpvivid-sftpclass.php:195
+msgid "User Name"
+msgstr "Nome Utente"
+
+#: includes/customclass/class-wpvivid-sftpclass.php:85
+#: includes/customclass/class-wpvivid-sftpclass.php:200
+msgid "Enter the user name."
+msgstr "Inserisci il nome utente."
+
+#: includes/customclass/class-wpvivid-sftpclass.php:92
+#: includes/customclass/class-wpvivid-sftpclass.php:207
+msgid "User Password"
+msgstr "Password Utente"
+
+#: includes/customclass/class-wpvivid-sftpclass.php:97
+#: includes/customclass/class-wpvivid-sftpclass.php:212
+msgid "Enter the user password."
+msgstr "Inserisci la password utente."
+
+#: includes/customclass/class-wpvivid-sftpclass.php:104
+#: includes/customclass/class-wpvivid-sftpclass.php:219
+msgid "Port"
+msgstr "Porta"
+
+#: includes/customclass/class-wpvivid-sftpclass.php:109
+#: includes/customclass/class-wpvivid-sftpclass.php:224
+msgid "Enter the server port."
+msgstr "Inserisci la porta del server."
+
+#: includes/customclass/class-wpvivid-sftpclass.php:116
+#: includes/customclass/class-wpvivid-sftpclass.php:231
+msgid "Absolute path must exist(e.g. /var)"
+msgstr "Un percorso assoluto deve esistere(ad esempio, /var)"
+
+#: includes/customclass/class-wpvivid-sftpclass.php:121
+#: includes/customclass/class-wpvivid-sftpclass.php:236
+msgid "Enter an absolute path and a custom subdirectory (optional) for holding the backups of current website. For example, /var/customfolder/"
+msgstr "Inserisci un percorso assoluto e una sottodirectory personalizzata (opzionale) per tenere i backup del sito web corrente. Per esempio, /var/cartellapersonalizzata/"
+
+#: includes/customclass/class-wpvivid-sftpclass.php:148
+msgid "Click the button to connect to SFTP server and add it to the storage list below."
+msgstr "Clicca il pulsante per connetterti al server SFTP e aggiungerlo alla lista degli storage qui di seguito."
+

@@ -1,0 +1,43 @@
+{% set isOlderVisible = pagination.page < pagination.num_pages %}
+{% set isNewerVisible = pagination.page > 1 %}
+
+{% set targetFirst = pagination.page - 2 > 0 ? pagination.page - 2 : 1 %}
+{% set targetLast = pagination.page + 2 < pagination.num_pages ? pagination.page + 2 : pagination.num_pages %}
+
+{% set pages = range(targetFirst, targetLast) %}
+
+<div class="nav-links">
+    {% if isNewerVisible %}
+        <div class="nav-previous alignleft wpra-feed-prev-page">
+            <a data-wpra-page="{{ pagination.page - 1 }}">
+                {% trans "Previous" %}
+            </a>
+        </div>
+    {% endif %}
+    {% if targetFirst != 1 %}
+        <span class="alignleft wpra-feed-more-pages">…</span>
+    {% endif %}
+    {% for page in pages %}
+        {% if page == pagination.page %}
+            <span class="alignleft wpra-feed-current-page">
+                {{ page }}
+            </span>
+        {% else %}
+            <div class="nav-next alignleft wpra-feed-page">
+                <a data-wpra-page="{{ page }}">
+                    {{ page }}
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+    {% if targetLast != pagination.num_pages %}
+        <span class="alignleft wpra-feed-more-pages">…</span>
+    {% endif %}
+    {% if isOlderVisible %}
+        <div class="nav-next alignleft wpra-feed-next-pages">
+            <a data-wpra-page="{{ pagination.page + 1 }}">
+                {% trans "Next" %}
+            </a>
+        </div>
+    {% endif %}
+</div>

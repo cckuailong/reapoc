@@ -1,0 +1,67 @@
+.tribe-common,
+.event-tickets {
+
+	.tribe-tickets__notice {
+		background-color: var(--tec-color-background-secondary);
+		border-radius: var(--tec-border-radius-default);
+		margin: var(--tec-spacer-4) 0;
+		padding: var(--tec-spacer-3);
+
+		> *:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.tribe-tickets-notice__title {
+		margin: 0;
+		position: relative;
+
+		&:empty {
+			display: none;
+		}
+	}
+
+	/*
+		Error Notices
+	*/
+	.tribe-tickets__notice--error {
+		background-color: var(--tec-color-background-error);
+		display: none;
+		padding-left: 50px;
+		position: relative;
+
+		&:before {
+			background-image: svg-inline('error-active');
+			background-size: contain;
+			content: '';
+			height: var(--tec-spacer-3);
+			left: var(--tec-spacer-4);
+			position: absolute;
+			top: var(--tec-spacer-4);
+			width: var(--tec-spacer-3);
+		}
+	}
+
+	/*
+		"Barred" Notices (visible side borders)
+	*/
+	.tribe-tickets__notice--barred {
+		background-color: var(--tec-color-background);
+		border: var(--tec-spacer-0) solid var(--tec-color-border-secondary);
+		border-bottom: 0;
+		border-radius: 0;
+		border-top: 0;
+		padding: 0 var(--tec-spacer-2);
+	}
+
+	.tribe-tickets__notice--barred-left {
+		border-right: 0;
+		padding: 0 0 0 var(--tec-spacer-2);
+	}
+
+	.tribe-tickets__notice--barred-right {
+		border-left: 0;
+		padding: 0 var(--tec-spacer-2) 0 0;
+	}
+}

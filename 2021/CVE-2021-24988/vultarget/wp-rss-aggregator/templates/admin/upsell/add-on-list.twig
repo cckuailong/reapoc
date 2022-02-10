@@ -1,0 +1,10 @@
+<p><strong>{% trans 'Add functionality with our premium extensions:' %}</strong></p>
+{% if addons|length > 0 %}
+    <ul class="add-on-list">
+        {% for addon in addons %}
+            <li class="add-on add-on-code-{{ addon.code }}">
+                <a href="{{ addon.url }}" target="_blank">{{ addon.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

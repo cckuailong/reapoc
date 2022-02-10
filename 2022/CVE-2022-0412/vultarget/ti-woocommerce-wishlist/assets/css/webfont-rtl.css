@@ -1,0 +1,205 @@
+/*------------------------------------------------------------------
+WooCommerce Wishlist Plugin custom webfont
+-------------------------------------------------------------------*/
+@font-face {
+  font-family: "tinvwl-webfont";
+  font-display: block;
+  src: url("../fonts/tinvwl-webfont.eot?ver=xu2uyi");
+  src: url("../fonts/tinvwl-webfont.eot?ver=xu2uyi#iefix") format("embedded-opentype"), url("../fonts/tinvwl-webfont.woff2?ver=xu2uyi") format("woff2"), url("../fonts/tinvwl-webfont.woff?ver=xu2uyi") format("woff"), url("../fonts/tinvwl-webfont.ttf?ver=xu2uyi") format("truetype"), url("../fonts/tinvwl-webfont.svg?ver=xu2uyi#tinvwl-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.ftinvwl {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "tinvwl-webfont" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ftinvwl-twitter:before {
+  content: "\f099";
+}
+
+.ftinvwl-facebook:before {
+  content: "\f09a" !important;
+}
+
+.ftinvwl-facebook-f:before {
+  content: "\f09a" !important;
+}
+
+.ftinvwl-google:before {
+  content: "\f0d5" !important;
+}
+
+.ftinvwl-email:before {
+  content: "\f0e0" !important;
+}
+
+.ftinvwl-pinterest:before {
+  content: "\f231" !important;
+}
+
+.ftinvwl-whatsapp:before {
+  content: "\f232" !important;
+}
+
+.ftinvwl-clipboard:before {
+  content: "\e911" !important;
+}
+
+.ftinvwl-star:before {
+  content: "\e912" !important;
+}
+
+.ftinvwl-shopping-cart:before {
+  content: "\e913" !important;
+}
+
+.ftinvwl-magic:before {
+  content: "\e914" !important;
+}
+
+.ftinvwl-info:before {
+  content: "\e915" !important;
+}
+
+.ftinvwl-graduation-cap:before {
+  content: "\e918" !important;
+}
+
+.ftinvwl-floppy-o:before {
+  content: "\e919" !important;
+}
+
+.ftinvwl-eyedropper:before {
+  content: "\e91a" !important;
+}
+
+.ftinvwl-exclamation-triangle:before {
+  content: "\e91b" !important;
+}
+
+.ftinvwl-check:before {
+  content: "\e91e" !important;
+}
+
+.ftinvwl-arrow-left:before {
+  content: "\e91f" !important;
+}
+
+.ftinvwl-wrench:before {
+  content: "\e920" !important;
+}
+
+.ftinvwl-chevron-down:before {
+  content: "\e900" !important;
+}
+
+.ftinvwl-chevron-right:before {
+  content: "\e901" !important;
+}
+
+.ftinvwl-chevron-left:before {
+  content: "\e902" !important;
+}
+
+.ftinvwl-chevron-up:before {
+  content: "\e903" !important;
+}
+
+.ftinvwl-cancel:before {
+  content: "\e904" !important;
+}
+
+.ftinvwl-times:before {
+  content: "\e905" !important;
+}
+
+.ftinvwl-heart-plus:before {
+  content: "\e906" !important;
+}
+
+.ftinvwl-heart-mark-right:before {
+  content: "\e907" !important;
+}
+
+.ftinvwl-heart2:before {
+  content: "\e908" !important;
+}
+
+.ftinvwl-heart-o:before {
+  content: "\e909" !important;
+}
+
+.ftinvwl-heart-mark-left:before {
+  content: "\e90a" !important;
+}
+
+.ftinvwl-heart-mail:before {
+  content: "\e90b" !important;
+}
+
+.ftinvwl-heart-tinv:before {
+  content: "\e90c" !important;
+}
+
+.ftinvwl-key:before {
+  content: "\e90d" !important;
+}
+
+.ftinvwl-lock:before {
+  content: "\e90e" !important;
+}
+
+.ftinvwl-hearts:before {
+  content: "\e90f" !important;
+}
+
+.ftinvwl-user:before {
+  content: "\e910" !important;
+}
+
+/* PULSE */
+@-webkit-keyframes ftinvwl-pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes ftinvwl-pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.ftinvwl-pulse.ftinvwl-animated::before {
+  -webkit-animation: ftinvwl-pulse 2s linear infinite;
+  animation: ftinvwl-pulse 2s linear infinite;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJ3ZWJmb250LXJ0bC5jc3MiXSwiZmlsZSI6IndlYmZvbnQtcnRsLmNzcyJ9 */
+
+/*# sourceMappingURL=webfont-rtl.css.map */

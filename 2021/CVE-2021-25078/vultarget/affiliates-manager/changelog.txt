@@ -1,0 +1,175 @@
+//////////////////////////////////////////////////
+
+                WP Affiliate Manager
+                  Affiliate Plugin
+                     ChangeLog
+
+//////////////////////////////////////////////////
+
+-- Version 1.6.5, Updated: 3/21/14 --
+
+- Trim creative slug to prevent spaces in Easy Digital Downloads affiliate links
+
+
+-- Version 1.6.4, Updated: 1/6/14 --
+
+- Fixed javascript error on custom registration field edit
+- Fixed invalid refkey error for certain affiliates during refkey unpack()
+- Fixed percentage of sale on Easy Digital Downloads sales
+
+
+-- Version 1.6.3, Updated: 11/2/13 --
+
+- Fixed automatic (licensed) updates
+
+
+-- Version 1.6.2, Updated: 8/30/13 --
+
+- Fixed login redirect conflicts with other plugins (Peter's Login Redirect)
+- Added preliminary (Google Translate) translations for: Bulgarian, Hebrew, German, Portugese, Dutch, Finnish, French, Spanish and Italian
+
+
+-- Version 1.6.1, Updated: 7/8/13 --
+
+- iThemes Exchange Support
+- Added 'wpam_credit_amount' filter to dynamically change affiliate payout amount
+- Changed cookie.js to actual file instead of symlink to avoid problems with zip decompressors that do not support symlinks
+
+
+-- Version 1.6, Updated: 6/27/13 --
+
+- Easy Digital Downloads Support
+- WooCommerce Support
+- Custom Affiliate Link URLs
+- i18n ready
+
+
+-- Version 1.5.1, Updated: 2/22/13 --
+
+- Fixed resolveConflict() from 1.5.0 to *correctly* rename tables wpsca -> wpam
+- Reworked new affiliate to be able to add existing WP users from botched wpsca -> wpam rename (1.5.0)
+- Simplified email validation
+
+
+-- Version 1.5.0, Updated: 12/26/12 --
+
+- Moved WPSCA options/capabilities/pages/tables namespace to WPAM (fixes issue w/ registration errors on new WPEC 3.8.9.x installations)
+- Added translation wrappers to text fields (minus paypal & settings admin pages)
+- Added money_format function for Windows
+- Fixed issue of submitting to site_url instead of home_url for registration (only affected sub-directory installs)
+- Removed curl requirement for MassPay
+- Updated PayPal sandbox URL
+- Fixed display of affiliate links containing quotes
+- Use core WP jquery scripts except for cookies & style (jquery ui theme)
+
+
+-- Version 1.4.4, Updated: 3/16/12 --
+
+- Warn if problems loading locale other than en_US (and force to USD)
+- Load front-end shortcode javascript in the footer to avoid wpautop() formatting issues
+- Made ajax calls go through admin-ajax.php for maximum compatibility
+- Added debugging for wpsca_refkey problems
+- Fixed issue where wpsca_refkey might not be recognised
+- Removed mbstring requirement for currency/locale other than en_US
+
+
+-- Version 1.4.3, Updated: 11/16/11 --
+
+- Added currency flexibility based on WPLANG locale
+- Changes to resolve issues with siliconapp theme
+
+
+-- Version 1.4.2, Updated: 10/27/11 --
+
+- Reworded email change info dialog on admin panel to make sense in context
+- Added cookie path to setcookie() to insure cookies get saved in webkit (chrome, safari) browsers
+
+
+-- Version 1.4.1, Updated: 9/9/11 --
+
+- Changed front end affiliate pages to use standard shortcodes - alleviates issues with certain themes
+- Added Affiliate Links tab to My Affiliates page for admin
+
+
+-- Version 1.4, Updated: 7/27/11 --
+
+- Added screen for admins to manually create an affiliate account
+- Added running balance to 'My Affiliates' transaction view for admin
+- Added name & email fields to customize emails sent from the Affiliate Manager
+- Combined the Affiliate Manager approval email & standard WP login info email into one
+- Added the ability to sort 'My Affiliates'
+- Added transaction views for affiliates with a date selection: Payment History & Sales
+- Added profile screen for affiliates where they can edit their contact information
+- Allow affiliate managers to edit their affiliates' contact information and payment details including their bounty type & amount
+- Added date selection to PayPal Mass Pay screen
+- Changed Mass Pay screen to highlight records that are inactive, and deselect items that are less than minimum payment amount
+- Added upload field to new/edit creatives screen
+- Changed plugin icon
+- Add ability to activate/deactivate affiliates
+- Fixed creative being deactivated after edit
+- Made email always required
+- Updated "How to Setup PayPal Mass Pay.pdf" to reflect new changes in the Affiliate Manager and at PayPal
+
+
+-- Version 1.3.4, Updated: 7/7/11 --
+
+- Fixed check for WP >= 3.1 on plugin activation
+
+
+-- Version 1.3.3, Updated: 7/5/11 --
+
+- Added check for WP 3.1 or greater
+- Changed cookies to string instead of binary to avoid browser incompatibilities (resets cookies with duration > 0)
+- Fixed possibility of affiliateId of zero (0) being returned (will instead show error)
+- Fixed 'Closed Transactions' stats from being recorded twice for one purchase
+
+
+-- Version 1.3.2, Updated: 6/27/11 --
+
+- Replaced php short tags
+- Reworked (and removed some) custom jquery to work the 'WordPress' way
+- Made Contact Information editable under 'My Affiliates'
+
+
+-- Version 1.3.1, Updated: 2/28/11 --
+
+- Fixed javascript incompatibility with recently upgraded jquery or WordPress installations
+- Added cookie length to affiliate settings
+- Added login_redirect filter to send affiliates that need to confirm to the affiliate front-end page
+- Fixed affiliate sign-up link for existing WP users to bring them right to the registration page
+
+
+-- Version 1.3, Updated: 1/23/11 --
+
+Note: if you are upgrading to version 1.3 from a previous version, be sure to read the readme.txt file for information on how this update will affect your existing affiliates
+
+- Added Paypal Mass Pay support for affiliate payouts
+- Made system messaging editable via the WP admin dashboard
+- Added ability to add custom fields to affiliate registration form
+- Fixed issue with manual payout amount being stored incorrectly
+- Cleaned up inconsistent currency punctuation
+- Moved affiliate reporting and creative pages out of the WP dashboard and added them to the front-end affiliate page
+- Updated affiliate decline process to allow for permanent deletion
+- Declined affiliates are now removed from the affiliate list
+- Moved Terms of Service to initial registration page
+- Apply payout page no longer asks for negative number
+
+
+-- Version 1.2, Updated: 10/19/10 --
+
+- Fixed issue with upgrade process
+- Email address missing from pending affiliates on My Affiliates page
+- Added missing data to new affiliate registration email
+- Added ability to delete creatives
+- Alt text no longer required when making new creatives
+- Allow admin to select allowed payout types
+
+
+-- Version 1.1, Updated: 10/10/10 --
+
+- Reworked the affiliate signup process to eliminate several steps.
+- Updated readme.txt file to describe new signup process
+- Fixed issue with registration form not displaying data when a visitor had an error during signup.
+- Fixed phone number field to allow periods and plus signs (for internationalization)
+- Added phone number formatting to affiliate detail screen
+- Fixed issue adding new creatives requiring an extra step before being allowed to activate.

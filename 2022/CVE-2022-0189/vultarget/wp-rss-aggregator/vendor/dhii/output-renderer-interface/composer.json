@@ -1,0 +1,46 @@
+{
+    "name": "dhii/output-renderer-interface",
+    "description": "An interface for objects that can perform rendering.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.3 | ^7.0",
+        "dhii/exception-interface": "^0.1 | ^0.2",
+        "dhii/stringable-interface": "^0.1",
+        "dhii/factory-interface": "^0.1-alpha2"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "4.*",
+        "codeclimate/php-test-reporter": "dev-master",
+        "ptrofimov/xpmock": "^1.1",
+        "psr/container": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Output\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Output\\UnitTest\\": "test/unit",
+            "Dhii\\Output\\FuncTest\\": "test/functional"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.3.x-dev"
+        }
+    },
+    "suggest": {
+        "dhii/container-helper-base": "Useful for reading data from different context types uniformly"
+    }
+}

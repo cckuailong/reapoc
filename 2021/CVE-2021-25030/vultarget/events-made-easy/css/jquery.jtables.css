@@ -1,0 +1,97 @@
+div.jtable-column-header-container {height: auto !important;}
+
+tr.jtable-data-row tr.jtable-row-even {
+   padding: 2px;
+}
+
+div.jtable-main-container table.jtable thead th.jtable-column-header div.jtable-column-header-container {
+    font-size: 11px;
+}
+
+.jtable-input-field-container {
+    margin-bottom: 5px;
+    display: inline-block;
+    float: none;
+}
+.jtable-dialog-form {
+    display: block;
+    width: 680px;
+    -moz-column-gap:40px;
+    /* Firefox */
+    -webkit-column-gap:40px;
+    /* Safari and Chrome */
+    column-gap:40px;
+    -moz-column-count:2;
+    /* Firefox */
+    -webkit-column-count:2;
+    /* Safari and Chrome */
+    column-count:2;
+}
+form.jtable-dialog-form div {
+    width: 100%;
+}
+
+div.success {
+    width: 40%;
+    border: 1px solid #61B329;
+    background: #BCED91;
+    font-weight: bold;
+    font-style: italic;
+    font: 12px sans-serif;
+    color: #222;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+div.error {
+    width: 40%;
+    border: 1px solid #CC0000;
+    background: #CD5C5C;
+    font-weight: bold;
+    font-style: italic;
+    font: 12px sans-serif;
+    color: #222;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+/* when selecting a row */
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+        background: #F2F5A9;
+}
+/* when hovering over a row */
+.jtable-data-row:hover {
+    background-color: #AAF5F3;
+} 
+/* when hovering over a selected row */
+.ui-widget-content .ui-state-highlight:hover {
+    background-color: #AAF5F3;
+} 
+.ui-widget-content a {
+	color: #0073aa;
+}
+
+.jtable-column-header, .jtable-toolbarsearch-reset {
+    white-space: nowrap;
+    background: #e6e6e6 url("jquery-ui-theme-smoothness-1.11.3/images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+}
+
+div.jtable-main-container table.jtable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: small;
+}
+div.jtable-main-container a {
+   text-decoration: none;
+}
+div.jtable-main-container table.jtable tbody > tr > td {
+    border: 1px solid #ddd;
+    padding: 1px;
+}
+.eme-jtable-center {
+    text-align: center;
+}

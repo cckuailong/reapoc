@@ -1,0 +1,33 @@
+.notice.ask-for-review-notice {
+	position: relative;
+	padding: 10px;
+}
+.notice.ask-for-review-notice > div.notice-content > a {
+	position: static;
+	float: right;
+	top: 0;
+	right: 0;
+	padding: 0 15px 10px 28px;
+	margin-top: -10px;
+	font-size: 13px;
+	line-height: 1.23076923;
+	text-decoration: none;
+}
+.notice.ask-for-review-notice > div.notice-content > a::before {
+	position: relative;
+	top: 18px;
+	left: -20px;
+	-webkit-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+.notice.ask-for-review-notice > div.notice-image {
+	width: 65px;
+	height: 65px;
+	float: left;
+	margin-right: 10px;
+}
+.notice.ask-for-review-notice > div.notice-image > img {
+	width: 100%;
+	border-radius: 10%;
+	vertical-align: text-top;
+}

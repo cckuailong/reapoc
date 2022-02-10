@@ -1,0 +1,34 @@
+<label class="wprss-blacklist-permalink">
+    <span>
+        {% trans "The URL to blacklist" %}
+    </span>
+    <input type="url" name="wprss_permalink" value="{{ value|e('html_attr') }}" />
+</label>
+
+<style type="text/css">
+    label.wprss-blacklist-permalink {
+        display: flex;
+        width: 100%;
+        align-items: baseline;
+    }
+
+    label.wprss-blacklist-permalink > span {
+        width: auto;
+        margin-right: 15px;
+        line-height: 1.5;
+        vertical-align: middle;
+    }
+
+    label.wprss-blacklist-permalink > input {
+        flex: 1;
+        line-height: 1.5;
+    }
+
+    @media all and (max-width: 720px) {
+        label.wprss-blacklist-permalink,
+        label.wprss-blacklist-permalink > * {
+            display: block;
+            width: 100%;
+        }
+    }
+</style>

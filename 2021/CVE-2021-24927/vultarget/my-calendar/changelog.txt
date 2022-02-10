@@ -1,0 +1,1998 @@
+= 3.0.19 =
+
+* Bug fix: Fatal error in export API when location object included.
+* BUg fix: my calendar categories queried private categories instead of public.
+
+= 3.0.18 =
+
+* Bug fix: Invalid setting in bottom nav defaults.
+* Bug fix: Generate feeds by date added rather than fixed number. If empty, get most recent regardless.
+* Bug fix: Legitimate HTML escaped in visual editor in group event editor.
+
+= 3.0.17 =
+
+* Bug fix: Group event editing was broken.
+* Bug fix: Eliminate four PHP notices in the Today's Events widget.
+* Added: Filter to control whether CSS should be loaded on archives.
+
+= 3.0.16 =
+
+* Changed display UID to avoid duplicate IDs when multiple calendars shown.
+* Add option to display heading in details pop-up.
+* Unify position and size of close button in Twentyeighteen mini calendar.
+* Eliminate multi category parameter from CSV output (doesn't support multidimensional data)
+* Add GUID to export data.
+
+= 3.0.15 =
+
+* Bug fix: prevent some PHP notices when running Pro importer.
+* Bug fix: Display of multidate time string when crossing months or years.
+* Bug fix: Variable written as constant prevented event_span from saving correctly.
+* Bug fix: Trash counter updated with incorrect values.
+* Bug fix: Two cases where status counter not updated.
+* Change: Add DB version to debugging info
+
+= 3.0.14 =
+
+* Bug fix: incorrect value passed for instance parameter on single event shortcode.
+* Bug fix: hide HTML wrapper for category color when colors disabled.
+* Bug fix: Remove transparent background in Twenty eighteen; blocks category colors
+* Bug fix: Invalid ordering parameter for location lists
+* Feature: Ability to select multiple categories (props Josef Fällman)
+* Moved changelogs for 2.5 & earlier to changelog.txt
+
+= 3.0.13 =
+
+* Bug fix: missing function call when accessing custom mini templates
+* Bug fix: Syntax error in SQL query checking for conflicts
+* Change: pass short description to Akismet if long desc absent
+
+= 3.0.12 =
+
+* Bug fix: My Calendar could prevent canonical link from displaying if canonical link being filtered by another application.
+* Modernize & improve Akismet integration.
+* Add filter to disable Akismet checks.
+
+= 3.0.11 =
+
+* SECURITY: XSS - Canonical URL not properly sanitized. Affects 3.0.0 and up. 
+
+= 3.0.10 =
+
+* Bug fix: invalid method used to sort location lists.
+* Bug fix: shortcode generator missing input value
+* Bug fix: datepicker did not reflect start of week settings
+* Stylesheet CSS change
+
+= 3.0.9 =
+
+* Bug fix: Error thrown if Akismet had previously been configured, then deleted.
+* Bug fix: location type was added to params if category key was set.
+* Bug fix: remove a couple notices
+* Bug fix: category relationships not carried over when recurring events split
+
+= 3.0.8 =
+
+* Bug fix: need to allow <a> elements in mc_strip_tags so calendar linkscan point to non-calendar URLs
+
+= 3.0.7 =
+
+* Bug fix: Case where events ending at midnight (AM) of current day were displayed
+* Bug fix: trim spaces from values earlier when parsing filter elements
+* Change: don't declare font-family in older stylesheets. 
+
+= 3.0.6 =
+
+* Bug fix: Shortcode for locations forms always rendered as if in a group filter.
+* Bug fix: If the default length 1 hr event pushes into next day, adjust length.
+* Bug fix: Incorrectly nested parentheses caused math error in months-by-day recurrence
+
+= 3.0.5 =
+
+* Bug fix: If only one event on a day, event title did not show in list view with show title option.
+* Bug fix: Incorrect array key for fallback parameter in widget
+* Bug fix: custom template query expected 25 chars instead of 32
+* Re-allow <br> in event titles.
+
+= 3.0.4 =
+
+* Bug fix: aria-current test was broken for current date
+* Bug fix: Private categories not disambiguated in MySQL query when excluded
+* Improve: Rewrite my_calendar_copyr backup functions to use WP core functions.
+
+= 3.0.3 =
+
+* Bug fix: Category key needed to use a 'WHERE' not an 'AND'; broke output if limiting by category
+* Bug fix: Error thrown in style editor & category editor if custom directory did not exist
+
+= 3.0.2 =
+
+* 3.0.1 did not correct the right error. Correct fix.
+
+= 3.0.1 =
+
+* Bug fix: install error on update.
+
+= 3.0.0 =
+
+* Bug fix: If category deleted, set events with that category to default cat, not cat ID 1.
+* Bug fix: Date/time comparison used front-end date value instead of dtstamp in upcoming events.
+* Bug fix: Navigation issue if beginning of week is in previous month
+* Bug fix: Event conflict didn't catch events 100% contained inside other events.
+* Bug fix: Private categories should not be visible to public users in submission forms or category lists
+* Bug fix: aria-current key term value was translatable
+* Bug fix: If editing single instance, location is removed
+* Bug fix: don't show location control notices on front-end
+* Bug fix: correcting event recurrence did not always remove meta flag
+* Bug fix: Only output map HTML if API key provided
+* Bug fix: character set and collation determination on install & update
+* Bug fix: When changing recurring events, only change instance IDs if the date of the instance has changed.
+* Bug fix: Event post should not change post date on update
+* Bug fix: All day events should export correctly to Outlook & Apple Calendar
+* Bug fix: Location control accordion was not accessible.
+* Bug fix: Term ID was not set in category manager if term already existed.
+* Bug fix: Make sure that the 's' query var is not automatically added to My Calendar URLs
+
+* Add: several new filters
+* Add: notice to alert users if their calendar configured for remote event source.
+* Add: map display to back-end location manager.
+* Add: location search in location manager
+* Add: ability to filter location lists used to submit data 'mc_get_locations'
+* Add: Support for multiple categories on events.
+* Add: stylesheet (Twenty Eighteen)
+* Add: CSS variables support
+* Add: list of problem events in Manage Events sidebar
+* Add: add months shown in list view to shortcode parameters
+* Add: support for auto-refresh of cache for a variety of caching plug-ins.
+* Add: Option to remove event data on uninstall
+* Add: filter to define events as private via custom methods
+* Add: event preview
+* Add: location support to mini calendar widget
+* Add: CSS code editor available in Style editing
+* Add: HTML code editor available in Template editing
+* Add: Schema.org address markup
+* Add: Schema.org event markup
+* Add: Include event link in 'Add to Google Cal' content.
+* Add: date format for multi-day dates in grid view.
+
+* Removed: event open & event closed text settings
+* Removed: event_open event status (little used and confusing; replaced by My Tickets)
+* Removed: guessing calendar install location
+* Removed: event cache code
+* Removed: upgrade routines from 1.11.x
+* Removed: mc_widget_defaults option
+* Removed: user's guide references
+
+* Change: default image sizes from 'medium' to 'large'
+* Change: Remove ability to disable event approval; remap "approval" to "draft"
+* Change: default number of results to show in advanced event search.
+* Change: Switched from image to icon font for close button
+* Change: Major changes to event fetching
+* Change: Major changes to code organization
+* Change: Added caching on database engine query
+* Change: if event location set in dropdown, event will always display location as shown in location manager
+* Change: changed argument style for major functions to arrays of arguments
+* Change: move Location Manager to separate page; add location sorting.
+* Change: Move exif_ fallback function into utilities include
+* Change: Moved location & category specific settings
+* Change: Simplified texts in several locations
+* Change: Clearer UI on location input limits
+* Change: autotoggle end date minimum input when start date set
+* Change: Reorganized input fields
+* Change: Generate separate iCal exports for Google Calendar or Outlook
+* Change: Constrain tabbing within details pop-up
+* Change: Close details pop-up with Esc key
+* Change: Audited options to remove unused or unneeded options
+* Change: Create a referential template when shortcode generated
+* Change: Feeds nav panel now shows subscription links; exports are available in 'exports' panel.
+
+= 2.5.17 =
+
+* Security: Authenticated XSS vulnerability resolved.
+* Remove 'create_function' for PHP 7.2 compatibility.
+* Updated: Upgrade Notice output.
+
+= 2.5.16 =
+
+* Bug fix: Event deletion action executed when individual instance deleted from front-end
+* Updates: due to esc_sql function changes in WordPress 4.8.3
+
+= 2.5.15 =
+
+* Bug fix: Jumpbox rendered October as January due to unneeded character replacement
+
+= 2.5.14 =
+
+* Bug fix: saving setting for main calendar URL from front page doesn't work
+* Bug fix: esc_url only in appropriate places
+* Bug fix: Recognize month parameter from shortcode in navigation elements
+* Bug fix: 404s for deleted events
+* Bug fix: Print styles handle date in week view better
+* Bug fix: Events not visible in list with list JS disabled
+* Bug fix: SQL query for conflict checking threw errors
+* New option: list all events in list view with JS
+
+= 2.5.13 =
+
+* Bug fix: Categories can not be part of the md5 hash used to identify unique tables (breaks AJAX nav for categories)
+* Bug fix: recurring scheduling for week-days only not functional when 7 days or greater
+* Bug fix: Print view location filters broken
+* Bug fix: Make AJAX scripting aware of which other scripts are enabled.
+* Bug fix: Sort scheduled dates for event by date
+* Bug fix: JetPack Grunion Contact form interfered with TinyMCE in contexts outside of post editor (https://github.com/Automattic/jetpack/issues/7598)
+* Bug fix: ensure date is retained if datepicker disabled
+* Bug fix: archived events filter marked as active when not
+
+= 2.5.12 =
+
+* Bug fix: missing space in conflict identification
+* Bug fix: internationalization of string to time created conflict when entering month abbreviations
+* Add filter to enable creation of a custom content editor
+
+= 2.5.11 =
+
+* Bug fix: Bottom mass action buttons outside of form
+* Bug fix: User select form used 'checked' instead of 'selected'
+
+= 2.5.10 =
+
+* Bug fix: allow parsing of non-English strings through strtotime()
+* Bug fix: trim whitespace off array keys in location controller
+* Bug fix: Don't display 'Add Event' menu in adminbar if remote event database is enabled
+* Bug fix: All day events correctly exported in iCal files
+* Bug fix: Footer navigation not shown on single day view
+* Bug fix: Execute AJAX navigation from both header and footer containers
+* Bug fix: {icon_html} returned broken image if category had no assigned icon
+* Removed obsolete PHP 4 compatibility for clone keyword
+* Added hook to prevent activation if PHP version below 5.3.0.
+* New filter: define custom target calendar URL via 'mc_get_uri' filter
+* New action: 'mc_insert_recurring' run while creating event instances
+* New filter to customize default event length: 'mc_default_event_length'
+* New filter: 'mc_show_week_number' to turn on column indicating displayed week's number. (props Josef Fällman)
+* UI Change: Duplicate navigation and search on events list at bottom of list
+* Miscellaneous improvements to the My Calendar Filters shortcode: set target URL & change location search type, add as widget
+* New widget: My Calendar event filters
+* Added inverse color style declaration to category color template tag
+
+= 2.5.9 =
+
+* Bug fix: class .mc-main appeared twice in day view
+* Bug fix: iCal output fetches no data on subsites in multisite networks
+* Bug fix: broken image upload script due to localization change
+* Bug fix: sorting events by category should sort by name, not ID
+* Add site name to .ics output file
+
+= 2.5.8 =
+
+* Bug fix: mc-ajax.js referred to a class that did not always exist
+* Bug fix: Cases missed in interpreting category class values
+* Bug fix: For backwards compatibility, ensure that spaces are replaced with hyphens in category classes
+* Bug fix: Check whether templates returned are empty & ensure fallback renders
+* Bug fix: revise FOUC implementation to avoid jQuery not defined errors
+
+= 2.5.7 =
+
+* Bug fix: notice in event image field if input disabled
+* Bug fix: class setting was based on GMT timestamp according to MySQL
+* Bug fix: PHP notice thrown if requested template doesn't exist
+* Bug fix: support for embedding videos via iFrame.
+* Bug fix: JS refinements to AJAX loading; changing formats can cause panel closing not to fire due to .list/.calendar switching
+* Bug fix: JS refinements to AJAX loading; make sure everything works when positioned in the header or are excluded
+* Bug fix: always provide a category class that's valid
+* Bug fix: If mini calendar links set to open to new page, automatically disable JS
+* Bug fix: If special options hidden, always set to 'true' on event save.
+* Added: aria-current for current date.
+* Improve KSES implementation
+* Improved URL building
+* Improvements to print CSS
+* Improvements to sortable CSS
+* New filter: 'mc_category_icon'
+* New action: 'mc_print_view_head'
+
+= 2.5.6 =
+
+* New filter: mc_user_can_see_private_events to change criteria for visibility of private events
+* New filter: mc_private_categories to tweak which categories are considered private
+* Bug fix: PHP warning due to cache query occurring when caching is not enabled
+* Bug fix: images entered only as URLs deleted on edit
+* Accessibility: aria-expanded attached to wrong element in list view
+* Accessibility: ornamental icon fonts exposed to screen readers
+
+= 2.5.5 =
+
+* Bug fix: notices when generating classes for upcoming events
+* Bug fix: RSS feed should respect private categories
+* Bug fix: Events happening now shortcode should respect private categories
+* Bug fix: iCal output should respect private categories
+* Bug fix: @ suppressed notices in template tag parsing. props @uscore713
+* Bug fix: eliminate two notices in upcoming events class parsing
+* New filter: mc_draw_upcoming_event
+* New filter: mc_draw_todays_event
+* Marked as compatible with 4.7
+
+= 2.5.4 =
+
+* Add New link on Manage Events screen
+* Add new link on Edit categories screen
+* Add new link on Edit locations screen
+* Changed maxlength on recurrence unit field to 2
+* Eliminate two notices generate on manage events screen
+* Two incorrect method_exists checks; should be property_exists
+
+= 2.5.3 =
+
+* Bug fix: prevent non-object warning in check for notime text
+* Bug fix: missing classes from some instances of upcoming events list
+* Bug fix: Only show invalid format/time errors if user with permissions.
+* Enhancement: Include invalid format/time in error message.
+* Performance: In single event shortcode, break out of foreach if list of related events not being produced.
+
+= 2.5.2 =
+
+* Bug fix: Make sure that upcoming events element filters operate in all cases
+* Bug fix: Permit {register} template tag to pass additional attributes
+* Bug fix: Add class to permitted attributes on span tag
+
+= 2.5.1 =
+
+* Bug fix: Multi-word category titles not hyphenated in event classes
+* Bug fix: Add `{related}` template tag to documentation
+* Bug fix: Today's events template broken
+* Add 'past-event' and 'future-event' classes to related event list & main events lists
+
+= 2.5.0 =
+
+* Update hcalendar structures
+* Better handling when updating event taxonomies
+* Options to restrict management of events by category / user
+* UI Clean up
+* Don't display format toggle on mobile if automatic format switching enabled
+* Add custom date option to upcoming events shortcode builder
+* Improved error message if user creates event with an invalid recurring cycle
+* Updated template editor; ability to create custom templates.
+* Add option to add new dates for an existing event.
+* For single event, show closest available date if no/invalid date ID provided.
+* Added first occurrence data to core event object
+* New template tag: {related} to list other events in the same group
+* New loading indicator for AJAX navigation
+* New filter to modify event classes
+* New function to generate event classes
+* Reduce number of strings in plug-in to reduce burden on translators
+* Multisite: ability to display calendar for any site on any other site
+* in my_calendar_draw_event(), add filter to hide additional days of events
+* Improved HTML filtering to allow input elements and schema.org attributes.
+* Add support for Google Maps API key field, now required for use of Google Maps on new sites
+* Add 'today' keyword for the upcoming events 'to' attribute
+* Updates to Help documentation
+* Bug fix: auto assign events with no category to 'General'
+* Bug fix: some user select lists overwrote select list options
+* Bug fix: new events with no times entered need to be created as all day events
+* Bug fix: wrong number of arguments passed to mass delete events hook
+* Bug fix: Custom JS incorrectly escaped in Script manager
+* Bug fix: removed numerous notices
+* Bug fix: improved handling of missing event posts
+* Bug fix: allow more HTML elements & attributes
+* Bug fix: misc. notices
+
+Breaking Changes:
+
+* Breaking change: minor changes to classes to improve structured data in microformats
+* Breaking change: upcoming events widget no longer uses ID 'upcoming-events'; use class '.upcoming-events'
+* Breaking change: today's events widget no longer uses ID 'todays-events'; use class '.todays-events'
+
+= 2.4.21 =
+
+* Bug fix: Google Maps format change to latitude/longitude links
+* Bug fix: Use short description directly as {excerpt} if provided.
+
+= 2.4.20 =
+
+* Bug fix: PHP warning triggered on type conversion when toggling time views.
+* Bug fix: Map template tag returned raw scripts without `<script>` tags.
+
+= 2.4.19 =
+
+* IMPORTANT: SECURITY RELEASE
+* Security fix: XSS vulnerability: user who could create or edit an event could insert a XSS attack.
+* Security fix: Phishing vulnerability: user who could create or edit an event could insert an iFrame for phishing
+* Security fix: Possible to programmatically alter the event being edited to push edits into a different event.
+* Security fix: Possible to programmatically alter the author of the edited event.
+
+Other changes in this release:
+
+* Screen-reader-text class was duplicated on mini calendar dates
+* New class: 'all-categories' on all categories link
+* New filter: filter All Categories text
+* New filter: filter Map URL & Map Label
+* Bug fix: when sequentially switching from Month to Week to Month & back to Week, Week would revert to first week of month.
+* Bug fix: Maintain current view when switching categories
+
+= 2.4.18 =
+
+* Add permalink settings notice to field note for clearer instructions.
+* New filter: inner content filter for templates.
+* Improve template handling when partial event passed to template
+* Add filters to alter wrapper elements in Today's Events & Upcoming Events lists.
+* Bug fix: {excerpt} template tag had invalid if/else logic.
+* Remove files for Spanish, French, Polish, Portuguese, Japanese, and Czech translations in favor of language packs
+
+= 2.4.17 =
+
+* Bug fix: Google Maps calendar ignored Latitude/Longitude.
+* Bug fix: missing ID attribute on form field
+* Bug fix: replace an anchor with a button in admin
+* Bug fix: missing label in manage events
+* Bug fix: missing quote broke id attribute on manage categories
+* Bug fix: duplicate IDs in tab UI structure on Settings page
+* Add support for selective refresh in customizer
+* Updated HTML hierarchy
+
+= 2.4.16 =
+
+* Minor CSS updates in calendar stylesheets
+* Bug fix in widgets
+* Bug fix in list JS with focus management (accessibility)
+
+= 2.4.15 =
+
+* Increase field length allowed for event location fields
+* Picker CSS improvements
+* Bug fixes on event search queries
+
+= 2.4.14 =
+
+* Bug fix: possible SQL error if event ID not saved in event post on event creation.
+* Bug fix: database didn't allow recurring spacing larger than 9; input allowed up to 12.
+* Bug fix: multiple uses of {dtstart format=''} in upcoming events caused repeated data.
+* Bug fix: Escaping of address string in Google Maps
+* Bug fix: Pass parameter to indicate whether calendar is rendered in widget or shortcode. Only render single view in shortcode.
+* Bug fix: Custom stylesheets had to have same names as standard stylesheets
+* Bug fix: Print view return link returns to previous page instead of My Calendar URL.
+* Bug fix: Potential broken image icon in category manager
+* Prep: Eliminate references to add_object_page(), deprecated in 4.5
+* Prep: Eliminate referneces to get_currentuserinfo(), deprecated in 4.5
+* Add Filter: make time interval filterable ('mc_interval')
+
+= 2.4.13 =
+
+* Allow feeds to show on mini calendar widget
+* Bug fix (performance); only check table type for current table of interest.
+* Bug fix: Allow mini widget calendar title to be blank.
+* Bug fix: Catch some instances where a SQL error could be generated by missing data.
+* Bug fix: Removed i18n of calendar day classes to avoid breaking HTML in non-latin languages. [Potentially breaking change]
+* Bug fix: Improvement to stylesheet notices when file editing disallowed in WordPress
+* Bug fix: Notice could be thrown if template parts not all set.
+* Removed: Deprecated remaining parts of the migration path from 1.7.0 and earlier.
+* Revalidate RSS feed
+* Add filter to enable alerts on ical events.
+
+= 2.4.12 =
+
+* Bug fix: allow / character in permalink formats
+* Bug fix: missing reference in CSS for Google Maps images
+* Bug fix: Single event delete broken
+* Bug fix: if event deleted from Manage Events screen, stay on Manage Events instead of shifting to Add New.
+* Bug fix: Improper i18n in events list heading
+
+= 2.4.11 =
+
+* Bug fix: remove category parameter from 'All Categories'
+* Bug fix: Invalid closing </th>
+* Bug fix: Update gmap3 to version 6.0
+* Bug fix: CSS conflict with max-width can cause Google Maps image to fail to render correctly.
+* Bug fix: duplicate ID in list view breaking layout.
+* I18n fix: Make accessibility strings translatable without requiring filters
+* Change: Open list panels with a button.
+* Update: Rewrote mc-list.js
+
+= 2.4.10 =
+
+* Bug fix: Better detection of whether or not multisite support is available.
+* Bug fix: Stop disabling JS on mobile if format conversion is enabled.
+* Bug fix: Pretty permalinks display of event date/time broken on recurring events.
+* Bug fix: Handle use of using_index_permalinks() and produce correct URLs.
+* New filter: 'mc_use_custom_template': pass a file name or template name to use a custom template for a given event display.
+* Language updates: French, Russian, Catalan, Italian
+
+= 2.4.9 =
+
+* Bug fix: Make iCal support elimination of holiday collisions
+* Bug fix: Compensate for other plug-ins defining their own tab styles on My Calendar's settings
+* Bug fix: Fallback to My Calendar DB images if featured images missing on post.
+* Add support: Search events without requiring MyISAM MySQL engine.
+* Language updates: Portuguese (Brazil), German
+
+= 2.4.8 =
+
+* Bug fix: Md5 hash on arguments includes format & timeframe, so switching between options broke CID references
+* Bug fix: clear undefined index notice occurring only under specific unusual server configurations
+
+= 2.4.7 =
+
+* Update Italian translation
+* Bug fix: Ensure that mini calendar widgets have unique IDs
+* Eliminate an obsolete variable.
+
+= 2.4.6 =
+
+* Bug fix: I just can't stop making stupid mistakes in print view. Sheesh.
+
+= 2.4.5 =
+
+* Mislabeled form field on date switcher.
+* Add primary sort filter to main event function [props @ryanschweitzer]
+* New filters on navigation tools.
+* Bug fix: Print view loaded when iCal requested [broken in 2.4.4]
+* Bug fix: Changes to Upcoming Events widget to better limit upcoming events lists.
+* Language updates: Czech, Swedish, Finnish
+
+= 2.4.4 =
+
+* Bug fix: Stray character return in Print view
+* Bug fix: Print view did not respect date changes
+* Bug fix: Logic error in sort direction switching in admin when setting not configured
+* Change: Print view no longer driven by feed API.
+* Change: Added option to disable "More" link from settings
+
+= 2.4.3 =
+
+* Bug fix: reversed filter name/value pairing in SQL query.
+
+= 2.4.2 =
+
+* Bug fix: in Upcoming Events shortcode (mismatch between documentation & reality).
+
+= 2.4.1 =
+
+* Bug fix: Missing style in print.css
+* Bug fix: Broken <head> in print view.
+
+= 2.4.0 =
+
+New features:
+
+* Set upcoming event class based on time, rather than date.
+* Add past/present classes to today's events widget
+* Assign Custom All Day label for each event.
+* Support hiding 'Host' field as option.
+* Made primary sort order of events filterable: 'mc_primary_sort'
+* Added action to location saving handling updated locations
+* Added arguments to from/to filters in Upcoming Events
+* Enabled option to turn on permalinks
+* Custom canonical URL for event pages
+* Added 'date' parameter to today's events list & shortcode accepting any string usable in strtotime()
+* Added 'from' and 'to' parameter to upcoming events list & shortcode accepting any string usable in strtotime
+* Added year/month/day parameter to main shortcode to target specific months for initial display.
+* Make BCC field filterable
+* Add filters to search query parameters
+* New option: switch to mini calendar on mobile devices instead of list view.
+* Add [day] select field to date switcher if in 'day' view.
+* Option to set default sort direction
+* Ability to set three separate event title templates: grid, list, and single.
+* Added admin-bar link to view calendar.
+* Added option to customize permalink slug on permalink page
+* Single event pages as permalinks use the same template as main if custom template isn't enabled.
+* New template tag: {color_css} and {close_color_css} to wrap a block with the category background color.
+* Add category classes to Upcoming & Today's events widgets
+* Redirect page to main calendar if event is private
+* Improved labeling of cell dates
+
+Bug fixes:
+
+* Stop setting all day events to end at midnight; use 11:59:59 and filter output
+* Rewrite iCal output so that the iCal download eliminates Holiday cancellations
+* Bug fix: Prevent extraneous variables from leaking into the navigation output.
+* Rendering post template in permalinks only applies within Loop.
+* Template attribute preg_match could only pick up 2 parameters
+* Prevent an invalid mc_id value from returning errors.
+* Prevent deprecation notice when getting text_direction
+* Default to not showing navigation options in print view.
+* Better loading of text domain.
+* Prevent mini calendar from switching to list format.
+* Change class construction to PHP 5 syntax
+* Close button is now a button rather than a link.
+* Fixed display of text diff for stylesheet comparisons
+* Two different filters with different names.
+* mc_after_event filter not running with custom templates.
+* With My Tickets active, enter key did not submit Add/Edit event form
+* Fixed documentation error with ical template tags.
+* Improved efficiency of WP shortcode processing in templates.
+* A multi-day event crossing the current day was counted as a future event in upcoming events
+* If event instance was split from recurring event, showed same recurring settings as original event.
+* If events were mass deleted, the corresponding event post was not also deleted.
+* Prevent single event pages from displaying content if the event is in a private category.
+
+Important Changes:
+
+* Removed references to #jd_calendar and generate custom IDs. [breaking change
+* Revision of settings page [reorganize settings into tabs]
+* Reorganized settings pages.
+
+Other:
+
+* Moved changelog for versions prior to 2.3.0 into changelog.txt
+
+Translations:
+
+* Updated Polish, Portuguese (Portugal), Dutch, Turkish, Slovak, Norwegian, Hungarian, German, Spanish, Persian, Czech, Danish
+
+= 2.3.32 =
+
+* Bug fix: end time for events auto-toggled to midnight, instead of +1 hour when end time omitted.
+
+= 2.3.31 =
+
+* Added escaping in 2.3.30 broke location & category limits (escape placed on wrong string.)
+
+= 2.3.30 =
+
+* Security Fix: Arbitrary File Override
+* Security Fix: Reflected XSS
+* Thanks for Tim Coen for responsibly disclosing these issues.
+* All issues apply for authenticated users with access to My Calendar settings pages.
+* Language updates: Updated Polish, Swedish, Galician, Czech, Norwegian, Italian
+* Added Slovak, Icelandic, Hebrew
+
+= 2.3.29 =
+
+* Security Fix: XSS issue applying to improper use of add_query_arg(). See https://yoast.com/tools/wrong-use-of-add_query_arg-and-remove_query_arg-causing-xss/
+
+= 2.3.28 =
+
+* Bug fix: Problem saving My Calendar URI if My Calendar is intended for use behind a secured location.
+* Update languages: French, German, Catalan
+
+= 2.3.27 =
+
+* Bug fix: Things that happen when you failed to write down a minor change - you don't test it. Couldn't choose a preset location when creating an event in 2.3.26.
+
+= 2.3.26 =
+
+* Typo in aria-labelledby.
+* Bug fix: fatal error if wp_remote returns WP_error.
+* Bug fix: could not set calendar URI if site is password protected.
+* Bug fix: category key fetched icons using a different path generation than main calendar that could result in a broken link.
+* Bug fix: ensure that all image template tags exist in the array, even if the event post does not exist.
+* Bug fix: make print view respect current category/location filters
+* Bug fix: make iCal download respect current category/location filters
+* Added class on event data container for root ID of events.
+* Added 'current' class for currently selected category in category key if category filter applied.
+
+= 2.3.25 =
+
+* Bug fix: Escape URL for search form request URL
+* Bug fix in check whether event had a valid post container.
+* Bug fix to handle problem with weeks calculation on the first of the month.
+* Bug fix: Display problem in single-page event view in twentyfifteen.css
+* Bug fix: If My Calendar URL is invalid, re-check when settings page is loaded.
+* Bug fix: Don't display update notice on new installs.
+* Change: My Calendar automatically generates calendar page on installation.
+* Change to Upcoming Events default template to make usage more robust.
+* Change: mc-mini JS to auto close all open panels if a new one is opened.
+* Rearrange a few settings for better usability.
+* Added ability to use Upcoming Events widget to show the nth future month. (e.g., show events for the 6th month out from today.)
+* Deprecated upgrade cycles prior to version 1.11.0.
+* Improve accessibility of tab panels used in My Calendar UI.
+* Language updates: Updated Russian, Added Afrikaans
+
+= 2.3.24 =
+
+* Bug fix: In mini widget, date is not displayed if only event on date is private
+* Bug fix: Improved fix to year rendering (roughly fixed in 2.3.23)
+* Bug fix: Improved rendering of structured event data.
+* Bug fix: [my_calendar_now] incorrectly checked the current time.
+* Bug fix: "Archive" link pointed to wrong location in event manager.
+* Bug fix: Was no way to reverse archiving an event; added method
+* Bug fix: Shortcode generator produced incorrect Upcoming Events shortcode.
+* Bug fix: Overlapping occurrences warning inappropriately showed on events recurring on a month by day basis
+* Bug fix: If only event on date is private, don't add class 'has-events'
+* Bug fix: Save default values for top/bottom nav on install.
+* Bug fix: Restore default template array when plug-in is deleted and re-installed
+* Minor style change to twentyfourteen.css
+* New default theme: twentyfifteen.css
+* Feature add: AJAX control to delete individual instances of a recurring event from the event editor.
+* Feature change: Events post type content filter now replaces content instead of repeating. Use 'mc_event_content' filter to override.
+* Improvement: Show overlapping occurrences warnings in manage events view.
+* Improvement: List/Grid button only shows on month and week views.
+* Misc. UI improvements.
+* Performance fix: Hide overlapping recurring events on front-end. (They can consume massive amounts of memory.)
+* Language updates: French, Spanish, Japanese, Dutch, German, Ukrainian, Swedish
+
+ISSUE: What's causing templates to not be set?
+
+= 2.3.23 =
+
+* Bug fix: Calendar rendering 2014 at beginning of 2015.
+* Bug fix: Set Holiday category when adding new categories.
+* Bug fix: Search widget title heading HTML not rendered.
+* Bug fix: mc-ajax.js was not compatible with heading filter for output.
+* Language updates: French, Spanish, Ukrainian
+
+= 2.3.22 =
+
+* Edit: Allow integers up to 12 in the 'every' field for recurring events. (Previously 9)
+* Bug fix: Incorrect sprintf call in {recurs} template, effecting recurring events by month.
+* Language updates: German, Russian, Portuguese (Portugal), Hungarian, Ukrainian
+
+= 2.3.21 =
+
+* Plug-in conflict fix: CSS override to fix conflict with Ultimate Social Media Icons
+* Bug fix: Allow {image_url} to fall back to thumbnail size if no medium / create _url equivalents for each size.
+* Bug fix: Allow location controls to be entered with only keys.
+* Bug fix: Entering default value for controlled locations is empty value, instead of 'none'.
+* Bug fix: If value of location field is 'none', don't display.
+* Bug fix: Use Location URL as map link if URL is provided and no other mappable location information
+* Bug fix: if editing single instance, delete link will delete just that instance.
+* Bug fix: If recurring event fields were hidden, but event recurred, recurrences would be deleted.
+* Bug fix: Limiting locations did not work in Upcoming Events using 'events' mode.
+* Bug fix: Allow limiting locations but all event location fields.
+* Bug fix: Limiting locations accepts numeric values for limiting.
+* Bug fix: {recurs} template tag indicates frequency ("Weekly", vs "every 3 weeks")
+* Bug fix: fixed templating issue when custom templates used a tag multiple times with different attribute parameters.
+* Add filter to modify the title information shown in list view to hint at hidden events ('mc_list_event_title_hint')
+* Add filter: number of months shown in list view filterable on 'mc_show_months'
+* Feature: Add shortcode/function to display a current event. [my_calendar_now]
+* Feature: Add search results page option to calendar search widget.
+* Removed all remaining code related to user settings, which are no longer in use.
+* Language updates: French, Danish, Russian, Swedish, Portuguese/Brazil, Portuguese/Portugal, Norwegian Bokmal, Hungarian
+
+= 2.3.20 =
+
+* Bug fix: Escaped $ variable in custom JS wrapper
+* Bug fix: has-events class appearing in calendar on days after all-day events
+* Bug fix: Reset stylesheet applied outside calendar HTML. Eliminated elements not used by MC.
+* Bug fix: Missing required argument for My Calendar search form widget
+* Bug fix: 'Approve' link broken
+* Bug fix: Details link could return expired event links.
+* Translation updates: Spanish, Slovenian
+
+= 2.3.19 =
+
+* Bug fix: Could not un-check show today's events in Upcoming Events widget
+* Bug fix: Could not turn off event recurrences section in event manager
+* Bug fix: stripped HTML tags out of upcoming events & today's events template fields
+
+= 2.3.18 =
+
+* Bug in rendering of custom JS causing visible rendering of code.
+* Bug in saving Today's Events widget settings
+
+= 2.3.17 =
+
+* 2.3.16 bug fix was incomplete, triggered new error. Sorry for rushing!
+
+= 2.3.16 =
+
+* Bug fix: Upcoming events did not show for logged-in users if site did not have private categories defined.
+* Cleared a PHP notice.
+
+= 2.3.15 =
+
+* Bug fix: Controlled locations not input correctly from Add Event form
+* Bug fix: Use force_balance_tags() when saving descriptions & short descriptions to prevent descriptions from breaking layout
+* Bug fix: My Calendar reset stylesheet missing .mc-main on buttons; causing display issues with submit buttons.
+* Bug fix: shortcode generator produced results in disabled form field; changed to readonly because Firefox does not permit selecting text in disabled fields.
+* Bug fix: Widget navigation automatically reset itself if you saved widget form after clearing data
+* Bug fix: category classes for multi-day, all-day events showed on termination date
+* Bug fix: Checkbox states on JS scripts not retained
+* Bug fix: Show default values in upcoming events widget
+* Bug fix: Default values not saved on new installation
+* Bug fix: Admin event manager should sort by Date/Time instead of Date/Title
+* Documented [my_calendar_search] shortcode
+* Added 'current' option for author/host to shortcode generator.
+* Extensive code clean up
+* Feature: Default view next month option in calendar and upcoming events lists.
+* Deprecated upgrade cycles prior to version 1.10.0.
+* Language updates: Japanese, Dutch, Italian, Spanish, Finnish, Swedish, Norwegian
+
+= 2.3.14 =
+
+* Bug fix: Disabled front-end event editing links for logged-in users.
+* Language updates: Spanish, Norwegian, Hungarian
+
+= 2.3.13 =
+
+* Bug fix: Failed to handle "open links to event details" option in updated JS handling.
+
+= 2.3.12 =
+
+* Bug fix: change of option name meant that you couldn't enable/disable scripts.
+* Bug fix: shortcode generator generates a 'readonly' textarea instead of disabled so it can be copied in Firefox.
+* Accessibility: handle assignment of focus on AJAX navigation
+
+= 2.3.11 =
+
+* Change: Modified default JS saving so that only custom JS gets handled in editor.
+* Change: toggle to enable/disable custom JS; default to off
+* Change: Moved scripting into files.
+* Notice: admin notice to inform users of need to activate JS if using custom
+* Bug fix: Modify default JS so wpautop doesn't cause problems with toggles.
+* Bug fix: External links displaying is_external boolean instead of classes.
+* Bug fix: mysql error if location_type not defined but location_value is.
+* Bug fix: page_id unset when default permalinks in use. [Ick. Don't use default permalinks.]
+* Bug fix: My Calendar navigation panel could not disable top/bottom navigation.
+* Feature: * Add Bcc notification list
+* Accessibility: improvements to pop-up event details: focus & closing, ARIA
+* Filter: headers filter for My Calendar email notifications.
+* Filter: Add detection to pass custom JS from custom directory/theme directory
+* Updated French, Spanish translations.
+* Removed .po files from repository; reduces file size by over 2 MB.
+
+= 2.3.10 =
+
+* New filter: mc_jumpbox_future_years - alter the number of years into the future shown in the calendar date switcher.
+* New filter: mc_add_events_url - alter URL for Add Events in adminbar; return URL
+* New filter: mc_locate_events_page: alter menu parent of Add Events in admin menu; return menu slug or null
+* Bug fix: ltype and lvalue not passed from shortcode into handler for upcoming events.
+* Bug fix: disable comments by default for event post storage.
+* Bug fix: misnamed variable in filter; resolves notice on line 239 of my-calendar-output.php
+* Bug fix: do search and replace on default scripting as well when script fields are blank
+* Bug fix: Check default option for import data from remote database; verify the default will be false
+* Added template tag: {linking_title}; same as {link_title}, but falls back to details link if no URL input for event.
+* Change default widget template to use {linking_title}.
+* Security: Two XSS vulnerabilities fixed. Thanks <a href="http://www.timhurley.net/">Tim Hurley</a>
+* Update Translation: Russian
+
+= 2.3.9 =
+
+* Bug fix: Minor event templates ( title, detail, etc. ) were not properly escaped in admin forms.
+* Bug fix: use reply-to email header in support messages
+* Bug fix: Mass approval of pending events broken.
+* Bug fix: {linking} template tag referenced wrong event URL.
+* Bug fix: My Calendar API RSS no longer dependent on default RSS data.
+* Bug fix: Replace mysql_* functions for PHP 5.5 compatibility.
+* Bug fix: Incorrect template tag in Single view template: {gcal} instead of {gcal_link}
+* Bug fix: PHP notice on $map
+* Language updates: Japanese, German, Italian
+
+= 2.3.8 =
+
+* Added {link_image} to add an image linked to the event URL in templates.
+* Bug fix: extended caption value saved but not shown.
+* Bug fix: For multi-day events ending at midnight, last date automatically extended one day at save.
+* Bug fix: on copy, if start date is changed, but end date isn't, increment end date to match length of original event.
+* Change: Eliminate error on empty title fields or invalid recurrence values. Set to default value instead.
+
+= 2.3.7 =
+
+* Did not enqueue jQuery on front-end unless Google Maps was enabled. (Incorrect condition nesting...) Whoops.
+
+= 2.3.6 =
+
+* Error in yesterday's bug fix for upcoming events.
+* Bug fix: Email notifications broken.
+
+= 2.3.5 =
+
+* Bug fix: Notice in today's events widget
+* Bug fix: Images from pre 2.3.0 configuration did not display in default Single event view.
+* Bug fix: Upcoming events list could return too few events.
+* Bug fix: Display default date format if format not set.
+* Bug fix: Fallback to default JS if custom JS not defined.
+* Filter: added filter to Google Maps code; mc_gmap_html
+* Option: enabled option to disable Google Maps output.
+
+= 2.3.4 =
+
+* Bug fix: Week date format wouldn't save.
+* Bug fix: Event posts & custom field data not saved on copy action
+* Bug fix: HTML errors in {hcard} address format.
+* Bug fix: Manage events search form overlapped pagination links
+* Bug fix: Events ending at midnight in Today's Events lists appeared twice
+
+= 2.3.3 =
+
+* Bug fix: Notice on access_options filter.
+* Bug fix: Invalid date values if no parameters set for iCal
+* Bug fix: Invalid nonce check in location entry prevented creation of new locations. One missing exclamation point. Sigh.
+* Bug fix: If location controls are on, allow old values to be saved, but raise notice that value is not part of controlled set.
+* Feature: add sync=true to root iCal URL to connect apps for scheduled syncing. (http://example.com/feeds/my-calendar-ics/?sync=true)
+* Updated: Polish translation
+
+= 2.3.2 =
+
+* Bug fix: label change to clarify entry format for location controls
+* Bug fix: Missing end tag on <time> element
+* Bug fix: my_calendar_search_title can handle missing 2nd argument
+* Bug fix: Add "active" class span on time toggle active case.
+* Bug fix: Recurring all-day events showing twice
+* Bug fix: Non-editable fields for date/time input broke occurrences & restricted time options
+* Bug fix: Category filtering broken when holiday categories enabled
+* Bug fix: Double check whether categories exist and throw error if not, after attempting to create default category.
+* Feature: Mass delete locations
+
+= 2.3.1 =
+
+* Bug fix: PHP warning on event save
+* Bug fix: PHP Notices generated on deleted author/host value.
+* Bug fix: Pop-up calendar for date entry had incorrect day labels
+* Bug fix: Editing individual date instances issues.
+* Bug fix: {image} fallback for pre 2.3.0 uploaded images
+* Added: secondary sort filter for main calendar views; default event_title ASC. Field and direction must be provided to change.
+* Updated my-calendar.pot
+
+= 2.3.0 =
+
+This is a major revision.
+
+* Bug fix: Manage events screen showed no data for users without manage_events permissions.
+* Bug fix: if single event set, could not filter to time period views.
+* Bug fix: 'single' template ID not passed into template filter.
+* Bug fix: events in private categories appeared in time-based upcoming events lists.
+* Bug fix: RSS feed encoding.
+* Bug fix: Turn-of-year issues with week view.
+* Bug fix: Added new locations multiple times if added with multiple occurrences of an event.
+* Bug fix: In some browsers, time selector added invalid data.
+* Bug fix: List of search results not wrapped in a list element.
+* Bug fix: Trim spaces on above/below navigation strings.
+* Bug fix: If an event ends at midnight, automatically end tomorrow unless set for a later date.
+* Bug fix: Don't show events on both days if they end at midnight.
+* Bug fix: Don't attempt to enqueue jquery.charcount.js if WP to Twitter not installed.
+* Bug fix: Dates didn't strip links in list view when JS disabled for that view.
+
+* New template tag: {runtime} to show human language version of length of event.
+* New template tag: {excerpt} to create autoexcerpt from description field, using shortdesc if it exists.
+
+* New feature: Accessibility features for locations.
+* New feature: Specify accessibility services for events.
+* New feature: ticketing link field
+* New feature: event registration information fields
+* New feature: my_calendar_event shortcode can query templates by keyword (list,mini,single,grid).
+* New feature: filter events by available accessibility services
+* New feature: Combined filter shortcode to group all filters into a single form. [mc_filters show='locations,categories,access']
+* New feature: new API for adding custom fields to events.
+* New feature: data API to fetch event data in JSON, CSV, or RSS formats.
+* New feature: Archive events to hide from admin events list.
+* New feature: Control input options for multiple types of location input data.
+* New feature: Shortcode generator for primary, upcoming, and today's events shortcodes.
+* New feature: admin-side event search
+* New feature: category key now acts as quick links to filter by category
+* New feature: Option to add title to Event Search widget.
+
+* New filter: mc_date_format for customizing date formats.
+* New filter: customize search results page: mc_search_page
+* New filter: mc_use_permalinks to enable use of custom post type permalinks for single event pages.
+* New filter: mc_post_template to customize template used in single event shortcode automatically inserted into custom post type pages.
+
+* New design: new stylesheet available: twentyfourteen.css
+
+* Updated: added more fields to search on events.
+* Updated: updated image uploader to use add media panel and store attachment ID
+* Updated: <title> template supports all template tags (but strips HTML.).
+* Updated: Various aspects of UI
+* Updated: Date/time selectors. See http://amsul.ca/pickadate.js/, MIT license.
+
+* Reorganized default output template code.
+* Import all used locations into location manager.
+* Removed User settings fields.
+* Moved Holiday category assignment to Category Manager.
+* Improved get current URL function.
+* iCal output in multiple-month view outputs all displayed months.
+* {map} template tag to display a Google Map using the Google Maps API. (Not available in pop-up displays.)
+* Scheduled removal of showkey, shownav, toggle, and showjump shortcode attributes.
+* Removed upgrade support for 1.6.x & 1.7.x series of My Calendar.
+
+= 2.2.13 =
+
+* Bug fix: Threw error if network-activated (wp_is_mobile() not defined yet)
+* Bug fix: Calendar URI could be saved as integer instead of as URL.
+* Bug fix: hide screen options that current user can't use.
+* Improved localization of Calendrical jQuery plug-in.
+* Feature: my_calendar_upcoming and my_calendar_today shortcodes now support filtering by host.
+* New filter: mc_send_notification -- passes event and user data to determine whether a new event email notification should be sent. Return true|false.
+
+= 2.2.12 =
+
+* Bug fix: jquery.calendrical time rendering.
+
+= 2.2.11 = 
+
+* Required deleted file.
+
+= 2.2.10 =
+
+* Bug fix: date comparison in grouped event date output.
+* Bug fix: editing a single occurrence of an event when location fields not displayed could result in duplicating the event.
+* Bug fix: Duplicated <a> on event title in events manager.
+* Bug fix: Generated WP to Twitter empty sentence error.
+* Bug fix: Grouped events within a single day in upcoming events list.
+* Bug fix: Run My Calendar upgrade stylesheet archiving only when My Calendar is updated.
+* Bug fix: 
+* Changed: replaced mc_is_mobile() functionality with native wp_is_mobile(). Filterable for My Calendar using 'mc_is_mobile' filter.
+* Changed: properly registered and enqueue most front-end styles.
+* Changed: Removed classes 'prevMonth' and 'nextMonth' from navigation.
+* Misc. minor style changes to front and back end UI.
+* Added: special value for 'author' and 'host' attributes of 'current' to only show events created by the logged-in user. Filter via 'mc_display_author' and 'mc_display_host'
+* Added: date and time to title field for My Calendar RSS feed.
+* Preparation: permission filtering for submissions and registrations add-ons.
+* Updated: German & Slovenian Translations.
+
+= 2.2.9 =
+
+* Bug fix: Reversed argument in $details filter, breaking custom template editor.
+
+= 2.2.8 =
+
+* Bug fix: Fix in mini calendar scripting with AJAX.
+* Bug fix: Strict error in My Calendar Search widget.
+* Bug fix: My Calendar screen options disabled other screen options.
+* Updated: Slovenian
+* Documentation error: cat_id, not category_id
+* Added support for <a href="http://wordpress.org/plugins/botsmasher/">BotSmasher</a> as a spam filter for events.
+* Removed location region from Google Maps string (Google Maps choked on that data.)
+* Removed EasyDrag jQuery plug-in due to compatibility issues.
+* Eliminated 4 filters: mc_event_content_{$type}; replaced with single filter mc_event_content with $type parameter.
+* Added support for WP 3.6 shortcode attribute filters.
+* Added more filters & actions. Lots and lots of filters. Actions. Yeah.
+* Maybe I'm the only one excited about the last thing.
+
+= 2.2.7 =
+
+* Bug fix: map links could render links with no data. 
+
+= 2.2.6 =
+
+* Bug fix: Link to single day events from mini calendar broken.
+* Bug fix: Return to calendar link from print view
+* Bug fix: some map links missing 'external' class.
+* Updated: couple missing i18n strings
+* Bug fix: widget title link could not be saved.
+* Bug fix: Changing the event time on individual occurrences of a recurring event showed wrong time in upcoming events list.
+* Bug fix: rewrite of AJAX scripting to clear bugs.
+* Bug fix: Event authors with "add" capability could not edit their own events or copy events from the admin.
+* Bug fix: Time frame toggles triggered beginning of month instead of current week/day if no params set.
+* Deprecated upgrade paths from versions prior to 1.5.0.
+* Eliminated single-day timeline URL settings field (no longer required.)
+* Added filter mc_modify_day_uri to allow above target URL to be customized.
+* Removed caching option; caching accessible only via filtering.
+* Updated: French, Italian, French, Slovenian
+* Added: Galician
+
+= 2.2.5 =
+
+* Bug fix: better bug fix in 2.2.3 event duplication bug. 
+* Updated: Japanese translation.
+
+= 2.2.4 =
+
+* Bug fix: event duplication bug in 2.2.3
+
+= 2.2.3 =
+
+* Bug fix: duplicate attribute 'rel' in prev/next nav.
+* Bug fix: category color associations on event titles when no color assigned. 
+* Bug fix: print view would not always display all categories if no limits set. 
+* Bug fix: Group editor lost multi-day settings.
+* Improvement: throw a warning on events set up with problem settings, e.g. recurring events where the next occurrence begins before the current event has ended.
+* Added template tag: {map_url} for Google Map URL. 
+* New filters: filters for calendar year/month/day (to change the default start date for the calendar.)
+* Language updates: Japanese, Italian, Dutch, Romanian, and Slovenian 
+
+= 2.2.2 =
+
+* Bug fix to importer from Calendar
+* Another fix to link_map (this time, in the standard calendar view.)
+* Bug fix: location preset being assigned didn't allow changes to location details when editing events.
+
+= 2.2.1 =
+
+* Bug fix: Pull multi-day events in upcoming events list that happen today, but started on a previous day when past events set to 0.
+* Bug fix: broken {link_map} template tag.
+* Update to Italian translation.
+
+= 2.2.0 =
+
+* New feature: event search (widget).
+* New feature: with <a href="http://wordpress.org/extend/plugins/wp-to-twitter">WP to Twitter</a> installed, auto post events to Twitter when published or approved.
+* New feature: toggle timeframe between month/week/day view
+* New setting: ensure best possible color contrast between background color and title link.
+* Split manage events page and add event page into two separate interfaces. 
+* Removed non-sortable fields from display for manage events interface. 
+* Moved setting for number of events on manage events page to screen options.
+* New screen option: on event manager screen, users can turn off areas of the event manager they don't use.
+* New template tag: {image_url}, to pull an event's associated image without HTML
+* New template tag: {linking}, event URL with fallback to details link
+* New template tags: {gravatar} and {host_gravatar} to show author/host gravatar images.
+* New filter: mc_event_mail_to.
+* New filter: mc_past_search_results.
+* New filter: mc_future_search_results.
+* New filter: mc_search_template
+* Added support for variable increments (e.g., every 3 weeks, every 4 months, etc.)
+* Added template tag support to notification email subject line
+* Added option to send HTML notification emails
+* Added option to set sending address for notification emails
+* Added template tag to add event to Google Calendar
+* Added 'check all' option to event manager.
+* Accessibility Improvement: added aria-live attributes.
+* New shortcode attributes: 'above' and 'below'. (Control order and display of elements above/below calendar.)
+* Deprecated shortcode attributes: showkey, shownav, toggle, showjump. Will be removed in My Calendar 2.3.0.
+* Updated shortcode generator to use new attributes. Also added support for author and host attributes.
+* Miscellaneous tweaks to all My Calendar themes.
+* jQuery improvements. (jQuery version 1.7 minimum requirement.)
+* Bug fix: multi-day events incorrectly displayed in Upcoming Events by dates view
+* Bug fix: Open events to details page briefly rendered empty details pop-up (requires script update)
+* Bug fix: <title> element filter didn't strip all HTML tags. 
+* Bug fix: hcal end time
+* Bug fix: upcoming events miscounted number of events with overlapping multiday single events.
+* Bug fix: today's events are now counted towards total events in upcoming events list
+* Bug fix: retention of location data when location fields disabled in manager
+* Bug fix: documentation correction for remote DB
+* Bug fix: caching issue when filtering by location
+* Language updates: German, Spanish, French, Japanese, Dutch, Polish, Italian, Slovenian
+* Deprecated support for WordPress versions up to 3.3.0 due to jQuery version change.
+
+= 2.1.5 =
+
+* Bug fix: upcoming events timestamps were converted to UTC.
+
+= 2.1.4 =
+
+* Bug fix: weekly view when crossing years jumped to next year
+* Bug fix: Upcoming events sorting fix
+* Bug fix: Upcoming events count fix
+* Bug fix: print stylesheet directory fix.
+
+= 2.1.3 =
+
+* Bug fix: My Calendar stripped title elements from singular posts unless an SEO plug-in was installed. 
+
+= 2.1.2 =
+
+* Bug fix: Miscounted number of events in upcoming events view when events were multiple days.
+* Bug fix: My Calendar URL guessing now only selects from published Pages/posts
+* Tweak: Minor change to HTML output in print view
+* Added: Option to display current month or current year using Upcoming Events widget.
+* Added: Filter to display a custom <title> on single event details pages with settings field to configure that title. (Improves SEO)
+* Language updates: Italian, Russian, Basque
+
+= 2.1.1 =
+
+* Bug fix: users without 'Approve Event' ability submitted unapproved events even when event approval was disabled.
+
+= 2.1.0 =
+
+* Miscellaneous filepath fixes for custom icons
+* Fixed filepath issue for custom content directory in loading calendar generator
+* Added templating options to RSS feed event format
+* Added two new template tags: description_stripped and shortdesc_stripped; returns the description fields with HTML removed.
+* Re-organized settings to provide better grouping.
+* Removed jumpbox default setting; jumpbox now only configurable via shortcode.
+* Bug fix: titles missing in list view when open to details link enabled.
+* Bug fix: Multi-day events listed only once in upcoming events lists.
+* Minor stylesheet tweaks.
+
+= 2.0.12 =
+
+* I horribly screwed up the Upcoming Events widget in 2.0.11. Please accept my apologies.
+
+= 2.0.11 =
+
+* Fixed Broken custom stylesheets editing/selection.
+* Added Custom links for widget title links
+* Fixed issue with event links expiring immediately
+* Fixed issue with holiday collisions restricted in Upcoming Events/events only when holiday category is displayed.
+* Added full year output option for iCal downloads.
+* Added setting for calendar heading month formatting.
+* Updated language files: Japanese, Italian, German, Turkish
+
+= 2.0.10 =
+
+* Updated Japanese, Turkish, and Italian translations
+* Bug fix: Upcoming Events list could not be limited to a single author.
+* Bug fix: Un-approved events were being displayed in some public contexts.
+* Bug fix: Problem with RSS feed template elements not rendering in some cases.
+* Bug fix: Upcoming Events removed events inappropriately in certain situations when 'skip on holidays' was checked
+* Bug fix: Updated method for getting current plugin URL.
+* Deprecated support for WordPress versions before 3.0.6.
+
+= 2.0.9 =
+
+* Bug fix: Email notification on event addition to admin did not receive event data.
+* Bug fix: Accidentally eliminated weekend class. Now it's back!
+* Bug fix: Events crossing multiple dates need per-date unique IDs
+* Code change: Some code simplification for current URL and plugin URL references.
+* Updated languages: Portuguese, Dutch, Italian
+
+= 2.0.8 =
+
+* Re-written (simplified) holiday exclusion mechanism.
+* Performance improvements to templating and event processing.
+* Bug fix: Import from Kieran's "Calendar" plug-in was broken.
+* Bug fix: 'nextmonth' class was attached to events in weekly view; not appropriate to view.
+* Bug fix: Deleting single instance deleted entire event series.
+* Added option: number of events per page in admin events list
+
+= 2.0.7 =
+
+* Bug fix: Show list view on mobile devices option did not work.
+* Bug fix: No longer forcing links on titles in list or mini view.
+* Bug fix: All-day events came up with random end times.
+* Change: All-day checkbox added.
+* Change: All-day events automatically forced to hide end times.
+* Change: removed X-WR-CALNAME field from iCal output for improved compatibility
+* Updates: Partial updates to Spanish, Italian, and Dutch translations.
+
+= 2.0.6 =
+
+* Bug fix: Mini calendar links pointed to current display month regardless of current display date.
+* Bug fix: if day parameter was set, the main calendar views showed events for month starting from that date.
+* Bug fix: if day view was targeted from mini calendar with default cid parameter set, would not react 
+* Bug fix: Calendar could not show events which had start and end dates which spanned the displayed period but were not included in the displayed period.
+* Moved screenshots into assets folder in version repository.
+* Translation source updated at http://translate.joedolson.com/ - now the translations need refreshing!
+
+= 2.0.5 =
+
+* Bug fix: Date links were eliminated in mini calendar if option to link to day-view was enabled.
+* Bug fix: Today's events drew events based on UTC instead of current timezone.
+
+= 2.0.4 =
+
+* Bug fix: template variable misassigned in the Today's Events shortcode.
+* Change: Added option to output iCal either in UTC or with times as entered. (Previously only UTC)
+
+= 2.0.3 =
+
+* Bug fix: Upcoming events widget did not support the "show_today's events" option correctly.
+* Bug fix: Was not possible to set 12:00 am as the end time for an event.
+* Bug fix: prevented blank title in main calendar due to faulty template.
+
+= 2.0.2 =
+
+* Bug fix: My Calendar did not enqueue jQuery
+* Bug fix: Grid view did not display last day of month if first day of week and last day of month were both Sunday
+
+= 2.0.1 =
+
+* Bug fix: Error in default settings for event titles.
+* Bug fix: Single Event iCal export broken
+* Bug fix: Today's Events shortcode broken if author not specified
+* Change: Deleting or updating categories now refreshes the cache.
+
+= 2.0.0 =
+
+* Completely re-written database model for events.
+* Added: pagination on event manager list of events.
+* Added: Restrict groups manager lists to currently grouped/ungrouped lists of events.
+* Added links to other event instances visible when editing events with multiple instances.
+* Added default category selection.
+* Added feature: limit calendar views by event author.
+* Added feature: filter event manager view by location, author, or category.
+* Added feature: mark categories as private, to only show those events to logged-in users.
+* Added templating to locations list so user can produce list of any set of location data.
+* Added option in event manager to copy location data into Locations table
+* Added [my_calendar_event] shortcode to fetch information for a single event.
+* Added template tag {timerange} to display start-end times.
+* Change: all events now have an end time. Option to hide end times to maintain current display. 
+* Bug fix: iCal had missing newline; events now return labeled UTC time
+* Bug fix: RSS does better job of clearing non-XML special characters.
+* Bug fix: If preset location was selected, no other edits to locations could be done. 
+* Bug fix: when copying an event, the new event was grouped in the same group as the source event. 
+* Bug fix: if stylesheet was disabled, stylesheet was erased on next save of style settings.
+* Bug fix to category limiting which matched category names like 'baseball' to show 'all' categories.
+
+= 1.11.3 =
+
+* Fatal error in PHP 5.4+ https://bugs.php.net/bug.php?id=54657
+* Bug fix: {date} and {time} template tags not rendered in details link when run in a template.
+* Bug fix: upgrade database button placement off-screen 
+* Bug fix: layout on stylesheet editor caused usability problems
+* Bug fix: added line break in iCal output.
+* Change: added alt attribute to category icons in appropriate contexts.
+* [My Calendar 2.0 beta](http://downloads.wordpress.org/plugin/my-calendar.2.0.0.zip) added to subversion repository. Here there be bugs. 
+
+= 1.11.2 =
+
+* Bug fix: Called wp_editor on versions below 3.3
+* Bug fix: assorted PHP notices cleaned up.
+
+= 1.11.1 =
+
+* HTML validation issue fixed in calendar output.
+* Added option to hide display of external event links in calendar output. 
+* Bug fix: Mini calendar should not toggle from mini view when main view switched.
+* Bug fix: Week time frame of list view did not return the 'no events' message.
+* Feature: No events message can be customized by using an enclosing shortcode: [my_calendar]No events this week![/my_calendar]
+
+= 1.11.0 =
+
+* Added option to use {date} in Today's Events widget title.
+* Events with the same time are now sub-sorted by title in Upcoming Events lists.
+* Template tag {endtime} returns empty string if same as start time
+* Standard event output returns empty string for event end time if same as start time.
+* Can only check 'multi-day event' option if event has multiple occurrences.
+* Categories in editor now sortable by either ID or category name.
+* Categories in input now sorted by category name.
+* Updated mobile detection class.
+* Major revision to permissions handling to use custom capabilities
+* Redesign of settings pages.
+* Can target tablet devices with CSS by adding a stylesheet called mc-tablet.css to your theme directory.
+* Can target other mobile devices with CSS by adding a stylesheet called mc-mobile.css to your theme directory.
+* Template tags now support before and after attributes: {tag before=&quot;&lt;p&gt;&quot; after=&quot;&lt;/p&gt;&quot;}
+* Added option to retrieve events, categories, and locations from a remote database. (e.g., to share calendar information between 3 related sites.)
+* Eliminated details arrow; forcing anchor element on clickable title. 
+* Added 'id' attribute to My Calendar shortcode, to customize unique ID for calendar and avoid non-compliant duplication of IDs
+* Added 'template' attribute to My Calendar shortcode, so specific calendars can use their own individual custom templates. Templates should be text files (.txt) placed in your theme directory.
+* Reduced specificity in stylesheets by eliminating ID-based references.
+* Fixed bug with day/date consistency in 5-day grid calendars.
+* Added day class to date boxes without dates.
+* Jumpbox is now switchable from the shortcode.
+* Fixed google maps link to use the correct directions targeting method
+* Various changes for WP 3.4 compatibility.
+* Updated Danish Translation
+* Updated Czech Translation 
+* Added Hindi Translation
+
+= 1.10.12 =
+
+* Bug fix: List format showed all dates, regardless of whether there were events for that date.
+* Bug fix: List format showed incorrect classes.
+* Bug fix: Pipe separator for categories not supported with caching.
+* ARRRRGGGGHHHH!!! I'm sure you're as frustrated about all these little releases as I am. But who wants to sit on known bugs?
+
+= 1.10.11 =
+
+* Bug fix: Variable not checked for type threw usort warning.
+* Bug fix: Details links rendered incorrect page if linked from a single post location with permalinks not enabled.
+* Bug fix: Fixed bug where calendar returned no information if cache reached max size.
+* Settings change: Caching is now defaulted to off.
+
+= 1.10.10 =
+
+* Bug fix: Upcoming events list did not respect category limits.
+* Validation error/bug fix: Date for ID for first of month was incorrect.
+* Validation error: unencoded ampersand in iCal link if permalinks disabled.
+
+= 1.10.9 =
+
+* Added option to clear cache from settings.
+* Bug fix: Error in caching where cache returned false for multi-category limited calendars.
+* Bug fix: Error in caching where cache returned false for category limited calendars using category name as delimiter. Thanks to [Antti Palosaari](crope@iki.fi) for reporting this bug and for testing fixes.
+* Bug fix: Error notices if user is deleted who is assigned as host of some events. Thanks to Florian Edelmann for reporting this bug and contributing solution.
+* Bug fix: Upcoming events in dates mode returned null for cached dates.
+
+= 1.10.8 =
+
+* Bug fix: upcoming events list breaks if 'This is a multi-day event' is checked for an event with only a single occurrence. 
+* Bug fix: Upcoming events caching did not cache correct data.
+* Modification: eliminated some extraneous database calls
+* Modified: clarifying text edits
+* Added: category classes on calendar date cells
+
+= 1.10.7 =
+
+* Made 'to' value in Google Maps links a translatable value.
+* Feature change: iCal download now respects currently selected month. 
+* Added a phone number field to the Location manager
+* Added a setting to display only the core site's calendar on child sites in multisite mode.
+* Added a setting for the link target for mini calendar dates
+* Re-wrote labels for URL link target settings fields.
+* Bug fix: Location selector did not respect currently selected categories.
+* Bug fix: "Add another occurrence" option available in Edit mode, but not functional. Removed option.
+* Bug fix: Limiting by categories didn't trim whitespace from category names.
+* Bug fix: Fixed RSS/ICS/Print permalinks if PATHINFO permalinks are enabled.
+* Improved cache handling. Cache limit relative to amount of memory available to PHP. Cache stores information more efficiently.
+* Revised RSS/iCal handling to avoid .htaccess problems.
+
+= 1.10.6 =
+
+* Revised template tags so the description tags are run through wpautop(), and added _raw versions which are not.
+* Fixed a bug in URL generation so that URLs with ports are correctly constructed.
+* Fixed a bug iin Print output which did not allow restriction to multiple categories
+* Added option to use {date} in previous/next navigation links to indicate what date set is being navigated to.
+
+= 1.10.5 =
+
+* I made a truly bone-headed error in the last update, and I'm not even going to say what. If you didn't notice it, lucky for you! 
+
+= 1.10.4 =
+
+* In my rush to fix the security issue, I broke an aspect of the event navigation. Apologies for this! Now fixed.
+
+= 1.10.3 =
+
+* Incorrectly called wp_kses(). Apologies for the frequent updates!
+
+= 1.10.2 =
+
+* Critical security update. Please upgrade promptly. Big thank you to Dean Batha for the bug report.
+
+= 1.10.1 = 
+
+* Bug fix: undeclared array in widget manager
+* Renamed overly-generic constant.
+
+= 1.10.0 =
+
+* New feature: option to link dates in mini calendar to separate daily view instead of pop-up.
+* New feature: no longer necessary to manually edit behaviors in order to open main calendar event titles to separate page.
+* New feature: Ability to define grouped events as a single multi-day event and remove duplicates from events lists (upcoming events and today's events widgets)
+* New feature: group-association classes assigned to multi-day events in grid display.
+* New template tags: {daterange} and {multidate} for displaying a beginning and ending date range for a single event and for displaying each date in a multi-day event, respectively.
+* Week-view calendar caption now editable.
+* Added printable version.
+* Submit buttons in forms are now duplicated at top and bottom of long editing sections, to improve usability.
+* Minor style change to group editor to avoid group list colliding with editor textarea.
+* Removed angle brackets from Previous/Next events links.
+* Added custom action hooks for event save and event delete
+* Added ability to prevent today's events from showing up in upcoming events listings.
+* Added categories to iCal output.
+* iCal should return times in local time, not in UTC.
+* Bug fix: iCal output not correctly encoded
+* Bug fix: mc_next_link filter did not exist.
+* Bug fix: placed limit on maximum size of cached calendar data.
+* Bug fix: Upcoming events list will no longer occasionally display more items than expected.
+* Bug fix: menu icon not aware of custom content locations
+
+= 1.9.8 =
+
+* This is just a convenience update due to a warning appearing in 1.9.7 that I missed.
+
+= 1.9.7 =
+
+* Cache was not cleared when events were approved, rejected, or deleted.
+* Fixed bug with slashed characters in time and date formats
+* Fixed bug where previous/next links did not work on category pages
+* Fixed bug where event description was deleted if edited in groups manager.
+* Easydrag.js now respects conditional loading by page ID.
+* Small change to upcoming events list: events with an end time specifie and not crossing days will move off the list after they end rather than after they start.
+
+= 1.9.6 =
+
+* Fixed bug in Event Manager where information about whether an event was open for registration saved incorrectly.
+* Added raw details_link template tag.
+* Fixed Google Maps link error when using Long/Lat coordinates.
+* Associated image option was not available if HTML editor was enabled.
+
+= 1.9.5 =
+
+* Bug fix: Caching of Today's events did not account for category limits
+* Bug fix: Upcoming events listed by day duplication
+
+= 1.9.4 =
+
+* Bug fix: month-by-day recurring events in upcoming events list
+* Bug fix: duplication of events in upcoming events list
+* Bug fix: when editing a single event with indefinite recurrences, future events set up without continuing recurrence.
+* Function error when data not present fixed.
+* Added display of sending name/address for support messages
+
+= 1.9.3 =
+
+* Stylesheet saving can write longer files. Solves problem with occasional truncation of stylesheets.
+* Added transient caching for calendar events to improve performance, plus other various performance improvements
+* Small html output change.
+* 1.9.0 made details boxes draggable; made this optional.
+* Added plug-in support request form.
+* Added updated French translation to 1.9.2
+* Fixed bug with date switcher duplicating/skipping months.
+* Updated User's Guide (not included with plug-in)
+
+= 1.9.2 = 
+
+* Bug fix: Fixed sort error returned by calendar if no events are in array.
+* Bug fix: Fixed incorrect URLs for icons in custom directory in category key.
+* Bug fix: Caption text did not display.
+* Added {date} and {time} to details link text templating.
+* Bug fix: Fixed {icon} URL in template output. 
+* Bug fix: Fixed bug with table layout of dates when weekends are disabled on grid calendar.
+* Bug fix: Fixed bug with generation of details link when not using permalinks.
+* Bug fix: Fixed bug with HTML editor converting HTML entities.
+* Bug fix: Fixed bug where weekly view showed the wrong dates if the current week started in the previous month. 
+
+= 1.9.1 =
+
+* Bug fix: Incorrect title template tag auto-generated if title template is empty.
+* Bug fix: Create events permissions broken
+* Bug fix: Host list broken in WordPress versions lower than 3.1
+* Bug fix: My Calendar not using WordPress defaults for customizable date and time settings if not set by user.
+* Bug fix: Turning off calendar icons did not turn off icons in key
+* Bug fix: details links used current URL instead of stored URL
+* Bug fix: default widget settings not loaded on upgrade.
+* Bug fix: next/previous links not working on home page if permalinks not set.
+* Bug fix: event title shown in date field in list mode was not for the first event of the day.
+* Style change: Minor change to my-calendar.css to adjust for the green background on weekends. (Which showed up as the result of a fix to an HTML problem in 1.8.9.)
+* Bug fix/Option add: Added option to remove individual iCal link
+* Option add: Added option to conceal first event title/number of events with date in list mode.
+
+= 1.9.0 =
+
+Additions:
+
+* template editing for list, grid, mini, and single event output.
+* pop-up box is now draggable.
+* date format option for grid mode, week view.
+* templating for details link text.
+* templating for event URL link text.
+* location filtering from shortcode.
+* image upload option for events
+* day class to calendar date headings and cells
+* individual instances of repeating events can be edited
+* feature to add multiple occurrences of an event simultaneously. (concept from Dave Heitzman)
+* feature to mass edit information for groups of events (concept from Dave Heitzman)
+* stored URL for locations (contrib by John Colvin)
+* recurring daily events on weekdays only (based on contrib by John Colvin)
+* optional templating for all event output formats
+* individual event occurrence iCal export
+* numerous additional template tags
+* Option to use custom location filter fields as data control
+* Shortcode to generate list of saved locations
+* Network administrators can control whether sub-site calendars contribute only to a central calendar, only to their own calendar, or whether site administrators can make that choice. 
+* Upgrade notice information in dashboard for future upgrades.
+* implementation of WordPress text diff to compare your styles and scripts against my current released versions
+* Option to skip a defined number of events in upcoming events lists.
+
+Bug fixes:
+
+* jump box was displaying in week/grid view.
+* some potentially repeatable IDs (code validation).
+* 'Administrators see all options' did not work.
+* Fixed timestamps on main calendar objects
+* Squashed e_notice errors.
+* category limiting did not work without permalinks due to GET variable conflict with WordPress core
+* Missing nonce in database upgrade routine
+* Mini calendar simultaneously displayed single event view when visited.
+* Link generation for details view did not work if calendar link parameterized
+* Issue with weekdays only calendar if day of week set to start on Sunday
+* Issue with retrieval of user-specific settings
+* Issue with accessing styles and javascript if My Calendar installed in non-standard directory.
+* Problem in Today's Events widget when Holiday restrictions are enabled.
+
+Changes:
+
+* replaced all default icons with 24-bit transparent PNGs
+* jumpbox output to automatically scope to the oldest dates in the database.
+* iCal output changed to output all events for complete current month
+* RSS output to prioritze newly added events
+* holiday skipping/fifth week customization moved into event manager function
+* new 'close' icon for pop-up box; added close icon and scripting to mini calendar pop-up
+* copy in several places; updated template tags.
+* location lists sorted by location label (contrib by John Colvin)
+* Eliminated calendar heading option
+* default style resets no longer stored in global variables, instead stored as files.
+* Map links now trigger the driving directions dialog in Google Maps
+* New default stylesheet, refresh.css
+
+= 1.8.9 =
+
+* Fixed bug with database upgrade in multi-user additional calendars
+* Fixed bug where calendar picked up current month labeling using current day of the month
+* Added French translation
+
+= 1.8.8 =
+
+* Fixed bug in locations filtering that disabled feature if user not logged in.
+* Re-arranged settings and added notices about options which will be removed in a future release.
+* Revised RSS feed to use event permalinks when they are available.
+
+= 1.8.7 =
+
+* One very minor change in 1.8.6 caused some plug-in conflicts, so I rolled that change back. Will find another solution to the problem it solved. This change affects very few users.
+
+= 1.8.6 = 
+
+* Fixed bug with {details} template tag when Upcoming widgets configured as Events
+* Location and category filters now do not display forms/lists if there isn't more than one choice.
+* Extended details link feature to main calendar output and added to output options.
+* Minor changes to time-entry jQuery plug-in to improve usability.
+* Updated Japanese translation to 1.8.5
+* Added Russian translation to 1.8.5 
+
+= 1.8.5 = 
+
+* Another bug fix to monthly-by-day recurrence. 
+* Fixed minor problem with default template not being visible in widget.
+* Fixed 'widget title linked' bug.
+* Added Turkish translation by Mehmet Ko&231;ali
+
+= 1.8.4 =
+
+* Mini calendar widget had a mis-labeled option field
+* Custom User settings for event region didn't function correctly.
+* A variety of bug fixes applied to events repeating on a monthly-by-day basis
+
+= 1.8.3 =
+
+* Turned on spam flag toggle, which I had commented out and failed to restore...
+* Default return false ('not spam') for privileged users when checking Akismet
+
+= 1.8.2 =
+
+* Fixed bug with {icon} template tag, for real.
+* Fixed RSS missing argument
+* Fixed empty list rendering in upcoming events widget
+
+= 1.8.1 =
+
+* Fixed bug with region saving on edit of location
+* Fixed bug with single-event view receiving date as array
+* Fixed bug with {icon} template tag
+* Fixed bug with calendar output if user settings are enabled but not applied by user
+* Fixed bug with list/grid format toggle
+* Fixed bug with upcoming events limited by category names
+
+= 1.8.0 =
+
+* Added event region as a location field
+* Added time selector and altered calendar range selector.
+* Added visual editor for event description textarea.
+* Added templating tag to add a link to the single event view.
+* Added option to not display weekends in grid format.
+* Added unique ID for each event in calendar.
+* Added default sort order option for admin events list.
+* Added admin events list to screen while editing or copying event.
+* Added shortcode generator for Page and Post editor.
+* Added spam protection: New events are now checked through Akismet if installed and configured.
+* Added category selection shortcode.
+* Added mini calendar widget.
+* Added external link class.
+* Added list/grid view toggle.
+* Added mobile detection so mobile devices receive list format without JavaScript for easier reading.
+* Added Upcoming Events widget sort order option.
+* Added Option to link widget title to main calendar page.
+* Change: Minor reorganization of settings page.
+* Change: Altered time input to use non-military format time, added JavaScript time input.
+* Change: Moved My Calendar menu items into the content menu.
+* Change: When calendar is limited by categories, only the displayed categories are listed in the category key.
+* Change: If widget title is left blank, widget will have no title.
+* Change: Moved translation files into a subdirectory (/lang/)
+* Bug fix: hcal dates
+* Bug fix: problem where restoring styles referenced out of date styles
+* Bug fix: error in primary stylesheet
+* Bug fix: issue with month-by-day recurring events when recurrance set at 0
+* Bug fix: issue with end dates when recurrance set at 0
+* Bug fix: DB installed to match WPDB chararacter set and collation.
+* Bug fix: turn-of-year page navigation in week view.
+* Bug fix: entries not remembered in error condition post
+* Updated German Translation to version 1.7.0 (Christopher Schauer)
+* Updated German Translation to version 1.7.8 (Uwe Jonas)
+* Note: during this update cycle, I received two German translations, and am using the most up to date version.
+* Added Swedish Translation to version 1.7.8
+
+= 1.7.8 =
+
+* Bug fix: Behaviors page limits lost on settings refresh
+* Bug fix: Fix {enddate} shortcode output.
+* Bug fix: iCal output improvements
+* Modification: RSS and iCal output are disabled entirely when turned off, rather than just hidden.
+* Modification: Added styles for days out of current month
+
+= 1.7.7 =
+
+* Bug fix: Upcoming Events widget fault in 'dates' mode.
+
+= 1.7.6 = 
+
+* Bug fix: Upcoming Events widget in days mode was not offsetting time using GMT reference. (Committed silently in 1.7.5)
+* Bug fix: Default template not rendered in Today's Events when template left blank
+* Bug fix: Slashes not stripped in category key.
+* Bug fix: Upcoming Events widget if no upcoming events
+* Bug fix: Error with retrieval of Author's ID
+* Fixed some non-translatable text strings
+* Logic change: Upcoming Events now bases choice on time rather than date (events happening later today are future, rather than only events happening tomorrow or later.)
+* Enhancement: respects custom wp-content location definitions
+
+= 1.7.5 =
+
+* Bug fix: Error with upcoming events when selected by dates and holiday skipping enabled.
+* Bug fix: Upcoming Events widget title defaulted to 'Today's Events'
+* Change: Reversed order of Latitude/Longitude on forms to match Google's implementation.
+
+= 1.7.4 =
+
+* Bug fix: Upcoming events templates ran htmlentities on output
+
+= 1.7.3 = 
+
+* Bug fix: upcoming events substitute text still not appearing in some contexts. 
+* Bug fix: Today's event substitute text had assignment in place of comparison
+* Bug fix: Event location not saved properly on edit if Location Fields are disabled on input
+* Bug fix: Fixed date and time issues in iCal output
+* Bug fix: Fixed character set issue in RSS output
+* Bug fix: Major problem with Holiday category event delimiting
+* Danish translation updated to 1.7.0
+* Japanese translation updated to 1.7.1
+* Minor documentation and readme.txt updates
+* Added additional fallback settings for widgets
+* Fixed minor installation issue with version detection.
+* Added CSS hook .nextmonth on dates occurring past the end of the currently displayed month.
+* Added check for '#' symbol on hex colors in category management.
+
+= 1.7.2 =
+
+* Bug fix: Fixed import from Calendar feature.
+* Bug fixed: Upcoming events widget default text fixed
+* Italian translation updated to 1.7.0
+
+= 1.7.1 =
+
+* Default setting for custom user location type not set
+* Reset for inherit.css styles missing
+* Widget shortcodes stripped HTML
+* Added a fallback function for exif_imagetype 'cuz some servers don't have it available by default.
+* Nonce missing in database upgrade
+* Ability to edit text for shortcode fallback (No events text) lost.
+* Widget defaults not installed on new installation
+* Mini and List jQuery did not prevent default link action
+* Changed install action to default User settings to off.
+
+= 1.7.0 =
+
+* Fix in AJAX navigation for IE
+* Fix in JavaScript to re-activate close button
+* Fixed bug with locations list not registering current location type in form mode
+* Fixed bug with upcoming events and today's events output when regions limits were set
+* Fixed bug with upcoming events producing incorrect dates for events recurring on a specific day of the month.
+* Revision of Widgeting setup to offer multi-widget support (will require you to re-setup your widgets)
+* Revision of style editor to use external stylesheets. 
+* Revision of style support to add option for custom stylesheets stored outside of plugin directory
+* Added: multiple base stylesheets
+* Added: Event markup in hCal format
+* Added Weekly mode for list and grid view
+* Added RSS and iCal exports for upcoming events (enable and disable in settings)
+* Added option to block display of an event if there is an event that day which is in a designated 'Holiday' category.
+* Added permission setting to allow non-administrators to edit or delete any event.
+* Added Czech translation (to 1.6.3)
+* Updated Italian and Danish translations
+* Security: Implemented nonces
+
+= 1.6.3 =
+
+* Updated jQuery to fix conflicts in previous versions and so behaviors would work with AJAX navigation. Not updated by upgrade; use Behaviors reset to apply. 
+* Incorporated option to enable AJAX navigation for next/previous navigation.
+* Fixed bug with multi-month display in list format where January could not be displayed.
+* Revised settings page for clarity. 
+* Fixed some default settings issues.
+* Fixed a bug where the locations lists didn't respect the datatype parameter.
+* Added templating to event titles for calendar grid or list output.
+
+= 1.6.2 = 
+
+* Fixed broken style editor. (The way it was broken was awfully weird...kinda wonder how I did it!)
+* Fixed missing div in calendar list output.
+* Removed debugging call which had been left from testing.
+* Fixed storage of initial settings for user settings (array did not store probably initially.)
+* Added Italian translation by [Sabir Musta](http://mustaphasabir.altervista.org)
+
+= 1.6.1 =
+
+* Bug fix in event saving
+
+= 1.6.0 =
+
+* Feature: User profile defined time zone preference
+* Feature: User profile defined location preference
+* Feature: Define event host as separate from event author
+* Feature: Added ability to hide Prev/Next links as shortcode attribute
+* Change: Separated Style editing from JS editing
+
+= 1.5.4 =
+
+* Fixed: Bug with permissions in event approval process.
+
+= 1.5.3 = 
+
+* Fixed: Bug which broke the {category} template tag
+* Fixed: Bug which moved extra parameters before the "?" in URLs
+* Fixed: Bug which produced an incorrect date with day/month recurring events on dates with no remainder
+* Added: Japanese translation by [Daisuke Abe](http://www.alter-ego.jp/)
+
+= 1.5.2 =
+
+* Fixed: Bug where event data wasn't remembered if an error was triggered on submission.
+
+= 1.5.1 =
+
+* Fixed: Bug where events recurring monthly by days appeared on wrong date when month begins on Sunday.
+* Fixed: Bug where events recurring monthly by days appeared on dates prior to the scheduled event start.
+* Performance improvement: Added SQL join to incorporate category data in event object
+* Added quicktag to provide access to category color and icon in widget templates
+* Changed link expiration to be associated with the end date of events rather than the beginning date.
+* Updated readme plugin description, help files, and screenshots.
+
+= 1.5.0 =
+
+* Added: German translation.
+* Updated: Danish translation.
+* Added: Administrator notification by email feature [Contributions by Roland]
+* Added: Reservations and Approval system for events. [Contributions by Roland]
+* Added: Events can be recurring on x day of month, e.g. 3rd Monday of the month.
+
+= 1.4.10 =
+
+* Fixed: Failed to increment internal version pointer in previous version. 
+* Fixed: Invalid styles created if category color set to default.
+* Fixed: (Performance) Default calendar view attempted to select invalid category.
+* Updated: Danish translation.
+
+= 1.4.9 = 
+
+* Fixed: Bug where location edits couldn't be saved if location fields were on and dropdown was off
+* Fixed: Bug where latitude and longitude were switched on Google Maps links
+* Fixed: Bug where map link would not be provided if no location data was entered except Lat/Long coordinates.
+
+= 1.4.8 =
+
+* Added: Ability to copy events to create a new instance of that event
+* Added: Customization of which input elements are visible separate from what output is shown.
+* Fixed: Issue where one JS element could not be fully disabled
+* Fixed: Internationalization fault with Today's Events showing events from previous day 
+* Fixed some assorted text errors and missing internationalization strings.
+* Fixed issue where the 'Help' link was added to all plug-in listings.
+* Reorganized settings page UI.
+
+= 1.4.7 =
+
+* Fixed: Bug where infinitely recurring events whose first occurrence was in the future were not rendered in upcoming events
+* Fixed: Bug where infinitely recurring bi-weekly events only rendered their first event in calendar view
+* Added: Option to indicate whether registration for an event is open or closed, with customizable text.
+* Added: Option to supply a short description alternative to the full description.
+
+= 1.4.6 = 
+
+* Fixed: Flash of unstyled content prevention scripts weren't disabled when other scripting was disabled.
+* Fixed: Categories which started with numerals couldn't have custom styles.
+* Fixed: Locations required valid 0 float value to save records on some servers; now supplied by default.
+
+= 1.4.5 = 
+
+* Fixed a bug with editing and adding locations
+* Fixed a bug with error messages when adding categories
+* Fixed a bug with identification of current day (again?)
+* Added Danish translation (Thanks to Jakob Smith)
+
+= 1.4.4 = 
+
+* Fixed a bug where event end times tags were not rendered when blank in widget templates
+* Fixed a bug with event adding and updating for Windows IIS
+* Fixed a bug with international characters
+* Reduced number of SQL queries made.
+* Moved JavaScript output to footer.
+* Improved error messages.
+* Significant edits to basic codebase to improve efficiency.
+* Fixed bug where full default styles didn't initially load on new installs.
+* Re-organized default styles to make it easier for users to customize colors.
+
+= 1.4.3 = 
+
+* Fixed a bug where event end times were displaying the start time instead when editing.
+* Fixed a bug introduced by the mini calendar option which displayed titles twice in list format.
+* Fixed a bunch of typos.
+* Added a loop which automatically adds the mini calendar styles if you don't already have them.
+* Fixed a bug where JS didn't run if the 'show only on certain pages' option was used.
+* Added a qualifier for upgrading databases when you haven't added any events.
+
+= 1.4.2 =
+
+* Fixed a bug in the widget display code which caused problems displaying multiple categories.
+
+= 1.4.1 =
+
+* Database upgrade didn't run for some users in 1.4.0. Added manual check and upgrade if necessary.
+
+= 1.4.0 =
+
+* Bug fixed: Today's Events widget was not taking internationalized time as it's argument
+* Added end time field for events
+* Added option for links to expire after events have occurred.
+* Added options for alternate applications of category colors in output.
+* Added ability to use My Calendar shortcodes in text widgets.
+* Added GPS location option for locations
+* Added zoom selection options for map links
+* Lengthened maximum length for category and event titles
+* Added a close link on opened events details boxes.
+* Added an option for a mini calendar display type in shortcode
+* Optimized some SQL queries and reduced total number of queries significantly.
+* Extended the featured to show CSS only on certain pages to include JavaScript as well.
+* Upcoming events widget only allowed up to 99 events to be shown forward or back. Changed to 999.
+* Attempted to solve a problem with infinitely recurring events not appearing in upcoming events. Let me know.
+* Added setting to change Previous Month/Next Month text.
+* Yeah, that's enough for now.
+
+= 1.3.8 = 
+
+* Fixed problem with CSS editing which effectively disabled CSS unless a specific choice had been made for pages to show CSS
+
+= 1.3.7 =
+
+* Aren't you enjoying the daily upgrades? I made a mistake in 1.3.5 which hid text in an incorrect way, causing problems in some contexts.
+
+= 1.3.6 =
+
+* Fixed an issue where not having defined Pages to show CSS resulted in a PHP warning for some configs.
+
+= 1.3.5 =
+
+* Fix for flash of unstyled content issue.
+* Added configuration for time text on events with non-specific time.
+* Fixed bug where, in list views with multiple months, events occurring on days which did not exist in the previous month were not rendered. (Such as March 30th where previous month was February.)
+* Fixed bug where the multi-month view setting for lists caused previous/next events buttons to skip months in calendar view.
+* Added option to disable category icons.
+* Added option to insert text in calendar caption/title area, appended to the month/year information.
+* Fixed a bug where it was not possible to choose the "Show by days" option in the upcoming events widget.
+* Updated documentation to match
+* Fixed a bug where upcoming events in Days mode did not display correct date
+* Added an option to define text to be displayed in place of Today's Events widget if there are no events scheduled.
+* Minor changes to default CSS
+* Ability to show CSS and JavaScript only on selected pages.
+
+= 1.3.4 =
+
+* Fixed a bug with map link and address display which I forgot to deal with in previous release.
+
+= 1.3.3 = 
+
+* Fixed bug with upgrade path which caused locations database to be created on every activation (also cause of errors with some other plugins). (Thanks to Steven J. Kiernan)
+* Made clone object PHP 4 compatible (Thanks to Peder Lindkvist)
+* Corrected errors in shortcode functions for today's events
+* Corrected rendering of non-specific time events as happening at midnight in widget output
+
+= 1.3.2 = 
+
+* Fixed bugs with unstripped slashes in output
+* Fixed a bug where users could not add location information in events if they had not added any recurring locations
+* Removed requirement that address string must be five characters to display a link
+
+= 1.3.1 = 
+
+* Corrected incorrect primary key in upgrade path.
+* Added version incrementing in upgrade path.
+
+= 1.3.0 = 
+
+* Fixed a CSS class which was applied to an incorrect element.
+* Revisions to the Calendar import methods
+* Moved style editing to its own page
+* Added JavaScript editing to allow for customization of jQuery behaviors.
+* Internationalized date formats
+* Shortcode support for multiple categories.
+* Shortcode support for custom templates in upcoming and today's events
+* Added a settings option to eliminate the heading in list format display.
+* Fixed a bug which treated the event repetition value as a string on event adding or updating, not allowing some users to use '0' as an event repetition.
+* Made events listing sortable in admin view
+* Minor revisions in admin UI.
+* Added database storage for frequently used venues or event locations.
+* Modified JavaScript for list display to automatically expand events scheduled for today.
+
+= 1.2.1 = 
+
+* Corrected a typo which broke the upcoming events widget.
+
+= 1.2.0 = 
+
+* Added shortcodes to support inserting upcoming events and todays events lists into page/post content.
+* Added option to restrict upcoming events widgets by category
+* More superficial CSS changes
+* Added Brazilian Portuguese language files
+* Fixed bug where I reversed the future and past variable values for upcoming events widgets
+* Fixed bug in multi-user permissions.
+* Added feature to look for a custom location for icons to prevent overwriting of custom icons on upgrade.
+
+= 1.1.0 =
+
+* Fixed some problems with Upcoming Events past events not scrolling off; hopefully all!
+* Fixed some problems with fuzzy interpretations of the numbers of past/future events displayed in Upcoming Events.
+* Added Bi-weekly events
+* Added restrictions so that admin level users can edit any events but other users can only edit their own events
+* Removed character restrictions on event titles
+* Revised default stylesheet 
+
+= 1.0.2 =
+
+* Fixed problems with editing and deleting events or categories in multiblog installation
+* Fixed escaping/character set issue
+* Fixed issue when blog address and wp address did not match (introduced in 1.0.1)
+* Added import method to transfer events and categories from Kieran O'Shea's Calendar plugin
+
+= 1.0.1 =
+
+* Added missing template code for event end dates.
+* Changed defaults so that styles and javascript are initially turned on.
+* Removed function collisions with Calendar
+* Fixed bug where My Calendar didn't respect the timezone offset in identifying the current day.
+* Fixed bug where multiblog installations in WP 3.0 were unable to save events and settings.
+* Added Spanish translation, courtesy of [Esteban Truelsegaard](http://www.netmdp.com). Thanks!
+
+= 1.0.0 =
+
+* Initial launch.

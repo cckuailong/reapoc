@@ -1,0 +1,332 @@
+.oxi-addons-container .oxi-image-general-hover-style-27 .oxi-image-hover-figure .oxi-image-hover-figure-caption {
+    z-index: 1;
+}
+
+.oxi-addons-container .oxi-image-general-hover-style-27 .oxi-image-hover-figure .oxi-image-hover-image {
+    opacity: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    z-index: 11;
+}
+.oxi-addons-container .oxi-image-general-hover-style-27 .oxi-image-hover-figure.left_to_right .oxi-image-hover-image {
+    -webkit-animation-name: tinRightIn;
+    animation-name: tinRightIn;
+}
+.oxi-addons-container .oxi-image-general-hover-style-27.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-27.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-image{
+    -webkit-animation-name: tinRightOut;
+    animation-name: tinRightOut;
+    opacity: 0 ;
+    pointer-events: none;
+}
+@-webkit-keyframes tinRightIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateX(900%);
+        transform: scale(1, 1) translateX(900%);
+    }
+    50%, 70%, 90% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateX(0px);
+        transform: scale(1.1, 1.1) translateX(0px);
+    }
+    60%, 80%, 100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateX(0px);
+        transform: scale(1, 1) translateX(0px);
+    }
+}
+@keyframes tinRightIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateX(900%);
+        transform: scale(1, 1) translateX(900%);
+    }
+    50%, 70%, 90% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateX(0px);
+        transform: scale(1.1, 1.1) translateX(0px);
+    }
+    60%, 80%, 100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateX(0px);
+        transform: scale(1, 1) translateX(0px);
+    }
+}
+@-webkit-keyframes tinRightOut {
+    0%, 20%, 40%, 50% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateX(0px);
+        transform: scale(1, 1) translateX(0px);
+    }
+    10%, 30% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateX(0px);
+        transform: scale(1.1, 1.1) translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateX(900%);
+        transform: scale(1, 1) translateX(900%);
+    }
+}
+@keyframes tinRightOut {
+    0%, 20%, 40%, 50% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateX(0px);
+        transform: scale(1, 1) translateX(0px);
+    }
+    10%, 30% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateX(0px);
+        transform: scale(1.1, 1.1) translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateX(900%);
+        transform: scale(1, 1) translateX(900%);
+    }
+}
+.oxi-addons-container .oxi-image-general-hover-style-27 .oxi-image-hover-figure.right_to_left .oxi-image-hover-image {
+    -webkit-animation-name: tinLeftIn;
+    animation-name: tinLeftIn;
+    opacity: 1;
+}
+.oxi-addons-container .oxi-image-general-hover-style-27.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-27.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-image{
+    -webkit-animation-name: tinLeftOut;
+    animation-name: tinLeftOut;
+    opacity: 0 ;
+    pointer-events: none;
+}
+@-webkit-keyframes tinLeftIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateX(-900%);
+        transform: scale(1, 1) translateX(-900%);
+    }
+    50%, 70%, 90% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateX(0px);
+        transform: scale(1.1, 1.1) translateX(0px);
+    }
+    60%, 80%, 100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateX(0px);
+        transform: scale(1, 1) translateX(0px);
+    }
+}
+@keyframes tinLeftIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateX(-900%);
+        transform: scale(1, 1) translateX(-900%);
+    }
+    50%, 70%, 90% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateX(0px);
+        transform: scale(1.1, 1.1) translateX(0px);
+    }
+    60%, 80%, 100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateX(0px);
+        transform: scale(1, 1) translateX(0px);
+    }
+}
+@-webkit-keyframes tinLeftOut {
+    0%, 20%, 40%, 50% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateX(0px);
+        transform: scale(1, 1) translateX(0px);
+    }
+    10%, 30% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateX(0px);
+        transform: scale(1.1, 1.1) translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateX(-900%);
+        transform: scale(1, 1) translateX(-900%);
+    }
+}
+@keyframes tinLeftOut {
+    0%, 20%, 40%, 50% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateX(0px);
+        transform: scale(1, 1) translateX(0px);
+    }
+    10%, 30% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateX(0px);
+        transform: scale(1.1, 1.1) translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateX(-900%);
+        transform: scale(1, 1) translateX(-900%);
+    }
+}
+.oxi-addons-container .oxi-image-general-hover-style-27 .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-image {
+    -webkit-animation-name: tinTopIn;
+    animation-name: tinTopIn;
+    opacity: 1;
+}
+.oxi-addons-container .oxi-image-general-hover-style-27.oxi-image-hover:hover .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-27.oxi-image-hover.oxi-touch .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-image{
+    -webkit-animation-name: tinTopOut;
+    animation-name: tinTopOut;
+    opacity: 0 ;
+    pointer-events: none;
+}
+@-webkit-keyframes tinTopIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateY(-900%);
+        transform: scale(1, 1) translateY(-900%);
+    }
+    50%, 70%, 90% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateY(0px);
+        transform: scale(1.1, 1.1) translateY(0px);
+    }
+    60%, 80%, 100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0px);
+        transform: scale(1, 1) translateY(0px);
+    }
+}
+@keyframes tinTopIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateY(-900%);
+        transform: scale(1, 1) translateY(-900%);
+    }
+    50%, 70%, 90% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateY(0px);
+        transform: scale(1.1, 1.1) translateY(0px);
+    }
+    60%, 80%, 100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0px);
+        transform: scale(1, 1) translateY(0px);
+    }
+}
+@-webkit-keyframes tinTopOut {
+    0%, 20%, 40%, 50% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0px);
+        transform: scale(1, 1) translateY(0px);
+    }
+    10%, 30% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateY(0px);
+        transform: scale(1.1, 1.1) translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateY(-900%);
+        transform: scale(1, 1) translateY(-900%);
+    }
+}
+@keyframes tinTopOut {
+    0%, 20%, 40%, 50% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0px);
+        transform: scale(1, 1) translateY(0px);
+    }
+    10%, 30% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateY(0px);
+        transform: scale(1.1, 1.1) translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateY(-900%);
+        transform: scale(1, 1) translateY(-900%);
+    }
+}
+
+.oxi-addons-container .oxi-image-general-hover-style-27 .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-image {
+    -webkit-animation-name: tinBottomIn;
+    animation-name: tinBottomIn;
+    opacity: 1;
+}
+.oxi-addons-container .oxi-image-general-hover-style-27.oxi-image-hover:hover .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-27.oxi-image-hover.oxi-touch .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-image{
+    -webkit-animation-name: tinBottomOut;
+    animation-name: tinBottomOut;
+    opacity: 0 ;
+    pointer-events: none;
+}
+
+@-webkit-keyframes tinBottomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateY(900%);
+        transform: scale(1, 1) translateY(900%);
+    }
+    50%, 70%, 90% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateY(0px);
+        transform: scale(1.1, 1.1) translateY(0px);
+    }
+    60%, 80%, 100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0px);
+        transform: scale(1, 1) translateY(0px);
+    }
+}
+
+@keyframes tinBottomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateY(900%);
+        transform: scale(1, 1) translateY(900%);
+    }
+    50%, 70%, 90% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateY(0px);
+        transform: scale(1.1, 1.1) translateY(0px);
+    }
+    60%, 80%, 100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0px);
+        transform: scale(1, 1) translateY(0px);
+    }
+}
+@-webkit-keyframes tinBottomOut {
+    0%, 20%, 40%, 50% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0px);
+        transform: scale(1, 1) translateY(0px);
+    }
+    10%, 30% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateY(0px);
+        transform: scale(1.1, 1.1) translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateY(900%);
+        transform: scale(1, 1) translateY(900%);
+    }
+}
+@keyframes tinBottomOut {
+    0%, 20%, 40%, 50% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0px);
+        transform: scale(1, 1) translateY(0px);
+    }
+    10%, 30% {
+        opacity: 1;
+        -webkit-transform: scale(1.1, 1.1) translateY(0px);
+        transform: scale(1.1, 1.1) translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1) translateY(900%);
+        transform: scale(1, 1) translateY(900%);
+    }
+}

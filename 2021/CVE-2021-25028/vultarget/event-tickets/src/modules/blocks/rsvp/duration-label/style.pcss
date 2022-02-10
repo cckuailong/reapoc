@@ -1,0 +1,38 @@
+.tribe-editor__rsvp-duration__duration-label {
+	flex: none;
+	position: relative;
+	width: 95px;
+	z-index: 1;
+}
+
+.tribe-editor__labeled-item__label {
+
+	.tribe-editor__rsvp-duration__duration-label & {
+		color: #545d66;
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 0.38px;
+		line-height: 18px;
+
+		.tribe-editor__rsvp-container--disabled & {
+			color: #AEB4BB;
+		}
+	}
+}
+
+.tribe-editor__label-with-tooltip__tooltip-label {
+
+	.tribe-editor__rsvp-duration__duration-label & {
+		margin-left: 5px;
+	}
+}
+
+svg.tribe-editor__rsvp-duration__duration-tooltip-label {
+	width: 17px;
+	height: 17px;
+	fill: #a2aab2;
+
+	.tribe-editor__rsvp-container--disabled & {
+		fill: #AEB4BB;
+	}
+}

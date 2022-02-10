@@ -1,0 +1,42 @@
+.oxi-addons-container .oxi-addons-row * {
+    transition: inherit;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -ms-transition: inherit;
+    -o-transition: inherit;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 9999;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: -30px;
+    left: 50% !important;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.oxi-addons-container .oxi-addons-row.oxi-addons-swiper-wrapper {
+    width: 50000px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}

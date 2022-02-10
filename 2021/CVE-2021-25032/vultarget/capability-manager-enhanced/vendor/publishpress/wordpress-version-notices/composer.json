@@ -1,0 +1,30 @@
+{
+  "name": "publishpress/wordpress-version-notices",
+  "description": "Library for displaying version notices for Pro plugins in WordPress.",
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "PublishPress",
+      "email": "help@publishpress.com",
+      "homepage": "https://publishpress.com",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+      "PPVersionNotices\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.6.20",
+    "pimple/pimple": "3.2.3.*"
+  },
+  "require-dev": {
+    "lucatume/wp-browser": "^2.4"
+  }
+}

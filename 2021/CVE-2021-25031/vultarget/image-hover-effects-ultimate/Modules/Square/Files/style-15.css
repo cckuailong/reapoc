@@ -1,0 +1,137 @@
+.oxi-image-square-hover-style-15 .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+.oxi-image-square-hover-style-15 .oxi-image-hover-figure .oxi-image-hover-image{
+    overflow: hidden;
+}
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-image,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-image{
+    pointer-events: none;
+}
+
+.oxi-image-hover-style-15-square .oxi-image-hover-style-square {
+    -webkit-perspective: 1700px;
+    -moz-perspective: 1700px;
+    perspective: 1700px;
+    -webkit-perspective-origin: 0 50%;
+    -moz-perspective-origin: 0 50%;
+    perspective-origin: 0 50%;
+}
+.oxi-image-square-hover-style-15 .oxi-image-hover-figure{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.oxi-image-square-hover-style-15 .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption {
+    width: 50%;
+    right: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+}
+.oxi-image-square-hover-style-15 .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption {
+    width: 50%;
+    left: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+}
+.oxi-image-square-hover-style-15 .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-figure-caption {
+    min-height: 50%;
+    bottom: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+}
+.oxi-image-square-hover-style-15 .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-figure-caption {
+    min-height: 50%;
+    top: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}   
+
+
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-image img,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-image img{
+    -webkit-transform: translateX(25%);
+    -moz-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    transform: translateX(25%);
+}
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-image img,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-image img{
+    -webkit-transform: translateX(-25%);
+    -moz-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%);
+}
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-image img,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-image img{
+    -webkit-transform: translateY(25%);
+    -moz-transform: translateY(25%);
+    -ms-transform: translateY(25%);
+    transform: translateY(25%);
+}
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-image img,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-image img{
+    -webkit-transform: translateY(-25%);
+    -moz-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity ;
+    -moz-transition: -moz-transform 0.4s, opacity;
+    transition: transform 0.4s, opacity;
+}
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-15.oxi-image-hover:hover .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-15.oxi-image-hover.oxi-touch .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-figure-caption{
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity ;
+    -moz-transition: -moz-transform 0.4s, opacity;
+    transition: transform 0.4s, opacity;
+}

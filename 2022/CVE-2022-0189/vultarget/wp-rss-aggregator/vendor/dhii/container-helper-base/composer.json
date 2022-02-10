@@ -1,0 +1,45 @@
+{
+    "name": "dhii/container-helper-base",
+    "description": "Helper functionality for working with container.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.4 | ^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1",
+        "dhii/php-cs-fixer-config": "^0.1",
+        "codeclimate/php-test-reporter": "<=0.3.2",
+        "psr/container": "^1.0",
+        "dhii/stringable-interface": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Data\\Container\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Data\\Container\\UnitTest\\": "test/unit",
+            "Dhii\\Data\\Container\\FuncTest\\": "test/functional"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "csfix": "php-cs-fixer fix -vvv"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
+        }
+    }
+}

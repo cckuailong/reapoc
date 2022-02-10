@@ -1,0 +1,412 @@
+/* CODE EDITOR */
+.CodeMirror {
+    border: 1px solid #ddd;
+}
+/* TABS */
+#af-options #settings-wrapper {
+    position: relative;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 13px;
+    border: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    background: none;
+    font-family: inherit;
+}
+#af-options #settings-tabs {
+    z-index: 2;
+    position: relative;
+    width: 159px;
+    float: left;
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    line-height: inherit;
+}
+#af-options #settings-tabs li {
+    margin: 0;
+    padding: 0;
+    float: none;
+    background: none;
+    white-space: normal;
+}
+#af-options #settings-tabs li a {
+    display: block;
+    margin:  0 10px;
+    padding: 20px 0 20px 10px;
+    text-decoration: none;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    word-break: break-word;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: none;
+    -webkit-transition: none;
+    float: none;
+}
+#af-options #settings-tabs li i {
+    padding-right: 6px;
+}
+#af-options #settings-tabs li.active-tab {
+    width: 161px;
+}
+#af-options #settings-tabs li.active-tab a,
+#af-options #settings-tabs li a:hover {
+    width: 161px;
+    margin: -1px 0 0 0;
+    border-top: 1px solid #ddd;
+    padding: 20px 11px 20px 20px;
+    color: #000 !important;
+    background: #fff !important;
+}
+#af-options #settings-tabs li:last-child a {
+    border-bottom: none;
+}
+#af-options #settings-wrapper #tab-content {
+    position: relative;
+    padding: 0px 10px 20px;
+    width: calc( 100% - 183px );
+    float: right;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #444;
+    min-height: 1000px;
+}
+@media only screen and (max-width: 1100px) {
+    #af-options #settings-tabs {
+        width: 59px;
+    }
+    #af-options #settings-tabs li a {
+        margin: 0;
+        padding: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    #af-options #settings-tabs li.active-tab a,
+    #af-options #settings-tabs li a:hover {
+        padding: 20px;
+        height: 61px;
+        width: 61px;
+    }
+    #af-options #settings-wrapper #tab-content {
+        width: calc( 100% - 83px );
+    }
+    #af-options #settings-tabs span {
+        display: none;
+    }
+}
+/* GENERAL */
+.af-usergroup-tag {
+    padding: 0 4px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    margin: 2px;
+    display: inline-block;
+    line-height: 18px;
+    font-size: smaller !important;
+}
+#af-structure .usergroup-name i,
+.af-usergroup-tag i {
+    padding-right: 4px;
+}
+.usergroups-editor .usergroup-category-name {
+    display: block;
+    font-weight: 600;
+    padding: 15px 0 5px;
+}
+.usergroups-editor .usergroup-category-name:first-of-type {
+    padding-top: 0px;
+}
+li.forum-user-role,
+li.forum-user-group {
+    display: block;
+    white-space: normal;
+}
+#toplevel_page_asgarosforum-structure .wp-menu-image:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    content: "\f086";
+}
+#asgaros-panel {
+    position: relative;
+    overflow: auto;
+    margin: 24px 0;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    font-size: 13px;
+}
+#asgaros-panel .sub-panel-left,
+#asgaros-panel .sub-panel-right {
+    min-width: 200px;
+}
+#asgaros-panel .sub-panel-left {
+    height: 65px;
+    float: left;
+}
+#asgaros-panel .sub-panel-right {
+    color: #82878c;
+    font-size: 18px;
+    float: right;
+    text-align: right;
+}
+#asgaros-panel-notice-area {
+    display: none;
+}
+#asgaros-panel a {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 10px;
+    line-height: 65px;
+}
+#asgaros-panel .asgaros-panel-icon:before {
+    color: #82878c;
+    padding-right: 8px;
+}
+#asgaros-panel .donate-icon:before,
+#af-structure .link-delete:hover {
+    color: red;
+}
+#asgaros-panel h1 {
+    padding: 0;
+    color: #444;
+    line-height: 65px;
+    border-left: 1px solid #f1f1f1;
+    padding-left: 16px;
+    font-size: 28px;
+}
+#asgaros-panel .error-panel {
+    border-left: 4px solid #dc3232;
+}
+#asgaros-panel .updated-panel {
+    border-left: 4px solid #46b450;
+}
+#asgaros-panel .error-panel p,
+#asgaros-panel .updated-panel p {
+    border: 1px solid #f1f1f1;
+    padding: 8px;
+    margin: 8px 0 0;
+    background-color: #fafafa;
+}
+#af-options table,
+#af-structure #editor-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 16px;
+}
+#af-options tr:nth-child(2n+1),
+#af-structure #editor-container tr:nth-child(2n+1) {
+    background-color: #fff;
+}
+#af-options tr:nth-child(2n),
+#af-structure #editor-container tr:nth-child(2n) {
+    background-color: #fafafa;
+}
+#af-options th {
+    width: 35%;
+}
+#af-options th,
+#af-options td,
+#af-structure #editor-container th,
+#af-structure #editor-container td {
+    text-align: left;
+    padding: 8px 20px;
+    font-weight: normal;
+    border-bottom: 1px solid #e5e5e5;
+}
+#af-options th,
+#af-structure #editor-container th {
+    vertical-align: top;
+}
+#af-options td,
+#af-structure #editor-container td {
+    vertical-align: middle;
+}
+#af-options td input:not([class*="wp-color-picker"]):not([class*="wp-picker-default"]) {
+    margin: 0px;
+}
+#af-options .description,
+#af-structure .description {
+    color: #666;
+    display: block;
+    padding-top: 8px;
+}
+#af-structure .category-actions {
+    float: right;
+    font-weight: normal;
+    font-size: 13px;
+}
+#af-structure a.add-element {
+    font-size: 14px;
+    display: inline-block;
+    padding: 16px 0;
+}
+#af-structure a.add-element span:before {
+    padding-right: 8px;
+}
+#af-structure a {
+    text-decoration: none;
+}
+#af-structure .category-actions .action-delete,
+#af-structure .link-delete {
+    color: #a00;
+}
+#af-structure .tablenav,
+#af-structure tfoot {
+    display: none;
+}
+#af-structure .element-id {
+    color: #888;
+    font-weight: normal;
+    font-style: italic;
+    font-size: small;
+}
+#af-structure .parentforum,
+#af-structure #usergroups-editor td label {
+    display: block;
+}
+#af-structure .subforum {
+    display: block;
+    margin-left: 16px;
+    border-left: 2px solid #e5e5e5;
+    padding-left: 4px
+}
+#af-structure th {
+    width: initial;
+    vertical-align: middle;
+    color: #444;
+}
+#af-structure .element-name {
+    padding: 3px 8px;
+    font-size: 1.7em;
+    line-height: 100%;
+    height: 1.7em;
+    width: 100%;
+    outline: 0;
+    margin: 0 0 3px;
+    background-color: #fff;
+}
+#af-structure .delete-layer input[type="submit"] {
+    background-color: #d54e21;
+    border-color: #d54e21;
+    color: #fff;
+    text-shadow: none;
+    box-shadow: none;
+}
+#af-structure .settings-box .form-table th {
+    min-width: 150px;
+}
+#af-structure .forum-description {
+    font-style: italic;
+}
+#af-structure .wp-list-table td {
+    vertical-align: middle;
+}
+#af-structure .column-icon {
+    width: 40px;
+}
+#af-structure td.column-icon {
+    padding-left: 5px;
+}
+#af-structure .make-bold {
+    font-weight: 600;
+    font-size: 14px;
+}
+#af-structure .forum-icon {
+    padding-right: 8px;
+}
+#af-structure .usergroup-color {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    float: left;
+    display: block;
+    margin-right: 8px;
+    box-sizing: border-box;
+}
+#af-structure .column-status,
+#af-structure .column-sort,
+#af-structure .column-users {
+    width: 100px;
+}
+#af-structure .usergroup-name {
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 14px;
+}
+#af-structure .usergroup-name .element-id {
+    color: #888;
+}
+#af-structure #usergroups-editor th,
+#af-structure #usergroup-color-settings th,
+#af-structure #locations-editor th {
+    vertical-align: top;
+}
+#af-structure #usergroups-editor td .usergroup-category-name {
+    display: block;
+    font-weight: 600;
+    padding: 15px 0 5px;
+}
+#af-structure #usergroups-editor td .usergroup-category-name:first-of-type {
+    padding-top: 0px;
+}
+#af-structure .clear {
+    clear: both;
+}
+#af-options textarea,
+#af-structure textarea,
+#af-structure #forum_description,
+#af-options .regular-text {
+    width: 100%;
+}
+#af-structure #locations-editor label {
+    display: block;
+    margin: 0px 0px 6px 0px;
+}
+#af-structure #editor-container p {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.settings-box {
+    position: relative;
+    min-width: 255px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    margin: 0 0 20px 0;
+    padding: 0 16px;
+    outline: 0;
+    line-height: 1.4em;
+    font-size: 13px;
+}
+.settings-header {
+    display: block;
+    font-size: 22px;
+    padding: 14px 8px;
+    line-height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0 16px 0;
+}
+.settings-header span {
+    padding-right: 8px;
+}
+/* USERS LIST */
+th.column-forum-user-posts,
+td.column-forum-user-posts {
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+/**
+ * Event Tickets - Tickets Commerce - Success/Order
+ *
+ * @since 5.1.10
+ */
+
+.event-tickets {
+
+	.tribe-tickets__commerce-order {
+		max-width: 600px;
+		position: relative;
+		width: 100%;
+	}
+
+	.tribe-tickets__commerce-order-description,
+	.tribe-tickets__commerce-order-details,
+	.tribe-tickets__commerce-order-footer {
+		margin-top: var(--tec-spacer-7);
+	}
+
+	.tribe-tickets__commerce-order-details-row {
+		display: flex;
+		margin: var(--tec-spacer-2) 0;
+		text-align: left;
+	}
+
+	.tribe-tickets__commerce-order-details-col1 {
+		flex-basis: 25%;
+		min-width: 160px;
+	}
+
+	.tribe-tickets__commerce-order-details-col2 {
+		flex-basis: 75%;
+		font-weight: bold;
+	}
+
+	.tribe-tickets__commerce-order-footer-link:not(:first-of-type) {
+		margin-left: var(--tec-spacer-2);
+	}
+
+	.tribe-tickets__commerce-order-footer-link {
+
+		&,
+		&:focus,
+		&:hover,
+		&:visited {
+			color: var(--tec-color-accent-primary);
+		}
+	}
+
+	/* -------------------------------------------------------------------------
+	 * Theme Overrides - Twenty Twenty
+	 * ------------------------------------------------------------------------- */
+
+	.tribe-theme-twentytwenty .entry-content & {
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			margin: initial;
+		}
+
+		&.tribe-tickets__commerce-order {
+			padding: initial;
+		}
+	}
+}

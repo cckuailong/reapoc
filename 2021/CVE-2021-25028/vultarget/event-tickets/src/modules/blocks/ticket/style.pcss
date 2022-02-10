@@ -1,0 +1,27 @@
+.tribe-editor__ticket {
+	/*
+	this negative margin is to fit the blocks to the bounds of the pseudo element :before of
+	the drag block
+	 */
+	margin: -19px 0;
+	border: 1px solid #e1e3e6;
+	position: relative;
+	font-family: 'Helvetica Neue', Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+
+	&--selected {
+		border: 1px solid #b1b5b8;
+	}
+}
+
+.components-spinner {
+
+	.tribe-editor__ticket & {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		float: none;
+		margin: 0;
+		opacity: 0.8;
+	}
+}

@@ -1,0 +1,48 @@
+<!--
+Tool to help understand how sending and retrieving feed related info from the database works.
+-->
+<div style="clear: left;">
+    <p>oEmbeds</p>
+    <a href="" id="cff_oembed_link">Retrieve oEmbed Token</a><br>
+    <a href="javascript:void(0);" id="cff-oembed-disable">Disable</a><br>
+    <button id="cff_activate_instagram">Install or Activate Instagram Feed</button>
+</div>
+<script>
+    jQuery(document).ready(function($) {
+        $('#cff_oembed_link').attr('href',cff_builder.connectionURL);
+
+        $('#cff_activate_instagram').click(function(event) {
+            event.preventDefault();
+            var data = {
+                action: cff_builder.instagram.installer.action,
+                nonce : cff_builder.nonce,
+                plugin: cff_builder.instagram.installer.plugin,
+                type  : 'addon'
+            };
+
+            $.post( cff_builder.ajax_handler, data, function( res ) {
+
+                if ( res.success ) {
+                    if ( 'cff_install_addon' === data.action ) {
+                        console.log(res);
+                    } else {
+                        console.log(res);
+                    }
+
+                } else {
+                    if ( 'download_failed' === res.data[0].code ) {
+                        if ( data.type === 'addon' ) {
+                            console.log(res);
+                        } else {
+                            console.log(res);
+                        }
+                    } else {
+                        console.log(res);
+                    }
+                }
+            }).fail( function( xhr ) {
+                console.log( xhr.responseText );
+            });
+        });
+    });
+</script>

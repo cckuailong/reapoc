@@ -1,0 +1,38 @@
+/* -----------------------------------------------------------------------------
+ * Sliders & Toggles
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin form-control-slider-toggle-track {
+	border: none;
+	border-radius: 5px;
+	height: 10px;
+	margin: 5px 0;
+	padding: 0;
+	position: relative;
+	transition: var(--tec-transition-background-color);
+}
+
+@define-mixin form-control-slider-toggle-thumb {
+	background-color: var(--tec-form-color-background);
+	border: 1px solid var(--tec-form-color-border-secondary);
+	border-radius: 50%;
+	box-shadow: var(--tec-form-box-shadow-default);
+	height: 20px;
+	width: 20px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Sliders
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin form-control-slider-track {
+	@mixin form-control-slider-toggle-track;
+
+	background-color: var(--tec-form-color-accent-primary);
+}
+
+@define-mixin form-control-slider-thumb {
+	@mixin form-control-slider-toggle-thumb;
+
+	margin-top: -5px;
+}

@@ -1,0 +1,42 @@
+#wprss_tracking_notice {
+    position: fixed;
+    display: inline-block;
+
+    top: 45px;
+    left: 50%;
+
+    width: 300px;
+    height: auto;
+    padding: 40px 10px 10px;
+    margin-left: -150px;
+
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+    z-index: 20000;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+#wprss_tracking_notice > p {
+    margin: 0;
+}
+#wprss_tracking_notice > p:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 6px 10px;
+    font-weight: bold;
+    background: #008BC2;
+    color: white;
+}
+
+#wprss_tracking_notice > p:nth-child(2) {
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,1075 @@
+/**
+ * Admin CSS file
+ */
+#ecwd-tabs > div {
+    display: none;
+}
+
+#ecwd-settings {
+    background: #ffffff;
+    padding: 15px;
+}
+
+.ecwd-meta-control {
+    margin-bottom: 15px;
+}
+
+.ecwd-meta-control label {
+    display: block;
+    font-weight: bold;
+}
+
+#ecwd-admin-promo {
+    background-color: #fcf8e3;
+    border: 1px solid #faebbe;
+    color: #8a6d3b;
+    padding: 15px;
+}
+
+#ecwd_event_meta .inside code {
+    word-break: break-all;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+/*Spider events*/
+.ecwd_repeat_type_list {
+    float: left;
+    width: 30%;
+}
+
+.ecwd_repeat_advanced {
+    float: left;
+    width: 68%;
+}
+
+#ecwd_choose_day_container div label {
+    width: 120px;
+    display: inline-block;
+}
+
+#ecwd_choose_day_container div label:after {
+    clear: both;
+}
+
+#ecwd_choose_day_container div label input {
+    float: right;
+    margin: 1px;
+}
+
+.ecwd_icon {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.ecwd_popup_body .ecwd-calendar-event,
+.ecwd-events .ecwd-calendar-event {
+    width: 47%;
+    display: inline-block;
+    margin: 0 20px 10px 0;
+}
+
+.ecwd-events .ecwd-calendar-event {
+    width: 42%;
+}
+
+.ecwd-modal .ecwd-calendar-event span:first-child,
+.ecwd_popup_body .ecwd-calendar-event span:first-child,
+.ecwd_popup_body .ecwd-calendar-event span:first-child,
+.ecwd-events .ecwd-calendar-event span:first-child {
+    border: 1px solid #C8C8C8;
+    display: inline-block;
+    width: 89%;
+    box-sizing: border-box;
+    padding: 2px 2px 2px 7px;
+    color: #7C7C7C;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+}
+
+.ecwd-events .ecwd-calendar-event span:first-child {
+    width: 75%;
+}
+
+.ecwd-modal .ecwd-calendar-event:nth-child(even),
+.ecwd_popup_body .ecwd-calendar-event:nth-child(even) {
+    margin-right: 0;
+}
+
+.ecwd-events .ecwd-calendar-event:after {
+    clear: both;
+}
+
+.ecwd-modal .ecwd-calendar-event .ecwd-calendar-event-add,
+.ecwd_popup_body .ecwd-calendar-event .ecwd-calendar-event-add,
+.ecwd-events .ecwd-calendar-event-delete {
+    display: inline-block;
+    text-align: center;
+    float: left;
+    vertical-align: middle;
+    border-radius: 2px;
+    height: 24px;
+    width: 24px;
+    color: #FFFFff;
+    background-color: #0074A2;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.ecwd-events .ecwd-calendar-event-edit {
+
+}
+
+.ecwd-events .ecwd-calendar-event-edit a {
+    font-size: 0;
+    display: inline-block;
+    float: left;
+    margin: 0 1px;
+    border-radius: 2px;
+    height: 24px;
+    width: 24px;
+    background: url("../images/edit_icon.png") no-repeat center center;
+}
+
+.ecwd-events .ecwd-calendar-event-delete {
+    line-height: 20px;
+}
+
+.ecwd-calendar-event-add {
+    cursor: pointer;
+}
+
+.ecwd-modal {
+    /*    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+        pointer-events: none;*/
+}
+
+.ecwd-modal:target {
+    /*    opacity:1;
+    display: block;
+        pointer-events: auto;*/
+}
+
+.ecwd-modal > div.ecwd-excluded-events,
+.ecwd_popup_body > div.ecwd-excluded-events {
+    width: 500px !important;
+    position: relative;
+    margin: 10% auto;
+    padding: 0px 20px 16px 20px !important;
+    border-radius: 1px;
+    background: #fff;
+}
+
+/*.ecwd-modal > div.ecwd-preview {
+    position: relative;
+    margin: 5%;
+    padding: 5px 20px 13px 20px;
+    border-radius: 1px;
+    background: #fff;
+    min-width:600px;
+}*/
+
+.ecwd-close {
+    background: url(../images/close.png);
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    height: 29px;
+    top: 0px;
+    width: 29px;
+    text-decoration: none;
+    z-index: 4;
+}
+
+.ecwd-excluded-events h2 {
+    margin: 15px 0;
+    padding-bottom: 15px !important;
+    border-bottom: 1px solid #B2B2B2;
+}
+
+.wd_stay_active {
+    background: none repeat scroll 0% 0% green !important;
+    box-shadow: 0px 1px 3px 0px #178FE5 inset !important;
+    color: #FFF !important;
+    font-weight: 700 !important;
+}
+
+#ecwd_event_pickup_date, #ecwd_event_pickup_time {
+    height: 27px;
+    border: 1px solid #A1A1A1;
+    border-radius: 0;
+    font-size: 13px;
+    color: #444444;
+    padding: 0 5px 0 27px;
+    margin-top: 1px;
+}
+
+#ecwd_event_pickup_date {
+    background: url(../images/admin_day.jpg) no-repeat left;
+    margin: 1px 8px;
+}
+
+#ecwd_event_pickup_time {
+    background: url(../images/admin_time.jpg) no-repeat left;
+}
+
+/*TABS*/
+#ecwd-tabs, #ecwd-tabs div {
+    background: none #ffffff;
+    border: 0;
+}
+
+.ecwd-tabs {
+    list-style-type: none;
+}
+
+.ecwd-tabs li,
+#ecwd-settings-content .nav-tab-wrapper a {
+    display: inline-block;
+    border: 1px solid #A5A5A5;
+    margin-bottom:6px;
+}
+
+.ecwd-tabs li a,
+#ecwd-settings-content .nav-tab-wrapper a {
+    display: table-cell;
+    text-align: center;
+    min-width: 100px;
+    height: 30px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #5E5E5E;
+    font-size: 16px;
+}
+
+#ecwd-settings-content .nav-tab-wrapper a {
+    background: #ffffff;
+    height: 21px;
+    margin-right: 4px;
+    display: inline-block;
+    font-weight: normal;
+    padding-top: 2px;
+}
+
+.ecwd-tabs li a:focus {
+    box-shadow: none;
+}
+
+.ecwd-tabs li:hover a, .ecwd-tabs li.ui-state-active a,
+#ecwd-settings-content .nav-tab-wrapper a:hover, #ecwd-settings-content .nav-tab-wrapper a.nav-tab-active {
+    color: #ffffff;
+    background: #0074A2;
+}
+
+#ecwd-settings-content .nav-tab-wrapper {
+    border-bottom: 0;
+    padding-left: 0;
+}
+
+.ecwd-tabs li:hover, .ecwd-tabs li.ui-state-active,
+#ecwd-settings-content .nav-tab-wrapper a.nav-tab-active {
+    border: 1px solid transparent;
+}
+
+.ecwd-tab-inner {
+    padding: 15px;
+}
+
+/*Preview */
+.ui-selecting {
+    background: #FECA40 !important;
+}
+
+.ui-selected {
+    background: #F39814 !important;
+}
+
+.event_cal_add {
+    width: 350px;
+    height: auto;
+    border: 1px solid #cccccc;
+    position: absolute;
+    z-index: 9999;
+    background: #ffffff;
+    display: none;
+}
+
+.event_cal_add .add_event_to_cal {
+    display: block;
+    cursor: pointer;
+    padding-bottom: 10px;
+    width: 78px;
+    text-align: center;
+    line-height: 30px;
+    height: 20px;
+    background: #e3e3e3;
+    border: 1px solid #eeeeee;
+}
+
+.event_cal_add .ecwd_notification {
+    display: block;
+    height: 20px;
+    margin: 25px 0 0 0;
+}
+
+span.ecwd_error {
+    color: #bc0b0b;
+    display: block;
+    padding-left: 36px;
+    height: 20px;
+
+}
+
+#ecwd_calendar_meta h3.hndle {
+    color: #0074A2;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+/*#ecwd-settings a.button:not(.wdi_notice_button) {*/
+    /*border: 1px solid #A1A1A1;*/
+    /*padding: 0px 15px;*/
+    /*box-shadow: none;*/
+    /*border-radius: 0;*/
+    /*color: #000;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*#ecwd-settings a.button:hover {*/
+    /*border: 1px solid transparent;*/
+    /*color: #fff;*/
+    /*background: #0074A2;*/
+/*}*/
+
+#ecwd_reset_settings_button{
+    margin-left: 4px;
+}
+
+
+#ecwd_event_location{
+    background-image: none !important;
+    width: 100%;
+}
+
+.ecwd-admin-fields input[type="text"]:not(#ecwd_event_location),
+.ecwd-admin-fields select,
+#ecwd-settings input[type="text"],
+#ecwd-settings select,
+#ecwd_theme_meta input[type="text"]:not(#ecwd_event_location),
+#ecwd_calendar_meta input[type="text"]:not(.ecwd-search),
+#ecwd_calendar_meta select,
+#ecwd_event_meta input[type="text"]:not(#ecwd_event_date_from):not(#ecwd_event_date_to):not(#ecwd_event_location),
+#ecwd_event_venue_meta input[type="text"]:not(#ecwd_event_date_from):not(#ecwd_event_date_to):not(#ecwd_event_location),
+#ecwd_event_venue_meta select,
+#ecwd_event_meta #ecwd_event_year_month,
+#ecwd-settings .form-field input, #ecwd-settings input.regular-text {
+    width: 250px;
+    border: 1px solid #A1A1A1;
+}
+
+#ecwd_event_date_from, #ecwd_event_date_to {
+    border: 1px solid #A1A1A1;
+}
+
+#ecwd-settings input[type="checkbox"],
+#ecwd_event_meta input[type="checkbox"],
+#ecwd_event_venue_meta input[type="checkbox"],
+#ecwd-settings input[type="radio"] {
+    position: absolute;
+    z-index: -1;
+    margin: 0 !important;
+    width: 5px !important;
+    height: 5px !important;
+    min-width: 5px !important;
+}
+
+.ecwd_venue_show_map_checkbox_container .checkbox-div{
+    margin-left: 0px !important;
+}
+
+#ecwd_venue_meta .checkbox-div,
+#ecwd-settings .checkbox-div,
+#ecwd_event_meta .checkbox-div,
+#ecwd_event_venue_meta .checkbox-div {
+    width: 13px;
+    height: 12px;
+    background: #FDFDFD;
+    border: 1px solid #CBCBCB;
+    border-radius: 0px;
+    position: relative;
+    display: inline-block;
+    top: 2px;
+    margin-right: 7px;
+    margin-left: 15px;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}
+
+#ecwd_theme_meta label,
+#ecwd_venue_meta label {
+    display: inline-block;
+    width: 290px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+/*venue, organizer*/
+.ecwd-admin-fields .ecwd-meta-field,
+.ecwd-organiz-meta-fields .ecwd-meta-field,
+.ecwd-venue-meta-fields .ecwd-meta-field {
+    padding: 4px 0;
+}
+
+.ecwd-admin-fields .ecwd-meta-field,
+.ecwd-organiz-meta-fields,
+.ecwd-venue-meta-fields {
+    padding: 8px 0;
+}
+
+.ecwd-hide-map-td{
+    padding: 0 !important;
+    opacity: 0 !important;
+    height: 0px !important;
+    cursor: default;
+}
+
+.ecwd-hide-map {
+    width: 100%;
+    position: absolute;
+    left: -200%;
+}
+
+.ecwd_google_map_wrapper {
+    position: relative;
+}
+
+#ecwd-settings .checkbox-div:first-child {
+    margin-left: 0px;
+}
+
+#ecwd-settings .checkbox-div input[type="checkbox"]:checked + label,
+#ecwd_event_meta .checkbox-div input[type="checkbox"]:checked + label,
+#ecwd_event_venue_meta .checkbox-div input[type="checkbox"]:checked + label,
+#ecwd-settings .checkbox-div input[type="radio"]:checked + label {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    background: #CBCBCB;
+    position: absolute;
+    top: 2px;
+}
+
+/*#ecwd-settings input[type="submit"] {*/
+    /*background: #0074A2;*/
+    /*color: #ffffff;*/
+    /*font-weight: bold;*/
+    /*font-size: 15px;*/
+    /*border: 0;*/
+    /*border-radius: 0;*/
+    /*padding: 5px 25px;*/
+    /*height: auto;*/
+/*}*/
+
+#ecwd_event_meta .checkbox-div label,
+#ecwd_event_venue_meta .checkbox-div label,
+#ecwd-settings .checkbox-div label {
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 8px;
+    background: #CBCBCB;
+    border-radius: 0px;
+    top: 2px;
+    left: 2px;
+}
+
+#ecwd_calendar_meta .add_event_plus {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background: #0074A2;
+    color: #ffffff;
+    text-shadow: 1px -1px 2px #005C82;
+    margin-left: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+#ecwd_calendar_meta .ecwd-calendar-event-add a:focus {
+    box-shadow: none;
+}
+
+#ecwd_event_meta .repeat_format {
+    width: 90px;
+    display: inline-block;
+}
+
+#ecwd_event_meta .repeat_format_monthly {
+    width: 66px;
+    display: inline-block;
+}
+
+#ecwd_event_meta #ecwd_event_year_month {
+    margin: 10px 0 0 95px;
+}
+
+#ecwd_event_meta #ecwd_choose_day_container {
+    margin-top: 10px;
+}
+
+#ecwd_event_meta #ecwd_choose_day_container .checkbox-div {
+    margin-left: 0px;
+}
+
+#ecwd_event_meta .ecwd_repeat_advanced input[type="text"],
+#ecwd_event_meta .ecwd_repeat_advanced select {
+    width: auto;
+}
+
+#ecwd_event_meta #ecwd_monthly,
+#ecwd_event_meta .ecwd_event_repeat_event_div {
+    margin: 10px 0;
+}
+
+#ecwd_event_meta .select_to_enable_disable,
+#ecwd_event_venue_meta .select_to_enable_disable {
+    width: 122px !important;
+}
+
+#ecwd_event_organizers_meta .ecwd-add-organizer-form {
+    padding-top: 10px;
+}
+
+#ecwd_event_organizers_meta .ecwd-organizers-list {
+    margin-top: 15px;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#ecwd_event_organizers_meta .ecwd-add-organizer-form input,
+#ecwd_event_meta .ecwd-venue-meta-fields #ecwd_venue_content,
+#ecwd_event_venue_meta .ecwd-venue-meta-fields #ecwd_venue_content,
+#ecwd_event_venue_meta .ecwd_event_venue_form_content .ecwd_event_venue_content_field,
+#ecwd_event_organizers_meta .ecwd-add-organizer-form textarea {
+    width: 250px;
+}
+
+#ecwd_event_organizers_meta .ecwd-add-organizer-form #ecwd-add-organizer-content,
+#ecwd_event_venue_meta .ecwd_event_venue_form_content .ecwd_event_venue_content_field,
+#ecwd_event_meta .ecwd-venue-meta-fields #ecwd_venue_content,
+#ecwd_event_venue_meta .ecwd_event_venue_form_content .ecwd_event_venue_content_field,
+#ecwd_event_venue_meta .ecwd-venue-meta-fields #ecwd_venue_content{
+    height: 100px;
+}
+
+.ecwd_event_venue_add_button_container th button,
+.ecwd_event_venue_add_button_container .spinner,
+.ecwd-organizer-meta-fields .ecwd-add-organizer-save,
+.ecwd-organizer-meta-fields .spinner{
+    float: left;
+}
+
+
+#ecwd_event_organizers_meta .ecwd-add-organizer-form > div {
+    margin-top: 5px;
+}
+
+#ecwd_theme_meta label,
+#ecwd_organizer_meta label,
+#ecwd_venue_meta label {
+    display: inline-block;
+    width: 290px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#ecwd_event_meta .ecwd-venue-meta-fields .ecwd-meta-field > label,
+#ecwd_event_venue_meta .ecwd-venue-meta-fields .ecwd-meta-field > label{
+    display:inline-block;
+    width: 150px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+.ecwd-admin-fields .ecwd-add-organizer-form label {
+    display: inline-block;
+    width: 130px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#ecwd_theme_meta .ecwd-tab-inner > div {
+    margin: 20px 0;
+}
+
+#ecwd_theme_meta .ecwd-tab-inner > div:first-child {
+    margin-top: 0;
+}
+
+#ecwd_theme_meta .with_ecwd_color:after,
+#ecwd-settings-content .ecwd-addons_updates:after,
+#ecwd-settings-content .main-plugin:after,
+#ecwd-settings-content:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#ecwd_theme_meta .with_ecwd_color label {
+    float: left;
+    margin-top: 5px;
+    width: 293px;
+}
+
+#ecwd_theme_meta .with_ecwd_color > div {
+    float: left;
+}
+
+.ecwd-import-settings form {
+    float: left;
+    width: 45%;
+}
+
+.ecwd-import-settings input[type=file] {
+    margin: 10px 0;
+}
+
+.ecwd-import-settings .ecwd-calendar-event-import {
+    font-size: 15px;
+}
+
+#ecwd-settings-content #add_on_title {
+    margin-bottom: 20px;
+}
+
+#ecwd-settings-content .ecwd_coming_soon {
+    position: absolute;
+    top: 44px;
+    left: 0;
+}
+
+#ecwd-settings-content .ecwd-add-on a {
+    text-decoration: none;
+}
+
+#ecwd-settings-content .ecwd-add-on h2 {
+    color: #229DBF;
+    font-size: 16px;
+    margin-bottom: 9px;
+    padding: 0 0 7px;
+    line-height: 1.2;
+}
+
+#ecwd-settings-content .ecwd-addon-descr {
+    font-size: 13px;
+    line-height: 18px;
+    height: 100%;
+    width: 53%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 10px 10px;
+    background: #23282D;
+    color: #D1DDE0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #2c3f52;
+    color: #ed4e6e;
+}
+
+#ecwd-settings-content .ecwd-addon,
+#ecwd-settings-content .ecwd-addon-price {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    border: 1px solid #DCDCDC;
+    font-weight: bold;
+}
+
+#ecwd-settings-content .ecwd-addon {
+    background: #FFFFFF url(../images/Add_Ons.jpg) no-repeat 6px center;
+    color: #66686B;
+    padding: 9px 12px 9px 45px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#ecwd-settings-content .ecwd-addon-price {
+    background: #FFFFFF;
+    color: #229CBF;
+    padding: 9px 12px;
+}
+
+#ecwd-settings-content .ecwd-add-on:hover .ecwd-addon-price,
+#ecwd-settings-content .ecwd-addon-price:hover {
+    background: #229CBF;
+    color: #DDECF1;
+}
+
+#ecwd-settings-content .ecwd-add-on:hover .ecwd-addon,
+#ecwd-settings-content .ecwd-addon:hover {
+    background: #23282D url(../images/Add_Ons_hover.jpg) no-repeat 6px center;
+    color: #DDDEDE;
+}
+
+#ecwd-settings-content .ecwd-addon span {
+    border-left: 1px solid #A7A9AB;
+    padding: 4px 10px 4px 10px;
+}
+
+#ecwd-settings-content .ecwd-addon-descr span {
+    padding: 5px 0 5px 10px;
+    border-left: 1px solid #93CEE0;
+}
+
+#ecwd-settings-content a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#ecwd-settings-content .ecwd-add-on {
+    width: 310px;
+    height: 320px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    -webkit-perspective: 1700px;
+    -moz-perspective: 1700px;
+    perspective: 1700px;
+    -webkit-perspective-origin: 0 50%;
+    -moz-perspective-origin: 0 50%;
+    perspective-origin: 0 50%;
+    position: relative;
+}
+
+#ecwd-settings-content .main-plugin .ecwd-add-on {
+    float: left;
+    margin-right: 25px;
+    height: auto;
+}
+
+#ecwd-settings-content .ecwd-figure {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 232px;
+    margin: 0;
+}
+
+#ecwd-settings-content .ecwd-figure-img {
+    overflow: hidden;
+}
+
+#ecwd-settings-content .ecwd-figure-img img {
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+#ecwd-settings-content .ecwd-figure:hover img {
+    -webkit-transform: translateX(25%);
+    -moz-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    transform: translateX(25%);
+}
+
+#ecwd-settings-content .ecwd-figure:hover figcaption {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+#ecwd-settings-content .ecwd-addon-subtitle {
+    font-size: 25px;
+    border-bottom: 1px solid #C1C4C7;
+    padding-bottom: 23px;
+}
+
+#ecwd-settings-content .main-plugin .main-plugin-img {
+    float: left;
+    margin-right: 2%;
+    width: 26%;
+}
+
+#ecwd-settings-content .main-plugin .main-plugin-img img {
+    max-width: 100%;
+}
+
+#ecwd-settings-content .main-plugin .main-plugin-info {
+    float: left;
+}
+
+#ecwd-settings-content .main-plugin {
+    margin-bottom: 25px;
+}
+
+#ecwd-settings-content .main-plugin_desc-cont p,
+#ecwd-settings-content .main-plugin_desc-cont {
+    font-size: 14px;
+}
+
+#ecwd-settings-content .main-plugin-desc-info p {
+    margin: 2px 0 13px;
+}
+
+#ecwd-settings-content .ecwd-addons_updates .main-plugin-desc-info p {
+    margin: 2px 0 4px;
+}
+
+#ecwd-settings-content .main-plugin-desc {
+    margin-bottom: 12px;
+}
+
+#ecwd-settings-content .main-plugin-info h2 {
+    padding: 0;
+    line-height: 1;
+    margin-bottom: 14px;
+}
+
+#ecwd-settings-content .main-plugin-info h2 a {
+    color: #323A45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ecwd-settings-content .main-plugin-desc-info {
+    border-bottom: 1px solid #C0C4C7;
+    width: 71%;
+}
+
+#ecwd-settings-content .ecwd-addons_updates .main-plugin-desc-info {
+    border-bottom: 0;
+    width: 100%;
+}
+
+#ecwd-settings-content .update-info {
+    background: url(../../assets/updates_icon.jpg) no-repeat;
+    padding-left: 25px;
+    color: #bc0b0b;
+}
+
+#ecwd-settings-content .ecwd-addons_updates .ecwd-figure {
+    margin-bottom: 10px;
+}
+
+#ecwd-settings-content .ecwd-addons_updates .ecwd-addon-descr-update {
+    border-top: 1px solid #898989;
+    padding-top: 6px;
+}
+
+#ecwd-settings-content .ecwd-addons_updates h2 {
+    color: #323A45;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.ecwd_more_updates {
+    display: none;
+}
+
+/*mail*/
+ul.ecwd_list_container {
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+}
+
+ul.ecwd_list_container li.ecwd_list_head {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+ul.ecwd_list_container li.ecwd_list div {
+    display: inline-block;
+}
+
+#mail_template_list .mail_name {
+    width: 90%;
+}
+
+body.wp-admin.post-type-ecwd_event #posts-filter .alignleft.actions a.button {
+    display: inline-block;
+    margin: 0;
+}
+
+.ecwd_topic.wd_topic {
+    background-color: #ffffff;
+    border: none;
+    box-sizing: border-box;
+    clear: both;
+    color: #6e7990;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 15px;
+    vertical-align: middle;
+    width: 98%;
+}
+
+.ecwd_topic.wd_topic .wd_help_topic {
+    float: left;
+}
+
+.ecwd_topic.wd_topic .wd_help_topic a {
+    text-decoration: none;
+    color: #5CAEBD;
+    border-bottom: 1px dotted;
+}
+.ecwd_topic .wdi_update_pro_link{
+    background: #45A6B7;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 0 18px 0 18px;
+    color: #fff !important;
+}
+
+.ecwd_topic.wd_topic .wd_help_topic a:hover {
+    color: #e54b26;
+}
+
+.ecwd_topic.wd_topic .wd_support {
+    float: right;
+    margin: 0 10px;
+}
+
+.ecwd_topic.wd_topic .wd_support img {
+    vertical-align: middle;
+}
+
+.ecwd_topic.wd_topic .wd_support a {
+    text-decoration: none;
+    color: #6E7990;
+}
+
+.ecwd_topic.wd_topic .wd_pro {
+    float: right;
+    padding: 0;
+}
+
+.ecwd_topic.wd_topic .wd_pro a {
+    border: none;
+    box-shadow: none !important;
+    text-decoration: none;
+}
+
+.ecwd_topic.wd_topic .wd_pro img {
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ecwd_topic.wd_topic .wd_pro a,
+.ecwd_topic.wd_topic .wd_pro a:active,
+.ecwd_topic.wd_topic .wd_pro a:visited,
+.ecwd_topic.wd_topic .wd_pro a:hover {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 18px 0 18px;
+    vertical-align: middle;
+}
+.post-type-ecwd_event fieldset.inline-edit-date {
+    display: none;
+}
+
+.ecwd_event_list_popup_loader, .ecwd_past_event_list_popup_loader{
+    display: none;
+    margin: 0 auto;
+    width: 70px;
+    margin-top: calc(100px - 35px);
+}
+.ecwd_add_events_button, .ecwd_delete_events_button{
+    display: none !important;
+}
+.ecwd_add_events ,.ecwd_past_events_delete_button{
+    float: left;
+}
+#open-popup {padding:20px}
+.ecwd_event_list_popup, .ecwd_past_event_list_popup {
+    position: relative;
+    background: #FFF;
+    padding: 10px 40px 50px 40px;
+    width: auto;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    min-height: 200px;
+}
+.ecwd_popup_notice, .ecwd_popup_title{
+    width: 100%;
+    text-align: left;
+}
+.ecwd_popup_notice{
+    margin-bottom: 50px;
+
+}
+
+.ecwd_custom_date .checkbox-div-content{
+    width: 170px;
+    display: inline-block;
+}
+.ecwd_custom_date input.ecwd_custom_date_el{
+    width: 50px !important;
+}
+.ecwd_custom_date {
+    margin-bottom: 5px;
+
+}

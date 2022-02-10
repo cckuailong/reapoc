@@ -1,0 +1,93 @@
+
+/*---------------------------------------*/
+/*-------- 1. Lead Form Styler-----------
+/*---------------------------------------*/
+
+
+.select-lf-form{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+.lead-form-wrapper{
+    display: flex; 
+}
+.hide-form-title .lead-form-front h2{
+    display: none;
+}
+.show-submit-msg p.successmsg{
+    display: block !important;
+}
+
+.lf-field label{
+    font-size: 15;
+    font-weight: 400;
+}
+.checkbox-type.lf-field ul li,
+.radio-type.lf-field ul li,
+.lf-field.lfb-terms span{
+    font-size: 16px ;
+}
+
+
+.lf-custom-radio-checkbox .lf-field input[type=checkbox],
+.lf-custom-radio-checkbox .lf-field input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: solid;
+    border-width: 0;
+    outline: none;
+    min-width: 1px;
+    width: 15px;
+    height: 15px;
+    background: #ddd;
+    padding: 3px;
+}
+
+.lf-custom-radio-checkbox .lf-field input[type=checkbox]:before,
+.lf-custom-radio-checkbox .lf-field input[type=radio]:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.lf-custom-radio-checkbox .lf-field input[type=checkbox]:checked:before{
+    content: "\f147";
+    font-family: dashicons;
+}
+
+.lf-custom-radio-checkbox .lf-field input[type=radio]:checked:before {
+    background: #8c8c8c;
+}
+.lf-custom-radio-checkbox .lf-field input[type=checkbox]:checked:before{
+    background: #e0e0e0;
+    color: #777777;
+}
+
+.lf-custom-radio-checkbox .lf-field input[type=radio] {
+    border-radius: 50%;
+}
+
+.lf-custom-radio-checkbox .lf-field input[type=radio]:before {
+    border-radius: 50%; 
+}
+
+/*Hide labels for input fields and checkboxes*/
+
+.hide-input-label .lf-field:not(.radio-type):not(.checkbox-type):not(.submit-type) label{
+    display: none;
+}
+
+.hide-radio-checkbox-label .lf-field.radio-type label,
+.hide-radio-checkbox-label .lf-field.checkbox-type label{
+    display: none;
+}
+
+.lf-custom-radio-checkbox .lf-field input[type=checkbox],
+.lf-custom-radio-checkbox .lf-field input[type=radio] {
+    border: 1px solid #a5a5a5;
+}

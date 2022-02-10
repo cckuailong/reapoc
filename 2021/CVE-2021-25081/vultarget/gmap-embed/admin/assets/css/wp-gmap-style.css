@@ -1,0 +1,720 @@
+/*Media query for responsiveness*/
+@import "wp-gmap-style-media-query.css";
+/*Header section*/
+.gmap_header_section {
+    width: 100%;
+    float: left;
+}
+
+.gmap_header_section_left {
+    width: 78%;
+    float: left;
+}
+
+.gmap_header_section_right {
+    max-width: 21%;
+    float: right;
+    padding-right: 1%;
+}
+
+.gmap_donate_button {
+    float: left;
+    margin-top: 5px;
+}
+
+.gmap_donate_button img {
+    height: 32px;
+    width: 93px;
+}
+
+.gmap_get_pro_version {
+    float: left;
+    padding: 2px 9px;
+    height: auto !important;
+    font-weight: bold;
+    margin: 5px 5px 0 0 !important;
+    color: #238b68 !important;;
+}
+
+/******* Nav Bar ********/
+ul#wp-gmap-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#wp-gmap-nav li {
+    display: inline-block;
+    background-color: #32c896;
+    border-bottom: solid 5px #238b68;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul#wp-gmap-nav li:hover, ul#wp-gmap-nav .active {
+    background-color: #238b68;
+}
+
+ul#wp-gmap-nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 8px;
+    font-weight: bold;
+}
+
+/******* Create/Update Map Tabs ******/
+#wp-gmap-tabs {
+    padding: 1%;
+    float: left;
+    width: 98%;
+}
+
+#wp-gmap-tabs .active {
+    display: block;
+}
+
+.wgm_wpgmap_tab {
+    width: 100%;
+    background-color: #ccc;
+    float: left;
+    height: 30px;
+}
+
+ul.wgm_wpgmap_tab {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+}
+
+.wgm_wpgmap_tab li {
+    display: inline;
+    padding: 6px 6px;
+    float: left;
+    background-color: #ccc;
+    border-right: 1px white solid;
+    cursor: pointer;
+}
+
+.wgm_wpgmap_tab li:hover, .wgm_wpgmap_tab .active {
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/******* For Google Map Rendering ******/
+.wp-gmap-preview .wgm_controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 39px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.wp-gmap-preview #wgm_pac_input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+.wp-gmap-preview #wgm_pac_input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+    z-index: 99999;
+}
+
+#type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0 11px;
+}
+
+#type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#target {
+    width: 345px;
+}
+
+/******* Google Map Settings ******/
+#gmap_container_inner {
+    background-color: white;
+    float: left;
+    width: 100%;
+    border: 1px #e0dddd solid;
+    margin-top: 5px;
+}
+
+.popup-content {
+    position: relative;
+    width: 60%;
+}
+
+/******* Map List ******/
+.wp-gmap-list {
+    padding: 1%;
+    float: left;
+    width: 97%;
+}
+
+.wp-gmap-single {
+    padding: .2% 1%;
+    float: left;
+    width: 97%;
+    border: 1px #ccc solid;
+    margin: 7px 0;
+    background-color: #f3f3f3;
+}
+
+.wp-gmap-single-left {
+    width: 80%;
+    float: left;
+}
+
+.wp-gmap-single-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.wp-gmap-single-action {
+    width: 20%;
+    padding: 13px 0;
+    float: left;
+    text-align: right;
+}
+
+/******* Map Properties ******/
+.wp-gmap-properties-outer {
+    width: 49%;
+    float: left;
+    /*border: 1px #ccc solid;*/
+
+}
+
+.wp-gmap-properties, .wp-gmap-other-properties {
+    width: 100%;
+    background-color: white;
+    float: left;
+}
+
+.gmap_properties {
+    width: 100%;
+    padding: 1%;
+}
+
+.gmap_properties tr {
+    height: 50px;
+}
+
+.gmap_properties tr .regular-text {
+    width: 99%;
+    max-width: 99%;
+}
+
+/******* Preview Map ******/
+.wp-gmap-preview {
+    width: 50%;
+    background-color: #f3f3f3;
+    margin-left: 1%;
+    float: left;
+}
+
+/**********Contact form ***********/
+.srm_gmap_contact_area {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.srm_gmap_instructions_outer_area {
+    width: 50%;
+    /*float: left;*/
+    /*margin-left: 2%;*/
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.srm_gmap_instructions {
+    width: 42%;
+    float: left;
+    margin-left: 2%;
+    padding: 10px;
+}
+
+.srm_gmap_instructions ul {
+    padding: 0;
+    margin: 0;
+}
+
+.srm_gmap_instructions ul li {
+    background-color: #f0f0f0;
+    padding: 6px;
+    border: 1px solid #e0e0e0;
+    margin: 5px 0;
+}
+
+.srm_gmap_instructions ul li:before {
+    content: '> ';
+    font-weight: bold;
+}
+
+.srm_gmap_instructions ul li:hover {
+
+}
+
+.srm_gmap_instructions ul li a {
+    text-decoration: none;
+}
+
+.srm_gmap_video_area {
+    width: 95%;
+    float: left;
+    margin-left: 2%;
+    clear: both;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.wp_gmap_contact_field {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 1px 0;
+}
+
+/*wp gmap premium notice*/
+.wpgmap_premium_notice_title {
+    color: #0073aa;
+    font-size: 2em;
+    margin: .67em 0;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wpgmap_premium_notice_button {
+    background-color: #0073aa;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 0 14px grey;
+}
+
+.wpgmap_pro_version_title {
+    color: #0073aa;
+    font-size: 2em;
+    margin: .67em 0;
+    display: block;
+    font-weight: 600;
+    padding-left: 55px;
+}
+
+.wpgmap_features_list {
+    padding-left: 51px;
+}
+
+
+/*Custom CSS for Custom CSS and JS under settings */
+#wpgmap_custom_js, #wpgmap_custom_css {
+    background: #2B323C;
+    color: #fff !important;
+    padding: 20px 25px;
+    border-radius: 5px;
+    max-width: 100%;
+    min-height: 250px;
+}
+
+/* Settings Menu*/
+.wpgmapembed_get_api_key {
+    padding: 10px;
+}
+
+.wpgmap_lng_custom_script_settings {
+    padding: 10px;
+}
+
+.gmap_embed_create_new_link_area {
+    width: 40%;
+    margin: 30px auto;
+}
+
+.gmap_embed_create_new_link_area a {
+    padding: 9px;
+    margin-left: 100px;
+    border-radius: 5px;
+    background-color: #0073aa;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*.notice-error, div.settings-error {*/
+/*    border-left-color: #dc3232;*/
+/*}*/
+
+#wgm_all_maps {
+    padding: 5px;
+}
+
+/*for datatable*/
+#wgm_all_maps .dataTables_wrapper .dataTables_length select,
+#wp-gmap-new .dataTables_wrapper .dataTables_length select,
+#wp-gmap-edit .dataTables_wrapper .dataTables_length select {
+    width: 50px !important;
+    padding: 0 0 0 5px !important;
+}
+
+#wgm_all_maps .dataTables_wrapper .dataTables_filter input,
+#wp-gmap-new .dataTables_wrapper .dataTables_filter input,
+#wp-gmap-edit .dataTables_wrapper .dataTables_filter input {
+    padding: 0 0 0 5px !important;
+}
+
+.wgm-pro-label {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: -6px;
+    line-height: 1;
+    padding: 3px 6px;
+    border-radius: 2px;
+    background-image: -moz-linear-gradient(-122deg, rgb(91 211 160) 0%, rgb(54 214 146) 100%);
+    background-image: -webkit-linear-gradient(
+            -122deg, rgb(91 211 160) 0%, rgb(54 214 146) 100%);
+}
+
+/*Settings**/
+.wgm-settings-menu {
+    border-left: 1px #e0dddd solid;
+}
+
+.wgm-settings-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wgm-settings-menu ul li {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.wgm-settings-menu ul li.active a {
+    background-color: #fff;
+    border-top: 2px solid #17c9a2;
+}
+
+.wgm-settings-menu ul li a:focus {
+    box-shadow: none;
+}
+
+.wgm-settings-menu ul li a, .wgm-settings-menu ul li span {
+    padding: 15px 20px;
+    background-color: #f8fafb;
+    color: #516378;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-top: 2px solid #f8fafb;
+    display: block;
+}
+
+
+/* Marker related*/
+.wgm_gmap_marker_list {
+    width: 100%;
+    border: 1px #f1f1f1 solid;
+    background-color: #f3f3f3;
+    float: left;
+}
+
+.wgm_gmap_marker_list th {
+    text-align: left;
+}
+
+.wgm_gmap_markers {
+    float: left;
+    width: 100%;
+}
+
+.wgm_gmap_markers table {
+    border: none;
+    padding: 0;
+}
+
+.wgm_marker_cancel {
+    background: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.wgm_marker_cancel:hover {
+    background-color: #bb2d3b !important;
+    border-color: #bb2d3b !important;
+}
+
+.add_new_marker_form input[type=text] {
+    width: 100%;
+}
+
+/*==============gmap markers=================*/
+.wgm_gmap_embed_marker_icons {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wgm_gmap_embed_marker_icons li {
+    display: inline;
+    padding: 2px;
+    margin: 5px;
+    border: 1px gray solid;
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+/** Common*/
+
+
+.wgm_marker_create_hints {
+    height: 59px;
+    background-color: white;
+    width: 97%;
+    box-shadow: 0 0 5px #d0d0d0;
+    margin-top: 10px;
+    padding: 5px 0 5px 5px;
+    display: none;
+}
+
+.wgm_marker_create_hints ul {
+    line-height: 10px;
+    list-style: decimal;
+    padding-left: 18px;
+}
+
+.wgm_marker_create_hints ul li b {
+    font-style: italic;
+    color: blue;
+}
+
+.wgm_admin_support_wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+
+.wgm_admin_support_wrapper .wgm_admin_block {
+    flex-basis: 100%;
+    margin: 0 .2%;
+    background-color: white;
+    box-shadow: 0 0 5px #e8e8e8;
+    border: 1px solid #ece8e8;
+}
+
+.wgm_admin_block_header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 10px 0 0 10px;
+}
+
+.wgm_admin_block_header_icon {
+    height: 40px;
+    width: 40px;
+    background: #f3edff;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+    color: #32c896;
+    font-size: 18px;
+}
+
+.wgm_admin_title {
+    margin: 0.7em 0 1em;
+    padding: 0 0 0 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333333;
+}
+
+.wgm_admin_block_content {
+    overflow: hidden;
+    position: relative;
+    padding: 0 15px 12px 15px;
+}
+
+.wgm_admin_block_content .wgm_button {
+    font-size: 13px;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(
+            -169deg,
+            rgb(104 204 176) 0%,
+            rgb(28 204 139) 100%
+    );
+    background-image: -ms-linear-gradient(
+            -169deg,
+            rgb(104 204 176) 0%,
+            rgb(28 204 139) 100%
+    );
+    -webkit-box-shadow: 0 14px 15px 0 rgba(0, 5, 41, 0.08);
+    box-shadow: 0 14px 15px 0 rgba(0, 5, 41, 0.08);
+    color: #fff;
+    display: inline-block;
+    padding: 8px 8px;
+    text-decoration: none;
+    line-height: 1;
+    transition: all 0.3s;
+}
+
+.wgm_admin_support_wrapper p {
+    font-size: 13px;
+    color: #707070;
+    margin: 0 0 20px 0;
+    line-height: 21px;
+}
+
+.wgm_admin_block_content .wgm_gmap_instructions {
+    padding: 0 0 12px 19px;
+}
+
+.wgm_admin_block_content .wgm_gmap_instructions ul li a {
+    text-decoration: none;
+}
+
+.wgm_admin_block_content .wgm_gmap_instructions ul li a i, .wgm_faq_item i {
+    margin-right: 8px;
+}
+
+.wgm_admin_block_content .wgm_gmap_instructions ul li {
+    background-color: #e0e0e040;
+    padding: 4px 0 4px 6px;
+    border-left: 2px solid #5eccac;
+    margin: 9px 0;
+}
+
+/*sweetalert2 customize*/
+.swal2-title {
+    line-height: normal;
+}
+
+/*Button*/
+.button.wgm_btn {
+    background-color: #24a97f;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    height: auto;
+    text-transform: uppercase;
+    text-shadow: none;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.button.wgm_btn:hover,
+.button.wgm_btn:focus {
+    background-color: #0c8a62 !important;
+    color: #fff;
+}
+
+.wgm_save_btn_wrap {
+    margin: 30px 0 20px;
+}
+
+.wgm_btn.wgm_license_btn {
+    background-color: #0dc9c3;
+}
+
+.wgm_btn.wgm_license_btn:hover,
+.wgm_btn.wgm_license_btn:focus {
+    background-color: #0c8a62 !important;
+}
+
+.wgm_btn.wgm_demo_btn,
+.wgm_btn.wgm_license_btn,
+.wgm_btn.wgm_review_btn {
+    padding: 10px;
+    display: block;
+    max-width: 250px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.wgm_btn, .wgm_lng_custom_script_settings .button-primary {
+    border-radius: 3px;
+    background-image: -moz-linear-gradient(
+            -169deg,
+            #5b9dd9 0%,
+            #007cba 100%
+    );
+    background-image: -webkit-linear-gradient(
+            -169deg,
+            #5b9dd9 0%,
+            #007cba 100%
+    );
+    background-image: -ms-linear-gradient(
+            -169deg,
+            #5b9dd9 0%,
+            #007cba 100%
+    );
+    width: 160px;
+    height: 50px;
+    transition: all 300ms ease-in-out;
+}
+
+.wgm_btn:hover,
+.wgm_btn:focus, .wgm_lng_custom_script_settings .button-primary:focus, .wgm_lng_custom_script_settings .button-primary:hover {
+    background-color: #0c8a62 !important;
+}
+
+.wgm_mb_15 {
+    margin-bottom: 15px;
+}
+.wgm-col-full {
+    width: 100%;
+    height: auto;
+}
+.col-half {
+    flex-basis: 49%;
+    height: auto;
+    display: flex;
+}
+.col-one-third {
+    width: 32%;
+    height: auto;
+}
+
+.col-one-fourth {
+    width: 25%;
+    height: auto;
+}

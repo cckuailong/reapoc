@@ -1,0 +1,190 @@
+.ewd-upcp-welcome-clear {
+	clear: both;
+}
+
+.ewd-upcp-welcome-screen-header h1 {
+	padding: 48px 0 16px 0;
+	margin: 0;
+}
+.ewd-upcp-welcome-screen-header p {
+	margin-bottom: 32px;
+	font-size: 15px;
+}
+.ewd-upcp-welcome-screen h2 {
+	background: #6700B2;
+	color: #fff;
+	padding: 18px;
+	margin: 0;
+	z-index: 2;
+	position: relative;
+	float: left;
+	width: calc(100% - 36px);
+	border-top: 1px solid #854DD6;
+}
+.ewd-upcp-welcome-screen h2:hover {
+	background: #682CBF;
+}
+
+.ewd-upcp-welcome-screen-box .ewd-upcp-welcome-screen-box-content {
+	display: none;
+} 
+
+.ewd-upcp-welcome-screen-box.ewd-upcp-welcome-screen-open .ewd-upcp-welcome-screen-box-content {
+	display: block;
+}
+
+.ewd-upcp-welcome-screen-box {
+    padding: 0px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ewd-upcp-welcome-screen-header,
+.ewd-upcp-welcome-screen-skip-container {
+	max-width: 800px;
+    margin: 0 auto;
+}
+
+.ewd-upcp-welcome-screen-header {
+	text-align: center;
+}
+
+.ewd-upcp-welcome-screen-box h2 {
+	cursor: pointer;
+}
+
+.ewd-upcp-welcome-screen-box-content {
+	position: relative;
+	float: left;
+	background: #fff;
+	width: 90%;
+    margin: 0 auto 16px;
+    box-shadow: 0 1px 12px #ddd;
+    display: block;
+    padding: 18px 5%;	
+}
+
+.ewd-upcp-welcome-screen-add-category-button,
+.ewd-upcp-welcome-screen-add-catalog-page-button,
+.ewd-upcp-welcome-screen-add-product-button,
+.ewd-upcp-welcome-screen-save-options-button {
+	position: relative; 
+	float: left;
+	cursor: pointer;
+	padding: 4px 8px;
+	border: 2px solid #0acbaa;
+	color: #fff;
+	border-radius: 2px;
+	background: #0acbaa;
+	width: auto;
+	text-align: center;
+	margin-top: 12px;
+}
+.ewd-upcp-welcome-screen-add-category-button:hover,
+.ewd-upcp-welcome-screen-add-catalog-page-button:hover,
+.ewd-upcp-welcome-screen-add-product-button:hover,
+.ewd-upcp-welcome-screen-save-options-button:hover {
+	border-color: #17d6b3;
+	background: #17d6b3;
+}
+
+.ewd-upcp-welcome-screen-next-button, 
+.ewd-upcp-welcome-screen-previous-button,
+.ewd-upcp-welcome-screen-finish-button a {
+	position: relative; 
+	float: right;
+	cursor: pointer;
+	padding: 4px 8px;
+	border: 2px solid #6700B2;
+	color: #6700B2;
+	border-radius: 2px;
+	background: transparent;
+	width: auto;
+	text-align: center;
+	margin-top: 32px;
+	text-decoration: none;
+}
+.ewd-upcp-welcome-screen-next-button:hover, 
+.ewd-upcp-welcome-screen-previous-button:hover,
+.ewd-upcp-welcome-screen-finish-button a:hover {
+	color: #fff;
+	background: #6700B2;
+	text-decoration: none;
+}
+.ewd-upcp-welcome-screen-next-button-not-top-margin {
+	margin-top: 12px;
+}
+.ewd-upcp-welcome-screen-previous-button {
+	float: left;
+}
+
+.ewd-upcp-welcome-screen-skip-button {
+	position: relative; 
+	float: right;
+	cursor: pointer;
+	padding: 4px 8px;
+	border: 2px solid #ccc;
+	color: #999;
+	border-radius: 2px;
+	background: transparent;
+	width: auto;
+	text-align: center;
+	margin-top: 12px;
+}
+.ewd-upcp-welcome-screen-skip-button:hover {
+	border-color: #aaa;
+	color: #fff;
+	background: #aaa;
+}
+
+.ewd-upcp-welcome-screen-box-content input {
+	margin: 0;
+}
+.ewd-upcp-welcome-screen-box-content-divs {
+	margin-bottom: 8px;
+}
+
+.ewd-upcp-welcome-screen-show-created-categories,
+.ewd-upcp-welcome-screen-show-created-products {
+	display: none;
+}
+.ewd-upcp-welcome-screen-show-created-faqs {
+	display: none;
+}
+
+.ewd-upcp-welcome-screen-add-catalogue-categories h3 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.ewd-upcp-save-message {
+	clear: both;
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 16px 0;
+}
+.ewd-upcp-save-message-inside {
+	position: relative;
+	float: left;
+	padding: 8px 12px;
+	background: #eee;
+}
+
+/*CREATED TABLES*/
+.ewd-upcp-welcome-screen-show-created-categories,
+.ewd-upcp-welcome-screen-show-created-products {
+	width: 100%;
+	border-collapse: collapse;
+}
+.ewd-upcp-welcome-screen-show-created-categories th,
+.ewd-upcp-welcome-screen-show-created-categories td,
+.ewd-upcp-welcome-screen-show-created-products th,
+.ewd-upcp-welcome-screen-show-created-products td {
+	border: 1px solid #ccc;
+	padding: 12px;
+}
+.ewd-upcp-welcome-screen-show-created-categories img,
+.ewd-upcp-welcome-screen-show-created-products img {
+	max-width: 100%;
+}

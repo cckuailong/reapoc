@@ -1,0 +1,67 @@
+<?php
+/**
+ * Border Style Template
+*/
+ 
+/*
+**========== Direct access not allowed =========== 
+*/
+if( ! defined('ABSPATH' ) ){ exit; }
+
+$input_id = isset($input_meta['input_id']) ? $input_meta['input_id'] : '';
+$mode     = isset($input_meta['mode']) ? $input_meta['mode'] : '';
+$support  = isset($input_meta['support']) ? $input_meta['support'] : array();
+
+$styles    = $class_ins->border_style();
+$form_name = $class_ins::get_form_name($input_id)."[".$mode."]";
+$options   = $class_ins->css_editor_options();
+
+$saved_settings = $class_ins::get_saved_settings($input_id);
+?>
+
+<div class="nmsf-css-editor-wrapper">
+	<div class="row">
+		<?php
+		foreach ($options as $key => $val) {
+			$title = isset($val['title']) ? $val['title']: '';
+			$icon  = isset($val['icon']) ? $val['icon']: '';
+			$input_value = isset($saved_settings[$mode][$key]) ? $saved_settings[$mode][$key] : '';
+			
+			if (!empty($support) && !in_array($key, $support)) continue;
+		?>
+			<div class="nmsf-css-editor-style">
+	            <span>
+	                <i class="<?php echo esc_attr($icon); ?>" aria-hidden="true"></i>
+	            </span>
+	            <input 
+	            	type="text" 
+	            	name="<?php echo esc_attr($form_name); ?>[<?php echo esc_attr($key); ?>]" 
+	            	class="nmsf-css-editor-input" 
+	            	placeholder="<?php echo $title; ?>"
+	            	value ="<?php echo esc_attr($input_value); ?>"
+	            >
+	     	</div>
+		<?php
+		}
+		?>
+		
+		<?php if($mode == 'border'){ 
+			$selected_opt = isset($saved_settings[$mode]['style']) ? $saved_settings[$mode]['style'] : '';
+			$selected_clr = isset($saved_settings[$mode]['color']) ? $saved_settings[$mode]['color'] : '';
+		?>
+		<div class="nmsf-css-editor-select">
+			<select name="<?php echo esc_attr($form_name); ?>[style]">
+			<?php foreach ( $styles as $style_key => $style_label ) { ?>
+				<option value="<?php echo esc_attr($style_key); ?>" <?php selected($selected_opt, $style_key, true); ?>><?php echo ucfirst( $style_label ); ?></option>';
+			<?php } ?>
+			</select>
+		</div>
+		<div>
+			<div class="color-group">
+				<input type="text" class="nmsf-wp-colorpicker" data-alpha-enabled="true" name="<?php echo esc_attr($form_name); ?>[color]" value="<?php echo esc_attr($selected_clr); ?>">
+			</div>
+		</div>
+		<?php } ?>
+		
+	</div>
+</div>

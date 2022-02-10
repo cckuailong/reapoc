@@ -1,0 +1,3250 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Link Library 5.9.13.13\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-30 13:42-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Luc Capronnier <lcapronnier@yahoo.com>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Bookmarks: 136,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;esc_html;esc_html__;esc_html_e;"
+"esc_attr__;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# Plugin name; please avoid translating if possible
+#: link-library-admin.php:109
+msgid "Insert a Link Library shortcode"
+msgstr "Sett inn en Link Library shortcode"
+
+#: link-library-admin.php:112
+msgid "Link List"
+msgstr "Lenkeliste"
+
+#: link-library-admin.php:113
+msgid "Link Category List"
+msgstr "Lenkekategorier"
+
+#: link-library-admin.php:114
+msgid "Link Search"
+msgstr "Lenkesøk"
+
+#: link-library-admin.php:115
+msgid "Add Link Form"
+msgstr "Legg til skjema for lenker"
+
+#: link-library-admin.php:119
+msgid "Insert Shortcode"
+msgstr "Sett inn shortcode"
+
+#: link-library-admin.php:120
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: link-library-admin.php:123
+msgid "Render a list of links."
+msgstr "Gjengi liste over lenker."
+
+#: link-library-admin.php:125 link-library-admin.php:180
+#: link-library-admin.php:215
+msgid "Library ID"
+msgstr "Bibliotek ID"
+
+#: link-library-admin.php:136 link-library-admin.php:191
+#: link-library-admin.php:226 link-library-admin.php:769
+#: link-library-admin.php:2624 link-library-admin.php:2639
+msgid "Library"
+msgstr "Bibliotek"
+
+#: link-library-admin.php:142
+msgid "Single Link ID"
+msgstr "Unik lenke-ID"
+
+#: link-library-admin.php:145
+msgid "Specify ID of single link to be displayed"
+msgstr "Spesifiser unik lenke-ID for visning"
+
+#: link-library-admin.php:147 link-library-admin.php:197
+#: link-library-admin.php:232
+msgid "Category Override"
+msgstr "Endre konfigurasjon for kategorier"
+
+#: link-library-admin.php:150 link-library-admin.php:200
+#: link-library-admin.php:235
+msgid ""
+"Single, or comma-separated list of categories IDs to be displayed in the "
+"link list"
+msgstr ""
+"Unik kategori-ID, eller flere kategorier separert med komma, som skal vises "
+"i lenkelisten"
+
+#: link-library-admin.php:152 link-library-admin.php:202
+#: link-library-admin.php:237
+msgid "Excluded Category Override"
+msgstr "Unntatt fra konfigurasjonsendringer for kategorier"
+
+#: link-library-admin.php:155 link-library-admin.php:205
+#: link-library-admin.php:240
+msgid ""
+"Single, or comma-separated list of categories IDs to be excluded from the "
+"link list"
+msgstr ""
+"En kategori-ID ( eller flere separert med komma ) som skal fjernes fra "
+"visning av lenkeliste"
+
+#: link-library-admin.php:157 link-library-admin.php:162
+#: link-library-admin.php:167 link-library-admin.php:172
+msgid "Notes Override"
+msgstr "Notater for konfigurasjonsendringer"
+
+#: link-library-admin.php:160
+msgid "Set to 0 or 1 to display or not display link notes"
+msgstr "Sett til 0 eller 1 for å vise eller ikke vise notater for lenkene"
+
+#: link-library-admin.php:165
+msgid "Set to 0 or 1 to display or not display link descriptions"
+msgstr "Sett til 0 eller 1 for å vise eller ikke vise beskrivelser for lenkene"
+
+#: link-library-admin.php:170
+msgid "Set to 0 or 1 to display or not display rss information"
+msgstr "Sett til 0 eller 1 for å vise eller ikke vise RSS-informasjon"
+
+#: link-library-admin.php:175
+msgid "Set to 0 or 1 to display links in an unordered list or a table"
+msgstr ""
+"Sett til 0 eller 1 for å vise eller lenker i en usortert liste eller tabell"
+
+#: link-library-admin.php:178
+msgid "Render a list of link categories."
+msgstr "Opprett kategoriliste."
+
+#: link-library-admin.php:208
+msgid "Render a search box to search through links."
+msgstr "Opprett en søkeboks for å søke gjennom lenker."
+
+#: link-library-admin.php:210
+msgid "There are no options for this shortcode."
+msgstr "Ingen valg for shortcode."
+
+#: link-library-admin.php:213
+msgid "Render a form for visitors to submit new links."
+msgstr "Opprett et skjema for besøkende der de kan sende inn egne lenker."
+
+#: link-library-admin.php:273
+msgid "Category Link"
+msgstr "Kategorilenke"
+
+#: link-library-admin.php:372 link-library-admin.php:644
+msgid ""
+"Please create a folder called uploads under your Wordpress /wp-content/ "
+"directory with write permissions to use this functionality."
+msgstr ""
+"For å benytte denne funksjonaliteten må du opprette en mappe (med "
+"skriverettigheter) som heter uploads under /wp-content/ i din Wordpress-"
+"installasjon."
+
+#: link-library-admin.php:374 link-library-admin.php:646
+msgid ""
+"Please make sure that the /wp-content/uploads/ directory has write "
+"permissions to use this functionality."
+msgstr ""
+"Vennligst kontroller at /wp-content/uploads/ har skriverettigheter for å "
+"benytte denne funksjonen."
+
+#: link-library-admin.php:464
+msgid "Basic Details"
+msgstr "Detaljer"
+
+#: link-library-admin.php:466 link-library-admin.php:3342
+#: link-library-admin.php:3471 render-link-library-sc.php:986
+msgid "Image"
+msgstr "Bilde"
+
+#: link-library-admin.php:471
+msgid "Full-Page Content"
+msgstr "Fullside-visning"
+
+#: link-library-admin.php:474
+msgid "Additional Parameters"
+msgstr "Andre innstillinger"
+
+#: link-library-admin.php:484
+msgid "Link Library: Missing Thumbshots API Key"
+msgstr "Link Library : Mangler Thumbshots API nøkkel"
+
+#: link-library-admin.php:484
+msgid ""
+"One of your link libraries is configured to use Thumbshots for link "
+"thumbails, but you have not entered your Thumbshots.com API Key. Please "
+"visit Thumbshots.com to apply for a free or paid account and enter your API "
+"in the Link Library admin panel."
+msgstr ""
+"En av dine lenkebibliotek er konfigurert for å bruke Thumbshots, men du har "
+"ikke tastet inn din Thumbshots.com API-nøkkel. Vennligst besøk Thumbshots."
+"com for å søke om en gratis eller betalt konto, og tast inn din API-kode i "
+"kontrollpanelet for Link Library."
+
+# Plugin name; please avoid translating if possible
+#: link-library-admin.php:484
+msgid "Jump to Link Library admin"
+msgstr "Gå til Link Library admin-grensesnitt"
+
+# Plugin name; please avoid translating if possible
+#: link-library-admin.php:489
+msgid "Link Library: No Link Categories on your site"
+msgstr "Link Library : Ingen lenkekategorier på nettstedet ditt"
+
+#: link-library-admin.php:489
+msgid ""
+"There are currently no link categories defined in your WordPress site. Link "
+"Library will not work correctly without categories. Please create at least "
+"one before trying to use Link Library and make sure each link is assigned a "
+"category."
+msgstr ""
+"Det er ikke opprettet noen lenke-kategorier i din Wordpress-installasjon. "
+"Link Library vil ikke fungere uten lenkekategorier. Vennligst opprett minst "
+"en lenkekategori før du begynner å legge til og organisere lenker, og "
+"forsikre deg om at hver lenke er knyttet til en kategori."
+
+#: link-library-admin.php:544
+msgid "Links to moderate"
+msgstr "Lenke for moderering"
+
+#: link-library-admin.php:562
+msgid "Global Options"
+msgstr "Globale innstillinger"
+
+#: link-library-admin.php:564
+msgid "Configurations"
+msgstr "Konfigurasjoner"
+
+#: link-library-admin.php:564
+msgid "Library Configurations"
+msgstr "Bibliotek-konfigurasjoner"
+
+#: link-library-admin.php:567 link-library-admin.php:569
+#: link-library-admin.php:890
+msgid "Moderate"
+msgstr "Moderere"
+
+#: link-library-admin.php:572 link-library-admin.php:895
+#: link-library-admin.php:2140
+msgid "Stylesheet"
+msgstr "Stilark"
+
+#: link-library-admin.php:574 link-library-admin.php:604
+msgid "Link checking tools"
+msgstr "Verktøy for å kontrollere lenke"
+
+#: link-library-admin.php:576 link-library-admin.php:903
+msgid "FAQ"
+msgstr "OSS"
+
+#: link-library-admin.php:602
+msgid "Links awaiting moderation"
+msgstr "Lenker i kø for moderering"
+
+#: link-library-admin.php:603 link-library-admin.php:2142
+msgid "Editor"
+msgstr "Redaktør"
+
+#: link-library-admin.php:605
+msgid "Save"
+msgstr "Lagre"
+
+#: link-library-admin.php:690
+msgid "Thumbnails successfully generated!"
+msgstr "Miniatyrbilder opprettet!"
+
+#: link-library-admin.php:692
+msgid "Favicons successfully generated!"
+msgstr "Favicon opprettet !"
+
+#: link-library-admin.php:694 link-library-admin.php:4871
+msgid "Thumbnail successfully generated for"
+msgstr "Miniatyrbilder opprettet for"
+
+#: link-library-admin.php:696 link-library-admin.php:4907
+msgid "Favicon successfully generated for"
+msgstr "Favicon generert for"
+
+#: link-library-admin.php:727
+msgid "General Settings Saved"
+msgstr "Innstillinger lagret"
+
+#: link-library-admin.php:729 link-library-admin.php:795
+msgid ""
+"Link Library plugin directory needs to be writable to perform this action"
+msgstr ""
+"Link Library plugin-mappe må ha riktige skrivetillatelser for å fulle denne "
+"operasjonen"
+
+#: link-library-admin.php:731
+msgid "row(s) found"
+msgstr "rad(er) funnet"
+
+#: link-library-admin.php:731 link-library-admin.php:807
+msgid "link(s) imported"
+msgstr "lenke(r) importert"
+
+#: link-library-admin.php:731 link-library-admin.php:807
+msgid "link(s) updated"
+msgstr "lenke(r) oppdatert"
+
+#: link-library-admin.php:779 link-library-admin.php:2662
+msgid "Library #"
+msgstr "Bibliotek #"
+
+#: link-library-admin.php:779
+msgid "Updated"
+msgstr "Oppdatert"
+
+#: link-library-admin.php:783
+msgid "Included Category ID"
+msgstr "Inkludert kategori ID"
+
+#: link-library-admin.php:783 link-library-admin.php:787
+msgid "is invalid. Please check the ID in the Link Category editor."
+msgstr "er ikke gyldig. Vennligst sjekk ID under lenkekategorier."
+
+#: link-library-admin.php:787
+msgid "Excluded Category ID"
+msgstr "Ekskluderte kategori ID"
+
+#: link-library-admin.php:791
+msgid "Invalid column count for link on row. Compare against template."
+msgstr "Ugyldig kolonne-antall for lenker på rad. Sammenlikne med malen."
+
+#: link-library-admin.php:799
+msgid "Library Settings imported successfully"
+msgstr "Bibliotek-innstillinger importert"
+
+#: link-library-admin.php:803
+msgid "Library Settings Upload Failed"
+msgstr "Opplasting av innstillinger mislyktes"
+
+#: link-library-admin.php:811
+msgid "Links are missing categories"
+msgstr "Lenker mangler kategorier"
+
+#: link-library-admin.php:824
+msgid "Link(s) Approved"
+msgstr "Lenke(r) godkjent"
+
+#: link-library-admin.php:826
+msgid "Link(s) Deleted"
+msgstr "Lenker(r) slettet"
+
+#: link-library-admin.php:837
+msgid "Stylesheet updated"
+msgstr "Stilark oppdatert"
+
+#: link-library-admin.php:839
+msgid "Stylesheet reset to original state"
+msgstr "Stilark satt tilbake til original"
+
+#: link-library-admin.php:846
+msgid "Settings updated"
+msgstr "Innstillinger oppdatert"
+
+#: link-library-admin.php:880
+msgid "General Options"
+msgstr "Generelle innstillinger"
+
+# Plugin name; please avoid translating if possible
+#: link-library-admin.php:885
+msgid "Library Settings"
+msgstr "Bibliotek innstillinger"
+
+#: link-library-admin.php:900
+msgid "Reciprocal Check"
+msgstr "Sjekk gjensidige lenker"
+
+#: link-library-admin.php:1058
+msgid "General"
+msgstr "Normale"
+
+#: link-library-admin.php:1059
+msgid "Single Item Layout"
+msgstr "Layout for enkeltoppføringer"
+
+#: link-library-admin.php:1060
+msgid "Images"
+msgstr "Bilder"
+
+#: link-library-admin.php:1061
+msgid "Bookmarklet"
+msgstr "Bookmarklet"
+
+#: link-library-admin.php:1062
+msgid "Moderation"
+msgstr "Moderering"
+
+#: link-library-admin.php:1063
+msgid "Hide Donation"
+msgstr "Skjul donasjon"
+
+#: link-library-admin.php:1064
+msgid "Import/Export Links"
+msgstr "Importer/Eksporter lenker"
+
+#: link-library-admin.php:1071
+msgid "Usage"
+msgstr "Bruksområde"
+
+#: link-library-admin.php:1072
+msgid "Common"
+msgstr "Vanlig"
+
+#: link-library-admin.php:1073
+msgid "Categories"
+msgstr "Kategorier"
+
+#: link-library-admin.php:1074
+msgid "Links"
+msgstr "Lenker"
+
+#: link-library-admin.php:1075
+msgid "Advanced"
+msgstr "Avansert"
+
+#: link-library-admin.php:1076
+msgid "Pop-Ups"
+msgstr "Sprett-opp vinduer"
+
+#: link-library-admin.php:1077
+msgid "RSS Display"
+msgstr "RSS visning"
+
+#: link-library-admin.php:1078
+msgid "Thumbnails"
+msgstr "Miniatyrbilder"
+
+#: link-library-admin.php:1079
+msgid "RSS Feed"
+msgstr "RSS-strøm"
+
+#: link-library-admin.php:1080 link-library-admin.php:4093
+#: link-library-admin.php:4102
+msgid "Search"
+msgstr "Søk"
+
+#: link-library-admin.php:1081
+msgid "User Submission"
+msgstr "Sendt inn av bruker"
+
+#: link-library-admin.php:1082
+msgid "Import/Export Settings"
+msgstr "Importer/Eksporter innstillinger"
+
+#: link-library-admin.php:1139 link-library-admin.php:1670
+#: link-library-admin.php:1934 link-library-admin.php:2051
+#: link-library-admin.php:2087
+msgid "Not allowed"
+msgstr "Ikke tillatt"
+
+#: link-library-admin.php:1981 link-library-admin.php:2024
+#: usersubmission.php:317
+msgid "Message generated by"
+msgstr "Beskjed generert av"
+
+#: link-library-admin.php:2132 link-library-admin.php:5381
+msgid "Update channel"
+msgstr "Oppdater kanal"
+
+#: link-library-admin.php:2134 link-library-admin.php:5383
+msgid "Standard channel - Updates as they are released"
+msgstr "Standardkanal - Last ned oppdateringer når de blir tilgjengelige"
+
+#: link-library-admin.php:2135 link-library-admin.php:5384
+msgid "Monthly Channel - Updates once per month"
+msgstr "Hver måned - Oppdatere en gang per måned"
+
+#: link-library-admin.php:2140 link-library-admin.php:2141
+msgid ""
+"The stylesheet is now defined and stored using the Link Library admin "
+"interface. This avoids problems with updates from one version to the next."
+msgstr ""
+"Stilarket er nå definert og lagret gjennom Link Library's "
+"administrasjonsgrensesnitt. Denne prosedyren hindrer problemer ved "
+"oppdatering til nyere versjoner."
+
+#: link-library-admin.php:2146
+msgid "Number of Libraries"
+msgstr "Antall bibliotek"
+
+#: link-library-admin.php:2154
+msgid "Category selection method"
+msgstr "Metode for å velge kategorier"
+
+#: link-library-admin.php:2156
+msgid "Comma-separated ID list"
+msgstr "Komma-separert ID-liste"
+
+#: link-library-admin.php:2157
+msgid "Multi-select List"
+msgstr "Flervalgslister"
+
+#: link-library-admin.php:2161 link-library-admin.php:2162
+msgid ""
+"Enter comma-separate list of pages on which the Link Library stylesheet and "
+"scripts should be loaded. Primarily used if you display Link Library using "
+"the API"
+msgstr ""
+"Tast inn en komma-separert liste med sider som skal laste Link Library "
+"stilark og scripts. Bruker primært hvis du viser Link Library via API. "
+
+#: link-library-admin.php:2161
+msgid "Additional pages to load styles and scripts"
+msgstr "Andre sider som skal laste stiler og script"
+
+#: link-library-admin.php:2167
+msgid "Debug Mode"
+msgstr "Feilsøkingmodus"
+
+#: link-library-admin.php:2172 link-library-admin.php:2173
+#: link-library-admin.php:2178 link-library-admin.php:2179
+msgid ""
+"This function is only possible when showing one category at a time and while "
+"the default category is not shown."
+msgstr ""
+"Denne funksjonen er kun mulig når man viser en kategori ad gangen, når "
+"standardkategorien ikke vises."
+
+#: link-library-admin.php:2172
+msgid "Page Title Prefix"
+msgstr "Prefiks sidetittel"
+
+#: link-library-admin.php:2178
+msgid "Page Title Suffix"
+msgstr "Suffiks sidetittel"
+
+#: link-library-admin.php:2184 link-library-admin.php:2185
+msgid ""
+"Path for images files that are uploaded manually or generated through "
+"thumbnail generation service"
+msgstr ""
+"Sti ( lagring ) for bilder som lastes opp manuelt, eller genereres som "
+"miniatyrbilder"
+
+#: link-library-admin.php:2184
+msgid "Link Image File Path"
+msgstr "Sti (lagring) for lenke-bildevedlegg"
+
+#: link-library-admin.php:2187
+msgid "Absolute"
+msgstr "Absolutt"
+
+#: link-library-admin.php:2188
+msgid "Relative"
+msgstr "Relativ"
+
+#: link-library-admin.php:2192
+msgid "Thumbnail Generator"
+msgstr "Minatyrbilde generator"
+
+#: link-library-admin.php:2203 link-library-admin.php:2204
+msgid "API Key for Thumbshots.com thumbnail generation accounts"
+msgstr "API-nøkkel for Thumbshots.com miniatyrbilde-generator konto"
+
+#: link-library-admin.php:2203
+msgid "Thumbshots API Key"
+msgstr "Thumbshots API-nøkkel"
+
+#: link-library-admin.php:2211
+msgid "Robothumb Thumbnail size"
+msgstr "Robothumb miniatyrbilde-størrelse"
+
+#: link-library-admin.php:2224
+msgid "Links Date Format"
+msgstr "Datoformat for lenke"
+
+#: link-library-admin.php:2224
+msgid "Help"
+msgstr "Hjelp"
+
+#: link-library-admin.php:2231 link-library-admin.php:2232
+msgid "Enter list of additional link protocols, seperated by commas"
+msgstr "Tast inn komma-separert liste av ekstra lenkeprotokoller"
+
+#: link-library-admin.php:2231
+msgid "Additional protocols"
+msgstr "Flere protokoller"
+
+#: link-library-admin.php:2235
+msgid "Time before clearing RSS display cache (in seconds)"
+msgstr "Tid før tømming av hurtigminne (i sekunder)"
+
+#: link-library-admin.php:2291 link-library-admin.php:2292
+msgid "Custom full URL for expand icon. Uses default image if left empty."
+msgstr "Full URL for utvid-ikon. Bruker standardikon hvis ikke utfylt."
+
+#: link-library-admin.php:2291
+msgid "Expand Icon Image"
+msgstr "Utvid ikon-bilde"
+
+#: link-library-admin.php:2298 link-library-admin.php:2299
+msgid "Custom full URL for collapse icon. Uses default image if left empty."
+msgstr "Full URL for kollaps-ikon. Bruker standardikon hvis ikke utfylt."
+
+#: link-library-admin.php:2298
+msgid "Collapse Icon Image"
+msgstr "Kollaps-ikon bilde"
+
+#: link-library-admin.php:2313
+msgid "Add new links to your site with this bookmarklet."
+msgstr "Legg til nye lenker på ditt nettsted med dette bookmarklet-programmet."
+
+#: link-library-admin.php:2314
+msgid ""
+"To use this feature, drag-and-drop the button below to your favorite / "
+"bookmark toolbar."
+msgstr ""
+"For å bruke denne funksjonen, dra-og-slipp knappen til dine favoritter/"
+"bokmerker."
+
+#: link-library-admin.php:2315
+msgid "Add to Links"
+msgstr "Legg til lenker"
+
+#: link-library-admin.php:2328
+msgid ""
+"Approval and rejection e-mail functionality will only work correctly if the "
+"submitter e-mail field is displayed on the user link submission form"
+msgstr ""
+"Epost med funksjoner for godkjenning eller avvisning vil kun fungere dersom "
+"avsenders epostadresse vises i innsendt skjema"
+
+#: link-library-admin.php:2332 link-library-admin.php:2333
+msgid ""
+"URL that user will be redirected to after submitting new link. When used, "
+"the short code [link-library-addlinkcustommsg] should be placed on the "
+"destination page."
+msgstr ""
+"URL (side) som brukeren vil bli ledet til etter at skjemaet for å sende inn "
+"ny link er sendt. Når dette valget benyttes må koden [link-library-"
+"addlinkcustommsg] settes inn på siden som skal brukes."
+
+#: link-library-admin.php:2332
+msgid "Link Acknowledgement URL"
+msgstr "Side (URL) for bekreftelse av lenke"
+
+#: link-library-admin.php:2338
+msgid ""
+"Title of e-mail sent to site admin when new links are submitted. Use "
+"%linkname% as a variable to be replaced by the actual link name"
+msgstr ""
+"Tittel ( emne ) i epost sendt til nettstedansvarlig når nye lenker blir "
+"sendt inn fra skjemaet. Bruk %linkname% som variabel som erstatter det "
+"faktiske lenke-navnet"
+
+#: link-library-admin.php:2338
+msgid "Moderation Notification Title"
+msgstr "Tittel, varsel om moderasjon"
+
+#: link-library-admin.php:2344
+msgid ""
+"Will send a confirmation e-mail to link submitter if they provided their "
+"contact information"
+msgstr ""
+"Sender en bekreftelsesepost til avsender dersom kontaktinformasjon finnes"
+
+#: link-library-admin.php:2344
+msgid "E-mail submitter on link approval or rejection"
+msgstr "Varsle avsender om godkjenning eller avvisning av foreslått lenke"
+
+#: link-library-admin.php:2349
+msgid "Suppress Link Library message in e-mail footer"
+msgstr "Overstyr Link Library beskjed i bunnen av utsendte eposter"
+
+#: link-library-admin.php:2354
+msgid "Only use first part of submitter name"
+msgstr "Bruk kun fornavn på bidragsytere (innsendte lenker)"
+
+#: link-library-admin.php:2359
+msgid ""
+"The name of the e-mail account that the approval e-mail will be sent from"
+msgstr "Navnet på epostkontoen som epost for godkjenning skal sendes fra"
+
+#: link-library-admin.php:2359
+msgid "Moderator Name"
+msgstr "Navn moderator"
+
+#: link-library-admin.php:2365
+msgid "The e-mail address that the approval e-mail will be sent from"
+msgstr "Avsender epostadresse for godkjenning"
+
+#: link-library-admin.php:2365
+msgid "Moderator E-mail"
+msgstr "Moderators epostadresse"
+
+#: link-library-admin.php:2371
+msgid ""
+"Title of approval e-mail. Use %linkname% as a variable to be replaced by the "
+"actual link name"
+msgstr ""
+"Tittel epost for godkjenning. Bruk %linkname%  som variabel for det faktiske "
+"lenkenavnet"
+
+#: link-library-admin.php:2371
+msgid "Approval e-mail title"
+msgstr "Epost for godkjenning - tittel"
+
+#: link-library-admin.php:2377
+msgid ""
+"Body of approval e-mail. Use %linkname% as a variable to be replaced by the "
+"actual link name, %submittername% for the submitter name and %linkurl% for "
+"the link address"
+msgstr ""
+"Innhold i epost for godkjenning av lenke. Bruk %linkname% som variabel for "
+"det faktiske lenkenavnet, %submittername% for innsenders navn og %linkurl% "
+"for lenkeadresse"
+
+#: link-library-admin.php:2377
+msgid "Approval e-mail body"
+msgstr "Innhold epost for godkjenning"
+
+#: link-library-admin.php:2383
+msgid ""
+"Title of rejection e-mail. Use %linkname% as a variable to be replaced by "
+"the actual link name"
+msgstr ""
+"Tittel - epost for avvisning av lenkeforslag. Bruk %linkname% som variabel "
+"for det faktiske lenkenavnet"
+
+#: link-library-admin.php:2383
+msgid "Rejection e-mail title"
+msgstr "Tittel - epost for avvisning av lenke"
+
+#: link-library-admin.php:2389
+msgid ""
+"Body of rejection e-mail. Use %linkname% as a variable to be replaced by the "
+"actual link name, %submittername% for the submitter name and %linkurl% for "
+"the link address"
+msgstr ""
+"Innhold i epost for avvisning av lenke. Benytt %linkname% der du vil "
+"plassere navnet på den avviste lenken, %submittername% for innsenders navn, "
+"og %linkurl% for å sette inn lenkeadressen"
+
+#: link-library-admin.php:2389
+msgid "Rejection e-mail body"
+msgstr "Innhold i epost for avvisning av lenke"
+
+#: link-library-admin.php:2402
+msgid ""
+"The following option allows you to hide the Donate button and Support the "
+"Author section in the Link Library Admin pages. If you enjoy this plugin and "
+"use it regularly, please consider making a donation to the author before "
+"turning off these messages. This menu section will disappear along with the "
+"other elements."
+msgstr ""
+"Dette valget lar deg skjule donasjonsknapper og support for utviklerne i "
+"Link Librarys kontrollpanel. Hvis du liker denne utvidelsen og har glede og "
+"nytte av den, ber vi deg vurdere å donere en sum du velger selv til "
+"utviklerne av Link Library før du slår av disse valgene. "
+
+#: link-library-admin.php:2405
+msgid "Hide Donation and Support Links"
+msgstr "Skjul donasjon- og support-lenker"
+
+#: link-library-admin.php:2420
+msgid "Export all links to a CSV file"
+msgstr "Eksportere alle lenker til CSV-fil / regneark"
+
+#: link-library-admin.php:2422
+msgid "Export All Links"
+msgstr "Eksporter alle lenker"
+
+#: link-library-admin.php:2429
+msgid ""
+"Allows for links to be added in batch to the Wordpress links database. CSV "
+"file needs to follow template for column layout."
+msgstr ""
+"Tillat at lenkene samlet legges til lenke-databasen i Wordpress. CSV-fil må "
+"være satt opp med kolonner."
+
+#: link-library-admin.php:2429
+msgid "CSV file to upload to import links"
+msgstr "CSV-fil for opplasting og importering av lenker"
+
+#: link-library-admin.php:2429
+msgid "file template"
+msgstr "fil-mal"
+
+#: link-library-admin.php:2432
+msgid "Import Links from CSV"
+msgstr "Importer lenker fra CSV"
+
+#: link-library-admin.php:2436
+msgid "First row contains column headers"
+msgstr "Første rad inneholder kolonneoverskrifter"
+
+#: link-library-admin.php:2440 link-library-admin.php:2470
+msgid "Update items when URL is identical"
+msgstr "Oppdater objektet når URL er identisk"
+
+#: link-library-admin.php:2448
+msgid "Import links from site pages"
+msgstr "Importer lenker fra sider på nettstedet"
+
+#: link-library-admin.php:2449
+msgid "All Pages and Posts"
+msgstr "Alle sider og innlegg"
+
+#: link-library-admin.php:2450
+msgid "All Pages, Posts and Custom Post Types"
+msgstr "Alle sider, innlegg og spesielle maler som er i bruk på nettstedet"
+
+#: link-library-admin.php:2451
+msgid "Specific Page"
+msgstr "Spesifikk side"
+
+#: link-library-admin.php:2455
+msgid "Specific Post"
+msgstr "Spesifikt innlegg"
+
+#: link-library-admin.php:2465
+msgid "Specific "
+msgstr "Spesifikk "
+
+#: link-library-admin.php:2484
+msgid "Import Links from Site"
+msgstr "Importere lenker fra nettsted"
+
+#: link-library-admin.php:2494
+msgid "Save Settings"
+msgstr "Lagre innstillinger"
+
+#: link-library-admin.php:2503
+msgid "Update Settings"
+msgstr "Oppdater innstillinger"
+
+#: link-library-admin.php:2514 link-library-admin.php:3183
+#: link-library-admin.php:3495 link-library-admin.php:4286
+#: usersubmission.php:295 usersubmission.php:352
+msgid "Link Name"
+msgstr "Lenkenavn"
+
+#: link-library-admin.php:2515 link-library-admin.php:4321
+#: link-library-defaults.php:123 usersubmission.php:301 usersubmission.php:371
+msgid "Link Category"
+msgstr "Lenkekategori"
+
+#: link-library-admin.php:2516
+msgid "Link URL"
+msgstr "Lenkekadresse"
+
+#: link-library-admin.php:2517 link-library-admin.php:3183
+#: link-library-admin.php:3540 link-library-admin.php:4400
+#: link-library-defaults.php:124 usersubmission.php:298 usersubmission.php:360
+msgid "Link Description"
+msgstr "Lenkebeskrivelse"
+
+#: link-library-admin.php:2560
+msgid "No Links Found to Moderate"
+msgstr "Ingen lenker å moderere"
+
+#: link-library-admin.php:2567
+msgid "Check All"
+msgstr "Merk alle"
+
+#: link-library-admin.php:2568
+msgid "Uncheck All"
+msgstr "Fjern alle"
+
+#: link-library-admin.php:2570
+msgid "Approve Selected Items"
+msgstr "Godkjenn valgte objekter"
+
+#: link-library-admin.php:2571
+msgid "Delete Selected Items"
+msgstr "Slett valgte objekter"
+
+#: link-library-admin.php:2594
+msgid ""
+"If the stylesheet editor is empty after upgrading, reset to the default "
+"stylesheet using the button below or copy/paste your backup stylesheet into "
+"the editor."
+msgstr ""
+"Hvis stilark-editoren er tom etter oppgradering, gjenopprett til standard "
+"stilark ved å bruke knappen under, eller klipp og lim fra lokal kopi av "
+"stilark til editor."
+
+#: link-library-admin.php:2601
+msgid "Submit"
+msgstr "Send"
+
+#: link-library-admin.php:2601
+msgid "Reset to default"
+msgstr "Sett tilbake til standardinnstillinger"
+
+#: link-library-admin.php:2612
+msgid "Select Current Library Settings"
+msgstr "Velg gjeldene bibliotek-innstillinger"
+
+#: link-library-admin.php:2629
+msgid "Go"
+msgstr "Sett i gang"
+
+#: link-library-admin.php:2631
+msgid "Copy from:"
+msgstr "Kopiere fra :"
+
+#: link-library-admin.php:2647
+msgid "Copy"
+msgstr "Kopiere"
+
+#: link-library-admin.php:2661 link-library-admin.php:2664
+#: link-library-admin.php:2668
+msgid ""
+"Link Library Supports the Creation of an unlimited number of configurations "
+"to display link lists on your site"
+msgstr ""
+"Link Library har ingen begrensninger i antall konfigurasjoner for visning av "
+"lenker på nettsidene dine"
+
+#: link-library-admin.php:2665
+msgid "Library Name"
+msgstr "Navn på bibliotek"
+
+#: link-library-admin.php:2667
+msgid "Feature"
+msgstr "Funksjon"
+
+#: link-library-admin.php:2669
+msgid "Code to insert on a Wordpress page"
+msgstr "Kode for å sette inn på Wordpress-side"
+
+#: link-library-admin.php:2676
+msgid "Display basic link library"
+msgstr "Vis basisversjon av Link Library"
+
+#: link-library-admin.php:2682
+msgid "Display list of link categories"
+msgstr "Vis liste over lenkekategorier"
+
+#: link-library-admin.php:2688
+msgid "Display search box"
+msgstr "Vis søkefelt"
+
+#: link-library-admin.php:2694
+msgid "Display link submission form"
+msgstr "Vis skjema for innsendelse av lenkeforslag"
+
+#: link-library-admin.php:2701
+#, php-format
+msgid ""
+"You are about to Delete Library #'%s'\n"
+"  'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Du er i ferd med å slette bibliotek '%s'\\n  'Avbryt' for å beholde "
+"biblioteket, 'OK' for å slette."
+
+#: link-library-admin.php:2701
+msgid "Delete Library"
+msgstr "Slett bibliotek"
+
+#: link-library-admin.php:2702
+#, php-format
+msgid ""
+"You are about to reset Library '%s'\n"
+"  'Cancel' to stop, 'OK' to reset."
+msgstr ""
+"Du er i ferd med å tilbakestille bibliotek  '%s'\\n  'Avbryt' for å beholde, "
+"'OK' for å slette."
+
+#: link-library-admin.php:2702
+msgid "Reset current Library"
+msgstr "Tilbakestill gjeldene bibliotek"
+
+#: link-library-admin.php:2703
+#, php-format
+msgid ""
+"You are about to reset Library '%s' for a table layout\n"
+"  'Cancel' to stop, 'OK' to reset."
+msgstr ""
+"Du er i ferd med å tilbakestille bibliotek '%s' til å bruke tabell-layout\n"
+"  'Avbryt' for å beholde gjeldene oppsett, 'OK' for å fortsette."
+
+#: link-library-admin.php:2703
+msgid "Reset current Library for table layout"
+msgstr "Tilbakestill gjeldene bibliotek til tabell-layout"
+
+#: link-library-admin.php:2734
+msgid "No link categories! Create some!"
+msgstr "Ingen lenkekategorier! Lag noen!"
+
+#: link-library-admin.php:2751
+msgid "Current Library Name"
+msgstr "Gjeldene biblioteknavn"
+
+#: link-library-admin.php:2758 link-library-admin.php:2766
+msgid "Leave Empty to see all categories"
+msgstr "La stå tom for å se alle kategorier"
+
+#: link-library-admin.php:2758 link-library-admin.php:2766
+#: link-library-admin.php:2786 link-library-admin.php:2790
+msgid "Enter list of comma-separated"
+msgstr "Fyll inn komma-separert liste"
+
+#: link-library-admin.php:2758 link-library-admin.php:2766
+msgid "numeric category IDs"
+msgstr "numerisk katagori ID"
+
+#: link-library-admin.php:2758
+msgid ""
+"To find the IDs, go to the Link Categories admin page, place the mouse above "
+"a category name and look for its ID in the address shown in your browsers "
+"status bar. For example"
+msgstr ""
+"For å finne ID, gå til siden for lenkekategorier i kontrollpanelet og "
+"plasser muspekeren over kategorinavnet for å se ID i adressen som vises i "
+"statusfeltet. For eksempel"
+
+#: link-library-admin.php:2760
+msgid "Categories to be displayed (Empty=All)"
+msgstr "Kategorier for visning (tom=vis alle)"
+
+#: link-library-admin.php:2762
+msgid "Categories to be displayed"
+msgstr "Kategorier for visning"
+
+#: link-library-admin.php:2766 link-library-admin.php:2786
+#: link-library-admin.php:2790
+msgid "For example"
+msgstr "For eksempel"
+
+#: link-library-admin.php:2779
+msgid "Show all categories"
+msgstr "Vis alle kategorier"
+
+#: link-library-admin.php:2786 link-library-admin.php:2790
+msgid "numeric category IDs that should not be shown"
+msgstr "numeriske kategori ID kan ikke vises"
+
+#: link-library-admin.php:2787
+msgid "Categories to be excluded"
+msgstr "Kategorier som skal ekskluderes"
+
+#: link-library-admin.php:2799
+msgid "No Exclusions"
+msgstr "Ingen ekskluderte"
+
+#: link-library-admin.php:2806 link-library-admin.php:2809
+msgid "Only show one category of links at a time"
+msgstr "Vis kun en lenkekategori om gangen"
+
+#: link-library-admin.php:2807
+msgid "Only show one category at a time"
+msgstr "Vis kun en kategori om gangen"
+
+#: link-library-admin.php:2812
+msgid ""
+"Select if AJAX should be used to only reload the list of links without "
+"reloading the whole page or HTML GET to reload entire page with a new link. "
+"The Permalinks option must be enabled for HTML GET + Permalink to work "
+"correctly."
+msgstr ""
+"Velg dersom AJAX skal brukes kun til å oppdatere listen over lenker uten å "
+"laste hele siden på nytt, eller HTML GET for å laste hele siden på nytt med "
+"nye lenker. Permalenker må være aktivisert for at HTML GET + Permalenke skal "
+"fungere."
+
+#: link-library-admin.php:2812
+msgid "Switching Method"
+msgstr "Bytter metode"
+
+#: link-library-admin.php:2830
+msgid ""
+"Default category to be shown when only showing one at a time (numeric ID)"
+msgstr ""
+"Standard kategori for visning når det kun skal vises en om gangen (numerisk "
+"ID)"
+
+#: link-library-admin.php:2835
+msgid "Hide category on start in single cat mode"
+msgstr "Skjul kategori ved oppstart i enkeltkategori-modus"
+
+#: link-library-admin.php:2840 link-library-admin.php:2843
+msgid "File path is relative to Link Library plugin directory"
+msgstr "Stien til fila er relativ til Link Librarys plugin-mappe"
+
+#: link-library-admin.php:2841
+msgid "Icon to display when performing AJAX queries"
+msgstr "Ikon som skal vises når AJAX kjører"
+
+#: link-library-admin.php:2852 link-library-admin.php:2855
+msgid "Only show a limited number of links and add page navigation links"
+msgstr "Vis kun et begrenset antall lenker og legg til sidenavigasjon"
+
+#: link-library-admin.php:2853
+msgid "Paginate Results"
+msgstr "Sidenumrering resultat"
+
+#: link-library-admin.php:2858 link-library-admin.php:2861
+msgid "Number of Links to be Displayed per Page in Pagination Mode"
+msgstr "Antall lenker som skal vises per side i visning med sidenumrering"
+
+#: link-library-admin.php:2859
+msgid "Links per Page"
+msgstr "Antall lenker per side"
+
+#: link-library-admin.php:2867
+msgid "Pagination Position"
+msgstr "Plassering av sidenavigasjon"
+
+#: link-library-admin.php:2871
+msgid "After Links"
+msgstr "Etter lenker"
+
+#: link-library-admin.php:2872 link-library-admin.php:2926
+msgid "Before Links"
+msgstr "Før lenker"
+
+#: link-library-admin.php:2876
+msgid "Hide Results if Empty"
+msgstr "Skjul resultat hvis ikke utfylt"
+
+#: link-library-admin.php:2887
+msgid "Enable Permalinks"
+msgstr "Aktivisere permalenker"
+
+#: link-library-admin.php:2893
+msgid "Permalinks Page"
+msgstr "Side for permalenker"
+
+#: link-library-admin.php:2901
+msgid "Permalink Top Page Text"
+msgstr "Permelenke topptekst"
+
+#: link-library-admin.php:2909
+msgid "Category links in permalinks mode"
+msgstr "Kategorilenker i permalenke-modus"
+
+#: link-library-admin.php:2915
+msgid "Show breadcrumbs in permalinks mode"
+msgstr "Vi breadcrumbs i permelenke-modus"
+
+#: link-library-admin.php:2925
+msgid "Display alphabetic cat filter"
+msgstr "Vis kategorier alfabetisk"
+
+#: link-library-admin.php:2926
+msgid "Do not display"
+msgstr "Ikke vis"
+
+#: link-library-admin.php:2926
+msgid "Before Categories"
+msgstr "Før kategorier"
+
+#: link-library-admin.php:2926
+msgid "Before Categories and Links"
+msgstr "Før kategorier og lenker"
+
+#: link-library-admin.php:2933
+msgid "Auto-select first alphabetic cat item"
+msgstr "Velg første katalog-objekt automatisk"
+
+#: link-library-admin.php:2937
+msgid "Display ALL box in alphabetic cat filter"
+msgstr "Vis alle-boks i alfabetisk kategorifilter"
+
+#: link-library-admin.php:2939
+msgid "Cat filter label"
+msgstr "Kategorifilter merkelapp"
+
+#: link-library-admin.php:2943
+msgid "Only display links submitted by current user"
+msgstr "Vis kun lenker som er innsendt av gjeldene bruker"
+
+#: link-library-admin.php:2988
+msgid "Results Order"
+msgstr "Rekkefølge resultat"
+
+#: link-library-admin.php:2992 link-library-admin.php:3143
+msgid "Order by Name"
+msgstr "Sortere etter navn"
+
+#: link-library-admin.php:2993 link-library-admin.php:3144
+msgid "Order by ID"
+msgstr "Sortere etter ID"
+
+#: link-library-admin.php:2995
+msgid "Order of categories based on included category list"
+msgstr "Rekkefølge på kategorier basert på inkludert kategoriliste"
+
+#: link-library-admin.php:2997
+msgid "Order by"
+msgstr "Sortere etter"
+
+#: link-library-admin.php:2997 link-library-admin.php:3145
+msgid "Wordpress Plugin"
+msgstr "Utvidelse (plugin) WordPress"
+
+#: link-library-admin.php:3002
+msgid "Link Categories Display Format"
+msgstr "Format lenkekategorier"
+
+#: link-library-admin.php:3006 link-library-admin.php:3226
+msgid "Table"
+msgstr "Tabell"
+
+#: link-library-admin.php:3007 link-library-admin.php:3227
+msgid "Unordered List"
+msgstr "Usortert liste"
+
+#: link-library-admin.php:3008
+msgid "Drop-Down List"
+msgstr "Nedtrekksliste"
+
+#: link-library-admin.php:3009
+msgid "Drop-Down List Direct Access"
+msgstr "Nedtrekksliste direkte aksess"
+
+#: link-library-admin.php:3015
+msgid "Display link counts"
+msgstr "Vis lenkeantall"
+
+#: link-library-admin.php:3021
+msgid "Display categories with search results"
+msgstr "Vis kategorier med søkeresultater"
+
+#: link-library-admin.php:3026 link-library-admin.php:3029
+msgid "This setting does not apply when selecting My Link Order for the order"
+msgstr ""
+"Denne innstillingen vil være uvirksom når egendefinert lenkerekkefølge er "
+"valgt"
+
+#: link-library-admin.php:3027 link-library-admin.php:3197
+msgid "Direction"
+msgstr "Retning"
+
+#: link-library-admin.php:3031 link-library-admin.php:3201
+msgid "Ascending"
+msgstr "Stigende"
+
+#: link-library-admin.php:3032 link-library-admin.php:3202
+msgid "Descending"
+msgstr "Synkende"
+
+#: link-library-admin.php:3036 link-library-admin.php:3039
+#: link-library-admin.php:3151 link-library-admin.php:3154
+msgid ""
+"Use [ and ] in the description to perform special actions using HTML such as "
+"inserting images instead of < and >"
+msgstr ""
+"Bruk  [ and ] i beskrivelsen for å utføre spesielle operasjoner ved hjelp av "
+"HTML, som for eksempel å sette inn et bilde i stedet for < and >"
+
+#: link-library-admin.php:3037 link-library-admin.php:3152
+msgid "Show Category Description"
+msgstr "Vis kategoribeskrivelse"
+
+#: link-library-admin.php:3041 link-library-admin.php:3156
+msgid "Position"
+msgstr "Posisjon"
+
+#: link-library-admin.php:3043 link-library-admin.php:3158
+msgid "Right"
+msgstr "Høyre"
+
+#: link-library-admin.php:3044 link-library-admin.php:3159
+msgid "Left"
+msgstr "Venstre"
+
+#: link-library-admin.php:3050
+msgid "Width of Categories Table in Percents"
+msgstr "Bredde på kategoritabell i prosent"
+
+#: link-library-admin.php:3056 link-library-admin.php:3059
+msgid ""
+"Determines the number of alternating div tags that will be placed before and "
+"after each link category"
+msgstr ""
+"Bestemmer antallet aternative div tagger som vil bli plassert foran og etter "
+"hver lenkekategori"
+
+#: link-library-admin.php:3056 link-library-admin.php:3059
+msgid ""
+"These div tags can be used to style of position link categories on the link "
+"page"
+msgstr ""
+"Disse div-taggene kan brukes til å bestemme posisjonen for lenkekategoriene "
+"på siden"
+
+#: link-library-admin.php:3057
+msgid "Number of alternating div classes"
+msgstr "Antall alternative div-tagger"
+
+#: link-library-admin.php:3072
+msgid "Number of columns in Categories Table"
+msgstr "Antall kolonner i kategoritabellen"
+
+#: link-library-admin.php:3079
+msgid "First div class name"
+msgstr "Første div klasse navn"
+
+#: link-library-admin.php:3087
+msgid "Use Div Class or Heading tag around Category Names"
+msgstr "Bruk div-klasse eller overskrift-tag for navn på kategori"
+
+#: link-library-admin.php:3091
+msgid "Div Class"
+msgstr "Div-klasse"
+
+#: link-library-admin.php:3092
+msgid "Heading Tag"
+msgstr "Heading tag"
+
+#: link-library-admin.php:3097
+msgid "Second div class name"
+msgstr "Andre div-klasse navn"
+
+#: link-library-admin.php:3104 link-library-admin.php:3107
+msgid "Example div class name: linklistcatname, Example Heading Label: h3"
+msgstr "Eksempel div : lenkelistekategorinavn, Eksempel heading : h3"
+
+#: link-library-admin.php:3105
+msgid "Div Class Name or Heading label"
+msgstr "Div-klasse navn eller merkelapp for overskrift"
+
+#: link-library-admin.php:3112
+msgid "Third div class name"
+msgstr "Tredje div-klasse navn"
+
+#: link-library-admin.php:3119 link-library-admin.php:3122
+msgid ""
+"Set this address to a page running Link Library to place categories on a "
+"different page. Should always be used with the Show One Category at a Time "
+"and HTMLGET fetch method."
+msgstr ""
+"Sett denne adressen til en side som kjører Link Library for å plassere "
+"kategorier på en annen side. Må brukes sammen med \"Vis bare en kategori om "
+"gangen\" og HTMLGET importering."
+
+#: link-library-admin.php:3120
+msgid "Category Target Address"
+msgstr "Kategori måladresse"
+
+#: link-library-admin.php:3139
+msgid "Link Results Order"
+msgstr "Sortering av lenkeresultater"
+
+#: link-library-admin.php:3145
+msgid "Order set by "
+msgstr "Rekkefølge bestemt av "
+
+#: link-library-admin.php:3146
+msgid "Order randomly"
+msgstr "Sorter tilfeldig"
+
+#: link-library-admin.php:3147
+msgid "Order by updated date"
+msgstr "Sortere etter oppdateringsdato"
+
+#: link-library-admin.php:3160
+msgid "After Category Name"
+msgstr "Etter kategorinavn"
+
+#: link-library-admin.php:3161
+msgid "After Top-Level Category Name"
+msgstr "Etter toppnivå kategorinavn"
+
+#: link-library-admin.php:3166
+msgid "List Featured Links ahead of Regular Links"
+msgstr "Plassere merkede/uthevede lenker foran vanlige lenker"
+
+#: link-library-admin.php:3170
+msgid "Show Expand Link button and hide links"
+msgstr "Vis \"utvid\"-knapp og gjem lenker"
+
+#: link-library-admin.php:3175
+msgid "Combine all results without categories"
+msgstr "Kombinere alle resultater uten kategorier"
+
+#: link-library-admin.php:3179
+msgid "Link Title Content"
+msgstr "Lenketittel innhold"
+
+#: link-library-admin.php:3196 link-library-admin.php:3199
+msgid "Except for My Link Order mode"
+msgstr "Med unntak av Mine Lenker sortering"
+
+#: link-library-admin.php:3206 link-library-admin.php:3209
+msgid "Leave empty to show all results"
+msgstr "La stå tom for å vise alle resultater"
+
+#: link-library-admin.php:3207
+msgid "Max number of links to display"
+msgstr "Maksimum antall lenker i visning"
+
+#: link-library-admin.php:3214 link-library-admin.php:3217
+msgid ""
+"Sets default link target window, does not override specific targets set in "
+"links"
+msgstr ""
+"Angir standard lenkemål ( target ), overskriver ikke spesifikke lenkemål "
+"satt i den enkelte lenken"
+
+#: link-library-admin.php:3215
+msgid "Link Target"
+msgstr "Lenkemål"
+
+#: link-library-admin.php:3222
+msgid "Link Display Format"
+msgstr "Lenke visningsformat"
+
+#: link-library-admin.php:3233
+msgid "Show Column Headers"
+msgstr "Vis kolonneoverskrifter"
+
+#: link-library-admin.php:3240
+msgid "Column Headers Override"
+msgstr "Overstyr kolonneoverskrifter"
+
+#: link-library-admin.php:3243
+msgid "Comma-separated list of column header labels"
+msgstr "Komma-separerte liste over kolonnenes overskrifter"
+
+#: link-library-admin.php:3249
+msgid "Allow sorting through column headers"
+msgstr "Tillat sortering på kolonnenes overskrifter"
+
+#: link-library-admin.php:3257
+msgid "Hide Category Names"
+msgstr "Skjul kategorinavn"
+
+#: link-library-admin.php:3264
+msgid "Show Hidden Links"
+msgstr "Vis gjemte lenker"
+
+#: link-library-admin.php:3272
+msgid "Hide links of children categories"
+msgstr "Skjul liste over underkategorier"
+
+#: link-library-admin.php:3279
+msgid "Child category depth limit"
+msgstr "Underkategori dybdebegrensning"
+
+#: link-library-admin.php:3287
+msgid "Hide children categories on top page"
+msgstr "Gjem underkategorier på toppside"
+
+#: link-library-admin.php:3294 link-library-admin.php:3297
+msgid "Need to be active for Link Categories to work"
+msgstr "Må være aktiv for at lenkekategorier skal fungere"
+
+#: link-library-admin.php:3295
+msgid "Embed HTML anchors"
+msgstr "Bygg inn HTML-ankere"
+
+#: link-library-admin.php:3302
+msgid "Show Hidden Links to Admins/Editors"
+msgstr "Vis skjulte lenker for administator/redaktør"
+
+#: link-library-admin.php:3319
+msgid ""
+"Arrange the items below via drag-and-drop to order the various Link Library "
+"elements."
+msgstr ""
+"Organisere objektene under med dra-og-slipp for å sortere Link Library-"
+"elementene."
+
+#: link-library-admin.php:3346 render-link-library-sc.php:986
+msgid "Name"
+msgstr "Navn"
+
+#: link-library-admin.php:3350 render-link-library-sc.php:987
+msgid "Date"
+msgstr "Dato"
+
+#: link-library-admin.php:3354
+msgid "Desc"
+msgstr "Beskrivelse"
+
+#: link-library-admin.php:3358 link-library-admin.php:4706
+#: render-link-library-sc.php:988
+msgid "Notes"
+msgstr "Notater"
+
+#: link-library-admin.php:3362 render-link-library-sc.php:988
+msgid "RSS"
+msgstr "RSS"
+
+#: link-library-admin.php:3366 link-library-admin.php:3591
+#: render-link-library-sc.php:989
+msgid "Web Link"
+msgstr "Weblenke"
+
+#: link-library-admin.php:3370
+msgid "Phone"
+msgstr "Telefon"
+
+#: link-library-admin.php:3374 link-library-admin.php:3648
+#: link-library-admin.php:4492 link-library-admin.php:5002
+#: link-library-defaults.php:172 render-link-library-addlink-sc.php:442
+#: render-link-library-sc.php:990
+msgid "E-mail"
+msgstr "Epost"
+
+#: link-library-admin.php:3378 render-link-library-sc.php:990
+msgid "Hits"
+msgstr "Treff"
+
+#: link-library-admin.php:3382 link-library-admin.php:4970
+#: render-link-library-sc.php:991
+msgid "Rating"
+msgstr "Rangering"
+
+#: link-library-admin.php:3386
+msgid "Large Desc"
+msgstr "Full beskrivelse"
+
+#: link-library-admin.php:3390 link-library-admin.php:3727
+#: link-library-admin.php:4508 link-library-admin.php:5027
+#: link-library-defaults.php:184 render-link-library-addlink-sc.php:460
+#: render-link-library-sc.php:992
+msgid "Submitter Name"
+msgstr "Innsenders navn"
+
+#: link-library-admin.php:3394
+msgid "Cat Desc"
+msgstr "Kategoribeskrivelse"
+
+#: link-library-admin.php:3398 render-link-library-sc.php:993
+msgid "Tags"
+msgstr "Tagger"
+
+#: link-library-admin.php:3402 link-library-admin.php:5039 link-library.php:894
+#: render-link-library-sc.php:993
+msgid "Price"
+msgstr "Pris"
+
+#: link-library-admin.php:3414
+msgid "Display"
+msgstr "Vis"
+
+#: link-library-admin.php:3415
+msgid "Before"
+msgstr "Før"
+
+#: link-library-admin.php:3416
+msgid "After"
+msgstr "Etter"
+
+#: link-library-admin.php:3417
+msgid "Additional Details"
+msgstr "Ekstra informasjon"
+
+#: link-library-admin.php:3418
+msgid "Link Source"
+msgstr "Lenkekilde"
+
+#: link-library-admin.php:3421
+msgid ""
+"This column allows for the output of text/code before the first link in each "
+"category"
+msgstr ""
+"Denne kolonnen muliggjør visning av tekst/kode foran den første lenken i "
+"hver kategori"
+
+#: link-library-admin.php:3421
+msgid "Before first link"
+msgstr "Foran første lenke"
+
+#: link-library-admin.php:3423
+msgid "Output of text/code before the first link in each category"
+msgstr "Visning av tekst/kode foran den første lenken i hver kategori"
+
+#: link-library-admin.php:3429
+msgid ""
+"This column allows for the output of text/code before a number of links "
+"determined by the Display field"
+msgstr ""
+"Denne kolonnen muliggjør visning av tekst/kode foran lenker i hver kategori "
+"avhenging av visningsfelt"
+
+#: link-library-admin.php:3429
+msgid "Intermittent Before Link"
+msgstr ""
+
+#: link-library-admin.php:3430
+msgid "Frequency of additional output before and after complete link group"
+msgstr "Frekvens for ekstra output foran og etter fullstendig lenkegruppe"
+
+#: link-library-admin.php:3433 link-library-admin.php:3443
+msgid "Output before complete link group (link, notes, desc, etc...)"
+msgstr ""
+"Output foran fullstendig lenkegruppe  (lenke, notater, beskrivelse, etc...)"
+
+#: link-library-admin.php:3441
+msgid "This column allows for the output of text/code before each link"
+msgstr "Denne kolonnen muliggjør visning av tekst/kode foran hver lenke"
+
+#: link-library-admin.php:3441
+msgid "Before Link"
+msgstr "Foran lenke"
+
+#: link-library-admin.php:3471
+msgid "This column allows for the output of text/code before each link image"
+msgstr ""
+"Denne kolonnen muliggjør visning av tekst/kode foran hver bildevedlegget for "
+"hver lenke"
+
+#: link-library-admin.php:3475
+msgid "Code/Text to be displayed before each link image"
+msgstr "Kode/tekst som skal vises foran bildevedlegg for lenke"
+
+#: link-library-admin.php:3478
+msgid "Code/Text to be displayed after each link image"
+msgstr "Kode/tekst som skal vises etter bildevedlegg for lenke"
+
+#: link-library-admin.php:3481
+msgid "CSS Class to be assigned to link image"
+msgstr "CSS-klasse for bildevedlegg for lenke"
+
+#: link-library-admin.php:3486 link-library-admin.php:3513
+#: link-library-admin.php:3610 link-library-admin.php:3639
+msgid "Primary"
+msgstr "Primær"
+
+#: link-library-admin.php:3487 link-library-admin.php:3514
+#: link-library-admin.php:3611 link-library-admin.php:3640
+msgid "Secondary"
+msgstr "Sekundær"
+
+#: link-library-admin.php:3495
+msgid ""
+"This column allows for the output of text/code before and after each link "
+"name"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst foran og etter hver lenkes "
+"navn"
+
+#: link-library-admin.php:3499
+msgid "Code/Text to be displayed before each link"
+msgstr "Kode/tekst som skal vises foran hver lenke"
+
+#: link-library-admin.php:3502
+msgid "Code/Text to be displayed after each link"
+msgstr "Kode/tekst som skal vises etter hver lenke"
+
+#: link-library-admin.php:3507
+msgid "No Tooltip"
+msgstr "Ingen verktøytips"
+
+#: link-library-admin.php:3508 link-library-admin.php:4702
+#: render-link-library-sc.php:987
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: link-library-admin.php:3515
+msgid "Dedicated page"
+msgstr "Dedikert side"
+
+#: link-library-admin.php:3523
+msgid ""
+"This column allows for the output of text/code before and after each link "
+"date stamp"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst foran og etter hver lenkes "
+"dato"
+
+#: link-library-admin.php:3523
+msgid "Link Date"
+msgstr "Publiseringsdato lenke"
+
+#: link-library-admin.php:3524
+msgid "Check to display link date"
+msgstr "Merk for å vise publiseringsdato for lenke"
+
+#: link-library-admin.php:3527
+msgid "Code/Text to be displayed before each date"
+msgstr "Kode/tekst som skal vises foran publiseringsdato for lenke"
+
+#: link-library-admin.php:3530
+msgid "Code/Text to be displayed after each date"
+msgstr "Kode/tekst som skal vises etter publiseringsdato for lenke"
+
+#: link-library-admin.php:3540
+msgid ""
+"This column allows for the output of text/code before and after each link "
+"description"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst foran og etter "
+"lenkebeskrivelsen"
+
+#: link-library-admin.php:3541
+msgid "Check to display link descriptions"
+msgstr "Merk for å vise lenkebeskrivelser"
+
+#: link-library-admin.php:3544
+msgid "Code/Text to be displayed before each description"
+msgstr "Kode/tekst som skal vises foran hver beskrivelse"
+
+#: link-library-admin.php:3547
+msgid "Code/Text to be displayed after each description"
+msgstr "Kode/tekst som skal vises etter hver beskrivelse"
+
+#: link-library-admin.php:3557
+msgid ""
+"This column allows for the output of text/code before and after each link "
+"notes"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst foran og etter lenkenotater"
+
+#: link-library-admin.php:3557 link-library-admin.php:4415
+#: link-library-defaults.php:125 usersubmission.php:300 usersubmission.php:368
+msgid "Link Notes"
+msgstr "Lenkenotater"
+
+#: link-library-admin.php:3558
+msgid "Check to display link notes"
+msgstr "Merk for å vise lenkenotater"
+
+#: link-library-admin.php:3561
+msgid "Code/Text to be displayed before each note"
+msgstr "Kode/tekst som skal vises foran hvert notat"
+
+#: link-library-admin.php:3564
+msgid "Code/Text to be displayed after each note"
+msgstr "Kode/tekst som skal vises etter hvert notat"
+
+#: link-library-admin.php:3574
+msgid ""
+"This column allows for the output of text/code before and after the RSS icons"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst foran og etter RSS-ikoner"
+
+#: link-library-admin.php:3574
+msgid "RSS Icons"
+msgstr "RSS-ikoner"
+
+#: link-library-admin.php:3576
+msgid "See below"
+msgstr "Se under"
+
+#: link-library-admin.php:3578
+msgid "Code/Text to be displayed before RSS Icons"
+msgstr "Kode/tekst som skal vises foran RSS-ikoner"
+
+#: link-library-admin.php:3581
+msgid "Code/Text to be displayed after RSS Icons"
+msgstr "Kode/tekst som skal vises etter RSS-ikoner"
+
+#: link-library-admin.php:3591
+msgid ""
+"This column allows for the output of text/code before and after the Web Link"
+msgstr "Denne kolonnen muliggjør visning av kode/tekst før og etter web-lenke"
+
+#: link-library-admin.php:3594 link-library-admin.php:3622
+#: link-library-admin.php:3651
+msgid "False"
+msgstr "Ugyldig"
+
+#: link-library-admin.php:3595 link-library-admin.php:4698
+msgid "Web Address"
+msgstr "Webadresse"
+
+#: link-library-admin.php:3596 link-library-admin.php:3625
+msgid "Label"
+msgstr "Beskrivelse"
+
+#: link-library-admin.php:3599
+msgid "Code/Text to be displayed before Web Link"
+msgstr "Kode/tekst som skal vises foran web-lenke"
+
+#: link-library-admin.php:3602
+msgid "Code/Text to be displayed after Web Link"
+msgstr "Kode/tekst som skal vises etter web-lenke"
+
+#: link-library-admin.php:3605
+msgid "Text Label that the web link will be assigned to."
+msgstr "Tekstbeskrivelse for web-lenken"
+
+#: link-library-admin.php:3608 link-library-admin.php:3637
+msgid "Select which link address will be displayed / used for link"
+msgstr "Velg hvilken lenkeadresse som skal vises/brukes for lenke"
+
+#: link-library-admin.php:3619
+msgid ""
+"This column allows for the output of text/code before and after the "
+"Telephone Number"
+msgstr ""
+"Denne kolonnen muliggjør visning av tekst/kode foran og etter telefonnummeret"
+
+#: link-library-admin.php:3619 link-library-admin.php:4477
+#: link-library-admin.php:4996 link-library-defaults.php:170
+#: render-link-library-addlink-sc.php:424 render-link-library-sc.php:989
+msgid "Telephone"
+msgstr "Telefon"
+
+#: link-library-admin.php:3623 link-library-admin.php:3652
+msgid "Plain Text"
+msgstr "Enkel tekst"
+
+#: link-library-admin.php:3624
+msgid "Link"
+msgstr "Lenke"
+
+#: link-library-admin.php:3628
+msgid "Code/Text to be displayed before Telephone Number"
+msgstr "Kode/tekst som skal vises foran telefonnummeret"
+
+#: link-library-admin.php:3631
+msgid "Code/Text to be displayed after Telephone Number"
+msgstr "Kode/tekst som skal vises etter telefonnummeret"
+
+#: link-library-admin.php:3634
+msgid "Text Label that the telephone will be assigned to."
+msgstr "Tekstbekrivelse for telefonnummer."
+
+#: link-library-admin.php:3648
+msgid ""
+"This column allows for the output of text/code before and after the E-mail"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst foran og etter epostadressen"
+
+#: link-library-admin.php:3653
+msgid "MailTo Link"
+msgstr "mailto-lenke"
+
+#: link-library-admin.php:3654
+msgid "MailTo Link with Label"
+msgstr "Mailto-lenke med notat"
+
+#: link-library-admin.php:3655
+msgid "Formatted Command"
+msgstr ""
+
+#: link-library-admin.php:3656
+msgid "Formatted Command with Labels"
+msgstr ""
+
+#: link-library-admin.php:3659
+msgid "Code/Text to be displayed before E-mail"
+msgstr "Kode/tekst som skal vises foran epostadresse"
+
+#: link-library-admin.php:3662
+msgid "Code/Text to be displayed after E-mail"
+msgstr "Kode/tekst som skal vises etter epostadresse"
+
+#: link-library-admin.php:3665
+msgid ""
+"Text Label that the e-mail will be assigned to represent the e-mail link."
+msgstr ""
+
+#: link-library-admin.php:3668
+msgid ""
+"Command that the e-mail will be embedded in. In the case of a command, use "
+"the symbols #email and #company to indicate the position where these "
+"elements should be inserted."
+msgstr ""
+
+#: link-library-admin.php:3676
+msgid ""
+"This column allows for the output of text/code before and after Link Hits"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst foran eller etter lenke-treff"
+
+#: link-library-admin.php:3676
+msgid "Link Hits"
+msgstr "Lenketreff"
+
+#: link-library-admin.php:3680
+msgid "Code/Text to be displayed before Link Hits"
+msgstr "Kode/tekst som skal vises foran Lenketreff"
+
+#: link-library-admin.php:3683
+msgid "Code/Text to be displayed after Link Hits"
+msgstr "Kode/tekst som skal vises etter Lenketreff"
+
+#: link-library-admin.php:3693
+msgid ""
+"This column allows for the output of text/code before and after the Link "
+"Rating"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst foran eller bak Lenkevurdering"
+
+#: link-library-admin.php:3693
+msgid "Link Rating"
+msgstr "Lenkevurdering"
+
+#: link-library-admin.php:3697
+msgid "Code/Text to be displayed before Link Rating"
+msgstr "Kode/tekst som skal vises foran Lenkevurdering"
+
+#: link-library-admin.php:3700
+msgid "Code/Text to be displayed after Link Rating"
+msgstr "Kode/tekst som skal vises etter Lenkevurdering"
+
+#: link-library-admin.php:3710 link-library-admin.php:3727
+#: link-library-admin.php:3744
+msgid ""
+"This column allows for the output of text/code before and after the Link "
+"Large Description"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst foran og etter Lenke Full "
+"Beskrivelse"
+
+#: link-library-admin.php:3710 usersubmission.php:299 usersubmission.php:364
+msgid "Link Large Description"
+msgstr "Lenke Full Beskrivelse"
+
+#: link-library-admin.php:3714 link-library-admin.php:3731
+#: link-library-admin.php:3748
+msgid "Code/Text to be displayed before Link Large Description"
+msgstr "Kode/tekst som skal vises foran Lenke Full Bekrivelse"
+
+#: link-library-admin.php:3717 link-library-admin.php:3734
+#: link-library-admin.php:3751
+msgid "Code/Text to be displayed after Link Large Description"
+msgstr "Kode/tekst som skal vises etter Lenke Full Beskrivelse"
+
+#: link-library-admin.php:3744 render-link-library-sc.php:992
+msgid "Category Description"
+msgstr "Kategori Beskrivelse"
+
+#: link-library-admin.php:3761
+msgid "This column allows for the output of tags associated with the link"
+msgstr "Denne kolonnen muliggjør visning av tagger som er assosiert med lenken"
+
+#: link-library-admin.php:3761
+msgid "Link Tags"
+msgstr "Lenketagger"
+
+#: link-library-admin.php:3765
+msgid "Code/Text to be displayed before Link Tags"
+msgstr "Kode/tekst som skal vises foran Lenketagger"
+
+#: link-library-admin.php:3768
+msgid "Code/Text to be displayed after Link Tags"
+msgstr "Kode/tekst som skal vises etter Lenketagger"
+
+#: link-library-admin.php:3778
+msgid ""
+"This column allows for the output of the price field associated with the link"
+msgstr ""
+"Denne kolonnen muliggjør visning av pris dersom dette er satt for lenken"
+
+#: link-library-admin.php:3778
+msgid "Link Price"
+msgstr "Lenke Pris"
+
+#: link-library-admin.php:3782
+msgid "Code/Text to be displayed before Link Price"
+msgstr "Kode/tekst som skal vises foran Lenke Pris"
+
+#: link-library-admin.php:3785
+msgid "Code/Text to be displayed after Link Price"
+msgstr "Kode/tekst som skal vises etter Lenke Pris"
+
+#: link-library-admin.php:3789
+msgid "Currency symbol to be displayed next to price"
+msgstr "Valtuasymbol som skal vises ved siden av pris"
+
+#: link-library-admin.php:3794
+msgid "Before Price"
+msgstr "Før pris"
+
+#: link-library-admin.php:3795
+msgid "After Price"
+msgstr "Etter pris"
+
+#: link-library-admin.php:3805
+msgid "This column allows for the output of text/code after each link"
+msgstr "Denne kolonnen muliggjør visning av kode/tekst etter hver lenke"
+
+#: link-library-admin.php:3805
+msgid "After Link Block"
+msgstr "Etter lenke-blokk"
+
+#: link-library-admin.php:3808
+msgid "Output after complete link group (link, notes, desc, etc...)"
+msgstr ""
+"Visning etter fullstendig lenkegruppe (lenke, notater, bekrivelse etc...)"
+
+#: link-library-admin.php:3815
+msgid ""
+"This column allows for the output of text/code after a number of links "
+"determined in the first column"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst etter et antall lenker "
+"bestemt i første kolonne"
+
+#: link-library-admin.php:3815
+msgid "Intermittent After Link"
+msgstr "Sporadisk etter lenke"
+
+#: link-library-admin.php:3825
+msgid ""
+"This column allows for the output of text/code after the last link in each "
+"category"
+msgstr ""
+"Denne kolonnen muliggjør visning av kode/tekst etter den siste lenken i hver "
+"kategori"
+
+#: link-library-admin.php:3825
+msgid "After last link"
+msgstr "Etter siste lenke"
+
+#: link-library-admin.php:3838
+msgid "Show Link Updated Flag"
+msgstr "Vis flagg for oppdatert-lenke"
+
+#: link-library-admin.php:3846
+msgid "Convert [] to &lt;&gt; in Link Description and Notes"
+msgstr "Konvertere [] til &lt;&gt; i lenkebekrivelser og -notater"
+
+#: link-library-admin.php:3854
+msgid "Add nofollow tag to outgoing links"
+msgstr "Legg til følgende tag i utgående lenker"
+
+#: link-library-admin.php:3861
+msgid "Show edit links when logged in as editor or administrator"
+msgstr ""
+"Vis redigeringsknapp for lenker for innloggende administrator eller redaktør"
+
+#: link-library-admin.php:3869
+msgid "Show link name when no image is assigned"
+msgstr "Vis lenkenavn når ikke illustrasjonsbilde er brukt"
+
+#: link-library-admin.php:3876
+msgid "Do not output fields with no value"
+msgstr "Ikke vis felt som ikke er utfylt"
+
+#: link-library-admin.php:3894
+msgid "Enable link Pop-Ups"
+msgstr "Aktivere lenke sprett-opp vindu"
+
+#: link-library-admin.php:3898
+msgid "Pop-Up Width"
+msgstr "Sprett-opp vindu bredde"
+
+#: link-library-admin.php:3905
+msgid "Pop-Up Height"
+msgstr "Sprett-opp vindu høyde"
+
+#: link-library-admin.php:3914
+msgid "Dialog contents"
+msgstr "Dialog innhold"
+
+#: link-library-admin.php:3932
+msgid "Show RSS Link using Text"
+msgstr "Vis RSS-lenke som tekst"
+
+#: link-library-admin.php:3938
+msgid "Show RSS Link using Standard Icon"
+msgstr "Vis RSS-lenke med standard ikon"
+
+#: link-library-admin.php:3948
+msgid "Show RSS Preview Link"
+msgstr "Vis knapp for RSS-forhåndsvisning"
+
+#: link-library-admin.php:3954
+msgid "Number of articles shown in RSS Preview"
+msgstr "Antall artikler vist i RSS-forhåndsvisning"
+
+#: link-library-admin.php:3960
+msgid "Show RSS Feed Headers in Link Library output"
+msgstr "Vis RSS-strøm overskrifter i Link Library visninger"
+
+#: link-library-admin.php:3968
+msgid "Show RSS Feed Content in Link Library output"
+msgstr "Vis RSS-strøm innhold i Link Library visninger"
+
+#: link-library-admin.php:3974
+msgid "Number of RSS articles shown in Link Library Output"
+msgstr "Antall RSS-artikler i Link Library visning"
+
+#: link-library-admin.php:3979
+msgid "Max number of days since published"
+msgstr "Maks antall dager etter publisering"
+
+#: link-library-admin.php:3983
+msgid "RSS Preview Width"
+msgstr "RSS forhåndsvisning bredde"
+
+#: link-library-admin.php:3986
+msgid "RSS Preview Height"
+msgstr "RSS forhåndsvisning høyde"
+
+#: link-library-admin.php:3988
+msgid "Skip links with no RSS inline items"
+msgstr ""
+
+#: link-library-admin.php:4005
+msgid ""
+"Checking this option will get images from the Robothumb web site every time"
+msgstr ""
+
+#: link-library-admin.php:4006
+msgid "Use thumbnail service for dynamic link images"
+msgstr ""
+
+#: link-library-admin.php:4008
+msgid ""
+"Checking this option will get images from the thumbshots web site every time"
+msgstr ""
+
+#: link-library-admin.php:4014
+msgid "Give priority to images assigned to links if present"
+msgstr ""
+
+#: link-library-admin.php:4020
+msgid "Generate Images / Favorite Icons"
+msgstr "Generere bilder og ikoner"
+
+#: link-library-admin.php:4022 link-library-admin.php:4764
+msgid ""
+"This button is only available when a valid API key is entered under the Link "
+"Library General Settings."
+msgstr ""
+
+#: link-library-admin.php:4023
+msgid "Generate Thumbnails and Store locally"
+msgstr ""
+
+#: link-library-admin.php:4026
+msgid "Generate Favorite Icons and Store locally"
+msgstr ""
+
+#: link-library-admin.php:4030
+msgid "Delete all local thumbnails and icons"
+msgstr ""
+
+#: link-library-admin.php:4031
+msgid "Delete all local thumbnails"
+msgstr ""
+
+#: link-library-admin.php:4032
+msgid "Delete all local icons"
+msgstr ""
+
+#: link-library-admin.php:4048
+msgid "Publish RSS Feed"
+msgstr ""
+
+#: link-library-admin.php:4053
+msgid "Number of items in RSS feed"
+msgstr ""
+
+#: link-library-admin.php:4062
+msgid "RSS Feed Title"
+msgstr "Tittel RSS-strøm"
+
+#: link-library-admin.php:4068
+msgid "RSS Feed Description"
+msgstr "RSS-strøm beskrivelse"
+
+#: link-library-admin.php:4074
+msgid ""
+"RSS Feed Web Address (default yoursite.com?"
+"link_library_rss_feed=1&settingset=1 )"
+msgstr ""
+
+#: link-library-admin.php:4091
+msgid "Search Label"
+msgstr ""
+
+#: link-library-admin.php:4100
+msgid "Search Field Initial Text"
+msgstr ""
+
+#: link-library-admin.php:4109
+msgid "Search No Results Text"
+msgstr ""
+
+#: link-library-admin.php:4111 link-library-defaults.php:222
+msgid "No links found matching your search criteria"
+msgstr "Ingen lenker funnet som passer til søket ditt"
+
+#: link-library-admin.php:4118 link-library-admin.php:4119
+msgid "Leave empty when links are to be displayed on same page as search box"
+msgstr ""
+
+#: link-library-admin.php:4118
+msgid "Results Page Address"
+msgstr "Side for visning av søkeresultater"
+
+#: link-library-admin.php:4219
+msgid "Following this link shows a list of all links awaiting moderation"
+msgstr ""
+
+#: link-library-admin.php:4220
+msgid "View list of links awaiting moderation"
+msgstr "Se liste over lenker som avventer moderasjon"
+
+#: link-library-admin.php:4224
+msgid "Show user links immediately"
+msgstr "Vis innsendte lenker umiddelbart"
+
+#: link-library-admin.php:4229
+msgid "E-mail admin on link submission"
+msgstr "Meld fra til admin på epost når nye lenker foreslås"
+
+#: link-library-admin.php:4235
+msgid "Validate links with Akismet"
+msgstr "Valider med Akismet"
+
+#: link-library-admin.php:4239
+msgid "E-mail submitter"
+msgstr ""
+
+#: link-library-admin.php:4246
+msgid "Additional text for link submitter e-mail"
+msgstr ""
+
+#: link-library-admin.php:4253
+msgid "Require login to display form"
+msgstr "Vis innsendingsskjema for nye lenker kun for innloggende brukere"
+
+#: link-library-admin.php:4258
+msgid "Allow link submission with empty link"
+msgstr "Tillat innsending av skjema med tomt lenkefelt"
+
+#: link-library-admin.php:4264
+msgid "Display captcha"
+msgstr "Vis Captcha"
+
+#: link-library-admin.php:4269
+msgid ""
+"This function will only store data when users are logged in to Wordpress"
+msgstr "Denne funksjonen lagrer kun data når brukere er innlogget"
+
+#: link-library-admin.php:4269
+msgid "Store login name on link submission"
+msgstr "Lagre innlogging ved innsending av lenke"
+
+#: link-library-admin.php:4275
+msgid "Add new link label"
+msgstr ""
+
+#: link-library-admin.php:4277 link-library-defaults.php:119
+#: render-link-library-addlink-sc.php:206
+msgid "Add new link"
+msgstr "Legg til ny lenke"
+
+#: link-library-admin.php:4284
+msgid "Link name label"
+msgstr ""
+
+#: link-library-admin.php:4294
+msgid "Link address label"
+msgstr ""
+
+#: link-library-admin.php:4296 usersubmission.php:296 usersubmission.php:353
+msgid "Link Address"
+msgstr "Lenkeadresse"
+
+#: link-library-admin.php:4303
+msgid "Link RSS label"
+msgstr ""
+
+#: link-library-admin.php:4305 link-library-defaults.php:122
+#: render-link-library-addlink-sc.php:231 usersubmission.php:297
+#: usersubmission.php:356
+msgid "Link RSS"
+msgstr ""
+
+#: link-library-admin.php:4312 link-library-admin.php:4328
+#: link-library-admin.php:4407 link-library-admin.php:4422
+#: link-library-admin.php:4453 link-library-admin.php:4468
+#: link-library-admin.php:4484 link-library-admin.php:4499
+#: link-library-admin.php:4515 link-library-admin.php:4530
+#: link-library-admin.php:4546 link-library-admin.php:4561
+#: link-library-admin.php:4577
+msgid "Hide"
+msgstr "Skjul"
+
+#: link-library-admin.php:4313 link-library-admin.php:4329
+#: link-library-admin.php:4408 link-library-admin.php:4423
+#: link-library-admin.php:4454 link-library-admin.php:4469
+#: link-library-admin.php:4485 link-library-admin.php:4500
+#: link-library-admin.php:4516 link-library-admin.php:4531
+#: link-library-admin.php:4547 link-library-admin.php:4562
+#: link-library-admin.php:4578
+msgid "Show"
+msgstr "Vis"
+
+#: link-library-admin.php:4314 link-library-admin.php:4409
+#: link-library-admin.php:4424 link-library-admin.php:4455
+#: link-library-admin.php:4470 link-library-admin.php:4486
+#: link-library-admin.php:4501 link-library-admin.php:4517
+#: link-library-admin.php:4532 link-library-admin.php:4548
+#: link-library-admin.php:4563
+msgid "Required"
+msgstr "Obligatorisk"
+
+#: link-library-admin.php:4319
+msgid "Link category label"
+msgstr ""
+
+#: link-library-admin.php:4333
+msgid ""
+"Comma-seperated list of categories to be displayed in category selection box "
+"(e.g. 1,5,4) instead of displaying the set of categories specified by the "
+"library."
+msgstr ""
+
+#: link-library-admin.php:4333
+msgid "Link category override selection list"
+msgstr ""
+
+#: link-library-admin.php:4334
+msgid ""
+"Comma-seperated list of categories to be displayed in category selection box "
+"(e.g. 1,5,4)"
+msgstr ""
+
+#: link-library-admin.php:4339
+msgid "Default category"
+msgstr "Standard kategori"
+
+#: link-library-admin.php:4374 link-library-admin.php:4376
+#: link-library-defaults.php:150
+msgid "User-submitted category"
+msgstr "Bruker-innsendt kategori"
+
+#: link-library-admin.php:4383
+msgid "No"
+msgstr "Ingen"
+
+#: link-library-admin.php:4384
+msgid "Allow"
+msgstr "Tillat"
+
+#: link-library-admin.php:4388
+msgid "User-submitted category prompt"
+msgstr ""
+
+#: link-library-admin.php:4390 link-library-defaults.php:151
+#: render-link-library-addlink-sc.php:285
+msgid "User-submitted category (define below)"
+msgstr "Bruker-innsendt kategori ( beskriv under )"
+
+#: link-library-admin.php:4398
+msgid "Link description label"
+msgstr ""
+
+#: link-library-admin.php:4413
+msgid "Link notes label"
+msgstr ""
+
+#: link-library-admin.php:4429 link-library-admin.php:4430
+msgid "Reciprocal link must be configured for this option to work correctly"
+msgstr ""
+
+#: link-library-admin.php:4429
+msgid "Show immediately if reciprocal link valid"
+msgstr ""
+
+#: link-library-admin.php:4433
+msgid "Use Text Area for Notes"
+msgstr ""
+
+#: link-library-admin.php:4438
+msgid "Only allow one reciprocal link per domain"
+msgstr ""
+
+#: link-library-admin.php:4444
+msgid "Reciprocal Link label"
+msgstr ""
+
+#: link-library-admin.php:4446 link-library-admin.php:5008
+#: link-library-defaults.php:166 render-link-library-addlink-sc.php:388
+#: usersubmission.php:302 usersubmission.php:374
+msgid "Reciprocal Link"
+msgstr ""
+
+#: link-library-admin.php:4459
+msgid "Secondary Address label"
+msgstr ""
+
+#: link-library-admin.php:4461 link-library-defaults.php:168
+#: render-link-library-addlink-sc.php:406
+msgid "Secondary Address"
+msgstr ""
+
+#: link-library-admin.php:4475
+msgid "Link Telephone label"
+msgstr ""
+
+#: link-library-admin.php:4490
+msgid "Link E-mail label"
+msgstr ""
+
+#: link-library-admin.php:4506
+msgid "Link Submitter Name label"
+msgstr ""
+
+#: link-library-admin.php:4521
+msgid "Link Submitter E-mail label"
+msgstr ""
+
+#: link-library-admin.php:4523 link-library-admin.php:5033
+#: link-library-defaults.php:186 render-link-library-addlink-sc.php:491
+msgid "Submitter E-mail"
+msgstr "Innsenders epost"
+
+#: link-library-admin.php:4537
+msgid "Link Submitter Comment Label"
+msgstr ""
+
+#: link-library-admin.php:4539 link-library-defaults.php:188
+#: render-link-library-addlink-sc.php:522
+msgid "Submitter Comment"
+msgstr "Innsenders kommentarer"
+
+#: link-library-admin.php:4552
+msgid "Large Description Label"
+msgstr ""
+
+#: link-library-admin.php:4554 link-library-admin.php:4710
+#: link-library-defaults.php:201 render-link-library-sc.php:991
+msgid "Large Description"
+msgstr "Full beskrivelse"
+
+#: link-library-admin.php:4568
+msgid "Custom Captcha Question"
+msgstr "Egendefinert Captcha spørsmål"
+
+#: link-library-admin.php:4570 link-library-defaults.php:195
+#: render-link-library-addlink-sc.php:540
+msgid "Is boiling water hot or cold?"
+msgstr "Er kokende vann varmt eller kaldt?"
+
+#: link-library-admin.php:4582
+msgid "Custom Captcha Answer"
+msgstr "Egendefinert Captcha svar"
+
+#: link-library-admin.php:4584 link-library-defaults.php:196
+msgid "hot"
+msgstr "varmt"
+
+#: link-library-admin.php:4591
+msgid "Add Link button label"
+msgstr "Navn på lenkeknapp"
+
+#: link-library-admin.php:4593 link-library-defaults.php:126
+msgid "Add Link"
+msgstr "Legg til lenke"
+
+#: link-library-admin.php:4600
+msgid "New Link Message"
+msgstr "Ny lenke - beskjed"
+
+#: link-library-admin.php:4602
+msgid "New link submitted"
+msgstr "Ny lenke sendt"
+
+#: link-library-admin.php:4609
+msgid "New Link Moderation Label"
+msgstr ""
+
+#: link-library-admin.php:4611
+msgid "it will appear in the list once moderated. Thank you."
+msgstr ""
+"den vil bli lagt til på nettstedet så snart den er godkjent. Takk for ditt "
+"bidrag."
+
+#: link-library-admin.php:4632
+msgid "Overwrites current library settings with contents of CSV file"
+msgstr "Overskrive gjeldene bibliotek-innstillinger med innholdet i CSV-fil"
+
+#: link-library-admin.php:4632
+msgid "Library Settings CSV file to import"
+msgstr ""
+
+#: link-library-admin.php:4635
+msgid "Import Library Settings"
+msgstr ""
+
+#: link-library-admin.php:4639
+msgid "Generates CSV file with current library configuration for download"
+msgstr ""
+
+#: link-library-admin.php:4639
+msgid "Export current library settings"
+msgstr ""
+
+#: link-library-admin.php:4641
+msgid "Export Library Settings"
+msgstr ""
+
+#: link-library-admin.php:4654
+msgid "Search string"
+msgstr "Søkestreng"
+
+#: link-library-admin.php:4660
+msgid "Delete links that return a 403 error"
+msgstr "Fjern lenker som returnerer 403 error"
+
+#: link-library-admin.php:4666
+msgid "Check Reciprocal Links"
+msgstr ""
+
+#: link-library-admin.php:4672
+msgid "Check Broken Links"
+msgstr ""
+
+#: link-library-admin.php:4677
+msgid "Check Duplicate Links"
+msgstr ""
+
+#: link-library-admin.php:4722
+msgid "RSS Address"
+msgstr "RSS adresse"
+
+#: link-library-admin.php:4726
+msgid "Target"
+msgstr ""
+
+#: link-library-admin.php:4745
+msgid "Current Image"
+msgstr ""
+
+#: link-library-admin.php:4751
+msgid "None Assigned"
+msgstr ""
+
+#: link-library-admin.php:4757
+msgid "Image URL"
+msgstr "Bilde URL"
+
+#: link-library-admin.php:4762 link-library-admin.php:4772
+msgid "Automatic Image Generation"
+msgstr ""
+
+#: link-library-admin.php:4766
+msgid "Generate Thumbnail and Store locally"
+msgstr ""
+
+#: link-library-admin.php:4767
+msgid "Generate Favorite Icon and Store locally"
+msgstr ""
+
+#: link-library-admin.php:4773
+msgid "Only available once link is saved"
+msgstr ""
+
+#: link-library-admin.php:4778
+msgid "Image Upload"
+msgstr ""
+
+#: link-library-admin.php:4780
+msgid "Launch Media Uploader"
+msgstr ""
+
+#: link-library-admin.php:4877
+msgid ""
+"Cannot generate thumbnail when no name and no web address are specified."
+msgstr ""
+
+#: link-library-admin.php:4913
+msgid ""
+"Cannot generate favorite icon when no name and no web address are specified."
+msgstr ""
+
+#: link-library-admin.php:4958
+msgid "Featured Item"
+msgstr ""
+
+#: link-library-admin.php:4964
+msgid "No Follow"
+msgstr ""
+
+#: link-library-admin.php:4980
+msgid "Updated Date"
+msgstr ""
+
+#: link-library-admin.php:4989
+msgid "Secondary Web Address"
+msgstr "Sekundær webadresse"
+
+#: link-library-admin.php:4992 link-library-admin.php:5011
+msgid "Visit"
+msgstr "Besøk"
+
+#: link-library-admin.php:5015
+msgid "Number of views"
+msgstr "Antall visninger"
+
+#: link-library-admin.php:5021
+msgid "Submitter"
+msgstr "Innsender"
+
+#: link-library-admin.php:5561
+msgid "Duplicate Link Checker Report"
+msgstr ""
+
+#: link-library-admin.php:5563
+msgid "Duplicate URLs"
+msgstr ""
+
+#: link-library-admin.php:5579
+msgid "Duplicate Names"
+msgstr ""
+
+#: link-library-admin.php:5622
+msgid "Reciprocal Link Checker Report"
+msgstr ""
+
+#: link-library-admin.php:5624
+msgid "Broken Link Checker Report"
+msgstr ""
+
+#: link-library-admin.php:5640
+msgid "Not Found"
+msgstr ""
+
+#: link-library-admin.php:5642
+msgid "OK"
+msgstr "OK"
+
+#: link-library-admin.php:5644
+msgid "Link valid"
+msgstr ""
+
+#: link-library-admin.php:5647
+msgid "Error 403: Link Deleted"
+msgstr "Error 403: Lenke oppdaget"
+
+#: link-library-admin.php:5649
+msgid "Error 403"
+msgstr "Error 403"
+
+#: link-library-admin.php:5651
+msgid "Website Unreachable"
+msgstr ""
+
+#: link-library-admin.php:5655
+msgid "There are no links with reciprocal links associated with them"
+msgstr ""
+
+# Plugin name; please avoid translating if possible
+#: link-library-admin.php:5661
+msgid "Add Link Library Shortcode"
+msgstr "Sett inn Link Library shortcode"
+
+#: link-library-defaults.php:120 render-link-library-addlink-sc.php:214
+msgid "Link name"
+msgstr "Lenke - Navn"
+
+#: link-library-defaults.php:121 render-link-library-addlink-sc.php:220
+msgid "Link address"
+msgstr "Lenke - Adresse"
+
+#: link-library-defaults.php:127
+msgid "New link submitted."
+msgstr "Ny lenke sendt inn"
+
+#: link-library-defaults.php:128
+msgid "It will appear in the list once moderated. Thank you."
+msgstr ""
+"Dersom lenken godkjennes vil den legges til i biblioteket. Takk for ditt "
+"bidrag."
+
+#: link-library-defaults.php:145
+msgid "Link Library-Generated RSS Feed"
+msgstr ""
+
+#: link-library-defaults.php:146
+msgid "Description of Link Library-Generated Feed"
+msgstr ""
+
+#: link-library-defaults.php:208 linkpopup.php:66
+msgid "%link_image%<br />Click through to visit %link_name%."
+msgstr "%link_image%<br />Klikk for å besøke %link_name%."
+
+#: link-library-defaults.php:221
+msgid "Search..."
+msgstr "Søk..."
+
+#: link-library-defaults.php:223
+msgid "Category Filter"
+msgstr "Kategori -  Filter"
+
+#: link-library.php:532
+msgid "Link Library Generated Feed"
+msgstr ""
+
+#: link-library.php:720
+msgid "Could not update link in the database"
+msgstr ""
+
+#: link-library.php:727
+msgid "Could not insert link into the database"
+msgstr ""
+
+#: link-library.php:749 link-library.php:753
+msgid ""
+"Link Library no longer supports calling this function with individual "
+"arguments. Please use the admin panel to configure Link Library and the "
+"do_shortcode function to use Link Library output in your code."
+msgstr ""
+
+#: link-library.php:892
+msgid "Tag"
+msgstr ""
+
+#: render-link-library-addlink-sc.php:134
+msgid "Confirm code not given"
+msgstr "Bekreftelseskode ikke angitt"
+
+#: render-link-library-addlink-sc.php:136
+msgid "Captcha code is wrong"
+msgstr "Feil Captcha-kode"
+
+#: render-link-library-addlink-sc.php:138
+msgid "Captcha code is only valid for 5 minutes"
+msgstr "Captcha-koden er kun gyldig i fem minutter"
+
+#: render-link-library-addlink-sc.php:140
+msgid "No captcha cookie given. Make sure cookies are enabled"
+msgstr ""
+
+#: render-link-library-addlink-sc.php:142
+msgid "Captcha answer was not provided."
+msgstr "Captcha - svar ikke angitt"
+
+#: render-link-library-addlink-sc.php:144
+msgid "Captcha answer is incorrect"
+msgstr "Captcha - svaret er ikke korrekt"
+
+#: render-link-library-addlink-sc.php:146
+msgid "User Category was not provided correctly. Link insertion failed."
+msgstr ""
+
+#: render-link-library-addlink-sc.php:154
+msgid "Error: Link does not have an address."
+msgstr "Feilmelding : Lenken har ingen adresse"
+
+#: render-link-library-addlink-sc.php:156
+msgid "Error: Link already exists."
+msgstr "Feilmelding : Lenken eksisterer allerede"
+
+#: render-link-library-addlink-sc.php:158
+#: render-link-library-addlink-sc.php:160
+#: render-link-library-addlink-sc.php:162
+#: render-link-library-addlink-sc.php:164
+#: render-link-library-addlink-sc.php:166
+#: render-link-library-addlink-sc.php:168
+#: render-link-library-addlink-sc.php:170
+#: render-link-library-addlink-sc.php:172
+#: render-link-library-addlink-sc.php:174
+#: render-link-library-addlink-sc.php:176
+#: render-link-library-addlink-sc.php:178
+msgid " is a required field"
+msgstr " er et obligatorisk felt"
+
+#: render-link-library-addlink-sc.php:180
+msgid "Link submission error"
+msgstr "Feil ved innsending av lenke"
+
+#: render-link-library-addlink-sc.php:182
+msgid "Link rejected. There is already a site with this reciprocal link."
+msgstr ""
+
+#: render-link-library-addlink-sc.php:217
+#: render-link-library-addlink-sc.php:278
+#: render-link-library-addlink-sc.php:344
+#: render-link-library-addlink-sc.php:361
+#: render-link-library-addlink-sc.php:369
+#: render-link-library-addlink-sc.php:417
+#: render-link-library-addlink-sc.php:435
+#: render-link-library-addlink-sc.php:528
+#: render-link-library-addlink-sc.php:543
+msgid "Required field"
+msgstr "Obligatorisk felt"
+
+#: render-link-library-addlink-sc.php:225
+msgid "Required field, URL"
+msgstr "Obligatorisk felt, URL"
+
+#: render-link-library-addlink-sc.php:242
+#: render-link-library-addlink-sc.php:331
+#: render-link-library-addlink-sc.php:399
+msgid "Required field, 1-255 chars"
+msgstr "Obligatorisk felt, 1 - 255 tegn"
+
+#: render-link-library-addlink-sc.php:274
+msgid "Link category"
+msgstr "Lenke - Kategori"
+
+#: render-link-library-addlink-sc.php:281
+msgid "Select a category"
+msgstr "Velg en kategori"
+
+#: render-link-library-addlink-sc.php:320
+msgid "Link description"
+msgstr "Lenke - Beskrivelse"
+
+#: render-link-library-addlink-sc.php:338
+msgid "Large description"
+msgstr "Full beskrivelse"
+
+#: render-link-library-addlink-sc.php:352
+msgid "Link notes"
+msgstr "Lenke - Notater"
+
+#: render-link-library-addlink-sc.php:453
+msgid "Required field, proper e-mail, 1-128 chars"
+msgstr "Obligatorisk felt, gyldig epostadresse, 1 - 128 tegn"
+
+#: render-link-library-addlink-sc.php:484
+#: render-link-library-addlink-sc.php:515
+msgid "Required field, 1-128 chars"
+msgstr "Obligatorisk felt, 1 - 128 tegn"
+
+#: render-link-library-addlink-sc.php:549
+msgid "Add link"
+msgstr "Legg til lenke"
+
+#: render-link-library-addlink-sc.php:561
+msgid "Form submission failed!"
+msgstr "Feil ved innsending av skjemaet!"
+
+#: render-link-library-addlink-sc.php:562
+msgid "You have not answered all required fields"
+msgstr "Du har ikke fylt inn alle obligatoriske felt"
+
+#: render-link-library-addlink-sc.php:563
+msgid "You have not given a correct time"
+msgstr "Du har ikke oppgitt riktig tidspunkt"
+
+#: render-link-library-addlink-sc.php:564
+msgid "You have not given a correct e-mail address"
+msgstr "Du har ikke oppgitt en gyldig epostadresse"
+
+#: render-link-library-addlink-sc.php:565
+msgid "You have not given a correct phone number"
+msgstr "Du har ikke oppgitt et gyldig telefonnummer"
+
+#: render-link-library-addlink-sc.php:566
+msgid "You have not given a correct answer to the security question"
+msgstr "Du har ikke oppgitt riktig svar på sikkerhetsspørsmålet"
+
+#: render-link-library-addlink-sc.php:567
+msgid "You have not given a correct date"
+msgstr "Du har ikke oppgitt riktig dato"
+
+#: render-link-library-addlink-sc.php:568
+msgid "The input value must be between "
+msgstr "Verdien må være mellom"
+
+#: render-link-library-addlink-sc.php:569
+msgid "characters"
+msgstr "tegn"
+
+#: render-link-library-addlink-sc.php:570
+msgid "The input value is longer than "
+msgstr "Verdien overstiger "
+
+#: render-link-library-addlink-sc.php:571
+msgid "The input value is shorter than "
+msgstr "Verdien er kortere enn"
+
+#: render-link-library-addlink-sc.php:572
+msgid "Input values could not be confirmed"
+msgstr "Inntastede verdier kunne ikke bekreftes"
+
+#: render-link-library-addlink-sc.php:573
+msgid "Incorrect domain value"
+msgstr "Ikke gyldig domene"
+
+#: render-link-library-addlink-sc.php:574
+msgid "The input value is not a correct URL. Requires http://."
+msgstr "Ikke godkjent verdig. Krever http://."
+
+#: render-link-library-addlink-sc.php:575
+msgid "The input value is incorrect"
+msgstr ""
+
+#: render-link-library-addlink-sc.php:576
+msgid " and spaces "
+msgstr " og mellomrom "
+
+#: render-link-library-addlink-sc.php:577
+msgid "The input value was not a correct number"
+msgstr "Inntasted verdi er ikke et gyldig nummer"
+
+#: render-link-library-addlink-sc.php:578
+msgid "Your social security number was incorrect"
+msgstr ""
+
+#: render-link-library-addlink-sc.php:579
+msgid "Incorrect UK VAT Number"
+msgstr ""
+
+#: render-link-library-addlink-sc.php:580
+msgid "The password is not strong enough"
+msgstr "Passordet er ikke sterkt nok"
+
+#: render-link-library-addlink-sc.php:581
+msgid "You have to choose at least "
+msgstr "Du må velge minst "
+
+#: render-link-library-addlink-sc.php:582
+msgid " answers"
+msgstr " svar"
+
+#: render-link-library-addlink-sc.php:583
+msgid "The input value can only contain alphanumeric characters "
+msgstr ""
+
+#: render-link-library-addlink-sc.php:584
+msgid " and "
+msgstr " og "
+
+#: render-link-library-addlink-sc.php:585
+#, php-format
+msgid "The file you are trying to upload is too large (max %s)"
+msgstr "Filen du forsøker å laste opp er for stor (max %s)"
+
+#: render-link-library-addlink-sc.php:586
+#, php-format
+msgid "Only files of type %s is allowed"
+msgstr "Kun filer av typen %s tillates"
+
+#: render-link-library-addlink-sc.php:587
+msgid "Please choose between "
+msgstr "Velg mellom "
+
+#: render-link-library-addlink-sc.php:588
+msgid "Please choose at least "
+msgstr "Velg minst"
+
+#: render-link-library-addlink-sc.php:589
+msgid "Please choose a maximum of "
+msgstr "Velg maksimalt "
+
+#: render-link-library-addlink-sc.php:590
+msgid " item(s)"
+msgstr " element(er)"
+
+#: render-link-library-addlink-sc.php:591
+msgid "The credit card number is not correct"
+msgstr ""
+
+#: render-link-library-addlink-sc.php:592
+msgid "The CVV number was not correct"
+msgstr ""
+
+#: render-link-library-addlink-sc.php:593
+msgid "Incorrect image dimensions,"
+msgstr ""
+
+#: render-link-library-addlink-sc.php:594
+msgid "the image can not be taller than"
+msgstr "bildet kan ikke være høyere enn"
+
+#: render-link-library-addlink-sc.php:595
+msgid "the image can not be wider than"
+msgstr "bildet kan ikke være bredere enn"
+
+#: render-link-library-addlink-sc.php:596
+msgid "the image was too small"
+msgstr "bildet er for lite"
+
+#: render-link-library-addlink-sc.php:597
+msgid "min"
+msgstr "min"
+
+#: render-link-library-addlink-sc.php:598
+msgid "max"
+msgstr "maks"
+
+#: render-link-library-addlink-sc.php:599
+msgid "Image ratio is not accepted"
+msgstr ""
+
+#: render-link-library-addlink-sc.php:622
+msgid "Enter code from above image"
+msgstr "Sett inn koden fra bildet over"
+
+#: render-link-library-cats-sc.php:409
+msgid "Go!"
+msgstr "Kjør!"
+
+#: render-link-library-cats-sc.php:438
+msgid "No categories found"
+msgstr "Ingen kategorier funnet"
+
+#: render-link-library-sc.php:115 render-link-library-sc.php:118
+#: render-link-library-sc.php:131 render-link-library-sc.php:137
+msgid "Previous"
+msgstr "Forrige"
+
+#: render-link-library-sc.php:206 render-link-library-sc.php:209
+#: render-link-library-sc.php:215 render-link-library-sc.php:222
+msgid "Next"
+msgstr "Neste"
+
+#: render-link-library-sc.php:572
+msgid "Search Results for"
+msgstr "Søkeresultater for"
+
+#: render-link-library-sc.php:1080
+msgid "No links found"
+msgstr "Ingen lenker funnet"
+
+#: render-link-library-sc.php:1248
+msgid "Last updated"
+msgstr "Sist oppdatert"
+
+#: render-link-library-sc.php:1396
+msgid "Edit"
+msgstr "Redigere"
+
+#: render-link-library-sc.php:1480
+msgid "Preview of RSS feed for"
+msgstr ""
+
+#: render-link-library-sc.php:1784
+msgid "Free"
+msgstr "Gratis"
+
+#: render-link-library-tag-filter-sc.php:87
+msgid "Apply filter"
+msgstr "Aktiver filter"
+
+#: usersubmission.php:294
+msgid "A user submitted a new link to your Wordpress Link database."
+msgstr ""
+"En bruker har sendt inn en forslag på en ny lenke for din Wordpress database."
+
+#: usersubmission.php:303 usersubmission.php:378
+msgid "Link Secondary Address"
+msgstr ""
+
+#: usersubmission.php:304 usersubmission.php:382
+msgid "Link Telephone"
+msgstr ""
+
+#: usersubmission.php:305 usersubmission.php:386
+msgid "Link E-mail"
+msgstr ""
+
+#: usersubmission.php:306
+msgid "Link Submitter"
+msgstr ""
+
+#: usersubmission.php:307 usersubmission.php:390
+msgid "Link Submitter Name"
+msgstr ""
+
+#: usersubmission.php:308 usersubmission.php:394
+msgid "Link Submitter E-mail"
+msgstr ""
+
+#: usersubmission.php:309 usersubmission.php:398
+msgid "Link Comment"
+msgstr ""
+
+#: usersubmission.php:323
+msgid "New link added"
+msgstr ""
+
+#: usersubmission.php:337
+msgid "Link Submission Confirmation"
+msgstr "Innsendt lenke bekreftet"
+
+#: usersubmission.php:339
+msgid "Thank you for your link submission on "
+msgstr "Takk for ditt innsendte forslag"
+
+#: usersubmission.php:343
+msgid "Your link will appear once approved by the site administrator."
+msgstr "Lenken må godkjennes av moderator før den publiseres på nettsiden."
+
+#: usersubmission.php:345
+msgid "Your link will immediately be added to the site."
+msgstr "Din lenke vil umiddelbart bli lagt til på nettsiden."
+
+#: wp_dropdown_posts.php:121
+#, php-format
+msgid "#%d (no title)"
+msgstr "#%d (ingen tittel)"
+
+msgid "Filters"
+msgstr "Sorter"
+
+#~ msgid "Link Library - Additional Link Parameters"
+#~ msgstr "Link Library - Paramètres Additionels"
+
+#~ msgid "Settings"
+#~ msgstr "Configuration"
+
+#~ msgid "Reciprocal and Broken Link Checker"
+#~ msgstr "Vérificateur de liens et de liens réciproques"
+
+#~ msgid "Reciprocal Link Checker"
+#~ msgstr "Vérificateur de liens réciproques"
+
+#~ msgid "Download exported links"
+#~ msgstr "Télécharger les liens exportés"
+
+#~ msgid "Library Settings Exported"
+#~ msgstr "Configuration de librairie exportée"
+
+#~ msgid "Download here"
+#~ msgstr "Récupérer ici"
+
+#~ msgid "Validate all submitted links with Akismet"
+#~ msgstr "Valider les liens proposés avec Akismet"
+
+#~ msgid "Link Column Header"
+#~ msgstr "Entête de colonne de lien"
+
+#~ msgid "Description Column Header"
+#~ msgstr "Entête de colonne pour les descriptions"
+
+#~ msgid "Notes Column Header"
+#~ msgstr "Entête de la colonne des notes"
+
+#~ msgid "Web Address Only"
+#~ msgstr "Seulement une adresse Web"
+
+#~ msgid "Featured Link"
+#~ msgstr "Lien vedette"
+
+#~ msgid ""
+#~ "Manual upload requires a wp-content\\uploads directory to be present with "
+#~ "write permissions"
+#~ msgstr ""
+#~ "Le téléchargement manuel requiert la présence du répertoire wp-content"
+#~ "\\uploads avec des permissions d'écriture"
+
+#~ msgid "Participate in the Link Library User Survey"
+#~ msgstr "Particciper au sondage des utilisateurs de Link Library"
+
+#~ msgid ""
+#~ "10 short questions to help shape future versions of Link Library and "
+#~ "inform decisions on migrating its content to Custom Post Types for data "
+#~ "storage. Important to users who use multiple link management plugins."
+#~ msgstr ""
+#~ "10 questions courtes pour aider à définir les futures versions de Link "
+#~ "Library et s'informer sur la décision de migrer son contenu vers des "
+#~ "types d'articles personels (Custom Post Types) pour le stockage des "
+#~ "données. C'est important pour les utilisateurs de plusieurs gestionnaires "
+#~ "de liens."
+
+#~ msgid ""
+#~ "Read the results of the Link Library User Survey and learn how the plugin "
+#~ "will evolve"
+#~ msgstr ""
+#~ "Lire le résultat du sondage sur Link Library et découvrez comment "
+#~ "l'extension va évoluer"
+
+#~ msgid "Reciprocal Checker"
+#~ msgstr "Vérificateur de liens réciproques"
+
+#~ msgid "General Settings"
+#~ msgstr "Configuration générale"
+
+#~ msgid "General Moderation Options"
+#~ msgstr "Configuration générale de modération"
+
+#~ msgid "Library Selection and Usage Instructions"
+#~ msgstr "Sélection de librairie et instructions d'utilisation"
+
+#~ msgid "Common Parameters"
+#~ msgstr "Paramètres communs"
+
+#~ msgid "Link Categories Settings"
+#~ msgstr "Configurations des catégories de liens"
+
+#~ msgid "Link Element Settings"
+#~ msgstr "Configuration des éléments des liens"
+
+#~ msgid "Link Pop-Up"
+#~ msgstr "Activer les fenêtres Pop-up pour les liens"
+
+#~ msgid "RSS Field Configuration"
+#~ msgstr "Configuration du champ RSS"
+
+#~ msgid "RSS Generation"
+#~ msgstr "Génération de flux d'informations RSS"
+
+#~ msgid "Search Form Configuration"
+#~ msgstr "Configuration du formulaire de recherche"
+
+#~ msgid "Stylesheet Editor"
+#~ msgstr "Éditeur de Feuille de style"
+
+#~ msgid "CID provided with paid Thumbshots.org accounts"
+#~ msgstr ""
+#~ "Le code CID peut être obtenu avec un abonnement payant sur Thumbshots.org"
+
+# Plugin name; please avoid translating if possible
+#, fuzzy
+#~ msgid "Link Library - Reciprocal Checker"
+#~ msgstr "Link Library - Modération"
+
+# Plugin name; please avoid translating if possible
+#~ msgid "Link Library - Stylesheet"
+#~ msgstr "Link Library - Feuille de Style"
+
+#~ msgid "Link Library General Options"
+#~ msgstr "Options Générales de Link Library"
+
+# Plugin name; please avoid translating if possible
+#, fuzzy
+#~ msgid "Link Library Settings"
+#~ msgstr "Link Library - Groupes de Configuration"
+
+#, fuzzy
+#~ msgid "Link Library General Settings"
+#~ msgstr "Options Générales de Link Library"
+
+#, fuzzy
+#~ msgid "Link Library Reciprocal Link Checker"
+#~ msgstr "Link Library - Paramètres Additionels"
+
+# Plugin name; please avoid translating if possible
+#, fuzzy
+#~ msgid "Link Library Stylesheet Editor"
+#~ msgstr "Link Library - Feuille de Style"
+
+#~ msgid "Change Current Style Set"
+#~ msgstr "Sélectionner le groupe de configuration courant"
+
+#~ msgid "Current Settings Set Name"
+#~ msgstr "Nom du groupe de configuration courant"
+
+#~ msgid "Delete Settings Set"
+#~ msgstr "Supprimer le groupe de configuration courant"
+
+#~ msgid "Number of Style Sets"
+#~ msgstr "Nombre de groupes de configuration"
+
+#~ msgid "Order set by"
+#~ msgstr "Trier par"
+
+#~ msgid "RSS Cache Directory"
+#~ msgstr "Répertoire cache pour les flux d'informations"
+
+#~ msgid "Set #"
+#~ msgstr "Groupe #"
+
+#~ msgid "Set Name"
+#~ msgstr "Nom du groupe"
+
+#~ msgid "Setting Set"
+#~ msgstr "Groupe de configuration"
+
+#~ msgid ""
+#~ "Used for RSS Preview and RSS Inline Articles options below. Must have "
+#~ "write access to directory"
+#~ msgstr ""
+#~ "Utilisé par l'aperçu des flux d'informations RSS et la présentation "
+#~ "d'articles RSS dans la liste de lien ci-dessous. Le répertoire doit avoir "
+#~ "des permissions d'écriture"

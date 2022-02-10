@@ -1,0 +1,39 @@
+.tribe-editor__tickets__container {
+	background-color: #ffffff;
+	position: relative;
+}
+
+.tribe-editor__tickets__overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: -14px;
+	z-index: 10;
+}
+
+.tribe-editor__tickets__inner-blocks {
+	visibility: hidden;
+	height: 0;
+
+	&--show {
+		visibility: visible;
+		height: auto;
+	}
+}
+
+.tribe-editor__tickets .editor-inner-blocks .editor-block-list__block {
+	& > .editor-block-list__block-edit:before {
+		outline: none;
+		transition: none;
+	}
+
+	&.is-hovered,
+	&.is-selected {
+
+		& > .editor-block-list__block-edit:before {
+			outline: none;
+		}
+	}
+}

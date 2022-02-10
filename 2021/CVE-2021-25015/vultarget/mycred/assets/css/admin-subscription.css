@@ -1,0 +1,596 @@
+/** myCRED Membership **/
+.mmc_welcome{ margin: 12px;padding: 50px 10px;border-radius: 10px;text-align: center;width: 500p }
+.mmc_title{ text-align: center;font-size: 30px;font-weight: 100; line-height: 35px; }
+.mmc_welcome .mmc_lincense_key{ width: 404px;border-radius: 6px;font-size: 17px;padding: 9px 14px;margin-top: 30px }
+.mmc_welcome .mmc_save_license{ font-size: 12px;height: 52px;width: 100px;font-size: 20px }
+.mmc_welcome_content form{ width: 512px;margin: 0 auto }
+.mmc_welcome_content a{ text-align: left }
+.mmc_license_link a{ text-decoration: none }
+.mmc_license_link{ text-align: left;margin: 5px 0px}
+.mycred-membership-menu-label { color: #ffffff; margin: 5px; background: #892bff; padding: 1px 5px 3px 5px; border-radius: 4px; font-size: 10px; }
+
+/** myCred Review **/
+.mycred-review-notice { padding: 15px 15px 15px 0; background-color: #fff; border-radius: 3px; margin: 20px 20px 0 0; border-left: 4px solid transparent; } .mycred-review-notice:after { content: ''; display: table; clear: both; }
+.mycred-review-thumbnail { width: 114px; float: left; line-height: 80px; text-align: center; border-right: 4px solid transparent; }
+.mycred-review-thumbnail img { width: 74px; vertical-align: middle; }
+.mycred-review-text { overflow: hidden; }
+.mycred-review-text h3 { font-size: 24px; margin: 0 0 5px; font-weight: 400; line-height: 1.3; }
+.mycred-review-text p { font-size: 13px; margin: 0 0 5px; }
+.mycred-review-ul { margin: 0; padding: 0; }
+.mycred-review-ul li { display: inline-block; margin-right: 15px; }
+.mycred-review-ul li a { display: inline-block; color: #10738B; text-decoration: none; padding-left: 26px; position: relative; }
+.mycred-review-ul li a span { position: absolute; left: 0; top: -2px; }
+
+a.thickbox.open-plugin-details-modal {
+    text-decoration: none ;
+}
+
+.wrap {
+    margin: 10px 20px 0 2px;
+}
+
+.wrap h1.wp-heading-inline {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    font-weight: 600;
+}
+
+h2, h3 {
+    color: #1d2327;
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+
+
+
+p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+/*.theme.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+   flex-wrap: wrap;
+}*/
+
+
+ .theme-browser .theme {
+   min-height: 10em;
+}
+
+.membership-license-activated{
+    float: left;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: 44px;
+    font-size: 28px;
+    color: #15b915;
+}
+.membership-license-inactive{
+    float: left;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: 44px;
+    font-size: 28px;
+    color: #b91515;
+}
+.mycred-addon-network-active{
+    pointer-events: none;
+    cursor: default;
+}
+
+/** myCred Membership Table **/
+.mmc_table{
+    /* background-color:#FFF; */ padding: 0 20px 0 20px;
+}
+.mmc-packages {
+    display: table;
+    margin: 0 auto;
+}
+.most-popular{
+    position: relative;
+}
+.mmc_table_column{
+    background-color:#FFF;
+    display: table-cell;
+}
+.mmc_table .mmc_table_plan {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(89, 40, 158, 1);
+    text-align: center;
+    line-height: 24px;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin: 11% 0;
+    text-transform: uppercase;
+}
+.mmc_table .mmc_table_pricing_worth {
+    color: #999;
+    font-weight: normal;
+    text-align:center;
+    margin-bottom: 0px;
+    font-size: 20px;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+}
+
+.mmc_table .mmc_table_pricing_current {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(89, 40, 158, 1);
+    text-align: center;
+    line-height: 24px;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin: 3% 0 14% 0;
+}
+
+.mmc_table .mmc_table_pricing .mmc_table_pricing_dollar_sign{
+    font-size: 26px;
+    vertical-align: super;
+}
+
+.mmc_table .mmc_table_plan_sites {
+    font-size: 16px;
+    color: rgba(136, 0, 255, 1);
+    text-align: center;
+    line-height: 24px;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin: 11% 0;
+    font-weight: normal;
+    margin: 3% 0;
+    margin-bottom: 0 !important;
+
+}
+
+.mmc_table .mmc_table_plan_billed{
+    color: #999ea9;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.mmc_table .mmc_table_addon_details li{
+    position: relative;
+    display: block;
+    padding: 8px 25px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 16px;
+    color: rgba(89, 40, 158, 1) !important;
+    text-align: center;
+    line-height: 24px;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.mmc_table .mmc_table_get_started{
+    text-align:center;
+    margin-bottom: 30px;
+}
+.mmc_table .mmc_table_get_started a{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1) !important;
+    text-align: center;
+    line-height: 19px;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    background: rgba(106, 0, 255, 1);
+    border-radius: 25px;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    margin: 10% 0 0 0;
+     display: block; 
+    padding: 10px 40px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.mmc_table .border-right{
+    border-right: 1px solid #ccc;
+}
+
+.mmc_table .mmc_table_most_popular{
+    color: white;
+    background: #ff6f41;
+    padding: 8px 0px 6px 0px;
+    position: absolute;
+    top: -20px;
+    z-index: 99;
+    width: 150px;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+div#tabs_package_1 {
+    width: auto;
+    display: block;
+    float: none;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#tabs_package_1 a {
+    padding: 8px 10px;
+    height: 45px;
+    line-height: 42px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#tabs_package_1 a sup {
+    background: #f05d3e;
+    width: 97px;
+   /* height: 30px; */
+    word-break: break-all;
+    overflow: hidden;
+    padding: 10px 1px;
+    position: absolute;
+    top: -20px;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 14px;
+    right: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -6px;
+    display:none;
+}
+#tabs_package_1 a.active_pkg {
+  color: #000!important;
+    font-weight: bold;
+    color: purple !important;
+    text-decoration:underline;
+}
+.radio_btns_pkg{
+    width: 480px;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    color: black;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px #272727;    
+}
+div#tabs_package_1 {
+    position: relative;
+}
+#tabs_package_1 .switch_btn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-bottom:0px;
+}
+
+#tabs_package_1  .switch_btn input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#tabs_package_1  .slider_btn {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #894be0!important;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#tabs_package_1  .slider_btn:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.join_one_year,
+.join_three_year{
+        margin-bottom: 50px;    
+}
+#tabs_package_1  input:checked + #tabs_package_1  .slider_btn {
+  background-color: #894be0!important;
+}
+
+#tabs_package_1  input:checked +   .slider_btn:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+#tabs_package_1  .radio_btns_pkg{
+line-height:34px;
+}
+/* Rounded sliders */
+#tabs_package_1  .slider_btn.round {
+  border-radius: 34px;
+}
+
+#tabs_package_1  .slider_btn.round:before {
+  border-radius: 50%;
+}
+.show_cont{
+    display:block!important;
+}
+.hide_cont{
+    display:none!important;
+}
+.row.mycred-money-back {
+    display: none;
+}
+
+
+@media (min-width: 1640px) {
+
+.mycred-treasures .theme-browser .theme {
+    width: 29.7%;
+    margin: 0 3% 3% 0;
+    
+}
+
+.mycred-treasures .theme-id-container {
+    width: 100%;
+    height: 100%;
+   
+
+}
+
+.mycred-treasures .theme.active {
+    width: 30%;
+    width: calc(33.1% - 5em);
+}
+
+
+}
+
+
+/*@media screen and (min-width: 1600px) and (max-width: 2299px){
+.theme.active {
+    width: 30%;
+    width: calc(33.1% - 8px);
+}
+
+}*/
+
+@media (max-width: 1120px) {
+
+    .theme-browser .theme {
+    cursor: pointer;
+    float: left;
+    margin: 0 4% 4% 0;
+    position: relative;
+    width: 100%;
+    border: 1px solid #dcdcde;
+    box-shadow: 0 1px 1px -1px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+}
+
+}
+
+@media (max-width: 510px) {
+    div#tabs_package_1{
+        margin-bottom: 30px;    
+    }
+   #tabs_package_1 .radio_btns_pkg{
+        width: 100%!important;    
+    }
+}
+@media (max-width: 440px) {
+#tabs_package_1 a sup{
+    margin: 0px;
+    width:80px;
+    padding:3px 1px;
+}   
+
+    #tabs_package_1 a{
+        display: block;    
+    }
+    #tabs_package_1 a sup{
+    top: 0px;
+    right: 70px;
+    height:auto;
+        }
+}
+.three_year {
+    display: none;
+}
+.mmc_table .mmc_table_get_started a.three_year{
+    display: none;
+}
+
+.mmc-addons .theme .theme-screenshot img {
+    /* height: 100%; */
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mmc-addons .theme .theme-screenshot1 img {
+    /* height: 100%; */
+    width: 100%;
+  /*  text-align: center;
+    margin: 0 auto;*/
+}
+
+.mmc-addons .theme .theme-screenshot1 {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    transition: opacity .2s ease-in-out;
+    /*background-color: white;*/
+    text-align: center;
+}
+
+.mmc-addons .theme .theme-screenshot1:after {
+    padding-top: 0%;
+}
+
+.mmc-addons .theme .theme-screenshot1 img {
+    /*margin: 0 auto;*/
+    display: block;
+    float: none;
+    /*position: relative!important;*/
+}
+
+.mmc-addons .theme .theme-screenshot {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    transition: opacity .2s ease-in-out;
+    background-color: white;
+    text-align: center;
+}
+
+.mmc-addons .theme .theme-screenshot:after {
+    padding-top: 0%;
+}
+
+.mmc-addons .theme .theme-screenshot img {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    position: relative!important;
+    height: 262.19px;
+    width: 262.19px;
+}
+
+#myCRED-wrap h1{
+    display: block!important;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'mycred-font';
+    src: url('mycred-font/mycred.eot?85147245');
+    src: url('mycred-font/mycred.eot?85147245#iefix') format('embedded-opentype'),
+         url('mycred-font/mycred.woff?85147245') format('woff'),
+         url('mycred-font/mycred.ttf?85147245') format('truetype'),
+         url('mycred-font/mycred.svg?85147245#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dashicons-mycred:before {
+    content: '\e800';
+    font-family: "mycred-font";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mycred-support-page-container {
+    max-width: 1024px;
+}
+
+.mycred-support-page-content {
+    padding: 10px 27px 14px 27px;
+    background: white;
+    margin-top: 10px;
+}
+
+.mycred-support-page-content h2 {
+    margin-bottom: 2px;
+}
+
+.mycred-support-page-content p {
+    margin-top: 5px;
+}
+
+.mycred-treasure-pack {
+    /*background: white;*/
+    cursor: auto !important;
+}
+
+.mycred-treasure-pack-content {
+    background: white;
+    padding: 20px 20px 10px 20px;
+}
+
+.mycred-treasure-pack img {
+    width: 100%;
+}
+
+.mycred-treasure-pack h3 {
+    color: #2271b1;
+    margin: 8px 0 0 0;
+}
+
+.mycred-treasure-pack p {
+    margin: 8px 0 0 0;
+}
+
+.mycred-treasure-pack .theme-id-container .theme-name {
+    padding: 20px;
+}
+
+.mycred-treasure-pack .theme-id-container .theme-actions {
+    padding: 14px 20px !important;
+}
+.mycred-tools-ba-award-table p{
+    margin: 0px;
+}
+
+.mycred-tools-ba-award-table tr td:first-child {
+    min-width: 200px;
+    max-width: 200px;
+}
+.mycred-tools-ba-award-table .tb-zero-padding{
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+.theme-screenshot-item {
+    width: 278px;
+    height: 278px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-screenshot .theme-screenshot-item img {
+    height: unset !important;
+    width: 100% !important;
+}

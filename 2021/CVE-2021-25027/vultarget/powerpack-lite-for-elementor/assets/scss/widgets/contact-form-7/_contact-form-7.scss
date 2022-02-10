@@ -1,0 +1,35 @@
+.pp-contact-form-7 {
+    .wpcf7-form {
+        &:after {
+            clear: both;
+            content: "";
+            font-size: 0;
+            height: 0;
+            display: block;
+            visibility: hidden;
+        }
+        label,
+        .wpcf7-form-control-wrap {
+            display: block;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    &.labels-hide {
+        .wpcf7-form label {
+            display: none;
+        }
+    }
+}
+.pp-contact-form-7-title {
+    margin-bottom: 10px;
+}
+.pp-contact-form-7-description {
+    margin-bottom: 20px;
+}
+.pp-contact-form-7-button-full-width {
+    .wpcf7-form-control.wpcf7-submit {
+        width: 100%;
+    }
+}

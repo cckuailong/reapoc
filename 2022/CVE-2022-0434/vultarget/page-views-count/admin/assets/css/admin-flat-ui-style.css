@@ -1,0 +1,209 @@
+/*-------------------------------------------------------------------------------------------*/
+/* A3rev Panel UI FLAT */
+/*-------------------------------------------------------------------------------------------*/
+@charset "UTF-8";
+
+.a3rev_panel_container input[type="text"], .a3rev_panel_container input[type="email"] , .a3rev_panel_container input[type="number"], .a3rev_panel_container input[type="password"] { height:auto !important; }
+
+/* Font Control */
+.a3rev_panel_container .a3rev-ui-typography-preview { height:24px; margin-top: 1px; vertical-align: top; }
+
+/* Color Control */
+.a3rev_panel_container .wp-picker-container, .a3rev_panel_container .wp-picker-container:active { vertical-align:bottom; }
+.a3rev_panel_container .wp-color-result { top:1px !important; vertical-align: top !important; }
+.a3rev_panel_container input.a3rev-color-picker { font-family: open sans !important; margin-top: 1px !important;}
+.a3rev_panel_container input.wp-picker-default { margin-top: 1px !important; vertical-align:top; }
+
+/* Settings Preview */
+.a3rev_panel_container .a3rev-ui-settings-preview { height:24px; margin-top: 1px; vertical-align: top; }
+
+/* Border Rounded Corner Control */
+.a3rev_panel_container .a3rev-ui-border_corner-span { float:left; width:150px; }
+.a3rev_panel_container .forminp-border_corner .iPhoneCheckContainer .iPhoneCheckLabelOff, .a3rev_panel_container .forminp-border_corner .iOSCheckContainer .iOSCheckLabelOff {
+	background: #569aef !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border: 1px solid #666666;
+	border-radius: 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	
+	color: #FFFFFF !important;
+  	text-shadow: none !important;
+}
+
+/* Box Shadow Control */
+.a3rev_panel_container .forminp-box_shadow .a3rev-ui-settings-control .iPhoneCheckContainer, .a3rev_panel_container .forminp-box_shadow .a3rev-ui-settings-control .iOSCheckContainer { top:0px; vertical-align:top; }
+.a3rev_panel_container .forminp-box_shadow .a3rev-ui-settings-control .iPhoneCheckContainer .iPhoneCheckLabelOff, .a3rev_panel_container .forminp-box_shadow .a3rev-ui-settings-control .iOSCheckContainer .iOSCheckLabelOff {
+	background: #569aef !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border: 1px solid #666666;
+	border-radius: 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	
+	color: #FFFFFF !important;
+  	text-shadow: none !important;
+}
+
+/* SLIDER Control */
+.a3rev_panel_container .a3rev-ui-slide {
+    background: #ededed !important;
+	border: 1px solid #666 !important;
+	border-radius: 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	
+    height: 10px;
+    width: 220px;
+	position:relative;
+	float:left;
+	margin-top:4px;
+}
+.a3rev_panel_container .a3rev-ui-slide .ui-slider-handle {
+	background: #666 !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border: 1px solid #666 !important;
+	border-radius: 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	
+	position: absolute;
+	z-index: 2;
+	width: 22px;
+	height: 23px;
+	cursor: pointer;
+	font-weight: bold;
+	color: #1C94C4;
+	outline: none;
+	top: -8px;
+	margin-left: -11px;
+}
+.a3rev_panel_container .a3rev-ui-slide .ui-slider-range {
+	background: #569aef !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border: 1px solid #666 !important;
+	border-left:none !important;
+	border-radius: 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	
+	position: absolute;
+	top: -1px;
+	height: 100%;
+}
+
+/* OnOff Radio Control */
+.a3rev_panel_container .forminp-onoff_radio li .iPhoneCheckContainer label {
+	margin:0 !important;	
+}
+
+/* OnOff Checkbox & Radio Control */
+.a3rev_panel_container .iPhoneCheckContainer label, .a3rev_panel_container .iOSCheckContainer label {
+	white-space: nowrap;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: bold;
+    font-family: inherit !important;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 0;
+    overflow: hidden;
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+}
+.a3rev_panel_container label.iPhoneCheckLabelOff, .a3rev_panel_container label.iOSCheckLabelOff {
+	background: #ededed !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border: 1px solid #666;
+	border-radius: 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	
+    height: 23px;
+	color: #000 !important;
+	text-shadow: none !important;
+	text-align: right;
+	right: 0;
+}
+.a3rev_panel_container label.iPhoneCheckLabelOn, .a3rev_panel_container label.iOSCheckLabelOn {
+	background: #569aef !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border: 1px solid #666;
+	border-radius: 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	
+    height: 23px;
+	text-align:left;
+	color: #FFFFFF;
+  	text-shadow: none !important;
+  	left: 0;
+}
+.a3rev_panel_container .iPhoneCheckHandle, .a3rev_panel_container .iOSCheckHandle {
+	background: #666 !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border: 1px solid #666;
+	border-radius: 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: -1px;
+	width: 35px;
+	height:23px;
+}
+
+/* Switcher Checkbox Control */
+.a3rev_panel_container .forminp-switcher_checkbox .iPhoneCheckContainer .iPhoneCheckLabelOff, .a3rev_panel_container .forminp-switcher_checkbox .iOSCheckContainer .iOSCheckLabelOff {
+	background: #569aef !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border: 1px solid #666666;
+	border-radius: 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	
+	color: #FFFFFF !important;
+  	text-shadow: none !important;
+}
+
+/* Style for Chosen lib */
+.chosen-container-single .chosen-single {
+	background: #FFF !important;	
+}
+.chosen-container-active .chosen-single-with-drop {
+	background: #FFF !important;	
+}
+.chosen-container-multi .chosen-choices .search-choice {
+	background: #e4e4e4 !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow   : none !important;
+	box-shadow        : none !important;
+}
+
+/* Thickbox of Uploader */
+#media-upload .ui-sortable .media-item {
+	clear:both;	
+}
+
+@media screen and ( max-width: 782px ) {
+	#media-items {
+		width:100%;	
+	}
+	.media-item .describe input[type="text"], .media-item .describe textarea {
+		width:100%;	
+	}
+}

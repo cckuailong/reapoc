@@ -1,0 +1,53 @@
+.tribe-editor__tickets__capacity-row {
+	border-top: 1px solid #E1E3E6;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tribe-editor__tickets__capacity-row-left {
+	flex: 1;
+	display: flex;
+	padding: 18px 0;
+}
+
+.tribe-editor__tickets__capacity-row-right {
+	flex: none;
+	width: 85px;
+	padding-right: 15px;
+	text-align: right;
+	color: #000;
+
+	.tribe-editor__tickets__settings-dashboard--loading & {
+		color: #AEB4BB;
+	}
+
+	input[type="number"] {
+		width: 85px;
+		margin-right: -15px;
+		text-align: right;
+	}
+}
+
+.tribe-editor__tickets__capacity-row-label {
+	flex: none;
+	font-size: 15px;
+	line-height: 18px;
+	color: #000;
+
+	.tribe-editor__tickets__settings-dashboard--loading & {
+		color: #AEB4BB;
+	}
+}
+
+.tribe-editor__tickets__capacity-row-items {
+	flex: none;
+	padding-left: 7px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #545D66;
+
+	.tribe-editor__tickets__settings-dashboard--loading & {
+		color: #AEB4BB;
+	}
+}

@@ -1,0 +1,126 @@
+.pp-content-ticker-container {
+    background: #f4f4f4;
+    display: flex;
+    overflow: hidden;
+}
+
+.pp-content-ticker-heading-left {
+	.pp-content-ticker-heading {
+		justify-content: flex-start;
+	}
+}
+
+.pp-content-ticker-heading-center {
+	.pp-content-ticker-heading {
+		justify-content: center;
+	}
+}
+
+.pp-content-ticker-heading-right {
+	.pp-content-ticker-heading {
+		justify-content: flex-end;
+	}
+}
+
+.pp-content-ticker-heading {
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 10px 15px;
+    position: relative;
+}
+.pp-content-ticker-heading-icon {
+    margin-right: 5px;
+    &-right {
+        order: 1;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+}
+.pp-content-ticker-heading-arrow {
+    .pp-content-ticker-heading {
+        &:after {
+            content: '';
+            position: absolute;
+            right: -20px;
+            border: 10px solid transparent;
+            border-left-color: #333;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.pp-content-ticker-wrap {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 15px;
+}
+.pp-content-ticker {
+    overflow: hidden;
+    .swiper-wrapper {
+        align-items: center;
+		.swiper-slide {
+			text-align: left;
+		}
+    }
+    .pp-content-ticker-item-title {
+        font-size: 20px;
+        margin: 0;
+        a {
+            color: inherit;
+            font-size: inherit;
+        }
+    }
+}
+.pp-content-ticker-content {
+    display: flex;
+    align-items: center;
+}
+.pp-content-ticker-image {
+    flex-shrink: 0;
+    margin-right: 15px;
+    width: 40px;
+}
+.pp-content-ticker-meta {
+    font-size: 14px;
+}
+.pp-content-ticker-navigation {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    .swiper-button-next,
+    .swiper-button-prev {
+        background: transparent;
+        font-size: 18px;
+        line-height: 1.2;
+        height: auto;
+        margin: 0;
+        padding: 0 6px;
+        position: static;
+        text-align: center;
+        width: auto;
+    }
+    .swiper-button-prev {
+        margin-right: 6px;
+    }
+}
+
+@mixin content-ticker--mobile {
+	.pp-content-ticker-heading {
+		width: 100% !important;
+	}
+	.pp-content-ticker-heading-arrow .pp-content-ticker-heading:after {
+		display: none;
+	}
+	.pp-content-ticker-container {
+		flex-direction: column;
+	}
+	.pp-content-ticker-navigation {
+		justify-content: center;
+	}
+}

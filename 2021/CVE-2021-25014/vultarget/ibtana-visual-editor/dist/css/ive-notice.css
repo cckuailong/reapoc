@@ -1,0 +1,51 @@
+#ive-admin-notice {
+  border: none;
+  margin: 5px 0 15px;
+  padding: 1px 0;
+  height: 100%;
+  background: none;
+  box-shadow: none;
+  display: none;
+}
+
+[data-ive-admin-notice-id] {
+  position: relative;
+}
+
+.ive-admin-notice-dismiss {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  border: none;
+  margin: 0;
+  padding: 9px;
+  background: 0 0;
+  color: #787c82;
+  cursor: pointer;
+}
+
+.ive-admin-notice-dismiss::before {
+  background: 0 0;
+  color: #787c82;
+  content: "\f153";
+  display: block;
+  font: normal 16px/20px dashicons;
+  speak: never;
+  height: 20px;
+  text-align: center;
+  width: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ive-admin-notice-sirat {
+  display: none;
+}
+
+#ive-admin-notice-sirat a.notice-dismiss {
+  text-decoration: none;
+}
+/* #ive-admin-notice p {
+  margin: 0;
+  padding: 0;
+} */

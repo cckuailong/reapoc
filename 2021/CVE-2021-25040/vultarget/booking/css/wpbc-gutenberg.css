@@ -1,0 +1,191 @@
+/* Main Wrapper */
+.wpbc_gb_div_block {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-size: 1.2em;
+	padding: 20px 15px 5px;			/*	required for correct mouseover in top of button, otherwise appear some weird issue of not ability to click on top of button	*/
+}
+
+/** Width  and Height of Blocks ***************************************************************************************/
+
+/*  Block Preview == TimeLine == */
+.wpbc_gb_block_preview_bookingtimeline {
+	width: 100%;
+}
+.wpbc_gb_block_preview_bookingtimeline .wpbc_gb_block_shortcode_preview_content {
+	/* Minus height of footer */
+	height: 260px;
+}
+
+/*  Block Preview  == Booking Form,  Availability Calendar  == */
+.wpbc_gb_block_preview_booking,
+.wpbc_gb_block_preview_bookingcalendar {
+	width: 284px;
+}
+.wpbc_gb_block_preview_booking .wpbc_gb_block_shortcode_preview_content,
+.wpbc_gb_block_preview_bookingcalendar .wpbc_gb_block_shortcode_preview_content {
+	/* Minus height of footer */
+	min-height: 260px;
+}
+
+
+
+/** Block Templates Structure *****************************************************************************************/
+/*
+DIV.wpbc_gb_block_shortcode_preview_wrapper.wpbc_gb_block_preview_bookingtimeline
+
+	DIV.wpbc_gb_block_shortcode_preview_content
+
+		DIV.wpbc_gb_block_preview_inner_header
+
+			H3.wpbc_gb_block_preview_inner_title_text
+			A.wpbc_gb_block_preview_inner_title_edit
+			DIV.wpbc_gb_block_preview_inner_title_desc
+
+		DIV.wpbc_gb_block_preview_inner_body
+
+			DIV.wpbc_gb_block_preview_inner_params_row
+				strong 	span 	em
+				...
+
+	DIV.wpbc_gb_block_preview_inner_footer
+		DIV.wpbc_gb_block_preview_inner_shortcode
+
+
+*/
+
+/*  == Block Preview == */
+.wpbc_gb_block_shortcode_preview_wrapper {
+	font-size: 13px;  /* FixIn: 8.4.3.2	*/
+	line-height: 2em; /* FixIn: 8.4.3.2	*/
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* FixIn: 8.4.3.2	*/
+/*  == Block Preview - Content and Header == */
+.wpbc_gb_block_shortcode_preview_wrapper .wpbc_gb_block_shortcode_preview_content {
+	border: #e4951b solid 1px;
+	border-bottom: none;
+	padding: 0 10px 20px;
+}
+
+/*  == Block Preview - Header == */
+.wpbc_gb_block_shortcode_preview_wrapper .wpbc_gb_block_preview_inner_header{
+	border-bottom: #e4951b solid 1px;
+	margin: 0.5em 0 1em;
+	font-weight: 600;
+}
+
+/*  == Block Preview - Header Title == */
+.wpbc_gb_block_shortcode_preview_wrapper .wpbc_gb_block_preview_inner_title_text {
+	font-size: 1.3em;
+	vertical-align: middle;
+	line-height: 2.1em;
+	float: left;
+	margin: 0;
+}
+
+/*  == Block Preview - Header link - Click to edit == */
+.wpbc_gb_block_shortcode_preview_wrapper .wpbc_gb_block_preview_inner_title_edit {
+	font-size: 0.85em;
+	vertical-align: middle;
+	cursor: pointer;
+	float: right;
+	padding: 1em 0 0;
+}
+
+/*  == Block Preview - Header Description == */
+.wpbc_gb_block_shortcode_preview_wrapper .wpbc_gb_block_preview_inner_title_desc {
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: left;
+	width: 100%;
+	margin: 10px 0 10px;
+	clear: both;
+	font-weight: 400;
+	color: #777;
+	line-height: 1.5em;
+}
+
+/*  == Block Preview - Content == */
+.wpbc_gb_block_shortcode_preview_wrapper .wpbc_gb_block_preview_inner_body{
+
+}
+
+/*  == Block Preview - Footer == */
+.wpbc_gb_block_shortcode_preview_wrapper .wpbc_gb_block_preview_inner_footer {
+	width: 100%;
+	background: #f0f0f0;
+	margin: 0;
+	padding: 10px;
+	color: #777;
+	border: #e4951b solid 1px;
+	border-top: none;
+	font-size: 0.9em;
+	font-weight: 600;
+}
+
+
+/** B U T T O N S   and some other elements   *************************************************************************/
+
+
+/* Green Preview Button */
+.editor-block-list__block.wpbc-gutenberg-update-view .wpbc-gutenberg-update-preview-btn.button {
+	background-color: rgb(135, 207, 59);
+	color: rgb(255, 255, 255);
+	border-color: rgb(135, 207, 59);
+	text-align: center;
+	font-family: Helvetica, Arial;
+	margin:15px 0 35px -30px;
+	width: 50%;
+	height: 3em;
+	vertical-align: middle;
+	line-height: 3em;
+	font-weight: 600;
+}
+
+
+
+
+/* Show Blue configuration shortcode button,  if block  selected or when  no shortcode at all */
+.editor-block-list__block .wpbc_gb_div_block.wpbc_gb_div_block_no_shortcode a.wpbc-gutenberg-open-btn,
+.editor-block-list__block.is-selected .wpbc_gb_div_block a.wpbc-gutenberg-open-btn,
+.block-editor-block-list__block.is-selected .wpbc_gb_div_block a.wpbc-gutenberg-open-btn /* FixIn: 8.7.6.11 */ {
+	display: block;
+}
+/* Hide Green Preview block buttin  inside of the Block  for WordPress older than 5.4 update*/
+.editor-block-list__block.is-selected .wpbc-gutenberg-update-view .wpbc-gutenberg-update-preview-btn{
+	visibility: hidden;
+}
+
+/* PopUp Blue Button */
+.wpbc_gb_div_block a.wpbc-gutenberg-open-btn,
+.wpbc_gb_div_block a.wpbc-gutenberg-open-btn:hover,
+.wpbc_gb_div_block a.wpbc-gutenberg-open-btn:focus {
+									display: none;
+	background-color: #3b9fcf;
+	color: #fff;
+	border-color: #3b9fcf;
+	text-align: center;
+	font-family: Helvetica, Arial;
+	margin-bottom: 20px;
+}
+
+/* Shortcode Input Text */
+.wpbc_gb_div_block .wpbc_gb_text_shortcode {
+	opacity: 0.3;
+									display: none;
+	padding: 5px 10px;
+	clear: both;
+	margin: 20px 0 0;
+	height: 2.4em;
+	cursor: pointer;
+	font-weight: 600;
+	background: none repeat scroll 0 0 #E9E9E9;
+	border: 1px solid #BBBBBB;
+	width: 100%;
+}
+
+/* FixIn: 8.4.3.2	*/
+div.wpbc_gb_block_shortcode_preview_wrapper strong {
+	font-weight: 600;
+}

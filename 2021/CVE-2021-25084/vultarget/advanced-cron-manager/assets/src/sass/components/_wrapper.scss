@@ -1,0 +1,39 @@
+.tools_page_advanced-cron-manager {
+
+	#poststuff {
+	    padding-top: 25px;
+
+	    @include media( '<=xsmall' ) {
+			padding-top: 10px;
+		}
+
+	    #post-body {
+		    margin-right: 470px;
+
+		    @include media( '<=xlarge' ) {
+				margin-right: 320px;
+			}
+
+		}
+
+	    #postbox-container-1 {
+		    float: right;
+		    margin-right: -470px;
+		    width: 450px;
+
+		    @include media( '<=xlarge' ) {
+				margin-right: -320px;
+				width: 300px;
+			}
+
+		}
+
+	}
+
+	@include media( '<=xsmall' ) {
+		.wrap > .page-title-action {
+			display: none;
+		}
+	}
+
+}

@@ -1,0 +1,107 @@
+/**
+ * This CSS file was auto-generated via PostCSS
+ *
+ * Contributors should avoid editing this file, but instead edit the associated
+ * src/resources/postcss/ file. For more information, check out our engineering
+ * docs on how we handle CSS in our engineering docs.
+ *
+ * @see: https://the-events-calendar.github.io/products-engineering/docs/code-standards/css/
+ */
+
+.tribe-tpp {
+	padding: 20px 0;
+}
+
+	.tribe-tpp h2 {
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+
+.tribe-tickets-has-tpp .tribe-tickets-meta-row {
+	display: table-row;
+}
+
+.tribe-tpp-message-display .tribe-tpp-messages {
+		display: block;
+	}
+
+.tribe-tpp-messages {
+	display: none;
+	padding: 10px 10px 5px;
+}
+
+.tribe-tpp-message {
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 12px;
+	margin: 0 0 5px;
+	padding: 0 0.6em;
+}
+
+.tribe-tpp-message-success {
+	background-color: #ffffe0;
+	border-color: #e6db55;
+}
+
+.tribe-tpp-message-error {
+	background-color: #ffebe8;
+	border-color: #c00;
+}
+
+.tribe-tpp-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tribe-tpp-list > .tribe-item {
+		border: 1px solid #ededed;
+		border-bottom: 0;
+		min-height: 105px;
+		padding: 20px;
+	}
+
+.tribe-tpp-list > .tribe-item:last-child {
+			border-bottom: 1px solid #ededed;
+			margin-bottom: 20px;
+		}
+
+.tribe-tpp-list > .tribe-item.tribe-disabled {
+			background-color: #efefef;
+			border-color: #ddd;
+			color: #717171;
+		}
+
+.tribe-tpp-list > .tribe-item.tribe-disabled:last-child {
+				border-bottom-color: #ddd;
+			}
+
+.tribe-tpp-list > .tribe-item .tribe-answer {
+			display: inline-block;
+			float: right;
+		}
+
+.tribe-tpp-list > .tribe-item table {
+			border: 0;
+			margin: 0;
+		}
+
+.tribe-tpp-list > .tribe-item td {
+			border: 0;
+		}
+
+/* = Tickets & Tribe Commerce PayPal Modules Front End Styles
+============================================= */
+
+/* Title */
+
+.tribe-events-tickets-title.tribe--tpp {
+	margin: 0;
+}
+
+/* Tribe Commerce PayPal Table (differences only) */
+
+.tribe-tickets-purchase-disabled {
+	opacity: 0.3;
+}

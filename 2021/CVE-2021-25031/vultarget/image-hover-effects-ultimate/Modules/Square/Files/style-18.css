@@ -1,0 +1,109 @@
+.oxi-image-hover-style-18-square .oxi-image-hover-style-square{
+    -webkit-perspective: 1700px;
+    -moz-perspective: 1700px;
+    perspective: 1700px;
+}
+.oxi-image-square-hover-style-18 .oxi-image-hover-figure{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+.oxi-image-square-hover-style-18 .oxi-image-hover-caption-tab {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    overflow: hidden;
+}
+.oxi-image-square-hover-style-18 .oxi-image-hover-figure .oxi-image-hover-image {
+    width: 100%;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+.oxi-image-square-hover-style-18 .oxi-image-hover-figure .oxi-image-hover-button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+.oxi-image-square-hover-style-18 .oxi-image-hover-button {
+    text-align: right;
+}
+.oxi-image-square-hover-style-18 .oxi-image-hover-figure .oxi-image-hover-image{
+   overflow: hidden;
+}
+
+.oxi-image-square-hover-style-18 .oxi-image-hover-figure .oxi-image-hover-image img{
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+.oxi-image-square-hover-style-18.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-image img,
+.oxi-image-square-hover-style-18.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-image img{
+    -webkit-transform: translateX(25%);
+    -moz-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    transform: translateX(25%);
+}
+.oxi-image-square-hover-style-18.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-image img,
+.oxi-image-square-hover-style-18.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-image img{
+    -webkit-transform: translateX(-25%);
+    -moz-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%);
+}
+.oxi-image-square-hover-style-18 .oxi-image-hover-figure .oxi-image-hover-figure-caption {
+    width: 50%;
+    opacity: 0;
+    z-index:1;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+.oxi-image-square-hover-style-18 .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption {
+    right: auto;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+
+}
+.oxi-image-square-hover-style-18.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-18.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption{
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+.oxi-image-square-hover-style-18 .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption {
+   left: auto;
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+.oxi-image-square-hover-style-18.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-18.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption{
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}

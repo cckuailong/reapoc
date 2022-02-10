@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1025px) {
+    @include grid--desktop();
+}
+@media (max-width: 1024px) {
+    @include image-accordion--tablet();
+    @include info-box--tablet();
+    @include info-list--tablet();
+}
+@media only screen and (max-width: 1024px) and (min-width: 766px) {
+    @include grid--tablet();
+}
+@media only screen and (max-width: 767px) {
+    @include image-accordion--mobile();
+    @include info-box--mobile();
+    @include info-list--mobile();
+    @include grid--mobile();
+}

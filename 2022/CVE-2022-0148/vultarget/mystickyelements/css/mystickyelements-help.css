@@ -1,0 +1,156 @@
+.mystickyelements-help-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1001
+}
+
+.mystickyelements-help-btn a {
+    display: block;
+    border: 3px solid #FFF;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative
+}
+
+.mystickyelements-help-btn a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%
+}
+
+.mystickyelements-help-form {
+    position: fixed;
+	display: none;
+    right: 85px;
+    border: 1px solid #e9edf0;
+    bottom: 25px;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 320px;
+    z-index: 1001;
+    direction: ltr;
+    opacity: 0;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s
+}
+
+.mystickyelements-help-form.active {
+    opacity: 1;
+	display: block;
+    pointer-events: inherit
+}
+
+.mystickyelements-help-header {
+    background: #f4f4f4;
+    border-bottom: solid 1px #e9edf0;
+    padding: 5px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 16px;
+    text-align: right
+}
+
+.mystickyelements-help-header b {
+    float: left
+}
+
+.mystickyelements-help-content {
+    margin-bottom: 10px;
+    padding: 20px 20px 10px
+}
+
+.mystickyelements-help-form p {
+    margin: 0 0 1em
+}
+
+.mystickyelements-form-field {
+    margin-bottom: 10px
+}
+
+.mystickyelements-form-field input, .mystickyelements-form-field textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c5c5c5
+}
+
+.mystickyelements-form-field textarea {
+    height: 70px
+}
+
+.mystickyelements-help-button {
+    border: none;
+    padding: 8px 0;
+    width: 100%;
+    background: #ff6624;
+    color: #fff;
+    border-radius: 18px
+}
+
+.mystickyelements-help-form .error-message {
+    font-weight: 400;
+    font-size: 14px
+}
+
+.mystickyelements-help-form input.input-error, .mystickyelements-help-form textarea.input-error {
+    border-color: #dc3232
+}
+
+.mystickyelements-help-btn span.tooltiptext {
+    position: absolute;
+    background: #000;
+    font-size: 12px;
+    color: #fff;
+    top: -30px;
+    width: 140%;
+    text-align: center;
+    left: -20%;
+    border-radius: 5px;
+    direction: ltr
+}
+
+p.error-p, p.success-p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center
+}
+
+.mystickyelements-help-btn span.tooltiptext:after {
+    bottom: -20px;
+    content: "";
+    transform: translateX(-50%);
+    height: 11px;
+    width: 1px;
+    border-width: 10px 5px 0;
+    border-style: solid;
+    border-color: #000 transparent transparent;
+    left: 50%;
+    position: absolute
+}
+
+.mystickyelements-help-content .mystickyelements-help-center{
+	margin: 5px 0 0;
+	text-align: center;
+}
+.mystickyelements-help-content .mystickyelements-help-center a:focus,
+.mystickyelements-help-content .mystickyelements-help-center a:hover,
+.mystickyelements-help-content .mystickyelements-help-center a{
+	text-decoration: none;
+	color: none;
+	box-shadow: none;
+	outline: none;
+}

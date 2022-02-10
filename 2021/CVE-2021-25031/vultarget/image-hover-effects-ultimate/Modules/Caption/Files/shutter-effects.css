@@ -1,0 +1,286 @@
+ .oxi-addons-container [class^='oxi-image-shutter-'],
+ .oxi-addons-container [class*=' oxi-image-shutter-'] {
+     overflow: hidden;
+ }
+
+ .oxi-addons-container [class^='oxi-image-shutter-out-']:before,
+ .oxi-addons-container [class*=' oxi-image-shutter-out-']:before {
+     position: absolute;
+     content: '';
+     -webkit-transition-delay: 0.105s;
+     -moz-transition-delay: 0.105s;
+     -o-transition-delay: 0.105s;
+     transition-delay: 0.105s;
+ }
+
+ .oxi-addons-container [class^='oxi-image-shutter-out-'] .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-shutter-out-'] .oxi-image-hover-figure-caption {
+     opacity: 0;
+     -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+     -o-transition-delay: 0s;
+     transition-delay: 0s;
+ }
+
+ .oxi-addons-container [class^='oxi-image-shutter-out-']:hover:before,
+ .oxi-addons-container [class*=' oxi-image-shutter-out-']:hover:before,
+ .oxi-addons-container [class^='oxi-image-shutter-out-'].oxi-touch:before,
+ .oxi-addons-container [class*=' oxi-image-shutter-out-'].oxi-touch:before {
+     -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+     -o-transition-delay: 0s;
+     transition-delay: 0s;
+ }
+
+ .oxi-addons-container [class^='oxi-image-shutter-out-']:hover .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-shutter-out-']:hover .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class^='oxi-image-shutter-out-'].oxi-touch .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-shutter-out-'].oxi-touch .oxi-image-hover-figure-caption {
+     opacity: 1;
+     -webkit-transition-delay: 0.105s;
+     -moz-transition-delay: 0.105s;
+     -o-transition-delay: 0.105s;
+     transition-delay: 0.105s;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-out-horizontal:before {
+     left: 50%;
+     right: 50%;
+     top: 0;
+     bottom: 0;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-out-horizontal:hover:before,
+ .oxi-addons-container .oxi-image-shutter-out-horizontal.oxi-touch:before {
+     left: 0;
+     right: 0;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-out-vertical:before {
+     top: 50%;
+     bottom: 50%;
+     left: 0;
+     right: 0;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-out-vertical:hover:before,
+ .oxi-addons-container .oxi-image-shutter-out-vertical.oxi-touch:before {
+     top: 0;
+     bottom: 0;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-out-diagonal-1:before {
+     top: 50%;
+     bottom: 50%;
+     left: -35%;
+     right: -35%;
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+ }
+
+ .oxi-addons-container .oxi-image-shutter-out-diagonal-1:hover:before,
+ .oxi-addons-container .oxi-image-shutter-out-diagonal-1.oxi-touch:before {
+     top: -35%;
+     bottom: -35%;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-out-diagonal-2:before {
+     top: 50%;
+     bottom: 50%;
+     left: -35%;
+     right: -35%;
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     -ms-transform: rotate(-45deg);
+     -o-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+ }
+
+ .oxi-addons-container .oxi-image-shutter-out-diagonal-2:hover:before,
+ .oxi-addons-container .oxi-image-shutter-out-diagonal-2.oxi-touch:before {
+     top: -35%;
+     bottom: -35%;
+ }
+
+ .oxi-addons-container [class^='oxi-image-shutter-in-']:after,
+ .oxi-addons-container [class^='oxi-image-shutter-in-']:before,
+ .oxi-addons-container [class*=' oxi-image-shutter-in-']:after,
+ .oxi-addons-container [class*=' oxi-image-shutter-in-']:before {
+     position: absolute;
+     content: '';
+ }
+
+ .oxi-addons-container [class^='oxi-image-shutter-in-']:after,
+ .oxi-addons-container [class*=' oxi-image-shutter-in-']:after {
+     top: 0;
+     left: 0;
+ }
+
+ .oxi-addons-container [class^='oxi-image-shutter-in-']:before,
+ .oxi-addons-container [class*=' oxi-image-shutter-in-']:before {
+     right: 0;
+     bottom: 0;
+ }
+
+ .oxi-addons-container [class^='oxi-image-shutter-in-'] .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-shutter-in-'] .oxi-image-hover-figure-caption {
+     opacity: 0;
+ }
+
+ .oxi-addons-container [class^='oxi-image-shutter-in-']:hover .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-shutter-in-']:hover .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class^='oxi-image-shutter-in-'].oxi-touch .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-shutter-in-'].oxi-touch .oxi-image-hover-figure-caption {
+     opacity: 1;
+     -webkit-transition-delay: 0.21s;
+     -moz-transition-delay: 0.21s;
+     -o-transition-delay: 0.21s;
+     transition-delay: 0.21s;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-horizontal:after,
+ .oxi-addons-container .oxi-image-shutter-in-horizontal:before {
+     width: 0;
+     height: 100%;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-horizontal:hover:after,
+ .oxi-addons-container .oxi-image-shutter-in-horizontal:hover:before,
+ .oxi-addons-container .oxi-image-shutter-in-horizontal.oxi-touch:after,
+ .oxi-addons-container .oxi-image-shutter-in-horizontal.oxi-touch:before {
+     width: 50%;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-vertical:after,
+ .oxi-addons-container .oxi-image-shutter-in-vertical:before {
+     height: 0;
+     width: 100%;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-vertical:hover:after,
+ .oxi-addons-container .oxi-image-shutter-in-vertical:hover:before,
+ .oxi-addons-container .oxi-image-shutter-in-vertical.oxi-touch:after,
+ .oxi-addons-container .oxi-image-shutter-in-vertical.oxi-touch:before {
+     height: 50%;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-horizontal:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-horizontal:before {
+     width: 0;
+     height: 100%;
+     opacity: 0.75;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-horizontal:hover:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-horizontal:hover:before,
+ .oxi-addons-container .oxi-image-shutter-in-out-horizontal.oxi-touch:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-horizontal.oxi-touch:before {
+     width: 100%;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-vertical:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-vertical:before {
+     height: 0;
+     width: 100%;
+     opacity: 0.75;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-vertical:hover:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-vertical:hover:before,
+ .oxi-addons-container .oxi-image-shutter-in-out-vertical.oxi-touch:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-vertical.oxi-touch:before {
+     height: 100%;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-1:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-1:before {
+     width: 200%;
+     height: 200%;
+     -webkit-transition: all 0.6s ease;
+     -o-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+     transition: all 0.6s ease;
+     opacity: 0.75;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-1:after {
+     -webkit-transform: skew(-45deg) translateX(-150%);
+     -moz-transform: skew(-45deg) translateX(-150%);
+     -ms-transform: skew(-45deg) translateX(-150%);
+     -o-transform: skew(-45deg) translateX(-150%);
+     transform: skew(-45deg) translateX(-150%);
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-1:before {
+     -webkit-transform: skew(-45deg) translateX(150%);
+     -moz-transform: skew(-45deg) translateX(150%);
+     -ms-transform: skew(-45deg) translateX(150%);
+     -o-transform: skew(-45deg) translateX(150%);
+     transform: skew(-45deg) translateX(150%);
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-1:hover:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-1.oxi-touch:after {
+     -webkit-transform: skew(-45deg) translateX(-50%);
+     -moz-transform: skew(-45deg) translateX(-50%);
+     -ms-transform: skew(-45deg) translateX(-50%);
+     -o-transform: skew(-45deg) translateX(-50%);
+     transform: skew(-45deg) translateX(-50%);
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-1:hover:before,
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-1.oxi-touch:before {
+     -webkit-transform: skew(-45deg) translateX(50%);
+     -moz-transform: skew(-45deg) translateX(50%);
+     -ms-transform: skew(-45deg) translateX(50%);
+     -o-transform: skew(-45deg) translateX(50%);
+     transform: skew(-45deg) translateX(50%);
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-2:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-2:before {
+     width: 200%;
+     height: 200%;
+     -webkit-transition: all 0.6s ease;
+     -o-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+     transition: all 0.6s ease;
+     opacity: 0.75;
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-2:after {
+     -webkit-transform: skew(45deg) translateX(-100%);
+     -moz-transform: skew(45deg) translateX(-100%);
+     -ms-transform: skew(45deg) translateX(-100%);
+     -o-transform: skew(45deg) translateX(-100%);
+     transform: skew(45deg) translateX(-100%);
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-2:before {
+     -webkit-transform: skew(45deg) translateX(100%);
+     -moz-transform: skew(45deg) translateX(100%);
+     -ms-transform: skew(45deg) translateX(100%);
+     -o-transform: skew(45deg) translateX(100%);
+     transform: skew(45deg) translateX(100%);
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-2:hover:after,
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-2.oxi-touch:after {
+     -webkit-transform: skew(45deg) translateX(0%);
+     -moz-transform: skew(45deg) translateX(0%);
+     -ms-transform: skew(45deg) translateX(0%);
+     -o-transform: skew(45deg) translateX(0%);
+     transform: skew(45deg) translateX(0%);
+ }
+
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-2:hover:before,
+ .oxi-addons-container .oxi-image-shutter-in-out-diagonal-2.oxi-touch:before {
+     -webkit-transform: skew(45deg) translateX(0%);
+     -moz-transform: skew(45deg) translateX(0%);
+     -ms-transform: skew(45deg) translateX(0%);
+     -o-transform: skew(45deg) translateX(0%);
+     transform: skew(45deg) translateX(0%);
+ }

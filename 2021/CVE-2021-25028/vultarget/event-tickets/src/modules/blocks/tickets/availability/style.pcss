@@ -1,0 +1,36 @@
+.tribe-editor__tickets__availability {
+	display: flex;
+	justify-content: flex-end;
+	padding: 2px 24px 12px 0;
+	font-size: 15px;
+	line-height: 18px;
+	color: #545D66;
+
+	.tribe-editor__tickets--settings-open & {
+		color: #AEB4BB;
+	}
+}
+
+.tribe-editor__tickets__availability-label {
+	flex: none;
+
+	.tribe-editor__numeric-label--count {
+		font-weight: bold;
+	}
+}
+
+.tribe-editor__tickets__availability-label--available {
+
+	+ .dashicons-info {
+		margin-right: 25px;
+		position: relative;
+
+		&:after {
+			content: '|';
+			padding-left: 10px;
+			padding-right: 10px;
+			position: absolute;
+			top: -2px;
+		}
+	}
+}

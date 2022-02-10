@@ -1,0 +1,33 @@
+/**
+ * Event Tickets - RSVP Structure
+ *
+ * @since 5.0.0
+ *
+ */
+
+.event-tickets {
+
+	.tribe-tickets__rsvp-wrapper {
+		background-color: var(--tec-color-background);
+		border: 1px solid var(--tec-color-border-secondary);
+		border-radius: var(--tec-border-radius-default);
+		margin-top: var(--tec-spacer-6);
+		max-width: 580px;
+		overflow: hidden;
+		position: relative;
+		transition: all 0.3s ease;
+		width: 100%;
+
+		@media (prefers-reduced-motion: reduce) {
+			transition: none;
+		}
+	}
+
+	.tribe-tickets__rsvp {
+		padding: var(--tec-spacer-10) var(--tec-grid-gutter-small-half);
+
+		@media (--viewport-medium) {
+			padding: var(--tec-spacer-5) var(-tec-grid-gutter-half);
+		}
+	}
+}

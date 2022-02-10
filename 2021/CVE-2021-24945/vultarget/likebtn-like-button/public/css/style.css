@@ -1,0 +1,127 @@
+#buddypress div.activity-meta a.at300b, 
+#buddypress div.activity-meta a.at300bo, 
+#buddypress div.activity-meta a.at300m,
+#bbpress-forums div.bbp-topic-content a.at300b, 
+#bbpress-forums div.bbp-topic-content a.at300bo, 
+#bbpress-forums div.bbp-topic-content a.at300m, 
+#bbpress-forums div.bbp-reply-content a.at300b,
+#bbpress-forums div.bbp-reply-content a.at300bo,
+#bbpress-forums div.bbp-reply-content a.at300m {
+    padding: 0 2px;
+}
+.likebtn-mlw {
+	list-style: outside none none;
+}
+.likebtn-likebox-list {
+	list-style: none;
+	position: relative;
+	margin: 10px 0;
+}
+.likebtn-likebox-list .likebtn-likebox-user {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	vertical-align: top;
+}
+a.likebtn-likebox-lnk,
+a.likebtn-likebox-lnk:hover,
+a.likebtn-likebox-lnk:active,
+a.likebtn-likebox-lnk:link,
+a.likebtn-likebox-lnk:a:visited {
+	text-decoration: none !important;
+	border: 0 !important;
+}
+.likebtn-likebox-txt {
+	margin: 10px 0 0;
+}
+
+/**
+ * Tooltip
+ */
+.likebtn-likebox-lnk {
+    display: inline;
+    position: relative;
+    white-space: nowrap;
+   	width: 32px;
+	height: 32px;
+	vertical-align: bottom;
+}
+.likebtn-likebox-lnk:hover:after {
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 38px;
+    color: #fff;
+    content: attr(title);
+    left: 0;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    /*width: 220px;*/
+    min-width: 40px;
+    font-size: 12px;
+}
+.likebtn-likebox-lnk:hover:before {
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 32px;
+    content: "";
+    left: 16px;
+    position: absolute;
+    z-index: 99;
+}
+.likebtn_act_snpt {
+    vertical-align: top;
+}
+
+/**
+ * Popup
+ */
+.likebtn-mdl-wrapper {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px #aaa;
+  overflow: hidden;
+  display: none;
+}
+
+.likebtn-mdl-title {
+  padding: 10px 15px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #f0f0f0;
+  height: 46px;
+}
+
+/*.likebtn-mdl-title h3 {
+  margin: 0;
+  line-height: 1.5em;
+  color: #333;
+}*/
+
+.likebtn-mdl-body {
+  padding: 10px 15px;
+  color: #555;
+}
+
+.likebtn-mdl-close {
+  float: right;
+  margin-top: 2px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 1;
+  border: 0;
+  background: transparent;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.likebtn-mdl-close:hover { color: #333; }
+
+.um-profile-edit.um-likebtn-profile {
+  line-height: 0;
+}
+.um-likebtn-edit {
+  margin-right: 44px;
+}

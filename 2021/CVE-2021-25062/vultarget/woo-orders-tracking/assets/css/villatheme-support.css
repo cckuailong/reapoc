@@ -1,0 +1,165 @@
+#villatheme-support a {
+	text-decoration: none;
+}
+
+#villatheme-support img {
+	max-width: 100%;
+}
+
+.villatheme-dashboard p {
+	display: inline-block;
+	width: 100%;
+}
+
+/*Admin notice*/
+.villatheme-dashboard .button {
+	padding: 4px 16px;
+	color: #393e46;
+	border-color: #eee;
+	margin-right: 7px;
+	z-index: 1 !important;
+}
+
+.villatheme-dashboard .button.button-primary {
+	color: #fff;
+	background: #00adb5;
+}
+
+.villatheme-dashboard .button.button-primary:hover {
+	border-color: #393e46;
+}
+
+.villatheme-dashboard .button.notice-dismiss {
+	background: transparent;
+	border: none;
+	line-height: 19px;
+}
+
+.villatheme-dashboard .button.notice-dismiss:hover {
+	background: transparent;
+}
+
+/*Widget Dashboard*/
+.villatheme-dashboard .villatheme-content .villatheme-left {
+	width: 100%;
+	display: block;
+}
+
+.villatheme-dashboard .villatheme-content .villatheme-right, .villatheme-dashboard .villatheme-notification-controls {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+/*Extensions page*/
+.villatheme-extension-content {
+	background: #fff;
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 20px 0 0;
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+}
+
+.villatheme-extension-content img {
+	max-width: 100%;
+}
+
+.villatheme-extension-content h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.villatheme-col-3 {
+	width: 23%;
+	box-sizing: border-box;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 1%;
+	box-shadow: 0 0 8px #CCC;
+	font-weight: 300;
+	position: relative;
+	line-height: 1.5;
+	padding: 15px;
+}
+
+.villatheme-col-4 {
+	width: 31.33%;
+	box-sizing: border-box;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 1%;
+	box-shadow: 0 0 8px #CCC;
+	font-weight: 300;
+	position: relative;
+	line-height: 1.5;
+	padding: 10px;
+}
+
+.villatheme-item-image {
+	position: relative;
+	display: inline-block;
+	font-size: 0;
+}
+
+.villatheme-item-title, .villatheme-item-description, .villatheme-item-rating, .villatheme-item-controls {
+	padding: 7px 0;
+}
+.villatheme-item-title a{
+	text-decoration: none;
+	color: #212121;
+}
+
+.villatheme-item-rating {
+	color: #ffcc36;
+}
+
+.villatheme-item-description {
+	padding-bottom: 20px;
+}
+
+.villatheme-primary-color {
+	color: rgba(241, 93, 88, 1);
+	text-decoration: none;
+}
+
+.villatheme-content a.vi-button-dismiss:before {
+	float: left;
+}
+
+.villatheme-content a.vi-button-dismiss {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%) !important;
+	padding: 4px 8px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.villatheme-button-upgrade {
+	color: red;
+}
+
+.villatheme-content {
+	position: relative;
+	padding-right: 86px;
+}
+
+.villatheme-item-controls .button {
+	padding: 4px 16px;
+}
+
+@media screen and (max-width: 480px) {
+	.villatheme-content {
+		padding-right: 0 !important;
+	}
+
+	.villatheme-content a.vi-button-dismiss {
+		position: unset;
+		transform: unset !important;
+	}
+}

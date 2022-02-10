@@ -1,0 +1,49 @@
+.oxi-addons-container .oxi-image-general-hover-style-25 .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    opacity: 1;
+}
+.oxi-addons-container .oxi-image-general-hover-style-25 .oxi-image-hover-figure .oxi-image-hover-image {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 1;
+    z-index: 11;
+    -webkit-transform: scale(1, 1) rotate(0deg);
+    -ms-transform: scale(1, 1) rotate(0deg);
+    transform: scale(1, 1) rotate(0deg);
+    -webkit-transform-origin: 100% 200%;
+    -ms-transform-origin: 100% 200%;
+    transform-origin: 100% 200%;
+}
+.oxi-addons-container .oxi-image-general-hover-style-25.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-25.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-image{
+    opacity: 0;
+    -webkit-transform: scale(0, 0) rotate(270deg);
+    -ms-transform: scale(0, 0) rotate(270deg);
+    transform: scale(0, 0) rotate(270deg);
+    -webkit-transform-origin: 200% 500%;
+    -ms-transform-origin: 200% 500%;
+    transform-origin: 200% 500%;
+    pointer-events: none;
+}
+.oxi-addons-container .oxi-image-general-hover-style-25 .oxi-image-hover-figure.right_to_left .oxi-image-hover-image {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 1;
+    z-index: 11;
+    -webkit-transform: scale(1, 1) rotate(0deg);
+    -ms-transform: scale(1, 1) rotate(0deg);
+    transform: scale(1, 1) rotate(0deg);
+    -webkit-transform-origin: -100% -200%;
+    -ms-transform-origin: -100% -200%;
+    transform-origin: -100% -200%;
+}
+.oxi-addons-container .oxi-image-general-hover-style-25.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-25.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-image{
+    opacity: 0;
+    -webkit-transform: scale(0, 0) rotate(-270deg);
+    -ms-transform: scale(0, 0) rotate(-270deg);
+    transform: scale(0, 0) rotate(-270deg);
+    -webkit-transform-origin: -200% -500%;
+    -ms-transform-origin: -200% -500%;
+    transform-origin: -200% -500%;
+    pointer-events: none;
+}

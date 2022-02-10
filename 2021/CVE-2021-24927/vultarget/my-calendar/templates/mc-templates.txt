@@ -1,0 +1,46 @@
+GRID TEMPLATE:
+
+<span class="event-time dtstart" title="{dtstart}">{time}<span class="time-separator"> - </span><span class="end-time dtend" title="{dtend}">{endtime}</span></span>
+
+<div class="sub-details"><span class="event-author">Posted by: <span class="author-name">{author}</span></span><br />
+{hcard}
+<p class="mc_details">{details}</p>
+<p>{ical_html}</p>
+<div class="shortdesc">{image}
+{shortdesc}
+</div>
+<p><a href="{link}" class="event-link external">{title}</a></p></div>
+
+LIST TEMPLATE:
+
+<span class="event-time dtstart" title="{dtstart}">{time}<span class="time-separator"> - </span><span class="end-time dtend" title="{dtend}">{endtime}</span></span>
+
+<div class="sub-details">
+<h3 class="event-title summary">{icon_html}{title}</h3>
+<span class="event-author">Posted by: <span class="author-name">{author}</span></span><br />
+{hcard}
+<p class="mc_details">{details}</p>
+<p>{ical_html}</p>
+<div class="shortdesc">{image}{shortdesc}</div>
+<p><a href="{link}" class="event-link external">{title}</a></p></div>
+
+MINI TEMPLATE:
+
+<span class="event-time dtstart" title="{dtstart}">{time}<span class="time-separator"> - </span><span class="end-time dtend" title="{dtend}">{endtime}</span></span>
+
+<div class="sub-details"><span class="event-author">Posted by: <span class="author-name">{author}</span></span><br />
+{hcard}
+<p class="mc_details">{details}</p>
+<p>{ical_html}</p>
+<p><a href="{link}" class="event-link external">{title}</a></p></div>
+
+SINGLE/DETAILS TEMPLATE:
+
+<span class="event-time dtstart" title="{dtstart}">{time}<span class="time-separator"> - </span><span class="end-time dtend" title="{dtend}">{endtime}</span></span>
+
+<div class="sub-details"><span class="event-author">Posted by: <span class="author-name">{author}</span></span><br />
+{hcard}
+<p class="mc_details">{details}</p>
+<p>{ical_html}</p>
+<div class="shortdesc">{image}{description}</div>
+<p><a href="{link}" class="event-link external">{title}</a></p></div>

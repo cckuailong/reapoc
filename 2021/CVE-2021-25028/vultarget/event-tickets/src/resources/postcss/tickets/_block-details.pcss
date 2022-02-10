@@ -1,0 +1,101 @@
+/**
+ * Event Tickets - Tickets Stylesheet - Details
+ *
+ * @since 5.0.3
+ */
+
+.event-tickets,
+.entry .entry-content .event-tickets {
+	/*
+		Block details/summary and controls
+	*/
+	.tribe-tickets__tickets-item-details-content {
+		color: var(--tec-color-text-secondary);
+		display: none;
+		-ms-grid-column: 1;
+		grid-column: 1;
+		-ms-grid-row: 3;
+		grid-row: 3;
+		line-height: 1;
+		margin: var(--tec-spacer-0) 0;
+
+		@media (--viewport-medium) {
+			display: block;
+			-ms-grid-column: 1;
+			grid-column: 1;
+			-ms-grid-row: 2;
+			grid-row: 2;
+		}
+
+		&.tribe__details--open {
+			display: block;
+		}
+	}
+
+	.tribe-tickets__tickets-item-details-summary {
+		color: var(--tec-color-text-secondary);
+		display: -ms-grid; /* stylelint-disable-line value-no-vendor-prefix */
+		display: grid;
+		-ms-grid-column: 2;
+		grid-column: 2;
+		-ms-grid-row: 1;
+		grid-row: 1;
+		justify-content: flex-start;
+		padding-left: var(--tec-spacer-0);
+
+		.tribe-tickets__tickets-form & {
+			@media (--viewport-medium) {
+				@mixin hidden;
+			}
+		}
+	}
+
+	.tribe-tickets__tickets-item-details-summary-button--more,
+	.tribe-tickets__tickets-item-details-summary-button--less {
+		@mixin mobile-body-2;
+
+		background-color: transparent;
+		color: var(--tec-color-text-secondary);
+		position: relative;
+		white-space: nowrap;
+
+		&:after {
+			border: var(--tec-spacer-0) solid var(--tec-color-background-transparent);
+			content: '';
+			display: inline-block;
+			margin-bottom: 1px;
+		}
+
+		@media (--viewport-medium) {
+			.tribe-tickets& {
+				@mixin hidden;
+			}
+		}
+	}
+
+	.tribe-tickets__tickets-item-details-summary-button--more {
+		&:after {
+			border-bottom: 0 none;
+			border-top: var(--tec-spacer-0) solid var(--tec-color-text-secondary);
+		}
+	}
+
+	.tribe-tickets__tickets-item-details-summary-button--less {
+		display: none;
+
+		&:after {
+			border-bottom: var(--tec-spacer-0) solid var(--tec-color-text-secondary);
+			border-top: 0 none;
+		}
+	}
+
+	.tribe__details--open {
+		.tribe-tickets__tickets-item-details-summary-button--more {
+			@mixin hidden;
+		}
+
+		.tribe-tickets__tickets-item-details-summary-button--less {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+/****************************
+ORDERING TABLE
+****************************/
+.sap-ordering-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.sap-ordering-table table th, .sap-ordering-table table td {
+    background: #f1f1f1;
+    padding: 8px 16px;
+    width: calc(100% - 32px);
+}
+.sap-ordering-table table td {
+    border-bottom: 1px solid #ccc;
+    cursor: move;
+}
+.sap-ordering-table table td:first-of-type {
+    border-top: 1px solid #ccc;
+}
+.sap-ordering-table table tr:nth-of-type(2n+2) td {
+    background: #fafafa;
+}
+.sap-ordering-table table th {
+    background: #662D91;
+    color: #fff;
+    text-align: left;
+}

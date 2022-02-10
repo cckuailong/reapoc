@@ -1,0 +1,226 @@
+/*
+Theme Name: Hardwork
+Theme URI: https://niteothemes.com/cmp-coming-soon-maintenance/?theme=hardwork
+Author: NiteoThemes
+Author URI: https://niteothemes.com
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normaalize.css/
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-bottom: .5em;
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-wrapper.image {
+    margin-bottom: 2em;
+}
+
+.section {
+    flex-grow: 1;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+}
+
+.section-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 10;
+    width: 70%;
+    max-width: 1170px;
+    min-height: calc(100vh - 7em);
+    margin: 0 auto;
+}
+
+.graphic-logo {
+    width: auto;
+    max-width: 500px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.text-logo {
+    font-size: 2em;
+}
+
+.section-body p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#background-wrapper, #background-image, #background-color, .background-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#background-wrapper {
+    overflow: hidden;
+}
+
+#background-image {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background-image.pattern {
+    background-size: initial;
+    background-repeat: repeat;
+}
+
+.video-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+#background-image {
+    opacity: 0;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+#background-image.loaded {
+    opacity: 1;
+}
+
+.video-banner iframe, .video-banner video {
+    -o-transition: opacity 1500ms;
+    transition: opacity 1500ms;
+}
+
+.social-list {
+    height: 3em;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.social-list a {
+    display: block;
+    height: 3em;
+    width: 2.5em;
+    line-height: 3em;
+    background: transparent;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+    border-radius: 5px;
+}
+
+.social-list i {
+    font-size: 1em;
+    -o-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.social-list a:hover i {
+    -webkit-animation: spin 300ms linear;
+    animation: spin 300ms linear;
+}
+
+.lang-switch-wrapper {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .graphic-logo {
+        padding: 20px 0;
+    }
+    .section-body, .social-list {
+        font-size: 16px!important;
+    }
+    .section-body h1:not(.text-logo), .section-body h2, .section-body h3, .section-body h4, .section-body h5, .section-body h6, .text-logo-wrapper {
+        font-size: 1.8em!important;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .section-body, .social-list {
+        font-size: 15px!important;
+    }
+    .text-logo {
+        font-size: 1.6em;
+    }
+    .lang-switch-wrapper {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .section {
+        padding: 4em 1em;
+        min-height: calc(100vh - 11em);
+    }
+    .section-body {
+        width: auto;
+    }
+    .graphic-logo {
+        max-height: 200px;
+        padding-bottom: 0;
+        max-width: 100%;
+    }
+    .section-body, .social-list {
+        font-size: 14px!important;
+    }
+}

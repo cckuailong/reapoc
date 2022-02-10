@@ -1,0 +1,35 @@
+{
+  "name": "publishpress/wordpress-reviews",
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "description": "Library for showing a five-star review banner.",
+  "keywords": ["reviews", "review", "wordpress plugin"],
+  "homepage": "http://publishpress.com/",
+  "authors": [
+    {
+      "name": "PublishPress",
+      "email": "help@publishpress.com"
+    },
+    {
+      "name": "Daniel Iser",
+      "homepage": "https://github.com/danieliser/WP-Product-In-Dash-Review-Requests"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "files": [
+      "ReviewsController.php"
+    ]
+  },
+  "require": {
+    "php": ">=5.6.20",
+    "pimple/pimple": "3.2.3.*",
+    "publishpress/wordpress-version-notices": "^1",
+    "publishpress/wordpress-reviews":  "^1.1",
+    "psr/container": "1.0.0"
+  },
+  "require-dev": {
+    "overtrue/phplint": "^2.1"
+  }
+}

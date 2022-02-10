@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+
+
+      function drawChart() {
+        var parts = window.location.search.substr(1).split("&");
+        var $_GET = {};
+        for (var i = 0; i < parts.length; i++) {
+          var temp = parts[i].split("=");
+          $_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
+        }
+
+        var pieTitle=$_GET['title'];     
+
+        var values = $_GET['chd'].split(",");
+        var labels = $_GET['chl'].split("|");
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'descr');
+        data.addColumn('number', 'visite');
+
+
+        for (var i = 0; i < values.length; i++) {
+          var descr=labels[i].replace(/[+]/g, " ");
+          var num= parseInt(values[i]);
+          data.addRow([descr, num]);
+        }
+
+        var options = {
+          title: pieTitle
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 650px; height: 500px;"></div>
+  </body>
+</html>

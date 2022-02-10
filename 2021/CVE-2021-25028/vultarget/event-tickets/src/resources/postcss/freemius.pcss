@@ -1,0 +1,229 @@
+.events-cal,
+.toplevel_page_tribe-common,
+.toplevel_page_tribe-help,
+.toplevel_page_tribe-app-shop {
+
+	#fs_connect {
+		background-color: #fff;
+		margin: 20px 20px 0 2px;
+		max-width: 1200px;
+		position: relative;
+		width: auto;
+
+		.fs-visual {
+			align-content: center;
+			align-items: center;
+			background-color: transparent;
+			display: flex;
+			margin: 0 35px;
+			padding: 20px 0 0;
+
+			.fs-site-icon,
+			.fs-plugin-icon,
+			.fs-first.dashicons-plus,
+			.fs-second.dashicons-plus,
+			.fs-connect-logo {
+				border: 0;
+				bottom: auto;
+				left: auto;
+				margin: 0;
+				position: relative;
+				right: auto;
+				top: auto;
+				width: auto;
+			}
+
+			.fs-site-icon,
+			.fs-plugin-icon {
+				width: 60px;
+			}
+
+			.dashicons-plus {
+				color: #17a0d6;
+				padding-left: 4px;
+				padding-right: 4px;
+				width: auto;
+			}
+
+			.fs-site-icon {
+				.dashicons {
+					visibility: hidden;
+				}
+
+				&:before {
+					background-image: url('../images/event-tickets.svg');
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: 85%;
+					content: '';
+					display: block;
+					height: 100%;
+					position: absolute;
+					width: 100%;
+				}
+			}
+
+			.fs-plugin-icon {
+				img {
+					visibility: hidden;
+				}
+
+				&:before {
+					background-image: url('../icons/stethoscope.svg');
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: 75%;
+					content: '';
+					display: block;
+					height: 100%;
+					position: absolute;
+					width: 100%;
+				}
+			}
+
+			.fs-connect-logo {
+				background-image: url('../icons/mailplane.svg');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 80%;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				display: block;
+				height: 80px;
+				padding-left: 60px;
+				width: 60px;
+			}
+		}
+
+		.fs-content {
+			padding: 20px 35px;
+
+			h3 {
+				font-size: 1.7em;
+				margin-top: 0;
+			}
+
+			p {
+				margin-bottom: 20px;
+
+				&:first-child,
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.tribe-powered-by-freemius {
+				background-image: url('../icons/freemius-logo.svg');
+				background-position: right center;
+				background-repeat: no-repeat;
+				background-size: 100px;
+				font-size: 1.1em;
+				font-style: italic;
+				height: 30px;
+				line-height: 30px;
+				position: absolute;
+				right: 45px;
+				top: 25px;
+				width: 184px;
+			}
+		}
+
+		.fs-actions {
+			background-color: #f3f3f3;
+			display: flex;
+			flex-flow: row wrap;
+			padding: 20px 35px;
+
+			form {
+				float: none;
+				margin-right: 15px;
+				order: 1;
+			}
+
+			#skip_activation {
+				float: none;
+				order: 2;
+			}
+
+			.button {
+				height: auto;
+				padding: 7px 35px;
+
+				&.button-primary {
+					padding-left: 35px;
+					padding-right: 35px;
+				}
+			}
+		}
+
+		.fs-permissions {
+			padding: 0;
+			position: relative;
+
+			.fs-trigger {
+				left: 380px;
+				padding: 10px;
+				position: absolute;
+				top: -65px;
+			}
+
+			&.fs-open {
+				-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+				-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+				padding: 20px 35px;
+				position: absolute;
+
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					margin: 0;
+
+					li {
+						flex: 0 50%;
+						padding-bottom: 10px;
+
+						.dashicons { /* stylelint-disable-line max-nesting-depth */
+							padding-right: 15px;
+						}
+					}
+
+					.dashicons {
+						background-position: left center;
+						background-repeat: no-repeat;
+						background-size: 65%;
+
+						&:before { /* stylelint-disable-line max-nesting-depth */
+							content: '';
+						}
+					}
+
+					.dashicons-admin-users {
+						background-image: url('../icons/user.svg');
+					}
+
+					.dashicons-admin-settings {
+						background-image: url('../icons/settings.svg');
+					}
+
+					.dashicons-testimonial {
+						background-image: url('../icons/megaphone.svg');
+					}
+
+					.dashicons-admin-plugins,
+					.dashicons-menu {
+						background-image: url('../icons/plug.svg');
+					}
+				}
+			}
+		}
+
+		.fs-terms {
+			background-color: transparent;
+			bottom: 30px;
+			position: absolute;
+			right: 10px;
+			width: 240px;
+		}
+	}
+}

@@ -1,0 +1,472 @@
+=== Maps Plugin using Google Maps for WordPress - WP Google Map ===
+Contributors: milonfci
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZBERRKARGNEYA
+Tags: google map, map, maps, google maps, map markers, google map plugin, google map embed, google maps plugin, wp google map, map plugin, map embed, best google maps, store locator, map direction, map widget, street view
+Requires at least: 2.9
+Tested up to: 5.8
+Version: 1.8.0
+Stable tag: 1.8.0
+Requires PHP: 5.3
+Text Domain: gmap-embed
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Google Map plugin for WordPress is very Simple, light-weight and Easy to use Google Custom Map with markers in Posts, Pages as shortcode and sidebar as widget.
+
+== Description ==
+
+= Google Maps for Wordpress =
+* [Google Maps for Wordpress Help Manual](https://srmilon.info/documentation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_heading_list)
+* [How to use Google Maps in Wordpress Website](https://srmilon.info/documentation/wp-google-map-quick-installation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_heading_list)
+
+WP Google Map is an awesome plugin to use when adding a custom Google map to your website. It is fully customizable and can be used as shortcode.
+
+**[Get WP Google Map pro version](https://srmilon.info/pricing?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_get_pro)**
+
+### DEMOS
+
+* **[See all Google Map Demos](https://srmilon.info/demos?utm_source=wp_repo&utm_medium=admin_link&utm_campaign=readme_demos_list)**
+
+### VIDEO TUTORIALS
+
+* **[Video on Quick Installation](https://www.youtube.com/watch?v=m-jAsxG0zuk)**
+* **[Video on (Installation, Activation, Creating Map, How to use)](https://www.youtube.com/watch?v=9KZOUJ9Gdv8)**
+
+### DOCUMENTATION
+
+* **[Complete Installation Guide](https://srmilon.info/documentation/wp-google-map-quick-installation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_doc_list)**
+* **[How to get your Lifetime License key?](https://srmilon.info/documentation/how-to-get-your-license-key?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_doc_list)**
+* **[How to get your own API key](https://srmilon.info/documentation/how-to-get-google-map-api-key?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_doc_list)**
+* **[Add Google Map in wordpress page](https://srmilon.info/documentation/how-to-add-google-map-in-your-wordpress-pageblock-editor?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_doc_list)**
+* **[Add Google Map in wordpress post](https://srmilon.info/documentation/how-to-add-google-map-in-your-wordpress-post-copy?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_doc_list)**
+* **[Add Google Map in Sidebar as widget](https://srmilon.info/documentation/how-to-add-google-map-in-sidebar-as-widget-new-widget-editor-from-wordpress-5-8?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_doc_list)**
+* **[Customize Map Language and Regional Area Settings](https://srmilon.info/documentation/how-to-customize-map-language-and-regional-area-settings?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_doc_list)**
+
+### TROUBLESHOOTING
+
+* **[How to identify and fix the Map loading problems?](https://srmilon.info/documentation/how-to-debug-or-identify-the-map-loading-problems-in-admin-panel?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_troubleshoot_list)**
+* **[Do you see “the page can't load the map correctly?](https://srmilon.info/documentation/can-not-load-the-map-correctly?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_troubleshoot_list)**
+* **[How to fix Multiple Google Map API loading??](https://srmilon.info/documentation/how-to-fix-multiple-google-map-api-loading?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_troubleshoot_list)**
+* **[Don’t see "Embed Google Map" button in new Editor?](https://srmilon.info/documentation/dont-see-embed-google-map-button-in-new-editor?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_troubleshoot_list)**
+
+**Note:** According to [Google Documentation](https://cloud.google.com/maps-platform/pricing), You can use Google Map upto **200 USD** for free each month
+
+### TRANSLATIONS
+
+Get a free **License Key** of the WP Google Map Pro version in exchange for translating our plugin!
+
+* **[English (Australia)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_en_au) - (en_AU)**
+* **[English (Canada)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_en_ca) - (en_CA)**
+* **[English (UK)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_en_gb) - (en_GB)**
+* **[English (New Zealand)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_en_nz) - (en_NZ)**
+* **[English (South Africa)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_en_za) - (en_ZA)**
+* **[Bengali (Bangladesh)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_bn_bd) - (bn_BD)**
+* **[Spanish (Spain)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_es_es) - (es_ES)**
+* **[Spanish (Venezuela)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_es_ve) - (es_VE)**
+* **[German](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_es_de) - (de_DE)**
+* **[German (Formal)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_es_de_formal) - (de_DE_formal)**
+* **[Turkish](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_tr_tr) - (tr_TR)**
+* **[French (France)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_fr_fr) - (fr_FR)**
+* **[Danish](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_da_dk) - (da_DK)**
+* **[German (Switzerland)](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_de_ch) - (de_CH)**
+* **[Arabic](https://www.srmilon.info/translation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_translation_ar) - (ar)**
+
+### SUPPORT AND CONTRIBUTION
+* **[Report an issue](https://www.srmilon.info/report-issue?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=read_support_cont)**
+* **[Support Forum](https://www.srmilon.info/wp-support-forum?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=read_support_cont)**
+* **[Post review Wordpress](https://www.srmilon.info/wp-review-forum?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=read_support_cont)** :)
+* **[Contact Us](https://srmilon.info/contact-us?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=read_support_cont)**
+* **[Facebook Page Community](https://www.srmilon.info/fb-page?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=read_support_cont)**
+* **[Facebook Group Community](https://www.srmilon.info/fb-group?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=read_support_cont)**
+* **[Twitter Community](https://www.srmilon.info/twitter?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=read_support_cont)**
+* **[LIVE CHAT](https://www.srmilon.info/live-chat?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=read_support_cont)**
+
+To have continued the update, please donate for the WP Google Map plugin. **You will get Lifetime License Key by donating minimum 10 USD**
+**[Click here to donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZBERRKARGNEYA)**
+
+### Features of WP Google Map Plugin-Lite version(FREE):
+
+* **User-friendly**
+* **Ability to change Map Language and Regional Area!**
+* **Fully Customizable**
+* **Importing the Shortcode by WP Google Map Button on Classic Editor**
+* **Automatic Google Map Location identification with user Consent**
+* **Tested with other popular plugins**
+* **Super easy to use**
+* **Ability to change zoom level(1-22)**
+* **Easy to add a widget (By Shortcode)**
+* **No coding required!**
+* **Drag Map Marker to an desired location**
+* **Ability to use a shortcode in the Posts and Pages**
+* **Fully responsive maps**
+* **Ability to change Latitude, Longitude, Address by Dragging Marker**
+* **Supported UTF-8 font encoding**
+* **Google Map autocomplete available**
+* **Multiple Language supported(Localization)**
+* **Can be used in the single page, single post, sidebar, footer, etc.**
+* **You can set any width and height as you need**
+* **Map full screen functionality**
+
+### Features of WP Google Map Plugin(PREMIUM):
+
+* **Ability to create Unlimited Maps**
+* **Ability to create Unlimited Map markers**
+* **Detailed Direction option support with Map**
+* **Image can be added in Marker InfoWindow**
+* **Roadmap, Terrain, Satellite and Hybrid types of map supported**
+* **Supports Google Map Street View option**
+* **You can add multiple maps in any page or post if you need!**
+
+**Please use latest language file**
+
+### USE AS SHORTCODE IN POST, PAGE, AND SIDEBAR.
+        `[gmap-embed id="<Your map ID>"]`
+
+
+### USE AS SHORTCODE IN PHP CODE
+
+		<?php echo do_shortcode('[gmap-embed id="YOUR MAP ID"]');?>
+
+### POSSIBLE USE CASES
+* **Contact page Google Map implementation**
+* **Office location by Google Map**
+* **Point your office location by Pin/Marker**
+* **Business Location by Google Map**
+* **Store location view by Google Map**
+* **Location view by Google Map widget**
+
+Contact us if you have any problems with installation or anything else.
+Email: **milonfci@gmail.com**
+Skype: **milon305021**
+
+== Installation ==
+
+### It's simple:
+
+1. [Download](https://srmilon.info/download-wp-google-map?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_install_tab) the WP Google Map Plugin.
+2. Upload the zip folder plugins directory "wp-content/plugins"
+3. Activate the WP Google Map Plugin from the Admin panel.
+4. Add the WP Google Map widget to your sidebar using Shortcode.
+5. Add the WP Google Map in posts/pages using the shortcode.
+6. Here you can see [Complete Installation Guide](https://srmilon.info/documentation/wp-google-map-quick-installation?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_install_tab)
+
+== Upgrade Notice ==
+
+Upgrade WP Google Map Plugin from [here](https://srmilon.info/download-wp-google-map?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_upgrade_notice) to get updated features.
+
+== Frequently Asked Questions ==
+
+Our WP Google Map plugin is user-friendly, but you can read some frequently asked questions that might help you here.
+
+= How do I get your own Google Map API key? =
+See the [Video](https://youtu.be/9KZOUJ9Gdv8?t=23) ,hope you will get idea.
+
+= How to Troubleshoot or Debug Map Loading Issue? =
+See the [Documentation](https://srmilon.info/docs-category/troubleshooting?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_faq), hope you will find best solution.
+
+= How can I create a new Google Map? =
+After installing the plugin, Click on WP Google Map in the left sidebar. Then click on  **Add New** . [See Video Tutorial](https://youtu.be/9KZOUJ9Gdv8?t=141)
+
+= How do I enable Directions on my Google Map? =
+You will see an option named "**Enable Direction in Map**" under each map other setting. Also, you can set the option in creating a new map page. [See Documentation](https://srmilon.info/documentation/how-to-enable-the-direction-option-in-google-map?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_faq)
+
+= How do I add a Google Map to my Page/Post? =
+It's Easy! Go to **Posts**=-> **Add New** . Now please [See the documentation](https://srmilon.info/documentation/how-to-add-google-map-in-your-wordpress-pageblock-editor?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_faq)
+
+= How do I add a Google Map as a widget? =
+Go to **Appearance** =-> **Widget** . Now please [See the documentation](https://srmilon.info/documentation/how-to-add-google-map-in-sidebar-as-widget-new-widget-editor-from-wordpress-5-8?utm_source=wp_repo&utm_medium=readme_link&utm_campaign=readme_faq)
+
+
+## Privacy Policy
+Maps Plugin using Google Maps for WordPress - WP Google Map uses [Appsero](https://appsero.com) SDK to collect some telemetry data upon user's confirmation. This helps us to troubleshoot problems faster & make product improvements.
+
+Appsero SDK **does not gather any data by default.** The SDK only starts gathering basic telemetry data **when a user allows it via the admin notice**. We collect the data to ensure a great user experience for all our users.
+
+Integrating Appsero SDK **DOES NOT IMMEDIATELY** start gathering data, **without confirmation from users in any case.**
+
+Learn more about how [Appsero collects and uses this data](https://appsero.com/privacy-policy/).
+
+== Screenshots ==
+
+1. Google Map  menu in the left sidebar
+2. To create New Map
+3. To Allow Location Sharing
+4. Creating a New Map and Saving
+5. Map List with Shortcode
+6. To Embed Shortcode in Pages, Posts, and Widgets
+7. Maps list going to insert
+8. Using as Widget
+
+== Changelog ==
+
+= 1.8.0 =
+* Multiple Marker system introduced.
+* Complete Admin UI updated for a better experience.
+* Datatable introduced for Map and Marker listing.
+* Added advanced option for API load restriction, prevent other map API loading with user consent.
+* Support page modified for better support.
+* Marker Description and Image attachment support implemented.
+* Security improvement.
+
+= 1.7.7 =
+* Minor bug fixing
+* Autoloader class implemented
+* Map control options added(disable zoom, disable street view option, disable drag, disable double click zoom, disable pan control)
+* Security improvement
+* Appsero SDK implement for prompt support to users
+
+
+= 1.7.6 =
+* Google Map Info Window auto focus bug fixed cause by google map last update
+
+= 1.7.5 =
+* media_buttons_context deprecated issue resolving
+* Review system modification, made standard
+* Code re-organize with trait system
+* Admin UI updated to more user friendly
+* In case of shortcode not found shown a custom message only for logged in admin user
+* According to plugin guide updated code and optimized
+
+= 1.7.4 =
+* Setup Wizard implementation for user Better experience
+* Installation wizard video and blog Help Manual included
+* Installation and knowledge base updated
+* PHP and JS Source optimized
+* Minor bug fixing in Block Editor
+
+= 1.7.3 =
+* Custom CSS and JS adding option under settings tab.
+* Map direction UI re-designed and made responsive for various themes.
+* If short code not found, will show a custom message in front end.
+* Settings UI design changed for better user experience.
+* Made responsive for cross-platform
+* media_buttons_context deprecated issue resolving
+* Review system modification, made standard
+* Code re-organize with trait system
+* Admin UI updated to more user friendly
+* In case of shortcode not found shown a custom message only for logged in admin user
+
+= 1.7.2 =
+* Map Center position auto detection on drag-drop and re-centering by user.
+* LIVE zoom updating and rendering once zoom level changed by user.
+
+= 1.7.1 =
+* HTML content support in Google Map InfoWindow
+* Added select drop-down in WP Google Map widget instead of text box for ShortCode.
+* Disable admin notice for language based google setup.
+
+= 1.7.0 =
+* Browser geolocation timeout related problem solved, youtube video updated.
+
+= 1.6.9 =
+* Domain SSl related issue fixing for non-ssl websites.
+
+= 1.6.8 =
+* Helpful video presentation has been added.
+
+= 1.6.7 =
+* Admin notices for google map language and regional area settings made conditional.
+
+= 1.6.6 =
+* PHP array related exception handled.
+
+= 1.6.5 =
+* Javascript exception handled in Map edit page
+
+= 1.6.4 =
+* Map language and Region customization option added.
+* Form and field level security enhanced.
+* Secured domain added for mail and verification process.
+* Support contact mail issue fixed.
+
+= 1.6.3 =
+Exception handled for warning message, security enhanced, review giving option added.
+
+= 1.6.2 =
+Security feature updated and feedback resolving.
+
+= 1.6.1 =
+Shortcode related dynamic title class and id updated and bug fixing.
+
+= 1.6.0 =
+Address autocomplete bug fixing.
+
+= 1.5.9 =
+Map direction view option changed.
+
+= 1.5.8 =
+Create new Map UI changes.
+
+= 1.5.7 =
+Security patch updated.
+
+= 1.5.6 =
+Helpful video tutorial added.
+
+= 1.5.5 =
+Language realted changes and some minor changes in files.
+
+= 1.5.4 =
+Dynamic/Customized Marker icon option added, Code related optimization added.
+
+= 1.5.3 =
+New version released with payment option updated.
+
+= 1.5.2 =
+New version released with bug fixing
+
+= 1.5.1 =
+New version released with helpful resources and insitilization of street view.
+
+= 1.5.0 =
+New version released with new helpful video
+
+= 1.4.9 =
+* Map title on keyup effect added
+* Map type wise map rendering live
+* Infowindow live changing when updating
+* Address related API issue fixing
+
+= 1.4.8 =
+* License key and api key updating problem server issue fixed.
+
+= 1.4.7 =
+* How to add Google Map in Gutenberg Wordpress editor.
+
+= 1.4.6 =
+* Removed update to pro once updated to pro version
+
+= 1.4.5 =
+* Plugin Settings option updated
+
+= 1.4.4 =
+* LIVE CHAT option added for users.
+
+= 1.4.3 =
+* Faq and contact page updated.
+
+= 1.4.2 =
+* Bug fixing, Added instant contact form to give best experience and getting suggestion from users.
+
+= 1.4.1 =
+* User help manual, FAQ and details description updated, also bug fixed.
+
+= 1.4.0 =
+* Settings option updated.
+
+= 1.3.9 =
+* Added pro version features and updated shortcode.
+
+= 1.3.8 =
+* Google API readme updated, language and donation button added.
+
+= 1.3.7 =
+* Google API realted update
+
+= 1.3.6 =
+* Google API realted update
+
+= 1.3.5 =
+* Google API realted update
+
+= 1.3.4 =
+* Direction From field default to empty, Readme file updated with Google Billing warning message.
+
+= 1.3.3 =
+* Spanish language files updated.
+
+= 1.3.2 =
+* Danish Language Translation support updated.
+
+= 1.3.1 =
+* Danish Language Translation support added.
+
+= 1.3.0 =
+* German, German (Formal) and Spanish (Spain) Language file updated.
+
+= 1.2.9 =
+* Examples button and Donation Button added.
+
+= 1.2.8 =
+* Tags updated in readme.txt file.
+
+= 1.2.7 =
+* Readme file updated.
+
+= 1.2.6 =
+* Translation enabled for some additional text.
+
+= 1.2.5 =
+* Installation process explained in details.
+
+= 1.2.4 =
+* CSS updated related to map search box
+
+= 1.2.3 =
+* Spanish Language support
+
+= 1.2.2 =
+* Italian Language Support
+
+= 1.2.1 =
+* Direction support Bug fixing
+
+= 1.2.0 =
+* Direction support with Google Map
+
+= 1.1.7 =
+* Look and Feel changes
+
+= 1.1.6 =
+* Added option for creating unlimited maps(the Previous limit was 10)
+
+= 1.1.5 =
+*  Widget title giving option added
+
+= 1.1.4 =
+*  Added option to disable/enable zoom on mouse scrolling
+
+= 1.1.2, 1.1.3 =
+*  Small bug fixes
+
+= 1.1.1 =
+*  Menu Position changed and readme.txt updated
+
+= 1.1.0 =
+*  Initial Translation support for English(en), Bengali(bn) and German(de)
+
+= 1.0.9 =
+*  https or SSl related problem fixing
+
+= 1.0.8 =
+*  Initial marker dragging related problem fixing
+*  API key trailing blank space removed
+
+= 1.0.7 =
+*  Added helpful video both in description and admin panel
+
+= 1.0.6 =
+*  Custom map heading class adding option added
+*  Map rendering related problem fixing
+*  Custom status message showed
+
+= 1.0.5 =
+*  Added new helpful video with how to get Free API key
+
+= 1.0.4 =
+*  Once plugin activated, goes to plugin settings page directly.
+
+= 1.0.3 =
+*  Self API key adding option added
+
+
+= 1.0.2 =
+*  Bug fixes with adding helpful video embedding
+
+
+= 1.0.1 =
+*  Updated screenshots with the FAQ to make easier.
+
+
+= 1.0.0 =
+*  Initial version of WP Google Map Plugin.

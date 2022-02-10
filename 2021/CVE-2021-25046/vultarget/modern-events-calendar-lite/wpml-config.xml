@@ -1,0 +1,165 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">mec-events</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">mec_category</taxonomy>
+        <taxonomy translate="1">mec_label</taxonomy>
+        <taxonomy translate="1">mec_location</taxonomy>
+        <taxonomy translate="1">mec_organizer</taxonomy>
+        <taxonomy translate="1">mec_speaker</taxonomy>
+    </taxonomies>
+    <custom-fields>
+        <custom-field action="copy">mec_location_id</custom-field>
+        <custom-field action="copy">mec_dont_show_map</custom-field>
+        <custom-field action="copy">mec_organizer_id</custom-field>
+        <custom-field action="copy">mec_allday</custom-field>
+        <custom-field action="copy">mec_hide_time</custom-field>
+        <custom-field action="copy">mec_hide_end_time</custom-field>
+        <custom-field action="copy">mec_start_date</custom-field>
+        <custom-field action="copy">mec_start_time_hour</custom-field>
+        <custom-field action="copy">mec_start_time_minutes</custom-field>
+        <custom-field action="copy">mec_start_time_ampm</custom-field>
+        <custom-field action="copy">mec_start_day_seconds</custom-field>
+        <custom-field action="copy">mec_end_date</custom-field>
+        <custom-field action="copy">mec_end_time_hour</custom-field>
+        <custom-field action="copy">mec_end_time_minutes</custom-field>
+        <custom-field action="copy">mec_end_time_ampm</custom-field>
+        <custom-field action="copy">mec_end_day_seconds</custom-field>
+        <custom-field action="copy">mec_repeat_status</custom-field>
+        <custom-field action="copy">mec_repeat_type</custom-field>
+        <custom-field action="copy">mec_repeat_interval</custom-field>
+        <custom-field action="copy">mec_certain_weekdays</custom-field>
+        <custom-field action="copy">mec_date</custom-field>
+        <custom-field action="copy">mec_repeat_end_at_date</custom-field>
+        <custom-field action="copy">mec_repeat_end</custom-field>
+        <custom-field action="copy">mec_color</custom-field>
+        <custom-field action="translate">mec_read_more</custom-field>
+        <custom-field action="translate">mec_more_info</custom-field>
+        <custom-field action="translate">mec_more_info_title</custom-field>
+        <custom-field action="copy">mec_more_info_target</custom-field>
+        <custom-field action="copy">mec_cost</custom-field>
+        <custom-field action="copy">mec_currency</custom-field>
+        <custom-field action="copy">mec_additional_organizer_ids</custom-field>
+        <custom-field action="copy">mec_additional_location_ids</custom-field>
+        <custom-field action="copy">mec_repeat</custom-field>
+        <custom-field action="copy">one_occurrence</custom-field>
+        <custom-field action="translate">mec_comment</custom-field>
+        <custom-field action="copy">mec_timezone</custom-field>
+        <custom-field action="copy">mec_countdown_method</custom-field>
+        <custom-field action="copy">mec_public</custom-field>
+        <custom-field action="copy">mec_repeat_end_at_occurrences</custom-field>
+        <custom-field action="copy">mec_advanced_days</custom-field>
+        <custom-field action="copy">mec_in_days</custom-field>
+        <custom-field action="copy">mec_not_in_days</custom-field>
+        <custom-field action="translate">mec_hourly_schedules</custom-field>
+        <custom-field action="copy">mec_booking</custom-field>
+        <custom-field action="copy">mec_fees_global_inheritance</custom-field>
+        <custom-field action="copy">mec_fees</custom-field>
+        <custom-field action="copy">mec_ticket_variations_global_inheritance</custom-field>
+        <custom-field action="copy">mec_ticket_variations</custom-field>
+        <custom-field action="copy">mec_reg_fields_global_inheritance</custom-field>
+        <custom-field action="copy">mec_fields</custom-field>
+        <custom-field action="copy">mec_event_status</custom-field>
+        <custom-field action="copy">mec_moved_online_link</custom-field>
+        <custom-field action="copy">mec_cancelled_reason</custom-field>
+        <custom-field action="copy">mec_display_cancellation_reason_in_single_page</custom-field>
+        <custom-field action="copy">show_past_events</custom-field>
+        <custom-field action="copy">show_only_past_events</custom-field>
+        <custom-field action="copy">show_only_ongoing_events</custom-field>
+        <custom-field action="translate">mec_tickets</custom-field>
+    </custom-fields>
+    <custom-fields-texts>
+        <key name="mec_tickets">
+            <key name="*">
+                <key name="name" />
+                <key name="description" />
+                <key name="price_label" />
+            </key>
+        </key>
+        <key name="mec_hourly_schedules">
+            <key name="*">
+                <key name="title" />
+                <key name="schedules">
+                    <key name="*">
+                        <key name="from" />
+                        <key name="to" />
+                        <key name="title" />
+                        <key name="description" />
+                    </key>
+                </key>
+            </key>
+        </key>
+    </custom-fields-texts>
+    <admin-texts>
+        <key name="mec_options">
+            <key name="notifications">
+                <key name="booking_notification">
+                    <key name="subject" />
+                    <key name="content" />
+                </key>
+                <key name="email_verification">
+                    <key name="subject" />
+                    <key name="content" />
+                </key>
+                <key name="booking_confirmation">
+                    <key name="subject" />
+                    <key name="content" />
+                </key>
+                <key name="cancellation_notification">
+                    <key name="subject" />
+                    <key name="content" />
+                </key>
+                <key name="admin_notification">
+                    <key name="subject" />
+                    <key name="content" />
+                </key>
+                <key name="new_event">
+                    <key name="subject" />
+                    <key name="content" />
+                </key>
+                <key name="user_event_publishing">
+                    <key name="subject" />
+                    <key name="content" />
+                </key>
+                <key name="event_soldout">
+                    <key name="subject" />
+                    <key name="content" />
+                </key>
+                <key name="booking_rejection">
+                    <key name="subject" />
+                    <key name="content" />
+                </key>
+            </key>
+            <key name="messages">
+                <key name="*" />
+            </key>
+            <key name="reg_fields">
+                <key name="*" />
+            </key>
+            <key name="gateways">
+                <key name="*">
+                    <key name="title" />
+                    <key name="comment" />
+                </key>
+            </key>
+        </key>
+    </admin-texts>
+    <custom-term-fields>
+        <custom-term-field action="translate">address</custom-term-field>
+        <custom-term-field action="translate">job_title</custom-term-field>
+        <custom-term-field action="copy">color</custom-term-field>
+        <custom-term-field action="copy">email</custom-term-field>
+        <custom-term-field action="copy">latitude</custom-term-field>
+        <custom-term-field action="copy">longitude</custom-term-field>
+        <custom-term-field action="copy">style</custom-term-field>
+        <custom-term-field action="copy">tel</custom-term-field>
+        <custom-term-field action="copy">thumbnail</custom-term-field>
+        <custom-term-field action="copy">url</custom-term-field>
+        <custom-term-field action="copy">website</custom-term-field>
+        <custom-term-field action="copy">facebook</custom-term-field>
+        <custom-term-field action="copy">instagram</custom-term-field>
+        <custom-term-field action="copy">linkedin</custom-term-field>
+        <custom-term-field action="copy">twitter</custom-term-field>
+    </custom-term-fields>
+</wpml-config>

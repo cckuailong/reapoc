@@ -1,0 +1,63 @@
+.oxi-addons-container .oxi-image-general-hover-style-16 .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: none !important;
+}
+
+.oxi-addons-container .oxi-image-general-hover-style-16 .oxi-image-hover-figure .oxi-image-hover-image{
+    z-index: 20;
+}
+
+.oxi-addons-container .oxi-image-general-hover-style-16.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-16.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-image{
+    pointer-events: none;
+}
+.oxi-addons-container .oxi-image-general-hover-style-16 .oxi-image-hover-figure.left_to_right .oxi-image-hover-image {
+    -webkit-transform-origin: 95% 50%;
+    -moz-transform-origin: 95% 50%;
+    -ms-transform-origin: 95% 50%;
+    -o-transform-origin: 95% 50%;
+    transform-origin: 95% 50%;
+}
+.oxi-addons-container .oxi-image-general-hover-style-16 .oxi-image-hover-figure.left_to_right .oxi-image-hover-image:after {
+    content: '.';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 95%;
+    margin: -4px 0 0 -4px;
+}
+.oxi-addons-container .oxi-image-general-hover-style-16.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-16.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-image{
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.oxi-addons-container .oxi-image-general-hover-style-16 .oxi-image-hover-figure.right_to_left .oxi-image-hover-image {
+    -webkit-transform-origin: 5% 50%;
+    -moz-transform-origin: 5% 50%;
+    -ms-transform-origin: 5% 50%;
+    -o-transform-origin: 5% 50%;
+    transform-origin: 5% 50%;
+}
+.oxi-addons-container .oxi-image-general-hover-style-16 .oxi-image-hover-figure.right_to_left .oxi-image-hover-image:after {
+    content: '.';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 5%;
+    margin: -4px 0 0 -4px;
+}
+.oxi-addons-container .oxi-image-general-hover-style-16.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-16.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-image{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

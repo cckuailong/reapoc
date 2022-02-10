@@ -1,0 +1,87 @@
+.tribe-editor__container-panel__content {
+
+	.tribe-editor__rsvp & {
+		display: none;
+		border-top: 1px solid #E1E3E6;
+	}
+
+	.tribe-editor__rsvp--selected & {
+		display: block;
+	}
+}
+
+.tribe-editor__rsvp-container-content__labels {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 15px;
+}
+
+.tribe-editor__rsvp-container-content__capacity-label {
+	flex: none;
+	color: #545d66;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.38px;
+
+	.tribe-editor__rsvp-container--disabled & {
+		color: #AEB4BB;
+	}
+}
+
+.tribe-editor__rsvp-container-content__capacity-label-help {
+	flex: none;
+	color: #8D949B;
+	font-size: 12px;
+	line-height: 14px;
+	margin-left: 10px;
+
+	.tribe-editor__rsvp-container--disabled & {
+		color: #AEB4BB;
+	}
+}
+
+.tribe-editor__rsvp-container-content__options {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 35px;
+}
+
+.tribe-editor__rsvp-container-content__capacity-input {
+
+	/* extra selector required to override gutenberg styles */
+	.tribe-editor__rsvp .tribe-editor__rsvp-container & {
+		flex: none;
+		color: #000000;
+		font-size: 16px;
+		line-height: 20px;
+		border: 1px solid #E1E3E6;
+		box-shadow: inset 0 1px 0 0 #F1F1F1;
+		padding: 9px 15px;
+		margin-right: 20px;
+		width: 88px;
+		height: 40px;
+
+		&:disabled {
+			color: #AEB4BB;
+		}
+	}
+}
+
+.tribe-editor__rsvp-container-content__not-going-responses {
+	flex: none;
+}
+
+.tribe-editor__checkbox__label {
+
+	.tribe-editor__rsvp-container-content__not-going-responses & {
+		color: #000000;
+		font-size: 15px;
+		line-height: 18px;
+
+		.tribe-editor__rsvp-container--disabled & {
+			color: #AEB4BB;
+		}
+	}
+}

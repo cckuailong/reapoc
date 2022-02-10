@@ -1,0 +1,95 @@
+#schedules {
+
+	@include media( '<=850px' ) {
+		margin-top: 30px;
+	}
+
+	&.loading {
+		opacity: 0.7;
+	}
+
+	.schedules {
+
+		.single-schedule {
+			display: flex;
+			margin: 10px 0;
+
+			&.header {
+				font-weight: 500;
+
+				&:hover {
+					background: transparent;
+				}
+
+			}
+
+			.column {
+				padding: 2px;
+				overflow: hidden;
+
+				&.label {
+					flex-grow: 100;
+				}
+
+				&.slug {
+					width: 30%;
+				}
+
+				&.interval {
+					width: 15%;
+				}
+
+				&.actions {
+					width: 15%;
+					text-align: right;
+
+					.dashicons {
+
+						&.dashicons-trash {
+							color: #a00;
+
+							&:hover {
+								color: red;
+							}
+
+							&.working {
+								color: inherit;
+								animation-name: spin;
+								animation-duration: 4000ms;
+								animation-iteration-count: infinite;
+								animation-timing-function: linear;
+
+								&:before {
+									content: "\f111";
+								}
+
+							}
+
+						}
+
+						&.disabled,
+						&.disabled:hover {
+							cursor: not-allowed;
+							color: #ccc;
+						}
+
+						span {
+							display: none;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.page-title-action {
+		top: 15px;
+		margin-left: 0;
+	}
+
+}

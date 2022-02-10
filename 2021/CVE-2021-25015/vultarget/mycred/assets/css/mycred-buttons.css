@@ -1,0 +1,80 @@
+/* Switch1 */
+.mycred-switch1 {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 21px;
+}
+
+.mycred-switch1 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.mycred-switch1 input:checked + .slider {
+    background-color: #2196f3;
+}
+
+.mycred-switch1 .slider.round {
+    border-radius: 34px;
+}
+
+.mycred-switch1 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.mycred-switch1 input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.mycred-switch1 .slider.round:before {
+    
+    border-radius: 50%;
+}
+.mycred-switch1 .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+/*
+Sample Code
+<label class="mycred-switch1">
+    <input type="checkbox" name="" id="">
+    <span class="slider round"></span>
+</label> 
+*/
+
+/* Button1 */
+.mycred-button1 {
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    vertical-align: middle;
+    display: none;
+}
+
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* Sample Code
+<button class="button button-large large button-primary">
+    <span class="dashicons dashicons-update mycred-button1"></span> 
+    Award User
+</button>
+*/

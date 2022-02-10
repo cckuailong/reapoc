@@ -1,0 +1,40 @@
+.tribe-editor__rsvp-container {
+	background-color: #ffffff;
+}
+
+.tribe-editor__rsvp {
+	font-family: 'Helvetica Neue', Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+	position: relative;
+}
+
+.tribe-editor__inactive-block__icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	& > svg {
+		flex: none;
+	}
+}
+
+.tribe-editor__rsvp__inactive-block-icon-label {
+	color: #AEB4BB;
+	flex: none;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.05px;
+}
+
+.components-spinner {
+
+	.tribe-editor__rsvp & {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		float: none;
+		margin: 0;
+		opacity: 0.8;
+	}
+}

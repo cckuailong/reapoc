@@ -1,0 +1,278 @@
+.wpuf-help-tabbed {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 0 1px rgba(200, 215, 225, 1), 0 1px 2px #e9eff3;
+
+    nav {
+        order: 1;
+        background-color: #f1f1f1;
+        flex-basis: auto;
+        padding: 0;
+        min-height: 405px;
+        border-right: 1px solid #c8d7e1;
+        min-width: 250px;
+
+        ul,
+        li {
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            border: none;
+            padding: 0.5rem;
+            border-bottom: 1px solid #c8d7e1;
+            border-right: 1px solid #c8d7e1;
+            // border-left: 3px solid #f1f1f1;
+            background-color: #f1f1f1;
+            color: #444;
+            text-decoration: none;
+            margin-right: -1px;
+            font-weight: 500;
+
+            label {
+                padding: 0.5rem;
+                display: inline-block;
+            }
+        }
+
+        a:focus,
+        a:active {
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .dashicons {
+            padding: 8px 0 0 5px;
+
+            &.dashicons-admin-home {
+                color: #9b59b6;
+            }
+
+            &.dashicons-media-text {
+                color: #6c75ff;
+            }
+
+            &.dashicons-dashboard {
+                color: #00aeff;
+            }
+
+            &.dashicons-admin-users {
+                color: #e67e22;
+            }
+
+            &.dashicons-lock {
+                color: #3d566e;
+            }
+
+            &.dashicons-edit {
+                color: #1abc9d;
+            }
+
+            &.dashicons-cart {
+                color: #e74c3c;
+            }
+
+            &.dashicons-unlock {
+                color: #00aeff;
+            }
+        }
+
+        .tab-current {
+            a {
+                // border-left: 3px solid #0073aa;
+                border-right: 1px solid #fff;
+                background: #fff;
+                color: #2e4453;
+            }
+        }
+    }
+
+    .nav-content {
+        order: 1;
+        background-color: #fff;
+        padding: 2rem;
+        width: 100%;
+
+        h2 {
+            margin-top: 30px;
+            color: #23282d;
+            line-height: 1.6;
+            margin-bottom: 0;
+            padding-bottom: 0;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        section {
+            display: none;
+            color: #444;
+            font-size: 0.875rem;
+
+            p {
+                font-size: 0.875rem;
+            }
+
+            &.content-current {
+                display: block;
+            }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 40px;
+            }
+
+            ul.related-articles {
+                list-style: none;
+                padding-left: 10px;
+            }
+
+            .button-primary {
+                background: #00aadc;
+                border-color: #0087be;
+                text-shadow: none;
+                padding: 3px 20px;
+                height: auto;
+                margin: 0.3125rem 0;
+
+                &:hover {
+                    border-color: #005082;
+                }
+            }
+        }
+    }
+
+}
+
+.wpuf-help-page {
+
+    .wpuf-subscribe-box {
+        display: flex;
+        border: 1px solid #e5e5e5;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(0,0,0,.04);
+        margin-top: 15px;
+
+        .text-wrap {
+            width: ~"calc(100% - 530px)";
+            padding: 10px 15px;
+
+            h3 {
+                color: #ff5722;
+                margin: 4px 0 0 0;
+            }
+
+            p {
+                margin-bottom: 5px;
+            }
+        }
+
+        .form-wrap {
+            width: 530px;
+            display: flex;
+            padding: 10px 0;
+            background: #f7f7f7;
+            padding-left: 20px;
+            border-left: 1px solid #eee;
+
+            .thank-you {
+                font-size: 16px;
+                color: green;
+                padding-top: 20px;
+                text-align: center;
+                width: 100%;
+            }
+
+            label {
+                color: #666;
+            }
+
+            input {
+                max-width: 100%;
+                overflow: hidden;
+            }
+
+            input[type="text"],
+            input[type="email"] {
+                padding: 5px 8px;
+            }
+
+            .fname {
+                width: 35%;
+                margin-right: 10px;
+            }
+
+            .email {
+                width: 40%;
+                margin-right: 10px;
+            }
+
+            .submit-btn {
+                width: 20%;
+                padding-top: 22px;
+            }
+        }
+    }
+
+    .help-blocks {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+
+        .help-block {
+            flex: 1;
+            align-self: flex-start;
+            min-width: 25%;
+            max-width: 30%;
+            border: 1px solid #ddd;
+            margin-right: 2%;
+            margin-bottom: 25px;
+            border-radius: 3px;
+            padding: 25px 15px;
+            text-align: center;
+            background: #fff;
+
+            img {
+                max-height: 44px;
+            }
+        }
+    }
+
+    .wpuf-help-questions {
+        ul {
+            margin: 5px 0;
+        }
+
+        li {
+            padding: 10px 5px;
+            margin: 0;
+            display: block;
+            border-bottom: 1px solid #eee;
+
+            &:hover {
+                background-color: #F5F5F5;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            .dashicons {
+                color: #ccc;
+                margin-top: -3px;
+            }
+
+            .dashicons-media-text {
+                padding-left: 8px;
+            }
+
+            .dashicons-arrow-right-alt2 {
+                float: right;
+            }
+        }
+    }
+}

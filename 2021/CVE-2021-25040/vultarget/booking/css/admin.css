@@ -1,0 +1,309 @@
+/**
+ * @version 1.0
+ * @package: Booking Calendar
+ * @category: Admin Pages only
+ * @author wpdevelop
+ *
+ * @web-site https://wpbookingcalendar.com/
+ * @email info@wpbookingcalendar.com 
+ * 
+ * @modified 2015-04-11
+ */
+
+
+/* Top level menu for WPBC */
+#adminmenu #toplevel_page_wpbc .wp-submenu li:nth-child(5) a {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 6px;
+
+    font-weight: 600;
+    font-size: 0.9em;
+    /* color: #a4d526; */
+}
+#wpbc-admin-page.wpbc_page {}                                                   /* Booking Listing & Timeline */                                                                                
+#wpbc-new-admin-page.wpbc_page {}                                               /* Add New Booking */                                                                                
+#wpbc-resources-admin-page.wpbc_page {} *                                       /* Resources */                                                                                
+#wpbc-settings-admin-page.wpbc_page {}                                          /* Settings */
+
+/* Form elements - add new client */
+#wpbc-new-admin-page label.wpbc-form-checkbox {
+    margin: 7px 10px 7px 0;
+    vertical-align: middle;
+    line-height: 1.2em;
+    height: 1.2em;
+}
+#wpbc-new-admin-page label.wpbc-form-checkbox input[type=checkbox] {
+    margin:-3px 5px 0 0;    
+    vertical-align: middle;
+}
+#wpbc-new-admin-page label.wpbc-form-radio {
+    margin: 7px 10px 7px 0;
+    vertical-align: middle;
+    line-height: 1.5em;
+    height: 1.5em;    
+}
+#wpbc-new-admin-page label.wpbc-form-radio input[type=radio] {
+    margin:-3px 5px 0 0;
+    vertical-align: middle;    
+}
+
+/* Selection of booking resources */
+.visibility_container select option.wpbc_single_resource, 
+select option.wpbc_single_resource{
+    padding:3px;
+    font-weight:600;
+}
+.visibility_container select option.wpbc_parent_resource, 
+select option.wpbc_parent_resource{
+    font-weight:600;
+    padding:3px;
+}
+.visibility_container select option.wpbc_child_resource, 
+select option.wpbc_child_resource{
+    padding:3px 0 3px 20px;
+    font-weight: 400
+}
+
+/* General Booking Settings page */
+#wpbc-settings-admin-page .form-table .description {
+    font-size: 14px;
+    line-height: 2em;
+}
+#wpbc-settings-admin-page .form-table span.description{
+    padding: 0 10px;    
+}
+#wpbc-settings-admin-page .wpbc_sub_settings_grayed{
+    background-color: #f3f3f3;    
+}
+#wpbc-settings-admin-page .wpbc_sub_settings_grayed th{
+    padding: 10px 0 0 20px;
+}
+#wpbc-settings-admin-page .wpbc_sub_settings_grayed td fieldset{
+    padding: 0 20px;
+}
+#wpbc-settings-admin-page .wpbc_tr_set_gen_booking_range_selection_days_count,
+#wpbc-settings-admin-page .wpbc_tr_set_gen_booking_range_selection_days_count_dynamic{
+    border-top: 2px dashed #d5d5d5;
+}
+#wpbc-settings-admin-page .wpbc_tr_set_gen_booking_range_start_day_week td{
+    padding-top:0;
+}
+#wpbc-settings-admin-page .wpbc_tr_set_gen_booking_range_start_day_week th {
+    padding:0;
+    height: 1px;
+}
+#wpbc-settings-admin-page .wpbc_expand_section_link,
+#wpbc-settings-admin-page a.wpbc_expand_section_link:hover,
+#wpbc-settings-admin-page a.wpbc_expand_section_link:focus {
+    color:#21759b;
+    cursor: pointer;
+    outline: 0;
+    border:none;
+    border-bottom:1px dashed #21759B;
+    text-decoration: none;      
+}
+/* Warning message in Demo  version */
+.wpbc_demo_test_version_warning {
+    background: #fee;
+    border: none;
+    border-left: 3px solid #c77 !important;
+    border-radius: 2px;
+    font-size: 0.85em;
+    margin: 0;
+    text-align: left;
+    color: #AA4400;
+    text-shadow: 0 -1px 0 #FFEEEE;    
+}
+
+/* Remove shadow at button of ajax loading upgrade section at Settings > Upgrade page */
+#bk_news_section td a {
+    color: #555 !important;
+    text-shadow: 0 0 0 !important;
+    box-shadow: none;
+}
+#bk_news_section .booking-listing-header {
+    background: #dfdfdf none repeat scroll 0 0;
+    border-color: #d5d5d5 #d5d5d5 -moz-use-text-color;
+}
+#bk_news_section .wpbc-feature-table {
+    border: 2px solid #dfdfdf;
+}
+#bk_news_section .version-name-row {
+    background: #789 none repeat scroll 0 0 !important;
+    color: #fff !important;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-shadow: 0 1px 1px #89a;
+    vertical-align: middle;
+}
+#bk_news_section .wpbc-feature-table td.section-header {
+    background: #feb !important;
+}
+/* Message: Thank you for registrations. */
+#bk_registration_info {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 10px 0;
+    opacity: 1;    
+}
+/*#bk_registration_info_reload, */
+#bk_errror_loading .info_message {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 10px 0;
+    opacity: 1;    
+}
+/* Align buttons center for Free version //FixIn: 7.1.2.5 */
+.field-action-buttons.booking-actions.col-sm-2 {
+    text-align: center;
+}
+@media (max-width: 782px) { 
+    .field-action-buttons.booking-actions.col-sm-2 {
+        text-align: left;
+    }
+}
+
+
+
+
+/**  WordPress 5.3 Fix  ***********************************************************************************************/
+
+/* General */
+.wp-core-ui .wpbc_page .button,
+.wp-core-ui .wpbc_page .button-primary,
+.wp-core-ui .wpbc_page .button-secondary {
+    /*
+	line-height: 2.15384615;
+	min-height: 30px;
+    padding: 0 10px;
+    */
+    line-height: 28px;
+    height: 28px;
+    padding: 0 10px 1px;
+}
+/* Secondary buttons styles */
+.wp-core-ui .wpbc_page .button,
+.wp-core-ui .wpbc_page .button-secondary {
+    /*
+    color: #0071a1;
+    border-color: #0071a1;
+    background: #f3f5f6;
+    */
+    color: #555;
+    border-color: #ccc;
+    background: #f7f7f7;
+    /*box-shadow: 0 1px 0 #ccc;*/
+    box-shadow: none;
+}
+.wp-core-ui .wpbc_page  .button-secondary:active,
+.wp-core-ui .wpbc_page  .button.active,
+.wp-core-ui .wpbc_page  .button.active:hover,
+.wp-core-ui .wpbc_page  .button:active {
+    box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5);
+    transform: translateY(1px);
+}
+
+/* Secondary buttons :hover styles */
+.wp-core-ui .wpbc_page .button-secondary:hover,
+.wp-core-ui .wpbc_page .button.hover,
+.wp-core-ui .wpbc_page .button:hover {
+    /*background: #f1f1f1;
+    border-color: #016087;
+    color: #016087;
+    */
+}
+/* Secondary buttons :focus :hover styles */
+.wp-core-ui .wpbc_page .button-secondary:focus,
+.wp-core-ui .wpbc_page .button-secondary:hover,
+.wp-core-ui .wpbc_page .button.focus,
+.wp-core-ui .wpbc_page .button.hover,
+.wp-core-ui .wpbc_page .button:focus,
+.wp-core-ui .wpbc_page .button:hover {
+    background: #fafafa;
+    border-color: #999;
+    color: #23282d;
+}
+/* Secondary buttons :focus styles */
+.wp-core-ui .wpbc_page .button-secondary:focus,
+.wp-core-ui .wpbc_page .button.focus,
+.wp-core-ui .wpbc_page .button:focus {
+    /*background: #f3f5f6;
+    border-color: #007cba;
+    color: #016087;
+    box-shadow: 0 0 0 1px #007cba;
+    outline: 2px solid transparent;
+    outline-offset: 0;*/
+    border-color: #5b9dd9;
+    box-shadow: 0 0 3px rgba(0,115,170,.8);
+}
+
+/* Primary buttons styles */
+.wp-core-ui .wpbc_page .button-primary {
+	/*background: #007cba;
+	border-color: #007cba;
+	text-shadow: none;
+    */
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    box-shadow: 0 1px 0 #006799;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+    color: #fff;
+}
+/* Primary buttons :hover styles */
+.wp-core-ui .wpbc_page .button-primary.focus,
+.wp-core-ui .wpbc_page .button-primary.hover,
+.wp-core-ui .wpbc_page .button-primary:focus,
+.wp-core-ui .wpbc_page .button-primary:hover {
+    /*
+    background: #0071a1;
+    border-color: #0071a1;
+    */
+    background: #008ec2;
+    border-color: #006799;
+    color:#fff;
+}
+/* Primary buttons :focus styles */
+.wp-core-ui .wpbc_page .button-primary.focus,
+.wp-core-ui .wpbc_page .button-primary:focus {
+    box-shadow: 0 1px 0 #0073aa, 0 0 2px 1px #33b3db;
+}
+/**********************************************************************************************************************/
+.wp-core-ui .wpbc_page .control-group input[type="text"] {
+    min-height: 29px;
+}
+.wp-core-ui .wpbc_page input[type="text"] {
+    min-height: 28px;
+}
+.wp-admin .wpbc_page select {
+    color:#32373c;
+}
+.wpdevelop input, .wpdevelop button, .wpdevelop select, .wpdevelop textarea {
+    line-height: 2;
+}
+@media (max-width: 782px) {
+
+    .wpdevelop .control-group .btn-group > .button,
+    .wpdevelop .control-group .btn-toolbar .btn-group > .button,
+    .wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button{
+        /*line-height: 2;*/
+    }
+    .wp-core-ui .wpbc_page .button,
+    .wp-core-ui .wpbc_page .button-primary,
+    .wp-core-ui .wpbc_page .button-secondary,
+
+    .wpdevelop .control-group .btn-group > .button .glyphicon,
+    .wpdevelop .control-group .btn-toolbar .btn-group > .button .glyphicon,
+    .wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button .glyphicon
+    {
+        height: auto;
+        line-height: 2.2;
+
+        height: 34px;
+        /*line-height:28px;*/
+        min-height: 28px;
+    }
+    .wp-core-ui .wpbc_page .button {
+       padding: 1px 14px;
+    }
+}

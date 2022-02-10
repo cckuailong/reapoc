@@ -1,0 +1,19 @@
+{% if feed.slug|length > 0 %}
+    <div>
+        <p class="wpra-feed-shortcodes">
+            <strong>{% trans "Shortcode:" %}</strong>
+            <code>[wp-rss-aggregator feeds="{{ feed.slug }}"]</code>
+
+            <span>or</span>
+            <code>[wp-rss-aggregator sources="{{ feed.id }}"]</code>
+        </p>
+    </div>
+    <style type="text/css">
+        p.wpra-feed-shortcodes {
+            user-select: none;
+        }
+        p.wpra-feed-shortcodes code {
+            user-select: text;
+        }
+    </style>
+{% endif %}

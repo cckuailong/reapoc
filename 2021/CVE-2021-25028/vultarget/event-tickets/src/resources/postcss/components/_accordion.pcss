@@ -1,0 +1,90 @@
+/* Accordion Styles */
+.accordion-header {
+	background: none;
+	border: 0;
+	box-sizing: border-box;
+	color: inherit;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 20px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+
+	&:before {
+		background-color: #000;
+		border-radius: 100%;
+		box-sizing: border-box;
+		color: #fff;
+		content: '\f132';
+		font-family: 'dashicons';
+		font-size: 10px;
+		font-weight: 400;
+		height: 14px;
+		left: 0;
+		line-height: 17px;
+		padding: 0;
+		padding-right: 1px;
+		position: absolute;
+		text-align: center;
+		top: 12px;
+		width: 15px;
+	}
+
+	&:after {
+		border-bottom: 1px solid #ddd;
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 80%;
+	}
+
+	&.is-active {
+
+		&:before {
+			content: '\f460';
+			line-height: 15px;
+		}
+	}
+
+	&:focus {
+		outline: 1px solid #5b9dd9;
+	}
+
+	&:hover {
+		background: none;
+	}
+}
+
+.tribe-tickets-editor-history:after {
+	width: calc(100% - 80px);
+}
+
+.tribe_attendee_meta:after {
+	width: calc(100% - 170px);
+}
+
+.tribe_advanced_meta:after {
+	width: calc(100% - 105px);
+}
+
+.accordion-label {
+	&:focus {
+		outline: none;
+	}
+}
+
+.accordion-content {
+	display: none;
+
+	.ticket_panel & {
+		margin: 1em 0 2em;
+	}
+
+	&.is-active {
+		display: block;
+	}
+}

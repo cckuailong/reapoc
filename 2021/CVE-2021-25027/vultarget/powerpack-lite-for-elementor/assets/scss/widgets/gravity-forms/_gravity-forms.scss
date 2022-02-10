@@ -1,0 +1,97 @@
+.pp-gravity-form {
+    .gform_wrapper {
+        .gform_footer {
+            margin: 0;
+            padding: 0;
+        }
+        textarea {
+            padding: 0;
+        }
+        .gform_footer,
+        .gform_page_footer {
+            input.button,
+            input[type="submit"] {
+                margin: 0;
+            }
+        }
+        .gform_page_footer {
+            input[type="button"] {
+                margin-right: 4px;
+            }
+            input[type="submit"] {
+                margin-left: 4px;
+            }
+        }
+    }
+    &.title-description-hide {
+        .gform_heading {
+            display: none;
+        }
+    }
+    &.labels-hide {
+        .gform_wrapper .top_label .gfield_label,
+        .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+            display: none;
+        }
+    }
+    .gform_footer,
+    .gform_page_footer {
+        input[type="submit"],
+        input[type="button"] {
+            background: #428bca;
+            border: none;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+    }
+}
+.pp-gravity-form-button-full-width .gform_wrapper {
+    .gform_footer,
+    .gform_page_footer {
+        input[type="submit"] {
+            width: 100%;
+        }
+    }
+    .gform_page_footer {
+        input[type="submit"] {
+            margin-top: 20px;
+        }
+    }
+}
+.pp-gravity-form-pagination-buttons-full-width .gform_wrapper {
+    .gform_page_footer {
+        input[type="button"] {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}
+.pp-gravity-form {
+	.gform_wrapper {
+		select {
+			border-radius: 0;
+			height: auto;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+		.pp-gf-select-custom {
+			position: relative;
+			&:after {
+				content: "\f078";
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 800;
+				font-size: .7em;
+				line-height: 1;
+				pointer-events: none;
+				position: absolute;
+				top: 45%;
+				right: .8em;
+				-webkit-transform: translateY(-45%);
+				-ms-transform: translateY(-45%);
+				transform: translateY(-45%);
+				z-index: 2;
+			}
+		}
+	}
+}

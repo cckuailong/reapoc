@@ -1,0 +1,149 @@
+/* If copying this stylesheet, place in your theme directory. /wp-content/yourtheme/mc-print.css */
+
+@page {
+	size: landscape;
+}
+
+.my-calendar-header, .mc_bottomnav, h3 img, .mc-toggle, .mc_edit_links, #mc-export, .longdesc, .shortdesc, .mc-print, form, .screen-reader-text, .sharing {
+	display: none;
+}
+
+table {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 910px;
+}
+
+th {
+	text-align: center;
+	background: #f6f6f6;
+	border: 1px solid #ddd;
+	width: 130px;
+	text-transform: uppercase;
+}
+
+td {
+	border: 1px solid #ddd;
+	font-size: 12px;
+	vertical-align: top;
+	width: 130px;
+	height: 6em;
+}
+
+.details {
+	color: #444;
+	margin-bottom: 2px;
+}
+
+.vevent:not(:last-child) .details {
+	border-bottom: 1px solid #ddd;
+}
+
+.calendar .details * {
+	display: none;
+}
+
+button.mc-text-button {
+	border: 0;
+	color: inherit;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 0 0 .5em
+}
+
+h3 {
+	font-size: 14px;
+	margin: 2px 0 5px;
+}
+
+p {
+	margin: 2px 0;
+	padding: 1px 0;
+	line-height: 1.2;
+}
+
+caption {
+	font-size: 1.4em;
+	padding: 3px 0;
+}
+
+abbr {
+	border: none;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.mc-date {
+	font-weight: 700;
+	font-size: 16px;
+	width: 1em;
+	text-align: center;
+	padding: 2px 4px;
+	line-height: 1;
+	margin-left: 3px;
+	float: right;
+	background: #f9f9f9;
+	position: relative;
+	top: 0px;
+	right: -1px;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd
+}
+
+.week .mc-date {
+	width: 100%;
+	padding: 0 0 2px;
+	margin-left: 0;
+	float: none;
+	top: 0;
+	right: 0;
+	border-left: none;
+	display: block;
+}
+
+.return {
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: underline;
+	color: #d00;
+}
+
+.return:hover, .return:focus {
+	text-decoration: none;
+}
+
+li.mc-events {
+	margin-top: 1em;
+	list-style-type: none;
+}
+
+ul.mc-list {
+	margin: 1em 0;
+	padding: 0;
+}
+
+.mc-events .list-event {
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+	line-height: 1.4;
+}
+
+.mc-events .list-event h3 {
+	font-size: 16px;
+}
+
+.mc-events .list-event .address strong {
+	font-weight: 400;
+}
+
+@media print {
+	.return { display: none; }
+}

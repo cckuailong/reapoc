@@ -1,0 +1,29 @@
+{
+    "name": "dhii/i18n-interface",
+    "description": "Interfaces for internationalization.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^5.3 | ^7.0"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1",
+        "codeclimate/php-test-reporter": "<=0.3.2",
+        "dhii/stringable-interface": "^0.1",
+        "dhii/data-key-value-aware-interface": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\I18n\\": "src/"
+        }
+    }
+}

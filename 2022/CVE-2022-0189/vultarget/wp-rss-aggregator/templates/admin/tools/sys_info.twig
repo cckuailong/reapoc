@@ -1,0 +1,19 @@
+<h3 class="wpra-inline-header">
+    {% trans "System Info" %}
+</h3>
+
+<form method="post" class="wpra-header-form">
+    {{ wp_nonce_field('wpra_dl_sys_info', 'wpra_dl_sys_info_nonce') }}
+    <input type="hidden" name="wpra_dl_sysinfo" value="1" />
+
+    <button type="submit" id="wprss-download-sysinfo" class="button button-primary wpra-header-button">
+        <i class="fa fa-download"></i>
+        {% trans "Download" %}
+    </button>
+</form>
+
+<textarea id="wpra-system-info-textarea"
+          name="wpra_sysinfo"
+          title="{% trans "To copy the system info, double click it and then press Ctrl + C (PC) or Cmd + C (Mac)." %}"
+          readonly="readonly"
+          ondblclick="this.focus();this.select()">{{ sys_info|raw }}</textarea>

@@ -1,0 +1,460 @@
+/* New theme for 2014 */
+@import url(../css/reset.css);
+
+.mc-main .my-calendar-header a, .mc-main .mc_bottomnav a {
+    color: #333;
+    text-decoration: none;
+    background: linear-gradient(to bottom, rgba(240, 240, 240, .95) 0%, rgba(225, 225, 225, .95) 70%);
+}
+
+.mc-main .my-calendar-header a:hover, .mc-main .mc_bottomnav a:hover, .mc-main .my-calendar-header a:focus, .mc-main .mc_bottomnav a:focus {
+    color: #000;
+    text-decoration: underline;
+    background: linear-gradient(to bottom, rgba(225, 225, 225, .95) 0%, rgba(210, 210, 210, .95) 70%);
+}
+
+.mc-main.calendar {
+    width: 100% !important;
+}
+
+.mc-main table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mc-main tr td {
+    width: 14.285714%;
+    border: 1px solid #f6f6f6;
+    padding: 0 !important;
+    height: 5em;
+}
+
+.mc-main th {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+    background: rgba(0, 0, 0, .8);
+    color: #fff !important;
+}
+
+.mc-main {
+    position: relative;
+}
+
+.mc-main table, .mc-main .mc-list {
+    box-shadow: 0 0 2px;
+}
+
+.mc-main table .current-day .mc-date {
+    background: rgba(0, 0, 0, .8) !important;
+    color: #fff;
+}
+
+.mc-main caption {
+    font-size: 1.5em;
+    margin: 0 !important;
+}
+
+.mc-main.mini caption {
+    font-size: 1.2em;
+    margin: 6px 0 !important;
+}
+
+.mc-main .event-title {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    margin: 0 !important;
+}
+
+.mc-main .event-title a {
+    display: block;
+    line-height: 1.5;
+    padding: 6px;
+    font-size: .9em;
+}
+
+.mc-main .event-title img {
+    vertical-align: text-top;
+    margin-right: 2px;
+    width: auto;
+}
+
+.mc-main .calendar-event .details, .mc-main .calendar-events {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    z-index: 3;
+    background: rgba(255, 255, 255, .98);
+    padding: 2em;
+    box-shadow: 0 0 4px;
+    color: #333;
+}
+
+.mc-main .close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    padding: 2px;
+}
+
+.mc-main .close:hover, .mc-main .close:focus {
+    outline: 1px solid #777;
+}
+
+.mc-main .details img {
+    width: 100%;
+    height: auto;
+}
+
+.mc-main .details img.alignleft {
+    width: auto;
+    float: left;
+    margin: 0 1em .5em 0;
+}
+
+.mc-main .details img.alignright {
+    width: auto;
+    float: left;
+    margin: 0 0 .5em 1em;
+}
+
+.mc-main .details img.aligncenter {
+    width: auto;
+    display: block;
+    margin: 0 auto .5em;
+}
+
+.mc-main .details p {
+    margin: 0 0 1em;
+    line-height: 1.7;
+}
+
+.mc-main .details h2, .mc-main .details h3 {
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.3;
+}
+
+.mc-main .details h4, .mc-main .details h5, .mc-main .details h6 {
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.mc-main .details li {
+    line-height: 1.5;
+}
+
+/* Sharing */
+.mc-main .details .sharing {
+    padding: .5em;
+    clear: both;
+}
+
+.mc-main .details .sharing p {
+    display: inline-block;
+    margin: 0 1em 0 0;
+}
+
+/* Date/times */
+.mc-main .time-block p {
+    font-size: 1.2em;
+    color: #000;
+    margin: 0;
+}
+
+.mc-main .mc-event-date {
+    font-weight: 700;
+    color: #333;
+}
+
+.mc-main .mc-date {
+    display: block;
+    padding: 4px 2px;
+    text-align: center;
+    font-size: 1.2em;
+    background: rgba(240, 240, 240, .9);
+    color: #111;
+}
+
+.mc-main .mc-single {
+    text-align: right;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+/* Header */
+.mc-main .my-calendar-header {
+    position: relative;
+    height: 5em;
+    z-index: 1;
+    width: 100%;
+}
+
+.mc-main .my-calendar-header:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Navigation */
+.my-calendar-nav {
+    position: absolute;
+    top: .5em;
+    right: 0;
+}
+
+.my-calendar-nav ul, .mc-main .category-key ul, .mc-main .mc-export ul, .mc-main .mc-list {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.my-calendar-nav ul li, .mc-main .category-key ul li, .mc-main .mc-export ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 0 .3em;
+}
+
+.my-calendar-nav li a {
+    padding: .3em;
+}
+
+.my-calendar-nav .my-calendar-prev a:before {
+    content: '\25C0 ';
+}
+
+.my-calendar-nav .my-calendar-next a:after {
+    content: ' \25b6';
+}
+
+/* Time frame */
+.mc-time {
+    position: absolute;
+    bottom: .75em;
+    font-size: 1.2em;
+}
+
+.mc-time a {
+    margin-right: 1px;
+    padding: .5em;
+}
+
+/* Category Key */
+.mc-main .category-key h3 {
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.mc-main .category-key {
+    margin: .5em 0;
+}
+
+.mc-main .category-key a {
+    padding: .3em;
+}
+
+.mc-main .no-icon {
+    display: inline-block;
+    width: 1.25em;
+    margin-right: .25em;
+    border-radius: 12px;
+}
+
+.mc-main .category-color-sample img {
+    padding: 2px;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin-right: .25em;
+}
+
+/* hCard */
+.mc-main .vcard {
+    line-height: 1.5;
+    margin: 0 0 1.5em 1.5em;
+    float: right;
+    padding: 2em;
+    max-width: 50%;
+}
+
+.mc-main .vcard .street-address {
+    display: inline;
+}
+
+.mc-main .vcard .street-address:nth-of-type(2):before {
+    content: ', ';
+}
+
+/* Jumpbox */
+.mc-main .my-calendar-date-switcher label {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    position: absolute;
+    max-height: 1px;
+}
+
+.mc-main .my-calendar-date-switcher {
+    position: absolute;
+    bottom: .5em;
+    right: 0;
+}
+
+.mc-main .my-calendar-date-switcher select {
+    padding: 0;
+    width: auto;
+    margin: 0;
+}
+
+.mc-main .my-calendar-date-switcher input[type=submit] {
+    min-width: 4em;
+}
+
+/* Format, Print */
+.mc-main .mc-format, .mc-main .mc-print, .mc-main .mc-format a, .mc-main .mc-print a {
+    display: inline-block;
+}
+
+.mc-main .mc-format a, .mc-main .mc-print a, .mc-main .mc-export a {
+    margin-right: 4px;
+    padding: .3em;
+}
+
+/* List View */
+.mc-main .mc-list {
+    margin-bottom: 1em;
+}
+
+.mc-list .current-day .event-date:before {
+    content: "\21D2";
+    color: red;
+    padding: 0 .5em .5em 0;
+}
+
+.mc-main .mc-list .mc-events {
+    list-style-type: none !important;
+    padding: .75em;
+    background: rgba(0, 0, 0, .1);
+    margin: 0;
+}
+
+.mc-main .mc-list .mc-events.odd {
+    list-style-type: none !important;
+    padding: .75em;
+    background: none;
+}
+
+.mc-main.list .my-calendar-month {
+    font-size: 1.4em;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: .25em;
+    text-align: right;
+}
+
+.mc-main .list-event {
+    background: rgba(255, 255, 255, .9);
+    padding: 1em 2em;
+    margin: .5em -.5em -.5em -.5em;
+}
+
+.mc-main .list-event .event-title {
+    padding: .25em;
+    margin-bottom: .5em;
+}
+
+.mc-main .mc-list .event-date {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.mc-main .list-event .details img {
+    width: auto;
+    max-width: 100%;
+}
+
+.mc-main .list-event .event-title img {
+    margin-right: .5em;
+    position: relative;
+    top: -1px;
+}
+
+/* Out of current month */
+.mc-main .nextmonth .event-title {
+    opacity: .7;
+}
+
+/* Single view */
+.single-event .event-title {
+    padding: .5em;
+    font-size: 1.4em;
+}
+
+.single-event .event-title img {
+    margin-right: .5em;
+}
+
+/* Mini */
+.mc-main.mini table {
+    margin-bottom: 1.5em;
+}
+
+.mc-main.mini tr td {
+    height: auto;
+}
+
+.mc-main.mini .has-events, .mc-main.mini .has-events .mc-date {
+    background: #fff;
+    font-weight: 700;
+}
+
+.mc-main.mini .vcard {
+    line-height: 1.5;
+    margin: 0 0 1.5em;
+    float: none;
+    padding: 1em;
+    max-width: 100%;
+}
+
+.mc-main.mini .my-calendar-nav, .mc-main.mini .mc-time, .mc-main.mini .my-calendar-date-switcher {
+    position: static !important;
+    width: 100% !important;
+    margin: .5em 0 !important;
+}
+
+.mc-main.mini .my-calendar-nav li a {
+    padding: .2em .5em !important;
+    font-family: sans-serif;
+}
+
+.mc-main.mini .event-title {
+    padding: .5em;
+}
+
+/* Responsive */
+@media (max-width: 460px) {
+    .my-calendar-nav, .mc-time, .my-calendar-date-switcher {
+        position: static !important;
+        width: 100% !important;
+        margin: .5em 0 !important;
+    }
+
+    .my-calendar-header {
+        height: auto !important;
+    }
+
+    .mc-print, .mc-format {
+        position: absolute;
+        right: 0;
+    }
+
+    .mc-print {
+        top: 0;
+    }
+
+    .mc-format {
+        bottom: 0;
+    }

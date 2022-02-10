@@ -1,0 +1,101 @@
+.oxi-addons-container .oxi-image-general-hover-style-5 .oxi-image-hover-figure{
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+}
+.oxi-addons-container .oxi-image-general-hover-style-5 .oxi-image-hover-figure .oxi-image-hover-figure-content{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    left: 0;                    
+    z-index:1;
+}
+.oxi-addons-container .oxi-image-general-hover-style-5 .oxi-image-hover-figure .oxi-image-hover-figure-caption {
+    opacity: 1;
+}
+.oxi-addons-container .oxi-image-general-hover-style-5 .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption {
+    visibility: hidden;
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.oxi-addons-container .oxi-image-general-hover-style-5 .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption {
+    visibility: hidden;
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    -o-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.oxi-addons-container .oxi-image-general-hover-style-5 .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-figure-caption {
+    visibility: hidden;
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform:  rotateX(-180deg);
+    -o-transform:  rotateX(-180deg);
+    transform:  rotateX(-180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.oxi-addons-container .oxi-image-general-hover-style-5 .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-figure-caption {
+    visibility: hidden;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform:  rotateX(180deg);
+    -o-transform:  rotateX(180deg);
+    transform:  rotateX(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-content,
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-content{
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-content,
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-content{
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    -o-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover:hover .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover.oxi-touch .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-figure-caption{
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover:hover .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover.oxi-touch .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-figure-caption{
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-5.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption {
+    visibility: visible;
+}

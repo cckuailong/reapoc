@@ -1,0 +1,152 @@
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure .oxi-image-hover-caption-tab {
+ 
+    z-index: 22;
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure{
+    overflow: hidden;
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure-caption{
+    opacity: 0;
+    z-index: 111;
+}
+.oxi-image-square-hover-style-3.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-3.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    opacity: 1;
+}
+
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure .mask1,
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure .mask2 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    pointer-events: none;
+    z-index: 21;
+    opacity: 0.4;
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure .mask1 {
+    left: auto;
+    right: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg) translateX(-50%);
+    -moz-transform: rotate(45deg) translateX(-50%);
+    -ms-transform: rotate(45deg) translateX(-50%);
+    -o-transform: rotate(45deg) translateX(-50%);
+    transform: rotate(45deg) translateX(-50%);
+    -webkit-transform-origin: 100% 0%;
+    -moz-transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -o-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure .mask2 {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: rotate(45deg) translateX(50%);
+    -moz-transform: rotate(45deg) translateX(50%);
+    -ms-transform: rotate(45deg) translateX(50%);
+    -o-transform: rotate(45deg) translateX(50%);
+    transform: rotate(45deg) translateX(50%);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+
+.oxi-image-square-hover-style-3.oxi-image-hover:hover .oxi-image-hover-figure .mask1,
+.oxi-image-square-hover-style-3.oxi-image-hover.oxi-touch .oxi-image-hover-figure .mask1{
+    -webkit-transform: rotate(45deg) translateX(0);
+    -moz-transform: rotate(45deg) translateX(0);
+    -ms-transform: rotate(45deg) translateX(0);
+    -o-transform: rotate(45deg) translateX(0);
+    transform: rotate(45deg) translateX(0);
+}
+.oxi-image-square-hover-style-3.oxi-image-hover:hover .oxi-image-hover-figure .mask2,
+.oxi-image-square-hover-style-3.oxi-image-hover.oxi-touch .oxi-image-hover-figure .mask2{
+    -webkit-transform: rotate(45deg) translateX(-0);
+    -moz-transform: rotate(45deg) translateX(-0);
+    -ms-transform: rotate(45deg) translateX(-0);
+    -o-transform: rotate(45deg) translateX(-0);
+    transform: rotate(45deg) translateX(-0);
+
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption {
+    visibility: visible;
+    -webkit-transform: translateX(-100%);
+    -moz-transform:translateX(-100%);
+    -ms-transform:translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform:translateX(-100%);
+}
+.oxi-image-square-hover-style-3.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-3.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption{
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+    -o-transform: translateX(0);
+    transform:translateX(0);
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure.left_to_right .oxi-image-hover-caption-tab,
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-caption-tab{
+     bottom: auto;
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure.right_to_left .oxi-image-hover-caption-tab,
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-caption-tab{
+     top: auto;
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption {
+    visibility: visible;
+    -webkit-transform: translateX(100%);
+    -moz-transform:translateX(100%);
+    -ms-transform:translateX(100%);
+    -o-transform: translateX(100%);
+    transform:translateX(100%);
+   
+}
+.oxi-image-square-hover-style-3.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-3.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption{
+
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+    -o-transform: translateX(0);
+    transform:translateX(0);
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-caption-tab {
+    visibility: visible;
+    -webkit-transform: translateY(-100%);
+    -moz-transform:translateY(-100%);
+    -ms-transform:translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform:translateY(-100%);
+}
+.oxi-image-square-hover-style-3.oxi-image-hover:hover .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-caption-tab,
+.oxi-image-square-hover-style-3.oxi-image-hover.oxi-touch .oxi-image-hover-figure.top_to_bottom .oxi-image-hover-caption-tab{
+
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform:translateY(0);
+    -ms-transform:translateY(0);
+    -o-transform: translateY(0);
+    transform:translateY(0);
+}
+.oxi-image-square-hover-style-3 .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-caption-tab {
+    visibility: visible;
+    -webkit-transform: translateY(100%);
+    -moz-transform:translateY(100%);
+    -ms-transform:translateY(100%);
+    -o-transform: translateY(100%);
+    transform:translateY(100%);
+}
+.oxi-image-square-hover-style-3.oxi-image-hover:hover .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-caption-tab,
+.oxi-image-square-hover-style-3.oxi-image-hover.oxi-touch .oxi-image-hover-figure.bottom_to_top .oxi-image-hover-caption-tab{
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform:translateY(0);
+    -ms-transform:translateY(0);
+    -o-transform: translateY(0);
+    transform:translateY(0);
+}

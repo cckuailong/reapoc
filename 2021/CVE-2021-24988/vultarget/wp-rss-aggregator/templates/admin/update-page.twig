@@ -1,0 +1,106 @@
+<div class="wrap wrap--wpra-update">
+    <div class="wpra-update wpra-text-center">
+        <div class="wpra-update__logo">
+            <img src="{{ path.images }}wpra-icon-transparent.png" alt="WP RSS Aggregator Logo">
+        </div>
+        <div class="wpra-update-head__copy">
+            <div class="wpra-update-head__title">{{ title }}</div>
+            <div class="wpra-update-head__link">
+                <a href="{{ url.main }}">{% trans "Skip the update details and get back to the plugin." %}</a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="wp-header-end">
+
+    <div id="wpra-update-app">
+        <div class="postbox centered">
+            <div class="inside wpra-update-feature">
+                <div class="wpra-update-feature__text">
+                    <h3>{% trans "Introducing Lorem: A New WP RSS Aggregator Partner" %}</h3>
+                    <p>
+                        {% trans %}
+                            Over the years we have partnered up with a few trusted companies to offer customisations that go beyond
+                            our premium support services. Being a small team, we don’t always have the time to offer the level
+                            of customisation that some of you may need or want. That’s why partnering up with others who excel
+                            in this area was the logical next step.
+                        {% endtrans %}
+                    </p>
+                    <p>
+                        {% trans %}
+                            Lorem is a platform through which you can hire expert designers, developers, marketers and more at
+                            affordable rates. They have a dedicated team that guides you from the moment you start a
+                            conversation to the moment that a project is delivered.
+                        {% endtrans %}
+                    </p>
+                    <p>
+                        {% trans %}
+                            We chose to work with Lorem in order to provide customisation works as well as support in terms of
+                            setting up WP RSS Aggregator to meet your exact needs.
+                        {% endtrans %}
+                    </p>
+                    <p>
+                        <a href="" target="_blank">
+                            {% trans "Learn more" %}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="postbox centered">
+            <div class="inside">
+                <h2>{% trans "Full Changelog" %}</h2>
+                <div class="wpra-updates">
+                    {{ changelog|raw }}
+                </div>
+            </div>
+        </div>
+
+        <div class="wpra-text-center">
+            <a class="button button-large button-icon" href="{{ url.main }}">
+                Continue to WP RSS Aggregator
+                <span class="dashicons dashicons-arrow-right-alt2"></span>
+            </a>
+        </div>
+
+        <div class="wpra-text-center wpra-links">
+            <a href="{{ url.website }}" target="wpra-website">Visit website</a> |
+            <a href="{{ url.support }}" target="wpra-website-contact">Contact support</a> |
+            <a href="{{ url.kb }}" target="wpra-kb">Browse knowledge base</a>
+        </div>
+    </div>
+
+    <br class="clear">
+</div>
+
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
+            if ($.fn.colorbox) {
+                $('.wrap--wpra-update .wpra-update-feature__image').colorbox({
+                    title: 'Image',
+                    href: function () {
+                        var img = $(this).find('img');
+                        var src = img.attr('src');
+
+                        return src;
+                    },
+                    photo: true,
+                    rel: 'wpra-updates',
+                });
+            }
+        });
+    })(jQuery);
+</script>
+
+<style type="text/css">
+    .postbox.centered {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .postbox.centered center > img {
+        max-width: 100%;
+    }
+</style>

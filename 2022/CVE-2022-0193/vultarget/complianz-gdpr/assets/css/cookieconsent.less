@@ -1,0 +1,694 @@
+@import "cookieconsent.core.less";
+#cc-window, #cmplz-manage-consent-container, .cmplz-tcf-container {
+  //reset checkbox styles for classic
+  input[type="checkbox"] {
+	width: initial;
+	-webkit-appearance: checkbox;
+	&:checked::before{
+	  content:'';
+	}
+  }
+}
+#cc-window {
+  .cc-header {
+	font-size: 18px;
+	font-weight: 700;
+	width: 100%;
+	margin-bottom: 10px;
+	
+  }
+
+  //bottom or top
+  &.cc-banner {
+	.cc-header {
+	  display:none;
+	}
+  }
+
+  &.cc-floating {
+	min-width: 468px;
+  }
+
+  @media screen and (max-width: 469px) {
+	&.cc-floating {
+	  min-width: 100%;
+	}
+	&.cc-type-categories {
+	  &.cc-floating, .cc-btn {
+		min-width: 100%;
+	  }
+	}
+  }
+
+  a.cc-btn {
+	text-decoration: none;
+
+	&:hover {
+	  text-decoration: underline;
+	}
+  }
+
+  &.cc-theme-block {
+	.cc-btn {
+	  border: 0;
+	}
+  }
+
+  &.cc-type-categories {
+	&.cc-top, &.cc-bottom {
+	  .cmplz-categories-wrap {
+		line-height: 28px;
+	  }
+	  .cmplz-slider-checkbox {
+		margin:3px 15px 5px 0;
+	  }
+	  @media screen and (min-width: 768px) {
+		.cmplz-categories-wrap {
+		  line-height: 29px;
+		}
+	  }
+
+	  &.cc-theme-edgeless:not(.cc-floating) {
+		.cc-compliance {
+		  .cc-dismiss, .cc-save {
+			margin: 0;
+		  }
+		}
+	  }
+	}
+
+
+	&.cc-floating {
+	  .cc-compliance {
+		display: block;
+
+		.cc-btn {
+		  padding: 0.8em 0;
+		  margin: 15px 0 0 0;
+		}
+
+		.cc-accept-all {
+		  margin: 15px 0 0 0;
+		}
+
+		.cc-dismiss {
+		  float: left;
+		}
+
+		.cc-save {
+		  float: right;
+		}
+
+		.cc-accept-all {
+		  clear: both;
+		  width: 100%;
+		}
+	  }
+
+	  &.cmplz-categories-no, &.cmplz-categories-hidden {
+		.cc-compliance {
+		  .cc-dismiss, .cc-save {
+			width: calc(50% - 0.8em);
+			margin: 0;
+		  }
+		}
+	  }
+
+	  &.cc-theme-edgeless{
+		.cmplz-categories-wrap{
+		  padding-left:1.1em;
+		}
+		&.cmplz-categories-no, &.cmplz-categories-hidden {
+		  .cc-compliance {
+			.cc-dismiss, .cc-save {
+			  width: 50%;
+			}
+			.cc-save-settings {
+			  margin-top:0;
+			}
+		  }
+		}
+	  }
+
+	  &.cc-theme-edgeless{
+		  .cc-compliance {
+			.cc-save-settings {
+			  margin-top:0;
+			}
+		  }
+	  }
+
+	  &:not(.cc-theme-edgeless){
+		.cc-compliance {
+		  .cc-dismiss, .cc-save {
+			margin-top:15px;
+		  }
+		}
+	  }
+
+	  &.cmplz-categories-visible {
+		.cc-compliance {
+		  .cc-dismiss, .cc-save {
+			width: 100%;
+		  }
+		}
+
+	  }
+
+	  &.cmplz-categories-legacy {
+		.cc-compliance {
+		  .cc-dismiss, .cc-save {
+			margin: 0;
+		  }
+
+		  .cc-btn {
+			float: initial;
+			margin: 15px 0 0 0;
+		  }
+		}
+	  }
+	}
+  }
+
+  &.cc-theme-edgeless {
+	.cc-header {
+	  margin:1em 1em 0 1.7em;
+	}
+	.cc-btn {
+	  border: 0;
+	}
+  }
+
+  &.cmplz-hide-cats {
+	display:none;
+  }
+
+  /**
+  Make sure the text stays within the banne
+   */
+  .cc-message {
+	word-wrap:break-word;
+  }
+  .cc-deny {
+	display:none;
+  }
+  //because the US banner requires two links, we have a comma after the link, which is ugly with padding
+  .cc-link {
+	padding-right: 0;
+  }
+
+  &.cc-center, &.cc-left, &.cc-right{
+	&.cc-type-categories .cc-save {
+	  margin-top: 15px
+	}
+  }
+
+  &.cc-type-categories.cc-floating.cc-theme-edgeless{
+	label {
+	  margin-left: 1em;
+	}
+	.cc-message {
+	  margin-bottom: .5em;
+	}
+  }
+}
+//end #cc-window
+
+//make sure the popup is over the revoke button.
+.cc-revoke {
+  z-index:9998;
+
+  //because it's now a button, we need to prevent button issues
+  border:0;
+  &:active {
+	outline: none;
+	border: none;
+  }
+}
+
+//Hide Revoke button on mobile screens
+@media screen and (max-width: 768px) {
+  .cc-revoke {
+    display: none !important
+  }
+}
+
+.cc-center.cc-revoke {
+  &.cc-animate {
+    transform: translateY(2em);
+    &:hover{
+      transform: translateY(0);
+    }
+  }
+  bottom: 0;
+  left: 3em;
+  border-top-left-radius: .5em;
+  border-top-right-radius: 0.5em;
+}
+
+/**IE 11 fix for left:unset */
+.cc-revoke{
+  &.cc-right {
+  	left:auto;
+  }
+  &.left {
+	right:auto;
+  }
+}
+
+/*
+* Hide revoke button
+* prevent overriding by script by using !important
+*/
+.cc-hidden {
+  display:none !important;
+}
+
+.cc-window{
+  &.cc-theme-minimal {
+	//-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+	//-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+	//box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+
+	&:not(.cc-floating) .cc-message {
+	  text-align: center;
+	}
+  }
+
+  &.cc-center {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	min-width: 360px;
+	//-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+	//-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+	//box-shadow: 0 0 10px rgba(0, 0, 0, .4)
+  }
+}
+
+//checkboxes, both for documents and banner
+#cc-window.cc-window, #cmplz-manage-consent-container.cmplz-manage-consent-container, #cmplz-tcf-container.cmplz-tcf-container {
+  .cmplz-square-checkbox{
+	&:checked + .cc-check {
+	  svg {
+		path {
+		  stroke-dashoffset: 60;
+		  transition: all .3s linear
+		}
+		polyline {
+		  stroke-dashoffset: 42;
+		  transition: all .2s linear;
+		  transition-delay: .15s
+		}
+	  }
+	}
+	&:focus + .cc-check svg {
+	  outline: -webkit-focus-ring-color auto 1px;
+	}
+  }
+
+  //prevent classic checkbox from showing up in square and slider variant
+  //We cannot use display none or height 0, as the checkboxes can't be made to enable on keyboard or with screen reader. https://hugogiraudel.com/2016/10/13/css-hide-and-seek/
+  input.cmplz-svg-checkbox, .cmplz-slider-checkbox input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	//display: block !important;
+	//opacity: 0 !important;
+	//height: 0 !important;
+  }
+
+  /* Slider style checkboxes */
+  .cmplz-slider-checkbox {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 21px;
+
+	.cmplz-slider {
+	  position: absolute;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	  &:before {
+		position: absolute;
+		content: "";
+		height: 15px;
+		width: 15px;
+		left: 4px;
+		bottom: 3px;
+		background-color: white;
+		-webkit-transition: .4s;
+		transition: .4s;
+	  }
+	  &.cmplz-round {
+		border-radius: 20px;
+	  }
+	  &.cmplz-round:before {
+		border-radius: 50%;
+
+	  }
+	}
+
+
+	.cmplz-slider-na {
+	  padding: 2px 8px;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	  &:before {
+		position: absolute;
+		content: "N/A";
+		color:white;
+	  }
+	  &.cmplz-round {
+		border-radius: 20px;
+	  }
+	}
+
+	input:checked + .cmplz-slider {
+	  &:before{
+		-webkit-transform: translateX(17px);
+		-ms-transform: translateX(17px);
+		transform: translateX(17px);
+	  }
+	}
+	//set focus style
+	input[type="checkbox"]:focus + .cmplz-slider {
+	  outline: -webkit-focus-ring-color auto 1px;
+	}
+  }
+
+  label {
+	color:inherit;
+	font-weight: normal;
+	margin-bottom: 0;
+	line-height: inherit;
+
+  }
+
+  div.cc-check {
+	display: inline-block;
+	padding-bottom: 10px;
+  }
+
+  .cc-check,
+  .cc-check svg {
+	//needed to prevent 2020 from overriding this checkbox
+	display: inherit;
+	transform: translate3d(0, 0, 0)
+  }
+
+  label:not(.cc-check) {
+	white-space: nowrap;
+	margin-right: 15px;
+	margin-left: 0;
+	padding-left:0;
+  }
+
+  //&.cc-theme-edgeless .cmplz-categories-wrap {
+	//.cmplz-classic-checkbox {
+	// // margin-left:15px;
+	//}
+  //}
+}
+
+#cc-window.cc-window .cmplz-categories-wrap, #cmplz-manage-consent-container.cmplz-manage-consent-container,#cmplz-tcf-container.cmplz-tcf-container {
+  .cmplz-slider-checkbox {
+	vertical-align: top;
+	margin:3px 15px 10px 0;
+  }
+
+  .cmplz-consent-checkbox{
+	margin-right:15px;
+  }
+  label {
+	box-sizing: initial;
+  }
+
+  .cc-check {
+	cursor: pointer;
+	position: relative;
+	margin: auto 7px auto auto;
+	width: 18px;
+	height: 18px;
+	-webkit-tap-highlight-color: transparent;
+	&:before {
+	  content: "";
+	  position: absolute;
+	  opacity: 0
+	}
+	&:hover:before {
+	  opacity: 1
+	}
+	svg {
+	  position: relative;
+	  z-index: 1;
+	  fill: none;
+	  stroke-linecap: round;
+	  stroke-linejoin: round;
+	  stroke-width: 3.5;
+	  transition: all .2s ease;
+	  stroke: #000;
+	  path {
+		stroke-dasharray: 60;
+		stroke-dashoffset: 0
+	  }
+	  polyline {
+		stroke-dasharray: 22;
+		stroke-dashoffset: 66
+	  }
+	}
+  }
+}
+
+/* Soft Cookie wall */
+.cmplz-soft-cookiewall{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+//don't show cookie wall on our own document pages, and hide cookie warning
+.cmplz-document .cmplz-soft-cookiewall{
+  background-color: transparent;
+  display:none;
+}
+
+//don't show cookie wall on optout
+.cmplz-optout .cmplz-soft-cookiewall{
+  position:initial;
+}
+
+//this class should not be contained in blocked content container class, to ensure it applies also before the complianz script has added the blocked content classå
+.cmplz-video {
+  //prevent theme's from hiding the placeholder image with a background color
+  &.cmplz-iframe-styles {
+	background-color:transparent;
+  }
+  //hide placeholder video
+  &.cmplz-hidden {
+	visibility: hidden !important;
+  }
+}
+
+.cmplz-blocked-content-container{
+  &.cmplz-video-placeholder{
+	padding-bottom:initial;
+  }
+  iframe {
+	max-height: 100%;
+	border:0 !important;
+  }
+  div div {display:none}
+  background: #FFF;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: inherit;
+  position:relative;
+  //Geo My WP integration
+  &.gmw-map-cover{
+	max-height: 100%;
+	position: absolute;
+  }
+  .cmplz-blocked-content-notice{
+	&:focus {
+	  border:1px dotted #cecece;
+	}
+	white-space: normal;
+	text-transform: initial;
+	cursor:pointer;
+	position:absolute !important;
+	width:100%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	max-width: 200px;
+	font-size: 14px;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+	color:#fff;
+	text-align:center;
+	/*make sure the container is on top of the iframe, but below our cookie notice */
+	z-index: 98;
+	/*We need some lineheight, for example Elementor will force a lineheight of 0*/
+	line-height: 23px;
+  }
+
+}
+
+.cmplz-dismiss {
+	opacity: 0;
+  display:none;
+}
+
+.cmplz-animation-fade {
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+
+	&.cmplz-dismiss {
+		-webkit-animation: fadeOut 1s;
+		animation: fadeOut 1s;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes fadeOut {
+		to {
+			opacity: 0;
+		}
+		from {
+			opacity: 1;
+		}
+	}
+}
+
+.cmplz-animation-slide.cc-top {
+	-webkit-animation: slideInUpBottom 1s;
+	animation: slideInUpBottom 1s;
+
+	&.cmplz-dismiss {
+		-webkit-animation: slideOutUpBottom 1s;
+		animation: slideOutUpBottom 1s;
+	}
+	@keyframes slideInUpBottom {
+		from {
+			-webkit-transform: translate3d(0, -150%, 0);
+			transform: translate3d(0, -150%, 0);
+		}
+		to {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	@keyframes slideOutUpBottom {
+		to {
+			-webkit-transform: translate3d(0, -150%, 0);
+			transform: translate3d(0, -150%, 0);
+			opacity: 1;
+		}
+		from {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			opacity: 1;
+		}
+	}
+}
+
+.cmplz-animation-slide.cc-center {
+	-webkit-animation: slideInUpCenter 1s;
+	animation: slideInUpCenter 1s;
+
+	&.cmplz-dismiss {
+		-webkit-animation: slideOutUpCenter 1s;
+		animation: slideOutUpCenter 1s;
+	}
+	@keyframes slideInUpCenter {
+		from {
+			-webkit-transform: translate3d(-50%, 150%, 0);
+			transform: translate3d(-50%, 150%, 0);
+		}
+		to {
+			-webkit-transform: translate3d(-50%, -50%, 0);
+			transform: translate3d(-50%, -50%, 0);
+		}
+	}
+	@keyframes slideOutUpCenter {
+		to {
+			-webkit-transform: translate3d(-50%, 150%, 0);
+			transform: translate3d(-50%, 150%, 0);
+			opacity: 1;
+		}
+		from {
+			-webkit-transform: translate3d(-50%, -50%, 0);
+			transform: translate3d(-50%, -50%, 0);
+			opacity: 1;
+		}
+	}
+}
+
+.cmplz-animation-slide.cc-bottom {
+	-webkit-animation: slideInUpTop 1s;
+	animation: slideInUpTop 1s;
+
+	&.cmplz-dismiss {
+		-webkit-animation: slideOutUpTop 1s;
+		animation: slideOutUpTop 1s;
+	}
+	@keyframes slideInUpTop {
+		from {
+			-webkit-transform: translate3d(0, 150%, 0);
+			transform: translate3d(0, 150%, 0);
+		}
+		to {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	@keyframes slideOutUpTop {
+		to {
+			-webkit-transform: translate3d(0, 150%, 0);
+			transform: translate3d(0, 150%, 0);
+			opacity: 1;
+		}
+		from {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			opacity: 1;
+		}
+	}
+}

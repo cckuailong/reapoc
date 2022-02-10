@@ -1,0 +1,32 @@
+{% set activeClass = item.isActive ? 'add-on-active' : '' %}
+{% set codeClass = 'add-on-code-' ~ item.code %}
+
+
+<div class="add-on wp-box {{ activeClass }} {{ codeClass }}">
+    <div class="inner">
+        <h3>
+            <a target="_blank" href="{{ item.url|e('html_attr') }}">
+                {{ item.title }}
+            </a>
+        </h3>
+        <p>{{ item.desc }}</p>
+    </div>
+    <div class="footer">
+        {% if item.state == 2 %}
+            <a class="button button-disabled">
+                <span class="wprss-sprite-tick"></span>
+                {% trans "Installed!" %}
+            </a>
+        {% elseif item.state == 1 %}
+            <a class="button" href="{{ item.activateUrl|raw }}">
+                {% trans "Activate" %}
+            </a>
+        {% else %}
+            <a target="_blank" href="{{ item.url }}" class="button">
+                {% autoescape 'html' %}
+                    {% trans "Purchase & Install" %}
+                {% endautoescape %}
+            </a>
+        {% endif %}
+    </div>
+</div>

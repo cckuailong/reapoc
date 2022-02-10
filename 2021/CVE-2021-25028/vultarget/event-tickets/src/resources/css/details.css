@@ -1,0 +1,32 @@
+/**
+ * This CSS file was auto-generated via PostCSS
+ *
+ * Contributors should avoid editing this file, but instead edit the associated
+ * src/resources/postcss/ file. For more information, check out our engineering
+ * docs on how we handle CSS in our engineering docs.
+ *
+ * @see: https://the-events-calendar.github.io/products-engineering/docs/code-standards/css/
+ */
+
+.tribe__details__poly .tribe__details__summary:before {
+			content: '\25bc';
+		}
+
+	.tribe__details__poly .tribe__details__content {
+		display: none;
+	}
+
+	.tribe__details__poly.tribe__details--open .tribe__details__content {
+			display: block;
+		}
+
+	@media (min-width: 768px) {
+
+			.tribe__details__poly .tribe__details__poly.tribe__details--mobile .tribe__details__summary {
+				display: none;
+			}
+
+			.tribe__details__poly .tribe__details__poly.tribe__details--mobile .tribe__details__content {
+				display: block;
+			}
+	}

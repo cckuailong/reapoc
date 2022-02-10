@@ -1,0 +1,151 @@
+/* 
+    Document   : admin-booking resources-table
+    Created on : 2016-08-09, 11:38:06
+    Author     : wpdevelop
+    Description: Resource Table CSS 
+*/
+
+/* General Class */
+.wpbc_resources_table {
+
+}
+
+/* Resources Table */
+.wpbc_resources_table .table,
+.wpbc_resources_table .table.widefat  {
+    border: 0px solid #bbb;
+    box-shadow: 0 0 2px #aaa;
+}
+.wpbc_resources_table table > thead > tr > th {
+   background-color: #ffffff;
+   border-bottom: 2px solid #e5e5e5;
+}
+.wpdevelop.wpbc_resources_table table > tfoot > tr > th {
+   background-color: #ffffff;
+   border-top: 2px solid #e5e5e5;
+}
+.wpbc_resources_table thead th,
+.wpbc_resources_table tfoot th {
+    font-weight:600;
+    text-align: left;
+}
+.wpbc_resources_table th a,  
+.wpbc_resources_table th a:hover,  
+.wpbc_resources_table th a:focus {
+    text-decoration: none;   
+}
+.wpdevelop.wpbc_resources_table table > tbody > tr.row_selected_color > th, 
+.wpdevelop.wpbc_resources_table table > tbody > tr.row_selected_color > td {
+    background: #b5d4ef;
+    border-color: #ccc !important;
+}
+.wpbc_resources_table th a span.glyphicon {    
+    font-size: 0.8em;
+    font-weight: 400;
+    padding-left: 2px;
+}
+
+.wpdevelop.wpbc_resources_table .table > thead > tr > th, 
+.wpdevelop.wpbc_resources_table .table > tbody > tr > th, 
+.wpdevelop.wpbc_resources_table .table > tfoot > tr > th, 
+.wpdevelop.wpbc_resources_table .table > thead > tr > td, 
+.wpdevelop.wpbc_resources_table .table > tbody > tr > td, 
+.wpdevelop.wpbc_resources_table .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+/* Labels Colors */
+.wpbc_resources_table .label {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 0 1px #ddd;
+    padding: 2px 5px;
+    white-space: nowrap;
+    line-height: 2.4em;
+}
+.wpbc_resources_table .label span, 
+.wpbc_resources_table .label a,
+.wpbc_resources_table .label a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.wpbc_resources_table .label-pending {
+    background: #FFBB45;
+}
+.wpbc_resources_table .label-approved {
+    background: #9BE;
+}
+.wpbc_resources_table .label-trash {    
+    background: #D94A48;
+    color: #fff;
+    text-shadow: 0 0 1px #E00;
+}
+.wpbc_resources_table .label-success {
+    
+}
+.wpbc_resources_table .label-unknown {
+    background-color: #999 !important;
+}
+.wpbc_resources_table .label-error {
+    background-color: #FA773D !important;
+}
+.wpbc_resources_table .payment-label-success {
+    background-color: #468847 !important;
+}
+.wpbc_resources_table .payment-label-pending {
+    background-color: #992 !important;
+}
+.wpbc_resources_table .payment-label-unknown {
+    background-color: #999 !important;
+}
+.wpbc_resources_table .payment-label-error {
+    background-color: #FA773D !important;
+}
+
+.wpbc_resources_table .field-currency {
+    color: #444;
+    display: inline;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.7em;
+    height: 26px;
+    padding:0;
+    vertical-align: top;    
+}
+.wpdevelop.wpbc_resources_table .table > tbody > tr > td select.form-control, 
+.wpbc_resources_table select {
+    width:auto;
+    height:2em;
+    /*padding: 2px;*/
+    /*border-radius: 0;*/
+}
+@media (max-width: 782px) {     
+    .wpbc_resources_table th.wpbc_hide_mobile, 
+    .wpbc_resources_table td.wpbc_hide_mobile {
+        display: none;
+    }
+    .wpbc_resources_table th.wpbc_col_id, 
+    .wpbc_resources_table td.wpbc_col_id {
+        width: 4em;
+    }
+    .wpbc_resources_table th.wpbc_col_title, 
+    .wpbc_resources_table td.wpbc_col_title {
+        width: 9em;
+    }
+    .wpbc_resources_table .field-currency {
+        line-height: 2.1em;
+    }
+    .wp-admin  .wpbc_page select,
+    .wp-admin  .wpbc_page .form-table select,
+    #wpbody .wpbc_resources_table input[type="text"],
+    #wpbody .wpbc_resources_table select {
+        height: 34px;
+        min-height: 28px;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 600px) { 
+    .wpbc_resources_table th.wpbc_hide_mobile_xs, 
+    .wpbc_resources_table td.wpbc_hide_mobile_xs {
+        display: none;
+    }
+}

@@ -1,0 +1,101 @@
+.oxi-addons-container .oxi-addons-row .oxi-addons-main-wrapper-image-comparison-style-1,
+.oxi-addons-container .oxi-addons-row .oxi-addons-main-wrapper-image-comparison-style-1 *{
+    transition: none;
+}
+
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-up-arrow,
+.twentytwenty-down-arrow {
+    left: 50% ;
+    transform: translateX(-50%)
+}
+ 
+.oxi-addons-main-wrapper-image-comparison-style-1 .oxi-addons-main {
+    width: 100%; 
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-left-arrow,
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-right-arrow {
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .oxi-img {
+    transition: none
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-handle {
+    transition: none
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-horizontal .twentytwenty-handle::before,
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-horizontal .twentytwenty-handle::after,
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-vertical .twentytwenty-handle::before,
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-vertical .twentytwenty-handle::after {
+    background: #ffffff
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-handle {
+    border-color: #ffffff
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-horizontal .twentytwenty-handle::after {
+    box-shadow: 0 -3px 0 #ffffff, 0px 0px 12px rgba(51, 51, 51, 0.5) 
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-horizontal .twentytwenty-handle::before {
+    box-shadow: 0 -3px 0 #ffffff, 0px 0px 12px rgba(51, 51, 51, 0.5) 
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-left-arrow {
+    border-right: 6px solid #ffffff
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-right-arrow {
+    border-left: 6px solid #ffffff
+}
+
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-before-label::before,
+.oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-after-label::before {
+    background: rgba(158, 9, 9, 0.44) ;
+    color: #ffffff ;
+    display: inline-block;
+    font-family: "Crate Round";
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 16px ;
+    border: 1px none ;
+    border-color: #707070;
+    border-radius: 5px 5px 5px 5px ;
+    padding: 5px 15px 5px 15px 
+}
+
+@media only screen and (min-width:669px) and (max-width:993px) {
+    .oxi-addons-main-wrapper-image-comparison-style-1 {
+        padding: 0px 0px 0px 0px
+    }
+    .oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-before-label::before,
+    .oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-after-label::before {
+        font-size: 16px ;
+        border-radius: 5px 5px 5px 5px ;
+        padding: 5px 15px 5px 15px 
+    }
+}
+
+@media only screen and (max-width:668px) {
+    .oxi-addons-main-wrapper-image-comparison-style-1 {
+        padding: 0px 0px 0px 0px
+    }
+    .oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-before-label::before,
+    .oxi-addons-main-wrapper-image-comparison-style-1 .twentytwenty-after-label::before {
+        font-size: 16px ;
+        border-radius: 5px 5px 5px 5px ;
+        padding: 5px 15px 5px 15px     ;
+        -webkit-border-radius: 5px 5px 5px 5px ;
+        -moz-border-radius: 5px 5px 5px 5px ;
+        -ms-border-radius: 5px 5px 5px 5px ;
+        -o-border-radius: 5px 5px 5px 5px ;
+}
+}

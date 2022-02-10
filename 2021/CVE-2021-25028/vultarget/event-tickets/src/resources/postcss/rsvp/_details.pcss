@@ -1,0 +1,78 @@
+/**
+ * Event Tickets - RSVP Details
+ *
+ * @since 5.0.3
+ */
+
+.event-tickets {
+
+	.tribe-tickets__rsvp-details-wrapper {
+		align-items: center;
+		display: flex;
+		flex: none;
+		justify-content: center;
+		text-align: center;
+
+		@media (--viewport-medium) {
+			width: calc(5 * var(--tec-grid-width-1-of-8));
+		}
+	}
+
+	.tribe-tickets__rsvp-details {
+		text-align: center;
+		width: 100%;
+
+		@media (--viewport-medium) {
+			text-align: initial;
+		}
+	}
+
+	.tribe-tickets__rsvp-description {
+		color: var(--tec-color-text-secondary);
+		margin-top: var(--tec-spacer-1);
+
+		@media (--viewport-medium) {
+			margin-top: var(--tec-spacer-2);
+		}
+	}
+
+	.tribe-tickets__rsvp-attendance {
+		display: flex;
+		flex-direction: column;
+		margin-top: var(--tec-spacer-4);
+
+		@media (--viewport-medium) {
+			margin-top: var(--tec-spacer-5);
+		}
+	}
+
+	.tribe-tickets__rsvp-attendance-number {
+		font-size: var(--tec-font-size-9);
+
+		@media (--viewport-medium) {
+			font-size: var(--tec-font-size-7);
+		}
+
+		&.tribe-tickets__rsvp-attendance-number--no-description {
+			font-size: var(--tec-font-size-10);
+		}
+	}
+
+	.tribe-tickets__rsvp-attendance-going {
+		color: var(--tec-color-text-secondary);
+	}
+
+	.tribe-tickets__rsvp-availability {
+		color: var(--tec-color-text-secondary);
+		margin-top: var(--tec-spacer-4);
+
+		@media (--viewport-medium) {
+			margin-top: var(--tec-spacer-5);
+		}
+	}
+
+	.tribe-tickets__rsvp-availability-quantity,
+	.tribe-tickets__rsvp-availability-days-left {
+		color: var(--tec-color-text-primary);
+	}
+}

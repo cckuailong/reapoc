@@ -1,0 +1,269 @@
+/**
+ * Event Tickets - Form styles for Event Tickets.
+ *
+ * @since 5.0.0
+ */
+.event-tickets .tribe-tickets__form {
+	.tribe-tickets__form-field {
+		display: block;
+		padding-bottom: var(--tec-spacer-2);
+		width: 100%;
+	}
+
+	.tribe-tickets__form-field--required {
+
+		header:first-child:after,
+		label:first-child:after {
+			content: '';
+		}
+	}
+
+	.tribe-required {
+		color: var(--tec-color-icon-error);
+		margin-left: var(--tec-spacer-0);
+	}
+
+	label,
+	.tribe-tickets__form-field-label {
+		color: var(--tec-color-text-primary);
+		display: block;
+		font-size: inherit;
+		font-weight: var(--tec-font-weight-regular);
+		margin-bottom: var(--tec-spacer-0);
+
+		&.tribe-tickets-meta-field-header {
+			cursor: pointer;
+			display: inline-block;
+			margin-bottom: 0;
+			margin-right: var(--tec-spacer-4);
+		}
+	}
+
+	.tribe-tickets__form-field-input-wrapper {
+		width: 100%;
+	}
+
+	.tribe-tickets__form-field-input-helper {
+		color: var(--tec-color-text-primary-light);
+		margin-top: var(--tec-spacer-0);
+	}
+
+	.tribe-tickets__form-field-input-helper--error {
+		color: var(--tec-color-icon-error);
+	}
+
+	@media (--viewport-medium) {
+		.tribe-tickets__form-field-input-text,
+		.tribe-tickets__form-field-input-select {
+			label:not([for*='text-area']) {
+				align-self: center;
+			}
+		}
+	}
+
+	.tribe-common-form-control-radio__input,
+	.tribe-common-form-control-checkbox__input {
+		border-color: var(--tec-color-border-default);
+		border-width: 1px;
+		box-shadow: none;
+		margin-right: var(--tec-spacer-1);
+
+		&:hover,
+		&:focus {
+			border-color: var(--tec-form-color-border-secondary);
+		}
+
+		&:active {
+			border-color: var(--tec-form-color-border-primary);
+		}
+
+		&:checked {
+			background-color: var(--tec-color-icon-focus);
+			border-color: var(--tec-color-icon-focus);
+		}
+
+		&.tribe-tickets__form-field-input--error {
+			border-color: var(--tec-color-icon-error);
+		}
+	}
+
+	.tribe-common-form-control-checkbox__input {
+		border-radius: var(--tec-border-radius-default);
+	}
+
+	.tribe-common-form-control-checkbox__label {
+		margin-left: 0;
+	}
+
+	input[type='text'],
+	input[type='email'],
+	input[type='url'],
+	input[type='password'],
+	input[type='search'],
+	input[type='number'],
+	input[type='tel'],
+	input[type='range'],
+	input[type='date'],
+	input[type='month'],
+	input[type='week'],
+	input[type='time'],
+	input[type='datetime'],
+	input[type='datetime-local'],
+	input[type='color'],
+	select,
+	textarea {
+		border: 1px solid var(--tec-color-border-default);
+		border-radius: var(--tec-border-radius-default);
+		width: 100%;
+
+		&:focus {
+			border-color: var(--tec-color-accent-secondary-hover);
+			box-shadow: none;
+		}
+
+		@media (--viewport-medium) {
+			max-width: 600px;
+		}
+	}
+
+	input[type='text'],
+	input[type='email'],
+	input[type='url'],
+	input[type='password'],
+	input[type='search'],
+	input[type='number'],
+	input[type='tel'],
+	input[type='range'],
+	input[type='date'],
+	input[type='month'],
+	input[type='week'],
+	input[type='time'],
+	input[type='datetime'],
+	input[type='datetime-local'],
+	input[type='color'],
+	input[type='checkbox'],
+	input[type='radio'],
+	select,
+	textarea {
+		&:invalid {
+			box-shadow: none;
+		}
+
+		&.tribe-tickets__form-field-input--error,
+		&.tribe-tickets__form-field-input--error:invalid {
+			border-color: var(--tec-color-icon-error);
+		}
+	}
+
+	input[type="text"],
+	input[type="search"],
+	input[type="url"],
+	input[type="tel"],
+	input[type="email"],
+	input[type="password"] {
+
+		&:placeholder {
+			color: var(--tec-color-text-secondary);
+			font-family: var(--tec-font-family-sans-serif);
+		}
+	}
+
+	select {
+		appearance: none;
+		background-color: var(--tec-color-background);
+		background-image: url('../images/select.png');
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-size: 33px 33px;
+		height: auto;
+		padding: 10px;
+	}
+
+	.tribe-options {
+		overflow: hidden;
+		width: 100%;
+	}
+
+	/* Field-type specific */
+	.tribe-common-form-control-checkbox-radio-group {
+		> * {
+			margin-bottom: var(--tec-spacer-0);
+		}
+
+		label,
+		.tribe-tickets__form-field-label {
+			display: inherit;
+			margin-bottom: 0;
+			margin-left: 0;
+		}
+	}
+
+	.tribe-common-form-control-text__input {
+		padding: var(--tec-spacer-1) var(--tec-spacer-3);
+	}
+
+	/* Date of birth field */
+	.tribe-tickets__form-field--birth {
+		select {
+			display: inline-block;
+			margin: 0 0 var(--tec-spacer-1) 0;
+			min-width: 80px;
+			width: 100%;
+
+			@media (--viewport-medium) {
+				margin-right: var(--tec-spacer-1);
+				width: calc((100% / 3) - var(--tec-spacer-1) - 4px); /* 4px = safety margin */
+			}
+		}
+	}
+
+	.tribe-tickets__button--next {
+		align-items: center;
+		background-color: var(--tec-color-accent-primary);
+		border: 1px solid var(--tec-color-border-secondary);
+		color: var(--tec-color-background);
+		display: inline-flex;
+		justify-content: center;
+		max-width: 100%;
+		min-height: 54px;
+
+		&:hover {
+			color: var(--tec-color-background);
+		}
+	}
+
+	.tribe-tickets__form-message {
+		align-items: flex-start;
+		background-color: var(--tec-color-accent-primary-background);
+		border-radius: var(--tec-border-radius-default);
+		display: flex;
+		margin-bottom: var(--tec-spacer-4);
+		padding: var(--tec-spacer-4) var(--tec-spacer-3);
+
+		@media (--viewport-medium) {
+			padding: var(--tec-spacer-3);
+		}
+	}
+
+	.tribe-tickets__form-message--error {
+		background-color: var(--tec-color-background-error);
+	}
+
+	.tribe-tickets__form-message--error-icon {
+		display: inline-block;
+		margin-right: var(--tec-spacer-2);
+
+		circle {
+			stroke: var(--tec-color-icon-active);
+		}
+
+		circle#dot {
+			fill: var(--tec-color-icon-active);
+			stroke: transparent;
+		}
+
+		path {
+			stroke: var(--tec-color-icon-active);
+		}
+	}
+}

@@ -1,0 +1,72 @@
+.pp-counter {
+    display: inline-block;
+    &-icon-wrap,
+    &-icon,
+    &-icon-divider,
+    &-num-divider {
+        display: inline-block;
+    }
+    &-icon {
+        line-height: 1;
+    }
+    &-layout-3,
+    &-layout-4 {
+        &-number-wrap,
+        .pp-icon-title-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &-layout-5,
+    &-layout-6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-layout-6 {
+        .pp-counter-icon-wrap {
+            order: 2;
+        }
+    }
+    &-layout-7,
+    &-layout-8 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        .pp-icon-title-wrap {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .pp-counter-title-wrap {
+            text-align: left;
+        }
+    }
+    &-layout-8 {
+        flex-direction: row-reverse;
+        .pp-icon-title-wrap {
+            align-items: flex-end;
+        }
+        .pp-counter-title-wrap {
+            text-align: right;
+        }
+    }
+    .pp-icon-title-wrap {
+        .pp-counter-title {
+            display: inline-block;
+        }
+    }
+	.pp-icon-number-wrap {
+		.pp-counter-number-wrap {
+			display: inline-block;
+		}
+	}
+}
+.pp-counter-number {
+	direction: ltr;
+}
+.pp-counter-number-wrap {
+	font-size: 69px;
+	line-height: 1;
+}

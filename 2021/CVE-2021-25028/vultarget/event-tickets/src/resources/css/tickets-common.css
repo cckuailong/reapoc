@@ -1,0 +1,645 @@
+/**
+ * This CSS file was auto-generated via PostCSS
+ *
+ * Contributors should avoid editing this file, but instead edit the associated
+ * src/resources/postcss/ file. For more information, check out our engineering
+ * docs on how we handle CSS in our engineering docs.
+ *
+ * @see: https://the-events-calendar.github.io/products-engineering/docs/code-standards/css/
+ */
+
+/*
+ * Common CSS
+ *
+ * DO NOT EDIT THIS CSS FILE DIRECTLY.
+ * -------------------------------------------------------------
+ * This file is just a clearing-house, see the pcss directory
+ *
+ and edit the source files found there.
+ */
+
+/* Event Tickets Utilities */
+
+/* -----------------------------------------------------------------------------
+ *
+ * Utilities
+ *
+ * This file is just a clearing-house.
+ * Make partials (start with an underscore) for any actual css code.
+ *
+ * ----------------------------------------------------------------------------- */
+
+/* Variables - needed everywhere. */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Arrow Right
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Arrow (light, left)
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Caret Down
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Caret Left
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Caret Right
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Caret Up
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Check
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Close
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Day
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Dropdown
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Error
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Featured
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Filters
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Link
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Guest
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - List
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Location
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Mail
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Map
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Map pin
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Messages
+ * ----------------------------------------------------------------------------- */
+
+/* stylelint-disable-line block-no-empty */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Month
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - No Map
+ * ----------------------------------------------------------------------------- */
+
+/* stylelint-disable-line block-no-empty */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Paper Plane
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Phone
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Photo
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Plus
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Recurring
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Remove
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Reset
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Search
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Search Filter
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Week
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * SVG - Cal Export
+ * ----------------------------------------------------------------------------- */
+
+/* stylelint-disable-line block-no-empty */
+
+/* Mixins */
+
+/* -----------------------------------------------------------------------------
+ * Body
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Desktop Body 1
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Desktop Body 2
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Desktop Body 3
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Mobile Body 1
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Mobile Body 2
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Mobile Body 3
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Heading
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Heading 1
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Heading 2
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Heading 3
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Heading 4
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Heading 5
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Heading 6
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Heading 7
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Heading 8
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Default
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Alt
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Thin
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Thin
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Event Title
+ *
+ * This mixin intentionally only affects the text and border _colors_
+ * to make sure they all follow the Customizer overrides.
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Button - Global
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Button - Solid
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Button - Link
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Button - Border
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Button - Border Small
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Button - Icon Border
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Sliders & Toggles
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Sliders
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Hidden: Hide from both screenreaders and browsers
+ * @author: h5bp.com/u
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Visually Hide: Hide only visually, but have it available for screenreaders
+ * @author: h5bp.com/v
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Visually Show: Show element after has been hidden with %visually-hide
+ * ----------------------------------------------------------------------------- */
+
+/* Event Tickets Components */
+
+/* Accordion Styles */
+
+.accordion-header {
+	background: none;
+	border: 0;
+	box-sizing: border-box;
+	color: inherit;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 20px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+
+.accordion-header:before {
+		background-color: #000;
+		border-radius: 100%;
+		box-sizing: border-box;
+		color: #fff;
+		content: '\f132';
+		font-family: 'dashicons';
+		font-size: 10px;
+		font-weight: 400;
+		height: 14px;
+		left: 0;
+		line-height: 17px;
+		padding: 0;
+		padding-right: 1px;
+		position: absolute;
+		text-align: center;
+		top: 12px;
+		width: 15px;
+	}
+
+.accordion-header:after {
+		border-bottom: 1px solid #ddd;
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 80%;
+	}
+
+.accordion-header.is-active:before {
+			content: '\f460';
+			line-height: 15px;
+		}
+
+.accordion-header:focus {
+		outline: 1px solid #5b9dd9;
+	}
+
+.accordion-header:hover {
+		background: none;
+	}
+
+.tribe-tickets-editor-history:after {
+	width: calc(100% - 80px);
+}
+
+.tribe_attendee_meta:after {
+	width: calc(100% - 170px);
+}
+
+.tribe_advanced_meta:after {
+	width: calc(100% - 105px);
+}
+
+.accordion-label:focus {
+		outline: none;
+	}
+
+.accordion-content {
+	display: none;
+}
+
+.ticket_panel .accordion-content {
+		margin: 1em 0 2em;
+	}
+
+.accordion-content.is-active {
+		display: block;
+	}
+
+.tribe-common-c-loader.tribe-tickets-loader__tickets-block,
+	.tribe-common-c-loader.tribe-tickets-loader__modal {
+		align-items: center;
+		background: var(--tec-color-background-transparent);
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: var(--tec-z-index-spinner-container);
+	}
+
+.tribe-common-c-loader.tribe-tickets-loader__modal {
+		height: 100vh;
+		position: fixed;
+		width: 100vw;
+	}
+
+.event-tickets .tribe-common-c-loader {
+		align-items: center;
+		background: var(--tec-color-background-transparent);
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: var(--tec-z-index-spinner-container);
+	}
+
+.tribe-common .tribe-tickets__notice, .event-tickets .tribe-tickets__notice {
+		background-color: var(--tec-color-background-secondary);
+		border-radius: var(--tec-border-radius-default);
+		margin: var(--tec-spacer-4) 0;
+		padding: var(--tec-spacer-3);
+	}
+
+.tribe-common .tribe-tickets__notice > *:last-child, .event-tickets .tribe-tickets__notice > *:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+.tribe-common .tribe-tickets-notice__title, .event-tickets .tribe-tickets-notice__title {
+		margin: 0;
+		position: relative;
+	}
+
+.tribe-common .tribe-tickets-notice__title:empty, .event-tickets .tribe-tickets-notice__title:empty {
+			display: none;
+		}
+
+/*
+		Error Notices
+	*/
+
+.tribe-common .tribe-tickets__notice--error, .event-tickets .tribe-tickets__notice--error {
+		background-color: var(--tec-color-background-error);
+		display: none;
+		padding-left: 50px;
+		position: relative;
+	}
+
+.tribe-common .tribe-tickets__notice--error:before, .event-tickets .tribe-tickets__notice--error:before {
+			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18'%3E%3Cg fill='none' fill-rule='evenodd' transform='translate(1 1)'%3E%3Ccircle cx='8' cy='8' r='7.467' stroke='%23141827' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'/%3E%3Ccircle cx='8' cy='11.733' r='1.067' fill='%23141827' fill-rule='nonzero'/%3E%3Cpath stroke='%23141827' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M8 3.733v4.8' fill='%23141827'/%3E%3C/g%3E%3C/svg%3E");
+			background-size: contain;
+			content: '';
+			height: var(--tec-spacer-3);
+			left: var(--tec-spacer-4);
+			position: absolute;
+			top: var(--tec-spacer-4);
+			width: var(--tec-spacer-3);
+		}
+
+/*
+		"Barred" Notices (visible side borders)
+	*/
+
+.tribe-common .tribe-tickets__notice--barred, .event-tickets .tribe-tickets__notice--barred {
+		background-color: var(--tec-color-background);
+		border: var(--tec-spacer-0) solid var(--tec-color-border-secondary);
+		border-bottom: 0;
+		border-radius: 0;
+		border-top: 0;
+		padding: 0 var(--tec-spacer-2);
+	}
+
+.tribe-common .tribe-tickets__notice--barred-left, .event-tickets .tribe-tickets__notice--barred-left {
+		border-right: 0;
+		padding: 0 0 0 var(--tec-spacer-2);
+	}
+
+.tribe-common .tribe-tickets__notice--barred-right, .event-tickets .tribe-tickets__notice--barred-right {
+		border-left: 0;
+		padding: 0 var(--tec-spacer-2) 0 0;
+	}
+
+/* -------------------------------------------------------------------------
+	 * SVG Icons
+	 * ------------------------------------------------------------------------- */
+
+.event-tickets .tribe-tickets-svgicon {
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+/* -----------------------------------------------------------------------------
+ *
+ * Tooltip
+ *
+ * ----------------------------------------------------------------------------- */
+
+/* Defining our tooltipster theme. */
+
+.tooltipster-base.tribe-tickets-tooltip-theme {
+	background-color: var(--tec-color-background);
+	border: 1px solid var(--tec-color-border-default);
+	border-radius: var(--tec-border-radius-default);
+	box-shadow: var(--tec-box-shadow-tooltip);
+	height: auto !important;
+	max-width: 254px;
+	padding: var(--tec-spacer-5);
+}
+
+.tooltipster-base.tribe-tickets-tooltip-theme .tooltipster-box {
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		margin: 0;
+	}
+
+.tooltipster-base.tribe-tickets-tooltip-theme .tooltipster-box .tooltipster-content {
+			color: var(--tec-color-text-primary);
+			overflow: inherit;
+			padding: 0;
+			word-break: break-word;
+		}
+
+.tooltipster-base.tribe-tickets-tooltip-theme .tooltipster-arrow {
+		display: none;
+	}
+
+/* -----------------------------------------------------------------------------
+	 *
+	 * Button: Small
+	 *
+	 * Example:
+	 * <button class="tribe-common-c-btn tribe-common-c-btn--small">...</button>
+	 * <a href="#" class="tribe-common-c-btn tribe-common-c-btn--small">...</a>
+	 *
+	 * ----------------------------------------------------------------------------- */
+
+.tribe-common button.tribe-common-c-btn--small, .tribe-common input[type="button"].tribe-common-c-btn--small, .tribe-common input[type="submit"].tribe-common-c-btn--small, .tribe-common a.tribe-common-c-btn--small {
+			background-color: var(--tec-color-accent-primary);
+			padding: 11px 14px;
+			width: auto;
+		}
+
+/* -----------------------------------------------------------------------------
+	 *
+	 * Button: Link
+	 *
+	 * Example:
+	 * <button class="tribe-common-c-btn-link">...</button>
+	 * <a href="#" class="tribe-common-c-btn-link">...</a>
+	 *
+	 * ----------------------------------------------------------------------------- */
+
+.tribe-common button.tribe-common-c-btn-link, .tribe-common input[type="button"].tribe-common-c-btn-link, .tribe-common input[type="submit"].tribe-common-c-btn-link, .tribe-common a.tribe-common-c-btn-link {
+			color: var(--tec-color-text-primary);
+			font-family: var(--tec-font-family-sans-serif);
+			font-size: var(--tec-font-size-2);
+			line-height: var(--tec-line-height-3);
+			font-weight: var(--tec-font-weight-regular);
+			border: 0;
+			cursor: pointer;
+			display: inline-block;
+			height: auto;
+			padding: 0;
+			text-decoration: none;
+			width: auto;
+			background-color: transparent;
+			text-align: center;
+			text-decoration: underline;
+			transition: var(--tec-transition-color);
+		}
+
+.tribe-common button.tribe-common-c-btn-link:hover,
+	.tribe-common button.tribe-common-c-btn-link:focus,
+	.tribe-common input[type="button"].tribe-common-c-btn-link:hover,
+	.tribe-common input[type="button"].tribe-common-c-btn-link:focus,
+	.tribe-common input[type="submit"].tribe-common-c-btn-link:hover,
+	.tribe-common input[type="submit"].tribe-common-c-btn-link:focus,
+	.tribe-common a.tribe-common-c-btn-link:hover,
+	.tribe-common a.tribe-common-c-btn-link:focus {
+		background-color: transparent;
+	}
+
+.tribe-common button.tribe-common-c-btn-link, .tribe-common input[type="button"].tribe-common-c-btn-link, .tribe-common input[type="submit"].tribe-common-c-btn-link, .tribe-common a.tribe-common-c-btn-link {
+
+			background-color: transparent;
+			color: var(--tec-color-accent-primary);
+			padding: 11px 20px;
+			width: 100%;
+}
+
+.tribe-common button.tribe-common-c-btn-link:focus,
+			.tribe-common button.tribe-common-c-btn-link:hover,
+			.tribe-common input[type="button"].tribe-common-c-btn-link:focus,
+			.tribe-common input[type="button"].tribe-common-c-btn-link:hover,
+			.tribe-common input[type="submit"].tribe-common-c-btn-link:focus,
+			.tribe-common input[type="submit"].tribe-common-c-btn-link:hover,
+			.tribe-common a.tribe-common-c-btn-link:focus,
+			.tribe-common a.tribe-common-c-btn-link:hover {
+				color: var(--tec-color-accent-primary-hover);
+			}
+
+.tribe-common button.tribe-common-c-btn-link:active, .tribe-common input[type="button"].tribe-common-c-btn-link:active, .tribe-common input[type="submit"].tribe-common-c-btn-link:active, .tribe-common a.tribe-common-c-btn-link:active {
+				color: var(--tec-color-accent-primary-active);
+			}
+
+.tribe-common button.tribe-common-c-btn-link:disabled, .tribe-common input[type="button"].tribe-common-c-btn-link:disabled, .tribe-common input[type="submit"].tribe-common-c-btn-link:disabled, .tribe-common a.tribe-common-c-btn-link:disabled {
+				color: var(--tec-color-accent-primary-background);
+			}
+
+@media (min-width: 768px) {
+
+.tribe-common-c-loader.tribe-tickets-loader__tickets-block,
+	.tribe-common-c-loader.tribe-tickets-loader__modal {
+			padding: 0
+	}
+
+.event-tickets .tribe-common-c-loader {
+			padding: 0
+	}
+
+.tribe-common button.tribe-common-c-btn-link, .tribe-common input[type="button"].tribe-common-c-btn-link, .tribe-common input[type="submit"].tribe-common-c-btn-link, .tribe-common a.tribe-common-c-btn-link {
+				background-color: transparent;
+				width: auto
+		}
+		}

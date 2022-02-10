@@ -1,0 +1,46 @@
+.tribe-common-c-loader {
+	&.tribe-tickets-loader__tickets-block,
+	&.tribe-tickets-loader__modal {
+		align-items: center;
+		background: var(--tec-color-background-transparent);
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: var(--tec-z-index-spinner-container);
+
+		@media (--viewport-medium) {
+			padding: 0;
+		}
+	}
+
+	&.tribe-tickets-loader__modal {
+		height: 100vh;
+		position: fixed;
+		width: 100vw;
+	}
+}
+
+.event-tickets {
+	.tribe-common-c-loader {
+		align-items: center;
+		background: var(--tec-color-background-transparent);
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: var(--tec-z-index-spinner-container);
+
+		@media (--viewport-medium) {
+			padding: 0;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.oxi-addons-container .oxi-image-hover-style-32 *,
+.oxi-addons-container .oxi-image-hover-style-32 *:before,
+.oxi-addons-container .oxi-image-hover-style-32 *:after {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.oxi-addons-container .oxi-image-general-hover-style-32  .oxi-image-hover-figure .oxi-image-hover-figure-caption {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.oxi-addons-container .oxi-image-general-hover-style-32 .oxi-image-hover-figure .oxi-image-hover-figure-caption {
+    opacity: 0;
+}
+.oxi-addons-container .oxi-image-general-hover-style-32.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-32.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    opacity: 1;
+    pointer-events: auto;
+}
+.oxi-addons-container .oxi-image-general-hover-style-32.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-32.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-image{
+    pointer-events: none;
+}

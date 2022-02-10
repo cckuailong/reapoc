@@ -1,0 +1,309 @@
+/* Frontend CSS Stylesheet for Restaurant Reservations */
+
+.rtb-clear {
+	clear: both;
+}
+.rtb-hidden {
+	display: none;
+}
+.rtb-booking-form {
+	position: relative;
+	/*float: left;*/
+	width: 100%;
+	clear: both;
+	margin-bottom: 48px;
+}
+.rtb-booking-form fieldset {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+.rtb-booking-form legend {
+	padding: 0 0.5em;
+}
+.rtb-booking-form fieldset>div {
+	margin-top: 1em;
+}
+.rtb-booking-form fieldset>div:first-child {
+	margin-top: 0;
+}
+.rtb-booking-form label {
+	display: block;
+}
+.rtb-booking-form input,
+#stripe-payment-form #cardElement {
+	width: 100%;
+	max-width: 15em;
+}
+#stripe-payment-form #cardElement {
+	max-width: 500px;
+	width: 100%;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	background-color: white;
+	color: #777;
+	padding: 12px 21px;
+	margin: 18px 0;
+}
+.rtb-booking-form input[type="checkbox"],
+.rtb-booking-form input[type="radio"] {
+	width: auto;
+	margin-right: 0.25em;
+	vertical-align: middle;
+}
+.rtb-booking-form textarea {
+	width: 100%;
+	max-width: 30em;
+}
+.rtb-booking-form .add-message {
+	margin-top: 1em;
+}
+.rtb-booking-form .message {
+	position: relative;
+	top: auto;
+	left: auto;
+	display: none;
+}
+.rtb-booking-form .message-open {
+	display: block;
+}
+.rtb-booking-form .message textarea {
+	min-height: 6em;
+}
+.rtb-booking-form .rtb-error {
+	font-size: 0.85em;
+	padding: 0.25em;
+	background: #f50;
+	color: #fff;
+}
+.rtb-booking-form .rtb-error:before {
+	content: ' ';
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	width: 0;
+	height: 0;
+	display: inline-block;
+	margin: 0.25em 0.5em;
+}
+
+/* Compatibility styles for pickadate on common themes */
+.picker {
+	outline: 0;
+}
+#rtb-date_root .picker__button--clear,
+#rtb-date_root .picker__button--today,
+#rtb-date_root .picker__button--close {
+	/* don't adopt the theme's button text color */
+	color: #000;
+}
+#rtb-date_root .picker__nav--next,
+#rtb-date_root .picker__nav--prev {
+	/* next/prev calendar arrows button areas sometimes don't cover the arrows */
+	min-height: 1em;
+}
+#rtb-time_root .picker__list,
+#rtb-time_root .picker__list li {
+	/* override some theme's list styles */
+	list-style: none;
+	margin: 0 0 0 1px;
+}
+
+
+/* ARRIVAL LIGHTBOX */
+.rtb-view-bookings-form-confirmation-background-div {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: rgba(0,0,0,0.5);
+}
+.rtb-view-bookings-form-confirmation-div {
+	position: fixed;
+	top: 200px;
+    width: 480px;
+	left: calc(50% - 240px);
+    z-index: 1000000;
+    margin: 0;
+    background: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+.rtb-view-bookings-form-confirmation-div-inside {
+	position: relative;
+	float: left;
+	width: calc(100% - 6px);
+	height: calc(100% - 12px);
+	border: 3px solid #ddd;
+	margin: 3px;
+}
+.rtb-view-bookings-form-confirmation-div-title {
+	position: relative;
+	float: left;
+	width: 90%;
+	margin: 24px 5%;
+	color: #333;
+}
+.rtb-view-bookings-form-confirmation-accept {
+	position: relative;
+	float: left;
+	width: 32%;
+	margin: 24px 34% 0;
+	padding: 8px 0;
+	background: #444;
+	color: #fff;
+	cursor: pointer;
+}
+.rtb-view-bookings-form-confirmation-accept:hover {
+	background: #555;
+}
+.rtb-view-bookings-form-confirmation-decline {
+	position: relative;
+	float: left;
+	width: 32%;
+	margin: 8px 34% 24px;
+	padding: 8px 0;
+	background: #bbb;
+	color: #444;
+	cursor: pointer;
+}
+.rtb-view-bookings-form-confirmation-decline:hover {
+	background: #ccc;
+}
+
+#rtb-view-bookings-form-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 24px;
+	height: 24px;
+	background: #ddd;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 568px) {
+	.rtb-view-bookings-form-confirmation-div {
+		top: 100px;
+		width: 300px;
+		left: calc(50% - 150px);
+	}	
+}
+
+
+/*CANCEL LINK*/
+.rtb-modification-toggle {
+	position: relative;
+	float: left;
+	padding: 10px 15px;
+	margin-bottom: 24px;
+	background: #444;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+label[for="rtb-modification-email"],
+input[name="modification"] {
+	float: left;
+	margin-top: 20px;
+}
+label[for="rtb-modification-email"] {
+	margin-right: 12px;
+}
+.rtb-find-reservation-button {
+	position: relative;
+	float: left;
+	padding: 10px 15px;
+	margin-top: 24px;
+	background: #444;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.rtb-bookings-results {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-top: 16px;
+}
+.rtb-cancel-booking-div {
+	border: 1px solid #ddd;
+	margin-bottom: 8px;
+}
+.rtb-cancel-booking-div + .alert {
+	margin: 0;
+}
+.rtb-cancel-booking-div + .alert.error {
+	color: #f24a4d;
+	background: #f24a4d47;
+}
+.rtb-cancel-booking-div *:not(:first-child) {
+  margin-left: -5px;
+}
+
+.rtb-cancel-booking {
+	text-align: center;
+	padding: 10px 0;
+	background: #fe4e4e;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	max-width: 100px;
+	min-width: 100px;
+	width: 100%;
+}
+.rtb-cancel-booking:hover {
+	background: #ff6b6b;
+	color: #fff;
+}
+.rtb-cancel-booking.cancelled {
+  background: #24b124;
+}
+
+.rtb-deposit-booking {
+	text-align: center;
+	padding: 10px 0;
+	background: green;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	max-width: 100px;
+	min-width: 100px;
+	width: 100%;
+}
+.rtb-deposit-booking:hover {
+	background: #008000cf;
+	color: #fff;
+}
+
+.rtb-booking-information {
+	padding-left: 5px;
+	display: inline-block;
+}
+
+#rtb_recaptcha {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 16px 0;
+}
+
+.stripe-payment-help-text {
+	display: none;
+}
+.payment-errors {
+	margin: 32px 0;
+	border-left: 4px solid #000;
+	padding-left: 16px;
+}
+:is(.rtb-booking-form, #stripe-booking-form) button:disabled {
+	background-color: gray;
+}
+:is(.rtb-booking-form, #stripe-booking-form) button:disabled:hover {
+	text-decoration: none;
+}

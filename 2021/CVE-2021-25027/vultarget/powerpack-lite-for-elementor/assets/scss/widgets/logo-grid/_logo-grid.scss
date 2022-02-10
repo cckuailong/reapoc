@@ -1,0 +1,43 @@
+.pp-logo-grid {
+    position: relative;
+    .pp-grid-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        @include transition();
+        width: 100%;
+    }
+    .pp-grid-item-wrap {
+        display: flex;
+        float: left;
+        flex-wrap: wrap;
+        text-align: center;
+        transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .pp-logo-grid-title {
+        margin-bottom: 0;
+        a {
+            color: inherit;
+        }
+    }
+    &.grayscale-normal {
+        img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        .pp-grid-item:hover {
+            img {
+                -webkit-filter: none;
+                filter: none;
+            }
+        }
+    }
+    &.grayscale-hover {
+        .pp-grid-item:hover {
+            img {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.oxi-addons-container .oxi-image-hover-style-30 *,
+.oxi-addons-container .oxi-image-hover-style-30 *:before,
+.oxi-addons-container .oxi-image-hover-style-30 *:after {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.oxi-addons-container .oxi-image-general-hover-style-30 .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    opacity: 1;
+}
+.oxi-addons-container .oxi-image-general-hover-style-30 .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-general-hover-style-30 .oxi-image-hover-figure-caption:after{
+    opacity: 0;
+}
+.oxi-addons-container .oxi-image-general-hover-style-30.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption:after,
+.oxi-addons-container .oxi-image-general-hover-style-30.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption:after,
+.oxi-addons-container .oxi-image-general-hover-style-30.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption:before,
+.oxi-addons-container .oxi-image-general-hover-style-30.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption:before{
+    opacity: 1;
+}
+.oxi-addons-container .oxi-image-general-hover-style-30 .oxi-image-hover-figure .oxi-image-hover-caption-tab{
+    opacity: 1;
+    background: TRANSPARENT !important;
+    z-index: 20;
+    overflow: hidden;
+}
+.oxi-addons-container .oxi-image-general-hover-style-30 .oxi-image-hover-figure .oxi-image-hover-heading{
+    opacity: 1;
+    -webkit-transform: translate(0, 0) scale(1) rotate(0);
+    -ms-transform: translate(0, 0) scale(1) rotate(0);
+    transform: translate(0, 0) scale(1) rotate(0);
+}
+.oxi-addons-container .oxi-image-general-hover-style-30 .oxi-image-hover-heading.oxi-image-hover-heading-underline:before{
+    opacity: 0;
+}
+.oxi-addons-container .oxi-image-general-hover-style-30.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-heading.oxi-image-hover-heading-underline:before,
+.oxi-addons-container .oxi-image-general-hover-style-30.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-heading.oxi-image-hover-heading-underline:before{
+    opacity: 1;
+}
+.oxi-addons-container .oxi-image-general-hover-style-30.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-caption-tab,
+.oxi-addons-container .oxi-image-general-hover-style-30.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-caption-tab{
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -mos-transform: translateY(0);
+    -webkit-transform: translateY(0);
+}

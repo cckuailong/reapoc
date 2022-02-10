@@ -1,0 +1,336 @@
+.typeahead, .tt-query, .tt-hint {
+	border: 1px solid #CCCCCC;
+	border-radius: 6px;
+	outline: medium none;
+	margin-right: 24px;
+	padding: 8px 12px;
+	position: absolute;
+/*	z-index: 1000;*/
+}
+.typeahead {
+	background-color: #FFFFFF;
+}
+.typeahead:focus {
+	border: 2px solid #0097CF;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	color: #999999;
+}
+.tt-menu {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 6px 0;
+	width: 422px;
+}
+.tt-suggestion {
+	font-size: 22px;  /* Set suggestion dropdown font size */
+	padding: 3px 20px;
+}
+.tt-suggestion:hover {
+	cursor: pointer;
+	background-color: #0097CF;
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
+}
+
+// table styles
+.woo-product-feed-pro-body {
+  	font-family: "Open Sans", sans-serif;
+  	line-height: 1.25;
+}
+.woo-product-feed-pro-table-wrapper:after {
+	content:"";
+        display: table;
+        clear: both;
+}
+.woo-product-feed-pro-table-left {
+        float: left;
+	padding-right: 1%;
+        width: 74%;
+}
+.woo-product-feed-pro-table-right {
+        float: right;
+        width: 25%;
+}
+@media screen and (max-width: 480px) {
+	.woo-product-feed-pro-table-left, .woo-product-feed-pro-table-right {
+        	float: none;
+            	width: auto;
+        }
+	.woo-product-feed-pro-table-right {
+		padding-top: 8px;
+	}
+}
+
+.woo-product-feed-pro-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.woo-product-feed-pro-table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+.woo-product-feed-pro-table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+.woo-product-feed-pro-table th,
+.woo-product-feed-pro-table td {
+  padding: .525em;
+  text-align: left;
+}
+.woo-product-feed-pro-table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* The switch - the box around the slider */
+.woo-product-feed-pro-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.woo-product-feed-pro-switch input {display:none;}
+
+/* The slider */
+.woo-product-feed-pro-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.woo-product-feed-pro-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .woo-product-feed-pro-slider {
+  background-color: #0C0;
+}
+
+input:focus + .woo-product-feed-pro-slider {
+  box-shadow: 0 0 1px #0C0;
+}
+
+input:checked + .woo-product-feed-pro-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.woo-product-feed-pro-slider.round {
+  border-radius: 34px;
+}
+
+.woo-product-feed-pro-slider.round:before {
+  border-radius: 50%;
+}
+
+// form styles
+.woo-product-feed-pro-form-style-2{
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+
+.woo-product-feed-pro-channel{
+    font-style: italic;
+    font-size: 10px;
+}
+
+.woo-product-feed-pro-form-style-2-heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.woo-product-feed-pro-form-style-2 label{
+    display: block;
+    margin: 0px 0px 0px 0px;
+}
+.woo-product-feed-pro-form-style-2 label > span{
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+.woo-product-feed-pro-form-style-2 span.required{
+    color:red;
+}
+.woo-product-feed-pro-form-style-2 input.input-field{
+    width: 44%;
+}
+
+.woo-product-feed-pro-form-style-2 input.input-field-midsmall{
+    width: 65%;
+}
+
+.woo-product-feed-pro-form-style-2 input.input-field-large{
+    width: 98%;
+}
+
+.woo-product-feed-pro-form-style-2 input.input-field-large-active{
+    width: 98%;
+}
+
+.woo-product-feed-pro-form-style-2 input.input-field-medium{
+    width: 34%;
+}
+
+.woo-product-feed-pro-form-style-2 input.input-field-small{
+    width: 12%;
+}
+
+
+.woo-product-feed-pro-form-style-2 input.input-field, 
+.woo-product-feed-pro-form-style-2 input.checkbox-field,
+.woo-product-feed-pro-form-style-2 input.input-field-large,
+.woo-product-feed-pro-form-style-2 input.input-field-small,
+.woo-product-feed-pro-form-style-2 input.input-field-midsmall,
+.woo-product-feed-pro-form-style-2 input.input-field-medium,
+.woo-product-feed-pro-form-style-2 .textarea-field { 
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+
+.woo-product-feed-pro-form-style-2 input.input-field-large-active {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+    background-color: #0C0;
+}
+
+.woo-product-feed-pro-form-style-2 .input-field:focus,
+.woo-product-feed-pro-form-style-2 .input-field-large:focus,
+.woo-product-feed-pro-form-style-2 .input-field-large-active:focus,
+.woo-product-feed-pro-form-style-2 .input-field-midsmall:focus,
+.woo-product-feed-pro-form-style-2 .input-field-small:focus,
+.woo-product-feed-pro-form-style-2 .input-field-medium:focus,
+/*
+.woo-product-feed-pro-form-style-2 .textarea-field:focus,  
+*/
+.woo-product-feed-pro-form-style-2 .select-field:focus{
+    border: 1px solid #0C0;
+}
+.woo-product-feed-pro-form-style-2 .textarea-field{
+    height:100px;
+    width: 55%;
+    word-break: break-all;
+}
+.woo-product-feed-pro-form-style-2 input[type=submit],
+.woo-product-feed-pro-form-style-2 input[type=button]{
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.woo-product-feed-pro-form-style-2 input[type=submit]:hover,
+.woo-product-feed-pro-form-style-2 input[type=button]:hover{
+    background: #EA7B00;
+    color: #fff;
+}
+ 
+.woo-product-feed-pro-textarea{
+  background-color:#eee;
+  overflow:hidden;
+  height:320px;
+  max-height:320px;
+  border:1px solid #ccc;
+  overflow-y: auto;
+}
+
+.woo-product-feed-pro-ratingRequest{
+  color: #DAA520;
+}
+
+#woo-product-feed-pro-errormessage {
+  width: 40%;
+  color: #555;
+  border-radius: 3px;
+  font-size: .8em;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 0px;
+  background: #ffecec;
+  border: 2px solid #f5aca6;
+}
+
+.woo-product-feed-pro-strikethrough {
+    text-decoration: line-through;
+}
+
+.woo-product-feed-pro-blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+.woo-product-feed-pro-inline_manage {
+	width:100%;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px #888;
+	box-shadow: 0 0 5px #888;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}

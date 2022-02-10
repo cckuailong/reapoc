@@ -1,0 +1,30 @@
+.tribe-editor__rsvp-container {
+
+}
+
+.tribe-editor__container-panel__icon {
+
+	.tribe-editor__rsvp-container & {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& > svg {
+			flex: none;
+		}
+	}
+}
+
+.tribe-editor__rsvp-container__icon-label {
+	color: #434343;
+	flex: none;
+	font-family: 'Helvetica Neue', Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.05px;
+
+	.tribe-editor__rsvp-container--disabled & {
+		color: #AEB4BB;
+	}
+}

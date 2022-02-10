@@ -1,0 +1,300 @@
+/*  T i m e l i n e   -   C O L O R    S K I N      ****************************/
+/*
+* 	For better compatibility, please change here only folowing properties:
+*        background , background-color, background-repeat, background-image,  background-repeat, background-position
+*        border
+*        box-shadow
+*        border-radius
+*        color
+*        font-weight
+*        text-shadow
+*        text-transform
+*
+*/
+/* Loading message */
+.flex_tl_table_loading{
+	text-align: center;
+	font-size: 1.1em;
+}
+.flex_tl_table_loading span {
+	padding: 0 0.4em;
+}
+/**********************************************************************************************************************/
+/* Timeline Main Container */
+.flex_tl_table {
+	background: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 2px #eef;
+	font-size:12px;
+}
+/* Timeline: Header */
+.flex_tl_table .flex_tl_table_header{
+	background: #e9e9e9;
+}
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_1,
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2{
+	font-weight: 600;
+	padding: 8px;
+	line-height: 1.42857143em;
+}
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2{
+	text-align: center;
+}
+
+/**********************************************************************************************************************/
+/* Ajax Navigation TOP menu */
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2 .flex_tl_nav .flex_tl_title{
+	color:#777;
+}
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2 .flex_tl_nav .flex_tl_prev,
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2 .flex_tl_nav .flex_tl_next{
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 12px;
+	color:#777;
+}
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2 .flex_tl_nav .flex_tl_prev a,
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2 .flex_tl_nav .flex_tl_next a,
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2 .flex_tl_nav .flex_tl_prev a:hover,
+.flex_tl_table .flex_tl_table_header .flex_tl_collumn_2 .flex_tl_nav .flex_tl_next a:hover {
+    text-decoration: none;
+    color: #757575;
+    cursor: pointer;
+}
+/**********************************************************************************************************************/
+/* Booking Rows - background colors */
+.flex_tl_table .flex_tl_table_row_bookings {
+	border-top: 1px solid #dddddd;
+}
+.flex_tl_table .flex_tl_table_row_bookings:nth-of-type(2n+1) {
+    background-color: #f9f9f9;
+}
+/**********************************************************************************************************************/
+/*   1st   C o l u m n   */
+.flex_tl_table .flex_tl_table_titles 	   .flex_tl_collumn_1,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 {
+	font-weight: 600;
+	padding: 4px;
+	line-height: 1.42857143em;
+	box-shadow: none;
+}
+/* Booking resources Titles*/
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_1,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title{
+	color: #999;
+	font-weight: 400;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/**********************************************************************************************************************/
+/* Booking resources Links */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title a,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title a:hover {
+    border-bottom: 1px dashed;
+    color: #789;
+    text-decoration: none;
+    text-shadow: none;/*0 -1px 0 #EEEEEE;*/
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title.parent {
+	font-weight: 600;
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title.child {
+	margin-left: 20px;
+}
+/**********************************************************************************************************************/
+/*   2nd   C o l u m n   		-	 	T i t l e    D a t e s    B a r  		-		.flex_tl_table_titles		  */
+/**********************************************************************************************************************/
+/* Header "Dates number" 	Row */
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar {
+
+}
+/* Header "Dates number" 	Cell */
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell {
+	border-left:1px solid #eee;
+}
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell.new_month .in_cell_date_container{
+	border-left:2px solid #C54;
+}
+/* Weekend Days */
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell.flex_tl_weekday6,
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell.flex_tl_weekday7,
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell.flex_tl_weekday6 a,
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell.flex_tl_weekday7 a{
+    color: #c32;
+    background: #FFFCF4;
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell.flex_tl_weekday6 .in_cell_date_container_show_dates,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell.flex_tl_weekday7 .in_cell_date_container_show_dates{
+    color: #bd7f78;
+    background: #FFFCF4;
+}
+/* Header "Top Dates Line" */
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell a,
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell a:hover{
+	color: #789;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 #EEEEEE;
+}
+/**********************************************************************************************************************/
+/* "Top  Month Line" 	- 	in 	-		T i t l e    D a t e s    B a r  	*/
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar_month {
+	height: 1.5em;
+	border-bottom:1px solid #eee;
+	border-left:1px solid #eee;
+}
+/* Header "Month Name" 			Cell */
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_month_year {
+	color: #c32;
+	font-size: 0.85em;
+	font-weight: 600;
+	padding:0 0.5em;
+}
+/**********************************************************************************************************************/
+/* "Time Slots" 		- 	in 	-		T i t l e    D a t e s    B a r  	*/
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_time_section_in_day {
+
+}
+.flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_time_section_in_day .in_cell_time_hour {
+	border-left:1px solid #eee;
+	border-top:1px solid #eee;
+
+	font-size: 0.7em;
+
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	padding: 0 0 0 2px;
+
+	white-space: nowrap;
+	overflow: hidden;
+	min-height: 12px;
+}
+/* Date Number during showing 1 day */
+.flex_tl_matrix_resources.flex_frame_view_days_num_1 .flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container .in_cell_day_num,
+.flex_tl_single_resource.flex_frame_view_days_num_30 .flex_tl_table .flex_tl_table_titles .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container .in_cell_day_num{
+	font-size: 0.85em;
+	font-weight:600;
+	text-align: left;
+	padding: 4px 1em;
+}
+/**********************************************************************************************************************/
+/*  Dates in First Column during single resource view mode */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container .flex_tl_resource_title_dates_days.flex_tl_weekday6,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container .flex_tl_resource_title_dates_days.flex_tl_weekday7,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container .flex_tl_resource_title_dates_weeks.flex_tl_weekday6,
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_1 .flex_tl_resource_title_dates_container .flex_tl_resource_title_dates_weeks.flex_tl_weekday7{
+	color: #bd7f78;
+}
+/**********************************************************************************************************************/
+/*   B o o k i n g s 	R o w    -	 B o o k  i n g s    D a t e s    B a r  	-		.flex_tl_table_row_bookings	  */
+/**********************************************************************************************************************/
+/* Header "Dates number" 	Row */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar {
+
+}
+/* Header "Dates number" 	Cell */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell {
+	border-left:1px solid #eee;
+	color:#aaa;
+	font-size: 0.7em;
+}
+/* New Month */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell.new_month .in_cell_time_hour:first-child .in_cell_date_container{
+	border-left:2px solid #C54;
+}
+/* Cross months - booking on 1st day of some month */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell.new_month.exist_booking_in_cell .in_cell_time_hour:first-child .in_cell_date_container{
+	border-left:1px solid #C54;
+}
+/**********************************************************************************************************************/
+/* B o o k i n g  		C e l l  	*/
+/**********************************************************************************************************************/
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id{
+	background: none repeat scroll 0 0 #FC4;
+	margin-left: -1px;	/*  Hide White 1px border in Cells in booking pipeline */
+}
+/* Start New Booking */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id.start_new_booking{
+	border-left:2px solid #f3a844;
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id.approved_booking {
+	background-color: #78A;
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id.approved_booking.start_new_booking{
+	border-color: #616f8b;
+}
+/* Bookings in a Past*/
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id.past_date{
+	background-color:#f0cf77;
+}
+/* Bookings in a Past Approved */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id.approved_booking.past_date{
+	background-color:#9099aa;
+}
+/* Trash Booking */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id.start_new_booking.booking_trash {
+	border-left:2px solid #901c1a;
+}
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id.booking_trash {
+	background-color:#DB6F6D;
+}
+/**  T O D A Y  ******************************************************************/
+/* Today Background for DAYS */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar.flex_tl_row_bar_show_dates .flex_tl_day_cell.today_date .in_cell_time_section_in_day{
+	/*background-color: #efc;*/
+}
+/* Today Border for DAYS */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar.flex_tl_row_bar_show_booking_titles .flex_tl_day_cell.today_date .in_cell_time_section_in_day{
+	border-left: 1px solid #090;
+}
+/* Disasable Today Border for DAYS in  1 day  view mode */
+.flex_timeline_frame.flex_frame_view_days_num_30.flex_tl_single_resource
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar.flex_tl_row_bar_show_booking_titles .flex_tl_day_cell.today_date .in_cell_time_section_in_day,
+.flex_timeline_frame.flex_frame_view_days_num_1.flex_tl_matrix_resources
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar.flex_tl_row_bar_show_booking_titles .flex_tl_day_cell.today_date .in_cell_time_section_in_day{
+	border-left: none;
+}
+/* Today Border for Hours in 1 day  view mode */
+.flex_timeline_frame.flex_frame_view_days_num_30.flex_tl_single_resource
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar.flex_tl_row_bar_show_booking_titles .flex_tl_day_cell .in_cell_time_section_in_day .in_cell_time_hour.today_time,
+.flex_timeline_frame.flex_frame_view_days_num_1.flex_tl_matrix_resources
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar.flex_tl_row_bar_show_booking_titles .flex_tl_day_cell .in_cell_time_section_in_day .in_cell_time_hour.today_time {
+	border-left: 1px solid #77ce0f;
+ }
+
+/********************************************************************************/
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_bookings .booking_id a {
+	font-size:7px;
+	font-weight:600;
+	color:#fff;
+	cursor: pointer;
+}
+/*  Show Booking Titles ***************************/
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_booking_titles .in_cell_date_booking_title{
+	background: #777;
+	color: #fff;
+	border-left: 2px solid #555;
+	cursor: pointer;
+	border-radius: 3px;
+}
+/* Title for Several  bookings in cell */
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_booking_titles .in_cell_date_booking_title.several_bookings_in_cell{
+	font-weight: bold;
+	background: #fdab36;
+	color: #455366;
+	border-left: 2px solid #dd8b16;
+}
+/* Show Times in Cells during 1 day  view mode */
+.flex_timeline_frame.flex_frame_view_days_num_30.flex_tl_single_resource
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_dates,
+.flex_timeline_frame.flex_frame_view_days_num_1.flex_tl_matrix_resources
+.flex_tl_table .flex_tl_table_row_bookings .flex_tl_collumn_2 .flex_tl_dates_bar .flex_tl_day_cell .in_cell_date_container_show_dates{
+	border-left:1px solid #eee;
+	border-top:1px solid #eee;
+
+	font-size:0.8em;
+	word-wrap: normal;
+	white-space: nowrap;
+	overflow: hidden;
+	padding:0 2px;
+}

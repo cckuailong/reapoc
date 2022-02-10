@@ -1,0 +1,412 @@
+/* styling borrowed from The Events Calendar  */
+#rtec .tribe-bar-toggle-arrow {
+    display: inline-block;
+    margin: 0 4px;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+#rtec .tribe-bar-toggle-arrow:after {
+    top: 10px;
+    right: 0;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: inherit;
+    border-width: 8px;
+}
+#rtec .tribe-bar-filters-open span.tribe-bar-toggle-arrow:after {
+    top: 0;
+    border-top-color: transparent;
+    border-bottom-color: inherit;
+}
+/* hide button and reveal if javascript is available */
+#rtec .rtec-js-show,
+#rtec .rtec-hidden-message,
+#rtec .rtec-screen-reader {
+    display: none;
+}
+#rtec {
+    overflow: auto;
+    max-width: 700px;
+    border-top: 0;
+}
+#rtec .rtec-spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+#rtec .rtec-spinner img{
+    border-radius: 0;
+    box-shadow: none !important;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
+}
+#rtec .rtec-form-buttons .rtec-email-spinner {
+    top: 50%;
+    right: 50%;
+    margin-top: -12px;
+    margin-right: -12px;
+}
+.rtec-yellow-message {
+    display: inline-block;
+    line-height: 19px;
+    padding: 11px 15px;
+    font-size: 14px;
+    text-align: left;
+    margin: 25px 20px 0 2px;
+    background-color: #fff;
+    border-left: 4px solid #ffba00;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+#rtec .rtec-form-wrapper {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    background: #eee;
+}
+#rtec .rtec-register-button {
+    position: relative;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    padding: 12px 16px 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#rtec:not(.rtec-use-modal) .rtec-register-button {
+    padding-right: 40px !important;
+}
+#rtec.rtec-use-modal .rtec-register-button > span {
+    display: none;
+}
+#rtec input[type="submit"]{
+    float: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.rtec button,
+.rtec input[type="submit"] {
+    line-height: inherit;
+    height: auto;
+}
+#rtec .rtec-attendance p {
+    text-align: center;
+    margin: 0;
+}
+.rtec-outer-wrap .rtec-attendance-display {
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+#rtec .rtec-form-field {
+    margin-bottom: 30px;
+}
+#rtec .rtec-input-wrapper {
+    position: relative;
+}
+#rtec input[type="text"],
+#rtec input[type="email"],
+#rtec input[type="tel"],
+#rtec input[type="number"],
+#rtec textarea {
+    box-sizing: border-box;
+    display: inline-block;
+    float: none;
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    line-height: 1.5;
+    background: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#rtec input[type="number"] {
+    max-width: 100px;
+}
+#rtec label {
+    display: inline-block;
+}
+#rtec .rtec-checkbox-option-wrap label {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+#rtec .rtec-form-buttons {
+    text-align: center;
+}
+#rtec .rtec-form-buttons input{
+    margin: 0;
+}
+#rtec .rtec-custom-hover:hover {
+    opacity: .8;
+}
+
+#rtec .rtec-valid {
+    border: 1px solid rgb(20, 220, 70) !important;
+}
+
+#rtec .rtec-error {
+    border: 1px solid rgb(255, 92, 51) !important;
+}
+.rtec-honeypot-clear {
+    display: block;
+    background: rgb(255, 92, 51);
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 auto 15px;
+    border-radius: 5px;
+}
+#rtec .rtec-email-spinner img{
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    border-radius: 0;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    width: 24px;
+    height: 24px;
+}
+#rtec .rtec-form-buttons .rtec-email-spinner {
+    top: 50%;
+    right: 50%;
+    margin-top: -12px;
+    margin-right: -12px;
+}
+#rtec .rtec-error-message {
+    margin: 0;
+    padding: 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+    background: rgb(255, 92, 51);
+    color: #fff;
+    border-radius: 3px;
+}
+#rtec .rtec-success-message {
+    text-align: center;
+}
+/* Attendee list */
+.rtec-event-meta.rtec-attendee-list-meta {
+    padding-top: 24px;
+}
+.rtec-shortcode .rtec-event-meta.rtec-attendee-list-meta {
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+.rtec-event-meta:after {
+    content: "";
+    visibility: hidden;
+    display: table;
+    clear: both;
+}
+.rtec-event-meta .rtec-attendee-list {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+}
+.rtec-event-meta .rtec-list-column-2 {
+    width: 50%;
+}
+.rtec-event-meta .rtec-list-column-3 {
+    width: 33.33%;
+}
+.single-tribe_events .tribe-events-event-meta .rtec-section-title,
+.rtec-event-meta .rtec-section-title {
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+.single-tribe_events .tribe-events-event-meta .rtec-section-subtitle,
+.rtec-event-meta .rtec-section-subtitle {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+.rtec-event-meta .rtec-attendee {
+    display: block;
+    width: 100%;
+    word-break: break-word;
+    margin-right: 4%;
+}
+.rtec-event-meta .tribe-events-meta-group,
+.tribe-events-event-meta.rtec-event-meta .tribe-events-meta-group{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .rtec-shortcode .tribe-events-meta-group {
+        padding-bottom: 16px;
+        width: 100%;
+    }
+    .rtec-event-meta.rtec-attendee-list-meta {
+        padding-top: 0;
+    }
+}
+/** Visitor Tools **/
+#rtec-options-form input {
+    max-width: 400px;
+}
+.rtec-already-registered-options input[type=submit] {
+    line-height: inherit;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+}
+.rtec-unregister-link-wrap,
+.rtec-already-registered-options.rtec-is-user form{
+    display: inline-block;
+}
+/* Shortcode Forms */
+h2.rtec-header, .entry-content h2.rtec-header { margin: 0; }
+h3.rtec-header, .entry-content h3.rtec-header { margin: 1em 0 1.5em; }
+
+/* Backup styles */
+.tribe-events-notices {
+    background: #d9edf7;
+    border-radius: 4px;
+    border: 1px solid #bce8f1;
+    color: #3a87ad;
+    margin: 10px 0 18px;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 #fff;
+}
+/* On mobile make the min-width 100% */
+@media all and (max-width: 640px){
+    #rtec .rtec-form-wrapper {
+        width: 100% !important;
+    }
+}
+
+/* Attendee List Shortcode */
+.rtec-attendee-list-wrap .rtec-section-title {
+    padding: 0 4%;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+.rtec-attendee-list-wrap .rtec-attendee-list {
+    padding: 0 4%;
+    margin-bottom: 20px;
+}
+.rtec-attendee-list-wrap .tribe-events-single-section-title.rtec-section-subtitle {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+.rtec-attendee-list-wrap .tribe-events-event-meta {
+    background: #fafafa;
+    border: 1px solid #eee;
+    margin: 30px 0;
+}
+
+/* Modal */
+.rtec-modal-is-open {
+    overflow: hidden;
+}
+.rtec-modal {
+    position: fixed;
+    width: 700px;
+    top: 5%;
+    left: 50%;
+    right: 50%;
+    max-height: 90%;
+    margin-left: -350px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    background: #fcfcfc;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.rtec-modal .rtec-button-link.rtec-media-modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    color: #444;
+    z-index: 1000;
+    cursor: pointer;
+    outline: none;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: sans-serif;
+    transition-property: border, background;
+    transition-duration: .05s;
+    transition-timing-function: ease-in-out;
+}
+.rtec-modal .rtec-button-link.rtec-media-modal-close:hover {
+    border: 1px solid #ccc;
+}
+.rtec-modal-content .rtec-already-registered-reveal {
+    display: none;
+}
+.rtec-media-modal-icon {
+    display: block;
+}
+.rtec-modal .rtec-button-link {
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+@media all and (max-width: 725px){
+    .rtec-modal {
+        width: 100%;
+        margin-left: -50%;
+    }
+}
+.rtec-modal-is-open .rtec-modal {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 160000;
+}
+.rtec-modal-is-open .rtec-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    background: #000;
+    opacity: .7;
+    z-index: 159900;
+}
+.rtec-modal #rtec .rtec-already-registered-options,
+.rtec-modal #rtec .rtec-form-toggle-button {
+    display: none !important;
+}
+.rtec-modal #rtec .rtec-form-wrapper {
+    margin: 0;
+}
+.rtec-modal .tribe-events-event-meta.rtec-event-meta,
+.rtec-modal .rtec-scrollto.tribe-events-notices{
+    margin: 50px 0 0;
+}

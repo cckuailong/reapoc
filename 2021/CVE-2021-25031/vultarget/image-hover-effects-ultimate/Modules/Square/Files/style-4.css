@@ -1,0 +1,52 @@
+.oxi-image-square-hover-style-4 .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease 0.35s;
+    -moz-transition: all 0.35s ease 0.35s;
+    transition: all 0.35s ease 0.35s;
+}
+.oxi-image-square-hover-style-4.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-4.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+.oxi-image-square-hover-style-4.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-image,
+.oxi-image-square-hover-style-4.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-image{
+    pointer-events: none;
+}
+.oxi-image-square-hover-style-4.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-image,
+.oxi-image-square-hover-style-4.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-image{
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+.oxi-image-square-hover-style-4.oxi-image-hover:hover .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-4.oxi-image-hover.oxi-touch .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-4.oxi-image-hover:hover .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption,
+.oxi-image-square-hover-style-4.oxi-image-hover.oxi-touch .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
+    -moz-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+}
+.oxi-image-square-hover-style-4 .oxi-image-hover-figure.left_to_right .oxi-image-hover-figure-caption {
+    -webkit-transform: scale(0) rotate(-180deg);
+    -moz-transform: scale(0) rotate(-180deg);
+    -ms-transform: scale(0) rotate(-180deg);
+    -o-transform: scale(0) rotate(-180deg);
+    transform: scale(0) rotate(-180deg);
+}
+.oxi-image-square-hover-style-4 .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption {
+    -webkit-transform: scale(0) rotate(180deg);
+    -moz-transform: scale(0) rotate(180deg);
+    -ms-transform: scale(0) rotate(180deg);
+    -o-transform: scale(0) rotate(180deg);
+    transform: scale(0) rotate(180deg);
+}

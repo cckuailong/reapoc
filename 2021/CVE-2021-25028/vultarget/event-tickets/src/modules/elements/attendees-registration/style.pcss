@@ -1,0 +1,66 @@
+.tribe-editor__attendee-registration {
+	margin-top: 30px;
+}
+
+.tribe-editor__attendee-registration__modal {
+	bottom: auto;
+	height: 90%;
+	left: 50%;
+	max-height: none;
+	max-width: none;
+	right: auto;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+
+	.components-modal__header-heading {
+		font-family: Helvetica, sans-serif, arial;
+		font-size: 22px;
+		font-weight: bold;
+	}
+}
+
+.tribe-editor__attendee-registration__modal-content {
+	height: calc(100% - 56px + 16px);
+	margin: -16px;
+	position: relative;
+	width: calc(100% + 32px);
+}
+
+.tribe-editor__attendee-registration__modal-iframe {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.tribe-editor__attendee-registration__modal-overlay {
+	background-color: rgba(0, 0, 0, 0.3);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	.components-spinner {
+		float: none;
+		left: 50%;
+		margin: 0;
+		opacity: 0.8;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.tribe-editor__attendee-registration__modal-overlay--show {
+	display: block;
+}
+
+.tribe-editor__attendee-registration__helper-text {
+	display: block;
+	color: #8D949B;
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 10px;
+}

@@ -1,0 +1,40 @@
+.oxi-addons-container .oxi-image-general-hover-style-26 .oxi-image-hover-figure .oxi-image-hover-image {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    z-index: 0;
+}
+.oxi-addons-container .oxi-image-general-hover-style-26.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-general-hover-style-26.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-image{
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+.oxi-addons-container .oxi-image-general-hover-style-26 .oxi-image-hover-figure .oxi-image-hover-figure-caption {
+    -webkit-transition: all 1s ease-out 0s;
+    -o-transition: all 1s ease-out 0s;
+    transition: all 1s ease-out 0s;
+    opacity: 0;
+    -webkit-transform: scale(0) rotateZ(-720deg);
+    -ms-transform: scale(0) rotate(-720deg);
+    transform: scale(0) rotateZ(-720deg);
+}
+.oxi-addons-container .oxi-image-general-hover-style-26 .oxi-image-hover-figure.right_to_left .oxi-image-hover-figure-caption {
+    -webkit-transition: all 1s ease-out 0s;
+    -o-transition: all 1s ease-out 0s;
+    transition: all 1s ease-out 0s;
+    opacity: 0;
+    -webkit-transform: scale(0) rotateZ(720deg);
+    -ms-transform: scale(0) rotate(720deg);
+    transform: scale(0) rotateZ(720deg);
+}
+.oxi-addons-container .oxi-image-general-hover-style-26.oxi-image-hover:hover .oxi-image-hover-figure .oxi-image-hover-figure-caption,
+.oxi-addons-container .oxi-image-general-hover-style-26.oxi-image-hover.oxi-touch .oxi-image-hover-figure .oxi-image-hover-figure-caption{
+    opacity: 1;
+    -webkit-transform: scale(1) rotateZ(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotateZ(0deg);
+}

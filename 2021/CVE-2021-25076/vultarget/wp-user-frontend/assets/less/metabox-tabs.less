@@ -1,0 +1,76 @@
+#wpuf_subs_metabox .inside {
+    margin: 0;
+    padding: 0;
+}
+
+.wpuf-subscription-pack-settings {
+    display: flex;
+
+    nav {
+        background-color: #f1f1f1;
+        min-width: 200px;
+        border-right: 1px solid #e5e5e5;
+
+        ul,
+        li {
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            border: none;
+            padding: 12px 5px 12px 15px;
+            border-bottom: 1px solid #e5e5e5;
+            border-right: 1px solid #e5e5e5;
+            background-color: #f1f1f1;
+            text-decoration: none;
+            margin-right: -1px;
+            font-weight: 500;
+
+            label {
+                padding: 0.5rem;
+                display: inline-block;
+            }
+        }
+
+        a:focus,
+        a:active {
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .tab-current {
+            a {
+                // border-left: 3px solid #0073aa;
+                border-right: 1px solid #fff;
+                background: #fff;
+                color: #2e4453;
+            }
+        }
+    }
+
+    .subscription-nav-content {
+        padding: 15px 25px;
+        width: 100%;
+
+        section {
+            display: none;
+
+            &.content-current {
+                display: block;
+            }
+
+            .form-table {
+                th {
+                    width: 150px;
+                    min-width: 150px;
+                }
+
+                td {
+                    padding: 15px 0;
+                }
+            }
+        }
+    }
+
+}

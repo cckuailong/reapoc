@@ -1,0 +1,1614 @@
+.quickbackup-addon{width:100%; box-sizing:border-box;margin-right:10px; padding:10px;}
+.quickbackup-addon label{display:inline-block;}
+
+.quickstaging{width:100%;float:left; box-sizing:border-box;margin-right:10px; padding:10px;}
+.quickstaging label{display:inline-block;margin-bottom:10px;}
+
+.wpvivid-custom-setting-save{margin: 10px 0 10px 0 !important;display: block !important;float: left;}
+
+.wpvivid-custom-td-border{border-left: 0;}
+.wpvivid-custom-backup-detail-odd{margin: 5px 20px 15px 40px;}
+.wpvivid-custom-backup-detail-even{background: #f7fcfe; border-left: 4px solid #f7fcfe;}
+
+.wpvivid-custom-database-table-list tbody {
+	display:block;
+	max-height:200px;
+	overflow-y:auto;
+	padding: 0;
+}
+.wpvivid-custom-database-table-list thead{
+	display:table;
+	width:100%;
+}
+
+.wpvivid-custom-database-table-list tbody tr {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+}
+
+.wpvivid-schedule-time-select-addon,
+.wpvivid-schedule-type-select-addon,
+.wpvivid-schedule-remote-select-addon,
+.wpvivid-schedule-create-addon{
+	float: left;
+	padding: 0 10px 10px 10px;
+}
+
+/* Popup container */
+.wpvivid-custom-popup {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	//cursor: pointer;
+}
+
+.wpvivid-custom-popup .wpvivid-custom-popuptext {
+	visibility: hidden;
+	//width: 220px;
+	//background-color: #555;
+	//color: #fff;
+	//text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	//position: absolute;
+	z-index: 1;
+	bottom: 75%;
+	//margin-left: -80px;
+}
+
+/* Popup arrow */
+.wpvivid-custom-popup .wpvivid-custom-popuptext::before {
+	/*content: "\25B2";
+	position: absolute;
+	//top: 100%;
+	bottom: 95%;
+	left: 20%;
+	background-color: #555;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;*/
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.wpvivid-custom-popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+.wpvivid-custom-popup .hide {
+	visibility: hidden;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+.wpvivid-custom-tree-contain{
+	width: 100%;
+	height: 300px;
+	border:1px dotted;
+	overflow: auto;
+}
+
+#wpvivid_custom_backup_tree .jstree-container-ul > .jstree-node {
+	background: transparent;
+}
+
+@media screen and (max-width:1650px) {
+	.quickbackup-addon{
+		float:none;
+		width:100%;
+	}
+}
+
+@media screen and (min-width:1600px) {
+	.wpvivid-pro-list{
+		width: calc(50% - 8px) !important;
+	}
+	.wpvivid-pro-list:nth-child(even){
+		margin-right: 0 !important;
+	}
+	.wpvivid-pro-list:nth-child(odd){
+		margin-left: 0 !important;
+	}
+	.wpvivid-pro-list:nth-child(3n){
+
+	}
+	.wpvivid-pro-list:nth-child(3n+1){
+
+	}
+}
+
+.wpvivid-custom-table-tr-expand{
+	background:#f1f1f1;
+}
+
+.wpvivid-custom-table-td-expand{
+	font-weight:bold;
+}
+
+.wpvivid-custom-table{
+	width: 100%;
+}
+
+.wpvivid-custom-database-wp-table-header{
+	height:30px;
+	border-left:4px solid #00a0d2;
+	padding-left:5px;
+	padding-top:5px;
+	background-color:#f5f5f5;
+}
+
+.wpvivid-custom-database-other-table-header{
+	height:30px;
+	border-left:4px solid #00a0d2;
+	padding-left:5px;
+	padding-top:5px;
+	background-color:#f5f5f5;
+	margin-top: 5px;
+}
+
+.wpvivid-custom-database-table-column{
+	width:32%;
+	float:left;
+}
+
+@media screen and (min-width: 1921px) {
+	.wpvivid-custom-database-table-column{
+		width:24%;
+		float:left;
+	}
+}
+
+@media screen and (max-width: 1920px) {
+	.wpvivid-custom-database-table-column{
+		width:24%;
+		float:left;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.wpvivid-custom-database-table-column{
+		width:32%;
+		float:left;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.wpvivid-custom-database-table-column{
+		width:49%;
+		float:left;
+	}
+	.wpvivid-database-table-addon{
+		padding-top: 5px;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	.wpvivid-custom-database-table-column{
+		width:99%;
+		float:left;
+	}
+}
+
+.wpvivid-custom-uploads-left{
+	width:30%;
+	overflow:auto;
+}
+
+.wpvivid-custom-uploads-right{
+	width:70%;
+	padding: 5px;
+}
+
+.wpvivid-custom-uploads-tree{
+	width: 100%;
+	height: 250px;
+	max-height: 250px;
+	overflow-y: auto;
+}
+
+.wpvivid-export-download-list,
+.wpvivid-custom-uploads-table{
+	width: 100%;
+	height: 250px;
+	overflow: auto;
+}
+
+.wpvivid-export-download-list ul:nth-of-type(odd) {background:#f1f1f1;}
+.wpvivid-export-download-list ul:nth-of-type(even) {}
+.wpvivid-export-download-list ul,
+.wpvivid-export-download-list ul li{
+	width: 100%;
+	height: 24px;
+	margin: 0;
+}
+
+.wpvivid-custom-uploads-table ul:nth-of-type(odd) {background:#f1f1f1;}
+.wpvivid-custom-uploads-table ul:nth-of-type(even) {}
+
+.wpvivid-custom-uploads-table ul,
+.wpvivid-custom-uploads-table ul li{
+	width: 100%;
+	height: 24px;
+	margin: 0;
+}
+
+.wpvivid-custom-uploads-table .wpvivid-custom-table-li-left{
+	width: 98%;
+	margin: 0;
+	float :left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.wpvivid-custom-uploads-table .wpvivid-custom-table-li-right{
+	width: 2%;
+	margin: 0;
+	float :left;
+}
+
+.wpvivid-custom-uploads-table-body{
+	width:100%;
+	float:left;
+}
+
+.wpvivid-custom-li-folder-icon{
+	background: url("../js/jstree/dist/themes/default/32px.png") -260px -4px no-repeat;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	margin: 0 4px 0 4px;
+	float: left;
+}
+
+.wpvivid-custom-li-file-icon{
+	background: url("../js/jstree/dist/themes/default/32px.png") -100px -68px no-repeat;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	margin: 0 4px 0 4px;
+	float: left;
+}
+
+.wpvivid-custom-li-font{
+	height: 24px;
+	line-height: 24px;
+	margin: 0;
+	float: left;
+}
+
+.wpvivid-custom-li-close{
+	height: 24px;
+	line-height: 24px;
+	margin: 0 10px 0 0;
+	float: right;
+}
+
+.wpvivid-custom-li-database-extra-left{
+	height: 24px;
+	line-height: 24px;
+	margin: 0 0 0 10px;
+	float: left;
+}
+
+.wpvivid-custom-li-database-extra-right{
+	height: 24px;
+	line-height: 24px;
+	margin: 0 10px 0 0;
+	float: right;
+}
+
+.wpvivid-custom-uploads-table-body-left{
+	float:left;
+}
+
+.wpvivid-custom-uploads-table-body-right{
+	float:right;
+}
+
+.wpvivid-backup-to-font{
+	font-weight:bold;
+}
+
+.wpvivid-backup-now-space{
+	padding-top:10px;
+}
+
+.wpvivid-backup-now-size{
+	width:200px;
+	height:50px;
+	font-size:20px;
+}
+
+.wpvivid-backup-tips{
+	float:left;
+	width:100%;
+	background-color:#f1f1f1;
+}
+
+.wpvivid-backup-to-remote{
+	padding-left:20px;
+	margin-top:5px;
+	margin-bottom:10px;
+	border-left:4px solid #00a0d2;
+}
+
+div.wpvivid-note{
+
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color: #f5f5f5;
+    background-image: url(../Images/icons/Pencil-48.png);
+    background-position: 9px 0px;
+    background-repeat: no-repeat;
+    border: solid 1px #eee;
+    border-radius: 6px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 15px 60px;
+    margin:10px 15px 10px 15px;
+}
+
+.wpvivid_tooltip {
+	position: relative;
+	width:12px;
+	height:12px;
+	border:1px solid #0073aa;
+	background-color:#0073aa;
+	color:#fff;
+	text-align:center;
+	vertical-align:middle;
+	border-radius:12px;
+}
+.wpvivid_tooltiptext a{
+	color: #aa0000;
+}
+.wpvivid_tooltip .wpvivid_tooltiptext {
+	visibility: hidden;
+	width: 250px;
+	background-color: #0085ba;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -125px; /* Use half of the width (120/2 = 60), to center the tooltip */
+	box-sizing: border-box;
+}
+
+.wpvivid_tooltip:hover .wpvivid_tooltiptext {
+	visibility: visible;
+}
+.wpvivid_tooltip .wpvivid_tooltiptext::after {
+	content: " ";
+	position: absolute;
+	top: 100%; /* At the bottom of the tooltip */
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color:#0085ba transparent transparent transparent;
+	box-sizing: border-box;
+}
+.wpvivid_click_popup{
+	background-color:#f7f7f7;
+	float:left;
+	width:100%;
+	border-radius: 6px;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.quickbackup-addon a{
+	text-decoration: none;
+}
+
+.wpvivid-intab-addon .nav-tab-active,
+.wpvivid-intab-addon .nav-tab-active:focus,
+.wpvivid-intab-addon .nav-tab-active:focus:active,
+.wpvivid-intab-addon .nav-tab-active:hover{
+	border-bottom: 1px solid #ffffff;
+}
+
+.wpvivid-schedule-fix,
+.wpvivid-debug-text-fix,
+.wpvivid-setting-text-fix{
+	height: 28px;
+	line-height: 28px;
+}
+
+@media screen and (max-width: 782px) {
+	.wpvivid-tooltip-fix{
+		margin-top: 15px !important;
+	}
+	.wpvivid-schedule-fix,
+	.wpvivid-debug-text-fix,
+	.wpvivid-setting-text-fix{
+		height: 36px;
+		line-height: 36px;
+	}
+}
+
+.wpvivid-text-space-bottom{margin-bottom: 5px;}
+.wpvivid-text-space-right{margin-right: 5px;}
+.wpvivid-element-space-bottom{margin-bottom: 10px;}
+.wpvivid-element-space-right{margin-right: 10px;}
+.wpvivid-restore-log-addon{padding: 10px;width: 100%;height: 500px;overflow: auto;box-sizing: border-box; border-top: none; border-color: #ccc;}
+.wpvivid-custom-tree ul{margin: 0 !important;}
+.wpvivid-staging-log{padding:10px; width:100%; height:300px; overflow:auto; box-sizing:border-box;}
+
+.wpvivid-refresh-tree:hover{
+	background: #0085ba;
+	border-color: #0073aa #006799 #006799;
+	box-shadow: 0 1px 0 #006799;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+	padding: 0 2px;
+	border-radius: 3px;
+}
+
+.wpvivid-setting-addon input{
+	margin: 0 4px 0 0;
+}
+
+.wpvivid-pro-update{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	margin: 3px 0 0 2px;
+	padding: 0 0 0 8px;
+	min-width: 18px;
+	height: 18px;
+	border-radius: 9px;
+	background-color: #ca4a1f;
+	color: #fff;
+	font-size: 11px;
+	line-height: 1.6;
+	text-align: center;
+	z-index: 26;
+}
+
+.schedule-active
+{
+	background-color: #90ee90;
+}
+
+.wpvivid-transparency-tab,
+.wpvivid-transparency-tab:hover,
+.wpvivid-transparency-tab:focus,
+.wpvivid-transparency-tab:focus:active{
+	background: #ffffff;
+}
+.column-wpvivid_role_name { width:25% }
+.column-wpvivid_role { width:8% }
+.column-wpvivid_role_edit { width:8% }
+
+.wpvivid-local-remote-backup-list span{margin: 0;}
+.wpvivid-schedule-list span{margin: 0;}
+.wpvivid-log-list span{margin: 0;}
+
+.wpvivid-upload-tr{border: 2px solid #006799; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.wpvivid-backup-list{border-collapse: collapse;}
+.wpvivid-list-td-center{text-align: center!important;}
+.wpvivid-backup-option-box{width:100%; border:1px solid #f1f1f1; float:left; padding:10px 10px 0 10px; box-sizing: border-box; margin-top: 10px;}
+
+.wpvivid-tree-dashicons{
+	padding: 0 !important;
+	width: auto !important;
+	height: auto !important;
+}
+
+.wpvivid-tree-dashicons:before{
+	padding: 0 !important;
+	background-color: #007cba !important;
+	font-size: 20px !important;
+	color: #fff !important;
+}
+
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.list-top-chip{float:left;display:block; vertical-align:middle; }
+.list-top-chip::after{content:" "}
+.backup-basic-info{min-width:100px; margin:10px; float:left;}
+.quickbackup{width:calc(100% - 290px);float:left; box-sizing:border-box;margin-right:10px; padding:10px;}
+.quickbackup label{display:inline-block;margin-bottom:10px;}
+.qucikbackup-schedule{width:280px; float:left; box-sizing:border-box; min-width:280px;}
+.quickstart-archive-block{width:33%;float:left; position:relative; box-sizing:border-box; }
+.quickstart-storage-block{width:33%;padding:10px; float:left; position:relative; box-sizing:border-box;}
+.quickstart-btn{width:33%;padding:10px; float:left; position:relative; box-sizing:border-box;}
+.quickbackup-btn{display:block !important; margin:0 auto !important;width:150px;height:50px !important; line-height:48px !important; font-size:20px !important;}
+.schedule-block{float:left;width:100%;padding:0 10px 10px 10px;box-sizing:border-box;}
+.postbox:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.quickbackup-block .fieldset label{margin-bottom:5px;}
+.custom-info{padding:10px;}
+.quickstart-storage-setting{width:100%;float:left; padding-left:10px; box-sizing:border-box;background-color:#f1f1f1; margin-bottom:10px;}
+.action-progress-bar{background-color:#f1f1f1 !important;margin:10px;color:#000;}
+.action-progress-bar-percent{background-color:#0085ba !important;color:#fff;}
+.storage-providers{float:left;padding:10px;cursor:pointer;}
+.storage-providers:hover{background-color:#f1f1f1 !important; color:#fff !important;}
+.storage-providers-active{background-color:#0085ba !important; color:#fff !important;}
+.storage-account-block{padding:10px;}
+.storage-account-button{margin:10px 10px 10px 0 !important;display:block !important; float:left;}
+.schedule-tab-block{padding:10px;}
+.schedule-tab-block input{display:line-block; margin-top:10px; margin-bottom:10px;margin-right:10px;}
+.setting-tab-block{padding: 10px 10px 10px 0;}
+.setting-tab-block input{display:line-block; margin-top:10px; margin-bottom:10px;margin-right:10px;}
+.setting-page-content{padding-left:10px;}
+.backup-log-btn{height:30px;float:left; margin-left:10px; margin-bottom:10px;}
+@keyframes rotate { 0%   { transform: rotate(0); } 100%  { transform: rotate(359.9deg); } }
+.wpvivid-backup-storage-list tr:hover,
+.wpvivid-websiteinfo-list tr:hover,
+.wpvivid-backuplist tr:hover,
+.wpvivid-loglist tr:hover,
+.wpvivid-remote-storage-list tr:hover {background-color: #f9f9f9;}
+.restore_log{padding:10px; width:100%; height:500px; overflow:auto; box-sizing:border-box;}
+.restore-button-position{margin:10px 10px 10px 0px; float:left;}
+.restore-button-position input{margin-right:10px;}
+.nav-tab.delete{display: block;overflow: hidden;position:relative;}
+.nav-tab-delete-img{position: absolute;top: 0px;right: 3px;}
+.button-secondary.log-page{background: #fff;color: #00a0d2;border: 1px solid #00a0d2;margin: 3px;}
+.button-secondary.log-page:hover{color: #0b82a7;border: 1px solid #0b82a7;}
+.button-secondary.log-page:focus{color: #00a0d2;border: 1px solid #00a0d2;}
+.remote-storage-set-default-block{padding-top:10px;padding-left:10px;padding-right:10px;}
+.remote-storage-set-default-block input{display:line-block; margin-top:10px; margin-bottom:10px;margin-right:10px;}
+.remote-storage-ftp-passive-block,
+.remote-storage-amazons3-storage-class,
+.remote-storage-amazons3-encryption{padding-left:10px;}
+.remote-storage-ftp-passive-block input,
+.remote-storage-amazons3-storage-class input,
+.remote-storage-amazons3-encryption input{display:line-block; margin-top:10px; margin-bottom:10px;margin-right:10px;}
+.backup-list-head{}
+.storage-account-form {padding-top: 1px; padding-bottom: 1px;}
+.quicktransfer{width:100%; float:left; box-sizing:border-box;margin-right:10px; padding:10px;}
+.quicktransfer label{display:inline-block;margin-bottom:10px;}
+.quicktransfer-btn{display:block !important; margin:0 auto !important;width:220px;height:50px !important; line-height:48px !important; font-size:20px !important;}
+.wpvivid-feature-pro{font-size:12px;border:1px solid #f1f1f1;padding:3px 5px;margin: 10px 10px 10px 0;border-radius:5px;}
+@media screen and (max-width:1650px) {
+	.qucikbackup-schedule{
+		float:none;
+		width:100%;
+	}
+	.quickbackup{
+		float:none;
+		width:100%;
+	}
+	.export-import-block{
+		float:none;
+		width:100%;
+	}
+}
+@media only screen and (max-width: 1350px){
+	#poststuff #post-body.columns-2 {
+		margin:0;
+	}
+	#wpbody-content #post-body.columns-2 #postbox-container-1 {
+		margin-right: 0;
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width:1315px) {
+	.quickstart-storage-block{
+		width:50%;
+	}
+	.quickstart-archive-block{
+		width:50%;
+	}
+	.quickstart-btn{
+		clear:both;
+		float:none;
+		width:100%;
+	}
+}
+@media screen and (max-width:800px){
+	.tablelistcolumn{
+		display:block;
+	}
+	.backup-list-head{
+		display:none;
+	}
+	.backuptime{
+		font-size:16px;
+	}
+	.backuplist-delete-backup{
+		display:none;
+	}
+	.website-info-head{
+		display:none;
+	}
+	.log-head{
+		display:none;
+	}
+	.lafowef{
+		display:none;
+	}
+	.storage-account-form input{
+		width:360px;
+	}
+}
+@media screen and (max-width:600px) {
+	.quickstart-storage-block{
+		float:none;
+		width:100%;
+	}
+	.quickstart-archive-block{
+		float:none;
+		width:100%;
+	}
+	.quickstart-btn{
+		float:none;
+		width:100%;
+	}
+}
+
+/* Popup container */
+.wpvivid-popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.wpvivid-popup .wpvivid-popuptext {
+	visibility: hidden;
+	width: 220px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 75%;
+	margin-left: -80px;
+}
+
+/* Popup arrow */
+.wpvivid-popup .wpvivid-popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.wpvivid-popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+.wpvivid-popup .hide {
+	visibility: hidden;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}
+
+.wpvivid-storage-form{
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.wpvivid-storage-select{
+	margin-top:10px;
+	margin-bottom:5px;
+	padding-bottom:8px;
+	padding-left:2px;
+}
+
+.wpvivid-storage-form input[type=text],
+.wpvivid-storage-form input[type=password]{
+	width: 350px;
+}
+
+.wpvivid-storage-form-desc{
+	background-color:#f5f5f5;
+	margin-top:10px;
+	padding:4px 5px;
+}
+
+.wpvivid-debug-text-fix{
+	height: 28px;
+	line-height: 28px;
+}
+
+@media screen and (max-width: 782px) {
+	.wpvivid-debug-text-fix{
+		height: 36px;
+		line-height: 36px;
+	}
+}
+
+.wpvivid-text-space-bottom{margin-bottom: 5px;}
+.wpvivid-text-space-right{margin-right: 5px;}
+.wpvivid-element-space-bottom{margin-bottom: 10px;}
+.wpvivid-element-space-right{margin-right: 10px;}
+.wpvivid-export-type-provider{float: left; cursor: pointer; padding: 10px; height: 30px; line-height: 30px; border-right: 1px solid #e5e5e5;}
+.wpvivid-export-type-provider:hover{background-color:#f1f1f1 !important; color:#fff !important;}
+.wpvivid-export-type-provider-active{background-color:#0085ba !important; color:#fff !important;}
+.wpvivid-import-log{padding:10px; width:100%; height:500px; overflow:auto; box-sizing:border-box;}
+.import > tbody > :nth-child(odd) {background-color: #ffffff;}
+.import > tbody tr:hover {background-color: #f9f9f9;}
+.import .column-delete {width: 10%;}
+.wpvivid-export-import-block span{margin: 0;}
+.export-import-block{width:100%; box-sizing:border-box;margin-right:10px; padding:10px;}
+.export-import-block label{display:inline-block;}
+.export-import-block a{text-decoration: none;}
+
+
+.wpvivid-canvas {
+	width:100%;
+	box-sizing: border-box;
+}
+.wpvivid-dashboard, .wpvivid-backup{
+	position: relative;
+
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	background: #fff;
+}
+.wpvivid-welcome-panel {
+	width:100%;
+	padding: 0px 10px 0;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	background: #fff;
+	box-sizing: border-box;
+}
+.wpvivid-red {
+	background:red;
+	color:#fff;
+}
+.wpvivid-green {
+	background:#8bc34a;
+	color:#fff;
+}
+.wpvivid-blue {
+	background:#007cba;
+	color:#fff;
+}
+.wpvivid-orange {
+	background:orange;
+	color:#fff;
+}
+.wpvivid-grey {
+	background-color:grey;
+	color: #fff;
+}
+.wpvivid-grey-light {
+	background-color:#eee;
+	color: grey;
+}
+.wpvivid-hover-blue:hover{
+	background:#007cba;
+	color:#fff;
+	cursor:pointer;
+}
+.wpvivid-font-hover-blue:hover{
+	color:#007cba;
+	cursor:pointer;
+}
+.wpvivid-hover-green:hover{
+	background:#8bc34a;
+	color:#fff;
+	cursor:pointer;
+}
+span.dashicons{
+	margin-right:2px;
+}
+.wpvivid-welcome-panel .about-description{
+	font-size: 16px;
+	margin: 0;
+}
+.wpvivid-page-title {
+	font-weight: 700;
+	font-size:1.2em;
+}
+.wpvivid-dashicons-large {
+	font-size:5em;
+	width:1.2em;
+	height:1.2em;
+	float:left;
+}
+.wpvivid-dashicons-large:hover{
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+}
+.wpvivid-dashicons-middle {
+	font-size:3em;
+	width:1.2em;
+	height:1.2em;
+	float:left;
+
+}
+
+.wpvivid-welcome-bar{
+	width:100%;
+	box-sizing: border-box;
+
+}
+.wpvivid-welcome-bar-left, .wpvivid-block-left {
+	width:50%;
+	float:left;
+	padding:1em;
+	box-sizing: border-box;
+}
+.wpvivid-welcome-bar-right, .wpvivid-block-right {
+	width:50%;
+	float:left;
+	padding:1em;
+	box-sizing: border-box;
+}
+.wpvivid-features-box, .wpvivid-two-cols{
+	width:50%;
+	float:left;
+	font:14px;
+	padding:1em 1em 1em 1em;
+	box-sizing: border-box;
+}
+
+.wpvivid-four-cols{
+	width:25%;
+	float:left;
+	font:14px;
+
+	box-sizing: border-box;
+	border:1px solid #f1f1f1;
+}
+.wpvivid-one-coloum {
+	width:100%;
+	float:left;
+	font:14px;
+	padding:1em 1em 1em 1em;
+	box-sizing: border-box;
+}
+
+.wpvivid-dashboard .wpvivid-two-col li {
+	border-bottom: 1px solid #eee;
+	margin: 0px;
+	padding: 10px;
+	box-sizing: border-box;
+
+}
+
+.wpvivid-dashboard .wpvivid-two-col li::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+.wpvivid-dashboard .wpvivid-two-col li img {
+	padding:1em;
+	width: 5em;
+	height: 5em;
+	float: left;
+	margin: 0.5em;
+}
+.wpvivid-sidebar-main{
+	width:100%;
+	float:left;
+	font:13px;
+	box-sizing: border-box;
+
+}
+.wpvivid-sidebar-main li::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.wpvivid-sidebar-main li {
+	margin: 0px;
+	padding: 10px;
+	box-sizing: border-box;
+
+}
+.wpvivid-sidebar-main li img {
+	padding:1em;
+	width: 5em;
+	height: 5em;
+	float: left;
+	margin: 0.5em;
+}
+.wpvivid-sidebar{
+	width:100%;
+	float:left;
+	font:13px;
+	box-sizing: border-box;
+
+}
+.wpvivid-sidebar li::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.wpvivid-sidebar li {
+	border-bottom: 1px solid #eee;
+	margin: 0px;
+	padding: 10px;
+	box-sizing: border-box;
+
+}
+.wpvivid-sidebar li img {
+	padding:1em;
+	width: 5em;
+	height: 5em;
+	float: left;
+	margin: 0.5em;
+}
+.wpvivid-features-box-image-progress {
+	width:100%;
+}
+.wpvivid-features-box-image-optimiztion-details {
+	width:50%;
+}
+.wpvivid-features-box-image-optimiztion-plate {
+	width:50%;
+}
+.wpvivid-features-box-image-optimiztion-percentage{
+	margin-top:2.5em;
+}
+.wpvivid-features-box-image-optimiztion-number {
+	font-size: 5em;
+	font-family:Sans-serif;
+	font-weight:600;
+	color:orange;
+	float:left;
+	text-shadow:0 0.05em 0.05em rgba(0,0,0,0.4);
+}
+.wpvivid-features-box-image-optimiztion-percentage-unit  {
+	font-size:1em;
+	color:grey;
+	float:left;
+	font-size:1.2em;
+	padding-bottom:1em;
+}
+.wpvivid-rectangle {
+	border-radius:0.4em;
+	padding:0.5em;
+	margin-left: 0.5em;
+	margin-right:0.5em;
+	font-size:0.8em;
+}
+.wpvivid-rectangle-small {
+	border-radius:0.4em;
+	padding:0.2em;
+	margin-left: 0.5em;
+	margin-right:0.5em;
+	font-size:0.6em;
+}
+.wpvivid-icon-16px{
+	font-size:16px;
+	margin-top:2px;
+	color:#aaa;
+	cursor:pointer;
+}
+.wpvivid-icon-16px-nopointer{
+	font-size:16px;
+	margin-top:2px;
+}
+.wpvivid-text-line{
+	padding:1px;
+}
+.wpvivid-text-selected{
+	background:#eee;
+}
+.wpvivid-text-line:hover{
+	background:#eee;
+}
+.wpvivid-span-progress {
+	display:block;
+	width:100%;
+	height:1.5em;
+	background-color:#9d9fa5;
+	border-radius:0;
+	color: #fff;
+
+}
+.wpvivid-span-processed-progress {
+	display:block;
+	height:1.5em;
+	background-color:#8bc34a;
+	border-radius:0;
+	color: #fff;
+	padding-left:0.5em;
+}
+.wpvivid-span-processed-percent-progress{
+	width:53%;
+}
+.wpvivid-clear-float {
+	content: "";
+	clear: both;
+	display: table;
+	width:100%;
+}
+.wpvivid-title {
+	font-size:1.2em;
+	color:#000;
+}
+.wpvivid-nav-bar{
+	width: 100%;
+	float: left;
+	padding: 1em;
+	background-color: #fff;
+	margin-bottom: 1em;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	box-sizing: border-box;
+
+}
+
+.wpvivid-two-col{
+	width:50%;
+	float:left;
+	box-sizing: border-box;
+}
+.wpvivid-float-right{
+	float:right;
+}
+.wpvivid-float-left{
+	float:left;
+}
+.wpvivid-dashicons-white {
+	color:#ffffff;
+}
+.wpvivid-dashicons-green {
+	color:#8bc34a;
+}
+.wpvivid-dashicons-red {
+	color:red;
+}
+.wpvivid-dashicons-orange  {
+	color:orange;
+}
+.wpvivid-dashicons-blue {
+	color:#007cba;
+}
+.wpvivid-dashicons-grey, .wpvivid-dashicons-editor-help{
+	color:#999;
+}
+.wpvivid-nav-tab-wrapper {
+	padding-bottom:0!important;
+
+}
+.wpvivid-nav-tab {
+	background:#ffffff;
+}
+.wpvivid-nav-tab-active,.wpvivid-nav-tab-active, .wpvivid-nav-tab-active:focus:active, .wpvivid-nav-tab-active:hover {
+	border-bottom:1px solid #ffffff;
+	background:#ffffff;
+}
+.wpvivid-tabcontent {
+	display: none;
+}
+
+
+.wpvivid-workflow {
+	padding:1em;
+	border:1px solid #eee;
+	border-radius:8px;
+}
+
+
+/* tooltip */
+.wpvivid-tooltip {
+	display:inline-block;
+	position:relative;
+	text-align:left;
+}
+/* tooltip - top */
+.wpvivid-top {
+	min-width:300px;
+	top:-20px;
+	left:50%;
+	transform:translate(-50%, -100%);
+	padding:10px 20px;
+	color:#444444;
+	background-color:#FFFFFF;
+	font-weight:normal;
+	font-size:13px;
+	border-radius:8px;
+	position:absolute;
+	z-index:99999999;
+	box-sizing:border-box;
+	box-shadow:0 1px 8px rgba(0,0,0,0.5);
+	visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.wpvivid-tooltip:hover .wpvivid-top {
+	visibility:visible; opacity:1;
+}
+
+.wpvivid-tooltip .wpvivid-top i {
+	position:absolute;
+	top:100%;
+	left:50%;
+	margin-left:-12px;
+	width:24px;
+	height:12px;
+	overflow:hidden;
+}
+
+.wpvivid-tooltip .wpvivid-top i::after {
+	content:'';
+	position:absolute;
+	width:12px;
+	height:12px;
+	left:50%;
+	transform:translate(-50%,-50%) rotate(45deg);
+	background-color:#FFFFFF;
+	box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+/* tooltip - bottom */
+.wpvivid-bottom {
+	min-width:300px;
+	top:40px;
+	left:50%;
+	transform:translate(-50%, 0);
+	padding:10px 20px;
+	color:#444444;
+	background-color:#FFFFFF;
+	font-weight:normal;
+	font-size:13px;
+	border-radius:8px;
+	position:absolute;
+	z-index:99999999;
+	box-sizing:border-box;
+	box-shadow:0 1px 8px rgba(0,0,0,0.5);
+	visibility:hidden; opacity:0; transition:opacity 0.4s;
+}
+
+.wpvivid-dashicons-editor-help:hover .wpvivid-bottom {
+	visibility:visible; opacity:1;
+}
+.wpvivid-dashicons-white:hover .wpvivid-bottom{
+	visibility:visible; opacity:1;
+}
+.wpvivid-tooltip .wpvivid-bottom i {
+	position:absolute;
+	bottom:100%;
+	left:50%;
+	margin-left:-12px;
+	width:24px;
+	height:12px;
+	overflow:hidden;
+}
+
+.wpvivid-tooltip .wpvivid-bottom i::after {
+	content:'';
+	position:absolute;
+	width:12px;
+	height:12px;
+	left:50%;
+	transform:translate(-50%,50%) rotate(45deg);
+	background-color:#FFFFFF;
+	box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+/* tooltip - left */
+.wpvivid-left {
+	min-width:300px;
+	top:50%;
+	right:100%;
+	margin-right:20px;
+	transform:translate(0, -50%);
+	padding:10px 20px;
+	color:#444444;
+	background-color:#FFFFFF;
+	font-weight:normal;
+	font-size:13px;
+	border-radius:8px;
+	position:absolute;
+	z-index:99999999;
+	box-sizing:border-box;
+	box-shadow:0 1px 8px rgba(0,0,0,0.5);
+	visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.wpvivid-tooltip:hover .wpvivid-left {
+	visibility:visible; opacity:1;
+}
+
+.wpvivid-tooltip .wpvivid-left i {
+	position:absolute;
+	top:50%;
+	left:100%;
+	margin-top:-12px;
+	width:12px;
+	height:24px;
+	overflow:hidden;
+}
+
+.wpvivid-tooltip .wpvivid-left i::after {
+	content:'';
+	position:absolute;
+	width:12px;
+	height:12px;
+	left:0;
+	top:50%;
+	transform:translate(-50%,-50%) rotate(-45deg);
+	background-color:#FFFFFF;
+	box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+/* tooltip - right */
+.wpvivid-right {
+	min-width:300px;
+	top:50%;
+	left:100%;
+	margin-left:20px;
+	transform:translate(0, -50%);
+	padding:10px 20px;
+	color:#444444;
+	background-color:#FFFFFF;
+	font-weight:normal;
+	font-size:13px;
+	border-radius:8px;
+	position:absolute;
+	z-index:99999999;
+	box-sizing:border-box;
+	box-shadow:0 1px 8px rgba(0,0,0,0.5);
+	visibility:hidden;
+	opacity:0;
+	transition:opacity 0.8s;
+}
+
+.wpvivid-tooltip:hover .wpvivid-right {
+	visibility:visible; opacity:1;
+}
+.wpvivid-installer-list li{
+	padding:0.2em 0;
+}
+.wpvivid-tooltip .wpvivid-right i {
+	position:absolute;
+	top:50%;
+	right:100%;
+	margin-top:-12px;
+	width:12px;
+	height:24px;
+	overflow:hidden;
+}
+
+.wpvivid-tooltip .wpvivid-right i::after {
+	content:'';
+	position:absolute;
+	width:12px;
+	height:12px;
+	left:0;
+	top:50%;
+	transform:translate(50%,-50%) rotate(-45deg);
+	background-color:#FFFFFF;
+	box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+/* radio box style */
+
+.wpvivid-radio {
+	display: block;
+	position: relative;
+	padding-left: 2em;
+	margin-bottom: 1em;
+	cursor: pointer;
+	font-size: 1em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Hide the browser's default radio button */
+.wpvivid-radio input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+/* Create a custom radio button */
+.wpvivid-radio-checkmark {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.wpvivid-radio:hover input ~ .wpvivid-radio-checkmark {
+	background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+.wpvivid-radio input:checked ~ .wpvivid-radio-checkmark {
+	background-color: #8bc34a;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.wpvivid-radio-checkmark:after {
+	content: "✔";
+	position: absolute;
+	font-size:12px;
+	top:-1px;
+	left:3px;
+	display: none;
+	color:white;
+}
+/* Show the indicator (dot/circle) when checked */
+.wpvivid-radio input:checked ~ .wpvivid-radio-checkmark:after {
+	display: block;
+}
+
+/* custom checkbox */
+
+/* Customize the label (the container) */
+.wpvivid-checkbox {
+	display: block;
+	position: relative;
+
+	padding-left: 2em;
+	cursor: pointer;
+	font-size: 1em;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Hide the browser's default checkbox */
+.wpvivid-checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+.wpvivid-checkbox-checkmark {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-color: #eee;
+	border-radius: 4px;
+}
+/* On mouse-over, add a grey background color */
+.wpvivid-checkbox:hover input ~ .wpvivid-checkbox-checkmark {
+	background-color: #ccc;
+	border-radius: 4px;
+}
+/* When the checkbox is checked, add a blue background */
+.wpvivid-checkbox input:checked ~ .wpvivid-checkbox-checkmark {
+	background-color: #8bc34a;
+	border-radius: 4px;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.wpvivid-checkbox-checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the checkmark when checked */
+.wpvivid-checkbox input:checked ~ .wpvivid-checkbox-checkmark:after {
+	display: block;
+}
+/* Style the checkmark/indicator */
+.wpvivid-checkbox .wpvivid-checkbox-checkmark:after {
+	left: 4px;
+	top: 0px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0px 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/* toggle switch */
+
+/* The switch - the box around the slider */
+.wpvivid-switch {
+	position: relative;
+	display: inline-block;
+	width: 32px;
+	height: 16px;
+}
+
+/* Hide default HTML checkbox */
+.wpvivid-switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.wpvivid-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.wpvivid-slider:before {
+	position: absolute;
+	content: "";
+	height: 12px;
+	width: 12px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .wpvivid-slider {
+	background-color: #8bc34a;
+}
+
+input:focus + .wpvivid-slider {
+	box-shadow: 0 0 1px #8bc34a;
+}
+
+
+input:checked + .wpvivid-slider:before {
+	-webkit-transform: translateX(16px);
+	-ms-transform: translateX(16px);
+	transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.wpvivid-slider.wpvivid-round {
+	border-radius: 16px;
+}
+
+.wpvivid-slider.wpvivid-round:before {
+	border-radius: 50%;
+}
+
+
+/*general postion*/
+.wpvivid-tooltip-padding-top {
+	padding-top:0.2em;
+}
+.wpvivid-tooltip-padding-top-small {
+	padding-top:0.1em;
+}
+
+/*  HD computer monitor */
+
+@media only screen and (min-width: 1366px) {
+
+	.wpvivid-four-cols{
+		width:100%;
+		margin-bottom:1em;
+	}
+}
+
+/*  Tablets in landscape mode, older desktop monitors */
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+
+
+	#poststuff #post-body.columns-2 {
+		margin-right: 0px;
+	}
+	#wpbody-content #post-body.columns-2 #postbox-container-1 {
+		margin-right: 0;
+		width: 100%;
+	}
+	.wpvivid-four-cols{
+		width:100%;
+		margin-bottom:1em;
+	}
+}
+
+
+
+/*  Tablets in portrait mode, large display smartphones landscape mode */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.wpvivid-two-col {
+		width:100%;
+	}
+	.wpvivid-float-right{
+		float:left;
+	}
+	.wpvivid-four-cols{
+		width:100%;
+		margin-bottom:1em;
+	}
+	..wpvivid-welcome-bar-left{
+		width:100%;
+
+	}
+	.wpvivid-welcome-bar-right{
+		display:none;
+	}
+	.wpvivid-ignore{
+		display:none;
+	}
+
+}
+
+/*  Smartphones in landscape mode */
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+	.wpvivid-features-box,.wpvivid-two-col {
+		width:100%;
+	}
+	.wpvivid-float-right{
+		float:left;
+	}
+	.wpvivid-welcome-bar-left{
+		width:100%;
+	}
+	.wpvivid-welcome-bar-right{
+		display:none;
+	}
+	.wpvivid-four-cols{
+		width:100%;
+		margin-bottom:1em;
+	}
+	.wpvivid-ignore{
+		display:none;
+	}
+}
+
+
+/*  Smartphones in portrait mode  */
+
+@media only screen and (max-width: 420px) {
+	.wpvivid-features-box,.wpvivid-two-col {
+		width:100%;
+	}
+	.wpvivid-float-right{
+		float:left;
+	}
+	.wpvivid-welcome-bar-left{
+		width:100%;
+
+	}
+	.wpvivid-welcome-bar-right{
+		display:none;
+	}
+
+	.wpvivid-four-cols{
+		width:100%;
+		margin-bottom:1em;
+	}
+	.wpvivid-ignore{
+		display:none;
+	}
+	.wpvivid-img-opt-responsive{
+		margin-top:1em;
+		padding-top:1em;
+		border-top:1px solid #f1f1f1;
+	}
+}

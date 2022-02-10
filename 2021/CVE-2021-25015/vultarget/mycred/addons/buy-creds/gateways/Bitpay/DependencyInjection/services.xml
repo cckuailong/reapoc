@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * @license Copyright 2011-2014 BitPay Inc., MIT License 
+ * see https://github.com/bitpay/php-bitpay-client/blob/master/LICENSE
+ */
+ -->
+<container xmlns="http://symfony.com/schema/dic/services">
+    <parameters>
+        <parameter key="network.class">Bitpay\Network\Livenet</parameter>
+        <parameter key="adapter.class">Bitpay\Client\Adapter\CurlAdapter</parameter>
+        <parameter key="key_manager.class">Bitpay\KeyManager</parameter>
+        <parameter key="key_storage.class">Bitpay\Storage\FilesystemStorage</parameter>
+    </parameters>
+    <services>
+        <service id="network" class="%network.class%" />
+        <service id="adapter" class="%adapter.class%" />
+
+        <service id="client" class="Bitpay\Client\Client">
+            <call method="setNetwork">
+                <argument type="service" id="network" />
+            </call>
+            <call method="setAdapter">
+                <argument type="service" id="adapter" />
+            </call>
+            <call method="setPublicKey">
+                <argument type="service" id="public_key" />
+            </call>
+            <call method="setPrivateKey">
+                <argument type="service" id="private_key" />
+            </call>
+        </service>
+
+        <service id="key_storage" class="%key_storage.class%" public="false">
+            <argument>%bitpay.key_storage_password%</argument>
+        </service>
+
+        <service id="key_manager" class="%key_manager.class%">
+            <argument type="service" id="key_storage" />
+        </service>
+
+        <service id="public_key" class="Bitpay\PublicKey" factory-service="key_storage" factory-method="load">
+            <argument>%bitpay.public_key%</argument>
+        </service>
+
+        <service id="private_key" class="Bitpay\PrivateKey" factory-service="key_storage" factory-method="load">
+            <argument>%bitpay.private_key%</argument>
+        </service>
+    </services>
+</container>

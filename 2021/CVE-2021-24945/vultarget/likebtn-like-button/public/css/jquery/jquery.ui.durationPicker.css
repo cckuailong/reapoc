@@ -1,0 +1,33 @@
+.durationPickerGroup {
+  display: table;
+
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.durationPickerGroup .unit
+{
+  display: table-row;
+}
+
+.durationPickerGroup .unit .subunit-label {
+  padding-left: 5px;
+  display: table-cell;
+}
+
+.durationPickerGroup .unit .subunit-control {
+  display: table-cell;
+}
+
+
+/*****************
+Other
+*****************/
+
+.durationPickerGroup .unit .subunit-control input[type=number] {
+  width: 100px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}

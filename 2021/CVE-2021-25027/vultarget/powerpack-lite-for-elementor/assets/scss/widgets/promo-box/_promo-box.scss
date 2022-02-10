@@ -1,0 +1,55 @@
+.pp-promo-box {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    .pp-promo-box-icon {
+        display: inline-block;
+        line-height: 1;
+        text-align: center;
+        @include transition();
+        .pp-promo-box-icon-inner {
+            height: 1em;
+            width: 1em;
+        }
+    }
+    .pp-promo-box-overlay,
+    .pp-promo-box-bg {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        @include transition(transform);
+    }
+    .pp-promo-box-bg {
+        padding: 40px;
+    }
+    .pp-promo-box-wrap {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .pp-promo-box-inner {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+    .pp-promo-box-inner-content {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .pp-promo-box-banner {
+        @include transition();
+        min-height: 100%;
+        width: 100%;
+    }
+    &-heading-divider-wrap,
+    &-subheading-divider-wrap {
+        font-size: 0;
+        line-height: 1;
+    }
+    &-heading-divider,
+    &-subheading-divider {
+        display: inline-block;
+    }
+}

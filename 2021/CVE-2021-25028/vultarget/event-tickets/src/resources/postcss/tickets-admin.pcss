@@ -1,0 +1,641 @@
+@import 'tickets-common.pcss';
+
+.tribe-tickets-column-attendees-link {
+	display: inline-block;
+}
+
+#ticket_form {
+	input[type=radio] {
+		margin-right: 5px;
+	}
+}
+
+.ticket_list {
+	h4 {
+		border-bottom: 1px solid #e5e5e5;
+		padding-bottom: 6px;
+		text-transform: uppercase;
+
+		a {
+			font-size: 11px;
+			font-weight: normal;
+			text-transform: none;
+		}
+	}
+
+	tr {
+		&:hover td div.ticket_controls {
+			visibility: visible;
+		}
+
+		td {
+			padding: 10px;
+			vertical-align: middle;
+
+			div.ticket_controls {
+				visibility: hidden;
+			}
+		}
+	}
+}
+
+.ticket_name p:first-child {
+	font-weight: bold;
+}
+
+#tribe_ticket_header_preview img {
+	height: auto !important;
+	max-width: 95% !important;
+}
+
+#tribe_ticket_header_remove {
+	display: none;
+}
+
+.ticket_time {
+	display: none;
+}
+
+.tribe-tickets-remaining {
+	font-size: 10px;
+}
+
+.eventtable {
+	margin: 0;
+	padding-top: 0;
+	width: 100%;
+}
+
+#event_tickets,
+.eventtable.ticket_list.eventForm {
+	table-layout: fixed;
+}
+
+.tribe-strong-label {
+	font-weight: bold;
+}
+
+/* Specific goal of this rule is to prevent the number input busting the ticket form layout under Twenty Fifteen */
+.tribe-theme-twentyfifteen .tribe-events-tickets input[type='number'] {
+	padding: 0.375em;
+	width: 100%;
+}
+
+@define-mixin tribe-ticket-tooltip {
+	position: relative;
+
+	.tooltip {
+		background-color: #efefef;
+		border: 1px solid var(--tec-color-border-secondary);
+		border-radius: 3px;
+		display: none;
+		margin-left: 0.5em;
+		padding: 0.5em;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+	}
+
+	&:hover {
+		.tooltip {
+			display: block;
+		}
+	}
+}
+
+@define-mixin screen-reader-text {
+	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.screen_reader_text {
+	@mixin screen-reader-text;
+}
+
+#poststuff .inside {
+	margin-top: 12px;
+}
+
+.tribe-tickets-editor-blocker {
+	background: rgba(255, 255, 255, 0.7);
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100000;
+
+	.spinner {
+		left: 50%;
+		margin-left: -10px;
+		margin-top: -10px;
+		position: absolute;
+		top: 50%;
+		z-index: 100404;
+	}
+}
+
+.tribe-tickets-editor-history-list {
+	margin-left: 20px;
+}
+
+#event_tickets {
+	font-size: 12px;
+	position: relative;
+
+	fieldset {
+		border: 0;
+		margin: 0 0 1em;
+		padding: 0;
+	}
+
+	.ticket_form_left {
+		font-weight: bold;
+	}
+
+	label {
+		font-weight: normal;
+	}
+
+	input[type='text'],
+	input[type='email'],
+	input[type='url'],
+	input[type='password'],
+	input[type='search'],
+	input[type='number'],
+	input[type='tel'],
+	input[type='range'],
+	input[type='date'],
+	input[type='month'],
+	input[type='week'],
+	input[type='time'],
+	input[type='datetime'],
+	input[type='datetime-local'],
+	input[type='color'],
+	textarea,
+	label {
+		&.ticket_form_right {
+			display: block;
+		}
+	}
+
+	.tribe-description-small {
+		color: #888;
+		font-size: 0.95em;
+		margin-top: 5px;
+	}
+}
+
+/* Panels */
+.ticket_panel {
+	border: 1px solid var(--tec-color-border-secondary);
+	border-radius: 5px;
+	box-sizing: border-box;
+	opacity: 1;
+	padding: 8px;
+	position: relative;
+	visibility: visible;
+	width: 100%;
+	will-change: transform;
+
+	&[aria-hidden='true'] {
+		opacity: 0;
+		position: absolute;
+		visibility: hidden;
+	}
+
+	@media (min-width: 782px) {
+		padding: 16px;
+	}
+
+	section {
+		margin: 2em 0;
+	}
+
+	#tribe-tickets-image {
+		margin-top: 0.5em;
+	}
+
+	&.panel_base {
+		border: 0;
+		padding: 0.5em 0 0;
+	}
+
+	&.panel_edit {
+		border: 0;
+	}
+
+	&.panel_settings {
+		h4 {
+			margin: 0;
+		}
+
+		.settings_main {
+			margin-bottom: 0;
+			margin-top: 0;
+
+			p {
+				font-size: inherit;
+			}
+		}
+	}
+
+	h4 {
+		text-transform: uppercase;
+	}
+}
+
+.ticket_title {
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+.ticket_list_container {
+	margin-bottom: 20px;
+}
+
+.tribe_no_capacity {
+	margin: 0;
+}
+
+.ticket_delete {
+	color: #a00;
+
+	&:hover {
+		color: #dc3232;
+	}
+}
+
+/* Base Panel Toggle Buttons */
+#settings_form_toggle {
+	margin-top: 1em;
+
+	@media (min-width: 400px) {
+		float: right;
+		margin-top: 0;
+	}
+}
+
+.global_capacity-wrapper {
+	margin-bottom: 1em;
+}
+
+.global_capacity_edit_button {
+	background: none;
+	border: 0;
+	color: #ccc;
+	cursor: pointer;
+	padding: 0;
+}
+
+.tribe-button-icon {
+
+	&:before {
+		font-family: 'dashicons';
+		font-size: 1.25em;
+		left: -0.25em;
+		position: relative;
+		vertical-align: middle;
+	}
+
+	.tribe-hidden {
+		display: none;
+	}
+
+	&.tribe-button-icon-plus:before {
+		content: '\f132';
+	}
+
+	&.tribe-button-icon-edit:before {
+		content: '\f464';
+	}
+
+	&.tribe-button-icon-settings:before {
+		content: '\f111';
+		top: -2px;
+	}
+}
+
+.tribe-tickets-image-preview {
+	margin-top: 2em;
+	max-width: 200px;
+}
+
+#tribe_ticket_header_image {
+	margin-right: 2em;
+	vertical-align: baseline;
+}
+
+#tribe_tickets_image_preview_filename {
+	display: none;
+	font-weight: bold;
+
+	&.-active {
+		display: inline;
+	}
+
+	.dashicons {
+		vertical-align: text-bottom;
+	}
+
+	.filename {
+		margin-left: 0.5em;
+	}
+}
+
+/* Styles for Initial View */
+.ticket_table_intro {
+	.button-secondary {
+		float: right;
+		margin-bottom: 15px;
+		margin-left: 5px;
+	}
+
+	#ticket_form_total_capacity {
+		display: inline-block;
+		line-height: 28px;
+		position: relative;
+
+		@media screen and (max-width: 520px) {
+			width: 100%;
+		}
+
+		@mixin tribe-ticket-tooltip;
+
+		.tooltip {
+			left: 100%;
+			top: 53%;
+			white-space: nowrap;
+
+			@media screen and (max-width: 782px) {
+				left: auto;
+				margin-top: 5px;
+				position: relative;
+				top: auto;
+				transform: none;
+				width: 100%;
+			}
+		}
+	}
+}
+
+/* Form styles */
+
+.input_block {
+	margin-bottom: 1em;
+	position: relative;
+
+	.ticket_form_left {
+		box-sizing: border-box;
+		display: block;
+		float: left;
+		margin: 0;
+		padding-left: 0;
+		padding-right: 1em;
+
+		@media screen and (max-width: 782px) {
+			display: inline-block;
+			float: none;
+			padding: 0 0 6px;
+		}
+	}
+
+	input,
+	textarea {
+		max-width: calc(100% - 132px);
+	}
+
+	.ticket_field {
+		&.hasDatepicker {
+			border-radius: 3px;
+			font-size: 13px;
+			margin-bottom: 0;
+		}
+	}
+
+	.input_block,
+	.ticket_form_right {
+		display: block;
+		margin-top: 0;
+
+		@media (min-width: 782px) {
+			margin-left: 132px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.input_block {
+		margin-top: 1em;
+	}
+
+	legend + .input_block {
+		margin-top: 0;
+	}
+
+	.tribe_stock_block {
+		padding-left: calc(20px + 0.4em);
+
+		@media screen and (max-width: 782px) {
+			padding-left: 36px;
+		}
+	}
+
+	/* Capacity Radio Buttons */
+	.tribe_stock_block.tribe-active {
+		padding-top: 1em;
+
+		@media screen and (max-width: 782px) {
+			padding-top: 5px;
+		}
+	}
+
+	label.ticket_form_right {
+		margin-bottom: 1em;
+	}
+
+	.tribe_block_label {
+		display: block;
+	}
+
+	/* Capacity Fields/admin display */
+	.ticket_stock_total {
+		color: #666;
+		font-style: italic;
+		margin-left: 1em;
+	}
+
+	#ticket_form & .ticket_stock_total_value {
+		margin-right: 0;
+	}
+
+	/* Date/Time fields */
+	.tribe-timepicker {
+		width: 6em;
+	}
+}
+
+#tribe_ticket_provider_wrapper {
+	@mixin screen-reader-text;
+}
+
+/* Adjust font size for form title */
+h4.ticket_form_title {
+	font-size: 1.2em;
+	margin-top: 0;
+}
+
+/* Ensure radios and checkboxes have some space to the right of them when inside a label */
+#ticket_form input[type=radio],
+#ticket_form input[type=checkbox] {
+	margin-right: 0.4em;
+}
+
+.tribe_soft_note,
+p.description {
+	color: #a3a3a3;
+	font-size: inherit;
+	font-style: normal;
+}
+
+#ticket_form .ticket_advanced.history {
+	.toggle-history {
+		span:nth-child(2) {
+			display: none;
+		}
+	}
+
+	ul {
+		display: none;
+	}
+
+	&._show {
+		span:first-child {
+			display: none;
+		}
+
+		span:nth-child(2) {
+			display: inline;
+		}
+
+		ul {
+			display: block;
+		}
+	}
+}
+
+/* Edit form styles */
+.ticket_bottom {
+	border-top: 1px solid #ddd;
+	margin-top: 1em;
+	padding-top: 18px;
+}
+
+.tribe_preview {
+	cursor: pointer;
+}
+
+#ticket_bottom_right {
+	@media (max-width: 782px) {
+		margin-top: 1em;
+	}
+
+	@media (min-width: 782px) {
+		float: right;
+	}
+}
+
+#ticket_form .tooltip_container {
+	@mixin tribe-ticket-tooltip;
+
+	display: inline;
+	vertical-align: middle;
+
+	@media screen and (max-width: 390px) {
+		display: none;
+	}
+
+	.tooltip {
+		background-color: #efefef;
+		left: 100%;
+		margin: 0;
+		width: 200px;
+
+		@media screen and (max-width: 782px) {
+			left: auto;
+			margin-top: 5px;
+			position: relative;
+			top: auto;
+			transform: none;
+			width: 100%;
+		}
+	}
+}
+
+#settings_global_capacity_edit {
+	background-color: #fff;
+	border: 1px solid #b4b9be;
+	float: left;
+	font-size: inherit;
+	margin-right: 10px;
+
+	&:disabled {
+		background-color: transparent;
+		border: 0;
+		box-shadow: none;
+		color: #555;
+	}
+
+	&:enabled {
+		margin-right: 7px;
+	}
+}
+
+#ticket_form .original_stock_cap span {
+	margin-right: 0;
+}
+
+.ticket-editor-notice {
+	border-radius: 4px;
+	display: flex;
+	font-size: 13px;
+	margin-bottom: 10px;
+	padding: 10px;
+
+	&.info {
+		background-color: #edf6fc;
+
+		.dashicons {
+			color: #2a709d;
+		}
+	}
+
+	&.tribe-dependent {
+		display: none;
+
+		&.tribe-active {
+			display: flex;
+		}
+	}
+
+	.dashicons {
+		font-size: 20px;
+		height: 20px;
+		margin-right: 2px;
+		width: 20px;
+	}
+}
+
+.tribe_events_page_tickets-attendees .search-box .button {
+	text-transform: capitalize;
+}

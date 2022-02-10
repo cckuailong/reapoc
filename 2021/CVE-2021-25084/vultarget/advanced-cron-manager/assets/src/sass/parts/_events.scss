@@ -1,0 +1,374 @@
+#events {
+
+	&.loading {
+		opacity: 0.7;
+	}
+
+	.tablenav.bottom {
+		overflow: auto;
+		margin-bottom: -15px;
+
+		@include media( '>medium' ) {
+			display: none;
+		}
+
+	}
+
+	.events {
+		overflow: hidden;
+	    width: 100%;
+
+		.single-event {
+			display: flex;
+			flex-direction: column;
+
+			&:hover {
+
+				.row-actions {
+					position: static;
+				}
+
+			}
+
+			@include media( '<=xlarge' ) {
+				.row-actions {
+					position: static;
+				}
+			}
+
+			&.header {
+				border-bottom: 1px solid #e1e1e1;
+			    font-weight: 500;
+
+			    &:last-of-type {
+			    	border-bottom: none;
+			    }
+
+			    .columns {
+			    	border-bottom: none;
+			    	box-shadow: none;
+
+					.column {
+
+						&.is-sortable {
+							cursor: pointer;
+						}
+
+						&.asc::after {
+							@include up-pointing-triangle;
+						}
+
+						&.desc::after {
+							@include down-pointing-triangle;
+						}
+
+						// select only sortable columns which are not sorted
+						&:not(.asc):not(.desc):not(.arguments):not(.cb):hover::after {
+							@include up-pointing-triangle;
+						}
+					}
+				}
+			}
+
+			&.unfolded {
+
+				.columns {
+					box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+				}
+
+				> .details {
+					display: flex;
+				}
+
+			}
+
+			&.paused {
+				background-color: #fcfcfc;
+			}
+
+			&.running {
+				background-color: #e0fbe7;
+
+				.columns .column.cb {
+
+					input {
+						display: none;
+					}
+
+					.dashicons {
+						display: block;
+						color: green;
+					}
+
+				}
+
+			}
+
+			&.removing {
+
+				.columns .column.cb {
+
+					input {
+						display: none;
+					}
+
+					.dashicons {
+						display: block;
+					}
+
+				}
+
+			}
+
+			.columns {
+				display: flex;
+				flex-direction: row;
+				border-bottom: 1px solid #e1e1e1;
+			    z-index: 1;
+
+				.column {
+					padding: 12px;
+
+					&.cb {
+						width: 18px;
+
+						input {
+							margin-right: 0;
+						}
+
+						.dashicons {
+							display: none;
+							animation-name: spin;
+							animation-duration: 4000ms;
+							animation-iteration-count: infinite;
+							animation-timing-function: linear;
+						}
+
+					}
+
+					&.event {
+						flex-grow: 100;
+
+						.event-name {
+							text-decoration: none;
+							color: inherit;
+
+							.dashicons {
+								color: #555;
+							}
+
+						}
+
+						.row-actions {
+
+							a {
+								text-decoration: none;
+							}
+
+						}
+
+					}
+
+					&.schedule {
+						width: 15%;
+
+						@include media( '<=xlarge' ) {
+							display: none;
+						}
+
+					}
+
+					&.arguments {
+						width: 15%;
+
+						@include media( '<=xlarge' ) {
+							display: none;
+						}
+
+						span {
+							margin: 0 4px 4px 0;
+							padding: 3px 5px;
+							background: #f5f5f5;
+							border-radius: 3px;
+							border: 1px solid #dbdbdb;
+						}
+
+					}
+
+					&.next-execution {
+						width: 15%;
+						text-align: right;
+
+						@include media( '<=xlarge' ) {
+							width: 25%;
+						}
+
+					}
+
+				}
+
+			}
+
+			> .details {
+				display: none;
+				flex-grow: 100;
+				background-color: #f3f3f3;
+				border-bottom: 1px solid #dbdbdb;
+
+				@include media( '<=xlarge' ) {
+					flex-direction: column;
+				}
+
+				.tabs {
+					min-width: 220px;
+					max-width: 220px;
+					margin: 0;
+
+					@include media( '<=xlarge' ) {
+						min-width: 100%;
+						max-width: 100%;
+						border-bottom: 1px solid #e8e8e8;
+					}
+
+					li {
+						margin: 0;
+
+						@include media( '<=xlarge' ) {
+							width: 50%;
+							float: left;
+						}
+
+						&:last-child {
+							margin-bottom: 20px;
+
+							@include media( '<=xlarge' ) {
+								margin-bottom: 0;
+							}
+
+						}
+
+						&.active {
+							border-top: 1px solid #d8d8d8;
+							border-bottom: 1px solid #d8d8d8;
+
+							&:first-child {
+								border-top-color: #fbfbfb;
+							}
+
+							@include media( '<=xlarge' ) {
+								border: none;
+								font-weight: 500;
+							}
+
+							a {
+								position: relative;
+							    left: 1px;
+								padding-left: 53px;
+								background-color: #fbfbfb;
+
+								@include media( '<=xlarge' ) {
+									padding-left: 20px;
+									background-color: transparent;
+								}
+
+							}
+
+						}
+
+						&.arguments,
+						&.schedule {
+							display: none;
+
+							@include media( '<=xlarge' ) {
+								display: block;
+							}
+						}
+
+						a {
+							display: block;
+							padding: 10px 20px 10px 54px;
+							text-decoration: none;
+							color: #444;
+
+							@include media( '<=xlarge' ) {
+								padding-left: 20px;
+							}
+
+							&:focus {
+								box-shadow: none;
+							}
+
+						}
+
+					}
+
+				}
+
+				.content {
+					padding: 20px;
+					border-left: 1px solid #d8d8d8;
+					display: none;
+					background-color: #fbfbfb;
+					flex-grow: 1;
+
+					@include media( '<=xlarge' ) {
+						border: none;
+					}
+
+					&.active {
+						display: block;
+					}
+
+					&.logs {
+
+						p:first-child {
+							margin-top: 0;
+						}
+
+						ul {
+						    list-style: disc;
+					        padding-left: 20px;
+						}
+
+					}
+
+					&.arguments {
+
+						span {
+							margin: 0 4px 4px 0;
+							padding: 3px 5px;
+							background: #f5f5f5;
+							border-radius: 3px;
+							border: 1px solid #dbdbdb;
+							white-space: pre;
+							display: inline-block;
+						}
+
+					}
+
+					&.implementation {
+
+						code {
+							display: block;
+							padding: 15px;
+							background-color: #f7f7f7;
+							border: 1px solid #e8e8e8;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.page-title-action {
+		top: 15px;
+		margin-left: 0;
+		clear: both;
+	}
+
+}

@@ -1,0 +1,130 @@
+/**
+ * Event Tickets Admin Settings - Banners
+ *
+ * @since 5.1.10
+ */
+
+.event-tickets__admin-banner {
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+	border-left: 5px solid #50b078;
+	border-radius: 4px;
+	margin: 20px 0;
+	padding: 8px 24px 12px;
+
+	a {
+		text-decoration: none;
+	}
+
+	p.event-tickets__admin-banner-help-text {
+		max-width: 690px;
+	}
+
+	@media (--viewport-full) {
+		background-image: url("../images/background-tickets-notice.png");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+.event-tickets__admin-banner-help-links-wrapper {
+	display: flex;
+	max-width: 690px;
+
+	div {
+		min-width: 50%;
+	}
+}
+
+.event-tickets__admin-banner-links h3 {
+	font-size: 14px;
+}
+
+.event-tickets__admin-banner-links-link-label--new {
+	background-color: #ffcf48;
+	border-radius: 80px;
+	color: #23282d;
+	font-size: 10px;
+	font-weight: 600;
+	margin-left: 8px;
+	padding: 3px 5px;
+	text-transform: uppercase;
+}
+
+.event-tickets__admin-tc-banner {
+	@media (--viewport-full) {
+		background-image: url("../images/background-tc-banner.png");
+	}
+}
+
+.event-tickets__admin-tc-banner-header-title {
+	font-family: var(--tec-font-family-sans-serif);
+	font-size: var(--tec-font-size-5);
+	line-height: var(--tec-line-height-0);
+	margin: 0;
+	padding: 0;
+}
+
+.event-tickets__admin-tc-banner-label--new {
+	background-color: #ffcf48;
+	border-radius: 80px;
+	color: #23282d;
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 3px;
+	margin-left: 8px;
+	padding: 3px 8px;
+	text-transform: uppercase;
+}
+
+.event-tickets__admin-tc-banner-header {
+	align-items: center;
+	display: flex;
+	justify-content: start;
+	padding-top: var(--tec-spacer-4);
+}
+
+.event-tickets__admin-tc-banner-content {
+	@media (--viewport-full) {
+		max-width: calc(100% - 450px);
+	}
+}
+
+.event-tickets__admin-tc-banner-footer {
+	align-items: center;
+	display: flex;
+	justify-content: start;
+	padding-bottom: var(--tec-spacer-4);
+	padding-top: var(--tec-spacer-3);
+}
+
+.event-tickets__admin-tc-banner-button {
+	@mixin button-solid;
+
+	background-color: #405bfb;
+	color: #fff;
+	margin-right: var(--tec-spacer-5);
+	padding: var(--tec-spacer-1) var(--tec-spacer-5);
+
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: var(--tec-color-accent-primary-hover);
+		color: #fff;
+	}
+}
+
+a.event-tickets__admin-tc-banner-link {
+	color: #405bfb;
+	text-decoration: underline;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: var(--tec-color-accent-primary-hover);
+		text-decoration: none;
+	}
+}

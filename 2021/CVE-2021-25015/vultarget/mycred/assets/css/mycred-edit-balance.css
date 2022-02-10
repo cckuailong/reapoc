@@ -1,0 +1,85 @@
+/* Editor */
+.mycred-update-balance { font-family: "Open Sans",sans-serif; background-color: white !important; z-index: 9999 !important; border: none !important; border-radius: 0 !important; background-image: none !important; padding: 0 !important; overflow: visible !important; }
+.mycred-update-balance.ui-dialog .ui-dialog-content { padding: 0 0 0 0; }
+.mycred-update-balance .ui-widget-header { border: none !important; background: transparent !important; font-weight: normal !important; }
+.mycred-update-balance .ui-dialog-titlebar { line-height: 24px !important; border-bottom: 1px solid #ddd !important; border-left: none; border-top: none; border-right: none; padding: 12px !important; border-radius: 0 !important; }
+.mycred-update-balance .ui-dialog-titlebar:hover { cursor: move; }
+.mycred-update-balance .ui-dialog-titlebar-close { float: right; margin: 0 12px 0 0; background: 0 0; border: none; -webkit-box-shadow: none; box-shadow: none; color: #666; cursor: pointer; display: block; padding: 0; position: absolute; top: 0; right: 0; width: 36px; height: 36px; text-align: center; font-size: 13px; line-height: 26px; vertical-align: top; white-space: nowrap; }
+.mycred-update-balance .ui-icon { display: none !important; }
+.mycred-update-balance .ui-button:focus, .mycred-update-balance .ui-button:active { outline: none !important; }
+.mycred-update-balance .ui-button .ui-button-text { display: block; text-indent: 0; }
+.mycred-update-balance .ui-dialog-title { font-size: 22px; font-weight: 600; margin: 0 0 0 0; width: auto !important; float: none !important; }
+body.users-php .ui-widget-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: repeat-x scroll 70% 70% #000; opacity: 0.7; overflow: hidden; background: repeat-x scroll 70% 70% #000; z-index: 99; }
+#edit-mycred-balance { background-color: #f3f3f3; font-size: 14px; }
+#edit-mycred-balance form { display: block; padding: 12px; }
+#edit-mycred-balance .row { margin-bottom: 24px; }
+#edit-mycred-balance .row.ledger { margin-bottom: 6px; font-size: 12px; line-height: 18px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+#edit-mycred-balance .row.ledger:last-of-type { border-bottom: 0; margin-bottom: 0; }
+#edit-mycred-balance .row.ledger.header { margin-bottom: 6px; font-size: 14px; line-height: 22px; }
+#edit-mycred-balance .row.ledger .row { border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+#edit-mycred-balance .row.last { margin-bottom: 0; }
+#edit-mycred-balance .row input { width: 99%; }
+#edit-mycred-balance .row .button { width: 99%; }
+#edit-mycred-balance .row input.regular-text { width: 99%; }
+#edit-mycred-balance .row select { width: 99%; }
+#edit-mycred-balance .row .button-secondary { float: right; }
+#edit-mycred-balance .row.ledger .button-secondary { float: none; }
+#edit-mycred-balance .row.ledger p { text-align: center; margin: 6px 0 0 0; }
+#edit-mycred-balance .row span { display: block; font-size: 12px; line-height: 16px; padding: 2px 0 0 3px; }
+#edit-mycred-balance .row label { display: block; font-weight: bold; line-height: 22px; }
+#edit-mycred-balance .text-right { text-align: right; }
+#edit-mycred-balance #mycred-editor-results { line-height: 30px; }
+#mycred-users-mini-ledger .border { border-top: 1px solid #ddd; padding: 12px; margin: 0 0 0 0; background-color: #e8e8e8; }
+#mycred-processing { text-align: center; min-height: 4px; width: 100%; }
+img#mycred-token-sitting { display: none; }
+
+fieldset#mycred-badge-list .badge-wrapper img { margin: 0 auto; max-width: 100px; height: auto; width: 100px; }
+fieldset#mycred-badge-list .badge-wrapper .no-badge-image { margin: 0 auto; max-width: 100px; height: auto; width: 100px;line-height: 100px; }
+fieldset#mycred-badge-list .badge-wrapper label { display: block; }
+fieldset#mycred-badge-list .badge-image-wrap { text-align: center; }
+fieldset#mycred-badge-list .badge-image-wrap h4 { margin: 0 0 0 0; }
+fieldset#mycred-badge-list .badge-actions { text-align: center; }
+
+.loading-indicator { height: 5px; width: 100%; position: relative; overflow: hidden; background-color: white; }
+.loading-indicator:before { display: block; position: absolute; content: ""; left: -200px; width: 200px; height: 5px; background-color: #c5d93d; animation: loading 2s linear infinite; }
+@keyframes loading { from { left: -200px; width: 30%; } 25% { width: 50%; } 50% { width: 50%; } 70% { width: 50%; } 80% { left: 75%; } 95% { left: 100%; } to { left: 100%; } }
+
+.mycred-wrapper.color-option { width: 48%; }
+p.mycred-p { margin: 12px 0 0 0; }
+.mycred-inline-table { margin: 0 0 18px 0; }
+.mycred-wrapper { min-height: 100px; padding: 15px !important; border: 1px solid #ddd; }
+.mycred-wrapper:hover { cursor: default; }
+.mycred-wrapper.disabled-option { color: #949494; }
+.mycred-wrapper.disabled-option:hover { background-color: transparent; }
+.mycred-wrapper .toggle-mycred-balance-editor { float: right; }
+.mycred-wrapper .balance-desc { font-size: 12px; line-height: 15px; color: #949494; }
+.balance-row { display: block; height: 32px; line-height: 32px; font-size: 18px; }
+.balance-row > div { height: 32px; line-height: inherit; font-size: inherit; vertical-align: top; }
+.balance-row .balance-edit { display: none; }
+.balance-row.edit .balance-view { display: none; }
+.balance-row.edit .balance-edit { display: block; }
+.balance-row input { width: 100%; margin: 0 12px 0 0; }
+.balance-row input.half { width: 60% !important; display: inline-block !important; margin-right: 6px; }
+.balance-row input.short { width: 30% !important; display: inline-block !important; margin: 0 3px; }
+#mycred-edit-user-wrapper h2 { margin: 12px 0 6px 0; }
+
+@media screen and (max-width: 782px) {
+
+	.balance-row { display: block; height: auto; line-height: 1.5em; font-size: 18px; }
+	.balance-row > div { height: auto; line-height: 42px; font-size: inherit; vertical-align: top; }
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.mycred-wrapper.color-option { width: 100%; }
+
+
+}
+
+@media screen and (min-width: 1400px) {
+
+	.mycred-wrapper.color-option { width: 24% !important; }
+
+
+}

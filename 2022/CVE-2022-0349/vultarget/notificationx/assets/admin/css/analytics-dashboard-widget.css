@@ -1,0 +1,60 @@
+.nx-header-analytics-counter-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.nx-analytics-header-counter-wrapper.nx-analytics-widget .nx-header-analytics-counter-wrapper {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.nx-analytics-header-counter-wrapper.nx-analytics-widget .nx-header-analytics-counter-wrapper>div:not(:last-child) {
+    border-bottom: 1px solid #f2f2f2;
+}
+.nx-header-analytics-counter-wrapper>div {
+    flex: 1;
+    flex-basis: 33.3333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nx-header-analytics-counter {
+    background-color: #FFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nx-header-analytics-counter>a {
+    color: #4c4d57;
+    padding: 45px;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nx-analytics-header-counter-wrapper.nx-analytics-widget .nx-header-analytics-counter>a {
+    padding: 25px;
+}
+
+.nx-header-analytics-counter>a span.nx-counter-icon {
+    margin-right: 20px;
+}
+
+.nx-analytics-header-counter-wrapper.nx-analytics-widget .nx-header-analytics-counter>a span.nx-counter-icon>img {
+    width: 50px;
+}
+
+.nx-header-analytics-counter>a span.nx-counter-number {
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.nx-analytics-header-counter-wrapper.nx-analytics-widget .nx-header-analytics-counter>a span.nx-counter-number {
+    font-size: 30px;
+}
+.nx-analytics-header-counter-wrapper.nx-analytics-widget .nx-header-analytics-counter>a span.nx-counter-label {
+    font-size: 14px;
+}

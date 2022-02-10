@@ -1,0 +1,62 @@
+/**
+ * Event Tickets - RSVP Messages
+ *
+ * @since 5.0.3
+ */
+
+.event-tickets {
+
+	.tribe-tickets__rsvp-message {
+		align-items: center;
+		background-color: var(--tec-color-accent-primary-background);
+		border-radius: var(--tec-border-radius-default);
+		display: flex;
+		padding: var(--tec-spacer-4) var(--tec-spacer-3);
+
+		@media (--viewport-medium) {
+			padding: var(--tec-spacer-3);
+		}
+	}
+
+	.tribe-tickets__rsvp-message--error {
+
+		&,
+		&.tribe-tickets__rsvp-message {
+			background-color: var(--tec-color-background-error);
+		}
+	}
+
+	.tribe-tickets__rsvp-message--success-icon {
+		display: inline-block;
+		height: var(--tec-spacer-3);
+		margin-right: var(--tec-spacer-2);
+		width: var(--tec-spacer-3);
+
+		path {
+			stroke: var(--tec-color-icon-active);
+		}
+	}
+
+	.tribe-tickets__rsvp-message--must-login-icon,
+	.tribe-tickets__rsvp-message--error-icon {
+		display: inline-block;
+		margin-right: var(--tec-spacer-2);
+
+		circle {
+			stroke: var(--tec-color-icon-active);
+		}
+
+		circle#dot {
+			fill: var(--tec-color-icon-active);
+			stroke: transparent;
+		}
+
+		path {
+			stroke: var(--tec-color-icon-active);
+		}
+	}
+
+	.tribe-tickets__rsvp-message-link {
+		color: var(--tec-color-accent-primary);
+	}
+}

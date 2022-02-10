@@ -1,0 +1,87 @@
+.pp-restaurant-menu {
+    .pp-restaurant-menu-item-wrap {
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .pp-restaurant-menu-item {
+        align-items: center;
+        display: flex;
+    }
+    .pp-restaurant-menu-image {
+        flex-grow: 0;
+        margin-right: 10px;
+    }
+    .pp-restaurant-menu-content {
+        flex-grow: 1;
+    }
+    .pp-restaurant-menu-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    .pp-restaurant-menu-title {
+        display: inline-block;
+        margin: 0;
+        a {
+            color: inherit;
+        }
+    }
+    &-style-1 {
+        .pp-restaurant-menu-price {
+            float: right;
+        }
+    }
+    &-style-3 {
+        .pp-restaurant-menu-image {
+            order: 1;
+        }
+    }
+    &-style-4 {
+        .pp-restaurant-menu-item,
+        .pp-restaurant-menu-header {
+            display: block;
+        }
+        .pp-restaurant-menu-image {
+            display: inline-block
+        }
+    }
+    &-style-1 {
+        .pp-price-title-connector {
+            border-bottom: 1px dashed #000;
+            height: 1px;
+            flex-grow: 1;
+            align-self: center;
+            margin: 0 20px;
+        }
+    }
+    &-style-powerpack {
+        .pp-restaurant-menu-item {
+            min-height: 150px;
+            position: relative;
+        }
+        .pp-restaurant-menu-price {
+            bottom: 0;
+            padding: 10px;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            &:after {
+                border-color: transparent #B83D11;
+                border-style: solid;
+                border-width: 110px 130px 0 0;
+                bottom: 0;
+                content: "";
+                position: absolute;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
+    &-divider-wrap {
+        font-size: 0;
+        line-height: 0;
+    }
+    &-divider {
+        display: inline-block;
+    }
+}

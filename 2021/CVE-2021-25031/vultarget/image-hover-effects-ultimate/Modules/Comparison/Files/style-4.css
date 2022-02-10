@@ -1,0 +1,55 @@
+.oxi-addons-container .oxi-addons-row .oxi_addons_image_style_4_box,
+.oxi-addons-container .oxi-addons-row .oxi_addons_image_style_4_box *{
+    transition: none;
+}
+
+.oxi-addons-container .oxi_addons_image_style_4_box {
+    width: 100%;
+    padding: 0px 0px 0px 0px
+}
+
+.oxi-addons-container .oxi_addons_image_style_4_box_body { 
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+        
+}
+
+.oxi-addons-container .oxi_addons_image_style_4_box_body:after {
+    display: block;
+    content: "";
+    padding-bottom: 62.5%
+}
+
+.oxi-addons-container .oxi_addons_image_style_4_box .oxi_addons_hover_view_img {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-position: center center !important;
+    background-size: cover !important;
+    z-index: 5;
+}
+
+.oxi-addons-container .oxi_addons_image_style_4_box .oxi_addons_font_view_img {
+    width: 10%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 6;
+    padding: 0px;
+    left: 0;
+    top: 0;
+    transition: all 3.5s ease-in-out;
+    border-radius: 0%;
+    cursor: pointer;
+}
+
+.oxi-addons-container .oxi_addons_image_style_4_box .oxi_addons_font_view_img:hover {
+    transition: all 0s linear;
+    opacity: 0
+}
+ 

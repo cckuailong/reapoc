@@ -1,0 +1,168 @@
+@import 'variables.less';
+#complianz{
+  *:focus-visible{
+	outline-offset: 4px;
+  }
+}
+
+// High contrast
+#complianz.wrap.cmplz-high-contrast {
+
+  .cmplz-grid-controls {
+	color: @rsp-black;
+	a {
+	  color: @rsp-black;
+	}
+  }
+
+
+  button {
+	.cmplz-close-warning-x {
+	  color: @rsp-black;
+	}
+  }
+
+  .cmplz-progress-status.cmplz-completed {
+	color: @rsp-black;
+  }
+
+  .cmplz-step {
+	.cmplz-step-header {
+	  &.incomplete a h2 {
+		color: @rsp-black;
+	  }
+	}
+
+	.cmplz-section {
+	  display: grid;
+	  grid-template-columns: @green-gap 1fr;
+
+	  span {
+		align-self: center;
+		justify-self: center;
+	  }
+
+	  margin: 0 @green-gap;
+	  a {
+		h3 {
+		  color: @rsp-black ;
+		}
+		display: inline-block;
+		text-decoration: none;
+		padding: 3px 5px;
+
+	  }
+	  &.cmplz-done a h3 {
+		color: @rsp-black ;
+	  }
+
+	  &.active a h3 {
+		color: @rsp-black !important;
+	  }
+	}
+  }
+
+  .cmplz-help-warning-wrap {
+	.cmplz-help-modal {
+	  z-index: 1;
+
+	  &.cmplz-notice {
+		background-color: @rsp-black;
+		&:after {
+		  border-right: 15px solid @rsp-black;
+		}
+	  }
+	  &.cmplz-warning a{
+		color: @rsp-black!important;
+	  }
+	  &.cmplz-warning {
+		color: @rsp-black!important;
+		background-color: @rsp-yellow;
+		&:after {
+		  border-right: 15px solid @rsp-yellow;
+		}
+	  }
+
+	  a {
+		color: #fff;
+	  }
+	}
+  }
+
+  .cmplz-panel.cmplz-toggle-disabled {
+	color: @rsp-black;
+  }
+
+  /* Show the default checkmark when default */
+  .checkmark.cmplz-default svg {
+	display: block;
+	fill: #eee;
+	stroke: #eee;
+  }
+
+  /* Disabled option */
+  .cmplz-disabled {
+	pointer-events: none;
+	.checkmark {
+	  background-color: #eee;
+	  svg {
+		stroke: #eee !important;
+		fill: #eee !important;
+	  }
+	}
+  }
+
+  input:disabled {
+	cursor:not-allowed;
+  }
+
+  .cmplz-sublabel label {
+	color: @rsp-black;
+	font-size: 13px;
+  }
+
+  /* Placeholders */
+
+  ::placeholder {
+	color: @rsp-black;
+  }
+  ::placeholder/* Chrome/Opera/Safari */ {
+	color: @rsp-black;
+  }
+
+  ::-moz-placeholder /* Firefox 19+ */ {
+	color: @rsp-black;
+  }
+
+  :-ms-input-placeholder  /* IE 10+ */ {
+	color: @rsp-black;
+  }
+  :-moz-placeholder /* Firefox 18- */ {
+	color: @rsp-black;
+  }
+
+  /* License */
+
+  .cmplz-status-info {
+	display:flex;
+	> div {
+	  padding: 10px 10px 10px 0;
+	}
+	.cmplz-license-status-container {
+	  .cmplz-license-status {
+		display: block;
+
+		&.cmplz-premium {
+		  background-color: @rsp-black;
+		}
+		&.cmplz-success {
+		  color: @rsp-black;
+		}
+		&.cmplz-warning {
+		  color: @rsp-black;
+		}
+	  }
+	}
+  }
+  /* Ending */
+}

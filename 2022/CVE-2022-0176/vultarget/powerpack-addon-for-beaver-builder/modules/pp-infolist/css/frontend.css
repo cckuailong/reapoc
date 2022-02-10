@@ -1,0 +1,138 @@
+.entry-content .pp-infolist-title h3,
+.pp-infolist-title h3 {
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+.pp-infolist-description p {
+	margin-bottom: 15px;
+}
+.pp-infolist-description p:last-of-type {
+	margin-bottom: 0 !important;
+}
+.entry-content .pp-more-link,
+.pp-more-link {
+	box-shadow: none;
+	display: inline-block;
+	text-decoration: none;
+}
+.pp-list-item > .pp-more-link {
+	display: table;
+	margin-top: 0;
+}
+.pp-more-link {
+	color: #000;
+}
+.pp-more-link:hover {
+	text-decoration: none;
+}
+.pp-infolist-icon-inner .dashicons,
+.pp-infolist-icon-inner .dashicons-before:before {
+	height: auto;
+	width: auto;
+}
+
+/* Connector */
+.pp-list-connector {
+	height: 100%;
+	position: absolute;
+	top: 33px;
+	z-index: 1;
+}
+
+/* Default layout */
+.pp-infolist-wrap .pp-list-item {
+	overflow: visible;
+	position: relative;
+	z-index: 10;
+	display: flex;
+	list-style: none;
+	padding-bottom: 25px;
+}
+.pp-infolist-wrap .pp-list-item > a {
+	display: flex;
+}
+.pp-list-item:last-of-type .pp-list-connector {
+	display: none;
+}
+.pp-icon-wrapper {
+	position: relative;
+	z-index: 10;
+}
+.pp-infolist {
+	text-align: center;
+}
+.pp-infolist ul {
+	margin: 0;
+	padding: 0;
+}
+.pp-infolist-icon {
+	border-width : 0;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+.pp-infolist-icon-inner {
+	display: table;
+	height: 3em;
+	line-height: 0;
+	width: 3em;
+}
+.pp-infolist-icon span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.pp-infolist-icon-inner img {
+	border: none;
+}
+
+/* Layouts */
+
+/* Layout 1 */
+.pp-infolist-wrap .layout-1 {
+	text-align: left;
+}
+.pp-infolist-wrap .layout-1 .pp-list-item {
+	/*margin-bottom: 25px;*/
+}
+.pp-infolist-wrap .layout-1 .pp-icon-wrapper {
+	margin-right: 20px;
+}
+
+/* Layout 2 */
+.pp-infolist-wrap .layout-2 {
+	text-align: right;
+}
+.pp-infolist-wrap .layout-2 .pp-list-item,
+.pp-infolist-wrap .layout-2 .pp-list-item > a {
+	flex-direction: row-reverse;
+}
+.pp-infolist-wrap .layout-2 .pp-icon-wrapper {
+	float: right;
+	margin-left: 20px;
+}
+.pp-infolist-wrap .layout-2 .pp-heading-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* Layout 3 */
+.pp-infolist-wrap .layout-3 .pp-list-item {
+	float: left;
+	padding: 0 20px;
+	flex-direction: column;
+}
+.pp-infolist-wrap .layout-3 .pp-list-item > a {
+	flex-direction: column;
+}
+.pp-infolist-wrap .layout-3 .pp-icon-wrapper {
+	margin-bottom: 10px;
+}
+.pp-infolist-wrap .layout-3 .pp-list-connector {
+	height: 0;
+	left: 120px;
+	width: 100%;
+}
+.pp-infolist-wrap .layout-3 .pp-more-link {
+	width: 100%;
+}

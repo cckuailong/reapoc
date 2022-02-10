@@ -1,0 +1,60 @@
+.tribe-editor__inactive-block {
+	display: flex;
+	align-items: center;
+	background-color: #F7F8F9;
+}
+
+.tribe-editor__inactive-block__icon {
+	flex: none;
+
+	.tribe-editor__inactive-block--rsvp & {
+		width: 100px;
+		padding: 25px 20px 20px;
+	}
+
+	.tribe-editor__inactive-block--ticket & {
+		width: 100px;
+		padding: 25px 20px 20px;
+	}
+}
+
+.tribe-editor__inactive-block__content {
+	flex: auto;
+
+	.tribe-editor__inactive-block--rsvp & {
+		padding: 25px;
+	}
+
+	.tribe-editor__inactive-block--ticket & {
+		padding: 30px 25px 30px 20px;
+	}
+}
+
+.tribe-editor__inactive-block__title {
+
+	/* extra classes to override gutenberg styles */
+	.tribe-editor__inactive-block .tribe-editor__inactive-block__content & {
+		color: #545D66;
+		font-family: 'Helvetica Neue', Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+		font-size: 21px;
+		font-weight: bold;
+		line-height: 25px;
+		letter-spacing: 0.16px;
+		padding: 0;
+		margin: 0 0 12px;
+	}
+}
+
+
+p.tribe-editor__inactive-block__description {
+
+	/* extra classes to override gutenberg styles */
+	.tribe-editor__inactive-block & {
+		color: #545D66;
+		font-family: 'Helvetica Neue', Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.04px;
+		margin: 0;
+	}
+}

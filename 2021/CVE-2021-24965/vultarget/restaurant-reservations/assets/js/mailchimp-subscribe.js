@@ -1,0 +1,2 @@
+/*! mailchimp-for-rtb 2018-10-05 */
+jQuery(document).ready(function(a){var b={action:"mcfrtb-subscribe",booking:rtb_subscribe_mc.booking,nonce:rtb_subscribe_mc.ajax_nonce},c=a.param(b);a.post(rtb_subscribe_mc.ajax_url,c,function(b){a(".rtb-booking-form").trigger("mcfrtb_subscribe_result",b)})});

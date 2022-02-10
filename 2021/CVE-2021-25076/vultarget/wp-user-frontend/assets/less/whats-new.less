@@ -1,0 +1,121 @@
+.notice.wpuf-whats-new-notice {
+    display: flex;
+    position: relative;
+    padding: 0;
+    height: 65px;
+
+    .wpuf-whats-new-icon {
+        width: 75px;
+        height: 65px;
+        overflow: hidden;
+
+        img {
+            max-width: 65px;
+        }
+    }
+
+    .wpuf-whats-new-text {
+        width: ~"calc(100% - 240px)";
+    }
+
+    .wpuf-whats-new-actions {
+        width: 165px;
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    }
+}
+
+.wpuf-whats-new {
+
+    .error, .udpated, .info, .notice {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .wedevs-changelog {
+        display: flex;
+        max-width: 920px;
+        border: 1px solid #e5e5e5;
+        padding: 12px 20px 20px 20px;
+        margin: 20px auto;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+
+        .wedevs-changelog-version {
+            width: 360px;
+
+            .released {
+                font-style: italic;
+            }
+        }
+
+        .wedevs-changelog-history {
+            width: 100%;
+            font-size: 14px;
+
+            li {
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                margin: 0 0 10px 0;
+                font-size: 1.3em;
+                line-height: 26px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            img {
+                margin-top: 30px;
+                max-width: 100%;
+            }
+
+            span.label {
+                margin-left: 10px;
+                position: relative;
+                color: #fff;
+                border-radius: 20px;
+                padding: 0 8px;
+                font-size: 12px;
+                height: 20px;
+                line-height: 19px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                font-weight: normal;
+
+                &.new {
+                    background: #3778ff;
+                    border: 1px solid #3778ff;
+                }
+
+                &.improvement,
+                &.enhancement {
+                    background: #3aaa55;
+                    border: 1px solid #3aaa
+                }
+
+                &.fix {
+                    background: #ff4772;
+                    border: 1px solid #ff4772;
+                }
+
+                &.tweak {
+                    background: #f9a825;
+                    border: 1px solid #ffa000;
+                }
+            }
+        }
+    }
+}

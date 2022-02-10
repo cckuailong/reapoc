@@ -1,0 +1,31 @@
+<entry>
+    <id>{{ item.permalink }}</id>
+    <title type="html">{{ item.title }}</title>
+    <link href="{{ item.permalink }}" rel="alternate" />
+    <updated>{{ item.timestamp|date('Y-m-d\\TH:i:s.vP') }}</updated>
+    <summary>{{ item.excerpt }}</summary>
+    <content type="html">
+        <![CDATA[{{ item.content|raw|close_tags }}]]>
+    </content>
+    {% if item.author|length > 0 %}
+        <author>
+            <name>{{ item.author }}</name>
+            {% if item.author_email|length > 0 %}
+                <email>{{ item.author_email }}</email>
+            {% endif %}
+            {% if item.author_link|length > 0 %}
+                <uri>{{ item.author_link }}</uri>
+            {% endif %}
+        </author>
+    {% endif %}
+    {% if item.source_url|length > 0 or item.source_name|length > 0 %}
+        <source>
+        {% if item.source_url|length > 0 %}
+            <id>{{ item.source_url }}</id>
+        {% endif %}
+        {% if item.source_name|length > 0 %}
+            <title>{{ item.source_name }}</title>
+        {% endif %}
+        </source>
+    {% endif %}
+</entry>

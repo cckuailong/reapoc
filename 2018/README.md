@@ -14,7 +14,7 @@
 | CVE-2018-1000130 |  | ldap注入 | 8.1 | N | [Y](CVE-2018-1000130/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-1000533 | gitlist | 输入验证 | 9.8 | [Y](CVE-2018-1000533/vultarget/) | [Y](CVE-2018-1000533/poc/nuclei/) | [Y](CVE-2018-1000533/poc/xray/) | N | N | N | N | [Y](CVE-2018-1000533/poc/others/) |
 | CVE-2018-1000600 |  | 信息泄露 | 8.8 | N | [Y](CVE-2018-1000600/poc/nuclei/) | [Y](CVE-2018-1000600/poc/xray/) | N | N | N | N | N |
-| CVE-2018-1000861 | Jenkins | 命令执行 | 9.8 | [Y](CVE-2018-1000861/vultarget/) | [Y](CVE-2018-1000861/poc/nuclei/) | [Y](CVE-2018-1000861/poc/xray/) | N | N | N | N | [Y](CVE-2018-1000861/poc/others/) |
+| CVE-2018-1000861 | Jenkins | 代码执行  | 9.8 | [Y](CVE-2018-1000861/vultarget/) | [Y](CVE-2018-1000861/poc/nuclei/) | [Y](CVE-2018-1000861/poc/xray/) | N | N | N | N | [Y](CVE-2018-1000861/poc/others/) |
 | CVE-2018-1002015 | Unknown | Unknown | Unknown | [Y](CVE-2018-1002015/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-10093 | AudioCodes-公司产品 | 命令注入 | 8.8 | N | [Y](CVE-2018-10093/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-10093/poc/others/) |
 | CVE-2018-10095 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-10095/poc/nuclei/) | N | N | N | N | N | N |
@@ -89,7 +89,7 @@
 | CVE-2018-16671 | CirCarLife Scada | 信息泄露 | 5.3 | N | [Y](CVE-2018-16671/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-16763 | FUEL CMS | 输入验证错误 | 9.8 | [Y](CVE-2018-16763/vultarget/) | [Y](CVE-2018-16763/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-16763/poc/others/) |
 | CVE-2018-16836 |  | 路径遍历 | 9.8 | N | [Y](CVE-2018-16836/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-16836/poc/others/) |
-| CVE-2018-17246 | ElasticSearch | 命令注入 | 9.8 | [Y](CVE-2018-17246/vultarget/) | [Y](CVE-2018-17246/poc/nuclei/) | [Y](CVE-2018-17246/poc/xray/) | N | N | N | N | [Y](CVE-2018-17246/poc/others/) |
+| CVE-2018-17246 | ElasticSearch | 本地文件包含 | 9.8 | [Y](CVE-2018-17246/vultarget/) | [Y](CVE-2018-17246/poc/nuclei/) | [Y](CVE-2018-17246/poc/xray/) | N | N | N | N | [Y](CVE-2018-17246/poc/others/) |
 | CVE-2018-17254 | Joomla | SQL注入 | 9.8 | N | [Y](CVE-2018-17254/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-17254/poc/others/) |
 | CVE-2018-17431 | Comodo-Web-Application-Firewall | 授权问题 | 9.8 | N | [Y](CVE-2018-17431/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-17431/poc/others/) |
 | CVE-2018-18069 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2018-18069/poc/nuclei/) | N | N | N | N | N | N |
@@ -146,7 +146,7 @@
 | CVE-2018-7467 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-7467/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-7490 | PHP | 信息泄露 | 7.5 | [Y](CVE-2018-7490/vultarget/) | [Y](CVE-2018-7490/poc/nuclei/) | [Y](CVE-2018-7490/poc/xray/) | N | N | N | N | [Y](CVE-2018-7490/poc/others/) |
 | CVE-2018-7600 | Drupal | 代码执行 | 9.8 | [Y](CVE-2018-7600/vultarget/) | [Y](CVE-2018-7600/poc/nuclei/) | [Y](CVE-2018-7600/poc/xray/) | N | N | N | N | [Y](CVE-2018-7600/poc/others/) |
-| CVE-2018-7602 | Drupal | 资料不足 | 9.8 | [Y](CVE-2018-7602/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-7602/poc/others/) |
+| CVE-2018-7602 | Drupal | 代码执行  | 9.8 | [Y](CVE-2018-7602/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-7602/poc/others/) |
 | CVE-2018-7662 |  | 信息泄露 | 5.3 | N | N | [Y](CVE-2018-7662/poc/xray/) | N | N | [Y](CVE-2018-7662/poc/goby/) | N | N |
 | CVE-2018-7700 | DedeCMS | 跨站请求伪造 | 8.8 | N | [Y](CVE-2018-7700/poc/nuclei/) | [Y](CVE-2018-7700/poc/xray/) | N | N | N | N | N |
 | CVE-2018-7719 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-7719/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7719/poc/others/) |

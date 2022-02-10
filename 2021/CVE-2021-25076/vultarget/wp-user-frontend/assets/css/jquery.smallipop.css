@@ -1,0 +1,117 @@
+/* smallipop css */
+.smallipopHint { display: none; }
+
+.smallipop-instance { position: absolute; display: none; top: 0; left: 0; background-color: #314b64; border: 1px solid #0f161e; color: #d2dfe7; z-index: 9999; max-width: 400px; }
+.smallipop-instance font { size: 11px; family: arial; }
+.smallipop-instance a { color: #98cbea; }
+.smallipop-instance .sipContent { padding: 10px; }
+.smallipop-instance .sipArrow, .smallipop-instance .sipArrowBorder { position: absolute; left: 50%; height: 0; width: 0; }
+.smallipop-instance .sipArrow { bottom: -20px; margin-left: -10px; border: 10px solid transparent; }
+.smallipop-instance .sipArrowBorder { bottom: -24px; margin-left: -12px; border: 12px solid transparent; }
+.smallipop-instance.sipAlignLeft .sipArrow { margin-left: 0; left: auto; right: 20px; }
+.smallipop-instance.sipAlignLeft .sipArrowBorder { margin-left: 0; left: auto; right: 18px; }
+.smallipop-instance.sipAlignRight .sipArrow { margin-left: 0; left: 20px; right: auto; }
+.smallipop-instance.sipAlignRight .sipArrowBorder { margin-left: 0; left: 18px; right: auto; }
+.smallipop-instance.sipAlignBottom .sipArrow { bottom: auto; top: -20px; }
+.smallipop-instance.sipAlignBottom .sipArrowBorder { bottom: auto; top: -24px; }
+.smallipop-instance.sipPositionedLeft .sipArrow, .smallipop-instance.sipPositionedLeft .sipArrowBorder { right: -16px; left: auto; top: 50%; bottom: auto; border-width: 8px; margin: -8px 0 0; }
+.smallipop-instance.sipPositionedLeft .sipArrowBorder { right: -20px; border-width: 10px; margin: -10px 0 0; }
+.smallipop-instance.sipPositionedRight .sipArrow, .smallipop-instance.sipPositionedRight .sipArrowBorder { left: -16px; right: auto; top: 50%; bottom: auto; border-width: 8px; margin: -8px 0 0; }
+.smallipop-instance.sipPositionedRight .sipArrowBorder { left: -20px; border-width: 10px; margin: -10px 0 0; }
+.smallipop-instance .smallipop-tour-content { padding: 5px 0; min-width: 150px; }
+.smallipop-instance .smallipop-tour-footer { padding-top: 5px; position: relative; }
+.smallipop-instance .smallipop-tour-progress { color: #bbb; text-align: center; position: absolute; left: 50%; width: 80px; margin-left: -40px; top: 8px; }
+.smallipop-instance .smallipop-tour-close-icon { position: absolute; right: -8px; top: -8px; width: 16px; height: 16px; padding-top: 0px; font-size: 11px; background: #555; color: #ccc; text-align: center; text-shadow: 0 -1px 1px #666666; border-radius: 8px; -o-border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+.smallipop-instance .smallipop-tour-close-icon:hover { text-decoration: none; background: #666; color: #fff; }
+.smallipop-instance .smallipop-tour-prev, .smallipop-instance .smallipop-tour-next, .smallipop-instance .smallipop-tour-close { color: #ccc; display: block; padding: 3px 4px 2px; line-height: 1em; float: left; background: #203142; border-radius: 3px; -o-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+.smallipop-instance .smallipop-tour-prev:hover, .smallipop-instance .smallipop-tour-next:hover, .smallipop-instance .smallipop-tour-close:hover { color: #fff; background: #293e53; text-decoration: none; }
+.smallipop-instance .smallipop-tour-next, .smallipop-instance .smallipop-tour-close { float: right; }
+
+/* default theme */
+.smallipop-instance.default { text-shadow: 0 -1px 1px #0f161e; -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); border-radius: 12px; -o-border-radius: 12px; -moz-border-radius: 12px; -webkit-border-radius: 12px; background-repeat: repeat-x; background-image: -webkit-linear-gradient(top, rgba(49, 75, 100, 0.9), rgba(26, 38, 52, 0.9)); background-image: -moz-linear-gradient(top, rgba(49, 75, 100, 0.9), rgba(26, 38, 52, 0.9)); background-image: -ms-linear-gradient(top, rgba(49, 75, 100, 0.9), rgba(26, 38, 52, 0.9)); background-image: -o-linear-gradient(top, rgba(49, 75, 100, 0.9), rgba(26, 38, 52, 0.9)); background-image: linear-gradient(top, rgba(49, 75, 100, 0.9), rgba(26, 38, 52, 0.9)); /* Fallback for opera */ background-image: -webkit-radial-gradient(50% -100px, circle contain, rgba(49, 75, 100, 0.9) 100px, rgba(33, 50, 66, 0.9) 130px, rgba(26, 38, 52, 0.9) 150px); background-image: -moz-radial-gradient(50% -100px, circle contain, rgba(49, 75, 100, 0.9) 100px, rgba(33, 50, 66, 0.9) 130px, rgba(26, 38, 52, 0.9) 150px); background-image: -ms-radial-gradient(50% -100px, circle contain, rgba(49, 75, 100, 0.9) 100px, rgba(33, 50, 66, 0.9) 130px, rgba(26, 38, 52, 0.9) 150px); background-image: -o-radial-gradient(50% -100px, circle contain, rgba(49, 75, 100, 0.9) 100px, rgba(33, 50, 66, 0.9) 130px, rgba(26, 38, 52, 0.9) 150px); background-image: radial-gradient(50% -100px, circle contain, rgba(49, 75, 100, 0.9) 100px, rgba(33, 50, 66, 0.9) 130px, rgba(26, 38, 52, 0.9) 150px); }
+.smallipop-instance.default a { text-shadow: 0 -1px 1px #0f161e; }
+.smallipop-instance.default .sipContent { border-top: 1px solid #586d82; border-radius: 12px; -o-border-radius: 12px; -moz-border-radius: 12px; -webkit-border-radius: 12px; }
+.smallipop-instance.default .sipArrow { border-color: #1a2634 transparent transparent transparent; }
+.smallipop-instance.default .sipArrowBorder { border-color: #0f161e transparent transparent transparent; }
+.smallipop-instance.default.sipAlignBottom .sipArrow { border-color: transparent transparent #1a2634 transparent; }
+.smallipop-instance.default.sipAlignBottom .sipArrowBorder { border-color: transparent transparent #0f161e transparent; }
+.smallipop-instance.default.sipPositionedLeft .sipArrow { border-color: transparent transparent transparent #1a2634; }
+.smallipop-instance.default.sipPositionedLeft .sipArrowBorder { border-color: transparent transparent transparent #0f161e; }
+.smallipop-instance.default.sipPositionedRight .sipArrow { border-color: transparent #1a2634 transparent transparent; }
+.smallipop-instance.default.sipPositionedRight .sipArrowBorder { border-color: transparent #0f161e transparent transparent; }
+
+.cssgradients.rgba .smallipop-instance.default { background-color: transparent; }
+
+/* blue theme */
+.smallipop-instance.blue { background: transparent; color: #111; border: 10px solid #0064b4; border-color: rgba(0, 100, 180, 0.9); -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); border-radius: 7px; -o-border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px; }
+.smallipop-instance.blue a { color: #2276aa; }
+.smallipop-instance.blue .sipContent { border: 0; background: #fcfcfc; }
+.smallipop-instance.blue .sipArrow { bottom: -30px; border-color: #0064b4 transparent transparent transparent; border-color: rgba(0, 100, 180, 0.9) transparent transparent transparent; }
+.smallipop-instance.blue.sipAlignBottom .sipArrow { top: -30px; border-color: transparent transparent #0064b4 transparent; border-color: transparent transparent rgba(0, 100, 180, 0.9) transparent; }
+.smallipop-instance.blue.sipPositionedLeft .sipArrow { right: -26px; border-color: transparent transparent transparent #0064b4; border-color: transparent transparent transparent rgba(0, 100, 180, 0.9); }
+.smallipop-instance.blue.sipPositionedRight .sipArrow { left: -26px; border-color: transparent #0064b4 transparent transparent; border-color: transparent rgba(0, 100, 180, 0.9) transparent transparent; }
+.smallipop-instance.blue .smallipop-tour-progress { color: #777; }
+.smallipop-instance.blue .smallipop-tour-prev, .smallipop-instance.blue .smallipop-tour-next, .smallipop-instance.blue .smallipop-tour-close { color: #222; background: #efefef; }
+.smallipop-instance.blue .smallipop-tour-prev:hover, .smallipop-instance.blue .smallipop-tour-next:hover, .smallipop-instance.blue .smallipop-tour-close:hover { color: #111; background: #f7f7f7; }
+
+/* black theme */
+.smallipop-instance.black { background-color: #222; border-color: #111; text-shadow: 0 -1px 1px #111111; color: #f5f5f5; -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); background-repeat: repeat-x; background-image: -webkit-linear-gradient(top, #333333, #222222); background-image: -moz-linear-gradient(top, #333333, #222222); background-image: -ms-linear-gradient(top, #333333, #222222); background-image: -o-linear-gradient(top, #333333, #222222); background-image: linear-gradient(top, #333333, #222222); border-radius: 5px; -o-border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.smallipop-instance.black a { color: #eef8ff; text-shadow: 0 -1px 1px #111111; }
+.smallipop-instance.black .sipContent { border-top: 1px solid #666; border-radius: 5px; -o-border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.smallipop-instance.black .sipArrow { border-color: #222 transparent transparent transparent; }
+.smallipop-instance.black .sipArrowBorder { border-color: #111 transparent transparent transparent; }
+.smallipop-instance.black.sipAlignBottom .sipArrow { border-color: transparent transparent #222 transparent; }
+.smallipop-instance.black.sipAlignBottom .sipArrowBorder { border-color: transparent transparent #111 transparent; }
+.smallipop-instance.black.sipPositionedLeft .sipArrow { border-color: transparent transparent transparent #222; }
+.smallipop-instance.black.sipPositionedLeft .sipArrowBorder { border-color: transparent transparent transparent #111; }
+.smallipop-instance.black.sipPositionedRight .sipArrow { border-color: transparent #222 transparent transparent; }
+.smallipop-instance.black.sipPositionedRight .sipArrowBorder { border-color: transparent #111 transparent transparent; }
+.smallipop-instance.black .smallipop-tour-progress { color: #888; }
+.smallipop-instance.black .smallipop-tour-prev, .smallipop-instance.black .smallipop-tour-next, .smallipop-instance.black .smallipop-tour-close { color: #ccc; background: #333; }
+.smallipop-instance.black .smallipop-tour-prev:hover, .smallipop-instance.black .smallipop-tour-next:hover, .smallipop-instance.black .smallipop-tour-close:hover { color: #fff; background: #3a3a3a; }
+
+.cssgradients .smallipop-instance.black { background-color: transparent; }
+
+/* orange theme */
+.smallipop-instance.orange { background-color: #f9aa18; border-color: #e17500; text-shadow: 0 1px 1px #fff24d; color: #714900; background-repeat: repeat-x; background-image: -webkit-linear-gradient(top, #fff24d, #f9aa18); background-image: -moz-linear-gradient(top, #fff24d, #f9aa18); background-image: -ms-linear-gradient(top, #fff24d, #f9aa18); background-image: -o-linear-gradient(top, #fff24d, #f9aa18); background-image: linear-gradient(top, #fff24d, #f9aa18); -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); border-radius: 10px; -o-border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
+.smallipop-instance.orange a { color: #145d95; text-shadow: 0 1px 1px #fff24d; }
+.smallipop-instance.orange .sipContent { border-top: 1px solid #fffabc; border-radius: 10px; -o-border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
+.smallipop-instance.orange .sipArrow { border-color: #f9aa18 transparent transparent transparent; }
+.smallipop-instance.orange .sipArrowBorder { border-color: #e17500 transparent transparent transparent; }
+.smallipop-instance.orange.sipAlignBottom .sipArrow { border-color: transparent transparent #f9aa18 transparent; }
+.smallipop-instance.orange.sipAlignBottom .sipArrowBorder { border-color: transparent transparent #e17500 transparent; }
+.smallipop-instance.orange.sipPositionedLeft .sipArrow { border-color: transparent transparent transparent #f9c718; }
+.smallipop-instance.orange.sipPositionedLeft .sipArrowBorder { border-color: transparent transparent transparent #e17500; }
+.smallipop-instance.orange.sipPositionedRight .sipArrow { border-color: transparent #f9c718 transparent transparent; }
+.smallipop-instance.orange.sipPositionedRight .sipArrowBorder { border-color: transparent #e17500 transparent transparent; }
+.smallipop-instance.orange .smallipop-tour-progress { color: #444; }
+.smallipop-instance.orange .smallipop-tour-prev, .smallipop-instance.orange .smallipop-tour-next, .smallipop-instance.orange .smallipop-tour-close { color: #444; background: #f19f06; }
+.smallipop-instance.orange .smallipop-tour-prev:hover, .smallipop-instance.orange .smallipop-tour-next:hover, .smallipop-instance.orange .smallipop-tour-close:hover { color: #333; background: #f9a509; }
+
+/* white theme */
+.smallipop-instance.white { background-color: #fcfcfc; border-color: #ccc; text-shadow: 0 1px 1px #eee; color: #444; width: 200px; max-width: 200px; -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 6px; -o-border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+.smallipop-instance.white .sipContent { text-align: center; border-radius: 6px; -o-border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+.smallipop-instance.white .sipArrow { border-color: #fcfcfc transparent transparent transparent; }
+.smallipop-instance.white .sipArrowBorder { border-color: #ccc transparent transparent transparent; }
+.smallipop-instance.white.sipAlignBottom .sipArrow { border-color: transparent transparent #fcfcfc transparent; }
+.smallipop-instance.white.sipAlignBottom .sipArrowBorder { border-color: transparent transparent #ccc transparent; }
+.smallipop-instance.white.sipPositionedLeft .sipArrow { border-color: transparent transparent transparent #fcfcfc; }
+.smallipop-instance.white.sipPositionedLeft .sipArrowBorder { border-color: transparent transparent transparent #ccc; }
+.smallipop-instance.white.sipPositionedRight .sipArrow { border-color: transparent #fcfcfc transparent transparent; }
+.smallipop-instance.white.sipPositionedRight .sipArrowBorder { border-color: transparent #ccc transparent transparent; }
+.smallipop-instance.white .smallipop-tour-progress { color: #777; }
+.smallipop-instance.white .smallipop-tour-close-icon { background: #fafafa; color: #555; text-shadow: 0 1px 1px #fff; }
+.smallipop-instance.white .smallipop-tour-close-icon:hover { background: #f5f5f5; color: #222; }
+.smallipop-instance.white .smallipop-tour-prev, .smallipop-instance.white .smallipop-tour-next, .smallipop-instance.white .smallipop-tour-close { color: #666; background: #f0f0f0; }
+.smallipop-instance.white .smallipop-tour-prev:hover, .smallipop-instance.white .smallipop-tour-next:hover, .smallipop-instance.white .smallipop-tour-close:hover { color: #333; background: #f4f4f4; }
+
+/* white theme extended, requires rgba support */
+.smallipop-instance.whiteTransparent { background-color: rgba(255, 255, 255, 0.8); }
+.smallipop-instance.whiteTransparent .sipArrow { bottom: -21px; border-color: rgba(255, 255, 255, 0.8) transparent transparent transparent; }
+.smallipop-instance.whiteTransparent .sipArrowBorder { border-color: transparent; }
+.smallipop-instance.whiteTransparent.sipAlignBottom .sipArrow { top: -21px; border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent; }
+.smallipop-instance.whiteTransparent.sipPositionedLeft .sipArrow { border-color: transparent transparent transparent rgba(255, 255, 255, 0.8); }
+.smallipop-instance.whiteTransparent.sipPositionedRight .sipArrow { border-color: transparent rgba(255, 255, 255, 0.8) transparent transparent; }
+
+/* fat shadow extension theme */
+.smallipop-instance.fatShadow { -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8); -moz-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8); }

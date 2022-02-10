@@ -1,0 +1,63 @@
+/**
+ * @version 1.0
+ * @package: Admin Panel
+ * @category: Admin UI
+ * @author wpdevelop
+ *
+ * @web-site https://wpbookingcalendar.com/
+ * @email info@wpbookingcalendar.com 
+ * 
+ * @modified 2015-04-11
+ */
+
+/* Admin Content Pages */
+.wpbc_page .wpbc_admin_page .wpbc_header_margin {
+    height:10px;
+}
+/* Collapse & expand elements in settings meta boxes */
+.wpbc_page .meta-box .postbox .handlediv {
+    background: url("../../../../../../wp-admin/images/arrows.png") no-repeat scroll 5px -27px transparent;
+}
+.wpbc_page .meta-box .postbox.closed .handlediv {
+    background-position:5px 10px;
+}
+.wpbc_page .meta-box .postbox .handlediv:hover {
+    cursor: pointer !important;
+}
+.wpbc_page .meta-box .postbox .hndle:hover {
+    cursor: default !important;
+}
+
+/* Settings Menuboxes */
+.wpbc_settings_row.wpbc_settings_row_left {
+    width:64%; 
+    float:left;
+    margin-right:1%;
+}
+.wpbc_settings_row.wpbc_settings_row_right {
+    width:35%; 
+    float:left;
+}
+/* FixIn: 7.0.1.54 */
+.wpbc_page input::-moz-placeholder,
+.wpbc_page textarea::-moz-placeholder{
+  color: #ccc;
+  opacity: 1;
+}
+.wpbc_page input:-ms-input-placeholder,
+.wpbc_page textarea:-ms-input-placeholder{
+  color: #ccc;
+}
+.wpbc_page input::-webkit-input-placeholder,
+.wpbc_page textarea::-webkit-input-placeholder{
+  color: #ccc;
+}
+
+/* iPad mini and all iPhones  and other Mobile Devices */
+@media (max-width: 782px) { 
+    /* Settings Top TABS */
+    .wpbc_page .wpbc_admin_page .metabox-holder .wpbc_settings_row {
+        width:100%;
+        float:none;
+    }
+}

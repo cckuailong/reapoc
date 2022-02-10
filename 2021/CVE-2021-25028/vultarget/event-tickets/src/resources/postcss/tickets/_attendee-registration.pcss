@@ -1,0 +1,35 @@
+/**
+ * Event Tickets - Tickets Stylesheet - Attendee registration
+ *
+ * @since 5.0.3
+ */
+
+.event-tickets,
+.entry .entry-content .event-tickets {
+	/*
+		Tickets Registration/Purchase
+	*/
+	.tribe-tickets__registration {
+		/* @todo: see if this is still relevant. Apparently not. */
+		border: 1px solid var(--tec-color-border-secondary);
+	}
+
+	.tribe-tickets__registration-title {
+
+		h2 {
+			color: var(--tec-color-text-primary);
+		}
+	}
+
+	.tribe-tickets__registration-description {
+		margin-top: 10px;
+	}
+
+	.tribe-ticket__tickets-heading { /* @todo: see if we want to have own class here, instead of a generic. */
+		margin-bottom: var(--tec-spacer-3);
+
+		@media (--viewport-medium) {
+			margin-bottom: var(--tec-spacer-4);
+		}
+	}
+}

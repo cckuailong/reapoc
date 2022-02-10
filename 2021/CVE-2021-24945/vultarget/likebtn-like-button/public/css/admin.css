@@ -1,0 +1,557 @@
+#likebtn .likebtn_logo {
+    padding: 5px;
+}
+#likebtn_contact {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+#premium_features_hint {
+    float: right;
+    font-size: 13px;
+}
+.likebtn_collapse_trigger small {
+    color: gray;
+    margin-right: 5px;
+}
+#likebtn .pagination span,
+#likebtn .pagination a {
+    margin: 0 3px;
+}
+#likebtn .tablenav input {
+    float: left;
+}
+#popup_donate_trigger {
+    position: relative;
+    top: -4px;
+    vertical-align: baseline;
+    /*width: 17px;
+    height: 17px;*/
+}
+.premium_feature {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTg4NEU4RTc2NTM3MTFFMjg0RTQ4NEYwMjhFQzkzQjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTg4NEU4RTg2NTM3MTFFMjg0RTQ4NEYwMjhFQzkzQjUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBODg0RThFNTY1MzcxMUUyODRFNDg0RjAyOEVDOTNCNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBODg0RThFNjY1MzcxMUUyODRFNDg0RjAyOEVDOTNCNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PluJZR0AAADWSURBVHjaYvz//z8DOlgqvVQBSMWD2NFPoxvR5VkYsAOQpgYoG0MTEwMZgAXqnAAg9QDolAv4FMPUMYL8BOTchzoJpGkhSAKI10PVKgJxPhAHQNUcYAFqEAAxoIIGUIwM7iOxQYZdYEQOPaj18VADYOADEG8AuQDofJDhDIzoQQ7UWACk+tFsM0T2LxOaBpDT6qHcBqgNILAe6g2sQT4fiEGSF6CRmgj1hwKy7Uxo/jGA+iEQmhrgbCBIgKYUBgaQn2B4idQSByBOQBaDiicAsQGMDxBgACQAZdLcBNXhAAAAAElFTkSuQmCC") no-repeat scroll left center rgba(0, 0, 0, 0);
+    padding: 1px 0 0 20px;
+    margin-left: 8px;
+}
+.likebtn_help,
+.likebtn_help_simple {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY1NkVBMkZCNjBFMjExRTQ4MUE1QjkxNjQxREEzNkQ0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY1NkVBMkZDNjBFMjExRTQ4MUE1QjkxNjQxREEzNkQ0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjU2RUEyRjk2MEUyMTFFNDgxQTVCOTE2NDFEQTM2RDQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjU2RUEyRkE2MEUyMTFFNDgxQTVCOTE2NDFEQTM2RDQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz58mSzzAAABvklEQVR42qSTvUoDQRSFN5tYqFEk4AOIgmm1MhaiglaCCBGbJIoIYpHG0sZCfABJo6j4l0oUQVsxYiM2sQwEfYRI0IiF+fE7cXbZBFJl4Oy9M3POubN3d3y1Ws1qZwT0SKVSVrVarS/4fL5eEKtUKjHMI2bt2e/3p5kLn1qzbdtKJpP/Bp4xhdEVMQR+EF0TO1ibLZfLEUQ7zKMg4whsJ6HKJMQHicmXEHcRo2CevBPE2Q+JI26zQZCNGyUQh6h0yXyX16iBIsde1yuAYXEMN+g1iEPqUxXE7+S3CLeodM9eAcE+0GnycJbFlcY1gLzG5hdQkyzwBvGQ+QwYF4ceLKrRzM/Flcb9CghGETypszKAsGmM5sCq6dELsAznFYMJ16B5SEy1fgR3RnxA2Gv5H0DIIhhRBecbg2/SDczyQJ0Xr/6/GG7W7QHHP4LUQ5pwDAKBwC+p+lLS3DEXR1xpvF/hAkKRRp3xbmFTxc88TTx2lORhccSVxmugKgsmz0FcwcjmFINUGqNit9aIOXNCcUsNfyKbj2xMk36QnyBQ3CaegoLWtCeOuA1N9IwMhAHnMoFEq8vkXoF2r/OfAAMAxYsis5FrmXYAAAAASUVORK5CYII=") no-repeat scroll left center rgba(0, 0, 0, 0);
+    float: right;
+    margin: 1px -28px 0 0;
+    padding: 0 0 0 16px;
+    cursor: help;
+    opacity: 0.66;
+    filter: alpha(opacity=66);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=66)";
+}
+.likebtn_help_simple {
+    display: inline-block;
+    float: none;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    width: 16px;
+}
+.likebtn_refresh,
+.likebtn_alert {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+.likebtn_refresh_loader {
+    cursor: progress;
+}
+.likebtn_alert {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARxJREFUeNpi/P//PwMlgHFwGXB2CxOyXCIQewHxNiCeDxM09vmHYgCKDpBZUMzByMjioGE1xxZEg/gwOXSAYsCfvxD89x+Dq4CEsyYHB5+4gLiDJogPk8NrwN8/YMzy7y9jgIi0o1pkwioGYUlrNRAfJA6Sx2vA7z9gW+y5BfW0Gf5+5l+9ejXD9y8v+Nm4FbVB4r8JGvCbgfHPH4ZQAXFdlWfvTzFs3VLK8PrHDQZWIQkVkDhIHn8Y/GGwZOMS0f/P8lSYjektg7dPNwM362cGHu6fwqwcPPogeUIuSJKQ5lPiZHrOwMP6leHr20owzcP6hUFCml8JJI9uAAsy5+On/z+OHbh7F8i8CxFpR7WNieHHIE/KA2IAQIABADJQiLa8CfgRAAAAAElFTkSuQmCC");
+}
+.likebtn_refresh:hover,
+.likebtn_help:hover,
+.likebtn_alert:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.likebtn_input {
+    width: 92%;
+}
+
+.preview_container {
+    background: url("../img/preview.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #e1e1e8;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.1);
+    -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.1);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.1);
+    min-height: 23px;
+    margin: 10px 0;
+    padding: 40px;
+}
+.preview_container .likebtn_container {
+    line-height: 0;
+}
+.nav-tab img {
+    vertical-align: bottom;
+}
+.support_link {
+    font-weight: normal;
+    font-size: 13px;
+    font-style: italic;
+    color: #666;
+    line-height: 1.5;
+    /*float: right;*/
+    margin-left: 10px;
+}
+.likebtn_show_marker {
+    margin-right: 6px;
+}
+.likebtn_reset_wrapper {
+    text-align: right;
+    position: relative;
+}
+#likebtn_sc_wr,
+.likebtn_sc_wr {
+    display: none;
+}
+#likebtn_sc_wr {
+    margin-top: 15px;
+    padding: 10px 15px;
+}
+.likebtn_sc_trgr {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#likebtn .likebtn_button_green {
+    background: #8fc800;
+    border-color: #668e01;
+    -webkit-box-shadow:inset 0 1px 0 rgba(204,234,128,.5),0 1px 0 rgba(0,0,0,.15);
+    box-shadow:inset 0 1px 0 rgba(204,234,128,.5),0 1px 0 rgba(0,0,0,.15);
+    color: #fff;
+    text-decoration: none!important;
+
+    background: -moz-linear-gradient(top, #8fc800 0%, #438c00 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8fc800), color-stop(100%,#438c00));
+    background: -webkit-linear-gradient(top, #8fc800 0%,#438c00 100%);
+    background: -o-linear-gradient(top, #8fc800 0%,#438c00 100%);
+    background: -ms-linear-gradient(top, #8fc800 0%,#438c00 100%);
+    background: linear-gradient(top, #8fc800 0%,#438c00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8fc800', endColorstr='#438c00',GradientType=0);
+    text-shadow: none;
+}
+#likebtn .likebtn_button_green:hover {
+    /*background: #8fc800;*/
+
+    /*background: #bb77ae;
+    border-color: #aa559a;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 rgba(0,0,0,.15);*/
+
+    background: #8fc800;
+    border-color: #668e01;
+    -webkit-box-shadow:inset 0 1px 0 rgba(204,234,128,.5),0 1px 0 rgba(0,0,0,.15);
+    box-shadow:inset 0 1px 0 rgba(204,234,128,.5),0 1px 0 rgba(0,0,0,.15);
+}
+#likebtn .likebtn_button_upgrade {
+    background: #a41aa4;
+    border-color: #721772;
+    -webkit-box-shadow:inset 0 1px 0 rgba(204,234,128,.5),0 1px 0 rgba(0,0,0,.15);
+    box-shadow:inset 0 1px 0 rgba(204,234,128,.5),0 1px 0 rgba(0,0,0,.15);
+    color: #fff;
+    text-decoration: none!important;
+
+    background: -moz-linear-gradient(top, #aa29aa 0%, #991899 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aa29aa), color-stop(100%,#991899));
+    background: -webkit-linear-gradient(top, #aa29aa 0%,#991899 100%);
+    background: -o-linear-gradient(top, #aa29aa 0%,#991899 100%);
+    background: -ms-linear-gradient(top, #aa29aa 0%,#991899 100%);
+    background: linear-gradient(top, #aa29aa 0%,#991899 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa29aa', endColorstr='#991899',GradientType=0);
+}
+#likebtn .likebtn_button_upgrade:hover {
+    background: #ad24ad;
+}
+#likebtn table.form-table th {
+    padding-right: 24px;
+    position: relative;
+}
+.entity_tab_container {
+    max-width: 885px;
+}
+/*.likebtn_social {
+    float: right;
+}
+#likebtn .likebtn_social td {
+    vertical-align: middle;
+    padding: 0;
+}*/
+.likebtn_social {
+    padding-top: 5px;
+}
+
+.image_dropdown.select2-container .select2-choice {
+    height: auto;
+    line-height: 12px;
+}
+.image_dropdown.select2-container .select2-choice > .select2-chosen {
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+.image_dropdown_text {
+    vertical-align: text-top;
+}
+#s2id_settings_theme img,
+#select2-results-1 img {
+    max-height: 30px;
+}
+#s2id_settings_theme,
+#s2id_settings_counter_type {
+    width: 282px;
+}
+#donate_pveview {
+    display: inline-block;
+    //cursor: default;
+    border:1px solid #ddd;
+    -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.07);
+    box-shadow:inset 0 1px 2px rgba(0,0,0,.07);
+    background-color:#fff;
+    color:#333;outline:0;
+    -webkit-transition:.05s border-color ease-in-out;
+    transition:.05s border-color ease-in-out;
+    padding: 3px 1px 0 4px;
+    min-height: 36px;
+}
+#preview_fixer {
+    z-index: 10;
+}
+.likebtn_preview_fixed {
+    position: fixed;
+    top: 40px;
+}
+#poststuff h1 {
+    margin-top: 0;
+    padding: 0 0 0 10px;
+
+    clear: left;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.likebtn_error {
+    color: #a00;
+}
+.likebtn_success {
+    color: green;
+}
+.likebtn_sidebar_section {
+    margin: 10px 0;
+}
+.likebtn_sidebar_div {
+    border-top: 1px solid #eee;
+    height: 1px;
+}
+.likebtn_sidebar_div_simple {
+    margin: 5px 0;
+}
+.likebtn_upgrade_container {
+    background: none repeat scroll 0 0 #f5f5f5;
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 10px;
+    line-height: 22px;
+}
+.likebtn_features {
+    margin: 0;
+}
+.likebtn_features li {
+    padding-left: 18px;
+}
+.likebtn_features .likebtn_avail {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAL1JREFUeNpi/P//PwMlgImBQjDwBrCgCzDOF2Zg+Adk/AOGDRvQfHZGoDWMxgyMDMb/Q1/NIt0F/xk8gIbNZPj7P41YL4AUGsM1//rfkuyeYMzw8z9xXgBqgNm0nuHnv0D/IH/juavmngV6oYY4F3z7y2DqY2oMpANB9MYl684yfP9XA3TNDuIM+PGv5vTCY2dlAxWMQTSIz/D//w6iYwFs06vfDI+7b7QwsDLWMIix7sAXxoyjSZlyAwACDADjvUes7rU7JAAAAABJRU5ErkJggg==") no-repeat scroll left 3px rgba(0, 0, 0, 0);
+}
+.likebtn_features .likebtn_unavail {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMpJREFUeNpi/P//PwMlgImBQjAMDGBBF1jFyOgBpFqAuOYPA8MOoAI4P+z//x0YJoBiARkvYWA486+k5D+IBuJqZD66WnAMogvMA9o4F6j4R3Lyf2R6IQODMVEGTAW6CoirgfjMB2/v/yB6CgNDYQ8W14IwRiB+A7rgOwNDYLChofGcrVvPgugfDAzR/yFhwUAwDJqBNj6Ulf0PooEhV4jMx+YCRvSknAeMBWDotwgwMKRzMTCcfQW0GcQHxkbNJCyxwDiaFxgAAgwAYy67YIOQ//cAAAAASUVORK5CYII=") no-repeat scroll left 2px rgba(0, 0, 0, 0);
+}
+#likebtn .likebtn_sidebar_inside {
+    padding-bottom: 3px;
+}
+.likebtn_notice {
+    display: block;
+}
+.likebtn_check_account_container,
+.likebtn_test_sync_container,
+.likebtn_manual_sync_container,
+.likebtn_ipvi_change_container {
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-table td.likebtn_mid_row {
+    line-height: 22px;
+}
+.liketbtn_mansync_wr {
+    line-height: 28px;
+    vertical-align: middle;
+}
+.likebtn_disabled input,
+.likebtn_disabled textarea,
+.likebtn_disabled select,
+.likebtn_disabled .select2-choices,
+.likebtn_disabled #donate_pveview {
+    background-color: #f2f3f2;
+}
+.likebtn_disabled label {
+    color: #888;
+}
+#stats_actions_form .button-secondary {
+    margin-right: 5px;
+}
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.likebtn-graph {
+    background-color: white;
+}
+.reports-graph-d,
+.reports-graph-m {
+    min-height: 300px;
+    background: url(../img/ajax_loader_big.gif) 50% 50% no-repeat;
+}
+.reports-error {
+    display: none;
+}
+.reports-vals {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+.report-val {
+    white-space: nowrap;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+}
+.reports-label {
+    border-radius: 0.25em;
+    color: #fff;
+    display: inline;
+    font-size: 110%;
+    font-weight: bold;
+    line-height: 1;
+    margin-left: 2px;
+    padding: 0.2em 0.6em 0.3em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+.reports-total {
+    background-color: #337ab7;
+}
+.reports-like {
+    background-color: #5cb85c;
+}
+.reports-dislike {
+    background-color: #f0ad4e;
+}
+.reports-map {
+    height: 300px;
+}
+ul.likebtn-is {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul.likebtn-is li {
+    display: inline-block;
+    vertical-align: top;
+}
+.likebtn-is-radio {
+    float: left;
+}
+.likebtn-is-block {
+    float: left;
+    margin-left: 5px;
+    width: 30%;
+}
+.likebtn-is-frst {
+    margin-right: 15px;
+}
+.likebtn-is-block img {
+    cursor: pointer;
+    max-width: 100%;
+}
+.likebtn_i_sm {
+    width: 50%;
+}
+
+.icon_dropdown.select2-container .lb-fi,
+.select2-results .lb-fi {
+    font-size: 22px;
+}
+.select2-celled .select2-results li {
+    display: inline-block;
+    width: 43px;
+    text-align: center;
+}
+.likebtn_pin {
+    float: right;
+    font-weight: normal;
+}
+.image_toggle .ui-button-text img {
+    vertical-align: middle;
+}
+
+#likebtn_content {
+    position: relative;
+}
+.likebtn_overlay {
+    background: #000 none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100101;
+}
+.likebtn_dlg .ui-dialog-buttonpane {
+    padding-bottom: 0;
+}
+.likebtn_ip_info_map {
+    height: 200px;
+}
+.wp-core-ui .button.likebtn-action,
+.wp-core-ui .button-primary.likebtn-action,
+.wp-core-ui .button-secondary.likebtn-action {
+    padding: 2px;
+    height: 21px;
+    line-height: 20px;
+}
+.likebtn_dlg {
+    z-index: 1000000 !important;
+}
+#likebtn_no_vts {
+    display: none;
+}
+.widget_demo {
+    width: 200px;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.widget_demo img {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.widget_demo a {
+    width: 200px;
+    text-align: center;
+}
+.likebtn_subtitle {
+    margin: 0;
+}
+.likebtn_sync_cntr .likebtn_sync_ena,
+.likebtn_sync_cntr .likebtn_sync_dis {
+    display: none;
+}
+.likebtn_sync_cntr.likebtn_sync_ena_flag strong.likebtn_sync_ena {
+    display: inline;
+}
+.likebtn_sync_cntr.likebtn_sync_ena_flag input.likebtn_sync_ena {
+    display: inline-block;
+}
+.likebtn_sync_cntr.likebtn_sync_ena_flag div.likebtn_sync_ena,
+.likebtn_sync_cntr.likebtn_sync_ena_flag p.likebtn_sync_ena {
+    display: block;
+}
+
+.likebtn_sync_cntr.likebtn_sync_dis_flag strong.likebtn_sync_dis {
+    display: inline;
+}
+.likebtn_sync_cntr.likebtn_sync_dis_flag input.likebtn_sync_dis {
+    display: inline-block;
+}
+.likebtn_sync_cntr.likebtn_sync_dis_flag div.likebtn_sync_dis,
+.likebtn_sync_cntr.likebtn_sync_dis_flag p.likebtn_sync_dis {
+    display: block;
+}
+
+.likebtn_postbox {
+    margin-bottom: 10px;
+}
+
+.likebtn_poll_reason {
+    padding-left: 24px;
+    display: none;
+    margin-bottom: 15px;
+}
+.likebtn_dialog {
+    max-width: 600px;
+    min-width: 360px;
+}
+.likebtn_poll_opt {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.likebtn_poll_intro {
+    margin-bottom: 14px;
+}
+#likebtn_poll_loader {
+    text-align: right;
+}
+.likebtn_s_btn {
+    vertical-align: top;
+}
+.likebtn_sc_container {
+    vertical-align: middle;
+}
+.durationPickerGroup input.has-value {
+    background-color: #dff0d8;
+}
+.likebtn-vgraph {
+    min-height: 400px;
+    background: url(../img/ajax_loader_round.gif) 50% 50% no-repeat;
+}
+.likebtn-vgraph-error {
+    display: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.likebtn-btn-img {
+    vertical-align: middle;
+}
+.likebtn-form-group {
+    display: inline-block;
+    padding: 3px 10px 3px 0;
+}
+.likebtn-form-group input,
+.wp-core-ui .likebtn-form-group .button,
+.wp-core-ui .likebtn-form-group .button-secondary {
+    vertical-align: middle;
+}
+.likebtn-coupon {
+    text-align: center;
+    font-weight: bold;
+    border: 1px dashed;
+    font-size: 40px;
+    padding: 40px 0 40px;
+    margin: 16px 0 13px;
+    color: red;
+}
+.margin-top {
+    margin-top: 15px;
+}
+.likebtn_vn_container {
+    font-weight: bold;
+}
+small.description {
+    color: #666;
+}

@@ -1,0 +1,17 @@
+{% set list_type = options.bullets_enabled and options.bullet_type == 'numbers' ? 'ol' : 'ul' %}
+
+<{{ list_type }} class="wpra-item-list rss-aggregator {{ options.bullets_enabled ? 'wpra-item-list--bullets wpra-item-list--' ~ options.bullet_type : '' }}"
+    start="{{ (pagination.page - 1) *  pagination.items_per_page + 1}}">
+    {% set hasItems = false %}
+    {% for item in items %}
+        {% set hasItems = true %}
+        <li class="wpra-item feed-item {{ options.custom_css_classname }}">
+            {{ options.before_item|raw }}
+            {{ include(self.dir ~ 'feed-item.twig') }}
+            {{ options.after_item|raw }}
+        </li>
+    {% endfor %}
+    {% if not hasItems %}
+        <p>{% trans "No feed items found." %}</p>
+    {% endif %}
+</{{ list_type }}>

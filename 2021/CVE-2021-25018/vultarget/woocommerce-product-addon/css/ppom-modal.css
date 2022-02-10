@@ -1,0 +1,325 @@
+/*
+ *  ppom_modal - v1.1.1
+ *  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+ *  http://vodkabears.github.io/remodal/
+ *
+ *  Made by Ilya Makarov
+ *  Under MIT License
+ */
+
+/* ==========================================================================
+   ppom_modal's necessary styles
+   ========================================================================== */
+
+html.ppom_modal-is-locked {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+.ppom_modal,
+[data-ppom_modal-id] {
+    display: none;
+}
+.ppom_modal-overlay {
+    position: fixed;
+    z-index: 9999;
+    top: -5000px;
+    right: -5000px;
+    bottom: -5000px;
+    left: -5000px;
+    display: none;
+}
+.ppom_modal-wrapper {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    overflow: auto;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+}
+.ppom_modal-wrapper:after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -0.05em;
+    content: "";
+}
+.ppom_modal-overlay,
+.ppom_modal-wrapper {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.ppom_modal {
+    position: relative;
+    outline: none;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+.ppom_modal-is-initialized {
+    display: inline-block;
+}
+
+/*Default Theme Style*/
+.ppom_modal-bg.ppom_modal-is-opening,
+.ppom_modal-bg.ppom_modal-is-opened {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+.ppom_modal-overlay {
+    background: rgba(43, 46, 56, 0.9);
+}
+.ppom_modal-overlay.ppom_modal-is-opening,
+.ppom_modal-overlay.ppom_modal-is-closing {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.ppom_modal-overlay.ppom_modal-is-opening {
+    -webkit-animation-name: ppom_modal-overlay-opening-keyframes;
+    animation-name: ppom_modal-overlay-opening-keyframes;
+}
+.ppom_modal-overlay.ppom_modal-is-closing {
+    -webkit-animation-name: ppom_modal-overlay-closing-keyframes;
+    animation-name: ppom_modal-overlay-closing-keyframes;
+}
+.ppom_modal-wrapper {
+    padding: 10px 10px 0;
+}
+.ppom_modal {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 35px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    color: #2b2e38;
+    background: #fff;
+}
+.ppom_modal.ppom_modal-is-opening,
+.ppom_modal.ppom_modal-is-closing {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.ppom_modal.ppom_modal-is-opening {
+    -webkit-animation-name: ppom_modal-opening-keyframes;
+    animation-name: ppom_modal-opening-keyframes;
+}
+.ppom_modal.ppom_modal-is-closing {
+    -webkit-animation-name: ppom_modal-closing-keyframes;
+    animation-name: ppom_modal-closing-keyframes;
+}
+.ppom_modal,
+.ppom_modal-wrapper:after {
+    vertical-align: middle;
+}
+.ppom_modal-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: visible;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    text-decoration: none;
+    color: #95979c;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.ppom_modal-close:hover,
+.ppom_modal-close:focus {
+    color: #2b2e38;
+}
+.ppom_modal-close:before {
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+    font-size: 25px;
+    line-height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 35px;
+    content: "\00d7";
+    text-align: center;
+}
+.ppom_modal-confirm,
+.ppom_modal-cancel {
+    font: inherit;
+    display: inline-block;
+    overflow: visible;
+    min-width: 110px;
+    margin: 0;
+    padding: 12px 0;
+    cursor: pointer;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+.ppom_modal-confirm {
+    color: #fff;
+    background: #81c784;
+}
+.ppom_modal-confirm:hover,
+.ppom_modal-confirm:focus {
+    background: #66bb6a;
+}
+.ppom_modal-cancel {
+  color: #fff;
+  background: #e57373;
+}
+.ppom_modal-cancel:hover,
+.ppom_modal-cancel:focus {
+  background: #ef5350;
+}
+.ppom_modal-confirm::-moz-focus-inner,
+.ppom_modal-cancel::-moz-focus-inner,
+.ppom_modal-close::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Keyframes
+** ==========================
+*/
+@-webkit-keyframes ppom_modal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 1;
+
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes ppom_modal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 1;
+
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@-webkit-keyframes ppom_modal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+
+    opacity: 0;
+
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes ppom_modal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+
+    opacity: 0;
+
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@-webkit-keyframes ppom_modal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ppom_modal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes ppom_modal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes ppom_modal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Media queries
+** ========================
+*/
+@media only screen and (min-width: 641px) {
+  .ppom_modal {
+    max-width: 700px;
+  }
+}
+
+/* IE8
+** ========================
+*/
+.lt-ie9 .ppom_modal-overlay {
+  background: #2b2e38;
+}
+.lt-ie9 .ppom_modal {
+  width: 700px;
+}

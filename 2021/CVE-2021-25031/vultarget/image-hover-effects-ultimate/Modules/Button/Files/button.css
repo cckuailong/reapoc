@@ -1,0 +1,163 @@
+.oxi-addons-container .oxi-image-hover-style-button{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.oxi-addons-container .oxi-image-hover-style-button:after {
+    padding-bottom: 100%;
+    content: "";
+    display: block;
+}
+.oxi-addons-container .oxi-image-hover-style-button .oxi-image-button-hover,
+.oxi-addons-container .oxi-image-hover-style-button .oxi-image-hover-figure{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.oxi-addons-container .oxi-image-hover-style-button .oxi-image-hover-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    pointer-events: none;
+}
+.oxi-addons-container .oxi-image-hover-style-button .oxi-image-hover-figure:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    pointer-events: none;
+    z-index: 11;
+}
+.oxi-addons-container .oxi-image-hover-style-button .oxi-image-hover-image:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    pointer-events: none;
+    z-index: 11;
+    display: block;
+}
+.oxi-addons-container .oxi-image-hover-style-button .oxi-image-hover-image img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
+.oxi-addons-container .oxi-image-hover-style-button  .oxi-image-hover-figure-caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.oxi-addons-container .oxi-image-hover-style-button  .oxi-image-hover-figure-caption:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    z-index: 11;
+    pointer-events: none;
+}
+.oxi-addons-container .oxi-image-hover-style-button  .oxi-image-hover-figure-caption:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    pointer-events: none;
+
+}
+.oxi-addons-container .oxi-image-button-hover .oxi-image-hover-caption-tab{
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+.oxi-addons-container .oxi-image-hover-caption-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.oxi-addons-container .oxi-image-button-hover .oxi-image-hover-caption-tab.image-hover-align-top-left{
+    justify-content: flex-start;align-items: flex-start;
+}
+.oxi-addons-container .oxi-image-button-hover .oxi-image-hover-caption-tab.image-hover-align-top-center{
+    justify-content: center;align-items: flex-start;
+}
+.oxi-addons-container  .oxi-image-button-hover .oxi-image-hover-caption-tab.image-hover-align-top-right{
+    justify-content: flex-end;align-items: flex-start;
+}
+.oxi-addons-container  .oxi-image-button-hover .oxi-image-hover-caption-tab.image-hover-align-center-left{
+    justify-content: flex-start;align-items: center;
+}
+.oxi-addons-container  .oxi-image-button-hover .oxi-image-hover-caption-tab.image-hover-align-center-center{
+    justify-content: center;align-items:  center;
+}
+.oxi-addons-container  .oxi-image-button-hover .oxi-image-hover-caption-tab.image-hover-align-center-right{
+    justify-content: flex-end;align-items: center;
+}
+.oxi-addons-container  .oxi-image-button-hover .oxi-image-hover-caption-tab.image-hover-align-bottom-left{
+    justify-content: flex-start;align-items: flex-end;
+}
+.oxi-addons-container  .oxi-image-button-hover .oxi-image-hover-caption-tab.image-hover-align-bottom-center{
+    justify-content: center;align-items: flex-end;
+}
+.oxi-addons-container  .oxi-image-button-hover .oxi-image-hover-caption-tab.image-hover-align-bottom-right{
+    justify-content: flex-end;align-items: flex-end;
+}
+.oxi-addons-container  .oxi-image-hover:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container  .oxi-image-hover.oxi-touch .oxi-image-hover-figure-caption{
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    opacity: 1;
+}
+
+.oxi-addons-container .oxi-image-button-hover .oxi-image-hover-caption-tab .oxi-image-hover-icon{
+    padding: 0 3px;
+    display: inline-block;
+}
+
+.oxi-addons-container .oxi-image-button-hover .oxi-image-hover-caption-tab .oxi-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    color: #7e009e;
+    background: rgba(255, 255, 255, 1);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+
+}
+.oxi-addons-container .oxi-image-button-hover .oxi-image-hover-caption-tab .oxi-icons:before{
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+
+}

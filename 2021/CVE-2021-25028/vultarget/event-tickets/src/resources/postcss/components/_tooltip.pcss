@@ -1,0 +1,35 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Tooltip
+ *
+ * ----------------------------------------------------------------------------- */
+
+/* Defining our tooltipster theme. */
+.tooltipster-base.tribe-tickets-tooltip-theme {
+	background-color: var(--tec-color-background);
+	border: 1px solid var(--tec-color-border-default);
+	border-radius: var(--tec-border-radius-default);
+	box-shadow: var(--tec-box-shadow-tooltip);
+	height: auto !important;
+	max-width: 254px;
+	padding: var(--tec-spacer-5);
+
+	.tooltipster-box {
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		margin: 0;
+
+		.tooltipster-content {
+			color: var(--tec-color-text-primary);
+			overflow: inherit;
+			padding: 0;
+			word-break: break-word;
+		}
+	}
+
+	.tooltipster-arrow {
+		display: none;
+	}
+}

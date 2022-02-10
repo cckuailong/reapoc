@@ -1,0 +1,167 @@
+
+#dashboard-widgets #screen_wise_visitor_stats .inside h2,
+#dashboard-widgets #country_wise_visitor_stats .inside h2,
+#dashboard-widgets #os_wise_visitor_stats .inside h2,
+#dashboard-widgets #city_wise_visitor_stats .inside h2,
+#dashboard-widgets #browser_wise_visitor_stats .inside h2,
+#dashboard-widgets #traffic_by_title_stats .inside h2,
+#dashboard-widgets #referral_website_stats .inside h2,
+#dashboard-widgets #search_engine_stats .inside h2,
+#dashboard-widgets #top_search_engine_stats .inside h2,
+#dashboard-widgets #daily_stats .inside h2,
+#dashboard-widgets .wsmTooltipText, 
+#dashboard-widgets .wsmPageContainer,
+#dashboard-widgets #top_search_engine_stats tr:last-child {
+    display: none;
+}
+
+#dashboard-widgets #daily_stats table tr td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 12px;
+}
+#dashboard-widgets table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+#dashboard-widgets #screen_wise_visitor_stats .inside,
+#dashboard-widgets #country_wise_visitor_stats .inside,
+#dashboard-widgets #os_wise_visitor_stats .inside,
+#dashboard-widgets #city_wise_visitor_stats .inside,
+#dashboard-widgets #browser_wise_visitor_stats .inside,
+#dashboard-widgets #traffic_by_title_stats .inside,
+#dashboard-widgets #referral_website_stats .inside,
+#dashboard-widgets #search_engine_stats .inside,
+#dashboard-widgets #top_search_engine_stats .inside,
+#dashboard-widgets #daily_stats .inside {
+    margin: 0;
+    padding: 0;
+}
+#dashboard-widgets #daily_stats .inside span span {
+    color: #0073aa;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.wsmArrowUp {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid green;
+    display: inline-block;
+}
+.wsmArrowDown {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #f00;
+    display: inline-block;
+}
+#dashboard-widgets div#wsm_topRefferStatsList .wsmReferralRow td:nth-child(4), #dashboard-widgets div#wsm_topRefferStatsList .wsmReferralRow td:first-child {
+    text-align: right;
+}
+#dashboard-widgets .row_table th,
+#dashboard-widgets .row_table td{
+	padding:5px;
+}
+#dashboard-widgets #daily_stats table tbody > tr:nth-of-type(odd), 
+#dashboard-widgets .row_table > tbody > tr:nth-of-type(odd),
+#traffic_by_title_stats tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+#dashboard-widgets #daily_stats table tr td, #dashboard-widgets #daily_stats table tr th,
+#dashboard-widgets .row_table tr td, #dashboard-widgets .row_table tr th {
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    padding: 5px 10px;
+}
+#dashboard-widgets #daily_stats table tr th{
+	text-align:left;
+}
+#dashboard-widgets #search_engine_stats td:last-child, 
+#dashboard-widgets #referral_website_stats td, 
+#dashboard-widgets #traffic_by_title_stats td {
+    text-align: right;
+}
+
+#dashboard-widgets #referral_website_stats td:first-child, 
+#dashboard-widgets #traffic_by_title_stats td:first-child {
+    text-align: left;
+}
+#dashboard-widgets .row_table .bar_graph {
+    background: green;
+    display: inline-block;
+    vertical-align: inherit;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#dashboard-widgets .row_table .integer.first_column {
+    text-align: center;
+    width: 30px;
+}
+#dashboard-widgets td.integer {
+    text-align: right;
+}
+
+#dashboard-widgets #search_engine_stats #search_engine_stats_panel + h2 {
+    border-top: 1px solid #ccc;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+#search_engine_summary_panel .integer {
+    width: 50px;
+}
+
+#search_engine_summary_panel span {
+    display: inline-block;
+    vertical-align: inherit;
+    width: 70px;
+}
+
+#top_search_engine_summary_panel th:nth-child(2), #screen_resolution_stats_panel th:nth-child(2), #referral_website_stats_panel th:first-child, #browser_stats_panel th:nth-child(2), #country_stats_panel th:nth-child(2), #operating_system_stats_panel th:nth-child(2), #search_engine_stats_panel th:first-child {
+    text-align: left;
+}
+
+#search_engine_stats_panel th:last-child {
+    text-align: right;
+    width: 100px;
+}
+
+#traffic_by_title_stats .title_search_panel, #traffic_by_title_stats table tr:last-child, #traffic_by_title_stats .link_url {
+    display: none;
+}
+
+#dashboard-widgets #traffic_by_title_stats td, #dashboard-widgets #traffic_by_title_stats th {
+    padding: 5px;
+    text-align: center;
+}
+
+#dashboard-widgets #traffic_by_title_stats th:nth-child(2),
+#dashboard-widgets #traffic_by_title_stats td:nth-child(2) {
+    text-align: left;
+}
+
+#dashboard-widgets .wsm_widget_link {
+    padding-top: 8px;
+    position: absolute;
+    right: 36px;
+    text-align: center;
+	color:#fff;
+}
+#dashboard-widgets #traffic_by_title_stats th:nth-child(4), #dashboard-widgets #traffic_by_title_stats th:nth-child(5), #dashboard-widgets #traffic_by_title_stats td:nth-child(4), #dashboard-widgets #traffic_by_title_stats td:nth-child(5) {
+    display: none;
+}
+
+
+#dashboard-widgets div[id^=recent_visit_pages_] table.wsmTableStriped td.wsmCityCountry {
+    font-size: 0px;
+    width: 20px;
+}

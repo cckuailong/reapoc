@@ -1,0 +1,77 @@
+/**
+ * Event Tickets - Tickets Commerce PayPal Advanced Payments
+ *
+ * @since 5.2.0
+ */
+
+.event-tickets {
+
+	.tribe-tickets__commerce-checkout-paypal-advanced-payments-separator {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		margin: 24px 0;
+	}
+
+	.tribe-tickets__commerce-checkout-paypal-advanced-payments-separator-line {
+		border: 1px solid var(--tec-color-border-secondary);
+		flex-grow: 1;
+	}
+
+	.tribe-tickets__commerce-checkout-paypal-advanced-payments-separator-text {
+		color: var(--tec-color-text-primary-light);
+		font-style: italic;
+		padding: 12px;
+	}
+
+	.tribe-tickets__commerce-checkout-paypal-advanced-payments-form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.tribe-tickets__commerce-checkout-paypal-advanced-payments-form-field-wrapper {
+		margin-bottom: 10px;
+		width: 65%;
+
+		&:nth-child(odd) {
+			padding-right: 12px;
+		}
+
+		&:nth-child(even) {
+			width: 35%;
+		}
+	}
+
+	.tribe-tickets__commerce-checkout-paypal-advanced-payments-form-field-label {
+		color: var(--tec-color-text-primary-light);
+		cursor: pointer;
+		margin-bottom: 4px;
+	}
+
+	.tribe-tickets__commerce-checkout-paypal-advanced-payments-form-field {
+		background-color: var(--tec-color-background);
+		border: 1px solid var(--tec-color-border-default);
+		border-radius: var(--tec-border-radius-default);
+		color: var(--tec-color-text-primary);
+		font-family: var(--tec-font-family-sans-serif);
+		font-size: 14px;
+		height: 42px;
+		padding: 12px;
+
+		&::placeholder {
+			color: #999;
+			font-family: var(--tec-font-family-sans-serif);
+		}
+
+		&:active,
+		&:focus {
+			border-color: var(--tec-color-border-default);
+		}
+	}
+
+	.tribe-tickets__commerce-checkout-paypal-advanced-payments-form-submit-button {
+		height: 55px;
+		margin-top: 24px;
+		width: 100%;
+	}
+}

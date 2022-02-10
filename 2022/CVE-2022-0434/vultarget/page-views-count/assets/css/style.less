@@ -1,0 +1,31 @@
+@import "mixins.less";
+.pvc_clear {
+	clear: both;
+}
+.pvc_stats {
+    float: left;
+   	.padding(5px !important, 5px !important, 5px !important, 5px !important);
+
+      &.total_only .views_today {
+         display: none;
+      }
+
+   	.pvc-stats-icon {
+		 vertical-align: middle;
+		 display: inline-block;
+
+         svg {
+            display: initial;
+         }
+
+   		&.small svg {
+   			width: 18px;
+   		}
+   		&.medium svg {
+   			width: 24px;
+   		}
+   		&.large svg {
+   			width: 30px;
+   		}
+   	}
+}

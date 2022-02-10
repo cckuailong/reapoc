@@ -1,0 +1,16 @@
+<h3>{% trans "Export Settings" %}</h3>
+
+<p>{% trans "Create a file that contains all of your settings for WP RSS Aggregator and its add-ons." %}</p>
+
+<form method="post">
+    <p class="submit">
+        {{ wp_nonce_field('wpra_export_settings', 'wpra_export_settings_nonce') }}
+
+        <input type="hidden" name="wpra_export" value="1" />
+
+        <button type="submit" class="button button-secondary">
+            <i class="fa fa-download"></i>
+            {% trans "Export settings" %}
+        </button>
+    </p>
+</form>

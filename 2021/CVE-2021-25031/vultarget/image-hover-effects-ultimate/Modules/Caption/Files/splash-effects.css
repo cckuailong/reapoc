@@ -1,0 +1,99 @@
+.oxi-addons-container [class^='oxi-image-splash-'],
+.oxi-addons-container [class*=' oxi-image-splash-'] {
+    overflow: hidden;
+}
+
+.oxi-addons-container [class^='oxi-image-splash-'] .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-splash-'] .oxi-image-hover-figure-caption {
+    opacity: 0;
+    transform: scale(.8);
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+.oxi-addons-container [class^='oxi-image-splash-']:after,
+.oxi-addons-container [class*=' oxi-image-splash-']:after {
+    transition-delay: 150ms;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.oxi-addons-container [class^='oxi-image-splash-']:hover:after,
+.oxi-addons-container [class*=' oxi-image-splash-']:hover:after,
+.oxi-addons-container [class^='oxi-image-splash-'].oxi-touch:after,
+.oxi-addons-container [class*=' oxi-image-splash-'].oxi-touch:after {
+    transition-delay: 0ms;
+}
+
+.oxi-addons-container [class^='oxi-image-splash-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-splash-']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class^='oxi-image-splash-'].oxi-touch .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*=' oxi-image-splash-'].oxi-touch .oxi-image-hover-figure-caption {
+    transition-delay: 150ms;
+    opacity: 1;
+    border-radius: 0;
+    transform: scale(1);
+}
+
+.oxi-addons-container [class^='oxi-image-splash-up']:after,
+.oxi-addons-container [class*=' oxi-image-splash-up']:after {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-20px);
+}
+
+.oxi-addons-container [class^='oxi-image-splash-up']:hover:after,
+.oxi-addons-container [class*=' oxi-image-splash-up']:hover:after,
+.oxi-addons-container [class^='oxi-image-splash-up'].oxi-touch:after,
+.oxi-addons-container [class*=' oxi-image-splash-up'].oxi-touch:after {
+    top: 50%;
+    transform: translate(-20px, -20px);
+}
+
+.oxi-addons-container [class^='oxi-image-splash-down']:after,
+.oxi-addons-container [class*=' oxi-image-splash-down']:after {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-20px);
+}
+
+.oxi-addons-container [class^='oxi-image-splash-down']:hover:after,
+.oxi-addons-container [class*=' oxi-image-splash-down']:hover:after,
+.oxi-addons-container [class^='oxi-image-splash-down'].oxi-touch:after,
+.oxi-addons-container [class*=' oxi-image-splash-down'].oxi-touch:after {
+    bottom: 50%;
+    transform: translate(-20px, 20px);
+}
+
+.oxi-addons-container [class^='oxi-image-splash-left']:after,
+.oxi-addons-container [class*=' oxi-image-splash-left']:after {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-20px);
+}
+
+.oxi-addons-container [class^='oxi-image-splash-left']:hover:after,
+.oxi-addons-container [class*=' oxi-image-splash-left']:hover:after,
+.oxi-addons-container [class^='oxi-image-splash-left'].oxi-touch:after,
+.oxi-addons-container [class*=' oxi-image-splash-left'].oxi-touch:after {
+    left: 50%;
+    transform: translate(-20px, -20px);
+}
+
+.oxi-addons-container [class^='oxi-image-splash-right']:after,
+.oxi-addons-container [class*=' oxi-image-splash-right']:after {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-20px);
+}
+
+.oxi-addons-container [class^='oxi-image-splash-right']:hover:after,
+.oxi-addons-container [class*=' oxi-image-splash-right']:hover:after,
+.oxi-addons-container [class^='oxi-image-splash-right'].oxi-touch:after,
+.oxi-addons-container [class*=' oxi-image-splash-right'].oxi-touch:after {
+    right: 50%;
+    transform: translate(20px, -20px);
+}

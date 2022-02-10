@@ -1,0 +1,562 @@
+/* Version: 1.22 */
+
+@font-face {
+	font-family: "tutor";
+	src: url("../font/tutor.ttf?l5eb5q") format("truetype"),
+		url("../font/tutor.woff?l5eb5q") format("woff"),
+		url("../font/tutor.svg?l5eb5q#tutor") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="tutor-icon-"], [class*=" tutor-icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'tutor' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .tutor-icon-action:before {
+	content: "\e9b0";
+  }
+  .tutor-icon-zoom:before {
+	content: "\e9b1";
+  }
+  .tutor-icon-down:before {
+	content: "\e900";
+  }
+  .tutor-icon-up:before {
+	content: "\e901";
+  }
+  .tutor-icon-angle-up:before {
+	content: "\e902";
+  }
+  .tutor-icon-angle-right:before {
+	content: "\e903";
+  }
+  .tutor-icon-audio-volume:before {
+	content: "\e904";
+  }
+  .tutor-icon-clock:before {
+	content: "\e905";
+  }
+  .tutor-icon-document-alt:before {
+	content: "\e906";
+  }
+  .tutor-icon-facebook:before {
+	content: "\e907";
+  }
+  .tutor-icon-fav-full:before {
+	content: "\e908";
+  }
+  .tutor-icon-fav-line:before {
+	content: "\e909";
+  }
+  .tutor-icon-google:before {
+	content: "\e90a";
+  }
+  .tutor-icon-grid:before {
+	content: "\e90b";
+  }
+  .tutor-icon-group:before {
+	content: "\e90c";
+  }
+  .tutor-icon-linkedin:before {
+	content: "\e90d";
+  }
+  .tutor-icon-lock:before {
+	content: "\e90e";
+  }
+  .tutor-icon-mark:before {
+	content: "\e90f";
+  }
+  .tutor-icon-minus:before {
+	content: "\e910";
+  }
+  .tutor-icon-mortarboard:before {
+	content: "\e911";
+  }
+  .tutor-icon-offer:before {
+	content: "\e912";
+  }
+  .tutor-icon-cross:before {
+	content: "\e913";
+  }
+  .tutor-icon-plus:before {
+	content: "\e914";
+  }
+  .tutor-icon-shopping-cart:before {
+	content: "\e915";
+  }
+  .tutor-icon-star-full:before {
+	content: "\e916";
+  }
+  .tutor-icon-star-half:before {
+	content: "\e917";
+  }
+  .tutor-icon-star-line:before {
+	content: "\e918";
+  }
+  .tutor-icon-tumblr:before {
+	content: "\e919";
+  }
+  .tutor-icon-twitter:before {
+	content: "\e91a";
+  }
+  .tutor-icon-user:before {
+	content: "\e91b";
+  }
+  .tutor-icon-youtube:before {
+	content: "\e91c";
+  }
+  .tutor-icon-spinner:before {
+	content: "\e91d";
+  }
+  .tutor-icon-file:before {
+	content: "\e91e";
+  }
+  .tutor-icon-doubt:before {
+	content: "\e91f";
+  }
+  .tutor-icon-angle-down:before {
+	content: "\e920";
+  }
+  .tutor-icon-angle-left:before {
+	content: "\e921";
+  }
+  .tutor-icon-default:before {
+	content: "\e922";
+  }
+  .tutor-icon-artboard:before {
+	content: "\e923";
+  }
+  .tutor-icon-clipboard:before {
+	content: "\e924";
+  }
+  .tutor-icon-audio:before {
+	content: "\e925";
+  }
+  .tutor-icon-professor:before {
+	content: "\e926";
+  }
+  .tutor-icon-interactive:before {
+	content: "\e927";
+  }
+  .tutor-icon-graduate:before {
+	content: "\e928";
+  }
+  .tutor-icon-student:before {
+	content: "\e929";
+  }
+  .tutor-icon-magnifying-glass-1:before {
+	content: "\e92a";
+  }
+  .tutor-icon-code:before {
+	content: "\e92b";
+  }
+  .tutor-icon-review:before {
+	content: "\e92c";
+  }
+  .tutor-icon-calendar:before {
+	content: "\e92d";
+  }
+  .tutor-icon-open-book-1:before {
+	content: "\e92e";
+  }
+  .tutor-icon-image:before {
+	content: "\e92f";
+  }
+  .tutor-icon-spreadsheet:before {
+	content: "\e930";
+  }
+  .tutor-icon-text:before {
+	content: "\e931";
+  }
+  .tutor-icon-document:before {
+	content: "\e932";
+  }
+  .tutor-icon-video:before {
+	content: "\e933";
+  }
+  .tutor-icon-conversation-1:before {
+	content: "\e934";
+  }
+  .tutor-icon-archive:before {
+	content: "\e935";
+  }
+  .tutor-icon-manual:before {
+	content: "\e936";
+  }
+  .tutor-icon-light-up:before {
+	content: "\e937";
+  }
+  .tutor-icon-light-down:before {
+	content: "\e938";
+  }
+  .tutor-icon-light-right:before {
+	content: "\e939";
+  }
+  .tutor-icon-light-left:before {
+	content: "\e93a";
+  }
+  .tutor-icon-pencil:before {
+	content: "\e93b";
+  }
+  .tutor-icon-man-user:before {
+	content: "\e93c";
+  }
+  .tutor-icon-move:before {
+	content: "\e93d";
+  }
+  .tutor-icon-list:before {
+	content: "\e93e";
+  }
+  .tutor-icon-speaker:before {
+	content: "\e93f";
+  }
+  .tutor-icon-video-camera:before {
+	content: "\e940";
+  }
+  .tutor-icon-garbage:before {
+	content: "\e941";
+  }
+  .tutor-icon-add-line:before {
+	content: "\e942";
+  }
+  .tutor-icon-cup:before {
+	content: "\e943";
+  }
+  .tutor-icon-next-2:before {
+	content: "\e944";
+  }
+  .tutor-icon-next2:before {
+	content: "\e945";
+  }
+  .tutor-icon-menu-2:before {
+	content: "\e946";
+  }
+  .tutor-icon-question-2:before {
+	content: "\e947";
+  }
+  .tutor-icon-question-1:before {
+	content: "\e948";
+  }
+  .tutor-icon-education:before {
+	content: "\e949";
+  }
+  .tutor-icon-answer-shorting:before {
+	content: "\e94a";
+  }
+  .tutor-icon-assesment:before {
+	content: "\e94b";
+  }
+  .tutor-icon-fill-gaps:before {
+	content: "\e94c";
+  }
+  .tutor-icon-matching:before {
+	content: "\e94d";
+  }
+  .tutor-icon-multiple-choice:before {
+	content: "\e94e";
+  }
+  .tutor-icon-open-ended:before {
+	content: "\e94f";
+  }
+  .tutor-icon-ordering:before {
+	content: "\e950";
+  }
+  .tutor-icon-yes-no:before {
+	content: "\e951";
+  }
+  .tutor-icon-line-cross:before {
+	content: "\e952";
+  }
+  .tutor-icon-filter-tool-black-shape:before {
+	content: "\e953";
+  }
+  .tutor-icon-plus-square-button:before {
+	content: "\e954";
+  }
+  .tutor-icon-settings-1:before {
+	content: "\e955";
+  }
+  .tutor-icon-image-matching:before {
+	content: "\e956";
+  }
+  .tutor-icon-menu:before {
+	content: "\e957";
+  }
+  .tutor-icon-image1:before {
+	content: "\e958";
+  }
+  .tutor-icon-image-ans:before {
+	content: "\e959";
+  }
+  .tutor-icon-short-ans:before {
+	content: "\e95a";
+  }
+  .tutor-icon-gallery:before {
+	content: "\e95b";
+  }
+  .tutor-icon-emoji:before {
+	content: "\e95c";
+  }
+  .tutor-icon-text-document-add-button-with-plus-sign:before {
+	content: "\e95d";
+  }
+  .tutor-icon-checkbox-pen-outline:before {
+	content: "\e95e";
+  }
+  .tutor-icon-warning-2:before {
+	content: "\e95f";
+  }
+  .tutor-icon-wallet-filled-money-tool:before {
+	content: "\e960";
+  }
+  .tutor-icon-settings-11:before {
+	content: "\e961";
+  }
+  .tutor-icon-sign-out-option:before {
+	content: "\e962";
+  }
+  .tutor-icon-man-user-1:before {
+	content: "\e963";
+  }
+  .tutor-icon-shopping-cart-2:before {
+	content: "\e964";
+  }
+  .tutor-icon-space:before {
+	content: "\e965";
+  }
+  .tutor-icon-refresh-button-1:before {
+	content: "\e966";
+  }
+  .tutor-icon-notifications-button:before {
+	content: "\e967";
+  }
+  .tutor-icon-dashboard:before {
+	content: "\e968";
+  }
+  .tutor-icon-college-graduation:before {
+	content: "\e969";
+  }
+  .tutor-icon-black-back-closed-envelope-shape:before {
+	content: "\e96a";
+  }
+  .tutor-icon-badge:before {
+	content: "\e96b";
+  }
+  .tutor-icon-light-bulb:before {
+	content: "\e96c";
+  }
+  .tutor-icon-ai:before {
+	content: "\e96d";
+  }
+  .tutor-icon-avi:before {
+	content: "\e96e";
+  }
+  .tutor-icon-css:before {
+	content: "\e96f";
+  }
+  .tutor-icon-csv:before {
+	content: "\e970";
+  }
+  .tutor-icon-dbf:before {
+	content: "\e971";
+  }
+  .tutor-icon-doc:before {
+	content: "\e972";
+  }
+  .tutor-icon-dwg:before {
+	content: "\e973";
+  }
+  .tutor-icon-exe:before {
+	content: "\e974";
+  }
+  .tutor-icon-iso:before {
+	content: "\e975";
+  }
+  .tutor-icon-javascript:before {
+	content: "\e976";
+  }
+  .tutor-icon-json-file:before {
+	content: "\e977";
+  }
+  .tutor-icon-mp4:before {
+	content: "\e978";
+  }
+  .tutor-icon-png:before {
+	content: "\e979";
+  }
+  .tutor-icon-ppt:before {
+	content: "\e97a";
+  }
+  .tutor-icon-psd:before {
+	content: "\e97b";
+  }
+  .tutor-icon-rtf:before {
+	content: "\e97c";
+  }
+  .tutor-icon-txt:before {
+	content: "\e97d";
+  }
+  .tutor-icon-xls:before {
+	content: "\e97e";
+  }
+  .tutor-icon-xml:before {
+	content: "\e97f";
+  }
+  .tutor-icon-jpg:before {
+	content: "\e980";
+  }
+  .tutor-icon-mp3:before {
+	content: "\e981";
+  }
+  .tutor-icon-pdf:before {
+	content: "\e982";
+  }
+  .tutor-icon-svg:before {
+	content: "\e983";
+  }
+  .tutor-icon-zip-2:before {
+	content: "\e984";
+  }
+  .tutor-icon-calendar-1:before {
+	content: "\e985";
+  }
+  .tutor-icon-glasses:before {
+	content: "\e986";
+  }
+  .tutor-icon-add-friend:before {
+	content: "\e987";
+  }
+  .tutor-icon-attach:before {
+	content: "\e988";
+  }
+  .tutor-icon-search-file:before {
+	content: "\e989";
+  }
+  .tutor-icon-upload-file:before {
+	content: "\e98a";
+  }
+  .tutor-icon-assignment:before {
+	content: "\e98b";
+  }
+  .tutor-icon-feedback:before {
+	content: "\e98c";
+  }
+  .tutor-icon-purchase:before {
+	content: "\e98d";
+  }
+  .tutor-icon-uoload-success:before {
+	content: "\e98e";
+  }
+  .tutor-icon-coding:before {
+	content: "\e98f";
+  }
+  .tutor-icon-vimeo:before {
+	content: "\e990";
+  }
+  .tutor-icon-link:before {
+	content: "\e991";
+  }
+  .tutor-icon-html5:before {
+	content: "\e992";
+  }
+  .tutor-icon-upload:before {
+	content: "\e993";
+  }
+  .tutor-icon-save:before {
+	content: "\e994";
+  }
+  .tutor-icon-photo-add:before {
+	content: "\e995";
+  }
+  .tutor-icon-add-group:before {
+	content: "\e996";
+  }
+  .tutor-icon-myspace:before {
+	content: "\e997";
+  }
+  .tutor-icon-soundcloud:before {
+	content: "\e998";
+  }
+  .tutor-icon-blogger:before {
+	content: "\e999";
+  }
+  .tutor-icon-google-drive:before {
+	content: "\e99a";
+  }
+  .tutor-icon-skype:before {
+	content: "\e99b";
+  }
+  .tutor-icon-yelp:before {
+	content: "\e99c";
+  }
+  .tutor-icon-dribbble:before {
+	content: "\e99d";
+  }
+  .tutor-icon-flickr:before {
+	content: "\e99e";
+  }
+  .tutor-icon-snapchat:before {
+	content: "\e99f";
+  }
+  .tutor-icon-classic-editor:before {
+	content: "\e9a0";
+  }
+  .tutor-icon-html:before {
+	content: "\e9a1";
+  }
+  .tutor-icon-reddit:before {
+	content: "\e9a2";
+  }
+  .tutor-icon-spotify:before {
+	content: "\e9a3";
+  }
+  .tutor-icon-earth:before {
+	content: "\e9a4";
+  }
+  .tutor-icon-github-logo:before {
+	content: "\e9a5";
+  }
+  .tutor-icon-instagram:before {
+	content: "\e9a6";
+  }
+  .tutor-icon-home:before {
+	content: "\e9a7";
+  }
+  .tutor-icon-share:before {
+	content: "\e9a8";
+  }
+  .tutor-icon-download:before {
+	content: "\e9a9";
+  }
+  .tutor-icon-copy:before {
+	content: "\e9aa";
+  }
+  .tutor-icon-my-quiz-attempt:before {
+	content: "\e9ab";
+  }
+  .tutor-icon-detail-link:before {
+	content: "\e9ac";
+  }
+  .tutor-icon-refund:before {
+	content: "\e9ad";
+  }
+  .tutor-icon-total-discount:before {
+	content: "\e9ae";
+  }
+  .tutor-icon-total-earning:before {
+	content: "\e9af";
+  }
+  

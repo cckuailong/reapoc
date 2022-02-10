@@ -1,0 +1,166 @@
+ .oxi-addons-container [class^='oxi-image-modal'] .oxi-image-hover-caption-tab,
+ .oxi-addons-container [class*=' oxi-image-modal'] .oxi-image-hover-caption-tab {
+     position: relative
+ }
+
+ .oxi-addons-container [class^='oxi-image-modal'],
+ .oxi-addons-container [class*=' oxi-image-modal'] {
+     overflow: hidden;
+ }
+
+ .oxi-addons-container [class^='oxi-image-modal'] .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-modal'] .oxi-image-hover-figure-caption {
+     opacity: 1;
+ }
+
+ .oxi-addons-container [class^='oxi-image-modal']:hover .oxi-image-hover-image,
+ .oxi-addons-container [class*=' oxi-image-modal']:hover .oxi-image-hover-image,
+ .oxi-addons-container [class^='oxi-image-modal'].oxi-touch .oxi-image-hover-image,
+ .oxi-addons-container [class*=' oxi-image-modal'].oxi-touch .oxi-image-hover-image {
+     opacity: 0.7;
+ }
+
+ .oxi-addons-container [class^='oxi-image-modal']:hover .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-modal']:hover .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class^='oxi-image-modal'].oxi-touch .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-modal'].oxi-touch .oxi-image-hover-figure-caption {
+     -webkit-transform: translate(0, 0);
+     -moz-transform: translate(0, 0);
+     -ms-transform: translate(0, 0);
+     -o-transform: translate(0, 0);
+     transform: translate(0, 0);
+ }
+
+ .oxi-addons-container .oxi-image-modal-slide-up .oxi-image-hover-figure-caption {
+     top: auto;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     -webkit-transform: translate(0, 100%);
+     -moz-transform: translate(0, 100%);
+     -ms-transform: translate(0, 100%);
+     -o-transform: translate(0, 100%);
+     transform: translate(0, 100%);
+ }
+
+ .oxi-addons-container .oxi-image-modal-slide-down .oxi-image-hover-figure-caption {
+     bottom: auto;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     -webkit-transform: translate(0, -100%);
+     -moz-transform: translate(0, -100%);
+     -ms-transform: translate(0, -100%);
+     -o-transform: translate(0, -100%);
+     transform: translate(0, -100%);
+ }
+
+ .oxi-addons-container .oxi-image-modal-slide-left .oxi-image-hover-figure-caption {
+     left: auto;
+     max-width: 70%;
+     padding-left: 15px;
+     padding-right: 15px;
+     -webkit-transform: translate(100%, 0%);
+     -moz-transform: translate(100%, 0%);
+     -ms-transform: translate(100%, 0%);
+     -o-transform: translate(100%, 0%);
+     transform: translate(100%, 0%);
+ }
+
+ .oxi-addons-container .oxi-image-modal-slide-right .oxi-image-hover-figure-caption {
+     right: auto;
+     max-width: 70%;
+     padding-left: 15px;
+     padding-right: 15px;
+     -webkit-transform: translate(-100%, 0%);
+     -moz-transform: translate(-100%, 0%);
+     -ms-transform: translate(-100%, 0%);
+     -o-transform: translate(-100%, 0%);
+     transform: translate(-100%, 0%);
+ }
+
+ .oxi-addons-container [class^='oxi-image-modal'],
+ [class*=' oxi-image-modal'] {
+     -webkit-perspective: 50em;
+     -moz-perspective: 50em;
+     perspective: 50em;
+ }
+
+ .oxi-addons-container [class^='oxi-image-modal'] .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-modal'] .oxi-image-hover-figure-caption {
+     opacity: 1;
+ }
+
+ .oxi-addons-container [class^='oxi-image-modal']:hover .oxi-image-hover-image,
+ .oxi-addons-container [class*=' oxi-image-modal']:hover .oxi-image-hover-image,
+ .oxi-addons-container [class^='oxi-image-modal'].oxi-touch .oxi-image-hover-image,
+ .oxi-addons-container [class*=' oxi-image-modal'].oxi-touch .oxi-image-hover-image {
+     opacity: 0.7;
+ }
+
+ .oxi-addons-container [class^='oxi-image-modal']:hover .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-modal']:hover .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class^='oxi-image-modal'].oxi-touch .oxi-image-hover-figure-caption,
+ .oxi-addons-container [class*=' oxi-image-modal'].oxi-touch .oxi-image-hover-figure-caption {
+     -webkit-transform: rotate(0);
+     -moz-transform: rotate(0);
+     -ms-transform: rotate(0);
+     -o-transform: rotate(0);
+     transform: rotate(0);
+ }
+
+ .oxi-addons-container .oxi-image-modal-hinge-up .oxi-image-hover-figure-caption {
+     top: auto;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     -webkit-transform: rotateX(105deg);
+     -moz-transform: rotateX(105deg);
+     transform: rotateX(105deg);
+     -webkit-transform-origin: 50% 100%;
+     -moz-transform-origin: 50% 100%;
+     -ms-transform-origin: 50% 100%;
+     -o-transform-origin: 50% 100%;
+     transform-origin: 50% 100%;
+ }
+
+ .oxi-addons-container .oxi-image-modal-hinge-down .oxi-image-hover-figure-caption {
+     bottom: auto;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     -webkit-transform: rotateX(-100deg);
+     -moz-transform: rotateX(-100deg);
+     transform: rotateX(-100deg);
+     -webkit-transform-origin: 50% -50%;
+     -moz-transform-origin: 50% -50%;
+     -ms-transform-origin: 50% -50%;
+     -o-transform-origin: 50% -50%;
+     transform-origin: 50% -50%;
+ }
+
+ .oxi-addons-container .oxi-image-modal-hinge-left .oxi-image-hover-figure-caption {
+     left: auto;
+     max-width: 70%;
+     padding-left: 15px;
+     padding-right: 15px;
+     -webkit-transform: rotateY(-110deg);
+     -moz-transform: rotateY(-110deg);
+     transform: rotateY(-110deg);
+     -webkit-transform-origin: 100% 50%;
+     -moz-transform-origin: 100% 50%;
+     -ms-transform-origin: 100% 50%;
+     -o-transform-origin: 100% 50%;
+     transform-origin: 100% 50%;
+ }
+
+ .oxi-addons-container .oxi-image-modal-hinge-right .oxi-image-hover-figure-caption {
+     right: auto;
+     max-width: 70%;
+     padding-left: 15px;
+     padding-right: 15px;
+     -webkit-transform: rotateY(110deg);
+     -moz-transform: rotateY(110deg);
+     transform: rotateY(110deg);
+     -webkit-transform-origin: 0 50%;
+     -moz-transform-origin: 0 50%;
+     -ms-transform-origin: 0 50%;
+     -o-transform-origin: 0 50%;
+     transform-origin: 0 50%;
+ }

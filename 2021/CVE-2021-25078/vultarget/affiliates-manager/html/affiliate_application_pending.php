@@ -1,0 +1,1 @@
+<?php echo WPAM_MessageHelper::GetMessage('affiliate_application_pending')?>

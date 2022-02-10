@@ -1,0 +1,75 @@
+/**
+ * Event Tickets - RSVP form.
+ *
+ * @since 5.0.0
+ */
+
+.event-tickets {
+
+	.tribe-common-c-btn:disabled {
+		background-color: var(--tec-color-accent-primary);
+		cursor: not-allowed;
+	}
+
+	button.tribe-common-cta:disabled {
+		cursor: not-allowed;
+	}
+
+	.tribe-tickets__rsvp-form-wrapper {
+		padding: var(--tec-spacer-5);
+	}
+
+	.tribe-tickets__rsvp-form-title {
+		border-bottom: 1px dashed var(--tec-color-border-secondary);
+		padding-bottom: var(--tec-spacer-5);
+
+		@media (--viewport-medium) {
+			border: none;
+			padding-bottom: 0;
+		}
+	}
+
+	.tribe-tickets__rsvp-form-content {
+		margin-bottom: var(--tec-spacer-1);
+		margin-top: var(--tec-spacer-8);
+
+		@media (--viewport-medium) {
+			margin-top: var(--tec-spacer-5);
+		}
+	}
+
+	.tribe-tickets__rsvp-form-buttons {
+		align-items: baseline;
+		display: flex;
+		justify-content: flex-end;
+		padding-top: var(--tec-spacer-4);
+
+		> * {
+			margin-left: var(--tec-spacer-4);
+		}
+	}
+
+	.tribe-tickets__form input[type="number"].tribe-tickets__rsvp-form-input-number {
+		@media (--viewport-medium) {
+			max-width: 140px;
+		}
+	}
+
+	.tribe-tickets__rsvp-form-button {
+		width: auto;
+	}
+
+	.tribe-tickets__rsvp-form-button--cancel {
+		color: var(--tec-color-text-secondary);
+
+		&:focus,
+		&:hover {
+			color: var(--tec-color-text-primary);
+		}
+	}
+
+	.tribe-tickets__rsvp-form-button--submit {
+		padding-left: var(--tec-spacer-6);
+		padding-right: var(--tec-spacer-6);
+	}
+}

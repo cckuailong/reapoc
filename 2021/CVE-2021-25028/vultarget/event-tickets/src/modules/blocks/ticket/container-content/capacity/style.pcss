@@ -1,0 +1,95 @@
+.tribe-editor__ticket__content-row--capacity {
+	padding-bottom: 40px;
+}
+
+.tribe-editor__ticket__capacity-label-with-tooltip {
+	padding-top: 13px;
+}
+
+.tribe-editor__ticket__capacity-form {
+	flex: auto;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+
+	.tribe-editor__ticket--has-tickets-plus & {
+		display: block;
+	}
+
+	.tribe-editor__ticket__capacity-input-row {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		position: relative;
+		padding-top: 12px;
+		margin-left: 8px;
+
+		.tribe-editor__labeled-item__label {
+			flex: none;
+			margin-right: 20px;
+			font-size: 15px;
+			font-weight: normal;
+			line-height: 18px;
+			letter-spacing: 0;
+			color: #000000;
+		}
+
+		.tribe-editor__input--number {
+			flex: none;
+			width: 85px;
+		}
+
+		&:before {
+			content: '';
+			flex: 1;
+			height: 1px;
+			margin-right: 10px;
+			background-color: #E1E3E6;
+		}
+
+		&:after {
+			content: '';
+			width: 1px;
+			background-color: #E1E3E6;
+			position: absolute;
+			top: 10px;
+			left: 0;
+			height: 100%;
+		}
+
+		&:last-child:after {
+			top: 0;
+			height: calc(50% + 6px);
+		}
+
+		&:nth-child(2):last-child:after {
+			top: 10px;
+			height: calc(50% - 4px);
+		}
+	}
+
+	.tribe-editor__ticket__capacity-input-row--capacity-independent,
+	.tribe-editor__ticket__capacity-input-row--shared-capacity {
+
+		.tribe-editor__labeled-item__label:after {
+			color: red;
+			content: '*';
+			margin-left: 3px;
+		}
+	}
+
+	.tribe-editor__ticket__capacity-input {
+		flex: none;
+		width: 85px;
+	}
+
+	.tribe-editor__ticket__capacity-input-helper-text {
+		flex: none;
+		width: 100%;
+		font-size: 12px;
+		line-height: 14px;
+		color: #8D949B;
+		text-align: right;
+		margin-top: 10px;
+	}
+}

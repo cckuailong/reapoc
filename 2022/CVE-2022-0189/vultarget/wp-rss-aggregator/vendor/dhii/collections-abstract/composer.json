@@ -1,0 +1,28 @@
+{
+    "name": "dhii/collections-abstract",
+    "description": "A collections library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dhii/collections-interface": "^0.1.1",
+        "dhii/stats-abstract": "^0.1.0",
+        "dhii/collections-abstract-base": "^0.1.0"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "4.*",
+        "ptrofimov/xpmock": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Collection\\": "src/"
+        }
+    }
+}

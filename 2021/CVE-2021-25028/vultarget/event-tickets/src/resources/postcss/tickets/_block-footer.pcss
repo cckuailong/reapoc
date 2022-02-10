@@ -1,0 +1,84 @@
+/**
+ * Event Tickets - Tickets Stylesheet - Footer
+ *
+ * @since 5.0.3
+ */
+
+.event-tickets,
+.entry .entry-content .event-tickets {
+	/*
+		Block footer
+	*/
+	.tribe-tickets__tickets-footer {
+		align-items: baseline;
+		border-top: 1px solid var(--tec-color-border-secondary);
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		padding: var(--tec-spacer-4) 0 0;
+	}
+
+	.tribe-tickets__tickets-footer-total,
+	.tribe-tickets__tickets-footer-quantity {
+		color: var(--tec-color-text-secondary);
+		display: none;
+		text-align: center;
+	}
+
+	.tribe-tickets__tickets-footer--active {
+		.tribe-tickets__tickets-footer-total,
+		.tribe-tickets__tickets-footer-quantity {
+			display: block;
+		}
+	}
+
+	.tribe-tickets__tickets-footer-total {
+		margin-left: var(--tec-spacer-1);
+
+		@media (--viewport-medium) {
+			margin-left: var(--tec-spacer-5);
+		}
+	}
+
+	.tribe-tickets__tickets-footer-total-wrap,
+	.tribe-tickets__tickets-footer-total-number,
+	.tribe-tickets__tickets-footer-quantity-number {
+		color: var(--tec-color-text-primary);
+		font-weight: var(--tec-font-weight-bold);
+	}
+
+	.tribe-tickets__attendee__fields__footer_checkout-button,
+	.tribe-tickets__tickets-buy {
+		@mixin button-solid;
+
+		margin: 0;
+		padding: 11px 14px;
+
+		&.tribe-common-c-btn {
+			margin-left: auto;
+			white-space: nowrap;
+
+			@media (--viewport-xsmall) {
+				margin-left: var(--tec-spacer-3);
+			}
+
+			@media (--viewport-medium) {
+				margin-left: var(--tec-spacer-6);
+			}
+
+			&:focus,
+			&:hover {
+				background-color: var(--tec-color-accent-primary-hover);
+			}
+
+			&:active {
+				background-color: var(--tec-color-accent-primary-active);
+			}
+
+			&:disabled {
+				background-color: var(--tec-color-accent-primary);
+				cursor: not-allowed;
+			}
+		}
+	}
+}

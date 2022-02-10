@@ -1,0 +1,536 @@
+/*******************************************************************************/
+/*  Booking Calendar Respondive CSS  *******************************************/
+/*******************************************************************************/
+
+/*******************************************************************************/
+/*  C O N F I G */
+/*******************************************************************************/
+/* WIDTH: of CALENDARs - its FULL width of Month(s) ROW (its NOT only one month)  */
+.datepick-inline { 
+    width:100% !important;                                                      /* Overrride the width of the calendar, which  is set datepicker JS */
+    z-index: 10000;
+}
+/* HEIGHT: of    C E L L S   */
+.datepick-inline .datepick-title-row th,
+.datepick-inline .datepick-days-cell{
+    height: 40px; 
+}
+/* HEIGHT: of    C E L L S  in POPUP calendar */
+#datepick-div.datepick-inline .datepick-title-row th,
+#datepick-div.datepick-inline .datepick-days-cell{
+    height: 25px; 
+}
+
+/*******************************************************************************/
+/*  S T R U C T U R E    &    S i z e s ****************************************/
+/*******************************************************************************/
+/*RESET: Width, margin, padding */
+div.check-out-div, 
+div.check-in-div, 
+div.date-content-top, 
+div.date-content-bottom{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;        
+}
+
+/* RESET: Font sizes, padding, margin */
+.datepick-inline .datepick,                                        /* Month table */
+.datepick-inline .datepick-header,                                 /* Month header */
+.datepick-inline .datepick-header span,                            /* Header span */
+.datepick-inline .calendar-links,                                  /* Prev Next months */
+.datepick-inline .calendar-links a,                                /* Prev Next links */
+.datepick-inline .datepick-days-cell,                              /* Date cell */
+.datepick-inline .datepick-days-cell a,                            /* Active date cell */
+.datepick-inline .datepick-days-cell div,                          /* Cehck in/out */
+.datepick-inline .datepick-title-row,                              /* Week row */
+.datepick-inline .datepick-title-row th {                          /* Week cell */    
+    padding: 0px;
+    margin:  0px;
+    font-size:12px;
+    border: 0 none;
+    vertical-align: baseline;    
+}
+#content .datepick-days-cell,                                       /* Reset the padding in TD and TH elements of calendar to prevent conflict  with  some WP themes */
+#content .datepick-title-row th{
+    padding: 0px;
+    margin:  0px;    
+}
+/* RESET: width to 100% */
+.datepick-inline .datepick,
+.datepick-inline .datepick-header{
+    width:100%;
+}
+/* SIZE: Set width of calendar with several months */
+.datepick-one-month {
+    width:100%;
+    float:left;
+}
+.cal_month_num_2 .datepick-one-month {
+    width:50%;
+    float:left;
+}
+.cal_month_num_3 .datepick-one-month {
+    width:33.333333333333333%;
+    float:left;
+}
+.cal_month_num_4 .datepick-one-month {
+    width:25%;
+    float:left;
+}
+.cal_month_num_5 .datepick-one-month {
+    width:20%;
+    float:left;
+}
+.cal_month_num_6 .datepick-one-month {
+    width:16.6666666666666%;
+    float:left;
+}
+.cal_month_num_7 .datepick-one-month {
+    width:14.28571429%;
+    float:left;
+}
+.cal_month_num_8 .datepick-one-month {
+    width:12.5%;
+    float:left;
+}
+.cal_month_num_9 .datepick-one-month {
+    width:11.11111111%;
+    float:left;
+}
+.cal_month_num_10 .datepick-one-month {
+    width:10%;
+    float:left;
+}
+.cal_month_num_11 .datepick-one-month {
+    width:9.0909090909090909%;
+    float:left;
+}
+.cal_month_num_12 .datepick-one-month {
+    width:8.333333333333333%;
+    float:left;
+}
+
+/* CLASS: for setting specific number of months in a row. Please check more in FAQ.*/
+.months_num_in_row_1 .datepick-one-month {
+    width:100%;
+    float:left;
+}
+.months_num_in_row_2 .datepick-one-month {
+    width:50%;
+    float:left;
+}
+.months_num_in_row_3 .datepick-one-month {
+    width:33.333333333333333%;
+    float:left;
+}
+.months_num_in_row_4 .datepick-one-month {
+    width:25%;
+    float:left;
+}
+.months_num_in_row_5 .datepick-one-month {
+    width:20%;
+    float:left;
+}
+.months_num_in_row_6 .datepick-one-month {
+    width:16.6666666666666%;
+    float:left;
+}
+
+/* STRUCTURE: Previous & Next month links */
+.datepick-inline .calendar-links{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: -2.4em;
+    padding: 0.4em 0;
+    position: relative;
+    text-decoration: none;
+}
+.datepick-inline .calendar-links .datepick-prev{
+    float: left;
+    width: 49%;
+    text-align: left;
+    padding-left:1%;
+    z-index:99;
+    position: relative;
+    line-height: 1.5em;
+}
+.datepick-inline .calendar-links .datepick-next{
+    float: right;
+    text-align: right;
+    width: 49%;
+    padding-right:1%;
+    z-index:99;
+    position: relative;
+    line-height: 1.5em;
+}
+.datepick-inline .calendar-links .datepick-prev a,
+.datepick-inline .calendar-links .datepick-next a{
+    font-size: 2em;
+}
+
+/* Week Titles height */
+div.datepick-inline .datepick-title-row th{
+    height: auto !important;
+    line-height: 2.18182;
+}
+/* Links: NO UNDERLINE, Cursor - Pointer */
+.datepick-inline .calendar-links .datepick-prev a,
+.datepick-inline .calendar-links .datepick-next a,
+.datepick-inline .calendar-links .datepick-prev a:hover,
+.datepick-inline .calendar-links .datepick-next a:hover,
+.datepick-inline .datepick-days-cell, 
+.datepick-inline .datepick-days-cell.timespartly.date_approved, 
+.datepick-inline .datepick-days-cell.timespartly.date2approve, 
+.datepick-inline .datepick-days-cell a, 
+.datepick-inline .datepick-days-cell a:hover,                                   /* FixIn: 5.4.5.9 */                            
+.block_hints .block_free a, 
+.block_hints .block_free a:hover, 
+.block_hints .block_time a, 
+.block_hints .block_time a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;                                                           /* FixIn: 5.4.5.9 */
+}
+.datepick-inline .datepick-days-cell.datepick-unselectable,        /* Default cursor for the unvailbale dates */
+.datepick-inline .datepick-days-cell.datepick-unselectable a, 
+.datepick-inline .datepick-days-cell.datepick-unselectable a:hover, 
+.datepick-inline .datepick-days-cell.date_approved,
+.datepick-inline .datepick-days-cell.date2approve{
+    cursor: default;
+}
+/* ALIGN: Header */
+.datepick-inline .datepick-header{
+    text-align: center;
+    position: relative;
+    line-height: 1.71429em;
+                                                                                padding: 0.3em 0;
+}
+/* ALIGN: Cells and set standard width */
+.datepick-inline .datepick-title-row th,
+.datepick-inline .datepick-days-cell{
+    text-align: center;
+    vertical-align: middle;
+    width: 14.28571429%;  
+    overflow: hidden;
+}
+.datepick-inline .datepick-days-cell a,
+.datepick-inline .datepick-days-cell span{                                      /* FixIn: 6.0.1.2 */
+    position:relative;
+    z-index: 99;
+}
+
+
+/*******************************************************************************/
+/*    Check In / Out Times      ************************************************/
+/*******************************************************************************/
+.block_hints .block_check_in_out.check_in_time,                                               /* Item  for the LEGEND */
+.datepick-inline .timespartly.check_in_time,                                    /* If we are using the Check in/out time, so hide the CLOCK icon */
+.datepick-inline .timespartly.check_out_time {
+    background-image: none;
+}
+/*Backgorounds*/
+.block_hints .block_check_in_out.check_in_time div.check-in-div,                              /* Item  for the LEGEND */
+.block_hints .block_check_in_out.check_out_time div.check-out-div,                            /* Item  for the LEGEND */
+td.timespartly.check_in_time div.check-in-div,                                  /* Define the check in/out time BACKGRUND */
+td.timespartly.check_out_time div.check-out-div {                                 
+    border: 0px none;
+    float: left;
+    height: 200%;
+    margin-bottom: -400%;
+    position: relative;
+    top: -50%;
+    vertical-align: bottom;
+    width: 20%;
+    z-index: 0;
+}
+/*FixIn: 7.0.1.19  Beta Feature not tested enough! Support: Chrome 36.0+, MS IE 10.0+, Firefox 16.0+, Safari 9.0+, Opera 23.0+ */
+.block_hints .block_check_in_out.check_in_time a,                               /* Item  for the LEGEND */
+.block_hints .block_check_in_out.check_out_time a,                              /* Item  for the LEGEND */
+td.timespartly.check_in_time a,                                                 /* Define the check in/out time BACKGRUND */
+td.timespartly.check_out_time a {
+    text-shadow:none;                                                     
+}
+.block_hints .block_check_in_out.check_in_time em {                             /* FixIn: 7.0.1.37 Correct positioning of text in legend */
+    position: relative;
+    font-style: normal;
+    text-shadow: none;
+}
+/* Shift days numbers to  the left | right for showing them in triangles */
+/*
+.block_hints .block_check_in_out.check_out_time a,
+td.timespartly.check_out_time a {
+    margin-left: -50%;
+}
+.block_hints .block_check_in_out.check_in_time a,  
+td.timespartly.check_in_time a{                    
+    margin-right: -50%;
+}*/
+.wpbc_change_over_triangle .block_hints .block_check_in_out.check_in_time div.check-in-div,                              /* Item  for the LEGEND */
+.wpbc_change_over_triangle td.timespartly.check_in_time div.check-in-div {                                /* Define the check in/out time BACKGRUND */
+    height: 300%;
+    margin-bottom: -400%;    
+    top: -50%;    
+    width: 100% !important;   
+    transform: rotate(45deg) translate(-100%,-10%)
+}
+.wpbc_change_over_triangle .block_hints .block_check_in_out.check_in_time div.check-in-div {
+    transform: rotate(45deg) translate(-85%,-10%)
+}
+.wpbc_change_over_triangle .block_hints .block_check_in_out.check_out_time div.check-out-div,                            /* Item  for the LEGEND */
+.wpbc_change_over_triangle td.timespartly.check_out_time div.check-out-div { 
+    height: 300%;
+    margin-bottom: -400%;    
+    top: -50%;    
+    width: 100% !important;   
+    transform: rotate(-135deg) translate(0,10%);
+}
+.wpbc_change_over_triangle2 .block_hints .block_check_in_out.check_in_time div.check-in-div,                              /* Item  for the LEGEND */
+.wpbc_change_over_triangle2 td.timespartly.check_in_time div.check-in-div {                                /* Define the check in/out time BACKGRUND */
+    height: 300%;
+    margin-bottom: -400%;    
+    top: -50%;    
+    width: 100% !important;   
+    transform: rotate(-45deg) translate(0,-10%);
+}
+.wpbc_change_over_triangle2 .block_hints .block_check_in_out.check_in_time div.check-in-div {
+    transform: rotate(-45deg) translate(-15%,-10%);
+}
+.wpbc_change_over_triangle2 .block_hints .block_check_in_out.check_out_time div.check-out-div,                            /* Item  for the LEGEND */
+.wpbc_change_over_triangle2 td.timespartly.check_out_time div.check-out-div { 
+    height: 300%;
+    margin-bottom: -400%;    
+    top: -50%;    
+    width: 100% !important;   
+    transform: rotate(135deg) translate(-100%,10%);
+}
+/*FixIn: 7.0.1.19 */
+.block_hints .block_check_in_out.check_out_time div.check-out-div,                            /* Item  for the LEGEND */
+td.timespartly.check_out_time div.check-out-div {                               /* Define the check out position */
+    float: right;
+}
+
+td.timespartly.check_in_time.check_out_time div.check-in-div,                   /* If we are have Together the check  in and check  out times, so  this date is booked.*/
+td.timespartly.check_in_time.check_out_time div.check-out-div {
+    display: none;
+}
+
+/* HIDE check  in/out elements, when: CELL OVER | DATE SELECTED | CHECK IN Date Selected */
+/*.datepick-inline .datepick .datepick-unselectable.check_in_time div.check-in-div,
+.datepick-inline .datepick .datepick-unselectable.check_out_time div.check-out-div,*/       /*FixIn: 7.0.1.19 */
+.datepick-inline .datepick .datepick-days-cell-over.check_in_time div.check-in-div,
+.datepick-inline .datepick .datepick-days-cell-over.check_out_time div.check-out-div,
+.datepick-inline .datepick .datepick-current-day.check_in_time div.check-in-div,
+.datepick-inline .datepick .datepick-current-day.check_out_time div.check-out-div{
+    display: none;
+    visibility: hidden;
+}
+/* Check In Pending & Check Out Approved ||  Check Out Pending & Check In Approved || dates     //FixIn: 6.0.1.2   */ 
+td.timespartly.check_in_time.check_out_time.check_in_time_date_approved.check_out_time_date2approve div.check-in-div, 
+td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_in_time_date2approve div.check-out-div, 
+td.timespartly.check_in_time.check_out_time.check_in_time_date2approve.check_out_time_date_approved div.check-in-div, 
+td.timespartly.check_in_time.check_out_time.check_out_time_date2approve.check_in_time_date_approved div.check-out-div {    
+    display: block;
+    visibility: visible;
+    width: 50%;
+    float: left;    
+}
+td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_in_time_date2approve div.check-out-div, 
+td.timespartly.check_in_time.check_out_time.check_out_time_date2approve.check_in_time_date_approved div.check-out-div {    
+    float: right;
+}
+td.timespartly.check_in_time.check_out_time.check_in_time_date_approved.check_out_time_date2approve span, 
+td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_in_time_date2approve span,    
+td.timespartly.check_in_time.check_out_time.check_in_time_date_approved.check_out_time_date2approve div, 
+td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_in_time_date2approve div {   
+    cursor: default;
+}
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+/* Set correct FONT of unselectable elements, when the check in date is selected */
+/*******************************************************************************/
+.datepick-inline .datepick .datepick-unselectable.check_in_time.date_approved,  
+.datepick-inline .datepick .datepick-unselectable.check_out_time.date_approved, 
+.datepick-inline .datepick .datepick-unselectable.check_in_time.date2approve,
+.datepick-inline .datepick .datepick-unselectable.check_out_time.date2approve {
+/*    background-color: transparent;*/                                          /*FixIn: 7.0.1.19 */
+    font-weight: 400;
+}
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+/*     W I D G E T            **************************************************/
+/*******************************************************************************/
+/* Set HEIGHT of the CELLs in the Widget */
+.widget_wpdev_booking .hasDatepick .datepick-inline .datepick-title-row th,
+.widget_wpdev_booking .hasDatepick .datepick-inline .datepick-days-cell{
+    height: 30px;
+}
+/* Set calendar WIDTH and MARGIN in Widget */
+.widget_wpdev_booking .bk_calendar_frame{
+    margin: 0 2%;
+    width: 96% !important;
+}
+/* LEGEND items show in 2 rows in Widget */
+.widget_wpdev_booking .wpdev_hint_with_text{
+    float: left;
+    margin: 0;
+    width: 50% !important;
+}
+/* Set the WIDTH and MARGIN of the form FIELDS in Widget */
+.widget_wpdev_booking input,
+.widget_wpdev_booking select,
+.widget_wpdev_booking textarea,
+.widget_wpdev_booking .wpdevelop input,
+.widget_wpdev_booking .wpdevelop select,
+.widget_wpdev_booking .wpdevelop textarea,
+div#datepick-div input,
+div#datepick-div select,
+div#datepick-div textarea {
+    width: 96%;
+    margin: auto;
+}
+/* SELECT BUTTON and CHECKBOX fields have the Auto Width in Widget */
+/*.widget_wpdev_booking select,*/
+.widget_wpdev_booking input[type=button],
+.widget_wpdev_booking input[type=checkbox]{
+    width:auto;
+}
+
+
+/*******************************************************************************/
+/* Legend of days, which is shown under calendar *******************************/
+/*******************************************************************************/
+/* Full Legend Frame */
+.block_hints {
+    width: 100%;
+    clear: both;
+    margin: 10px 0px 30px 0px !important;
+    border: none;
+    height: 30px;
+}
+/* Date CELL with TEXT description */
+.wpdev_hint_with_text {
+    float:left;
+    width:auto;
+}
+/* Text Labels of Legend */
+.block_text {
+    float: none;
+    height: 30px;
+    line-height: 32px;
+    margin: 0 0 10px;
+    padding: 0 10px 0 35px;
+    
+    font-size: 0.9em;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+/* Dates CELL of Legend */
+.block_check_in_out,
+.block_pending,
+.block_time,
+.block_booked,
+.block_free {
+    float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid #FEA;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+/* Font size for the TEXT in CELLa of Legend */
+.block_pending a,
+.block_time a,
+.block_booked a,
+.block_free a,
+.block_pending,
+.block_time,
+.block_booked,
+.block_free ,
+.wpdev_hint_with_text .block_check_in_out {
+    font-size: 13px;
+    font-weight: 400;
+}
+/* Clear Line */
+.wpdev_clear_hint{ 
+    height:1px; 
+    width:100%;
+    clear:both; 
+}
+/* Day Rates. Additional info at  the top  and bottom  of the day cell. */
+.datepick-inline .datepick-days-cell div.date-content-bottom,
+.datepick-inline .datepick-days-cell div.date-content-top {
+    font-size:0.7em;
+    font-style: italic;
+    line-height: 0.72em;
+    text-align: center;
+    padding:0;
+    width:100%;
+    text-shadow:none;
+    position: relative;
+}
+/*******************************************************************************/
+/* Respondive Design For Mobile Devices ****************************************/
+/*******************************************************************************/
+@media (max-width: 480px) {
+}
+@media (max-width: 769px) {                                                     /* iPad mini and all iPhones  and other Mobile Devices    //FixIn: 8.4.7.17  */
+    .bk_calendar_frame {                                                        /* Define the width of calendar to the 100% of the device screen*/
+        width:100% !important;   
+    }
+    .datepick-inline .datepick-one-month {                         /* Show Only 1 month in a row */
+        width:100%;
+        float:left;
+    }
+    .booking_form_div input[type="text"],
+    .booking_form_div select,
+    .booking_form_div textarea {
+        width: 96% !important;
+        margin: auto !important;
+    }
+    .booking_form_div input[type=button]{
+        width:auto !important;
+    }
+    .booking_form_div input[type=button]{
+        font-size: 1.1em;
+        font-weight: 600;
+        padding: 5px 20px !important;
+    }
+
+    
+}
+/* Declaration of resolutions for some future usage... *************************/
+@media (min-width: 768px) and (max-width: 980px) {
+}
+@media (max-width: 980px) {
+}
+@media (min-width: 980px){
+}
+@media (min-width: 1200px){
+}
+@media screen and (max-width:380px) {
+}
+/* iPhone 2G-4S in portrait & landscape */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {    
+}
+/* iPhone 5 in portrait & landscape */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+}
+/* iPad in portrait & landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+}
+/* iPad mini and iPad 1 & 2 in portrait & landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1)  { 
+}
+/* iPad 3 & 4 Media Queries - Retina iPads */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+/*******************************************************************************/

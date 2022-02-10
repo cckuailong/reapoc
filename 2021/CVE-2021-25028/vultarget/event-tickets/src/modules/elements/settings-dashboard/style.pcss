@@ -1,0 +1,107 @@
+.tribe-editor__settings-dashboard {
+	background-color: #f8f9fb;
+	position: relative;
+}
+
+.tribe-editor__settings-dashboard__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 14px;
+	height: 68px;
+
+	@media (min-width: 600px) {
+		padding: 15px 28px;
+	}
+}
+
+.tribe-editor__settings-dashboard__header-left,
+/* extra class to override gutenberg styles */
+.tribe-editor__settings-dashboard .tribe-editor__settings-dashboard__close-button {
+	flex: none;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.38px;
+}
+
+.tribe-editor__settings-dashboard__header-left {
+
+	& > svg {
+		fill: #009FD4;
+		margin-right: 6px;
+
+		path {
+			fill: #009FD4;
+		}
+	}
+}
+
+.tribe-editor__settings-dashboard__header-left-text {
+	color: #141827;
+}
+
+.tribe-editor__settings-dashboard__close-button {
+
+	& > svg {
+		fill: #A2AAB2;
+		margin-right: 6px;
+
+		path {
+			fill: #A2AAB2;
+		}
+	}
+
+	&:hover,
+	&:focus {
+
+		& > svg {
+			fill: #009FD4;
+			margin-right: 6px;
+
+			path {
+				fill: #009FD4;
+			}
+		}
+	}
+
+	&:disabled {
+
+		&,
+		&:hover,
+		&:focus {
+
+			& > svg {
+
+				&,
+				& path {
+					fill: #AEB4BB;
+				}
+			}
+		}
+	}
+}
+
+.tribe-editor__settings-dashboard__close-button-text {
+	color: #8D949B;
+
+	.tribe-editor__settings-dashboard__close-button:hover &,
+	.tribe-editor__settings-dashboard__close-button:focus & {
+		color: #009FD4;
+	}
+
+	.tribe-editor__settings-dashboard__close-button:disabled &,
+	.tribe-editor__settings-dashboard__close-button:disabled:hover &,
+	.tribe-editor__settings-dashboard__close-button:disabled:focus & {
+		color: #AEB4BB;
+	}
+}
+
+.tribe-editor__settings-dashboard__content {
+	padding: 25px 14px;
+
+	@media (min-width: 600px) {
+		padding: 25px 28px;
+	}
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle name="Site Reviews">
+  <domain name="site-reviews">
+    <project name="Site Reviews" slug="site-reviews">
+      <source>
+        <directory>.</directory>
+      </source>
+      <target>
+        <directory>languages</directory>
+      </target>
+      <template>
+        <file>languages/site-reviews.pot</file>
+      </template>
+    </project>
+  </domain>
+  <exclude>
+    <directory>.git</directory>
+    <directory>.svn</directory>
+    <directory>node_modules</directory>
+    <directory>vendor</directory>
+  </exclude>
+</bundle>

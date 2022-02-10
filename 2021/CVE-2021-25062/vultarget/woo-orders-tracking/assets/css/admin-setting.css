@@ -1,0 +1,404 @@
+.wrap form .segment .vi-ui.dropdown.selection {
+    min-height: 37px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wot-place-holder {
+    background: white;
+    border: 1px dashed rgba(1, 1, 1, .3);
+    height: 50px !important;
+    line-height: 50px;
+    visibility: visible;
+}
+
+.iris-picker {
+    position: absolute !important;
+}
+
+input[type="number"] {
+    height: auto;
+}
+
+.select2-container--default .select2-selection--single {
+    height: 41px !important;
+    border: 1px solid rgba(34, 36, 38, .15) !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li .select2-search__field {
+    width: 100% !important;
+    border: 0;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid rgba(34, 36, 38, .15) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 34px !important;
+}
+
+.vi-ui-shipment {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-overlay {
+    background: white;
+    opacity: .6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999999;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-overlay:before {
+    content: url('../images/loading.gif');
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale3d(.5, .5, .5);
+}
+
+.woo-orders-tracking-setting-shipping-carriers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-filter-wrap {
+    display: flex;
+    min-width: 60%;
+    max-width: 65%;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-filter-wrap .woo-orders-tracking-setting-shipping-carriers-filter-type-wrap,
+.woo-orders-tracking-setting-shipping-carriers-filter-wrap .woo-orders-tracking-setting-shipping-carriers-filter-action-wrap,
+.woo-orders-tracking-setting-shipping-carriers-filter-wrap .woo-orders-tracking-setting-shipping-carriers-filter-country-wrap {
+    min-width: 30%;
+    max-width: 35%;
+    margin-right: 15px;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-filter-wrap .woo-orders-tracking-setting-shipping-carriers-filter-country-wrap {
+    margin-right: auto !important;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-search-wrap {
+    display: flex;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-list-wrap {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 19%);
+    grid-gap: 20px 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap {
+    max-width: 100%;
+    min-width: 90%;
+    padding: 8px;
+    border: 1px solid #eae8e8;
+    border-radius: 3px;
+    transition: 0.3s all;
+    position: relative;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap:hover {
+    box-shadow: 0 15px 10px -15px rgba(0, 0, 0, 0.21);
+    transform: scale(1);
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .woo-orders-tracking-setting-shipping-carrier-name {
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .woo-orders-tracking-setting-shipping-carrier-name a {
+    color: #0073aa;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap.custom-shipping-carrier-show-action .woo-orders-tracking-setting-shipping-carrier-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap.custom-shipping-carrier-show-action .woo-orders-tracking-setting-shipping-carrier-name a {
+    margin-right: 8px;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .woo-orders-tracking-setting-shipping-carrier-slug {
+    color: #b7b2b2;
+    font-size: 12px;
+    padding: 0;
+    margin: 5px 0;
+    position: relative;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .woo-orders-tracking-setting-shipping-carrier-slug span.woo-orders-tracking-copy-carrier-successful.dashicons.dashicons-yes {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #20d020;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .woo-orders-tracking-setting-custom-shipping-carrier-action {
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .woo-orders-tracking-setting-custom-shipping-carrier-action i {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+    transition: font-size 200ms ease;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .woo-orders-tracking-setting-custom-shipping-carrier-action i:hover {
+    font-size: 15px;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .woo-orders-tracking-setting-shipping-carrier-action .woo-orders-tracking-setting-shipping-carrier-action-default-wrap {
+    float: left;
+    font-size: 13px;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .vi-ui.toggle.checkbox input:checked ~ .box:after, .woo-orders-tracking-setting-shipping-carriers-wrap .vi-ui.toggle.checkbox .box:before, .vi-ui.toggle.checkbox label:before {
+    width: 3rem !important;
+    height: 1.2rem !important;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .vi-ui.toggle.checkbox input:checked ~ .box:after, .woo-orders-tracking-setting-shipping-carriers-wrap .vi-ui.toggle.checkbox .box:before, .vi-ui.toggle.checkbox label:after {
+    top: -3px !important;
+}
+
+.woo-orders-tracking-setting-shipping-carriers-wrap .vi-ui.toggle.checkbox input:checked ~ .box:after, .woo-orders-tracking-setting-shipping-carriers-wrap .vi-ui.toggle.checkbox input:checked ~ .box:after, .vi-ui.toggle.checkbox input:checked ~ label:after {
+    left: 1.56rem !important;
+}
+
+/*
+add new custom carrier css
+edit custom carrier css
+ */
+.add-new-shipping-carrier-html-content,
+.edit-shipping-carrier-html-content {
+    position: relative;
+    z-index: 99;
+    max-width: calc(100% - 40px);
+    max-height: 90%;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.add-new-shipping-carrier-html-content .add-new-shipping-carrier-html-content-header,
+.edit-shipping-carrier-html-content .edit-shipping-carrier-html-content-header {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    position: relative;
+}
+
+.add-new-shipping-carrier-html-content .add-new-shipping-carrier-html-content-header .add-new-shipping-carrier-html-content-close,
+.edit-shipping-carrier-html-content .edit-shipping-carrier-html-content-header .edit-shipping-carrier-html-content-close {
+    height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    opacity: .85;
+}
+
+.add-new-shipping-carrier-html-content .add-new-shipping-carrier-html-content-body,
+.edit-shipping-carrier-html-content .edit-shipping-carrier-html-content-body {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+}
+
+.add-new-shipping-carrier-html-content .add-new-shipping-carrier-html-content-body .add-new-shipping-carrier-html-content-body-row,
+.edit-shipping-carrier-html-content .edit-shipping-carrier-html-content-body .edit-shipping-carrier-html-content-body-row {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+.add-new-shipping-carrier-html-content .add-new-shipping-carrier-html-content-body .add-new-shipping-carrier-html-content-body-row .add-new-shipping-carrier-html-content-body-carrier-name-wrap,
+.add-new-shipping-carrier-html-content .add-new-shipping-carrier-html-content-body .add-new-shipping-carrier-html-content-body-row .add-new-shipping-carrier-html-content-body-country-wrap,
+.edit-shipping-carrier-html-content .edit-shipping-carrier-html-content-body .edit-shipping-carrier-html-content-body-row .edit-shipping-carrier-html-content-body-carrier-name-wrap,
+.edit-shipping-carrier-html-content .edit-shipping-carrier-html-content-body .edit-shipping-carrier-html-content-body-row .edit-shipping-carrier-html-content-body-country-wrap {
+    min-width: 40%;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-new-shipping-carrier-html-content .add-new-shipping-carrier-html-content-body .add-new-shipping-carrier-html-content-body-row .add-new-shipping-carrier-html-content-body-carrier-url-wrap,
+.edit-shipping-carrier-html-content .edit-shipping-carrier-html-content-body .edit-shipping-carrier-html-content-body-row .edit-shipping-carrier-html-content-body-carrier-url-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.add-new-shipping-carrier-html-content input[type="text"],
+.edit-shipping-carrier-html-content input[type="text"] {
+    min-height: 34px;
+    border-radius: 3px;
+    box-shadow: unset;
+}
+
+.add-new-shipping-carrier-html-content-footer,
+.edit-shipping-carrier-html-content-footer {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.select2-container.select2-container--add-new-shipping-carrier-select2.select2-container--open .select2-dropdown--below {
+    max-width: 100% !important;
+}
+
+.woo-orders-tracking-footer-container .select2-container.select2-container--add-new-shipping-carrier-select2.select2-container--open {
+    position: relative !important;
+    border-bottom: 0;
+}
+
+.woo-orders-tracking-footer-container .select2-container.select2-container--add-new-shipping-carrier-select2 {
+    height: 34px !important;
+    border: 1px solid rgba(34, 36, 38, .15);
+    border-radius: 3px;
+    line-height: 34px;
+}
+
+.select2-container.select2-container--add-new-shipping-carrier-select2.select2-container--open {
+    position: fixed !important;
+    z-index: 9999999999999;
+    width: 250px;
+    max-width: 250px;
+
+}
+
+.select2-container .select2-results__options {
+    max-height: 200px;
+    overflow: auto;
+}
+
+/*
+email settings css
+ */
+
+.woo-orders-tracking-setting-email-time-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.woo-orders-tracking-setting-email-time-wrap .woo-orders-tracking-setting-email-time-send,
+.woo-orders-tracking-setting-email-time-wrap .woo-orders-tracking-setting-email-time-send-delay {
+    max-width: 45%;
+}
+
+.woo-orders-tracking-footer-container .woo-orders-tracking-footer-content {
+    position: relative;
+    z-index: 99;
+    width: 50%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.woo-orders-tracking-footer-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.woo-orders-tracking-footer-container .woo-orders-tracking-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(1, 1, 1, 0.3);
+}
+
+.woo-orders-tracking-hidden {
+    display: none !important;
+}
+
+/*paypal css*/
+.woo-orders-tracking-setting-paypal-live-wrap-show {
+    margin: 0 !important;
+}
+
+.wot-paypal-app-table-header {
+    background: rgba(1, 1, 1, .7);
+}
+
+.wot-paypal-app-table-header th {
+    color: #ffffff;
+    text-align: center;
+}
+
+.wot-paypal-app-content td {
+    text-align: center;
+}
+
+.vi-ui.button.wot-paypal-app-content-action-btn {
+    font-size: 14px;
+    padding: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/*html no scroll*/
+html.wot-noscroll {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+/*Table of placeholders*/
+.woo-orders-tracking-table-of-placeholders {
+    max-width: 500px;
+}
+
+.vi-ui.tab {
+    height: unset !important;
+    float: unset !important;
+    background: white !important;
+}

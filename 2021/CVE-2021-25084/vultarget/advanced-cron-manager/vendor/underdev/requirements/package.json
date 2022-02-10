@@ -1,0 +1,22 @@
+{
+  "name": "requirements",
+  "version": "1.3.3",
+  "description": "WordPress drop-in to check requirements",
+  "scripts": {
+    "translate": "wp-pot -s '*.php' -o ./languages/underdev-requirements.pot -p underdev-requirements",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kubitomakita/Requirements.git"
+  },
+  "author": "underDEV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kubitomakita/Requirements/issues"
+  },
+  "homepage": "https://github.com/Kubitomakita/Requirements/#readme",
+  "devDependencies": {
+    "wp-pot-cli": "1.0.0"
+  }
+}

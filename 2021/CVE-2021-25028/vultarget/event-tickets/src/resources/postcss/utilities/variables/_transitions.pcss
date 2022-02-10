@@ -1,0 +1,30 @@
+:root {
+	/* -----------------------------------------------------------------------------
+	 * Transitions
+	 * ----------------------------------------------------------------------------- */
+
+	--tec-transition: all 0.2s ease;
+	--tec-transition-background-color: background-color 0.2s ease;
+	--tec-transition-color-border-color: color 0.2s ease, border-color 0.2s ease;
+	--tec-transition-transform: transform 0.2s ease;
+	--tec-transition-border-color: border-color 0.2s ease;
+	--tec-transition-color: color 0.2s ease;
+	--tec-transition-opacity: opacity 0.2s ease;
+
+	/* -----------------------------------------------------------------------------
+	 * For backwards Compatibility with plugins that have not been updated yet.
+	 * Remove these once all plugins have been updated to use the namespaced vars.
+	 * ----------------------------------------------------------------------------- */
+
+	/* -----------------------------------------------------------------------------
+	 * Transitions
+	 * ----------------------------------------------------------------------------- */
+
+	--transition: var(--tec-transition);
+	--transition-background-color: var(--tec-transition-background-color);
+	--transition-color-border-color: var(--tec-transition-color-border-color);
+	--transition-transform: var(--tec-transition-transform);
+	--transition-border-color: var(--tec-transition-border-color);
+	--transition-color: var(--tec-transition-color);
+	--transition-opacity: var(--tec-transition-opacity);
+}

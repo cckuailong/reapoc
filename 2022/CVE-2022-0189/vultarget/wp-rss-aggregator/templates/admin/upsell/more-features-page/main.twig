@@ -1,0 +1,79 @@
+<div class="wrap">
+    <h2>{% trans "More Features With Our Premium Add-Ons" %}</h2>
+    <p>
+        {% trans %}
+            The following addons are available to increase the functionality of the WP RSS Aggregator plugin.
+        {% endtrans %}
+    <p>
+    <p>
+        {% trans %}
+            Check out our pricing plans for bigger savings!
+        {% endtrans %}
+    </p>
+
+    <div id="add-ons" class="clearfix">
+        <div class="add-on-group clearfix">
+
+            {# PRO PLAN #}
+            <div class="add-on wp-box bundle-plan">
+                <span class="corner-ribbon">Most Popular</span>
+                <div class="inner">
+                    <h3>Pro Plan</h3>
+                    <p>A discounted bundle including:</p>
+                    <ul>
+                        <li>Feed to Post</li>
+                        <li>Full Text RSS Feeds</li>
+                        <li>Templates</li>
+                        <li>Keyword Filtering</li>
+                        <li>Source Categories</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a class="button button-secondary" href="https://wprssaggregator.com/pricing">
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+
+            {# BASIC PLAN #}
+            <div class="add-on bundle-plan">
+                <div class="inner">
+                    <h3>Basic Plan</h3>
+                    <p>A discounted bundle including:</p>
+                    <ul>
+                        <li>Templates</li>
+                        <li>Keyword Filtering</li>
+                        <li>Source Categories</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a class="button button-secondary" href="https://wprssaggregator.com/pricing">
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+
+            {# ADD_ONS #}
+            {% for item in items %}
+                {{ include('admin/upsell/more-features-page/' ~ item.type ~ '.twig') }}
+            {% endfor %}
+
+            {# SPOTLIGHT #}
+            <div class="add-on spotlight">
+                <span class="corner-ribbon">NEW</span>
+                <div class="inner">
+                    <h3>Instagram Feeds</h3>
+                    <p>
+                        Spotlight, a sister-product of WP RSS Aggregator, is the best and simplest way of adding
+                        Instagram feeds anywhere on your site in under 2 minutes.
+                    </p>
+                </div>
+                <div class="footer">
+                    <a class="button button-secondary" href="https://spotlightwp.com">
+                        Try Spotlight
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,263 @@
+@gridblock _height_big: calc(auto + 20px);
+#cmplz_selected_region {
+  font-size: 13px;
+}
+.cmplz-plusone {
+  border-radius: 50%;
+  background-color: #D7263D;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 10px;
+}
+.cmplz-bullet {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  text-decoration: none;
+}
+.cmplz-other-plugins .cmplz-bullet {
+  background-color: #333;
+}
+.plugin-color .cmplz-bullet,
+.cmplz-trick .cmplz-bullet {
+  margin-right: 10px;
+}
+#complianz .dashicons,
+#complianz .dashicons-before:before {
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+}
+#cmplz-dashboard {
+  /*
+	Progress labels
+   */
+}
+#cmplz-dashboard .cmplz-progress-warning-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 126px auto 50px;
+}
+#cmplz-dashboard .cmplz-progress-warning-container > div {
+  padding: 10px 0;
+}
+#cmplz-dashboard .cmplz-progress-warning-container > div:nth-child(3) {
+  padding: 0;
+}
+#cmplz-dashboard .cmplz-progress-warning-container button {
+  margin-top: 10px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+#cmplz-dashboard .cmplz-progress-warning-container button .cmplz-close-warning-x {
+  color: #ccc;
+  font-size: 0.9em;
+}
+#cmplz-dashboard .cmplz-scroll-container {
+  height: 260px;
+  margin-top: 20px;
+}
+#cmplz-dashboard .cmplz-progress-status-container {
+  margin-right: 40px;
+}
+#cmplz-dashboard .cmplz-progress-status {
+  display: block;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 4px 8px 4px 8px;
+  font-size: 0.8em;
+  font-weight: 600;
+  height: 17px;
+  line-height: 17px;
+}
+#cmplz-dashboard .cmplz-progress-status.cmplz-completed {
+  background-color: #61ce70;
+  color: white;
+}
+#cmplz-dashboard .cmplz-progress-status.cmplz-open {
+  background-color: #f8be2e;
+}
+#cmplz-dashboard .cmplz-progress-status.cmplz-urgent {
+  background-color: #D7263D;
+  color: white;
+}
+#cmplz-dashboard .cmplz-progress-bar,
+#cmplz-dashboard .cmplz-sync-progress-bar {
+  border-radius: 5px;
+  background: #dadada;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 20px;
+  width: 100%;
+}
+#cmplz-dashboard .cmplz-progress-bar .cmplz-progress-bar-value,
+#cmplz-dashboard .cmplz-sync-progress-bar .cmplz-progress-bar-value {
+  border-radius: 5px;
+  animation: cmplz-load-progress-bar 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  background: #61ce70;
+  height: 20px;
+  width: 0;
+}
+#cmplz-dashboard .cmplz-progress-percentage,
+#cmplz-dashboard .cmplz-progress-description {
+  float: left;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+#cmplz-dashboard .cmplz-progress-percentage {
+  margin-right: 6px;
+  font-size: 32px;
+}
+#cmplz-dashboard .cmplz-grid-progress {
+  display: grid;
+  grid-template-columns: 125px auto;
+}
+#cmplz-dashboard .cmplz-task {
+  margin-left: 10px;
+}
+#cmplz-dashboard .cmplz-task.active {
+  color: #333;
+  text-decoration: underline;
+}
+#cmplz-dashboard .cmplz-support textarea {
+  width: 100%;
+  height: 75px;
+  border-color: #cecece;
+  font-size: 13px;
+}
+#cmplz-dashboard .cmplz-document {
+  display: grid;
+  grid-template-columns: 160px 24px 24px 24px auto;
+  margin: 10px 0;
+}
+#cmplz-dashboard .cmplz-document .cmplz-icon {
+  margin-top: 2px;
+  margin-right: 5px;
+}
+#cmplz-dashboard .cmplz-document .cmplz-icon.bullet {
+  margin-top: 4px;
+}
+#cmplz-dashboard .cmplz-document.compact {
+  grid-template-columns: 190px auto;
+}
+#cmplz-dashboard .cmplz-document > div:not(:first-child) {
+  margin-left: auto;
+}
+#cmplz-dashboard .cmplz-document.cmplz-header > div:last-child {
+  padding-top: 14px;
+}
+#cmplz-dashboard .cmplz-document.cmplz-header a {
+  color: #d7d7d7;
+  font-size: 12px;
+  line-height: 2em;
+}
+#cmplz-dashboard .cmplz-document.flags {
+  margin-right: -10px;
+  grid-template-columns: 160px auto;
+}
+#cmplz-dashboard .cmplz-document.flags > div:not(:first-child) {
+  margin-left: initial;
+}
+#cmplz-dashboard .cmplz-document.flags .cmplz-flags-container {
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 24px);
+  justify-content: flex-end;
+  grid-gap: 0;
+}
+#cmplz-dashboard .cmplz-document h3 {
+  margin-bottom: 5px;
+}
+#cmplz-dashboard .cmplz-document select {
+  width: 200px;
+  font-size: 13px;
+}
+#cmplz-dashboard .button {
+  min-width: 100px;
+  text-align: center;
+}
+#cmplz-dashboard .item-footer a.button + a.button {
+  margin-left: 10px;
+}
+#cmplz-dashboard .cmplz-tools-row {
+  display: grid;
+  grid-template-columns: 190px auto;
+  margin: 10px 0;
+}
+#cmplz-dashboard .cmplz-tools-row > div:last-child {
+  margin-left: auto;
+}
+#cmplz-dashboard .cmplz-tools-row .cmplz-last-updated-poc {
+  white-space: nowrap;
+  font-size: 13px;
+}
+.cmplz-grid {
+  position: relative;
+}
+.cmplz-grid .cmplz-grid-item {
+  padding: 10px;
+}
+.cmplz-grid .cmplz-grid-item .item-container {
+  width: 100% !important;
+}
+@media only screen and (min-width: 400px) {
+  .cmplz-grid .cmplz-grid-item {
+    width: calc(100% - 2 * 10px);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .cmplz-grid .cmplz-grid-item {
+    width: calc(100% - 2 * 10px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cmplz-grid .cmplz-grid-item {
+    width: calc(100% - 2 * 10px);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cmplz-grid .cmplz-grid-item {
+    width: calc(100% - 2 * 10px);
+  }
+}
+@media only screen and (min-width: 1555px) {
+  .cmplz-grid .cmplz-grid-item {
+    width: calc(50% - 2 * 10px);
+  }
+}
+.cmplz-grid .cmplz-grid-item.small {
+  width: calc(100% - 2 * 10px);
+}
+@media only screen and (min-width: 400px) {
+  .cmplz-grid .cmplz-grid-item.small {
+    width: calc(100% - 2 * 10px);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .cmplz-grid .cmplz-grid-item.small {
+    width: calc(100% - 2 * 10px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cmplz-grid .cmplz-grid-item.small {
+    width: calc(50% - 2 * 10px);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cmplz-grid .cmplz-grid-item.small {
+    width: calc(50% - 2 * 10px);
+  }
+}
+@media only screen and (min-width: 1555px) {
+  .cmplz-grid .cmplz-grid-item.small {
+    width: calc(25% - 2 * 10px);
+  }
+}
+/*# sourceMappingURL=dashboard.css.map */

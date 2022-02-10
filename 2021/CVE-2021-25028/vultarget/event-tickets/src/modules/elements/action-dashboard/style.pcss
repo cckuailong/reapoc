@@ -1,0 +1,68 @@
+.tribe-editor__action-dashboard {
+	background-color: #f8f9fb;
+	display: flex;
+	position: relative;
+
+	@media (min-width: 600px) {
+		padding: 15px 28px;
+	}
+}
+
+.tribe-editor__action-dashboard__group-left {
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+
+.tribe-editor__action-dashboard__group-right {
+	display: flex;
+	align-items: center;
+	flex: none;
+	margin-left: auto;
+}
+
+.tribe-editor__action-dashboard__action-wrapper {
+	flex: none;
+	margin-right: 25px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+/* extra class to override gutenberg styles */
+.tribe-editor__action-dashboard {
+
+	.tribe-editor__action-dashboard__cancel-button,
+	.tribe-editor__action-dashboard__confirm-button {
+		flex: none;
+		font-family: 'Helvetica Neue', Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+	}
+
+	.tribe-editor__action-dashboard__cancel-button {
+		background-color: transparent;
+		font-size: 15px;
+		line-height: 18px;
+		padding: 0;
+		margin-right: 20px;
+		transition: color 0.2s ease;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover,
+		&:focus {
+			color: #009fd4;
+		}
+
+		&[disabled] {
+
+			&,
+			&:hover,
+			&:focus {
+				color: #8d949b;
+			}
+		}
+	}
+}

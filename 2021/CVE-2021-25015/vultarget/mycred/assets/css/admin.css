@@ -1,0 +1,146 @@
+/**
+ * myCRED Admin Styling
+ * @since 0.1
+ * @version 1.3
+*/
+#myCRED-wrap table .column-username { width: 190px; }
+#myCRED-wrap table .column-creds { width: 80px; }
+#myCRED-wrap table .column-time { width: 160px; }
+#myCRED-wrap table .column-actions { width: 160px; }
+#myCRED-wrap table .alternate { background-color: white; }
+#myCRED-wrap table tbody tr td { padding: 6px; }
+#myCRED-wrap table tr.deleted-row td { background-color: red !important; color: white !important; }
+#myCRED-wrap table tr.updated-row td { background-color: yellow; }
+
+/* Text Alignments */
+.tl { text-align: left; }
+.tc { text-align: center; }
+.tr { text-align: right; }
+.tj { text-align: justify; }
+
+/* Specifics */
+#myCRED-wrap p.submit { margin-top: 0; padding-top: 0; }
+#mycred-social { text-align: right; }
+
+/* General */
+#myCRED-wrap .h2 { font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif; font-size: 22px; line-height: 29px; font-weight: normal; text-shadow: #fff 0 1px 0; }
+body.version-3-8 #myCRED-wrap .h2 { line-height: 15px; font-size: 18px; }
+body.version-3-8 #myCRED-wrap .h2.description { line-height: 22px; }
+body.version-3-8 #myCRED-wrap .h2 input[type="text"] { font-size: 14px; }
+#myCRED-wrap .h2 input[type="text"], #myCRED-wrap .h2 input[type="password"] { line-height: inherit; }
+#mycred-social-media { display: block; float: right; }
+#mycred-social-media a { margin-left: 12px; }
+
+/* Accordion */
+#myCRED-wrap #accordion { margin: 24px 0; padding: 0; float: none; clear: both; }
+body #myCRED-wrap #accordion { border-top: none; border-bottom: 1px solid #dedede; }
+body.version-3-8 #myCRED-wrap #accordion { border-top: 1px solid #dedede; border-bottom: 1px solid #fafafa; }
+#myCRED-wrap #accordion>h4 { font-size: 18px; line-height: 48px; font-weight: normal; color: #464646; font-family: "Open Sans", sans-serif; letter-spacing: 1px; }
+#myCRED-wrap #accordion>h4:focus { outline: none; }
+#myCRED-wrap #accordion>h4:hover { cursor: pointer; }
+#myCRED-wrap #accordion .ui-accordion-header { padding: 0; margin: 0; }
+body #myCRED-wrap #accordion .ui-accordion-header { border-top: 1px solid #dedede; border-bottom: none; }
+body.version-3-8 #myCRED-wrap #accordion .ui-accordion-header { border-top: 1px solid #fafafa; border-bottom: 1px solid #dedede; }
+#myCRED-wrap #accordion .ui-accordion-header input { vertical-align: middle; margin-right: 24px; }
+#myCRED-wrap #accordion .ui-state-active { font-weight: normal; }
+
+#myCRED-wrap #accordion h4 label { vertical-align: inherit; }
+#myCRED-wrap #accordion h4 .icon { display: block; width: 48px; height: 48px; margin: 0 0 0 0; padding: 0; float: left; line-height: 48px; }
+#myCRED-wrap #accordion h4 .icon { background-repeat: no-repeat; background-image: url(../images/admin-icons.png); background-position: 0 0; }
+#myCRED-wrap #accordion h4 .icon.icon-active { background-position: -48px 0; }
+
+#myCRED-wrap #accordion h4 .registration { background-position: 0 -48px; }
+#myCRED-wrap #accordion h4 .registration.icon-active { background-position: -48px -48px; }
+
+#myCRED-wrap #accordion h4 .logging_in { background-position: 0 -96px; }
+#myCRED-wrap #accordion h4 .logging_in.icon-active { background-position: -48px -96px; }
+
+#myCRED-wrap #accordion h4 .publishing_content { background-position: 0 -144px; }
+#myCRED-wrap #accordion h4 .publishing_content.icon-active { background-position: -48px -144px; }
+
+#myCRED-wrap #accordion h4 .comments { background-position: 0 -192px; }
+#myCRED-wrap #accordion h4 .comments.icon-active { background-position: -48px -192px; }
+
+#myCRED-wrap #accordion h4 .link_click { background-position: 0 -240px; }
+#myCRED-wrap #accordion h4 .link_click.icon-active { background-position: -48px -240px; }
+
+#myCRED-wrap #accordion h4 .video_view { background-position: 0 -288px; }
+#myCRED-wrap #accordion h4 .video_view.icon-active { background-position: -48px -288px; }
+
+#myCRED-wrap #accordion h4 .affiliate { background-position: 0 -336px; }
+#myCRED-wrap #accordion h4 .affiliate.icon-active { background-position: -48px -336px; }
+
+#myCRED-wrap #accordion h4 .remote { background-position: 0 -384px; }
+#myCRED-wrap #accordion h4 .remote.icon-active { background-position: -48px -384px; }
+
+#myCRED-wrap #accordion h4 .site_visit { background-position: 0 -432px; }
+#myCRED-wrap #accordion h4 .site_visit.icon-active { background-position: -48px -432px; }
+
+#myCRED-wrap #accordion h4 .single { background-position: 0 -480px; }
+#myCRED-wrap #accordion h4 .multi { background-position: -48px -480px; }
+
+#myCRED-wrap #accordion h4 .core { background-position: 0 -528px; }
+#myCRED-wrap #accordion h4 .core.icon-active { background-position: -48px -528px; }
+
+#myCRED-wrap #accordion>div { margin: 0; padding: 24px 48px 12px 48px; }
+#myCRED-wrap #accordion>div>p { margin-top: 0; }
+#myCRED-wrap #accordion .ui-accordion-content { display: none;float: none; clear: both; }
+body #myCRED-wrap #accordion .ui-accordion-content { border-top: 1px solid #dedede; border-bottom: none; }
+body.version-3-8 #myCRED-wrap #accordion .ui-accordion-content { border-top: 1px solid #fafafa; border-bottom: 1px solid #dedede; }
+#myCRED-wrap #accordion .ui-accordion-content .wrapper:after { content: "."; height: 0; visibility: hidden; margin: 0; padding: 0; }
+
+.ui-accordion-content>div.wrapper { display: block; margin: 0; padding: 0; float: none; clear: both; }
+.ui-accordion-content>div.wrapper .clear { height: 0; visibility: hidden; display: block; float: none; clear: both; }
+.ui-accordion-content>div.wrapper p { margin: 0; padding: 0; }
+.ui-accordion-content>div.wrapper .description { float: right; clear: left; color: gray; font-style: italic; font-weight: normal; width: 50%; text-align: left; }
+.ui-accordion-content>div.wrapper .links { margin-bottom: 6px; padding-bottom: 4px; }
+.ui-accordion-content>form>p { margin: 0 0 24px 0; }
+
+.ui-accordion-content .subheader { display: block; width: 20%; float: left; margin: 0; font-size: 14px; font-weight: bold; }
+.ui-accordion-content input[type="file"] { line-height: 26px; }
+
+/* Organized Lists */
+#myCRED-wrap ol { list-style-type: none; display: block; padding: 0 0 24px 20%; margin: 0; float: none; clear: right; }
+#myCRED-wrap ol:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#myCRED-wrap ol.inline li { display: block; float: left; padding: 0 6px 6px 12px; }
+#myCRED-wrap ol.inline li:first-child { padding-left: 0; }
+#myCRED-wrap ol.inline li.block { float: none; padding: 0; clear: both; }
+#myCRED-wrap ol li.empty { display: block; height: 1px; float: none; clear: both; }
+#myCRED-wrap ol input.long { width: 50%; }
+#myCRED-wrap ol input.short { width: 80px; }
+#myCRED-wrap ol input[type="text"], 
+#myCRED-wrap ol input[type="checkbox"], #myCRED-wrap ol input[type="radio"] { margin-right: 12px; }
+#myCRED-wrap ol li.option .h2, #myCRED-wrap ol li.option select, #myCRED-wrap ol li.option textarea { margin-left: 24px; }
+
+/* Setup */
+#myCRED-wrap>h2 {  }
+#myCRED-wrap form.setup { width: 70%; }
+#myCRED-wrap form.setup ol { padding: 12px; }
+#myCRED-wrap form.setup .action-row { text-align: right; }
+#myCRED-wrap form.setup .action-row input { margin-right: 12px; }
+#myCRED-wrap form.setup ol.center { text-align: center; }
+#myCRED-wrap form.setup ol.center li { display: inline-block; min-width: 150px; padding: 0; margin: 0; text-align: center; }
+#myCRED-wrap form.setup ol.center li.min { width: 49%; float: left; text-align: left; }
+#myCRED-wrap form.setup .exchange-rate label { display: block; text-align: left; font-weight: bold; }
+#myCRED-wrap form.setup .delete-cubes label { padding-right: 12px; text-align: left; }
+#myCRED-wrap form.setup ol.regular li { text-align: left; float: left; padding: 6px; }
+#myCRED-wrap form.setup ol.regular li.tl { width: auto; min-width: inherit; }
+#myCRED-wrap form.setup ol li h2 { padding-right: 0; }
+
+#myCRED-wrap form.setup ul { line-height: 24px; }
+#myCRED-wrap form.setup ul li { padding: 6px 0; margin-bottom: 0; }
+#myCRED-wrap form.setup ul li span { font-size: smaller; }
+#myCRED-wrap form.setup ul li label { display: inline-block; width: 200px; max-width: 30%; font-weight: bold; }
+#myCRED-wrap form.setup ul li input { margin-right: 12px; vertical-align: middle; }
+
+.version-3-8 #accordion pre { background-color: #ddd; color: #333; padding: 6px; }
+.mycred-badge { border-radius: 5px; height: 192px; width: 173px; margin: 0 -5px; background: url('../images/about/badge.png') center 11px no-repeat; background-color: white; }
+.about-wrap .mycred-badge { position: absolute; top: 0; right: 0; }
+body.rtl .about-wrap .mycred-badge { right: auto; left: 0; }
+.mycred-actions { margin-bottom: 2em; }
+
+#mycred-about-wrap .feature-section .col-2:before, #mycred-about-wrap .feature-section .col-2:after, #mycred-about-wrap .feature-section.two-col p:before, #mycred-credit-wrap .feature-section .col-2:before, #mycred-credit-wrap .feature-section .col-2:after, #mycred-credit-wrap .feature-section.two-col p:before { content: ''; }
+
+/* Export */
+#export-log-history { clear: both; float: none; padding-bottom: 12px; margin-top: 12px; border-top: 1px solid #E1E1E1; border-bottom: 1px solid #E1E1E1; margin-bottom: 12px; }
+#export-log-history input { outline: none; }

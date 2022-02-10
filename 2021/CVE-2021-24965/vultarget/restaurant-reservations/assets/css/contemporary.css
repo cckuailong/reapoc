@@ -1,0 +1,225 @@
+.rtb-booking-form fieldset {
+	border: 0 solid #ccc;
+	margin: 0;
+	padding: 0;
+	margin-inline-start: 0;
+	padding-inline-start: 0;
+}
+.rtb-booking-form fieldset legend {
+	padding: 0;
+}
+
+.rtb-booking-form form select,
+.rtb-booking-form form textarea,
+.rtb-booking-form form input,
+#stripe-payment-form #cardElement {
+	border: 1px solid #ccc;
+	border-radius: 0;
+	background-color: white;
+	color: #777;
+	padding: 12px 21px;
+	max-width: 100%;
+}
+#stripe-payment-form #cardElement {
+	max-width: 500px;
+	width: 100%;
+	display: block;
+	margin: 18px 0;
+}
+.rtb-booking-form form select,
+.rtb-booking-form form input {
+	height: 48px;
+}
+.rtb-booking-form form input::webkit-input-placeholder,
+.rtb-booking-form form input:ms--input-placeholder,
+.rtb-booking-form form input::placeholder {
+	color: #aaa;
+}
+:is(.rtb-booking-form, #stripe-booking-form) button {
+	margin: 20px 0;
+}
+:is(.rtb-booking-form, #stripe-booking-form) button:disabled {
+	background-color: gray;
+}
+:is(.rtb-booking-form, #stripe-booking-form) button:disabled:hover {
+	text-decoration: none;
+}
+
+
+.rtb-booking-form fieldset.reservation {
+	margin-bottom: 80px;
+}
+.rtb-booking-form fieldset.reservation label {
+	margin-left: 21px;
+	color: #666;
+	font-weight: bold;
+}
+.rtb-booking-form fieldset.reservation .rtb-text {
+	position: relative;
+	float: left;
+	display: block;
+	width: 300px;
+}
+
+.rtb-booking-form fieldset > div:nth-of-type(2) {
+	left: -1px;
+}
+.rtb-booking-form fieldset > div:nth-of-type(3) {
+	left: -2px;
+}
+.rtb-booking-form fieldset > div:nth-of-type(4) {
+	left: -3px;
+}
+.rtb-booking-form fieldset > div:nth-of-type(5) {
+	left: -4px;
+}
+.rtb-booking-form fieldset > div:nth-of-type(6) {
+	left: -5px;
+}
+.rtb-booking-form fieldset > div:nth-of-type(7) {
+	left: -6px;
+}
+.rtb-booking-form fieldset > div:nth-of-type(8) {
+	left: -7px;
+}
+.rtb-booking-form fieldset > div:nth-of-type(9) {
+	left: -8px;
+}
+.rtb-booking-form fieldset > div:nth-of-type(10) {
+	left: -9px;
+}
+.rtb-booking-form fieldset.reservation .rtb-select {
+	position: relative;
+	float: left;
+	display: block;
+	width: 300px;
+}
+
+.rtb-booking-form form fieldset.reservation select,
+.rtb-booking-form form fieldset.reservation textarea,
+.rtb-booking-form form fieldset.reservation input {
+	width: 300px;
+}
+
+.rtb-booking-form form fieldset.reservation input,
+.rtb-booking-form form fieldset.reservation select {
+	background-color: white;
+	margin: 7px 0 0 0;      
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image:
+		linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 20px) 22px,
+		calc(100% - 15px) 22px,
+		calc(100% - 40px) 10px;
+	background-size:
+		5px 5px,
+		5px 5px,
+		1px 28px;
+	background-repeat: no-repeat;
+}
+.rtb-booking-form form fieldset.reservation select:focus {
+	background-image:
+		linear-gradient(45deg, gray 50%, transparent 50%),
+		linear-gradient(135deg, transparent 50%, gray 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 15px) 22px,
+		calc(100% - 20px) 22px,
+		calc(100% - 40px) 10px;
+	background-size:
+		5px 5px,
+		5px 5px,
+		1px 28px;
+	background-repeat: no-repeat;
+	outline: 0;
+}
+.rtb-booking-form form fieldset.reservation select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+
+
+.rtb-booking-form fieldset.rtb-contact {
+	margin-bottom: 60px;
+}
+.rtb-booking-form fieldset.rtb-contact label {
+	margin-left: 21px;
+	color: #666;
+	font-weight: bold;
+}
+.rtb-booking-form fieldset.rtb-contact .rtb-text {
+	position: relative;
+	float: left;
+	display: block;
+	width: 300px;
+}
+
+.rtb-booking-form form fieldset.rtb-contact select,
+.rtb-booking-form form fieldset.rtb-contact textarea,
+.rtb-booking-form form fieldset.rtb-contact input {
+	width: 300px;
+}
+
+.rtb-booking-form form fieldset .add-message {
+	clear: both;
+	position: relative;
+	float: left;
+	margin-top: 32px;
+}
+.rtb-booking-form .add-message a {
+	box-shadow: none;
+	padding: 6px 12px;
+	border: 2px solid #777;
+	background: white;
+	color: #777;
+	text-decoration: none;
+}
+.rtb-booking-form .add-message a:hover {
+	background: #777;
+	color: white;
+	text-decoration: none;
+}
+
+.rtb-booking-form form fieldset .rtb-textarea {
+	clear: both;
+	position: relative;
+	float: left;
+}
+
+
+.rtb-textarea {
+	margin-bottom: 24px;
+}
+.rtb-checkbox {
+	clear: both;
+	margin-bottom: 24px;
+}
+.rtb-booking-form fieldset select,
+.rtb-booking-form fieldset input {
+	margin-top: 0 !important;
+}
+
+
+@media screen and (max-width: 900px) {
+	.rtb-booking-form fieldset > div {
+		clear: both;
+	}
+	.rtb-booking-form fieldset > div:nth-of-type(2),
+	.rtb-booking-form fieldset > div:nth-of-type(3),
+	.rtb-booking-form fieldset > div:nth-of-type(4),
+	.rtb-booking-form fieldset > div:nth-of-type(5),
+	.rtb-booking-form fieldset > div:nth-of-type(6),
+	.rtb-booking-form fieldset > div:nth-of-type(7),
+	.rtb-booking-form fieldset > div:nth-of-type(8),
+	.rtb-booking-form fieldset > div:nth-of-type(9),
+	.rtb-booking-form fieldset > div:nth-of-type(10) {}
+		left: 0;
+	}	
+}

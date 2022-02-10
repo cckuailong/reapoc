@@ -1,0 +1,11 @@
+{% set audio_url = item.audio_url ? item.audio_url : item.enclosure %}
+{% set is_audio = wpra_is_audio_url(audio_url) %}
+
+{% if options.audio_player_enabled and is_audio %}
+    <div class="wpra-feed-audio">
+        <audio preload="none" controls>
+            <source src="{{ audio_url }}" type="{{ item.enclosure_type }}" />
+            Your browser does not support HTML5 audio players.
+        </audio>
+    </div>
+{% endif %}

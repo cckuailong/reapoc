@@ -1,0 +1,114 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Line Height
+//--------------------------------------------//
+@mixin line-height($heightValue: 16) {
+	line-height: ($heightValue * 1.25) * 1px;
+}
+
+// Center Align
+//--------------------------------------------//
+@mixin center($position) {
+  position: absolute;
+
+  @if $position == 'vertical' {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  @else if $position == 'horizontal' {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  }
+
+  @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+// Hide and Show
+//--------------------------------------------//
+@mixin fade($type) {
+
+  @if $type == 'hide' {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s;
+  }
+
+  @else if $type == 'show' {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+  }
+
+}
+
+// Clearfix
+//--------------------------------------------//
+@mixin clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Border Radius
+//--------------------------------------------//
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Position
+//--------------------------------------------//
+@mixin position($type: absolute, $top: null, $right: null, $bottom: null, $left: null, $content: '') {
+    content: $content;
+    display: block;
+    position: $type;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+// Transition
+//--------------------------------------------//
+@mixin transition($target: all, $time: 0.25s, $timing-function: linear) {
+    -webkit-transition: $target $time $timing-function 0s;
+    transition: $target $time $timing-function 0s;
+}
+
+// Black Transparency
+//--------------------------------------------//
+@function black($opacity: 0.4) {
+    @return rgba(0, 0, 0, $opacity);
+}
+
+// White Transparency
+//--------------------------------------------//
+@function white($opacity: 0.4) {
+    @return rgba(255, 255, 255, $opacity);
+}
+
+// Box Shadow
+//--------------------------------------------//
+@mixin box-shadow($horizontal: 0px, $vertical: 1px, $blur: 10px, $spread: 0, $opacity: 0.5) {
+    -webkit-box-shadow: $horizontal $vertical $blur $spread rgba(0, 0, 0, $opacity);
+    -moz-box-shadow: $horizontal $vertical $blur $spread rgba(0, 0, 0, $opacity);
+    box-shadow: $horizontal $vertical $blur $spread rgba(0, 0, 0, $opacity);
+}

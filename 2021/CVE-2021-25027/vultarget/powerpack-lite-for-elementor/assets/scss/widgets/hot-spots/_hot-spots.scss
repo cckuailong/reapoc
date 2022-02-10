@@ -1,0 +1,135 @@
+.pp-image-hotspots {
+    display: flex;
+    position: relative;
+}
+.pp-hot-spot-wrap {
+    cursor: pointer;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border-radius: 50%;
+    font-size: 14px;
+    display: inline-flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.pp-hot-spot-image {
+    position: relative;
+}
+.pp-hot-spot-inner {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &.hotspot-animation {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 0;
+            pointer-events: none;
+            animation: pp-glow 2s infinite;
+            left: 0;
+            top: 0;
+        }
+        &:hover:before {
+            animation: none;
+        }
+
+        & .pp-hotspot-text {
+            z-index: 1;
+        }
+    }
+}
+.pp-hot-spot-inner,
+.pp-hot-spot-inner:before {
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.pp-hotspot-icon {
+    position: relative;
+}
+.pp-hotspot-icon-wrap {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+@keyframes pp-glow {
+	0% {
+		transform: scale(1);
+        opacity: 1;
+	}
+	100% {
+        transform: scale(1.5);
+        opacity: 0;
+	}
+}
+.tipso_content p:last-child {
+    margin-bottom: 0;
+}
+.pp-hotspot-img-align- {
+    &center {
+        .pp-image-hotspots {
+            justify-content: center;
+        }
+    }
+    &left {
+        .pp-image-hotspots {
+            justify-content: flex-start;
+        }
+    }
+    &right {
+        .pp-image-hotspots {
+            justify-content: flex-end;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .pp-hotspot-img-align-tablet- {
+        &center {
+            .pp-image-hotspots {
+                justify-content: center;
+            }
+        }
+        &left {
+            .pp-image-hotspots {
+                justify-content: flex-start;
+            }
+        }
+        &right {
+            .pp-image-hotspots {
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .pp-hotspot-img-align-mobile- {
+        &center {
+            .pp-image-hotspots {
+                justify-content: center;
+            }
+        }
+        &left {
+            .pp-image-hotspots {
+                justify-content: flex-start;
+            }
+        }
+        &right {
+            .pp-image-hotspots {
+                justify-content: flex-end;
+            }
+        }
+    }
+}

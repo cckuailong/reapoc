@@ -1,0 +1,65 @@
+.pp-version-notice-bold-purple {
+    background: #655897;
+    height: auto;
+    box-sizing: border-box;
+    padding: 18px 7px 20px 7px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    line-height: 20px;
+    margin-left: -20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.pp-version-notice-bold-purple .pp-version-notice-bold-purple-button a {
+    background: #FCB223;
+    color: #000 !important;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 9px 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #fca871;
+    break-inside: avoid;
+    white-space: nowrap;
+}
+
+.pp-version-notice-bold-purple .pp-version-notice-bold-purple-button a:hover {
+    background: #fcca46;
+    color: #000 !important;
+}
+
+@media only screen and (min-width: 1075px) {
+    .pp-version-notice-bold-purple-message,
+    .pp-version-notice-bold-purple-button {
+        display: inline-block;
+    }
+
+    .pp-version-notice-bold-purple-message {
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 1074px) {
+    .pp-version-notice-bold-purple-message,
+    .pp-version-notice-bold-purple-button {
+        display: block;
+    }
+
+    .pp-version-notice-bold-purple-button {
+        margin-top: 20px;
+    }
+
+    .pp-version-notice-bold-purple-button a {
+        max-width: 170px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pp-version-notice-bold-purple {
+        padding-top: 60px;
+    }
+}

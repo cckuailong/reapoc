@@ -1,0 +1,137 @@
+/**
+ * Event Tickets - RSVP Structure
+ *
+ * @since 5.0.0
+ */
+
+.event-tickets {
+
+	.tribe-tickets__rsvp-actions-wrapper {
+		align-items: center;
+		display: flex;
+		flex: none;
+		justify-content: center;
+		text-align: center;
+
+		@media (--viewport-medium) {
+			border-left: 1px dashed var(--tec-color-border-secondary);
+			width: calc(3 * var(--tec-grid-width-1-of-8));
+		}
+	}
+
+	.tribe-tickets__rsvp-actions {
+		border-top: 1px dashed var(--tec-color-border-secondary);
+		margin-top: var(--tec-spacer-10);
+		padding: var(--tec-spacer-10) 0;
+		width: 100%;
+
+		@media (--viewport-medium) {
+			border-top: 0;
+			margin-top: 0;
+			padding: 0;
+		}
+
+		.tribe-common-c-btn {
+			max-width: 125px;
+		}
+	}
+
+	.tribe-tickets__rsvp-actions-button-going,
+	.tribe-tickets__rsvp-actions-button-not-going {
+		font-family: var(--tec-font-family-sans-serif);
+	}
+
+	/* -------------------------------------------------------------------------
+	 * RSVP Actions (Going / Can't go)
+	 * ------------------------------------------------------------------------- */
+
+	.tribe-tickets__rsvp-actions-rsvp-going {
+		margin-top: var(--tec-spacer-2);
+	}
+
+	.tribe-tickets__rsvp-actions-rsvp-not-going {
+		margin-top: var(--tec-spacer-8);
+
+		@media (--viewport-medium) {
+			margin-top: var(--tec-spacer-5);
+		}
+	}
+
+	.tribe-tickets__rsvp-actions-button-not-going {
+		font-size: var(--tec-font-size-2);
+
+		@media (--viewport-medium) {
+			font-size: var(--tec-font-size-1);
+		}
+	}
+
+	/* -------------------------------------------------------------------------
+	 * Full RSVP
+	 * ------------------------------------------------------------------------- */
+	.tribe-tickets__rsvp-actions-full {
+		padding: var(--tec-spacer-12) var(--tec-spacer-7) var(--tec-spacer-11) var(--tec-spacer-7);
+
+		@media (--viewport-medium) {
+			padding: 0 var(--tec-spacer-7);
+		}
+	}
+
+	.tribe-tickets__rsvp-actions-full-text {
+		color: var(--tec-color-text-secondary);
+		text-transform: uppercase;
+	}
+
+	/* -------------------------------------------------------------------------
+	 * RSVP Success
+	 * ------------------------------------------------------------------------- */
+	.tribe-tickets__rsvp-actions-success-going {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+
+		@media (--viewport-medium) {
+			justify-content: flex-start;
+		}
+	}
+
+	.tribe-tickets__rsvp-actions-success-going-check-icon {
+		background-color: var(--tec-color-accent-primary);
+		background-image: svg-inline(check-white);
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 100%;
+		display: inline-block;
+		height: var(--tec-spacer-7);
+		margin: 0 var(--tec-spacer-0);
+		width: var(--tec-spacer-7);
+	}
+
+	.tribe-tickets__rsvp-actions-success-going-text {
+		margin-left: var(--tec-spacer-1);
+		text-transform: capitalize;
+	}
+
+	.tribe-tickets__rsvp-actions-success-going-toggle {
+		display: flex;
+		justify-content: center;
+		margin-top: var(--tec-spacer-4);
+
+		@media (--viewport-medium) {
+			justify-content: flex-start;
+			margin-top: var(--tec-spacer-1);
+		}
+	}
+
+	.tribe-tickets__rsvp-actions-success-going-toggle-input {
+		flex: none;
+	}
+
+	.tribe-tickets__rsvp-actions-success-going-toggle-label {
+		text-align: left;
+	}
+
+	.tribe-tickets__rsvp-actions-success-going-toggle-label-underline {
+		cursor: help;
+		text-decoration: underline dotted;
+	}
+}

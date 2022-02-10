@@ -1,0 +1,362 @@
+/* ========= INFORMATION ============================
+	- document:  Wow-Plugin admin style!
+	- author:    Dmytro Lobov
+	- copyright: 2019 Wow-Company
+	- version:   1.0
+	- email:     d@dayes.dev
+==================================================== */
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+/*region Margin Class*/
+.is-t-margin {
+	margin-top: 1.5rem;
+}
+
+.is-b-margin {
+	margin-bottom: 1.5rem;
+}
+
+.is-l-margin {
+	margin-left: 1.5rem;
+}
+
+.is-r-margin {
+	margin-right: 1.5rem;
+}
+/*endregion*/
+
+
+/*region Live Preview*/
+.live-preview {
+	position: relative;
+	background-color: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.live-preview h3 {
+	padding: 15px;
+	margin-bottom: 0;
+	border-bottom: 1px solid #eeeeee;
+}
+.toggle-preview {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 15px;
+	cursor: pointer;
+}
+
+
+
+.live-builder {
+	position: relative;
+	width: 100%;
+	min-height: 200px;
+}
+/*endregion*/
+
+/*region Tabs content*/
+.tabs li {
+	cursor: pointer;
+}
+
+#tab-content .tab-content {
+	display: none;
+}
+
+#tab-content .tab-content.is-active {
+	display: block;
+}
+/*endregion*/
+
+/*region Admin Forms*/
+.select, .select select {
+	background: none !important;
+}
+
+.fip-icon-up-dir, .fip-icon-down-dir {
+	display: none;
+}
+/*endregion*/
+
+/*region Accordion*/
+.accordion-wrap {
+	max-width: 100%;
+	margin: 0 0 22px;
+}
+
+.accordion-wrap .accordion-title {
+	cursor: pointer;
+	border: 1px solid #ebedf2;
+	height: 56px;
+	line-height: 56px;
+	display: block;
+	font-weight: 300;
+	font-size: 18px;
+	position: relative;
+}
+
+.accordion-wrap .accordion-title .faq-title {
+	padding: 0 27px 0 20px;
+}
+
+.accordion-wrap .accordion-title .plus,
+.accordion-wrap .accordion-title .minus,
+.accordion-wrap .accordion-title .status {
+	float: left;
+	display: none;
+	width: 60px;
+	height: 100%;
+	border-right: 1px solid #ebedf2;
+	text-align: center;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.accordion-wrap .accordion-title.active {
+	background: #00d1b2;
+	color: #ffffff;
+}
+
+.accordion-wrap .accordion-title.active .status {
+	background: #00d1b2;
+	color: #ffffff !important;
+}
+
+.accordion-wrap .accordion-title .status {
+	display: block;
+	font-size: 32px;
+}
+
+.accordion-wrap .accordion-title .status.new {
+	color: #ffdd57;
+}
+
+.accordion-wrap .accordion-title .status.stop {
+	color: #f14668;
+}
+
+.accordion-wrap .accordion-title .status.done {
+	color: #4caf50;
+}
+
+.accordion-wrap .accordion-title .plus {
+	display: block;
+}
+
+.accordion-wrap .accordion-title.active .minus {
+	display: block;
+}
+
+.accordion-wrap .accordion-title.active .plus {
+	display: none;
+}
+
+.accordion-wrap .accordion-title .dashicons {
+	vertical-align: middle;
+}
+
+.accordion-wrap .accordion-content {
+	padding: 25px 30px;
+	border-width: 0 1px 1px;
+	border-style: solid;
+	border-color: #ebedf2;
+}
+/*endregion*/
+
+/*region Button action*/
+.wow-plugin .delete-item {
+	width: 128px;
+	height: 32px;
+	background: #797979;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	border: 0;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	transition-timing-function: ease-in-out;
+	transition-duration: .05s;
+	transition-property: all;
+	margin-left: 2px;
+}
+
+.wow-plugin .delete-item:hover, .wow-plugin .delete-item:active {
+	background: #656565;
+}
+
+.wow-plugin .saving {
+	color: #1f9ef8;
+	margin-right: 15px;
+	opacity: 0;
+
+}
+
+.wow-plugin .saving:before {
+	content: "\f316";
+	font-family: 'Dashicons';
+	margin-right: 5px;
+}
+/*endregion*/
+
+/*region Tooltip*/
+.wow-help {
+	font-size: 14px;
+	cursor: help;
+	color: hsl(217, 71%,  53%);
+}
+/*endregion*/
+
+/*region Items*/
+.height_screen {
+	height: 340px;
+	background: #fff;
+	text-align: center;
+}
+
+.height_screen p {
+	margin: 0;
+	padding: 1em;
+	font-size: 14px;
+}
+
+.height_screen img {
+	max-width: 100%;
+}
+
+.height_screen span {
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	display: block;
+}
+
+.height_screen a {
+	color: #000;
+	text-decoration: none;
+}
+
+.themes {
+	overflow: hidden;
+}
+
+.theme-actions {
+	background: rgba(244, 244, 244, 1) !important;
+}
+
+.theme-name {
+	height: auto !important;
+	text-align: left !important;
+}
+
+.install {
+	float: right;
+}
+/*endregion*/
+
+.wow-box {
+	margin: 25px auto 0;
+	padding: 15px;
+	background: #FFFFFF;
+	border: 1px solid #999999;
+}
+.wow-box.license {
+	max-width: 500px;
+}
+
+[data-share] {
+	color: #0073aa;
+	transition-property: border,background,color;
+	transition-duration: .05s;
+	transition-timing-function: ease-in-out;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#TB_ajaxContent {
+	width: auto !important;
+	height: 100% !important;
+	padding: 15px;
+	overflow-x: hidden !important;
+
+}
+
+@media only screen and (max-width: 760px) {
+	#TB_window {
+		height: 100% !important;
+		max-height: 100% !important;
+	}
+}
+
+/* ========================
+	Buttons
+======================== */
+a.ds-button {
+	text-decoration: none;
+}
+
+.ds-button {
+	border: none;
+	border-radius: 0;
+	font-weight: 400;
+	cursor: pointer;
+	justify-content: center;
+	padding-bottom: calc(0.5em - 1px);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: calc(0.5em - 1px);
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+
+}
+
+.ds-button.is-small {
+	border-radius: 2px;
+	font-size: 0.75em;
+}
+
+.ds-button.is-normal {
+	font-size: 1em;
+}
+
+.ds-button.is-medium {
+	font-size: 1.25em;
+}
+
+.ds-button.is-large {
+	font-size: 1.5em;
+}
+
+.ds-button.is-fullwidth {
+	display: flex;
+	width: 100%;
+}
+
+#wp-usercontent-media-buttons .popup-shortcode,
+#wp-admincontent-media-buttons .popup-shortcode{
+	display: none;
+}
+
+/* Color Picker style*/
+.color-alpha {
+	height: 100% !important;
+}
+
+.wp-picker-clear {
+	display: none !important;
+}
+
+.button.wp-color-result {
+	border-radius: 0 !important;
+	margin: 0 !important;
+}

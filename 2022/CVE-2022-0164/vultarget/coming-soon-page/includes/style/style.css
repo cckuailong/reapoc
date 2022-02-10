@@ -1,0 +1,349 @@
+body{
+   margin:0px;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover !important;
+}
+.hided_element{
+	visibility:hidden;
+}
+#title_style h1{
+	padding: 0px;
+	margin:0px;
+}
+#descrip{
+	margin: 5px 0px 5px 0px;
+}
+/*Coming Soon social icons style*/
+.soc_icon_coneiner{
+	display:inline-block;
+	margin-top:2%;
+	width: 100%;
+}
+.soc_icon_coneiner .soc_icon{
+	display: inline-block;
+	margin-right: 3%;
+}
+
+.soc_icon_coneiner .soc_icon img{
+	width:100%;				
+	max-height:82px;
+}
+/* Countdown style*/
+.countdown > div{
+	text-align:center;
+	margin-top:2%;
+	float:left;
+	color:#fff;
+	font-size:48px;
+	font-weight:bold;
+}
+.element_conteiner{
+	text-align:center;
+	min-width:150px;
+	display: inline-block;					
+}
+/*Time left style*/
+.time_left{
+	border:none;
+	
+	padding-bottom: 4%;
+	padding-top: 5%;
+	padding-left: 25%;
+	padding-right: 25%;
+	font-weight:bold;
+}
+.time_description{
+	text-align:center;
+	margin-top:6px;
+	margin-bottom:6px;
+	font-weight:bold;
+}
+/*Coming Soon Information style*/
+.information{
+	box-sizing:border-box;
+	display:inline-block;
+	z-index:999999;
+	width:100%;
+}
+#main_inform_div{
+	overflow:hidden;
+	box-sizing:border-box;
+	display:table;
+	position:absolute;
+	z-index:1000;
+}
+.aligment{
+	display:table-cell;
+	width: 10%;
+}
+
+#slider{
+	left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 680px; width: 1903px; z-index: -999999; position: fixed;
+}
+	
+	
+	
+	/*Countdown timer style part*/
+	
+	
+.ClassyCountdown-wrapper > div {
+    display: inline-block;
+    position: relative;
+	 margin-right:2%;
+   
+}
+.ClassyCountdown-value > span{
+	display:block;
+}
+.ClassyCountdown-wrapper .ClassyCountdown-value {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 0;
+    display: block;
+}	
+/*Countdown style*/
+#countdown{
+	height: auto;
+}
+figure, figcaption {
+	display: block;
+}
+.transition {
+    -webkit-transition: top 400ms linear;
+    -moz-transition: top 400ms linear;
+    -ms-transition: top 400ms linear;
+    -o-transition: top 400ms linear;
+    transition: top 400ms linear;
+}
+
+.timeTo {	
+	line-height: 108%;
+	font-weight: bold;
+	height: 32px;
+}
+
+.timeTo span {
+	vertical-align: top;
+}
+.timeTo figure {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.timeTo figcaption {
+	text-align: center;
+	/*font-size: 12px;*/
+	line-height: 80%;
+	font-weight: normal;
+	color: #888;
+}
+
+.timeTo div {
+	position: relative;
+	display: inline-block;
+	/*width: 25px;
+	height: 30px;*/
+	border-top: 1px solid silver;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+	overflow: hidden;
+}
+.timeTo div.first {
+	border-left: 1px solid silver;
+}
+
+.timeTo ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 3px;
+}
+
+.timeTo ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/********************* PROGRESS BAR STYLE ********************/
+
+
+
+#progressbar { 
+	height: 20px;  /* Here can be anything you need */
+	position: relative;
+	padding: 3px;
+	border-style: solid;
+	
+}
+#progressbar > span {
+	float:left;
+	display: block;
+	height: 100%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;			
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	background-color: #000000;		
+			
+	
+	position: relative;
+	overflow: hidden;
+}
+#progressbar > span:after, .animate > span > span {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: 
+	   -webkit-gradient(linear, 0 0, 100% 100%, 
+		  color-stop(.25, rgba(255, 255, 255, .2)), 
+		  color-stop(.25, transparent), color-stop(.5, transparent), 
+		  color-stop(.5, rgba(255, 255, 255, .2)), 
+		  color-stop(.75, rgba(255, 255, 255, .2)), 
+		  color-stop(.75, transparent), to(transparent)
+	   );
+	background-image: 
+		-moz-linear-gradient(
+		  -45deg, 
+		  rgba(255, 255, 255, .2) 25%, 
+		  transparent 25%, 
+		  transparent 50%, 
+		  rgba(255, 255, 255, .2) 50%, 
+		  rgba(255, 255, 255, .2) 75%, 
+		  transparent 75%, 
+		  transparent
+	   );
+	z-index: 1;
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	-webkit-animation: move 2s linear infinite;
+	overflow: hidden;
+}
+
+.animate > span:after {
+		display: none;
+}
+
+@-webkit-keyframes move {
+	0% {
+	   background-position: 0 0;
+	}
+	100% {
+	   background-position: 50px 50px;
+	}
+}
+	
+	
+		
+/********************* SUBSCRIBE STYLE ********************/
+.subscribe_input{
+	display:inline-block;
+	box-sizing: border-box;
+}
+.subscribe_input > input{
+	padding-left:8px;
+	padding-top: 6px;
+	width:100%;
+	padding-bottom: 3px;
+	border:1px solid;
+    font-size: 16px;
+	background: transparent;
+	font-style: italic;
+	
+}
+
+
+.subscribe_input.firstname{
+	margin-right:2%;	
+}
+.subscribe_input.firstname,.subscribe_input.lastname{
+	float:left;
+	margin-bottom:5px;
+	width:49%;
+}
+/*Email style*/
+.subscribe_input.email{
+	width:100%;
+}
+.subscribe_input > input:focus{
+	outline:none;
+}
+#user_loading_and_saving img{
+	height:25px;
+}
+	
+#user_loading_and_saving{
+	margin-top:6px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+
+
+.subscribe_input > input{
+	box-sizing: border-box;
+}
+/*Subscribe bar style*/
+.bar { 
+	position:relative;
+	display:block;
+	bottom:1px;
+}
+.bar:before, .bar:after{
+	content:'';
+	height:3px; 
+	width:0;
+	position:absolute;
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+}
+.bar:before {
+	left:50%;
+}
+.bar:after {
+	right:50%; 
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after{
+	width:50%;
+}
+
+
+/********************* Send button style ********************/
+
+#Send_mail_button{
+	cursor:pointer;
+	margin-top:8px;
+	border:none;
+	float:left;
+	padding-bottom: 5px;
+	padding-top: 7px;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-weight:bold;
+	font-family: monospace;
+}
+.user_mail_options {
+	display:inline-block;
+	width: 100%;
+}
+
+/********************* LINK TO ADMIN STYLE ********************/
+
+
+#link_style a{
+	text-decoration:none;
+}
+
+#youtube_for_phone{
+	display:none;
+}

@@ -1,0 +1,29 @@
+{
+    "name": "dhii/di-interface",
+    "description": "Interfaces for DI container implementations",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^5.3 | ^7.0",
+        "container-interop/container-interop": "^1.1",
+        "container-interop/service-provider": "^0.3"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1",
+        "codeclimate/php-test-reporter": "<=0.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Di\\": "src/"
+        }
+    }
+}

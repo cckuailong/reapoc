@@ -1,0 +1,177 @@
+/**
+ * This file should contain frontend styles that
+ * will be applied to all module instances.
+ */
+
+ .bb-heading-input.input-small {
+     width: 46px !important;
+ }
+
+.pp-heading-content {
+    overflow: hidden;
+}
+
+.pp-heading-content .pp-heading-link {
+	text-decoration: none;
+}
+
+.pp-heading-content .pp-heading.pp-separator-inline .heading-title {
+     display: inline-block;
+ }
+
+.pp-heading-content .pp-heading.pp-separator-inline .heading-title span {
+     position: relative;
+     display: inline-block;
+ }
+
+.pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before,
+.pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    border-width: 0;
+}
+
+.pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before {
+    right: 100%;
+}
+
+.pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {
+    left: 100%;
+}
+
+.pp-heading-content .pp-heading.pp-separator-inline.pp-left .heading-title span {
+    padding-left: 0 !important;
+}
+
+.pp-heading-content .pp-heading.pp-separator-inline.pp-right .heading-title span {
+    padding-right: 0 !important;
+}
+
+.pp-heading-content .pp-heading.pp-separator-inline.pp-left .heading-title span:before {
+    display: none;
+}
+
+.pp-heading-content .pp-heading.pp-separator-inline.pp-right .heading-title span:after {
+    display: none;
+}
+
+.pp-heading-content .pp-heading-separator {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.pp-heading-content .pp-heading-separator.line_with_icon:before {
+    right: 50%;
+    left: auto;
+}
+
+.pp-heading-content .pp-heading-separator.line_with_icon.pp-left:before {
+    display: none;
+}
+
+.pp-heading-content .pp-heading-separator.line_with_icon.pp-right:after {
+    display: none;
+}
+
+.pp-heading-content .pp-heading-separator.line_with_icon:after {
+    left: 50%;
+    right: auto;
+}
+
+.pp-heading-content .pp-heading-separator.line_with_icon.pp-left:after {
+    left: 1%;
+}
+
+.pp-heading-content .pp-heading-separator.line_with_icon.pp-right:before {
+    right: 1%;
+}
+
+.pp-heading-content .pp-heading-separator.line_with_icon:before,
+.pp-heading-content .pp-heading-separator.line_with_icon:after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    border-width: 0;
+    top: 50%;
+}
+
+.pp-heading-content .pp-heading-separator img.heading-icon-image {
+    vertical-align: middle;
+    box-shadow: none!important;
+    max-width: 100%;
+}
+
+.pp-heading-content .pp-heading-separator .pp-separator-line {
+    max-width: 100%;
+    display: block;
+}
+
+.pp-heading-content .pp-heading-separator .pp-heading-separator-icon {
+    display: inline-block;
+    text-align: center;
+}
+
+.pp-heading-content .pp-heading-separator.icon_only span {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    .pp-heading-content .pp-heading.pp-separator-inline.pp-tablet-left .heading-title span {
+        padding-left: 0 !important;
+    }
+    .pp-heading-content .pp-heading.pp-separator-inline.pp-tablet-right .heading-title span{
+        padding-right: 0 !important;
+    }
+    .pp-heading-content .pp-heading.pp-separator-inline.pp-tablet-left .heading-title span:before{
+        display: none;
+    }
+    .pp-heading-content .pp-heading.pp-separator-inline.pp-tablet-right .heading-title span:after {
+        display: none;
+    }
+    .pp-heading-content .pp-heading-separator.line_with_icon.pp-tablet-left:before {
+        display: none;
+    }
+    .pp-heading-content .pp-heading-separator.line_with_icon.pp-tablet-right:after{
+        display: none;
+    }
+    .pp-heading-content .pp-heading-separator.line_with_icon.pp-tablet-left:after {
+        left: 2%;
+    }
+    .pp-heading-content .pp-heading-separator.line_with_icon.pp-tablet-right:before {
+        right: 2%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .pp-heading-content .pp-heading.pp-separator-inline.pp-mobile-left .heading-title span {
+        padding-left: 0 !important;
+    }
+    .pp-heading-content .pp-heading.pp-separator-inline.pp-mobile-right .heading-title span {
+        padding-right: 0 !important;
+    }
+    .pp-heading-content .pp-heading.pp-separator-inline.pp-mobile-left .heading-title span:before {
+        display: none;
+    }
+    .pp-heading-content .pp-heading.pp-separator-inline.pp-mobile-right .heading-title span:after {
+        display: none;
+    }
+    .pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-left:before {
+        display: none;
+    }
+    .pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-left:before {
+        display: none;
+    }
+    .pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-right:after {
+        display: none;
+    }
+    .pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-left:after {
+        left: 2%;
+    }
+    .pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-right:before {
+        right: 2%;
+    }
+}

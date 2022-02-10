@@ -1,0 +1,354 @@
+img.wpam-action-icon {
+    cursor: pointer;
+    margin: 3px;
+}
+
+th.formHeader
+{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 1.0em;
+}
+
+table.wpam-form-table {
+
+}
+
+table.wpam-form-table th {
+    text-align: left;
+    font-weight: normal;
+    width: 150px;
+}
+
+div.wpam_form_errors
+{
+    color: red;
+    text-align: left;
+}
+
+label.wpam_form_error
+{
+    color: red;
+}
+input.wpam_form_error{
+    background-color: pink;
+}
+span.status_applied {
+    color: orange;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span.status_declined {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span.status_blocked {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+span.status_active {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span.status_inactive {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span.status_confirmed {
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span.status_approved {
+    color: #abd;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.positiveMoney
+{
+    color: green;
+    white-space: nowrap;
+}
+.negativeMoney{
+    color: red;
+    white-space: nowrap;
+}
+
+table.wpam_terms_table
+{
+    text-align: left;
+}
+
+div.buttonsBar
+{
+    margin: 20px;
+}
+div.buttonsBar > a
+{
+    margin: 0 15px 0 15px;
+    padding: 5px;
+    border: solid 1px #000;
+    background: #ccc;
+    color: #000;
+}
+div.accountSummaryBox > span
+{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div.summaryPanel{
+    font-size: 1.1em;
+}
+div.summaryPanelLine{
+    margin: 10px;
+}
+div.summaryPanelLineValue
+{
+    float: left;
+    width: 80px;
+    font-weight: bold;
+}
+
+/***** Affiliate Control Panel *****/
+
+.aff-wrap {
+    background: #fff;
+    border: solid 1px #DDD;
+}
+
+.aff-wrap .wrap {
+    padding: 0 1em 0 1em;
+}
+
+.wpam-nav-menu{
+    margin-bottom: 15px;
+}
+.wpam-nav-menu li{
+    padding: 0!important;
+    margin: 0!important;
+}
+.wpam-nav-menu ul{
+    padding: 0;
+    margin: 0;
+}
+
+.aff-wrap .widefat {
+    margin: 0 auto 0;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.wpam-registration-form{
+    text-align: center;
+}
+
+.daterange-form {
+    padding: 10px;
+    color: #000;
+}
+
+.wpam-daterange-heading{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.wpam-daterange-selection{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.wpam-daterange-selection input {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.wpam-daterange-selection label {
+    display: block;
+}
+.wpam-daterange-action-buttons{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.wpam-creative-type{
+    text-transform: capitalize;
+}
+.wpam-creative-code{
+    width: 95%;
+}
+
+.wpam-save-profile{
+    margin: 15px;
+    text-align: center;
+}
+
+div.wpam-tip
+{
+    padding: 15px 30px;
+    background-color:#ffc;
+    border: 1px solid #fc0;
+    width: 600px;
+}
+
+div.wpam-error-tip
+{
+    padding: 15px 30px;
+    background-color:#fee;
+    border: 1px solid #daa;
+    width: 600px;
+}
+
+div.wpam-success-tip
+{
+    padding: 15px 30px;
+    background-color:#dfd;
+    border: 1px solid #0b0;
+    width: 600px;
+}
+
+
+.totalsTable th {
+    text-align: left;
+    padding: 6px;
+}
+.totalsTable td {
+    padding: 3px;
+    vertical-align: top;
+}
+table.totalsTable {
+    padding: 10px;
+    margin-top: 10px;
+}
+th.moneyCell, td.moneyCell {
+    text-align: right;
+}
+tr.totalRow {
+    font-size: 1.5em;
+
+}
+tr.totalSeparatorRow td {
+    height: 1px;
+    padding: 0;
+    background-color: #aaa;
+}
+
+tr.transaction-pending {
+    background-color: #ffc;
+    color: #000;
+}
+tr.transaction-confirmed {
+    background-color: #dfd;
+    color: #000;
+}
+tr.transaction-failed {
+    background-color: #fee;
+    color: #000;
+}
+
+td#landing-page-slug { 
+    vertical-align: middle;
+}
+
+/*** Affiliate registration page ***/
+.wpam_registration_input_help_text{
+    max-width: 350px;
+}
+
+/*** Contact info table ***/
+
+.wpam-contact-info tbody, .wpam-contact-info td, .wpam-contact-info tr { 
+    display: block; 
+}
+
+.wpam-contact-info td + td {
+    border: none;
+    border-bottom: 1px solid #cbcbcb;
+    padding-bottom: 20px;
+}
+
+.wpam-contact-info input, .wpam-contact-info select {
+    min-width: 50%;
+}
+
+/*** Responsive table ***/
+table.wpam-responsive-table { 
+    border-collapse: collapse; 
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    .wpam-contact-info input, .wpam-contact-info select {
+        width: 100%;
+    }
+
+    .wpam-daterange-selection input {
+        width: 100%;
+    }
+
+    .wpam-creative-detail td + td {
+        border: none;
+        border-bottom: 1px solid #cbcbcb;
+        padding-bottom: 20px;
+    }
+
+    .wpam-creative-detail tr td:first-child {
+        font-weight: bold;
+    }
+    .wpam-creative-detail tbody, .wpam-creative-detail td, .wpam-creative-detail tr { 
+        display: block; 
+    }
+    table.wpam-responsive-table { 
+        width: 100%; 
+    }
+
+    /* Force table to not be like tables anymore */
+    table.wpam-responsive-table, table.wpam-responsive-table thead, table.wpam-responsive-table tbody, table.wpam-responsive-table th, table.wpam-responsive-table td, table.wpam-responsive-table tr { 
+        display: block; 
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    table.wpam-responsive-table thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table.wpam-responsive-table tr { border: 1px solid #ccc; }
+
+    table.wpam-responsive-table td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    table.wpam-responsive-table td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        /* Label the data */
+        content: attr(data-column);
+
+        color: #000;
+        font-weight: bold;
+    }
+
+}

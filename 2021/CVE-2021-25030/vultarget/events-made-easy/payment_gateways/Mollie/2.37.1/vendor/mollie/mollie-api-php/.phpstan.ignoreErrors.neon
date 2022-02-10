@@ -1,0 +1,21 @@
+parameters:
+    ignoreErrors:
+        -
+            message: '/Variable \$mollie might not be defined./'
+            paths:
+                - %currentWorkingDirectory%/examples
+
+        -
+            message: "#^Call to an undefined method Mollie\\\\Api\\\\Endpoints\\\\EndpointAbstract\\:\\:getResourceCollectionObject\\(\\)\\.$#"
+            count: 1
+            path: src/Endpoints/EndpointAbstract.php
+
+        -
+        	message: '/Access to undefined constant GuzzleHttp\\ClientInterface::/'
+        	path: src/HttpAdapter/MollieHttpAdapterPicker.php
+        	count: 1
+
+        -
+        	message: '/Access to undefined constant GuzzleHttp\\ClientInterface::/'
+        	path: src/HttpAdapter/Guzzle6And7MollieHttpAdapter.php
+        	count: 1

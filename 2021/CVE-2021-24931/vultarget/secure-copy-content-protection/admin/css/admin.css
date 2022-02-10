@@ -1,0 +1,83 @@
+#adminmenu a.toplevel_page_secure-copy-content-protection div.wp-menu-image img {
+    padding: 0;
+    opacity: .6;
+    width: 32px;
+    transition: all .3s;
+}
+
+#adminmenu a.toplevel_page_secure-copy-content-protection + ul.wp-submenu.wp-submenu-wrap li:last-child a {
+    color: #68A615;
+}
+
+div#ays_ask_question_content_inner{
+    position: relative;
+}
+
+div#ays_ask_question_content div#ays_ask_question_content_inner a#ays_poll_queztion_link{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-family: cursive;
+    width: 95%;
+    font-weight: bold;
+    box-shadow: unset;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotate(4deg);
+    height: 75%;
+}
+
+div#ays_ask_question_content{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 11111;
+
+}
+
+/* Admin notes */
+div#ays-sccp-dicount-month-main{
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
+    position: relative;
+    z-index: 1;
+    min-height: 80px;
+}
+.ays_sccp_dicount_info button{
+    display: flex;
+    align-items: center;
+}
+
+div#ays-sccp-dicount-month-main div#ays-sccp-dicount-month a.ays-sccp-sale-banner-link:focus{
+    outline: none;
+    box-shadow: 0;
+}
+
+.btn-link{
+    font-weight: 400;
+    color: #007bff;
+    background-color: transparent;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem
+}
+
+

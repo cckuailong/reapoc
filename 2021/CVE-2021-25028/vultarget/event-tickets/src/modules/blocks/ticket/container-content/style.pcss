@@ -1,0 +1,65 @@
+.tribe-editor__container-panel__content {
+
+	.tribe-editor__ticket & {
+		display: none;
+	}
+
+	.tribe-editor__ticket--selected & {
+		display: block;
+	}
+}
+
+.tribe-editor__ticket__content-row {
+	display: flex;
+	align-items: flex-start;
+}
+
+.tribe-editor__ticket__content-row--sku {
+	align-items: center;
+	padding-top: 30px;
+}
+
+.tribe-editor__ticket__content-row--ecommerce-options {
+	align-items: baseline;
+}
+
+.tribe-editor__ticket__content-row .tribe-editor__label-with-tooltip,
+.tribe-editor__ticket__content-row--ecommerce-options .tribe-editor__labeled-item__label {
+	flex: none;
+	width: 160px;
+}
+
+.tribe-editor__labeled-item__label {
+
+	.tribe-editor__ticket__content-row & {
+		color: #545d66;
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 0.38px;
+		line-height: 18px;
+
+		.tribe-editor__ticket--disabled & {
+			color: #AEB4BB;
+		}
+	}
+}
+
+.tribe-editor__label-with-tooltip__tooltip-label {
+
+	.tribe-editor__ticket__content-row & {
+		margin-left: 5px;
+	}
+}
+
+svg.tribe-editor__ticket__tooltip-label {
+
+	.tribe-editor__ticket__content-row & {
+		width: 17px;
+		height: 17px;
+		fill: #a2aab2;
+
+		.tribe-editor__ticket--disabled & {
+			fill: #AEB4BB;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.oxi-addons-container [class^='oxi-image-rotate'],
+.oxi-addons-container [class*='oxi-image-rotate'] {
+    overflow: hidden;
+}
+
+.oxi-addons-container [class^='oxi-image-rotate'] .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*='oxi-image-rotate'] .oxi-image-hover-figure-caption {
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.oxi-addons-container [class^='oxi-image-rotate']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*='oxi-image-rotate']:hover .oxi-image-hover-figure-caption,
+.oxi-addons-container [class^='oxi-image-rotate'].oxi-touch .oxi-image-hover-figure-caption,
+.oxi-addons-container [class*='oxi-image-rotate'].oxi-touch .oxi-image-hover-figure-caption {
+    opacity: 1;
+    -webkit-transition-delay: 0.14s;
+    -moz-transition-delay: 0.14s;
+    -o-transition-delay: 0.14s;
+    transition-delay: 0.14s;
+}
+
+.oxi-addons-container .oxi-image-rotate-left:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-rotate-left.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: scale(1.3) rotate(-15deg);
+    -moz-transform: scale(1.3) rotate(-15deg);
+    -ms-transform: scale(1.3) rotate(-15deg);
+    -o-transform: scale(1.3) rotate(-15deg);
+    transform: scale(1.3) rotate(-15deg);
+}
+
+.oxi-addons-container .oxi-image-rotate-right:hover .oxi-image-hover-image,
+.oxi-addons-container .oxi-image-rotate-right.oxi-touch .oxi-image-hover-image {
+    -webkit-transform: scale(1.3) rotate(15deg);
+    -moz-transform: scale(1.3) rotate(15deg);
+    -ms-transform: scale(1.3) rotate(15deg);
+    -o-transform: scale(1.3) rotate(15deg);
+    transform: scale(1.3) rotate(15deg);
+}

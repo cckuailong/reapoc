@@ -1,0 +1,93 @@
+/**
+ * Event Tickets - Tickets Stylesheet - Quantity
+ *
+ * @since 5.0.3
+ */
+
+.event-tickets,
+.entry .entry-content .event-tickets {
+	/*
+		Block quantity
+	*/
+	.tribe-tickets__tickets-item-quantity {
+		align-self: flex-start;
+		color: var(--tec-color-text-secondary);
+		display: flex;
+		flex: 0 0 82px;
+		-ms-grid-column: 3;
+		grid-column: 3;
+		-ms-grid-row: 1;
+		grid-row: 1 / span 2;
+		-ms-grid-row-span: 2;
+		justify-content: center;
+	}
+
+	.tribe-tickets__tickets-item[data-available="false"] .tribe-tickets__tickets-item-quantity {
+		align-self: center;
+	}
+
+	.tribe-tickets__tickets-item-quantity-add,
+	.tribe-tickets__tickets-item-quantity-remove {
+		align-self: center;
+		background-color: transparent;
+		color: var(--tec-color-icon-secondary);
+		display: inline-block;
+		font-size: 24px;
+		font-weight: var(--tec-font-weight-regular);
+		margin-bottom: var(--tec-spacer-0);
+		width: 12px;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			color: var(--tec-color-icon-primary);
+		}
+	}
+
+	.tribe-tickets__tickets-item-quantity-number {
+		align-items: center;
+		appearance: none;
+		background-color: transparent;
+		border: none;
+		color: var(--tec-color-icon-secondary);
+		cursor: pointer;
+		display: inline-flex;
+		height: 48px;
+		justify-content: center;
+		margin: 0;
+		outline: none;
+		overflow: hidden;
+		position: relative;
+		width: 40px;
+	}
+
+	.tribe-tickets__tickets-item-quantity-unavailable {
+		margin-left: var(--tec-spacer-1);
+		white-space: nowrap;
+	}
+
+	.tribe-tickets__form {
+		input[type="number"].tribe-tickets__tickets-item-quantity-number-input {
+			appearance: textfield;
+			background: transparent;
+			border: none;
+			color: var(--tec-color-text-primary);
+			padding: 0;
+			text-align: center;
+			width: fit-content;
+
+			&::-webkit-inner-spin-button,
+			&::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+			}
+
+			&:focus {
+				color: var(--tec-color-text-primary);
+			}
+
+			&.tribe-tickets__tickets-item-quantity-number--active {
+				color: var(--tec-color-text-primary);
+			}
+		}
+	}
+}

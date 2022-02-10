@@ -1,0 +1,53 @@
+.ewd-ufaq-explanation {
+	margin: 24px 2%;
+	font-size: 1.1em;
+}
+.ewd-ufaq-category-filter {
+	margin-bottom: 10px !important;
+}
+#ewd_ufaq_faqs.woocommerce_options_panel th {
+  padding: 15px 10px;
+}
+#ewd_ufaq_faqs.woocommerce_options_panel th:first-of-type {
+  width: 10%;
+}
+#ewd_ufaq_faqs.woocommerce_options_panel tr {
+  border-bottom: 1px solid #eee;
+}
+#ewd-ufaq-add-delete-faq-form-container {
+  position: relative;
+  float: left;
+  width: 100%;
+  clear: both;
+}
+#ewd-ufaq-add-faq-form-div, #ewd-ufaq-delete-faq-form-div {
+  position: relative;
+  float: left;
+  width: 45%;
+  padding: 0 2%;
+}
+#ewd-ufaq-delete-faq-form-div {
+  margin-top: 31px;
+  border-left: 1px solid #eee;
+}
+@media screen and (max-width: 1200px) {
+  #ewd-ufaq-add-faq-form-div, #ewd-ufaq-delete-faq-form-div {
+    width: 96%;
+  }
+  #ewd-ufaq-delete-faq-form-div {
+    border-left: none;
+  }
+}
+.ewd-ufaq-delete-faq-button, .ewd-ufaq-add-faq-button {
+  clear: both;
+  position: relative;
+  margin: 12px 0 12px 10px;
+  padding: 5px 8px;
+  border: none;
+  background: #bbb;
+  color: #fff;
+  cursor: pointer;
+}
+.ewd-ufaq-delete-faq-button:hover, .ewd-ufaq-add-faq-button:hover {
+  background: #ccc;
+}
