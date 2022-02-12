@@ -16,9 +16,11 @@
 | CVE-2019-10068 |  | 反序列化 | 9.8 | N | [Y](CVE-2019-10068/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10068/poc/others/) |
 | CVE-2019-10092 | web | 跨站脚本 | 6.1 | N | [Y](CVE-2019-10092/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10092/poc/others/) |
 | CVE-2019-1010287 | Timesheet-NG | 跨站脚本 | 6.1 | N | [Y](CVE-2019-1010287/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2019-1020010 |  | 跨站脚本 | 6.1 | [Y](CVE-2019-1020010/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-10232 | GLPI | SQL注入 | 9.8 | N | [Y](CVE-2019-10232/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-10475 | Jenkins | 跨站脚本 | 6.1 | N | [Y](CVE-2019-10475/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10475/poc/others/) |
 | CVE-2019-10664 |  | SQL注入 | 9.8 | [Y](CVE-2019-10664/vultarget/) | N | N | N | N | N | N | [Y](CVE-2019-10664/poc/others/) |
+| CVE-2019-10757 |  | SQL注入 | 9.8 | [Y](CVE-2019-10757/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-10758 | Express | 代码执行 | 9.9 | [Y](CVE-2019-10758/vultarget/) | N | [Y](CVE-2019-10758/poc/xray/) | N | N | N | N | [Y](CVE-2019-10758/poc/others/) |
 | CVE-2019-11013 |  | 路径遍历 | 6.5 | N | [Y](CVE-2019-11013/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-11013/poc/others/) |
 | CVE-2019-11043 | PHP | 命令执行 | 9.8 | [Y](CVE-2019-11043/vultarget/) | [Y](CVE-2019-11043/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-11043/poc/others/) |
@@ -48,6 +50,7 @@
 | CVE-2019-14322 | web | 路径遍历 | 7.5 | N | [Y](CVE-2019-14322/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-14322/poc/others/) |
 | CVE-2019-14470 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2019-14470/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-14470/poc/others/) |
 | CVE-2019-14696 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2019-14696/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-14696/poc/others/) |
+| CVE-2019-14772 |  | 跨站脚本 | 6.1 | [Y](CVE-2019-14772/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-14974 | SugarCRM | 跨站脚本 | 6.1 | N | [Y](CVE-2019-14974/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-14974/poc/others/) |
 | CVE-2019-15043 | Grafana | 访问控制错误 | 7.5 | N | [Y](CVE-2019-15043/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-15043/poc/others/) |
 | CVE-2019-15107 | Webmin | 命令执行 | 9.8 | [Y](CVE-2019-15107/vultarget/) | [Y](CVE-2019-15107/poc/nuclei/) | [Y](CVE-2019-15107/poc/xray/) | N | N | N | N | [Y](CVE-2019-15107/poc/others/) |
@@ -60,6 +63,7 @@
 | CVE-2019-15866 |  | 代码问题 | 8.8 | [Y](CVE-2019-15866/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-15889 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2019-15889/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-15889/poc/others/) |
 | CVE-2019-16097 | harbor | 权限许可和访问控制问题 | 6.5 | N | [Y](CVE-2019-16097/poc/nuclei/) | [Y](CVE-2019-16097/poc/xray/) | N | N | N | N | [Y](CVE-2019-16097/poc/others/) |
+| CVE-2019-16113 |  | 代码注入 | 8.8 | [Y](CVE-2019-16113/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-16123 | web | 路径遍历 | 7.5 | N | [Y](CVE-2019-16123/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-16131 |  | 代码问题 | 8.8 | [Y](CVE-2019-16131/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-16278 | nostromo | 命令执行 | 9.8 | [Y](CVE-2019-16278/vultarget/) | [Y](CVE-2019-16278/poc/nuclei/) | [Y](CVE-2019-16278/poc/xray/) | N | N | N | N | [Y](CVE-2019-16278/poc/others/) |
@@ -82,6 +86,7 @@
 | CVE-2019-17558 | Solr | 命令执行 | 7.5 | [Y](CVE-2019-17558/vultarget/) | [Y](CVE-2019-17558/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-17558/poc/others/) |
 | CVE-2019-17564 | Apache默认页面 | 代码执行 | 9.8 | [Y](CVE-2019-17564/vultarget/) | N | N | N | N | N | N | [Y](CVE-2019-17564/poc/others/) |
 | CVE-2019-1821 | Cisco-公司产品 | 输入验证错误 | 9.8 | N | [Y](CVE-2019-1821/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-1821/poc/others/) |
+| CVE-2019-18350 |  | 跨站脚本 | 6.1 | [Y](CVE-2019-18350/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-18393 | openfire | 路径遍历 | 5.3 | [Y](CVE-2019-18393/vultarget/) | [Y](CVE-2019-18393/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-18394 | openfire | 代码问题 | 9.8 | [Y](CVE-2019-18394/vultarget/) | [Y](CVE-2019-18394/poc/nuclei/) | [Y](CVE-2019-18394/poc/xray/) | N | N | N | N | N |
 | CVE-2019-18662 |  | SQL注入 | 9.8 | [Y](CVE-2019-18662/vultarget/) | N | N | N | N | N | N | N |
@@ -151,5 +156,6 @@
 | CVE-2019-9644 |  | 跨站脚本 | 5.4 | [Y](CVE-2019-9644/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-9670 | Zimbra | 代码问题 | 9.8 | [Y](CVE-2019-9670/vultarget/) | [Y](CVE-2019-9670/poc/nuclei/) | [Y](CVE-2019-9670/poc/xray/) | N | N | N | N | [Y](CVE-2019-9670/poc/others/) |
 | CVE-2019-9733 |  | 访问控制错误 | 9.8 | [Y](CVE-2019-9733/vultarget/) | [Y](CVE-2019-9733/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2019-9787 |  | 跨站请求伪造 | 8.8 | [Y](CVE-2019-9787/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-9955 | ZyXEL | 跨站脚本 | 6.1 | N | [Y](CVE-2019-9955/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-9955/poc/others/) |
 | CVE-2019-9978 | WordPress | 跨站脚本 | 6.1 | [Y](CVE-2019-9978/vultarget/) | [Y](CVE-2019-9978/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-9978/poc/others/) |

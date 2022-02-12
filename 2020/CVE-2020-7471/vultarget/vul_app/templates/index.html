@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Index</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+        table, th, td {
+            border: 1px solid black;
+            font-size: 20px
+        }
+        </style>
+    </head>
+    <body>
+        <h1>CVE-2020-7471</h1>
+        <h2>Table of employees group by gender</h2>
+        <table>
+            {% for row in rows %}
+                <tr>
+                    <th> {{row.gender}} </th>
+                    <td> {{row.group}} </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

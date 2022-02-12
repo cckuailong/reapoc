@@ -67,6 +67,7 @@
 | CVE-2018-14912 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-14912/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-14912/poc/others/) |
 | CVE-2018-14916 | Loytec LGATE-902 | 代码问题 | 9.1 | N | [Y](CVE-2018-14916/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-15138 | Ericsson-LG公司产品 | 路径遍历 | 7.5 | N | [Y](CVE-2018-15138/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-15139 |  | 代码问题 | 8.8 | [Y](CVE-2018-15139/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-15473 | OpenSSH | 信息泄露 | 5.3 | [Y](CVE-2018-15473/vultarget/) | [Y](CVE-2018-15473/poc/nuclei/) | N | [Y](CVE-2018-15473/poc/pocsuite2/) | N | N | N | [Y](CVE-2018-15473/poc/others/) |
 | CVE-2018-15517 |  | 资料不足 | 8.6 | N | [Y](CVE-2018-15517/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-15535 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-15535/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-15535/poc/others/) |

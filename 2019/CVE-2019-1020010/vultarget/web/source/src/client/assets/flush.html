@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Misskey—SNS</title>
+		<script>
+			const yn = location.search === '?force' || window.confirm('Do you want to clear caches?');
+			if (yn) {
+				localStorage.setItem('shouldFlush', 'true');
+			}
+
+			location.href = '/';
+		</script>
+	</head>
+</html>

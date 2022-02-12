@@ -7,8 +7,8 @@
 
 | CVE | Component | Category | CVSS | Vultarget | Nuclei | Xray | pocsuite2 | pocsuite3 | goby | oneliner | others |
 |-----|-----------|----------|------|-----------|--------|------|-----------|-----------|------|----------|-------|
-| CVE-2022-0148 | Unknown | Unknown | Unknown | [Y](CVE-2022-0148/vultarget/) | N | N | N | N | N | N | N |
-| CVE-2022-0149 | Unknown | Unknown | Unknown | [Y](CVE-2022-0149/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2022-0148 |  | 跨站脚本 | 5.4 | [Y](CVE-2022-0148/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2022-0149 |  | 跨站脚本 | 6.1 | [Y](CVE-2022-0149/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2022-0164 | Unknown | Unknown | Unknown | [Y](CVE-2022-0164/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2022-0176 | Unknown | Unknown | Unknown | [Y](CVE-2022-0176/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2022-0188 | Unknown | Unknown | Unknown | [Y](CVE-2022-0188/vultarget/) | N | N | N | N | N | N | N |

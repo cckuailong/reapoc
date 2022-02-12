@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+
+    wordpress:
+        container_name: wordpress
+        user: root
+        image: wordpress:5.6.2-php8.0-apache
+        restart: always
+        volumes: 
+            - ./wordpress.sh:/usr/local/bin/wordpress.sh
+        ports:
+            - "80:80"
+
+        environment:
+            WORDPRESS_DB_HOST: db
+            WORDPRESS_DB_USER: exampleuser
+            WORDPRESS_DB_PASSWORD: examplepass
+            WORDPRESS_DB_NAME: exampledb
+
+    db:
+        image: mysql:5.7
+        restart: always
+        environment:
+            MYSQL_DATABASE: exampledb
+            MYSQL_USER: exampleuser
+            MYSQL_PASSWORD: examplepass
+            MYSQL_RANDOM_ROOT_PASSWORD: '1'
+
+

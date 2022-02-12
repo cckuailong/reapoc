@@ -1,0 +1,13 @@
+FROM python:alpine3.7
+MAINTAINER dxy
+
+RUN mkdir /app
+COPY ./requirements_poc.txt /app
+COPY ./config.py /app
+
+WORKDIR /app
+RUN pip install --upgrade pip -i https://mirrors.aliyun.com/pypi/simple/ \
+    && pip install -r requirements_poc.txt -i https://mirrors.aliyun.com/pypi/simple/ 
+
+EXPOSE 80
+CMD python ./config.py

@@ -1,0 +1,16 @@
+version: "3"
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:12.8.1-ce.0
+    ports:
+      - "5443:443"
+      - "5580:80"
+      - "5522:22"
+    volumes:
+      - ./.cache/config:/etc/config
+      - ./.cache/logs:/var/log/gitlab
+      - ./.cache/data:/var/opt/gitlab
+
+  shell:
+    image: debian:buster
+    command: sh -c "apt update && apt install -y netcat && sleep infinity"

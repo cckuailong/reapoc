@@ -1,0 +1,14 @@
+version: '2.1'
+services:
+  verdaccio:
+    build: .
+    container_name: verdaccio
+    environment:
+      - PORT
+    ports:
+      - $PORT:$PORT
+    volumes:
+       - verdaccio:/verdaccio
+volumes:
+  verdaccio:
+    driver: local

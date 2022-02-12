@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+    web:
+        hostname: "cve-2020-28948"
+        build: .
+        ports:
+            - "80:80"
+        privileged: true
+        command: >
+                sh -c "service apache2 restart && /bin/bash"
+        tty: true

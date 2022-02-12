@@ -1,0 +1,17 @@
+FROM openjdk:8-jdk-buster
+MAINTAINER dxy
+
+RUN sed -i 's/security.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+RUN apt update && apt install -y vim curl nodejs npm nginx jq \
+    && apt-get clean \
+    && rm -rf /tmp/* /usr/share/doc/* /var/cache/* /var/lib/apt/lists/* /var/tmp/*
+
+RUN mkdir /app
+COPY ./entrypoint_poc.sh /app/entrypoint.sh
+WORKDIR /app
+RUN chmod 755 entrypoint.sh
+
+EXPOSE 80
+CMD ./entrypoint.sh
+

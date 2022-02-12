@@ -1,0 +1,15 @@
+FROM python:alpine3.7
+MAINTAINER dxy
+RUN mkdir /app
+COPY ./requirements_poc.txt /app
+COPY ./poc2.py /app
+COPY ./entrypoint_poc.sh /sbin/entrypoint.sh
+WORKDIR /app
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories 
+RUN apk update && apk add nginx && mkdir /run/nginx/ \
+    && pip install --upgrade pip \
+    && pip install -r requirements_poc.txt \
+    && chmod +x /sbin/entrypoint.sh
+EXPOSE 80
+CMD ["/sbin/entrypoint.sh"]
+

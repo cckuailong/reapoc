@@ -1,0 +1,7 @@
+from django.urls import path
+from vul_app import views
+
+urlpatterns = [
+    path('setupdb/', views.setupDB, name = 'setupDB'),
+    path('', views.index, name = 'index'),
+]

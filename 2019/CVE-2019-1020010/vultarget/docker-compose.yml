@@ -1,0 +1,53 @@
+version: "3"
+services: 
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile_web
+    container_name: web
+    ports: 
+      - "3000:3000"
+    depends_on: 
+      - db
+      - rds
+
+  db:
+    image: postgres:10.13
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: WFq3mFXWV5kM
+      POSTGRES_USER: misskey
+      POSTGRES_DB: misskey
+
+  rds:
+    image: redis:4.0.4
+    restart: always
+  
+  bot:
+    image: shawnsky/puppeteer:5.2.0
+    restart: always
+    container_name: bot
+    volumes:
+      - ./bot/bot.js:/app/bot.js
+      - ./bot/entrypoint.sh:/app/entrypoint.sh
+    entrypoint: /app/entrypoint.sh
+    depends_on: 
+      - db
+      - rds
+      - web
+
+  poc:
+    build: 
+      context: .
+      dockerfile: Dockerfile_poc
+    container_name: poc
+    ports: 
+      - "80:80"
+    depends_on: 
+      - db
+      - rds
+      - web
+      - bot
+  
+
+

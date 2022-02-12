@@ -1,0 +1,40 @@
+# This file is managed by gitlab-ctl. Manual changes will be
+# erased! To change the contents below, edit /etc/gitlab/gitlab.rb
+# and run `sudo gitlab-ctl reconfigure`.
+
+## Lines starting with two hashes (##) are comments with information.
+## Lines starting with one hash (#) are configuration parameters that can be uncommented.
+##
+###################################
+##         configuration         ##
+###################################
+
+
+server {
+  listen 8000;
+  server_name 127.0.0.1;
+  server_tokens off; ## Don't show the nginx version number, a security best practice
+
+  ## Disable symlink traversal
+  disable_symlinks on;
+
+
+  ## Real IP Module Config
+  ## http://nginx.org/en/docs/http/ngx_http_realip_module.html
+
+  ## Individual nginx logs for this GitLab vhost
+  access_log  /var/log/gitlab/nginx/gitlab_pages_access.log gitlab_access;
+  error_log   /var/log/gitlab/nginx/gitlab_pages_error.log;
+
+  # Pass everything to pages daemon
+  location / {
+    index index.html;
+    root /var/opt/gitlab/gitlab-rails/shared/pages;
+  }
+
+  # Define custom error pages
+  error_page 403 /403.html;
+  error_page 404 /404.html;
+
+  
+}

@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  ampache:
+    image: ampache/ampache:4.4.2
+    container_name: ampache
+    restart: unless-stopped
+    ports:
+      - 80:80
+    networks:
+      - ampache
+  mysql:
+    image: mysql:5
+    restart: always
+    container_name: ampache-mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: "123456"
+    networks:
+      - ampache
+networks:
+  ampache:

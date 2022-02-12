@@ -1,0 +1,59 @@
+# os/app generated files
+Thumbs.db
+.DS_Store
+.htaccess
+*.esproj
+*.log
+*.gz
+*.json
+*.txt
+.sass-cache/
+.phpintel/
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# generated config
+/anchor/config/app.php
+/anchor/config/db.php
+/anchor/config/session.php
+
+# user mod_rewrite
+/.htaccess
+
+# debug and custom themes
+/themes/*
+!/themes/default
+
+# uploaded content
+/content/*
+!/content/index.php
+
+# plugins
+/plugins/*
+
+# phpunit tests
+/tests
+
+# We all love Sublime Text and its awesome plugins, don't we?
+sftp-config.json
+
+# User robots.txt
+robots.txt
+
+# User humans.txt [http://humanstxt.org/]
+humans.txt
+
+# Composer vendor
+vendor/
+
+# Don't want to commit .lock files
+*.lock
+
+# Don't commit the updater files
+/anchor_update/
+/anchor_update/*
+
+# Assets and packages
+node_modules/
+*.map

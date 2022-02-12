@@ -1,0 +1,10 @@
+from django.db import models
+
+# Create your models here.
+
+class Employee(models.Model):
+    name = models.CharField("name", max_length=100)
+    gender = models.CharField("gender", max_length=50)
+
+    def __str__(self) -> str:
+        return self.name

@@ -1,0 +1,9 @@
+version: '2'
+services:
+  kramdown:
+    image: ruby:3.0
+    container_name: docker_kramdown
+    hostname: KRAMDOWN
+    volumes:
+      - ./kramdown:/kramdown
+

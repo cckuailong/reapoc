@@ -1,0 +1,6 @@
+from django.apps import AppConfig
+
+
+class VulAppConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'vul_app'

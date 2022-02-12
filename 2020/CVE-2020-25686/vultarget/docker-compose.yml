@@ -1,0 +1,38 @@
+version: "3.9"
+services:
+  forwarder:
+    restart: always
+    build: ./dnsmasq
+    volumes:
+      - ./dnsmasq/dnsmasq.conf:/etc/dnsmasq.conf
+    cap_add:
+      - NET_ADMIN
+    networks:
+      vpcbr:
+        ipv4_address: 10.10.0.2
+  attacker:
+    restart: always
+    build: ./attacker
+    volumes:
+      - ./attacker:/app
+    cap_add:
+      - NET_ADMIN
+    networks:
+      vpcbr:
+        ipv4_address: 10.10.0.3
+  cache:
+    restart: always
+    build: ./cache
+    volumes:
+      - ./cache:/app
+    cap_add:
+      - NET_ADMIN
+    networks:
+      vpcbr:
+        ipv4_address: 10.10.0.4
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: "10.10.0.0/24"

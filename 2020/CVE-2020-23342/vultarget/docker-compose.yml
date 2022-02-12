@@ -1,0 +1,52 @@
+version: "2"
+
+services:
+  anchor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: anchor_cms
+    ports:
+      - "80:80"
+    environment:
+      COMPOSE_PROJECT_NAME: "anchor_cms"
+    restart: always
+    stdin_open: true
+    tty: true
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mariadb
+    container_name: anchor_cms_mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "anchor_cms"
+      MYSQL_USER: "username"
+      MYSQL_PASSWORD: "password"
+      COMPOSE_PROJECT_NAME: "anchor_cms"
+    logging:
+      driver: none
+
+  config:
+    build:
+      context: .
+      dockerfile: Dockerfile_config
+    container_name: config
+    depends_on:
+      - mysql
+      - anchor  
+
+  poc:
+    build:
+      context: .
+      dockerfile: Dockerfile_poc
+    container_name: poc
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+      - anchor  
+      - config  

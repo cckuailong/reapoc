@@ -1,0 +1,53 @@
+version: '2'
+services:
+  gitlab:
+    hostname: GITLAB
+    container_name: docker_gitlab
+    build:
+      context: ./gitlab
+      dockerfile: ./Dockerfile
+    environment:
+      # 影响 /etc/gitlab/gitlab.rb 的配置
+      GITLAB_OMNIBUS_CONFIG: |
+        # 启用 Gitlab Pages
+        gitlab_pages['enable'] = true
+        # 访问 Gitlab Pages 的域名 （nginx 配置文件已经强制修改为 127.0.0.1:8000，故这里任意配置即可，但不能为空）
+        pages_external_url "http://pages.localhost/"
+    volumes:
+      - ./gitlab/config:/etc/gitlab
+      - ./gitlab/data:/var/opt/gitlab
+      - ./gitlab/logs:/var/log/gitlab
+      - ./gitlab/nginx/gitlab-pages.conf.local:/var/opt/gitlab/nginx/conf/gitlab-pages.conf.local
+      # - ./gitlab/pages:/var/opt/gitlab/gitlab-rails/shared/pages
+    ports:
+#     - 443:443
+      - 80:80
+      - 8000:8000
+    networks: 
+      vpn:
+        ipv4_address: 172.168.31.2
+    restart: unless-stopped
+
+  runner:
+    hostname: RUNNER
+    container_name: docker_runner
+    build:
+      context: ./runner
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./runner/config:/etc/gitlab-runner
+      - ./runner/gitlab-runner:/etc/sudoers.d/gitlab-runner
+    networks: 
+      vpn:
+        ipv4_address: 172.168.31.3
+    restart: unless-stopped
+
+networks:
+  vpn:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet:  172.168.31.0/24
+          gateway: 172.168.31.1
+

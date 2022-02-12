@@ -20,5 +20,5 @@
 | CVE-2009-4202 |  | 路径遍历 |  | N | [Y](CVE-2009-4202/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2009-4202/poc/others/) |
 | CVE-2009-4223 |  | 代码注入 |  | N | [Y](CVE-2009-4223/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2009-4223/poc/others/) |
 | CVE-2009-4679 |  | 路径遍历 |  | N | [Y](CVE-2009-4679/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2009-4679/poc/others/) |
-| CVE-2009-5020 |  | 输入验证 |  | N | [Y](CVE-2009-5020/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2009-5020 | AWStats | 输入验证 |  | N | [Y](CVE-2009-5020/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2009-5114 |  | 路径遍历 |  | N | [Y](CVE-2009-5114/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2009-5114/poc/others/) |

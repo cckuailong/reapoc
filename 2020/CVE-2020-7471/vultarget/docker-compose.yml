@@ -1,0 +1,20 @@
+version: "3.0"
+   
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=cve20207471
+      - POSTGRES_USER=cve20207471
+      - POSTGRES_PASSWORD=123456
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db

@@ -22,7 +22,7 @@
 | CVE-2012-4242 | WordPress | 跨站脚本 |  | N | [Y](CVE-2012-4242/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-4242/poc/others/) |
 | CVE-2012-4253 | MySqlDumper | 路径遍历 |  | N | [Y](CVE-2012-4253/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-4253/poc/others/) |
 | CVE-2012-4273 | WordPress | 跨站脚本 |  | N | [Y](CVE-2012-4273/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2012-4547 |  | 跨站脚本 |  | N | [Y](CVE-2012-4547/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2012-4547 | AWStats | 跨站脚本 |  | N | [Y](CVE-2012-4547/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2012-4768 | WordPress | 跨站脚本 |  | N | [Y](CVE-2012-4768/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-4768/poc/others/) |
 | CVE-2012-4878 |  | 路径遍历 |  | N | [Y](CVE-2012-4878/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-4878/poc/others/) |
 | CVE-2012-4889 | NetFlow-Analyzer-卓豪流量管理 | 跨站脚本 |  | N | [Y](CVE-2012-4889/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2012-4889/poc/others/) |

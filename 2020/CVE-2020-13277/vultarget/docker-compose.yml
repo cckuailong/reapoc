@@ -1,0 +1,45 @@
+# How to use :
+# docker-compose up -d
+# docker-compose down
+# --------------------------------------------------------------------------------
+
+version: '2'
+services:
+  gitlab:
+    hostname: GITLAB
+    container_name: docker_gitlab
+    build:
+      context: ./gitlab
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./gitlab/config:/etc/gitlab
+      - ./gitlab/data:/var/opt/gitlab
+      - ./gitlab/logs:/var/log/gitlab
+    ports:
+#     - 443:443
+      - 80:80
+    networks: 
+      vpn:
+        ipv4_address: 172.168.30.2
+    restart: unless-stopped
+
+  runner:
+    hostname: RUNNER
+    container_name: docker_runner
+    image: gitlab/gitlab-runner:latest
+    volumes:
+      - ./gitlab/runner:/etc/gitlab-runner
+    networks: 
+      vpn:
+        ipv4_address: 172.168.30.3
+    restart: unless-stopped
+
+networks:
+  vpn:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet:  172.168.30.0/24
+          gateway: 172.168.30.1
+

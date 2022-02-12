@@ -1,0 +1,26 @@
+from django.db.models.fields import GenericIPAddressField
+from django.http.response import HttpResponse
+from django.shortcuts import render
+from vul_app.models import Employee
+from django.contrib.postgres.aggregates import StringAgg
+
+# Create your views here.
+def setupDB(request):
+    try:
+        e1 = Employee.objects.create(name = 'Nguyen Van A', gender = 'male')
+        e2 = Employee.objects.create(name = 'Tran Xuan B', gender = 'male')
+        e3 = Employee.objects.create(name = 'Le Linh C', gender = 'female')
+        e4 = Employee.objects.create(name = 'Ngo Thuy D', gender = 'female')
+        e1.save()
+        e2.save()
+        e3.save()
+        e4.save()
+    except:
+        return HttpResponse('<h1 align=\"center\">Error!</h1>')
+    return HttpResponse("<h1 align=\"center\">Database initiated!</h1>")
+
+def index(request):
+    delimeter = request.GET.get('delim','-')
+    employees = Employee.objects.all().values('gender').annotate(group=StringAgg('name',delimeter))
+
+    return render(request, 'index.html', {'rows': employees})
