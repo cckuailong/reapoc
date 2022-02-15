@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+
+  db:
+    image: sameersbn/postgresql
+    environment:
+      POSTGRES_PASSWORD: 0ppr2s
+      DB_USER: rosario
+      DB_PASS: rosariopwd
+      DB_NAME: rosariosis
+
+  web:
+    container_name: RosarioSIS
+    build: .
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    environment:
+      PGHOST: db
+      PGUSER: rosario
+      PGPASSWORD: rosariopwd
+      PGDATABASE: rosariosis
+      ROSARIOSIS_YEAR: 2021

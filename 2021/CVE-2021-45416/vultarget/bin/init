@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "Configuring locale"
+if [ "$ROSARIOSIS_LANG" == "en_US" ]; then
+    echo "Found "$ROSARIOSIS_LANG
+else
+    echo "Installing "$ROSARIOSIS_LANG
+    apt-get install locales
+    echo $ROSARIOSIS_LANG'.UTF-8 UTF-8' >> /etc/locale.gen
+    locale-gen
+fi
+
+set -e
+
+# first arg is `-f` or `--some-option`
+if [ "${1#-}" != "$1" ]; then
+	set -- php "$@"
+fi
+
+exec "$@"
