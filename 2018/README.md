@@ -12,6 +12,7 @@
 | CVE-2018-1000006 |  | 操作系统命令注入 | 8.8 | [Y](CVE-2018-1000006/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-1000006/poc/others/) |
 | CVE-2018-1000129 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2018-1000129/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-1000130 |  | ldap注入 | 8.1 | N | [Y](CVE-2018-1000130/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2018-1000226 |  | 访问控制错误 | 9.8 | N | [Y](CVE-2018-1000226/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-1000533 | gitlist | 输入验证 | 9.8 | [Y](CVE-2018-1000533/vultarget/) | [Y](CVE-2018-1000533/poc/nuclei/) | [Y](CVE-2018-1000533/poc/xray/) | N | N | N | N | [Y](CVE-2018-1000533/poc/others/) |
 | CVE-2018-1000600 |  | 信息泄露 | 8.8 | N | [Y](CVE-2018-1000600/poc/nuclei/) | [Y](CVE-2018-1000600/poc/xray/) | N | N | N | N | N |
 | CVE-2018-1000861 | Jenkins | 代码执行  | 9.8 | [Y](CVE-2018-1000861/vultarget/) | [Y](CVE-2018-1000861/poc/nuclei/) | [Y](CVE-2018-1000861/poc/xray/) | N | N | N | N | [Y](CVE-2018-1000861/poc/others/) |
@@ -103,7 +104,7 @@
 | CVE-2018-18777 | MicroStrategy-MicroStrategy-Software | 路径遍历 | 4.3 | N | [Y](CVE-2018-18777/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-18777/poc/others/) |
 | CVE-2018-18778 | mini_httpd | 信息泄露 | 6.5 | [Y](CVE-2018-18778/vultarget/) | [Y](CVE-2018-18778/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-18809 |  | 路径遍历 | 6.5 | [Y](CVE-2018-18809/vultarget/) | N | N | N | N | N | N | N |
-| CVE-2018-18925 | Gitea | 代码执行 | 9.8 | [Y](CVE-2018-18925/vultarget/) | N | N | N | N | N | N | N |
+| CVE-2018-18925 | Gitea | 代码执行 | 9.8 | [Y](CVE-2018-18925/vultarget/) | [Y](CVE-2018-18925/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-18950 |  | 路径遍历 | 7.5 | [Y](CVE-2018-18950/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2018-19127 | phpcms | 代码注入 | 9.8 | N | N | [Y](CVE-2018-19127/poc/xray/) | N | N | N | N | [Y](CVE-2018-19127/poc/others/) |
 | CVE-2018-19276 | OpenMRS | 代码问题 | 9.8 | N | N | N | [Y](CVE-2018-19276/poc/pocsuite2/) | [Y](CVE-2018-19276/poc/pocsuite3/) | N | N | [Y](CVE-2018-19276/poc/others/) |
@@ -147,7 +148,7 @@
 | CVE-2018-7467 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-7467/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-7490 | PHP | 信息泄露 | 7.5 | [Y](CVE-2018-7490/vultarget/) | [Y](CVE-2018-7490/poc/nuclei/) | [Y](CVE-2018-7490/poc/xray/) | N | N | N | N | [Y](CVE-2018-7490/poc/others/) |
 | CVE-2018-7600 | Drupal | 代码执行 | 9.8 | [Y](CVE-2018-7600/vultarget/) | [Y](CVE-2018-7600/poc/nuclei/) | [Y](CVE-2018-7600/poc/xray/) | N | N | N | N | [Y](CVE-2018-7600/poc/others/) |
-| CVE-2018-7602 | Drupal | 代码执行  | 9.8 | [Y](CVE-2018-7602/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-7602/poc/others/) |
+| CVE-2018-7602 | Drupal | 代码执行  | 9.8 | [Y](CVE-2018-7602/vultarget/) | [Y](CVE-2018-7602/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7602/poc/others/) |
 | CVE-2018-7662 |  | 信息泄露 | 5.3 | N | N | [Y](CVE-2018-7662/poc/xray/) | N | N | [Y](CVE-2018-7662/poc/goby/) | N | N |
 | CVE-2018-7700 | DedeCMS | 跨站请求伪造 | 8.8 | N | [Y](CVE-2018-7700/poc/nuclei/) | [Y](CVE-2018-7700/poc/xray/) | N | N | N | N | N |
 | CVE-2018-7719 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-7719/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7719/poc/others/) |

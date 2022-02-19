@@ -46,6 +46,7 @@
 | CVE-2020-12054 | WordPress | 跨站脚本 | 6.1 | [Y](CVE-2020-12054/vultarget/) | [Y](CVE-2020-12054/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-12116 | ZOHO ManageEngine | 其他 | 7.5 | N | [Y](CVE-2020-12116/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-12116/poc/others/) |
 | CVE-2020-12271 |  | SQL注入 | 9.8 | N | [Y](CVE-2020-12271/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-12447 |  | 其他 | 7.5 | N | [Y](CVE-2020-12447/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-12720 | vBulletin | 其他 | 9.8 | N | [Y](CVE-2020-12720/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-12720/poc/others/) |
 | CVE-2020-12800 |  | 其他 | 9.8 | N | [Y](CVE-2020-12800/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2020-12800/poc/others/) |
 | CVE-2020-13117 | wavlink-WN579X3 | 命令注入 | 9.8 | N | [Y](CVE-2020-13117/poc/nuclei/) | N | N | N | N | N | N |
@@ -59,7 +60,7 @@
 | CVE-2020-13933 | Shiro | http请求伪造 | 7.5 | [Y](CVE-2020-13933/vultarget/) | N | N | N | N | N | N | [Y](CVE-2020-13933/poc/others/) |
 | CVE-2020-13937 | Apache-kylin | 未授权访问 | 5.3 | N | [Y](CVE-2020-13937/poc/nuclei/) | [Y](CVE-2020-13937/poc/xray/) | N | N | [Y](CVE-2020-13937/poc/goby/) | N | [Y](CVE-2020-13937/poc/others/) |
 | CVE-2020-13942 | Apache Unomi | 命令执行 | 9.8 | [Y](CVE-2020-13942/vultarget/) | [Y](CVE-2020-13942/poc/nuclei/) | [Y](CVE-2020-13942/poc/xray/) | N | N | N | N | [Y](CVE-2020-13942/poc/others/) |
-| CVE-2020-13945 | web | 未授权访问 | 6.5 | [Y](CVE-2020-13945/vultarget/) | [Y](CVE-2020-13945/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2020-13945 | Apache APISIX Dashboard | 未授权访问 | 6.5 | [Y](CVE-2020-13945/vultarget/) | [Y](CVE-2020-13945/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-14092 | WordPress | SQL注入 | 9.8 | [Y](CVE-2020-14092/vultarget/) | [Y](CVE-2020-14092/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-14179 | JIRA | 其他 | 5.3 | N | [Y](CVE-2020-14179/poc/nuclei/) | [Y](CVE-2020-14179/poc/xray/) | N | N | N | N | [Y](CVE-2020-14179/poc/others/) |
 | CVE-2020-14181 | JIRA | 其他 | 5.3 | [Y](CVE-2020-14181/vultarget/) | [Y](CVE-2020-14181/poc/nuclei/) | [Y](CVE-2020-14181/poc/xray/) | N | N | [Y](CVE-2020-14181/poc/goby/) | N | [Y](CVE-2020-14181/poc/others/) |
@@ -146,6 +147,7 @@
 | CVE-2020-25686 |  | 安全特征问题 | 3.7 | [Y](CVE-2020-25686/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-25780 |  | 路径遍历 | 7.5 | N | [Y](CVE-2020-25780/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-25790 | Typesetter CMS | 文件上传 | 7.2 | [Y](CVE-2020-25790/vultarget/) | N | N | N | N | N | N | [Y](CVE-2020-25790/poc/others/) |
+| CVE-2020-25864 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-25864/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2020-26048 |  | 文件上传 | 8.8 | [Y](CVE-2020-26048/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2020-26067 |  | 跨站脚本 |  | N | N | N | N | N | N | N | N |
 | CVE-2020-26073 |  | 信息泄露 |  | N | [Y](CVE-2020-26073/poc/nuclei/) | N | N | N | N | N | N |
