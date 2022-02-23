@@ -27,6 +27,10 @@ oneliner
 
 - [Log4j](Topic/Log4j/)
 
+## No CVE, But Important
+
+- [No-CVE](No-CVE)
+
 ## Statistics
 
 | All CVEs | Vultarget | Nuclei | Xray | pocsuite2 | pocsuite3 | goby | oneliner | others |
