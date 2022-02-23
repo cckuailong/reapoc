@@ -140,7 +140,7 @@
 | CVE-2018-6389 | WordPress | 资源管理错误 | 7.5 | N | [Y](CVE-2018-6389/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-6389/poc/others/) |
 | CVE-2018-6605 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2018-6605/poc/xray/) | N | N | N | N | [Y](CVE-2018-6605/poc/others/) |
 | CVE-2018-6893 |  | SQL注入 | 9.8 | [Y](CVE-2018-6893/vultarget/) | N | N | N | N | N | N | N |
-| CVE-2018-6910 |  | 信息泄露 | 5.3 | N | [Y](CVE-2018-6910/poc/nuclei/) | [Y](CVE-2018-6910/poc/xray/) | N | N | [Y](CVE-2018-6910/poc/goby/) | N | N |
+| CVE-2018-6910 |  | 信息泄露 | 7.5 | N | [Y](CVE-2018-6910/poc/nuclei/) | [Y](CVE-2018-6910/poc/xray/) | N | N | [Y](CVE-2018-6910/poc/goby/) | N | N |
 | CVE-2018-7171 |  | 路径遍历 | 7.5 | [Y](CVE-2018-7171/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-7171/poc/others/) |
 | CVE-2018-7251 | Anchor CMS | 信息泄露 | 9.8 | N | [Y](CVE-2018-7251/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-7251/poc/others/) |
 | CVE-2018-7314 |  | SQL注入 | 9.8 | [Y](CVE-2018-7314/vultarget/) | N | [Y](CVE-2018-7314/poc/xray/) | N | N | N | N | [Y](CVE-2018-7314/poc/others/) |

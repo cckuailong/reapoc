@@ -16,6 +16,7 @@
 | CVE-2019-10068 |  | 反序列化 | 9.8 | N | [Y](CVE-2019-10068/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10068/poc/others/) |
 | CVE-2019-10092 | web | 跨站脚本 | 6.1 | N | [Y](CVE-2019-10092/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10092/poc/others/) |
 | CVE-2019-1010287 | Timesheet-NG | 跨站脚本 | 6.1 | N | [Y](CVE-2019-1010287/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2019-1010290 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2019-1010290/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-1020010 |  | 跨站脚本 | 6.1 | [Y](CVE-2019-1020010/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-10232 | GLPI | SQL注入 | 9.8 | N | [Y](CVE-2019-10232/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-10475 | Jenkins | 跨站脚本 | 6.1 | N | [Y](CVE-2019-10475/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-10475/poc/others/) |
@@ -117,7 +118,7 @@
 | CVE-2019-3402 | JIRA | 跨站脚本 | 6.1 | N | [Y](CVE-2019-3402/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-3403 | JIRA | 授权问题 | 5.3 | [Y](CVE-2019-3403/vultarget/) | [Y](CVE-2019-3403/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-3403/poc/others/) |
 | CVE-2019-3799 | Spring | 信息泄漏 | 6.5 | [Y](CVE-2019-3799/vultarget/) | [Y](CVE-2019-3799/poc/nuclei/) | [Y](CVE-2019-3799/poc/xray/) | [Y](CVE-2019-3799/poc/pocsuite2/) | [Y](CVE-2019-3799/poc/pocsuite3/) | N | N | [Y](CVE-2019-3799/poc/others/) |
-| CVE-2019-3911 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2019-3911/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2019-3911 | LabKey | 跨站脚本 | 6.1 | N | [Y](CVE-2019-3911/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-3912 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2019-3912/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-3929 | Crestron-AM-100 | 操作系统命令注入 | 9.8 | N | [Y](CVE-2019-3929/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-3929/poc/others/) |
 | CVE-2019-5120 |  | SQL注入 | 8.8 | [Y](CVE-2019-5120/vultarget/) | N | N | N | N | N | N | N |
