@@ -1,0 +1,47 @@
+.rower_survey_widget_general {
+  display: flex;
+}
+.rower_survey_widget {
+  flex: 1;
+  text-align: center
+}
+.survey_buttoncustom {
+  color: #82878c;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.survey_row_lister {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #e2e4e7;
+}
+span.survey_title_meta_row {
+  font-weight: bold;
+  width: 180px;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.survey_row_cell {
+  margin: 5px 0;
+}
+.no_survey_inpage_article {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 7px;
+}
+@media (min-width: 1100px) {
+  .survey_row_lister {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e2e4e7;
+  }
+  .survey_row_cell input.large-text.code {
+    min-width: 290px;
+  }
+}
