@@ -94,6 +94,7 @@
 | CVE-2021-24510 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24510/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24545 |  | 跨站脚本 | 5.4 | [Y](CVE-2021-24545/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2021-24750 | WordPress | SQL注入 | 8.8 | [Y](CVE-2021-24750/vultarget/) | [Y](CVE-2021-24750/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24750/poc/others/) |
+| CVE-2021-24762 |  | SQL注入 | 9.8 | [Y](CVE-2021-24762/vultarget/) | [Y](CVE-2021-24762/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2021-24762/poc/others/) |
 | CVE-2021-24786 |  | 其他 | 7.2 | [Y](CVE-2021-24786/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2021-24838 |  | url重定向 | 6.1 | N | [Y](CVE-2021-24838/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2021-24862 |  | SQL注入 | 7.2 | [Y](CVE-2021-24862/vultarget/) | [Y](CVE-2021-24862/poc/nuclei/) | N | N | N | N | N | N |

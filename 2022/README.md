@@ -35,7 +35,7 @@
 | CVE-2022-0434 | Unknown | Unknown | Unknown | [Y](CVE-2022-0434/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2022-23046 |  | SQL注入 | 7.2 | [Y](CVE-2022-23046/vultarget/) | N | N | N | N | N | N | [Y](CVE-2022-23046/poc/others/) |
 | CVE-2022-23178 | Crestron HD-MD4X2-4K-E | 授权问题 | 9.8 | N | [Y](CVE-2022-23178/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2022-23178/poc/others/) |
-| CVE-2022-23808 |  | 跨站脚本 | 6.1 | [Y](CVE-2022-23808/vultarget/) | [Y](CVE-2022-23808/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2022-23808/poc/others/) |
+| CVE-2022-23808 | phpMyAdmin | 跨站脚本 | 6.1 | [Y](CVE-2022-23808/vultarget/) | [Y](CVE-2022-23808/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2022-23808/poc/others/) |
 | CVE-2022-23944 |  | 权限许可和访问控制 | 9.1 | [Y](CVE-2022-23944/vultarget/) | [Y](CVE-2022-23944/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2022-24112 |  | 其他 | 9.8 | [Y](CVE-2022-24112/vultarget/) | [Y](CVE-2022-24112/poc/nuclei/) | N | N | N | N | N | N |
-| CVE-2022-25323 |  |  |  | N | [Y](CVE-2022-25323/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2022-24112 | Apache APISIX Dashboard | 命令执行 | 9.8 | [Y](CVE-2022-24112/vultarget/) | [Y](CVE-2022-24112/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2022-25323 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2022-25323/poc/nuclei/) | N | N | N | N | N | N |
