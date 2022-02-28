@@ -158,6 +158,7 @@
 | CVE-2019-9618 | WordPress | 命令注入 | 9.8 | N | [Y](CVE-2019-9618/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-9618/poc/others/) |
 | CVE-2019-9644 |  | 跨站脚本 | 5.4 | [Y](CVE-2019-9644/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-9670 | Zimbra | 代码问题 | 9.8 | [Y](CVE-2019-9670/vultarget/) | [Y](CVE-2019-9670/poc/nuclei/) | [Y](CVE-2019-9670/poc/xray/) | N | N | N | N | [Y](CVE-2019-9670/poc/others/) |
+| CVE-2019-9726 |  | 路径遍历 | 7.5 | N | [Y](CVE-2019-9726/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-9733 |  | 访问控制错误 | 9.8 | [Y](CVE-2019-9733/vultarget/) | [Y](CVE-2019-9733/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2019-9787 |  | 跨站请求伪造 | 8.8 | [Y](CVE-2019-9787/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2019-9955 | ZyXEL | 跨站脚本 | 6.1 | N | [Y](CVE-2019-9955/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2019-9955/poc/others/) |

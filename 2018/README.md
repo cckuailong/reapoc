@@ -162,6 +162,7 @@
 | CVE-2018-8770 |  | 信息泄露 | 5.3 | N | [Y](CVE-2018-8770/poc/nuclei/) | [Y](CVE-2018-8770/poc/xray/) | N | N | N | N | [Y](CVE-2018-8770/poc/others/) |
 | CVE-2018-9118 | WordPress | 路径遍历 | 7.5 | N | [Y](CVE-2018-9118/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9118/poc/others/) |
 | CVE-2018-9126 |  | 信息泄露 | 9.8 | N | [Y](CVE-2018-9126/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9126/poc/others/) |
+| CVE-2018-9161 |  | 资料不足 | 9.8 | N | [Y](CVE-2018-9161/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2018-9205 |  | 路径遍历 | 7.5 | N | [Y](CVE-2018-9205/poc/nuclei/) | N | N | N | N | N | [Y](CVE-2018-9205/poc/others/) |
 | CVE-2018-9207 |  | 资料不足 | 9.8 | [Y](CVE-2018-9207/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-9207/poc/others/) |
 | CVE-2018-9208 |  | 输入验证 | 9.8 | [Y](CVE-2018-9208/vultarget/) | N | N | N | N | N | N | [Y](CVE-2018-9208/poc/others/) |

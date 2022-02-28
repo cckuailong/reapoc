@@ -55,6 +55,7 @@
 | CVE-2017-17733 |  | 资料不足 | 9.8 | [Y](CVE-2017-17733/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2017-18024 | AvantFAX | 跨站脚本 | 6.1 | N | [Y](CVE-2017-18024/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-18536 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2017-18536/poc/nuclei/) | N | N | N | N | N | N |
+| CVE-2017-18598 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2017-18598/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-18638 |  | 代码问题 | 7.5 | N | [Y](CVE-2017-18638/poc/nuclei/) | N | N | N | N | N | N |
 | CVE-2017-2824 | Zabbix | 操作系统命令注入 | 8.1 | [Y](CVE-2017-2824/vultarget/) | N | N | N | N | N | N | N |
 | CVE-2017-3066 | Adobe-ColdFusion | 命令执行 | 9.8 | [Y](CVE-2017-3066/vultarget/) | N | N | N | N | N | N | [Y](CVE-2017-3066/poc/others/) |
