@@ -41,6 +41,7 @@
 | CVE-2022-23131 | Zabbix | 登录绕过 | 9.8 | N | [Y](CVE-2022-23131/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-23134 | Zabbix | 授权问题 | 5.3 | N | [Y](CVE-2022-23134/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-23178 | Crestron HD-MD4X2-4K-E | 授权问题 | 9.8 | N | [Y](CVE-2022-23178/poc/nuclei/) | N | N | N | N | [Y](CVE-2022-23178/poc/others/) |
+| CVE-2022-23779 |  |  |  | [Y](CVE-2022-23779/vultarget/) | [Y](CVE-2022-23779/poc/nuclei/) | N | N | N | N | [Y](CVE-2022-23779/poc/others/) |
 | CVE-2022-23808 | phpMyAdmin | 跨站脚本 | 6.1 | [Y](CVE-2022-23808/vultarget/) | [Y](CVE-2022-23808/poc/nuclei/) | N | N | N | N | [Y](CVE-2022-23808/poc/others/) |
 | CVE-2022-23944 |  | 访问控制错误 | 9.1 | [Y](CVE-2022-23944/vultarget/) | [Y](CVE-2022-23944/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-24112 | Apache APISIX Dashboard | 命令执行 | 9.8 | [Y](CVE-2022-24112/vultarget/) | [Y](CVE-2022-24112/poc/nuclei/) | N | N | N | N | N |

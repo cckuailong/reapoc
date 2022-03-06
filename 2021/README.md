@@ -323,6 +323,7 @@
 | CVE-2021-41192 | redash | 其他 | 6.5 | N | [Y](CVE-2021-41192/poc/nuclei/) | N | N | N | N | N |
 | CVE-2021-41266 |  | 访问控制错误 | 9.8 | N | [Y](CVE-2021-41266/poc/nuclei/) | N | N | N | N | N |
 | CVE-2021-41277 | MetaBase | 任意文件读取 | 7.5 | [Y](CVE-2021-41277/vultarget/) | [Y](CVE-2021-41277/poc/nuclei/) | [Y](CVE-2021-41277/poc/xray/) | N | N | [Y](CVE-2021-41277/poc/goby/) | [Y](CVE-2021-41277/poc/others/) |
+| CVE-2021-41282 | pfSense | 文件上传  |  | [Y](CVE-2021-41282/vultarget/) | N | N | [Y](CVE-2021-41282/poc/pocsuite2/) | N | N | N |
 | CVE-2021-41291 | web | 路径遍历 | 7.5 | N | [Y](CVE-2021-41291/poc/nuclei/) | N | N | N | N | N |
 | CVE-2021-41293 |  | 路径遍历 | 7.5 | N | [Y](CVE-2021-41293/poc/nuclei/) | N | N | N | N | N |
 | CVE-2021-41349 | Microsoft-Exchange | 跨站脚本 | 6.5 | N | [Y](CVE-2021-41349/poc/nuclei/) | [Y](CVE-2021-41349/poc/xray/) | N | N | N | [Y](CVE-2021-41349/poc/others/) |
@@ -366,5 +367,5 @@
 | CVE-2021-45380 | appcms | 跨站脚本 | 6.1 | N | [Y](CVE-2021-45380/poc/nuclei/) | N | N | N | N | N |
 | CVE-2021-45416 |  | 跨站脚本 | 6.1 | [Y](CVE-2021-45416/vultarget/) | N | N | N | N | N | N |
 | CVE-2021-45456 |  | 命令注入 | 9.8 | [Y](CVE-2021-45456/vultarget/) | N | N | N | N | N | N |
-| CVE-2021-45897 |  | 其他 | 8.8 | N | N | N | N | N | N | [Y](CVE-2021-45897/poc/others/) |
+| CVE-2021-45897 | SuiteCRM | 其他 | 8.8 | N | N | N | N | N | N | [Y](CVE-2021-45897/poc/others/) |
 | CVE-2021-46005 | web | 跨站脚本 | 5.4 | [Y](CVE-2021-46005/vultarget/) | [Y](CVE-2021-46005/poc/nuclei/) | N | N | N | N | N |
