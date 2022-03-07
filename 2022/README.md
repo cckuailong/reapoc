@@ -34,6 +34,7 @@
 | CVE-2022-0432 | Mastodon | 组件漏洞 | 6.1 | N | [Y](CVE-2022-0432/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-0434 | Unknown | Unknown | Unknown | [Y](CVE-2022-0434/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0653 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2022-0653/poc/nuclei/) | N | N | N | N | N |
+| CVE-2022-0824 |  |  |  | [Y](CVE-2022-0824/vultarget/) | [Y](CVE-2022-0824/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-21371 | WebLogic | 路径遍历 | 7.5 | N | [Y](CVE-2022-21371/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-22536 |  | 环境问题 | 10 | N | [Y](CVE-2022-22536/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-22947 | Spring | 代码执行  |  | [Y](CVE-2022-22947/vultarget/) | [Y](CVE-2022-22947/poc/nuclei/) | N | N | N | N | N |
