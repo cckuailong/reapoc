@@ -14,7 +14,7 @@
 | CVE-2020-10199 | Nexus-Repository-Manager | 代码执行  | 8.8 | [Y](CVE-2020-10199/vultarget/) | [Y](CVE-2020-10199/poc/nuclei/) | [Y](CVE-2020-10199/poc/xray/) | N | N | N | [Y](CVE-2020-10199/poc/others/) |
 | CVE-2020-10204 | Nexus-Repository-Manager | 命令执行 | 7.2 | [Y](CVE-2020-10204/vultarget/) | [Y](CVE-2020-10204/poc/nuclei/) | [Y](CVE-2020-10204/poc/xray/) | N | N | N | [Y](CVE-2020-10204/poc/others/) |
 | CVE-2020-10220 |  | SQL注入 | 9.8 | [Y](CVE-2020-10220/vultarget/) | [Y](CVE-2020-10220/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-10220/poc/others/) |
-| CVE-2020-10238 |  | 其他 | 7.5 | [Y](CVE-2020-10238/vultarget/) | N | N | N | N | N | [Y](CVE-2020-10238/poc/others/) |
+| CVE-2020-10238 | Joomla | 其他 | 7.5 | [Y](CVE-2020-10238/vultarget/) | N | N | N | N | N | [Y](CVE-2020-10238/poc/others/) |
 | CVE-2020-10546 | rConfig | SQL注入 | 9.8 | N | [Y](CVE-2020-10546/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-10547 | rConfig | SQL注入 | 9.8 | N | [Y](CVE-2020-10547/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-10548 | rConfig | SQL注入 | 9.8 | N | [Y](CVE-2020-10548/poc/nuclei/) | N | N | N | N | N |

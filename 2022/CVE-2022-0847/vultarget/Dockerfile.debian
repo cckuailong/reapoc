@@ -1,0 +1,21 @@
+FROM debian:stretch-20220228  as build
+
+RUN apt-get update && apt-get install build-essential --assume-yes
+
+WORKDIR /build
+
+COPY exploit.c /build
+
+RUN gcc exploit.c -o exploit
+
+FROM debian:stretch-20220228
+
+RUN useradd -g 100 -D 100
+
+USER 100
+
+WORKDIR /home/100
+
+COPY --from=build --chown=100:100 /build/exploit /home/100/exploit
+
+CMD /bin/sh
