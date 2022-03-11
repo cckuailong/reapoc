@@ -19,6 +19,7 @@
 | CVE-2019-1010290 | Control-Solutions-Babel-Buster-BB2-7030-01 | url重定向 | 6.1 | N | [Y](CVE-2019-1010290/poc/nuclei/) | N | N | N | N | N |
 | CVE-2019-1020010 |  | 跨站脚本 | 6.1 | [Y](CVE-2019-1020010/vultarget/) | N | N | N | N | N | N |
 | CVE-2019-10232 | GLPI | SQL注入 | 9.8 | N | [Y](CVE-2019-10232/poc/nuclei/) | N | N | N | N | N |
+| CVE-2019-10405 |  | 信息泄露 | 4.3 | N | [Y](CVE-2019-10405/poc/nuclei/) | N | N | N | N | N |
 | CVE-2019-10475 | Jenkins | 跨站脚本 | 6.1 | N | [Y](CVE-2019-10475/poc/nuclei/) | N | N | N | N | [Y](CVE-2019-10475/poc/others/) |
 | CVE-2019-10664 |  | SQL注入 | 9.8 | [Y](CVE-2019-10664/vultarget/) | N | N | N | N | N | [Y](CVE-2019-10664/poc/others/) |
 | CVE-2019-10757 |  | SQL注入 | 9.8 | [Y](CVE-2019-10757/vultarget/) | N | N | N | N | N | N |

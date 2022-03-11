@@ -71,6 +71,7 @@
 | CVE-2020-14882 | BEA-WebLogic-Server | 命令执行 | 9.8 | [Y](CVE-2020-14882/vultarget/) | [Y](CVE-2020-14882/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-14882/poc/others/) |
 | CVE-2020-14883 | Weblogic_interface_7001 | 其他 | 7.2 | [Y](CVE-2020-14883/vultarget/) | [Y](CVE-2020-14883/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-14883/poc/others/) |
 | CVE-2020-15004 |  | 跨站脚本 | 4.8 | N | [Y](CVE-2020-15004/poc/nuclei/) | N | N | N | N | N |
+| CVE-2020-15050 | web | 路径遍历 | 7.5 | N | [Y](CVE-2020-15050/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-15129 |  | 输入验证错误 | 4.7 | N | [Y](CVE-2020-15129/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-15148 | Yii-Framework | 代码问题 | 10 | N | [Y](CVE-2020-15148/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-15148/poc/others/) |
 | CVE-2020-15227 | NetteFramework | 命令执行 | 9.8 | N | [Y](CVE-2020-15227/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-15227/poc/others/) |
@@ -112,6 +113,7 @@
 | CVE-2020-2036 | PaloAlto PAN-OS | 跨站请求伪造 | 8.8 | N | [Y](CVE-2020-2036/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-2096 | Jenkins | 跨站脚本 | 6.1 | N | [Y](CVE-2020-2096/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-2096/poc/others/) |
 | CVE-2020-20982 |  | 跨站脚本 | 9.6 | N | [Y](CVE-2020-20982/poc/nuclei/) | N | N | N | N | N |
+| CVE-2020-2103 |  | 信息泄露 | 5.4 | N | [Y](CVE-2020-2103/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-21224 |  | 其他 | 9.8 | N | [Y](CVE-2020-21224/poc/nuclei/) | [Y](CVE-2020-21224/poc/xray/) | N | N | N | [Y](CVE-2020-21224/poc/others/) |
 | CVE-2020-2140 | Jenkins | 跨站脚本 | 6.1 | N | [Y](CVE-2020-2140/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-2199 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2020-2199/poc/nuclei/) | N | N | N | N | N |
@@ -232,6 +234,7 @@
 | CVE-2020-7473 |  | 其他 | 7.5 | N | [Y](CVE-2020-7473/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-7473/poc/others/) |
 | CVE-2020-7796 |  | 代码问题 | 9.8 | N | [Y](CVE-2020-7796/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-7934 |  | 跨站脚本 | 5.4 | [Y](CVE-2020-7934/vultarget/) | N | N | N | N | N | [Y](CVE-2020-7934/poc/others/) |
+| CVE-2020-7943 |  | 其他 | 7.5 | N | [Y](CVE-2020-7943/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-7961 | Liferay Portal | 代码问题 | 9.8 | [Y](CVE-2020-7961/vultarget/) | [Y](CVE-2020-7961/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-7961/poc/others/) |
 | CVE-2020-7980 | Intellian Aptus Web | 操作系统命令注入 | 9.8 | N | N | [Y](CVE-2020-7980/poc/xray/) | N | N | N | [Y](CVE-2020-7980/poc/others/) |
 | CVE-2020-8091 | TYPO3 | 跨站脚本 | 6.1 | N | [Y](CVE-2020-8091/poc/nuclei/) | N | N | N | N | N |

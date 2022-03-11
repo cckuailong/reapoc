@@ -95,5 +95,6 @@
 | CVE-2017-9798 | Apache | 资源管理错误 | 7.5 | [Y](CVE-2017-9798/vultarget/) | N | N | N | N | N | [Y](CVE-2017-9798/poc/others/) |
 | CVE-2017-9805 | Struts2 | 代码执行 | 8.1 | [Y](CVE-2017-9805/vultarget/) | [Y](CVE-2017-9805/poc/nuclei/) | N | N | N | N | [Y](CVE-2017-9805/poc/others/) |
 | CVE-2017-9822 | DotNetNuke | 输入验证 | 8.8 | N | [Y](CVE-2017-9822/poc/nuclei/) | N | N | N | N | [Y](CVE-2017-9822/poc/others/) |
+| CVE-2017-9833 | Boa-WebServer | 路径遍历 | 7.5 | N | [Y](CVE-2017-9833/poc/nuclei/) | N | N | N | N | N |
 | CVE-2017-9841 | PHP | 代码执行 | 9.8 | [Y](CVE-2017-9841/vultarget/) | [Y](CVE-2017-9841/poc/nuclei/) | [Y](CVE-2017-9841/poc/xray/) | N | N | N | [Y](CVE-2017-9841/poc/others/) |
 | CVE-2017-9993 |  | 信息泄露 | 7.5 | [Y](CVE-2017-9993/vultarget/) | N | N | N | N | N | N |
