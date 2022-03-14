@@ -50,6 +50,7 @@
 | CVE-2020-12720 | vBulletin | 其他 | 9.8 | N | [Y](CVE-2020-12720/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-12720/poc/others/) |
 | CVE-2020-12800 |  | 其他 | 9.8 | N | [Y](CVE-2020-12800/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-12800/poc/others/) |
 | CVE-2020-13117 | wavlink-WN579X3 | 命令注入 | 9.8 | N | [Y](CVE-2020-13117/poc/nuclei/) | N | N | N | N | N |
+| CVE-2020-13158 | web | 路径遍历 | 7.5 | N | [Y](CVE-2020-13158/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-13167 | Netsweeper | 代码执行  | 9.8 | N | [Y](CVE-2020-13167/poc/nuclei/) | N | N | N | N | N |
 | CVE-2020-13277 |  | 授权问题 | 6.5 | [Y](CVE-2020-13277/vultarget/) | N | N | N | N | N | N |
 | CVE-2020-13379 | Grafana | 服务器端请求伪造 | 8.2 | N | [Y](CVE-2020-13379/poc/nuclei/) | N | N | N | N | [Y](CVE-2020-13379/poc/others/) |

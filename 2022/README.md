@@ -26,14 +26,14 @@
 | CVE-2022-0328 |  | 跨站请求伪造 | 4.7 | [Y](CVE-2022-0328/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0332 |  | SQL注入 | 9.8 | [Y](CVE-2022-0332/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0345 |  | 信息泄露 | 4.3 | [Y](CVE-2022-0345/vultarget/) | N | N | N | N | N | N |
-| CVE-2022-0349 |  | SQL注入 |  | [Y](CVE-2022-0349/vultarget/) | N | N | N | N | N | N |
+| CVE-2022-0349 |  | SQL注入 | 9.8 | [Y](CVE-2022-0349/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0378 |  | 跨站脚本 | 5.4 | N | [Y](CVE-2022-0378/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-0381 |  | 跨站脚本 | 6.1 | N | [Y](CVE-2022-0381/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-0411 |  | SQL注入 | 8.8 | [Y](CVE-2022-0411/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0412 |  | SQL注入 | 9.8 | [Y](CVE-2022-0412/vultarget/) | N | N | N | N | N | N |
-| CVE-2022-0426 |  | 跨站脚本 |  | [Y](CVE-2022-0426/vultarget/) | N | N | N | N | N | N |
+| CVE-2022-0426 |  | 跨站脚本 | 5.4 | [Y](CVE-2022-0426/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0432 | Mastodon | 组件漏洞 | 6.1 | N | [Y](CVE-2022-0432/poc/nuclei/) | N | N | N | N | N |
-| CVE-2022-0434 |  | SQL注入 |  | [Y](CVE-2022-0434/vultarget/) | N | N | N | N | N | N |
+| CVE-2022-0434 |  | SQL注入 | 9.8 | [Y](CVE-2022-0434/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0543 | Redis | 代码注入 | 10 | [Y](CVE-2022-0543/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0653 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2022-0653/poc/nuclei/) | N | N | N | N | N |
 | CVE-2022-0692 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2022-0692/poc/nuclei/) | N | N | N | N | N |
