@@ -5,6 +5,6 @@
 1. Y --> already has poc, enjoy yourself
 2. N --> wait for you to implement, thx! :heart:
 
-| CVE | Component | Category | CVSS | Vultarget | Nuclei | Xray | pocsuite2 | pocsuite3 | goby | others |
-|-----|-----------|----------|------|-----------|--------|------|-----------|-----------|------|--------|
-| CVE-2000-0114 |  | 未知 |  | N | [Y](CVE-2000-0114/poc/nuclei/) | N | N | N | N | N |
+| CVE | Component | Category | CVSS | Vultarget | pocsploit | Nuclei | Xray | pocsuite3 | goby | others |
+|-----|-----------|----------|------|-----------|-----------|--------|------|-----------|------|--------|
+| CVE-2000-0114 |  | 未知 |  | N | N | [Y](CVE-2000-0114/poc/nuclei/) | N | N | N | N |

@@ -16,9 +16,9 @@ We are aming to collect different normalized poc and the vulerable target to ver
 
 Now reapoc support these poc:
 
+[pocsploit](https://github.com/cckuailong/pocsploit),
 [nuclei](https://github.com/projectdiscovery/nuclei),
 [xray](https://github.com/chaitin/xray),
-[pocsuite2](https://github.com/knownsec/Pocsuite),
 [pocsuite3](https://github.com/knownsec/pocsuite3),
 [goby](https://github.com/goby-lang/goby)
 
@@ -32,9 +32,9 @@ Now reapoc support these poc:
 
 ## Statistics
 
-| All CVEs | Vultarget | Nuclei | Xray | pocsuite2 | pocsuite3 | goby | others |
-|----------|-----------|--------|------|-----------|-----------|------|--------|
-|   1445   |   514   |   1110   |   156   |   19   |   19   |   34   |   755   |
+| All CVEs | Vultarget | pocsploit | Nuclei | Xray | pocsuite3 | goby | others |
+|----------|-----------|-----------|--------|------|-----------|------|--------|
+|   1446   |   514   |   239   |   1110   |   156   |   19   |   34   |   755   |
 
 ## Menu
 
@@ -61,7 +61,7 @@ Now reapoc support these poc:
 |   2015   |   44   |   [2015/](2015/)   |
 |   2016   |   61   |   [2016/](2016/)   |
 |   2017   |   91   |   [2017/](2017/)   |
-|   2018   |   163   |   [2018/](2018/)   |
+|   2018   |   164   |   [2018/](2018/)   |
 |   2019   |   157   |   [2019/](2019/)   |
 |   2020   |   269   |   [2020/](2020/)   |
 |   2021   |   365   |   [2021/](2021/)   |
