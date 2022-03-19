@@ -94,7 +94,7 @@
 | CVE-2021-24510 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-24510/poc/pocsploit/) | [Y](CVE-2021-24510/poc/nuclei/) | N | N | N | N |
 | CVE-2021-24545 |  | 跨站脚本 | 5.4 | [Y](CVE-2021-24545/vultarget/) | N | N | N | N | N | N |
 | CVE-2021-24750 | WordPress | SQL注入 | 8.8 | [Y](CVE-2021-24750/vultarget/) | [Y](CVE-2021-24750/poc/pocsploit/) | [Y](CVE-2021-24750/poc/nuclei/) | N | N | N | [Y](CVE-2021-24750/poc/others/) |
-| CVE-2021-24762 |  | SQL注入 | 9.8 | [Y](CVE-2021-24762/vultarget/) | N | [Y](CVE-2021-24762/poc/nuclei/) | N | N | N | [Y](CVE-2021-24762/poc/others/) |
+| CVE-2021-24762 |  | SQL注入 | 9.8 | [Y](CVE-2021-24762/vultarget/) | [Y](CVE-2021-24762/poc/pocsploit/) | [Y](CVE-2021-24762/poc/nuclei/) | N | N | N | [Y](CVE-2021-24762/poc/others/) |
 | CVE-2021-24786 |  | SQL注入 | 7.2 | [Y](CVE-2021-24786/vultarget/) | N | N | N | N | N | N |
 | CVE-2021-24838 |  | 输入验证错误 | 6.1 | N | N | [Y](CVE-2021-24838/poc/nuclei/) | N | N | N | N |
 | CVE-2021-24862 |  | SQL注入 | 7.2 | [Y](CVE-2021-24862/vultarget/) | N | [Y](CVE-2021-24862/poc/nuclei/) | N | N | N | N |
@@ -277,7 +277,7 @@
 | CVE-2021-35265 |  | 其他 | 6.1 | N | N | [Y](CVE-2021-35265/poc/nuclei/) | N | N | N | N |
 | CVE-2021-35336 | Tieline-Tieline-G5 | 访问控制错误 | 9.8 | N | N | [Y](CVE-2021-35336/poc/nuclei/) | N | N | N | N |
 | CVE-2021-35464 | ForgeRock AM | 代码问题 | 9.8 | [Y](CVE-2021-35464/vultarget/) | N | [Y](CVE-2021-35464/poc/nuclei/) | N | N | N | [Y](CVE-2021-35464/poc/others/) |
-| CVE-2021-35587 |  | 输入验证错误 | 9.8 | [Y](CVE-2021-35587/vultarget/) | N | [Y](CVE-2021-35587/poc/nuclei/) | N | N | N | N |
+| CVE-2021-35587 |  | 输入验证错误 | 9.8 | [Y](CVE-2021-35587/vultarget/) | [Y](CVE-2021-35587/poc/pocsploit/) | [Y](CVE-2021-35587/poc/nuclei/) | N | N | N | N |
 | CVE-2021-3577 | Motorola-公司产品 | 命令执行 | 8.8 | N | [Y](CVE-2021-3577/poc/pocsploit/) | [Y](CVE-2021-3577/poc/nuclei/) | N | N | N | N |
 | CVE-2021-36260 | Hikvision | 命令注入 | 9.8 | N | [Y](CVE-2021-36260/poc/pocsploit/) | [Y](CVE-2021-36260/poc/nuclei/) | [Y](CVE-2021-36260/poc/xray/) | N | [Y](CVE-2021-36260/poc/goby/) | [Y](CVE-2021-36260/poc/others/) |
 | CVE-2021-36380 | web | 操作系统命令注入 | 9.8 | N | [Y](CVE-2021-36380/poc/pocsploit/) | [Y](CVE-2021-36380/poc/nuclei/) | N | N | N | N |
@@ -351,7 +351,7 @@
 | CVE-2021-43287 | GoCD | 本地文件包含 |  | [Y](CVE-2021-43287/vultarget/) | N | [Y](CVE-2021-43287/poc/nuclei/) | [Y](CVE-2021-43287/poc/xray/) | N | N | N |
 | CVE-2021-43495 |  | 其他 | 7.5 | N | N | [Y](CVE-2021-43495/poc/nuclei/) | N | N | N | N |
 | CVE-2021-43496 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2021-43496/poc/nuclei/) | N | N | N | N |
-| CVE-2021-43778 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2021-43778/poc/nuclei/) | N | N | N | [Y](CVE-2021-43778/poc/others/) |
+| CVE-2021-43778 |  | 路径遍历 | 7.5 | [Y](CVE-2021-43778/vultarget/) | [Y](CVE-2021-43778/poc/pocsploit/) | [Y](CVE-2021-43778/poc/nuclei/) | N | N | N | [Y](CVE-2021-43778/poc/others/) |
 | CVE-2021-43798 | Grafana | 任意文件读取 | 7.5 | [Y](CVE-2021-43798/vultarget/) | N | [Y](CVE-2021-43798/poc/nuclei/) | [Y](CVE-2021-43798/poc/xray/) | N | N | [Y](CVE-2021-43798/poc/others/) |
 | CVE-2021-43810 | Admidio | 跨站脚本 | 6.1 | N | N | [Y](CVE-2021-43810/poc/nuclei/) | N | N | N | N |
 | CVE-2021-43821 |  | 其他 | 7.7 | [Y](CVE-2021-43821/vultarget/) | N | N | N | N | N | N |

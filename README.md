@@ -34,7 +34,7 @@ Now reapoc support these poc:
 
 | All CVEs | Vultarget | pocsploit | Nuclei | Xray | pocsuite3 | goby | others |
 |----------|-----------|-----------|--------|------|-----------|------|--------|
-|   1446   |   514   |   239   |   1110   |   156   |   19   |   34   |   755   |
+|   1446   |   515   |   247   |   1110   |   156   |   19   |   34   |   755   |
 
 ## Menu
 
