@@ -16,11 +16,11 @@ We are aming to collect different normalized poc and the vulerable target to ver
 
 Now reapoc support these poc:
 
-[pocsploit](https://github.com/cckuailong/pocsploit),
-[nuclei](https://github.com/projectdiscovery/nuclei),
-[xray](https://github.com/chaitin/xray),
-[pocsuite3](https://github.com/knownsec/pocsuite3),
-[goby](https://github.com/goby-lang/goby)
+- [pocsploit](https://github.com/cckuailong/pocsploit): My new simple, smart poc framework, welcome!
+- [nuclei](https://github.com/projectdiscovery/nuclei): Famous in the world, yaml-based
+- [xray](https://github.com/chaitin/xray): yaml-based
+- [pocsuite3](https://github.com/knownsec/pocsuite3): python poc framework
+- [goby](https://github.com/goby-lang/goby): golang poc framework
 
 ## Topic
 
@@ -34,7 +34,7 @@ Now reapoc support these poc:
 
 | All CVEs | Vultarget | pocsploit | Nuclei | Xray | pocsuite3 | goby | others |
 |----------|-----------|-----------|--------|------|-----------|------|--------|
-|   1446   |   515   |   247   |   1110   |   156   |   19   |   34   |   755   |
+|   1446   |   515   |   294   |   1110   |   156   |   19   |   34   |   755   |
 
 ## Menu
 

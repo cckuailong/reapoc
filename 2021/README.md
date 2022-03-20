@@ -157,7 +157,7 @@
 | CVE-2021-25073 |  | 跨站请求伪造 | 8.8 | [Y](CVE-2021-25073/vultarget/) | N | N | N | N | N | N |
 | CVE-2021-25074 | WordPress | 输入验证错误 | 6.1 | [Y](CVE-2021-25074/vultarget/) | N | [Y](CVE-2021-25074/poc/nuclei/) | N | N | N | N |
 | CVE-2021-25075 |  | 其他 | 3.5 | [Y](CVE-2021-25075/vultarget/) | N | N | N | N | N | N |
-| CVE-2021-25076 |  | SQL注入 | 9.8 | [Y](CVE-2021-25076/vultarget/) | N | N | N | N | N | N |
+| CVE-2021-25076 |  | SQL注入 | 8.8 | [Y](CVE-2021-25076/vultarget/) | N | N | N | N | N | N |
 | CVE-2021-25077 |  | 跨站脚本 | 6.1 | [Y](CVE-2021-25077/vultarget/) | N | N | N | N | N | N |
 | CVE-2021-25078 |  | 跨站脚本 | 6.1 | [Y](CVE-2021-25078/vultarget/) | N | N | N | N | N | N |
 | CVE-2021-25081 |  | 跨站请求伪造 | 6.5 | [Y](CVE-2021-25081/vultarget/) | N | N | N | N | N | N |
