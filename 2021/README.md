@@ -273,11 +273,12 @@
 | CVE-2021-34621 |  | 其他 | 9.8 | [Y](CVE-2021-34621/vultarget/) | [Y](CVE-2021-34621/poc/pocsploit/) | [Y](CVE-2021-34621/poc/nuclei/) | N | N | N | [Y](CVE-2021-34621/poc/others/) |
 | CVE-2021-34640 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-34640/poc/pocsploit/) | [Y](CVE-2021-34640/poc/nuclei/) | N | N | N | N |
 | CVE-2021-34643 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2021-34643/poc/pocsploit/) | [Y](CVE-2021-34643/poc/nuclei/) | N | N | N | N |
+| CVE-2021-34805 | FAUST iServer | 路径遍历 | 7.5 | N | N | [Y](CVE-2021-34805/poc/nuclei/) | N | N | N | N |
 | CVE-2021-35042 |  | SQL注入 | 9.8 | [Y](CVE-2021-35042/vultarget/) | N | N | N | N | N | [Y](CVE-2021-35042/poc/others/) |
 | CVE-2021-35265 |  | 其他 | 6.1 | N | N | [Y](CVE-2021-35265/poc/nuclei/) | N | N | N | N |
 | CVE-2021-35336 | Tieline-Tieline-G5 | 访问控制错误 | 9.8 | N | N | [Y](CVE-2021-35336/poc/nuclei/) | N | N | N | N |
 | CVE-2021-35464 | ForgeRock AM | 代码问题 | 9.8 | [Y](CVE-2021-35464/vultarget/) | N | [Y](CVE-2021-35464/poc/nuclei/) | N | N | N | [Y](CVE-2021-35464/poc/others/) |
-| CVE-2021-35587 |  | 输入验证错误 | 9.8 | [Y](CVE-2021-35587/vultarget/) | [Y](CVE-2021-35587/poc/pocsploit/) | [Y](CVE-2021-35587/poc/nuclei/) | N | N | N | N |
+| CVE-2021-35587 | Oracle-Fusion-Middleware | 输入验证错误 | 9.8 | [Y](CVE-2021-35587/vultarget/) | [Y](CVE-2021-35587/poc/pocsploit/) | [Y](CVE-2021-35587/poc/nuclei/) | N | N | N | N |
 | CVE-2021-3577 | Motorola-公司产品 | 命令执行 | 8.8 | N | [Y](CVE-2021-3577/poc/pocsploit/) | [Y](CVE-2021-3577/poc/nuclei/) | N | N | N | N |
 | CVE-2021-36260 | Hikvision | 命令注入 | 9.8 | N | [Y](CVE-2021-36260/poc/pocsploit/) | [Y](CVE-2021-36260/poc/nuclei/) | [Y](CVE-2021-36260/poc/xray/) | N | [Y](CVE-2021-36260/poc/goby/) | [Y](CVE-2021-36260/poc/others/) |
 | CVE-2021-36380 | web | 操作系统命令注入 | 9.8 | N | [Y](CVE-2021-36380/poc/pocsploit/) | [Y](CVE-2021-36380/poc/nuclei/) | N | N | N | N |
@@ -334,12 +335,14 @@
 | CVE-2021-41648 | PuneethReddyHc Online Shopping | SQL注入 | 7.5 | N | N | [Y](CVE-2021-41648/poc/nuclei/) | N | N | N | [Y](CVE-2021-41648/poc/others/) |
 | CVE-2021-41649 | PuneethReddyHc Online Shopping | SQL注入 | 9.8 | N | N | [Y](CVE-2021-41649/poc/nuclei/) | N | N | N | [Y](CVE-2021-41649/poc/others/) |
 | CVE-2021-41653 | TP-LINK-Wireless-WR840N | 命令执行 | 9.8 | N | [Y](CVE-2021-41653/poc/pocsploit/) | [Y](CVE-2021-41653/poc/nuclei/) | N | N | N | [Y](CVE-2021-41653/poc/others/) |
+| CVE-2021-41691 | Unknown | Unknown | Unknown | N | N | [Y](CVE-2021-41691/poc/nuclei/) | N | N | N | N |
 | CVE-2021-41773 | Apache-Web-Server | 代码执行  | 7.5 | [Y](CVE-2021-41773/vultarget/) | [Y](CVE-2021-41773/poc/pocsploit/) | [Y](CVE-2021-41773/poc/nuclei/) | [Y](CVE-2021-41773/poc/xray/) | [Y](CVE-2021-41773/poc/pocsuite3/) | [Y](CVE-2021-41773/poc/goby/) | [Y](CVE-2021-41773/poc/others/) |
 | CVE-2021-41826 |  | 权限许可和访问控制问题 | 6.1 | N | N | [Y](CVE-2021-41826/poc/nuclei/) | N | N | N | [Y](CVE-2021-41826/poc/others/) |
 | CVE-2021-41878 |  | 其他 | 6.1 | N | N | [Y](CVE-2021-41878/poc/nuclei/) | N | N | N | [Y](CVE-2021-41878/poc/others/) |
-| CVE-2021-4191 |  | 未授权访问 | 5.3 | N | [Y](CVE-2021-4191/poc/pocsploit/) | [Y](CVE-2021-4191/poc/nuclei/) | N | N | N | N |
+| CVE-2021-4191 |  | 信息泄露 | 5.3 | N | [Y](CVE-2021-4191/poc/pocsploit/) | [Y](CVE-2021-4191/poc/nuclei/) | N | N | N | N |
 | CVE-2021-41951 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2021-41951/poc/nuclei/) | N | N | N | N |
 | CVE-2021-42013 | Apache-Web-Server | 任意文件读取 | 9.8 | [Y](CVE-2021-42013/vultarget/) | [Y](CVE-2021-42013/poc/pocsploit/) | [Y](CVE-2021-42013/poc/nuclei/) | N | N | N | [Y](CVE-2021-42013/poc/others/) |
+| CVE-2021-42063 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2021-42063/poc/nuclei/) | N | N | N | N |
 | CVE-2021-42237 | Sitecore | 其他 | 9.8 | N | [Y](CVE-2021-42237/poc/pocsploit/) | [Y](CVE-2021-42237/poc/nuclei/) | N | N | N | [Y](CVE-2021-42237/poc/others/) |
 | CVE-2021-42258 |  | SQL注入 | 9.8 | N | [Y](CVE-2021-42258/poc/pocsploit/) | [Y](CVE-2021-42258/poc/nuclei/) | N | N | N | N |
 | CVE-2021-42342 | GoAhead | 代码问题 | 9.8 | [Y](CVE-2021-42342/vultarget/) | N | N | N | N | N | [Y](CVE-2021-42342/poc/others/) |
@@ -362,6 +365,7 @@
 | CVE-2021-44515 |  | 授权问题 | 9.8 | N | N | N | N | N | N | N |
 | CVE-2021-44521 |  | 代码注入 | 9.1 | N | N | [Y](CVE-2021-44521/poc/nuclei/) | N | N | N | N |
 | CVE-2021-44528 |  | 输入验证错误 | 6.1 | N | [Y](CVE-2021-44528/poc/pocsploit/) | [Y](CVE-2021-44528/poc/nuclei/) | N | N | N | N |
+| CVE-2021-44529 | Ivanti | 代码注入 | 9.8 | N | N | [Y](CVE-2021-44529/poc/nuclei/) | N | N | N | N |
 | CVE-2021-44848 |  | 授权问题 | 5.3 | N | [Y](CVE-2021-44848/poc/pocsploit/) | [Y](CVE-2021-44848/poc/nuclei/) | N | N | N | [Y](CVE-2021-44848/poc/others/) |
 | CVE-2021-45043 | HD-Network-Camera | 目录遍历 | 7.5 | N | [Y](CVE-2021-45043/poc/pocsploit/) | [Y](CVE-2021-45043/poc/nuclei/) | N | N | N | [Y](CVE-2021-45043/poc/others/) |
 | CVE-2021-45046 | JAVA | 其他 | 9 | N | [Y](CVE-2021-45046/poc/pocsploit/) | [Y](CVE-2021-45046/poc/nuclei/) | N | N | N | [Y](CVE-2021-45046/poc/others/) |
@@ -371,4 +375,6 @@
 | CVE-2021-45416 |  | 跨站脚本 | 6.1 | [Y](CVE-2021-45416/vultarget/) | N | N | N | N | N | N |
 | CVE-2021-45456 |  | 命令注入 | 9.8 | [Y](CVE-2021-45456/vultarget/) | N | N | N | N | N | N |
 | CVE-2021-45897 | SuiteCRM | 其他 | 8.8 | N | N | N | N | N | N | [Y](CVE-2021-45897/poc/others/) |
+| CVE-2021-45967 | pascom | 未授权访问 | 9.8 | N | N | [Y](CVE-2021-45967/poc/nuclei/) | N | N | N | N |
+| CVE-2021-45968 |  | 其他 | 7.5 | N | N | [Y](CVE-2021-45968/poc/nuclei/) | N | N | N | N |
 | CVE-2021-46005 | web | 跨站脚本 | 5.4 | [Y](CVE-2021-46005/vultarget/) | [Y](CVE-2021-46005/poc/pocsploit/) | [Y](CVE-2021-46005/poc/nuclei/) | N | N | N | N |

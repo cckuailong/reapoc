@@ -43,7 +43,8 @@
 | CVE-2018-12054 | PHP-Mall | 路径遍历 | 7.5 | N | N | [Y](CVE-2018-12054/poc/nuclei/) | N | N | N | [Y](CVE-2018-12054/poc/others/) |
 | CVE-2018-1207 | Dell-iDRAC | 代码执行  | 9.8 | N | N | [Y](CVE-2018-1207/poc/nuclei/) | N | N | N | N |
 | CVE-2018-12095 |  | 跨站脚本 | 5.4 | N | N | [Y](CVE-2018-12095/poc/nuclei/) | N | N | N | [Y](CVE-2018-12095/poc/others/) |
-| CVE-2018-12296 |  | 访问控制错误 | 7.5 | N | [Y](CVE-2018-12296/poc/pocsploit/) | N | N | N | N | N |
+| CVE-2018-12296 | Seagate-NAS | 访问控制错误 | 7.5 | N | [Y](CVE-2018-12296/poc/pocsploit/) | [Y](CVE-2018-12296/poc/nuclei/) | N | N | N | N |
+| CVE-2018-12300 | Seagate-NAS | 输入验证错误 | 6.1 | N | N | [Y](CVE-2018-12300/poc/nuclei/) | N | N | N | N |
 | CVE-2018-1247 |  | 资料不足 | 7.1 | N | N | [Y](CVE-2018-1247/poc/nuclei/) | N | N | N | [Y](CVE-2018-1247/poc/others/) |
 | CVE-2018-12491 |  | 资料不足 | 9.8 | [Y](CVE-2018-12491/vultarget/) | N | N | N | N | N | N |
 | CVE-2018-12604 | GreenCMS | 其他 | 7.5 | [Y](CVE-2018-12604/vultarget/) | N | N | N | N | N | [Y](CVE-2018-12604/poc/others/) |

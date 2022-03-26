@@ -89,6 +89,7 @@
 | CVE-2020-16952 | Microsoft-SharePoint | 其他 | 7.8 | N | N | [Y](CVE-2020-16952/poc/nuclei/) | N | N | N | N |
 | CVE-2020-17362 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2020-17362/poc/nuclei/) | N | N | N | N |
 | CVE-2020-17453 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2020-17453/poc/nuclei/) | N | N | N | [Y](CVE-2020-17453/poc/others/) |
+| CVE-2020-17456 | Seowon SlC-130 | 命令执行 | 9.8 | N | N | [Y](CVE-2020-17456/poc/nuclei/) | N | N | N | N |
 | CVE-2020-17496 | vBulletin | 其他 | 9.8 | N | [Y](CVE-2020-17496/poc/pocsploit/) | [Y](CVE-2020-17496/poc/nuclei/) | N | N | N | [Y](CVE-2020-17496/poc/others/) |
 | CVE-2020-17505 |  | 其他 | 8.8 | N | [Y](CVE-2020-17505/poc/pocsploit/) | [Y](CVE-2020-17505/poc/nuclei/) | N | N | N | N |
 | CVE-2020-17506 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2020-17506/poc/nuclei/) | N | N | N | [Y](CVE-2020-17506/poc/others/) |
@@ -163,6 +164,7 @@
 | CVE-2020-26919 | NETGEAR | 未授权访问 | 9.8 | N | [Y](CVE-2020-26919/poc/pocsploit/) | [Y](CVE-2020-26919/poc/nuclei/) | N | N | N | N |
 | CVE-2020-26948 |  | 其他 | 9.8 | N | N | [Y](CVE-2020-26948/poc/nuclei/) | N | N | N | N |
 | CVE-2020-27361 | akkadian | 其他 | 7.5 | N | N | [Y](CVE-2020-27361/poc/nuclei/) | N | N | N | N |
+| CVE-2020-27467 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2020-27467/poc/nuclei/) | N | N | N | N |
 | CVE-2020-27735 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2020-27735/poc/nuclei/) | N | N | N | N |
 | CVE-2020-27866 | NETGEAR | 未授权访问 | 8.8 | N | [Y](CVE-2020-27866/poc/pocsploit/) | [Y](CVE-2020-27866/poc/nuclei/) | N | N | N | N |
 | CVE-2020-27982 | IceWarp | 跨站脚本 | 6.1 | N | N | [Y](CVE-2020-27982/poc/nuclei/) | N | N | N | N |
@@ -248,7 +250,7 @@
 | CVE-2020-8196 |  | 授权问题 | 4.3 | N | N | N | N | [Y](CVE-2020-8196/poc/pocsuite3/) | N | N |
 | CVE-2020-8209 | XenMobile | 任意文件读取 | 7.5 | N | N | [Y](CVE-2020-8209/poc/nuclei/) | [Y](CVE-2020-8209/poc/xray/) | N | N | [Y](CVE-2020-8209/poc/others/) |
 | CVE-2020-8277 |  | 资源管理错误 | 7.5 | [Y](CVE-2020-8277/vultarget/) | N | N | N | N | N | N |
-| CVE-2020-8287 |  | 代码问题 | 6.5 | [Y](CVE-2020-8287/vultarget/) | N | N | N | N | N | N |
+| CVE-2020-8287 |  | 环境问题 | 6.5 | [Y](CVE-2020-8287/vultarget/) | N | N | N | N | N | N |
 | CVE-2020-8451 | Unknown | Unknown | Unknown | N | N | [Y](CVE-2020-8451/poc/nuclei/) | N | N | N | N |
 | CVE-2020-8497 |  | 信息泄露 | 5.3 | N | N | [Y](CVE-2020-8497/poc/nuclei/) | N | N | N | N |
 | CVE-2020-8512 | IceWarp | 跨站脚本 | 6.1 | N | N | [Y](CVE-2020-8512/poc/nuclei/) | N | N | N | [Y](CVE-2020-8512/poc/others/) |
