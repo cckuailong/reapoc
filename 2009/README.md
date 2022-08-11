@@ -9,7 +9,7 @@
 |-----|-----------|----------|------|-----------|-----------|--------|------|-----------|------|--------|
 | CVE-2009-0545 | zeroshell | 输入验证 |  | N | N | [Y](CVE-2009-0545/poc/nuclei/) | N | N | N | [Y](CVE-2009-0545/poc/others/) |
 | CVE-2009-0932 | Horde-App-Framework | 路径遍历 |  | N | N | [Y](CVE-2009-0932/poc/nuclei/) | N | N | N | [Y](CVE-2009-0932/poc/others/) |
-| CVE-2009-1151 | phpMyAdmin | 远程文件包含 |  | N | [Y](CVE-2009-1151/poc/pocsploit/) | [Y](CVE-2009-1151/poc/nuclei/) | N | N | N | [Y](CVE-2009-1151/poc/others/) |
+| CVE-2009-1151 | phpMyAdmin | 代码注入 |  | N | [Y](CVE-2009-1151/poc/pocsploit/) | [Y](CVE-2009-1151/poc/nuclei/) | N | N | N | [Y](CVE-2009-1151/poc/others/) |
 | CVE-2009-1496 |  | 路径遍历 |  | N | N | [Y](CVE-2009-1496/poc/nuclei/) | N | N | N | [Y](CVE-2009-1496/poc/others/) |
 | CVE-2009-1558 | linksys | 路径遍历 |  | N | N | [Y](CVE-2009-1558/poc/nuclei/) | N | N | N | [Y](CVE-2009-1558/poc/others/) |
 | CVE-2009-1872 | Adobe-ColdFusion | 跨站脚本 |  | N | N | [Y](CVE-2009-1872/poc/nuclei/) | N | N | N | [Y](CVE-2009-1872/poc/others/) |

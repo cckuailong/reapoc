@@ -72,7 +72,7 @@
 | CVE-2010-1722 | Joomla | 路径遍历 |  | N | N | [Y](CVE-2010-1722/poc/nuclei/) | N | N | N | [Y](CVE-2010-1722/poc/others/) |
 | CVE-2010-1723 | Joomla | 路径遍历 |  | N | N | [Y](CVE-2010-1723/poc/nuclei/) | N | N | N | [Y](CVE-2010-1723/poc/others/) |
 | CVE-2010-1858 |  | 路径遍历 |  | N | N | [Y](CVE-2010-1858/poc/nuclei/) | N | N | N | [Y](CVE-2010-1858/poc/others/) |
-| CVE-2010-1870 | Struts2 | 安全模式绕过 |  | N | N | [Y](CVE-2010-1870/poc/nuclei/) | N | N | N | [Y](CVE-2010-1870/poc/others/) |
+| CVE-2010-1870 | Struts2 | 设计错误 |  | N | N | [Y](CVE-2010-1870/poc/nuclei/) | N | N | N | [Y](CVE-2010-1870/poc/others/) |
 | CVE-2010-1871 | JBoss | 输入验证 |  | N | N | [Y](CVE-2010-1871/poc/nuclei/) | [Y](CVE-2010-1871/poc/xray/) | N | N | [Y](CVE-2010-1871/poc/others/) |
 | CVE-2010-1873 |  | SQL注入 |  | N | N | [Y](CVE-2010-1873/poc/nuclei/) | N | N | N | [Y](CVE-2010-1873/poc/others/) |
 | CVE-2010-1875 |  | 路径遍历 |  | N | N | [Y](CVE-2010-1875/poc/nuclei/) | N | N | N | [Y](CVE-2010-1875/poc/others/) |
@@ -104,12 +104,13 @@
 | CVE-2010-2680 |  | 路径遍历 |  | N | N | [Y](CVE-2010-2680/poc/nuclei/) | N | N | N | [Y](CVE-2010-2680/poc/others/) |
 | CVE-2010-2682 | Joomla | 路径遍历 |  | N | N | [Y](CVE-2010-2682/poc/nuclei/) | N | N | N | [Y](CVE-2010-2682/poc/others/) |
 | CVE-2010-2857 |  | 路径遍历 |  | N | N | [Y](CVE-2010-2857/poc/nuclei/) | N | N | N | [Y](CVE-2010-2857/poc/others/) |
-| CVE-2010-2861 | Adobe-ColdFusion | 目录遍历 |  | [Y](CVE-2010-2861/vultarget/) | N | [Y](CVE-2010-2861/poc/nuclei/) | [Y](CVE-2010-2861/poc/xray/) | N | [Y](CVE-2010-2861/poc/goby/) | [Y](CVE-2010-2861/poc/others/) |
+| CVE-2010-2861 | Adobe-ColdFusion | 路径遍历 |  | [Y](CVE-2010-2861/vultarget/) | N | [Y](CVE-2010-2861/poc/nuclei/) | [Y](CVE-2010-2861/poc/xray/) | N | [Y](CVE-2010-2861/poc/goby/) | [Y](CVE-2010-2861/poc/others/) |
 | CVE-2010-2918 |  | 代码注入 |  | N | N | [Y](CVE-2010-2918/poc/nuclei/) | N | N | N | [Y](CVE-2010-2918/poc/others/) |
 | CVE-2010-2920 |  | 路径遍历 |  | N | N | [Y](CVE-2010-2920/poc/nuclei/) | N | N | N | [Y](CVE-2010-2920/poc/others/) |
 | CVE-2010-3203 | Joomla | 路径遍历 |  | N | N | [Y](CVE-2010-3203/poc/nuclei/) | N | N | N | [Y](CVE-2010-3203/poc/others/) |
 | CVE-2010-3426 |  | 路径遍历 |  | N | N | [Y](CVE-2010-3426/poc/nuclei/) | N | N | N | [Y](CVE-2010-3426/poc/others/) |
 | CVE-2010-4231 | web | 路径遍历 |  | N | N | [Y](CVE-2010-4231/poc/nuclei/) | N | N | N | [Y](CVE-2010-4231/poc/others/) |
+| CVE-2010-4239 | Tiki-wiki-CMS | 输入验证 | 9.8 | N | N | [Y](CVE-2010-4239/poc/nuclei/) | N | N | N | N |
 | CVE-2010-4282 |  | 路径遍历 |  | N | N | [Y](CVE-2010-4282/poc/nuclei/) | N | N | N | [Y](CVE-2010-4282/poc/others/) |
 | CVE-2010-4617 | Joomla | 路径遍历 |  | N | N | [Y](CVE-2010-4617/poc/nuclei/) | N | N | N | [Y](CVE-2010-4617/poc/others/) |
 | CVE-2010-4719 |  | 路径遍历 |  | N | N | [Y](CVE-2010-4719/poc/nuclei/) | N | N | N | [Y](CVE-2010-4719/poc/others/) |
