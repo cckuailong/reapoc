@@ -37,7 +37,8 @@
 | CVE-2016-10033 | WordPress | 命令注入 | 9.8 | [Y](CVE-2016-10033/vultarget/) | [Y](CVE-2016-10033/poc/pocsploit/) | [Y](CVE-2016-10033/poc/nuclei/) | N | N | N | [Y](CVE-2016-10033/poc/others/) |
 | CVE-2016-10134 | Zabbix | SQL注入 | 9.8 | [Y](CVE-2016-10134/vultarget/) | N | [Y](CVE-2016-10134/poc/nuclei/) | [Y](CVE-2016-10134/poc/xray/) | N | N | [Y](CVE-2016-10134/poc/others/) |
 | CVE-2016-10140 |  | 信息泄露 | 7.5 | [Y](CVE-2016-10140/vultarget/) | N | N | N | N | N | N |
-| CVE-2016-10367 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2016-10367/poc/nuclei/) | N | N | N | N |
+| CVE-2016-10367 | opsview | 路径遍历 | 7.5 | N | N | [Y](CVE-2016-10367/poc/nuclei/) | N | N | N | N |
+| CVE-2016-10368 |  | url重定向 | 6.1 | N | N | [Y](CVE-2016-10368/poc/nuclei/) | N | N | N | N |
 | CVE-2016-10924 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2016-10924/poc/nuclei/) | N | N | N | N |
 | CVE-2016-10940 |  | SQL注入 | 7.2 | [Y](CVE-2016-10940/vultarget/) | [Y](CVE-2016-10940/poc/pocsploit/) | [Y](CVE-2016-10940/poc/nuclei/) | N | N | N | N |
 | CVE-2016-10956 | WordPress | 输入验证 | 7.5 | N | N | [Y](CVE-2016-10956/poc/nuclei/) | N | N | N | N |
@@ -51,7 +52,7 @@
 | CVE-2016-3081 | Struts2 | 命令注入 | 8.1 | [Y](CVE-2016-3081/vultarget/) | [Y](CVE-2016-3081/poc/pocsploit/) | [Y](CVE-2016-3081/poc/nuclei/) | N | N | N | [Y](CVE-2016-3081/poc/others/) |
 | CVE-2016-3087 | Struts2 | 输入验证 | 9.8 | [Y](CVE-2016-3087/vultarget/) | N | N | N | N | N | [Y](CVE-2016-3087/poc/others/) |
 | CVE-2016-3088 | Apache-ActiveMQ | 输入验证 | 9.8 | [Y](CVE-2016-3088/vultarget/) | N | [Y](CVE-2016-3088/poc/nuclei/) | [Y](CVE-2016-3088/poc/xray/) | N | N | [Y](CVE-2016-3088/poc/others/) |
-| CVE-2016-3510 | Weblogic_interface_7001 | 资料不足 | 9.8 | [Y](CVE-2016-3510/vultarget/) | N | N | N | N | N | [Y](CVE-2016-3510/poc/others/) |
+| CVE-2016-3510 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2016-3510/vultarget/) | N | N | N | N | N | [Y](CVE-2016-3510/poc/others/) |
 | CVE-2016-3978 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2016-3978/poc/nuclei/) | N | N | N | N |
 | CVE-2016-4437 | Apache-Shiro | 访问控制错误 | 8.1 | [Y](CVE-2016-4437/vultarget/) | N | N | N | N | N | [Y](CVE-2016-4437/poc/others/) |
 | CVE-2016-4438 | Struts2 | 输入验证 | 9.8 | [Y](CVE-2016-4438/vultarget/) | N | N | N | N | N | [Y](CVE-2016-4438/poc/others/) |
@@ -61,8 +62,10 @@
 | CVE-2016-5734 | phpMyAdmin | 代码注入 | 9.8 | [Y](CVE-2016-5734/vultarget/) | N | N | N | N | N | [Y](CVE-2016-5734/poc/others/) |
 | CVE-2016-6210 | OpenSSH | 信息泄露 | 5.9 | N | N | [Y](CVE-2016-6210/poc/nuclei/) | N | N | N | [Y](CVE-2016-6210/poc/others/) |
 | CVE-2016-6277 | Netgear router | 跨站请求伪造 | 8.8 | N | N | [Y](CVE-2016-6277/poc/nuclei/) | N | N | N | [Y](CVE-2016-6277/poc/others/) |
+| CVE-2016-6601 | WebNMS | 路径遍历 | 7.5 | N | N | [Y](CVE-2016-6601/poc/nuclei/) | N | N | N | N |
 | CVE-2016-6816 | Apache-Tomcat | 输入验证 | 7.1 | [Y](CVE-2016-6816/vultarget/) | N | N | N | N | N | [Y](CVE-2016-6816/poc/others/) |
 | CVE-2016-7552 | Trend Micro ServerProtect | 路径遍历 | 9.8 | N | N | [Y](CVE-2016-7552/poc/nuclei/) | N | N | N | [Y](CVE-2016-7552/poc/others/) |
+| CVE-2016-7834 | SONY-摄像头 | 信息泄露 | 8.8 | N | N | [Y](CVE-2016-7834/poc/nuclei/) | N | N | N | N |
 | CVE-2016-7981 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2016-7981/poc/nuclei/) | N | N | N | N |
 | CVE-2016-8527 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2016-8527/poc/nuclei/) | N | N | N | [Y](CVE-2016-8527/poc/others/) |
 | CVE-2016-8869 | Joomla | 输入验证 | 9.8 | [Y](CVE-2016-8869/vultarget/) | N | N | N | N | N | [Y](CVE-2016-8869/poc/others/) |

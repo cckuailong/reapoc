@@ -22,7 +22,8 @@
 | CVE-2019-10405 |  | 信息泄露 | 4.3 | N | [Y](CVE-2019-10405/poc/pocsploit/) | [Y](CVE-2019-10405/poc/nuclei/) | N | N | N | N |
 | CVE-2019-10475 | Jenkins | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-10475/poc/nuclei/) | N | N | N | [Y](CVE-2019-10475/poc/others/) |
 | CVE-2019-10664 |  | SQL注入 | 9.8 | [Y](CVE-2019-10664/vultarget/) | N | N | N | N | N | [Y](CVE-2019-10664/poc/others/) |
-| CVE-2019-10717 |  | 路径遍历 | 7.1 | N | N | [Y](CVE-2019-10717/poc/nuclei/) | N | N | N | N |
+| CVE-2019-10692 | WordPress | SQL注入 | 9.8 | N | N | [Y](CVE-2019-10692/poc/nuclei/) | N | N | N | N |
+| CVE-2019-10717 | BlogEngineNET | 路径遍历 | 7.1 | N | N | [Y](CVE-2019-10717/poc/nuclei/) | N | N | N | N |
 | CVE-2019-10757 |  | SQL注入 | 9.8 | [Y](CVE-2019-10757/vultarget/) | N | N | N | N | N | N |
 | CVE-2019-10758 | Express | 其他 | 9.9 | [Y](CVE-2019-10758/vultarget/) | [Y](CVE-2019-10758/poc/pocsploit/) | [Y](CVE-2019-10758/poc/nuclei/) | [Y](CVE-2019-10758/poc/xray/) | N | N | [Y](CVE-2019-10758/poc/others/) |
 | CVE-2019-11013 |  | 路径遍历 | 6.5 | N | N | [Y](CVE-2019-11013/poc/nuclei/) | N | N | N | [Y](CVE-2019-11013/poc/others/) |
@@ -57,6 +58,7 @@
 | CVE-2019-14312 |  | 路径遍历 | 6.5 | N | N | [Y](CVE-2019-14312/poc/nuclei/) | N | N | N | [Y](CVE-2019-14312/poc/others/) |
 | CVE-2019-14322 | web | 路径遍历 | 7.5 | N | N | [Y](CVE-2019-14322/poc/nuclei/) | N | N | N | [Y](CVE-2019-14322/poc/others/) |
 | CVE-2019-14470 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-14470/poc/nuclei/) | N | N | N | [Y](CVE-2019-14470/poc/others/) |
+| CVE-2019-14530 |  | 路径遍历 | 8.8 | N | N | [Y](CVE-2019-14530/poc/nuclei/) | N | N | N | N |
 | CVE-2019-14696 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-14696/poc/nuclei/) | N | N | N | [Y](CVE-2019-14696/poc/others/) |
 | CVE-2019-14772 |  | 跨站脚本 | 6.1 | [Y](CVE-2019-14772/vultarget/) | N | N | N | N | N | N |
 | CVE-2019-14974 | SugarCRM | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-14974/poc/nuclei/) | N | N | N | [Y](CVE-2019-14974/poc/others/) |
@@ -83,7 +85,7 @@
 | CVE-2019-16662 | rConfig | 操作系统命令注入 | 9.8 | [Y](CVE-2019-16662/vultarget/) | N | [Y](CVE-2019-16662/poc/nuclei/) | N | N | N | [Y](CVE-2019-16662/poc/others/) |
 | CVE-2019-16663 |  | 操作系统命令注入 | 8.8 | N | N | N | [Y](CVE-2019-16663/poc/xray/) | N | N | [Y](CVE-2019-16663/poc/others/) |
 | CVE-2019-16759 | vBulletin | 代码注入 | 9.8 | [Y](CVE-2019-16759/vultarget/) | [Y](CVE-2019-16759/poc/pocsploit/) | [Y](CVE-2019-16759/poc/nuclei/) | [Y](CVE-2019-16759/poc/xray/) | N | N | [Y](CVE-2019-16759/poc/others/) |
-| CVE-2019-16920 |  | 操作系统命令注入 | 9.8 | N | N | [Y](CVE-2019-16920/poc/nuclei/) | [Y](CVE-2019-16920/poc/xray/) | N | [Y](CVE-2019-16920/poc/goby/) | [Y](CVE-2019-16920/poc/others/) |
+| CVE-2019-16920 | D-Link-Router | 命令执行 | 9.8 | N | N | [Y](CVE-2019-16920/poc/nuclei/) | [Y](CVE-2019-16920/poc/xray/) | N | [Y](CVE-2019-16920/poc/goby/) | [Y](CVE-2019-16920/poc/others/) |
 | CVE-2019-16931 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-16931/poc/nuclei/) | N | N | N | N |
 | CVE-2019-16932 | WordPress | 跨站请求伪造 | 10 | N | N | [Y](CVE-2019-16932/poc/nuclei/) | N | N | N | N |
 | CVE-2019-16996 |  | SQL注入 | 7.2 | N | N | [Y](CVE-2019-16996/poc/nuclei/) | [Y](CVE-2019-16996/poc/xray/) | N | N | N |
@@ -106,6 +108,7 @@
 | CVE-2019-18665 | DOMOS | 路径遍历 | 7.5 | N | N | [Y](CVE-2019-18665/poc/nuclei/) | N | N | N | N |
 | CVE-2019-18818 |  | 信任管理 | 9.8 | N | [Y](CVE-2019-18818/poc/pocsploit/) | [Y](CVE-2019-18818/poc/nuclei/) | N | N | N | [Y](CVE-2019-18818/poc/others/) |
 | CVE-2019-18922 | AlliedTelesis-AT交换机 | 路径遍历 | 7.5 | N | N | [Y](CVE-2019-18922/poc/nuclei/) | N | N | N | N |
+| CVE-2019-18957 | MicroStrategy-MicroStrategy-Software | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-18957/poc/nuclei/) | N | N | N | N |
 | CVE-2019-19134 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-19134/poc/nuclei/) | N | N | N | N |
 | CVE-2019-19368 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-19368/poc/nuclei/) | N | N | N | [Y](CVE-2019-19368/poc/others/) |
 | CVE-2019-19719 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-19719/poc/nuclei/) | N | N | N | N |
@@ -120,6 +123,7 @@
 | CVE-2019-20210 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-20210/poc/nuclei/) | N | N | N | N |
 | CVE-2019-20224 | Pandora-FMS | 操作系统命令注入 | 8.8 | N | N | [Y](CVE-2019-20224/poc/nuclei/) | [Y](CVE-2019-20224/poc/xray/) | N | N | [Y](CVE-2019-20224/poc/others/) |
 | CVE-2019-20354 |  | 路径遍历 | 4.3 | N | N | [Y](CVE-2019-20354/poc/nuclei/) | N | N | N | [Y](CVE-2019-20354/poc/others/) |
+| CVE-2019-20933 | InfluxDB | 登录绕过 | 9.8 | N | N | [Y](CVE-2019-20933/poc/nuclei/) | N | N | N | N |
 | CVE-2019-2578 | Oracle-Fusion-Middleware | 访问控制错误 | 8.6 | N | [Y](CVE-2019-2578/poc/pocsploit/) | [Y](CVE-2019-2578/poc/nuclei/) | N | N | N | N |
 | CVE-2019-2579 | Oracle-Fusion-Middleware | 信息泄露 | 4.3 | N | [Y](CVE-2019-2579/poc/pocsploit/) | [Y](CVE-2019-2579/poc/nuclei/) | N | N | N | N |
 | CVE-2019-2588 | Oracle-Fusion-Middleware | 信息泄露 | 4.9 | N | N | [Y](CVE-2019-2588/poc/nuclei/) | N | N | N | [Y](CVE-2019-2588/poc/others/) |
@@ -151,12 +155,14 @@
 | CVE-2019-7219 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-7219/poc/nuclei/) | N | N | N | [Y](CVE-2019-7219/poc/others/) |
 | CVE-2019-7238 | Nexus-Repository-Manager | 访问控制错误 | 9.8 | [Y](CVE-2019-7238/vultarget/) | [Y](CVE-2019-7238/poc/pocsploit/) | [Y](CVE-2019-7238/poc/nuclei/) | [Y](CVE-2019-7238/poc/xray/) | N | N | [Y](CVE-2019-7238/poc/others/) |
 | CVE-2019-7254 | Linear eMerge	 Nortek Security＆Control | 路径遍历 | 7.5 | N | N | [Y](CVE-2019-7254/poc/nuclei/) | N | N | N | [Y](CVE-2019-7254/poc/others/) |
+| CVE-2019-7255 | Linear eMerge	 Nortek Security＆Control | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-7255/poc/nuclei/) | N | N | N | N |
 | CVE-2019-7256 | Linear eMerge	 Nortek Security＆Control | 操作系统命令注入 | 10 | N | [Y](CVE-2019-7256/poc/pocsploit/) | [Y](CVE-2019-7256/poc/nuclei/) | N | N | N | [Y](CVE-2019-7256/poc/others/) |
 | CVE-2019-7275 |  | url重定向 | 6.1 | N | N | [Y](CVE-2019-7275/poc/nuclei/) | N | N | N | N |
 | CVE-2019-7315 | others | 路径遍历 | 7.5 | N | N | [Y](CVE-2019-7315/poc/nuclei/) | N | N | N | N |
 | CVE-2019-7481 |  | SQL注入 | 7.5 | N | N | [Y](CVE-2019-7481/poc/nuclei/) | N | N | N | N |
 | CVE-2019-7543 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-7543/poc/nuclei/) | N | N | N | N |
 | CVE-2019-7609 | Kibana | 代码注入 | 10 | [Y](CVE-2019-7609/vultarget/) | N | [Y](CVE-2019-7609/poc/nuclei/) | N | N | N | [Y](CVE-2019-7609/poc/others/) |
+| CVE-2019-8086 | Adobe-Experience-Manager | XML外部实体(XXE)注入 | 7.5 | N | N | [Y](CVE-2019-8086/poc/nuclei/) | N | N | N | N |
 | CVE-2019-8442 |  | 访问控制错误 | 7.5 | [Y](CVE-2019-8442/vultarget/) | N | [Y](CVE-2019-8442/poc/nuclei/) | [Y](CVE-2019-8442/poc/xray/) | N | N | N |
 | CVE-2019-8446 | JIRA | 授权问题 | 5.3 | N | [Y](CVE-2019-8446/poc/pocsploit/) | [Y](CVE-2019-8446/poc/nuclei/) | N | N | N | [Y](CVE-2019-8446/poc/others/) |
 | CVE-2019-8449 | JIRA | 权限许可和访问控制 | 5.3 | N | N | [Y](CVE-2019-8449/poc/nuclei/) | [Y](CVE-2019-8449/poc/xray/) | N | N | [Y](CVE-2019-8449/poc/others/) |

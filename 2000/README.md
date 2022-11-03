@@ -7,4 +7,4 @@
 
 | CVE | Component | Category | CVSS | Vultarget | pocsploit | Nuclei | Xray | pocsuite3 | goby | others |
 |-----|-----------|----------|------|-----------|-----------|--------|------|-----------|------|--------|
-| CVE-2000-0114 |  | 未知 |  | N | N | [Y](CVE-2000-0114/poc/nuclei/) | N | N | N | N |
+| CVE-2000-0114 |  | 其他 |  | N | N | [Y](CVE-2000-0114/poc/nuclei/) | N | N | N | N |

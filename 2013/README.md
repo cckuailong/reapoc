@@ -16,7 +16,7 @@
 | CVE-2013-2287 | WordPress | 跨站脚本 |  | N | [Y](CVE-2013-2287/poc/pocsploit/) | [Y](CVE-2013-2287/poc/nuclei/) | N | N | N | [Y](CVE-2013-2287/poc/others/) |
 | CVE-2013-2586 | XAMPP | 跨站脚本 |  | [Y](CVE-2013-2586/vultarget/) | N | N | N | N | N | [Y](CVE-2013-2586/poc/others/) |
 | CVE-2013-3526 | WordPress | 跨站脚本 |  | N | [Y](CVE-2013-3526/poc/pocsploit/) | [Y](CVE-2013-3526/poc/nuclei/) | N | N | N | [Y](CVE-2013-3526/poc/others/) |
-| CVE-2013-3827 | Oracle-HTTP-Server | 资料不足 |  | N | [Y](CVE-2013-3827/poc/pocsploit/) | [Y](CVE-2013-3827/poc/nuclei/) | N | N | N | [Y](CVE-2013-3827/poc/others/) |
+| CVE-2013-3827 | Oracle-HTTP-Server | 信息泄漏 |  | N | [Y](CVE-2013-3827/poc/pocsploit/) | [Y](CVE-2013-3827/poc/nuclei/) | N | N | N | [Y](CVE-2013-3827/poc/others/) |
 | CVE-2013-4117 | WordPress | 跨站脚本 |  | N | [Y](CVE-2013-4117/poc/pocsploit/) | [Y](CVE-2013-4117/poc/nuclei/) | N | N | N | [Y](CVE-2013-4117/poc/others/) |
 | CVE-2013-4316 | Struts2 | 配置错误 |  | [Y](CVE-2013-4316/vultarget/) | N | N | N | N | N | N |
 | CVE-2013-4547 |  | 代码问题 |  | [Y](CVE-2013-4547/vultarget/) | N | N | N | N | N | [Y](CVE-2013-4547/poc/others/) |

@@ -7,6 +7,8 @@
 
 | CVE | Component | Category | CVSS | Vultarget | pocsploit | Nuclei | Xray | pocsuite3 | goby | others |
 |-----|-----------|----------|------|-----------|-----------|--------|------|-----------|------|--------|
+| CVE-2008-1059 | WordPress | 代码注入 |  | N | N | [Y](CVE-2008-1059/poc/nuclei/) | N | N | N | N |
+| CVE-2008-1061 | WordPress | 跨站脚本 |  | N | N | [Y](CVE-2008-1061/poc/nuclei/) | N | N | N | N |
 | CVE-2008-2398 | AppServ | 跨站脚本 |  | N | N | [Y](CVE-2008-2398/poc/nuclei/) | N | N | N | [Y](CVE-2008-2398/poc/others/) |
 | CVE-2008-2650 | CMSimple | 路径遍历 |  | N | [Y](CVE-2008-2650/poc/pocsploit/) | [Y](CVE-2008-2650/poc/nuclei/) | N | N | N | [Y](CVE-2008-2650/poc/others/) |
 | CVE-2008-4668 | Joomla | 路径遍历 |  | N | N | [Y](CVE-2008-4668/poc/nuclei/) | N | N | N | [Y](CVE-2008-4668/poc/others/) |

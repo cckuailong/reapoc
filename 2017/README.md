@@ -15,13 +15,14 @@
 | CVE-2017-1000353 | Jenkins | 反序列化 | 9.8 | [Y](CVE-2017-1000353/vultarget/) | N | N | N | N | N | [Y](CVE-2017-1000353/poc/others/) |
 | CVE-2017-1000486 |  | 加密问题 | 9.8 | [Y](CVE-2017-1000486/vultarget/) | [Y](CVE-2017-1000486/poc/pocsploit/) | [Y](CVE-2017-1000486/poc/nuclei/) | N | N | N | [Y](CVE-2017-1000486/poc/others/) |
 | CVE-2017-10075 | Oracle-Fusion-Middleware | 资料不足 | 8.2 | N | N | [Y](CVE-2017-10075/poc/nuclei/) | N | N | N | N |
-| CVE-2017-10271 | Weblogic_interface_7001 | 资料不足 | 7.5 | [Y](CVE-2017-10271/vultarget/) | [Y](CVE-2017-10271/poc/pocsploit/) | [Y](CVE-2017-10271/poc/nuclei/) | [Y](CVE-2017-10271/poc/xray/) | [Y](CVE-2017-10271/poc/pocsuite3/) | N | [Y](CVE-2017-10271/poc/others/) |
+| CVE-2017-10271 | Weblogic_interface_7001 | 命令执行 | 7.5 | [Y](CVE-2017-10271/vultarget/) | [Y](CVE-2017-10271/poc/pocsploit/) | [Y](CVE-2017-10271/poc/nuclei/) | [Y](CVE-2017-10271/poc/xray/) | [Y](CVE-2017-10271/poc/pocsuite3/) | N | [Y](CVE-2017-10271/poc/others/) |
 | CVE-2017-10974 | Yaws | 路径遍历 | 7.5 | N | N | [Y](CVE-2017-10974/poc/nuclei/) | N | N | N | [Y](CVE-2017-10974/poc/others/) |
 | CVE-2017-11444 | Subrion-CMS | SQL注入 | 9.8 | [Y](CVE-2017-11444/vultarget/) | N | [Y](CVE-2017-11444/poc/nuclei/) | N | N | N | N |
 | CVE-2017-11512 | ZOHO ManageEngine | 路径遍历 | 7.5 | N | N | [Y](CVE-2017-11512/poc/nuclei/) | N | N | N | N |
 | CVE-2017-11582 |  | SQL注入 | 9.8 | [Y](CVE-2017-11582/vultarget/) | N | N | N | N | N | N |
+| CVE-2017-11586 |  | url重定向 | 6.1 | N | N | [Y](CVE-2017-11586/poc/nuclei/) | N | N | N | N |
 | CVE-2017-11610 | supervisord | 权限许可和访问控制 | 8.8 | [Y](CVE-2017-11610/vultarget/) | [Y](CVE-2017-11610/poc/pocsploit/) | [Y](CVE-2017-11610/poc/nuclei/) | [Y](CVE-2017-11610/poc/xray/) | N | N | [Y](CVE-2017-11610/poc/others/) |
-| CVE-2017-11629 |  | 跨站脚本 | 6.1 | [Y](CVE-2017-11629/vultarget/) | N | N | N | N | N | N |
+| CVE-2017-11629 | dayrui系列CMS | 跨站脚本 | 6.1 | [Y](CVE-2017-11629/vultarget/) | N | [Y](CVE-2017-11629/poc/nuclei/) | N | N | N | N |
 | CVE-2017-12138 |  | url重定向 | 6.1 | N | N | [Y](CVE-2017-12138/poc/nuclei/) | N | N | N | N |
 | CVE-2017-12149 | JBoss | 反序列化 | 9.8 | [Y](CVE-2017-12149/vultarget/) | [Y](CVE-2017-12149/poc/pocsploit/) | [Y](CVE-2017-12149/poc/nuclei/) | N | N | N | [Y](CVE-2017-12149/poc/others/) |
 | CVE-2017-12542 | HP iLO | 资料不足 | 10 | N | N | [Y](CVE-2017-12542/poc/nuclei/) | N | N | N | [Y](CVE-2017-12542/poc/others/) |
@@ -48,23 +49,24 @@
 | CVE-2017-16082 |  | 代码注入 | 9.8 | [Y](CVE-2017-16082/vultarget/) | N | N | N | N | N | [Y](CVE-2017-16082/poc/others/) |
 | CVE-2017-16806 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2017-16806/poc/nuclei/) | N | N | N | [Y](CVE-2017-16806/poc/others/) |
 | CVE-2017-16877 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2017-16877/poc/nuclei/) | [Y](CVE-2017-16877/poc/xray/) | N | N | N |
-| CVE-2017-16894 |  | 信息泄露 | 7.5 | [Y](CVE-2017-16894/vultarget/) | N | N | N | N | [Y](CVE-2017-16894/poc/goby/) | [Y](CVE-2017-16894/poc/others/) |
+| CVE-2017-16894 | Laravel-Framework | 信息泄露 | 7.5 | [Y](CVE-2017-16894/vultarget/) | N | N | N | N | [Y](CVE-2017-16894/poc/goby/) | [Y](CVE-2017-16894/poc/others/) |
 | CVE-2017-17043 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2017-17043/poc/nuclei/) | N | N | N | N |
 | CVE-2017-17059 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2017-17059/poc/nuclei/) | N | N | N | N |
-| CVE-2017-17215 | Huawei HG532 Router | 输入验证 | 8.8 | [Y](CVE-2017-17215/vultarget/) | N | N | N | N | N | [Y](CVE-2017-17215/poc/others/) |
+| CVE-2017-17215 | Huawei HG532 Router | 代码执行  | 8.8 | [Y](CVE-2017-17215/vultarget/) | N | N | N | N | N | [Y](CVE-2017-17215/poc/others/) |
 | CVE-2017-17405 | Ruby | 操作系统命令注入 | 8.8 | [Y](CVE-2017-17405/vultarget/) | N | N | N | [Y](CVE-2017-17405/poc/pocsuite3/) | N | [Y](CVE-2017-17405/poc/others/) |
 | CVE-2017-17451 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2017-17451/poc/nuclei/) | N | N | N | N |
 | CVE-2017-17562 | GoAhead | 输入验证 | 8.1 | [Y](CVE-2017-17562/vultarget/) | [Y](CVE-2017-17562/poc/pocsploit/) | [Y](CVE-2017-17562/poc/nuclei/) | N | N | N | [Y](CVE-2017-17562/poc/others/) |
 | CVE-2017-17731 |  | SQL注入 | 9.8 | [Y](CVE-2017-17731/vultarget/) | N | N | N | N | N | N |
 | CVE-2017-17733 |  | 资料不足 | 9.8 | [Y](CVE-2017-17733/vultarget/) | N | N | N | N | N | N |
+| CVE-2017-17736 |  | 授权问题 | 9.8 | N | N | [Y](CVE-2017-17736/poc/nuclei/) | N | N | N | N |
 | CVE-2017-18024 | AvantFAX | 跨站脚本 | 6.1 | N | [Y](CVE-2017-18024/poc/pocsploit/) | [Y](CVE-2017-18024/poc/nuclei/) | N | N | N | N |
 | CVE-2017-18536 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2017-18536/poc/nuclei/) | N | N | N | N |
 | CVE-2017-18598 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2017-18598/poc/nuclei/) | N | N | N | N |
 | CVE-2017-18638 |  | 跨站请求伪造 | 7.5 | N | N | [Y](CVE-2017-18638/poc/nuclei/) | N | N | N | N |
 | CVE-2017-2824 | Zabbix | 操作系统命令注入 | 8.1 | [Y](CVE-2017-2824/vultarget/) | N | N | N | N | N | N |
 | CVE-2017-3066 | Adobe-ColdFusion | 反序列化 | 9.8 | [Y](CVE-2017-3066/vultarget/) | N | N | N | N | N | [Y](CVE-2017-3066/poc/others/) |
-| CVE-2017-3248 | Weblogic_interface_7001 | 资料不足 | 9.8 | [Y](CVE-2017-3248/vultarget/) | N | N | N | N | N | [Y](CVE-2017-3248/poc/others/) |
-| CVE-2017-3506 | Weblogic_interface_7001 | 资料不足 | 7.4 | [Y](CVE-2017-3506/vultarget/) | [Y](CVE-2017-3506/poc/pocsploit/) | [Y](CVE-2017-3506/poc/nuclei/) | N | N | N | [Y](CVE-2017-3506/poc/others/) |
+| CVE-2017-3248 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2017-3248/vultarget/) | N | N | N | N | N | [Y](CVE-2017-3248/poc/others/) |
+| CVE-2017-3506 | Weblogic_interface_7001 | 命令执行 | 7.4 | [Y](CVE-2017-3506/vultarget/) | [Y](CVE-2017-3506/poc/pocsploit/) | [Y](CVE-2017-3506/poc/nuclei/) | N | N | N | [Y](CVE-2017-3506/poc/others/) |
 | CVE-2017-3528 | Oracle-EBusiness | url重定向 | 5.4 | N | N | [Y](CVE-2017-3528/poc/nuclei/) | N | N | N | [Y](CVE-2017-3528/poc/others/) |
 | CVE-2017-3881 | Cisco | 输入验证 | 9.8 | N | N | [Y](CVE-2017-3881/poc/nuclei/) | N | N | N | [Y](CVE-2017-3881/poc/others/) |
 | CVE-2017-4011 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2017-4011/poc/nuclei/) | N | N | N | N |
@@ -73,8 +75,9 @@
 | CVE-2017-5487 | WordPress | 信息泄露 | 5.3 | N | N | [Y](CVE-2017-5487/poc/nuclei/) | N | N | N | [Y](CVE-2017-5487/poc/others/) |
 | CVE-2017-5521 | Netgear router | 信息泄露 | 8.1 | N | N | [Y](CVE-2017-5521/poc/nuclei/) | [Y](CVE-2017-5521/poc/xray/) | N | N | [Y](CVE-2017-5521/poc/others/) |
 | CVE-2017-5631 | CaseAware | 跨站脚本 | 6.1 | N | N | [Y](CVE-2017-5631/poc/nuclei/) | N | N | N | N |
-| CVE-2017-5638 | Unknown | Unknown | Unknown | [Y](CVE-2017-5638/vultarget/) | N | [Y](CVE-2017-5638/poc/nuclei/) | N | N | N | [Y](CVE-2017-5638/poc/others/) |
+| CVE-2017-5638 | Apache Struts | 输入验证 | 10 | [Y](CVE-2017-5638/vultarget/) | N | [Y](CVE-2017-5638/poc/nuclei/) | N | N | N | [Y](CVE-2017-5638/poc/others/) |
 | CVE-2017-5645 | ALLSCAN | 反序列化 | 9.8 | [Y](CVE-2017-5645/vultarget/) | N | N | N | N | N | [Y](CVE-2017-5645/poc/others/) |
+| CVE-2017-5689 | Intel-AMT | 权限许可和访问控制问题 | 9.8 | N | N | [Y](CVE-2017-5689/poc/nuclei/) | N | N | N | N |
 | CVE-2017-5941 | Node.js | 反序列化 | 9.8 | [Y](CVE-2017-5941/vultarget/) | N | N | N | N | N | [Y](CVE-2017-5941/poc/others/) |
 | CVE-2017-5982 | KodiTV | 路径遍历 | 7.5 | N | N | [Y](CVE-2017-5982/poc/nuclei/) | N | N | N | [Y](CVE-2017-5982/poc/others/) |
 | CVE-2017-6089 |  | SQL注入 | 9.8 | [Y](CVE-2017-6089/vultarget/) | N | N | N | N | N | [Y](CVE-2017-6089/poc/others/) |

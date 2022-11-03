@@ -60,7 +60,7 @@
 | CVE-2018-1270 | Spring | 代码注入 | 9.8 | [Y](CVE-2018-1270/vultarget/) | N | N | N | [Y](CVE-2018-1270/poc/pocsuite3/) | N | [Y](CVE-2018-1270/poc/others/) |
 | CVE-2018-1271 | Spring | 路径遍历 | 5.9 | N | N | [Y](CVE-2018-1271/poc/nuclei/) | N | [Y](CVE-2018-1271/poc/pocsuite3/) | N | N |
 | CVE-2018-1273 | Spring | 输入验证 | 9.8 | [Y](CVE-2018-1273/vultarget/) | N | [Y](CVE-2018-1273/poc/nuclei/) | N | [Y](CVE-2018-1273/poc/pocsuite3/) | N | [Y](CVE-2018-1273/poc/others/) |
-| CVE-2018-12909 |  | 路径遍历 | 7.5 | [Y](CVE-2018-12909/vultarget/) | N | N | N | N | N | N |
+| CVE-2018-12909 | Webgrind | 路径遍历 | 7.5 | [Y](CVE-2018-12909/vultarget/) | N | N | N | N | N | N |
 | CVE-2018-1297 | Apache JMeter | 信息泄露 | 9.8 | [Y](CVE-2018-1297/vultarget/) | N | N | N | N | N | N |
 | CVE-2018-12998 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2018-12998/poc/nuclei/) | N | N | N | N |
 | CVE-2018-13137 |  | 跨站脚本 | 4.8 | [Y](CVE-2018-13137/vultarget/) | N | N | N | N | N | N |
@@ -81,7 +81,7 @@
 | CVE-2018-14931 |  | url重定向 | 6.1 | N | N | [Y](CVE-2018-14931/poc/nuclei/) | N | N | N | N |
 | CVE-2018-15138 | Ericsson-LG公司产品 | 路径遍历 | 7.5 | N | N | [Y](CVE-2018-15138/poc/nuclei/) | N | N | N | N |
 | CVE-2018-15139 |  | 文件上传 | 8.8 | [Y](CVE-2018-15139/vultarget/) | N | N | N | N | N | N |
-| CVE-2018-15473 | OpenSSH | 竞争条件 | 5.3 | [Y](CVE-2018-15473/vultarget/) | N | [Y](CVE-2018-15473/poc/nuclei/) | N | N | N | [Y](CVE-2018-15473/poc/others/) |
+| CVE-2018-15473 | ssh | 竞争条件 | 5.3 | [Y](CVE-2018-15473/vultarget/) | N | [Y](CVE-2018-15473/poc/nuclei/) | N | N | N | [Y](CVE-2018-15473/poc/others/) |
 | CVE-2018-15517 |  | 跨站请求伪造 | 8.6 | N | N | [Y](CVE-2018-15517/poc/nuclei/) | N | N | N | N |
 | CVE-2018-15535 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2018-15535/poc/nuclei/) | N | N | N | [Y](CVE-2018-15535/poc/others/) |
 | CVE-2018-15640 |  | 授权问题 | 8.8 | N | N | [Y](CVE-2018-15640/poc/nuclei/) | N | N | N | N |
@@ -91,6 +91,7 @@
 | CVE-2018-15961 | Adobe ColdFusion | 文件上传 | 9.8 | [Y](CVE-2018-15961/vultarget/) | [Y](CVE-2018-15961/poc/pocsploit/) | [Y](CVE-2018-15961/poc/nuclei/) | N | N | N | [Y](CVE-2018-15961/poc/others/) |
 | CVE-2018-16059 | WirelessHART-Gateways | 路径遍历 | 5.3 | N | N | [Y](CVE-2018-16059/poc/nuclei/) | N | N | N | [Y](CVE-2018-16059/poc/others/) |
 | CVE-2018-16133 |  | 路径遍历 | 5.3 | N | N | [Y](CVE-2018-16133/poc/nuclei/) | N | N | N | [Y](CVE-2018-16133/poc/others/) |
+| CVE-2018-16139 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2018-16139/poc/nuclei/) | N | N | N | N |
 | CVE-2018-16167 |  | 操作系统命令注入 | 9.8 | N | [Y](CVE-2018-16167/poc/pocsploit/) | [Y](CVE-2018-16167/poc/nuclei/) | N | N | N | [Y](CVE-2018-16167/poc/others/) |
 | CVE-2018-16283 | WordPress | 路径遍历 | 9.8 | N | N | [Y](CVE-2018-16283/poc/nuclei/) | N | N | N | [Y](CVE-2018-16283/poc/others/) |
 | CVE-2018-16288 | LG-WebOS | 信息泄露 | 8.6 | N | N | [Y](CVE-2018-16288/poc/nuclei/) | N | N | N | [Y](CVE-2018-16288/poc/others/) |
@@ -126,9 +127,10 @@
 | CVE-2018-19136 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2018-19136/poc/nuclei/) | N | N | N | N |
 | CVE-2018-19137 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2018-19137/poc/nuclei/) | N | N | N | N |
 | CVE-2018-19276 | OpenMRS | 反序列化 | 9.8 | N | N | N | N | [Y](CVE-2018-19276/poc/pocsuite3/) | N | [Y](CVE-2018-19276/poc/others/) |
+| CVE-2018-19287 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2018-19287/poc/nuclei/) | N | N | N | N |
 | CVE-2018-19326 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2018-19326/poc/nuclei/) | N | N | N | N |
 | CVE-2018-19365 | Wowza_Media_Systems-WowzaStreamingEngine | 路径遍历 | 7.5 | N | N | [Y](CVE-2018-19365/poc/nuclei/) | N | N | N | N |
-| CVE-2018-19367 |  | 信任管理问题 | 9.8 | N | N | N | N | N | [Y](CVE-2018-19367/poc/goby/) | N |
+| CVE-2018-19367 | Portainer | 未授权访问 | 9.8 | N | N | N | N | N | [Y](CVE-2018-19367/poc/goby/) | N |
 | CVE-2018-19386 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2018-19386/poc/nuclei/) | N | N | N | N |
 | CVE-2018-19439 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2018-19439/poc/nuclei/) | N | N | N | N |
 | CVE-2018-19458 | PHP | 授权问题 | 7.5 | N | N | [Y](CVE-2018-19458/poc/nuclei/) | N | N | N | [Y](CVE-2018-19458/poc/others/) |
@@ -148,14 +150,16 @@
 | CVE-2018-20011 |  | 跨站脚本 | 4.8 | N | N | [Y](CVE-2018-20011/poc/nuclei/) | N | N | N | N |
 | CVE-2018-20062 | cmsms | 输入验证 | 9.8 | N | N | [Y](CVE-2018-20062/poc/nuclei/) | N | N | N | [Y](CVE-2018-20062/poc/others/) |
 | CVE-2018-20462 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2018-20462/poc/nuclei/) | N | N | N | N |
+| CVE-2018-20463 | WordPress | 路径遍历 | 7.5 | N | N | [Y](CVE-2018-20463/poc/nuclei/) | N | N | N | N |
 | CVE-2018-20470 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2018-20470/poc/nuclei/) | N | N | N | [Y](CVE-2018-20470/poc/others/) |
+| CVE-2018-20526 | others | 文件上传 | 9.8 | N | N | [Y](CVE-2018-20526/poc/nuclei/) | N | N | N | N |
 | CVE-2018-20824 | JIRA | 跨站脚本 | 6.1 | N | N | [Y](CVE-2018-20824/poc/nuclei/) | N | N | N | N |
 | CVE-2018-20985 | WordPress | 输入验证 | 9.8 | N | N | [Y](CVE-2018-20985/poc/nuclei/) | N | N | N | N |
 | CVE-2018-2392 |  | XML外部实体(XXE)注入 | 7.5 | N | [Y](CVE-2018-2392/poc/pocsploit/) | [Y](CVE-2018-2392/poc/nuclei/) | N | N | N | N |
 | CVE-2018-2628 | Weblogic_interface_7001 | 反序列化 | 9.8 | [Y](CVE-2018-2628/vultarget/) | N | [Y](CVE-2018-2628/poc/nuclei/) | N | N | N | [Y](CVE-2018-2628/poc/others/) |
 | CVE-2018-2791 | Oracle-Fusion-Middleware | 资料不足 | 8.2 | N | [Y](CVE-2018-2791/poc/pocsploit/) | [Y](CVE-2018-2791/poc/nuclei/) | N | N | N | [Y](CVE-2018-2791/poc/others/) |
-| CVE-2018-2893 | Weblogic_interface_7001 | 资料不足 | 9.8 | [Y](CVE-2018-2893/vultarget/) | N | [Y](CVE-2018-2893/poc/nuclei/) | N | N | N | [Y](CVE-2018-2893/poc/others/) |
-| CVE-2018-2894 | Weblogic_interface_7001 | 资料不足 | 9.8 | [Y](CVE-2018-2894/vultarget/) | [Y](CVE-2018-2894/poc/pocsploit/) | [Y](CVE-2018-2894/poc/nuclei/) | N | N | N | [Y](CVE-2018-2894/poc/others/) |
+| CVE-2018-2893 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2018-2893/vultarget/) | N | [Y](CVE-2018-2893/poc/nuclei/) | N | N | N | [Y](CVE-2018-2893/poc/others/) |
+| CVE-2018-2894 | Weblogic_interface_7001 | 命令执行 | 9.8 | [Y](CVE-2018-2894/vultarget/) | [Y](CVE-2018-2894/poc/pocsploit/) | [Y](CVE-2018-2894/poc/nuclei/) | N | N | N | [Y](CVE-2018-2894/poc/others/) |
 | CVE-2018-3167 | Oracle | 资料不足 | 5.3 | N | N | [Y](CVE-2018-3167/poc/nuclei/) | N | N | N | N |
 | CVE-2018-3238 | Oracle-Fusion-Middleware | 资料不足 | 6.9 | N | [Y](CVE-2018-3238/poc/pocsploit/) | [Y](CVE-2018-3238/poc/nuclei/) | N | N | N | N |
 | CVE-2018-3245 | Weblogic_interface_7001 | 反序列化 | 9.8 | [Y](CVE-2018-3245/vultarget/) | N | N | N | N | N | [Y](CVE-2018-3245/poc/others/) |
