@@ -151,6 +151,7 @@
 | CVE-2019-6340 | Drupal | 反序列化 | 8.1 | [Y](CVE-2019-6340/vultarget/) | N | [Y](CVE-2019-6340/poc/nuclei/) | [Y](CVE-2019-6340/poc/xray/) | N | N | [Y](CVE-2019-6340/poc/others/) |
 | CVE-2019-6341 | Drupal | 跨站脚本 | 5.4 | [Y](CVE-2019-6341/vultarget/) | N | N | N | N | N | N |
 | CVE-2019-6715 |  | 信息泄露 | 7.5 | N | [Y](CVE-2019-6715/poc/pocsploit/) | [Y](CVE-2019-6715/poc/nuclei/) | N | N | N | [Y](CVE-2019-6715/poc/others/) |
+| CVE-2019-6802 | pypiserver | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-6802/poc/nuclei/) | N | N | N | N |
 | CVE-2019-7192 | QNAP-NAS | 授权问题 | 9.8 | N | N | [Y](CVE-2019-7192/poc/nuclei/) | [Y](CVE-2019-7192/poc/xray/) | N | N | [Y](CVE-2019-7192/poc/others/) |
 | CVE-2019-7219 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-7219/poc/nuclei/) | N | N | N | [Y](CVE-2019-7219/poc/others/) |
 | CVE-2019-7238 | Nexus-Repository-Manager | 访问控制错误 | 9.8 | [Y](CVE-2019-7238/vultarget/) | [Y](CVE-2019-7238/poc/pocsploit/) | [Y](CVE-2019-7238/poc/nuclei/) | [Y](CVE-2019-7238/poc/xray/) | N | N | [Y](CVE-2019-7238/poc/others/) |
@@ -185,4 +186,4 @@
 | CVE-2019-9915 | GetSimple | url重定向 | 6.1 | N | N | [Y](CVE-2019-9915/poc/nuclei/) | N | N | N | N |
 | CVE-2019-9922 | Joomla | 路径遍历 | 7.5 | N | N | [Y](CVE-2019-9922/poc/nuclei/) | N | N | N | N |
 | CVE-2019-9955 | ZyXEL | 跨站脚本 | 6.1 | N | N | [Y](CVE-2019-9955/poc/nuclei/) | N | N | N | [Y](CVE-2019-9955/poc/others/) |
-| CVE-2019-9978 | WordPress | 跨站脚本 | 6.1 | [Y](CVE-2019-9978/vultarget/) | N | [Y](CVE-2019-9978/poc/nuclei/) | N | N | N | [Y](CVE-2019-9978/poc/others/) |
+| CVE-2019-9978 | WordPress | 命令执行 | 6.1 | [Y](CVE-2019-9978/vultarget/) | N | [Y](CVE-2019-9978/poc/nuclei/) | N | N | N | [Y](CVE-2019-9978/poc/others/) |

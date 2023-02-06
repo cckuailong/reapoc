@@ -33,7 +33,7 @@
 | CVE-2022-0332 |  | SQL注入 | 9.8 | [Y](CVE-2022-0332/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0345 |  | 授权问题 | 4.3 | [Y](CVE-2022-0345/vultarget/) | N | N | N | N | N | N |
 | CVE-2022-0346 | WordPress | 命令执行 | 6.1 | N | N | [Y](CVE-2022-0346/poc/nuclei/) | N | N | N | N |
-| CVE-2022-0349 |  | SQL注入 | 9.8 | [Y](CVE-2022-0349/vultarget/) | N | N | N | N | N | N |
+| CVE-2022-0349 |  | SQL注入 | 9.8 | [Y](CVE-2022-0349/vultarget/) | N | [Y](CVE-2022-0349/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0378 |  | 跨站脚本 | 5.4 | N | [Y](CVE-2022-0378/poc/pocsploit/) | [Y](CVE-2022-0378/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0381 | WordPress | 跨站脚本 | 6.1 | N | [Y](CVE-2022-0381/poc/pocsploit/) | [Y](CVE-2022-0381/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0411 |  | SQL注入 | 8.8 | [Y](CVE-2022-0411/vultarget/) | N | N | N | N | N | N |
@@ -58,13 +58,21 @@
 | CVE-2022-0678 | others | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-0678/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0679 | WordPress | 路径遍历 | 9.8 | N | N | [Y](CVE-2022-0679/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0692 |  | url重定向 | 6.1 | N | [Y](CVE-2022-0692/poc/pocsploit/) | [Y](CVE-2022-0692/poc/nuclei/) | N | N | N | N |
+| CVE-2022-0735 | GitLab | 授权问题 | 9.8 | N | N | [Y](CVE-2022-0735/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0776 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-0776/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0781 | WordPress | SQL注入 | 9.8 | N | N | [Y](CVE-2022-0781/poc/nuclei/) | N | N | N | N |
+| CVE-2022-0785 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2022-0785/poc/nuclei/) | N | N | N | N |
+| CVE-2022-0786 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2022-0786/poc/nuclei/) | N | N | N | N |
+| CVE-2022-0788 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2022-0788/poc/nuclei/) | N | N | N | N |
+| CVE-2022-0817 | WordPress | SQL注入 | 9.8 | N | N | [Y](CVE-2022-0817/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0824 |  | 访问控制错误 | 8.8 | [Y](CVE-2022-0824/vultarget/) | [Y](CVE-2022-0824/poc/pocsploit/) | [Y](CVE-2022-0824/poc/nuclei/) | N | N | N | N |
+| CVE-2022-0826 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2022-0826/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0847 | Linux Kernel | 代码问题 | 7.8 | [Y](CVE-2022-0847/vultarget/) | N | N | N | N | N | [Y](CVE-2022-0847/poc/others/) |
+| CVE-2022-0867 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2022-0867/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0870 |  | 跨站请求伪造 | 5.3 | N | N | [Y](CVE-2022-0870/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0885 | WordPress | 代码注入 | 9.8 | N | N | [Y](CVE-2022-0885/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0928 |  | 跨站脚本 | 5.4 | N | N | [Y](CVE-2022-0928/poc/nuclei/) | N | N | N | N |
+| CVE-2022-0948 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2022-0948/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0952 | WordPress | 授权问题 | 8.8 | N | N | [Y](CVE-2022-0952/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0954 |  | 跨站脚本 | 5.4 | N | N | [Y](CVE-2022-0954/poc/nuclei/) | N | N | N | N |
 | CVE-2022-0963 |  | 跨站脚本 | 5.4 | N | N | [Y](CVE-2022-0963/poc/nuclei/) | N | N | N | N |
@@ -75,6 +83,7 @@
 | CVE-2022-1054 | WordPress | 授权问题 | 5.3 | N | N | [Y](CVE-2022-1054/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1057 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2022-1057/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1119 | WordPress | 路径遍历 | 7.5 | N | N | [Y](CVE-2022-1119/poc/nuclei/) | N | N | N | N |
+| CVE-2022-1162 | GitLab | 信任管理 | 9.8 | N | N | [Y](CVE-2022-1162/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1221 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1221/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1386 |  | 跨站请求伪造 | 9.8 | N | N | [Y](CVE-2022-1386/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1388 | F5-BIGIP | 权限许可和访问控制 | 9.8 | N | N | [Y](CVE-2022-1388/poc/nuclei/) | N | N | N | N |
@@ -82,7 +91,9 @@
 | CVE-2022-1391 | WordPress | 路径遍历 | 9.8 | N | N | [Y](CVE-2022-1391/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1392 | WordPress | 路径遍历 | 7.5 | N | N | [Y](CVE-2022-1392/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1439 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1439/poc/nuclei/) | N | N | N | N |
+| CVE-2022-1442 | WordPress | 信息泄漏 | 7.5 | N | N | [Y](CVE-2022-1442/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1574 | WordPress | 文件上传 | 9.8 | N | N | [Y](CVE-2022-1574/poc/nuclei/) | N | N | N | N |
+| CVE-2022-1595 | WordPress | 信息泄露 | 5.3 | N | N | [Y](CVE-2022-1595/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1597 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1597/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1598 | WordPress | 信息泄漏 | 5.3 | N | N | [Y](CVE-2022-1598/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1609 | WordPress | 代码注入 |  | N | N | [Y](CVE-2022-1609/poc/nuclei/) | N | N | N | N |
@@ -90,16 +101,22 @@
 | CVE-2022-1724 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1724/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1768 |  | SQL注入 | 7.5 | N | N | [Y](CVE-2022-1768/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1815 | jgraph draw.io | 安全模式绕过 | 7.5 | N | N | [Y](CVE-2022-1815/poc/nuclei/) | N | N | N | N |
+| CVE-2022-1883 |  | SQL注入 | 8.8 | N | N | [Y](CVE-2022-1883/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1904 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1904/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1906 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1906/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1910 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1910/poc/nuclei/) | N | N | N | N |
+| CVE-2022-1916 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1916/poc/nuclei/) | N | N | N | N |
+| CVE-2022-1933 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1933/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1937 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1937/poc/nuclei/) | N | N | N | N |
 | CVE-2022-1946 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-1946/poc/nuclei/) | N | N | N | N |
+| CVE-2022-1952 |  | 文件上传 | 9.8 | N | N | [Y](CVE-2022-1952/poc/nuclei/) | N | N | N | N |
+| CVE-2022-2034 |  | 授权问题 | 5.3 | N | N | [Y](CVE-2022-2034/poc/nuclei/) | N | N | N | N |
 | CVE-2022-21371 | WebLogic | 路径遍历 | 7.5 | N | [Y](CVE-2022-21371/poc/pocsploit/) | [Y](CVE-2022-21371/poc/nuclei/) | N | N | N | N |
 | CVE-2022-21500 | Oracle-EBusiness | 信息泄露 | 7.5 | N | N | [Y](CVE-2022-21500/poc/nuclei/) | N | N | N | N |
 | CVE-2022-21705 |  | 注入 | 7.2 | N | N | [Y](CVE-2022-21705/poc/nuclei/) | N | N | N | N |
+| CVE-2022-2185 | gitlab | 权限许可和访问控制 | 8.8 | N | N | [Y](CVE-2022-2185/poc/nuclei/) | N | N | N | N |
 | CVE-2022-2187 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-2187/poc/nuclei/) | N | N | N | N |
-| CVE-2022-22242 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-22242/poc/nuclei/) | N | N | N | N |
+| CVE-2022-22242 | Juniper-Web-Device-Manager | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-22242/poc/nuclei/) | N | N | N | N |
 | CVE-2022-22536 |  | 代码问题 | 10 | N | [Y](CVE-2022-22536/poc/pocsploit/) | [Y](CVE-2022-22536/poc/nuclei/) | N | N | N | N |
 | CVE-2022-2290 | Trilium Notes | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-2290/poc/nuclei/) | N | N | N | N |
 | CVE-2022-22947 | Spring | 代码注入 | 10 | [Y](CVE-2022-22947/vultarget/) | [Y](CVE-2022-22947/poc/pocsploit/) | [Y](CVE-2022-22947/poc/nuclei/) | N | N | N | N |
@@ -110,14 +127,17 @@
 | CVE-2022-23046 |  | SQL注入 | 7.2 | [Y](CVE-2022-23046/vultarget/) | N | N | N | N | N | [Y](CVE-2022-23046/poc/others/) |
 | CVE-2022-23131 | Zabbix | 权限许可和访问控制 | 9.8 | N | [Y](CVE-2022-23131/poc/pocsploit/) | [Y](CVE-2022-23131/poc/nuclei/) | N | N | N | N |
 | CVE-2022-23134 | Zabbix | 授权问题 | 5.3 | N | [Y](CVE-2022-23134/poc/pocsploit/) | [Y](CVE-2022-23134/poc/nuclei/) | N | N | N | N |
+| CVE-2022-2314 | WordPress | 授权问题 | 9.8 | N | N | [Y](CVE-2022-2314/poc/nuclei/) | N | N | N | N |
 | CVE-2022-23178 | Crestron HD-MD4X2-4K-E | 授权问题 | 9.8 | N | [Y](CVE-2022-23178/poc/pocsploit/) | [Y](CVE-2022-23178/poc/nuclei/) | N | N | N | [Y](CVE-2022-23178/poc/others/) |
 | CVE-2022-23347 | BigAnt | 路径遍历 | 7.5 | N | N | [Y](CVE-2022-23347/poc/nuclei/) | N | N | N | N |
 | CVE-2022-23348 |  | 加密问题 | 5.3 | N | N | [Y](CVE-2022-23348/poc/nuclei/) | N | N | N | N |
+| CVE-2022-2373 | WordPress | 授权问题 | 5.3 | N | N | [Y](CVE-2022-2373/poc/nuclei/) | N | N | N | N |
 | CVE-2022-2376 | WordPress | 授权问题 | 5.3 | N | N | [Y](CVE-2022-2376/poc/nuclei/) | N | N | N | N |
 | CVE-2022-23779 | ZOHO ManageEngine | 信息泄露 | 5.3 | [Y](CVE-2022-23779/vultarget/) | [Y](CVE-2022-23779/poc/pocsploit/) | [Y](CVE-2022-23779/poc/nuclei/) | N | N | N | [Y](CVE-2022-23779/poc/others/) |
+| CVE-2022-2379 | WordPress | 信息泄漏 | 7.5 | N | N | [Y](CVE-2022-2379/poc/nuclei/) | N | N | N | N |
 | CVE-2022-23808 | phpMyAdmin | 跨站脚本 | 6.1 | [Y](CVE-2022-23808/vultarget/) | [Y](CVE-2022-23808/poc/pocsploit/) | [Y](CVE-2022-23808/poc/nuclei/) | N | N | N | [Y](CVE-2022-23808/poc/others/) |
 | CVE-2022-2383 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-2383/poc/nuclei/) | N | N | N | N |
-| CVE-2022-23854 | InTouch Access Anywhere | 其他 |  | N | N | [Y](CVE-2022-23854/poc/nuclei/) | N | N | N | N |
+| CVE-2022-23854 | InTouch Access Anywhere | 其他 | 7.5 | N | N | [Y](CVE-2022-23854/poc/nuclei/) | N | N | N | N |
 | CVE-2022-23881 | zzzcms | 命令注入 | 9.8 | N | N | [Y](CVE-2022-23881/poc/nuclei/) | N | N | N | N |
 | CVE-2022-23944 | Apache-shenyu | 未授权访问 | 9.1 | [Y](CVE-2022-23944/vultarget/) | [Y](CVE-2022-23944/poc/pocsploit/) | [Y](CVE-2022-23944/poc/nuclei/) | N | N | N | N |
 | CVE-2022-24112 | Apache APISIX Dashboard | 权限许可和访问控制 | 9.8 | [Y](CVE-2022-24112/vultarget/) | [Y](CVE-2022-24112/poc/pocsploit/) | [Y](CVE-2022-24112/poc/nuclei/) | N | N | N | N |
@@ -135,12 +155,14 @@
 | CVE-2022-24899 | Contao | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-24899/poc/nuclei/) | N | N | N | N |
 | CVE-2022-24900 | others | 访问控制错误 | 8.6 | N | N | [Y](CVE-2022-24900/poc/nuclei/) | N | N | N | N |
 | CVE-2022-24990 | TerraMaster-系统管理 | 命令注入 |  | N | [Y](CVE-2022-24990/poc/pocsploit/) | [Y](CVE-2022-24990/poc/nuclei/) | N | N | N | N |
+| CVE-2022-25082 | TOTOLINK-公司产品 | 命令注入 | 9.8 | N | N | [Y](CVE-2022-25082/poc/nuclei/) | N | N | N | N |
 | CVE-2022-25216 | DVDFab | 路径遍历 | 7.5 | N | N | [Y](CVE-2022-25216/poc/nuclei/) | N | N | N | N |
 | CVE-2022-25323 | ZEROF Web Server | 跨站脚本 | 6.1 | N | [Y](CVE-2022-25323/poc/pocsploit/) | [Y](CVE-2022-25323/poc/nuclei/) | N | N | N | N |
 | CVE-2022-25356 | MDaemon-ALT-N-SecurityGateway | XML外部实体(XXE)注入 | 5.3 | N | N | [Y](CVE-2022-25356/poc/nuclei/) | N | N | N | N |
 | CVE-2022-25369 | dynamicweb | 安全模式绕过 |  | N | [Y](CVE-2022-25369/poc/pocsploit/) | [Y](CVE-2022-25369/poc/nuclei/) | N | N | N | N |
 | CVE-2022-2544 |  | 授权问题 | 7.5 | N | N | [Y](CVE-2022-2544/poc/nuclei/) | N | N | N | N |
-| CVE-2022-2546 | Unknown | Unknown | Unknown | N | N | [Y](CVE-2022-2546/poc/nuclei/) | N | N | N | N |
+| CVE-2022-2546 | WordPress | 跨站脚本 |  | N | N | [Y](CVE-2022-2546/poc/nuclei/) | N | N | N | N |
+| CVE-2022-25481 | ThinkPHP | 信息泄漏 | 7.5 | N | N | [Y](CVE-2022-25481/poc/nuclei/) | N | N | N | N |
 | CVE-2022-2551 | WordPress | 授权问题 | 7.5 | N | N | [Y](CVE-2022-2551/poc/nuclei/) | N | N | N | N |
 | CVE-2022-25636 |  | 权限管理不当 | 7.8 | [Y](CVE-2022-25636/vultarget/) | N | N | N | N | N | [Y](CVE-2022-25636/poc/others/) |
 | CVE-2022-26134 | Confluence | 代码执行  | 9.8 | N | N | [Y](CVE-2022-26134/poc/nuclei/) | N | N | N | N |
@@ -148,6 +170,7 @@
 | CVE-2022-26148 |  | 信息泄露 | 9.8 | N | N | [Y](CVE-2022-26148/poc/nuclei/) | N | N | N | N |
 | CVE-2022-26159 | Ametys | 资源管理错误 | 5.3 | N | [Y](CVE-2022-26159/poc/pocsploit/) | [Y](CVE-2022-26159/poc/nuclei/) | N | N | N | N |
 | CVE-2022-26233 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2022-26233/poc/nuclei/) | N | N | N | N |
+| CVE-2022-26263 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-26263/poc/nuclei/) | N | N | N | N |
 | CVE-2022-2633 |  | 访问控制错误 | 8.2 | N | N | [Y](CVE-2022-2633/poc/nuclei/) | N | N | N | N |
 | CVE-2022-26352 | DotCMS | 命令执行 | 9.8 | N | N | [Y](CVE-2022-26352/poc/nuclei/) | N | N | N | N |
 | CVE-2022-26564 | HotelDruid  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-26564/poc/nuclei/) | N | N | N | N |
@@ -177,7 +200,7 @@
 | CVE-2022-29303 | SolarView | 命令注入 | 9.8 | N | N | [Y](CVE-2022-29303/poc/nuclei/) | N | N | N | N |
 | CVE-2022-29349 | kkFileView | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-29349/poc/nuclei/) | N | N | N | N |
 | CVE-2022-29383 | NetGear | SQL注入 | 9.8 | N | N | [Y](CVE-2022-29383/poc/nuclei/) | N | N | N | N |
-| CVE-2022-29455 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-29455/poc/nuclei/) | N | N | N | N |
+| CVE-2022-29455 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-29455/poc/nuclei/) | N | N | N | N |
 | CVE-2022-29464 | WSO2-Carbon-Server | 文件上传 | 9.8 | N | N | [Y](CVE-2022-29464/poc/nuclei/) | N | N | N | N |
 | CVE-2022-29548 | WSO2-Carbon-Server | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-29548/poc/nuclei/) | N | N | N | N |
 | CVE-2022-29775 | iSpy | 授权问题 | 9.8 | N | N | [Y](CVE-2022-29775/poc/nuclei/) | N | N | N | N |
@@ -220,6 +243,7 @@
 | CVE-2022-32772 | others | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-32772/poc/nuclei/) | N | N | N | N |
 | CVE-2022-33119 | NUUO-NVR | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-33119/poc/nuclei/) | N | N | N | N |
 | CVE-2022-33174 | Powertek | 授权问题 | 7.5 | N | N | [Y](CVE-2022-33174/poc/nuclei/) | N | N | N | N |
+| CVE-2022-33891 | Spark | 命令执行 | 8.8 | N | N | [Y](CVE-2022-33891/poc/nuclei/) | N | N | N | N |
 | CVE-2022-33901 |  | 其他 | 7.5 | N | N | [Y](CVE-2022-33901/poc/nuclei/) | N | N | N | N |
 | CVE-2022-33965 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2022-33965/poc/nuclei/) | N | N | N | N |
 | CVE-2022-34045 | WAVLINK | 信任管理 | 9.8 | N | N | [Y](CVE-2022-34045/poc/nuclei/) | N | N | N | N |
@@ -231,11 +255,14 @@
 | CVE-2022-34328 | PMB | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-34328/poc/nuclei/) | N | N | N | N |
 | CVE-2022-34576 |  | 其他 | 7.5 | N | N | [Y](CVE-2022-34576/poc/nuclei/) | N | N | N | N |
 | CVE-2022-34590 |  | SQL注入 | 7.2 | N | N | [Y](CVE-2022-34590/poc/nuclei/) | N | N | N | N |
+| CVE-2022-3484 | WordPress | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-3484/poc/nuclei/) | N | N | N | N |
+| CVE-2022-3506 |  | 跨站脚本 | 5.4 | N | N | [Y](CVE-2022-3506/poc/nuclei/) | N | N | N | N |
 | CVE-2022-35151 | kkFileView | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-35151/poc/nuclei/) | N | N | N | N |
 | CVE-2022-35405 | ZOHO ManageEngine | 代码执行  | 9.8 | N | N | [Y](CVE-2022-35405/poc/nuclei/) | N | N | N | N |
 | CVE-2022-35413 |  | 信任管理 | 9.8 | N | N | [Y](CVE-2022-35413/poc/nuclei/) | N | N | N | N |
 | CVE-2022-35416 | H3C-SSL-VPN | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-35416/poc/nuclei/) | N | N | N | N |
 | CVE-2022-35493 | WRTeam eShop | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-35493/poc/nuclei/) | N | N | N | N |
+| CVE-2022-3578 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-3578/poc/nuclei/) | N | N | N | N |
 | CVE-2022-35914 | GLPI | 注入 | 9.8 | N | N | [Y](CVE-2022-35914/poc/nuclei/) | N | N | N | N |
 | CVE-2022-36642 | Telos-Alliance-Z/IP-ONE | 授权问题 | 9.8 | N | N | [Y](CVE-2022-36642/poc/nuclei/) | N | N | N | N |
 | CVE-2022-36804 | Bitbucket | 命令注入 | 8.8 | N | N | [Y](CVE-2022-36804/poc/nuclei/) | N | N | N | N |
@@ -243,20 +270,35 @@
 | CVE-2022-37042 | Zimbra Collaboration Suite | 授权问题 | 9.8 | N | N | [Y](CVE-2022-37042/poc/nuclei/) | N | N | N | N |
 | CVE-2022-37153 | others | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-37153/poc/nuclei/) | N | N | N | N |
 | CVE-2022-37299 | others | 路径遍历 | 6.5 | N | N | [Y](CVE-2022-37299/poc/nuclei/) | N | N | N | N |
+| CVE-2022-3768 |  | SQL注入 | 8.8 | N | N | [Y](CVE-2022-3768/poc/nuclei/) | N | N | N | N |
 | CVE-2022-38463 | others | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-38463/poc/nuclei/) | N | N | N | N |
 | CVE-2022-38553 | others | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-38553/poc/nuclei/) | N | N | N | N |
 | CVE-2022-38637 | others | SQL注入 | 9.8 | N | N | [Y](CVE-2022-38637/poc/nuclei/) | N | N | N | N |
 | CVE-2022-38794 | others | 路径遍历 | 7.5 | N | N | [Y](CVE-2022-38794/poc/nuclei/) | N | N | N | N |
 | CVE-2022-38817 | Dapr Dashboard | 其他 | 7.5 | N | N | [Y](CVE-2022-38817/poc/nuclei/) | N | N | N | N |
+| CVE-2022-38870 | free5GC | 权限许可和访问控制 | 7.5 | N | N | [Y](CVE-2022-38870/poc/nuclei/) | N | N | N | N |
 | CVE-2022-39960 | JIRA | 授权问题 | 5.3 | N | N | [Y](CVE-2022-39960/poc/nuclei/) | N | N | N | N |
 | CVE-2022-40083 | Echo | url重定向 | 9.6 | N | N | [Y](CVE-2022-40083/poc/nuclei/) | N | N | N | N |
+| CVE-2022-40359 | others | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-40359/poc/nuclei/) | N | N | N | N |
+| CVE-2022-4050 |  | SQL注入 | 9.8 | N | N | [Y](CVE-2022-4050/poc/nuclei/) | N | N | N | N |
 | CVE-2022-40684 | FortiOS | 登录绕过 | 9.8 | N | N | [Y](CVE-2022-40684/poc/nuclei/) | N | N | N | N |
 | CVE-2022-40734 | Laravel-Framework | 路径遍历 | 6.5 | N | N | [Y](CVE-2022-40734/poc/nuclei/) | N | N | N | N |
 | CVE-2022-40879 | kkFileView | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-40879/poc/nuclei/) | N | N | N | N |
+| CVE-2022-40881 | SolarView | 命令注入 | 9.8 | N | N | [Y](CVE-2022-40881/poc/nuclei/) | N | N | N | N |
 | CVE-2022-41473 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-41473/poc/nuclei/) | N | N | N | N |
-| CVE-2022-41840 | WordPress | 目录穿越  |  | N | N | [Y](CVE-2022-41840/poc/nuclei/) | N | N | N | N |
+| CVE-2022-41840 | WordPress | 目录穿越  | 9.8 | N | N | [Y](CVE-2022-41840/poc/nuclei/) | N | N | N | N |
+| CVE-2022-42233 | Tenda-Router | 登录绕过 | 9.8 | N | N | [Y](CVE-2022-42233/poc/nuclei/) | N | N | N | N |
+| CVE-2022-4260 |  | 跨站脚本 | 4.8 | N | N | [Y](CVE-2022-4260/poc/nuclei/) | N | N | N | N |
+| CVE-2022-42746 | CandidATS | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-42746/poc/nuclei/) | N | N | N | N |
+| CVE-2022-42747 | CandidATS | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-42747/poc/nuclei/) | N | N | N | N |
+| CVE-2022-42748 | CandidATS | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-42748/poc/nuclei/) | N | N | N | N |
+| CVE-2022-42749 | CandidATS | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-42749/poc/nuclei/) | N | N | N | N |
 | CVE-2022-43014 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-43014/poc/nuclei/) | N | N | N | N |
 | CVE-2022-43015 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-43015/poc/nuclei/) | N | N | N | N |
 | CVE-2022-43016 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-43016/poc/nuclei/) | N | N | N | N |
 | CVE-2022-43017 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-43017/poc/nuclei/) | N | N | N | N |
 | CVE-2022-43018 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-43018/poc/nuclei/) | N | N | N | N |
+| CVE-2022-45362 | WordPress | 安全模式绕过 |  | N | N | [Y](CVE-2022-45362/poc/nuclei/) | N | N | N | N |
+| CVE-2022-45917 | others | url重定向 | 6.1 | N | N | [Y](CVE-2022-45917/poc/nuclei/) | N | N | N | N |
+| CVE-2022-45933 | KubeView | 信息泄漏 | 9.8 | N | N | [Y](CVE-2022-45933/poc/nuclei/) | N | N | N | N |
+| CVE-2022-46381 |  | 跨站脚本 | 6.1 | N | N | [Y](CVE-2022-46381/poc/nuclei/) | N | N | N | N |

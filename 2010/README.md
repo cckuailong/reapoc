@@ -8,7 +8,7 @@
 | CVE | Component | Category | CVSS | Vultarget | pocsploit | Nuclei | Xray | pocsuite3 | goby | others |
 |-----|-----------|----------|------|-----------|-----------|--------|------|-----------|------|--------|
 | CVE-2010-0157 |  | 路径遍历 |  | N | N | [Y](CVE-2010-0157/poc/nuclei/) | N | N | N | [Y](CVE-2010-0157/poc/others/) |
-| CVE-2010-0219 | Axis2-Web | 代码执行  |  | N | [Y](CVE-2010-0219/poc/pocsploit/) | [Y](CVE-2010-0219/poc/nuclei/) | N | N | N | N |
+| CVE-2010-0219 | Axis2-Web | 权限提升  | 0 | N | [Y](CVE-2010-0219/poc/pocsploit/) | [Y](CVE-2010-0219/poc/nuclei/) | N | N | N | N |
 | CVE-2010-0467 |  | 路径遍历 | 5.8 | N | N | [Y](CVE-2010-0467/poc/nuclei/) | N | N | N | [Y](CVE-2010-0467/poc/others/) |
 | CVE-2010-0696 |  | 路径遍历 |  | N | N | [Y](CVE-2010-0696/poc/nuclei/) | N | N | N | [Y](CVE-2010-0696/poc/others/) |
 | CVE-2010-0759 |  | 路径遍历 |  | N | N | [Y](CVE-2010-0759/poc/nuclei/) | N | N | N | [Y](CVE-2010-0759/poc/others/) |

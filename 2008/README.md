@@ -17,4 +17,6 @@
 | CVE-2008-6080 |  | 路径遍历 |  | N | N | [Y](CVE-2008-6080/poc/nuclei/) | N | N | N | [Y](CVE-2008-6080/poc/others/) |
 | CVE-2008-6172 |  | 路径遍历 |  | N | N | [Y](CVE-2008-6172/poc/nuclei/) | N | N | N | [Y](CVE-2008-6172/poc/others/) |
 | CVE-2008-6222 |  | 路径遍历 |  | N | N | [Y](CVE-2008-6222/poc/nuclei/) | N | N | N | [Y](CVE-2008-6222/poc/others/) |
+| CVE-2008-6465 | Parallels-H-Sphere | 跨站脚本 |  | N | N | [Y](CVE-2008-6465/poc/nuclei/) | N | N | N | N |
 | CVE-2008-6668 |  | 路径遍历 |  | N | N | [Y](CVE-2008-6668/poc/nuclei/) | N | N | N | [Y](CVE-2008-6668/poc/others/) |
+| CVE-2008-6982 | others | 跨站脚本 |  | N | N | [Y](CVE-2008-6982/poc/nuclei/) | N | N | N | N |

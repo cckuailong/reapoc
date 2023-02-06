@@ -8,6 +8,7 @@
 | CVE | Component | Category | CVSS | Vultarget | pocsploit | Nuclei | Xray | pocsuite3 | goby | others |
 |-----|-----------|----------|------|-----------|-----------|--------|------|-----------|------|--------|
 | CVE-2012-0392 | Struts2 | 权限许可和访问控制 |  | N | N | [Y](CVE-2012-0392/poc/nuclei/) | N | N | N | [Y](CVE-2012-0392/poc/others/) |
+| CVE-2012-0394 | Apache Struts | 代码注入 | 0 | N | N | [Y](CVE-2012-0394/poc/nuclei/) | N | N | N | N |
 | CVE-2012-0896 |  | 路径遍历 |  | N | N | [Y](CVE-2012-0896/poc/nuclei/) | N | N | N | [Y](CVE-2012-0896/poc/others/) |
 | CVE-2012-0901 | WordPress | 跨站脚本 |  | N | N | [Y](CVE-2012-0901/poc/nuclei/) | N | N | N | [Y](CVE-2012-0901/poc/others/) |
 | CVE-2012-0981 |  | 路径遍历 |  | N | N | [Y](CVE-2012-0981/poc/nuclei/) | N | N | N | [Y](CVE-2012-0981/poc/others/) |

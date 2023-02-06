@@ -36,6 +36,7 @@
 | CVE-2017-12637 |  | 路径遍历 | 7.5 | N | N | [Y](CVE-2017-12637/poc/nuclei/) | N | N | N | N |
 | CVE-2017-12794 | Django | 跨站脚本 | 6.1 | [Y](CVE-2017-12794/vultarget/) | N | [Y](CVE-2017-12794/poc/nuclei/) | N | N | N | N |
 | CVE-2017-14135 | web | 操作系统命令注入 | 9.8 | N | [Y](CVE-2017-14135/poc/pocsploit/) | [Y](CVE-2017-14135/poc/nuclei/) | N | N | N | N |
+| CVE-2017-14186 | Fortinet-FortiWeb | 跨站脚本 | 5.4 | N | N | [Y](CVE-2017-14186/poc/nuclei/) | N | N | N | N |
 | CVE-2017-14535 |  | 操作系统命令注入 | 8.8 | N | [Y](CVE-2017-14535/poc/pocsploit/) | [Y](CVE-2017-14535/poc/nuclei/) | N | N | N | [Y](CVE-2017-14535/poc/others/) |
 | CVE-2017-14537 |  | 路径遍历 | 6.5 | N | [Y](CVE-2017-14537/poc/pocsploit/) | [Y](CVE-2017-14537/poc/nuclei/) | N | N | N | [Y](CVE-2017-14537/poc/others/) |
 | CVE-2017-14651 |  | 跨站脚本 | 4.8 | N | N | [Y](CVE-2017-14651/poc/nuclei/) | N | N | N | N |
